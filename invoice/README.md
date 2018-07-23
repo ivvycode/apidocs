@@ -1,0 +1,8 @@
+# Invoice
+
+### Namespace
+
+```text
+invoice
+```
+
