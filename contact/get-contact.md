@@ -73,7 +73,9 @@ This is an example response for getContact
 | eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). |
 
-## Email status
+## Response Details
+
+### Email Status
 
 | \# | Description |
 | --- | --- |
@@ -83,7 +85,7 @@ This is an example response for getContact
 | 4 | Registering |
 | 5 | No Marketing |
 
-## Sms status
+### Sms status
 
 | \# | Description |
 | --- | --- |
@@ -92,7 +94,7 @@ This is an example response for getContact
 | 3 | Failed |
 | 4 | No Marketing |
 
-## Keys
+### Keys
 
 | Keys |
 | --- |
@@ -100,7 +102,7 @@ This is an example response for getContact
 | displayName |
 | value |
 
-## Event Invitations
+### Event Invitations
 
 | Property | Description |
 | --- | --- |
@@ -111,7 +113,7 @@ This is an example response for getContact
 | inviteLinkNo | Invitation link for No response for this contact to the event |
 | response | The contacts response to the invitation. [List of response values](get-contact.md#response-values). |
 
-## Response values
+### Response values
 
 | \# | Description |
 | --- | --- |
@@ -119,7 +121,7 @@ This is an example response for getContact
 | Y | Yes |
 | N | No |
 
-## Event Registrations Details
+### Event Registrations Details
 
 | Property | Description |
 | --- | --- |
@@ -138,7 +140,7 @@ This is an example response for getContact
 | guestDetails | An array of objects with [the guest details.](get-contact.md#guest-details) |
 | invoices | The list of invoices associated with the registration. Each element of the array is an object with [the invoice fields.](get-contact.md#invoice-details) |
 
-## Registration Status
+### Registration Status
 
 | \# | Description |
 | --- | --- |
@@ -146,7 +148,7 @@ This is an example response for getContact
 | 3 | Cancelled |
 | 4 | Payment Required |
 
-## Guest Details
+### Guest Details
 
 | Property | Description |
 | --- | --- |
@@ -156,7 +158,7 @@ This is an example response for getContact
 | attended | If the contact has attended the event |
 | attendedDateTime | When the contact attended the event |
 
-## Invoice Details
+### Invoice Details
 
 | Property | Description |
 | --- | --- |
@@ -171,7 +173,7 @@ This is an example response for getContact
 | invoiceUrl | The URL for the invoice |
 | invoiceUrlPdf | The URL for the invoice pdf |
 
-## Invoice current status
+#### Invoice current status
 
 | \# | Description |
 | --- | --- |
