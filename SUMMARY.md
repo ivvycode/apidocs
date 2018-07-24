@@ -80,5 +80,4 @@
   * [Date Format](development-reference/date-format.md)
   * [URLEncoding](development-reference/urlencoding.md)
   * [Timezone List](development-reference/timezone-list.md)
-* [Changelog](changelog.md)
 
