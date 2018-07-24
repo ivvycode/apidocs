@@ -1,6 +1,0 @@
-# Test
-
-## Namespace
-
-`test`
-
