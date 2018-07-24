@@ -24,10 +24,11 @@ iVvy takes security very seriously and the API described in this document has be
 
 To help you get started we offer sdk libraries in [C\#](https://github.com/ivvycode/ivvy-sdk-net),  and [Javascript](https://github.com/ivvycode/ivvy-sdk-js).
 
-Next Steps:
+**Next Steps:**
 
 * Download an [example extension](https://github.com/ivvycode/example-extension) designed to work on the AWS infrastructure 
 * Try making an [API call](https://developer.ivvy.com/getting-started/test/ping)
-* Read the glossary
-* If you have questions, check out the FAQs
+* [Contact the iVvy Integration Team](https://www.ivvy.com.au/events/contact.html) for additional support
+
+
 
