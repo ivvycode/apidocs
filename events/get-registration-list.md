@@ -1,14 +1,14 @@
 # Get Registration List
 
-### Description
+## Description
 
 Get list of registration.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getRegistrationList`
 
-### Parameters
+## Parameters
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -16,13 +16,13 @@ Get list of registration.
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Must be an integer 0 or greater |
 | eventId | The event identifier | Must be a Integer |
 
-### Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
 | modifiedDate | Filter by modified date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
-### Returns
+## Returns
 
 A collection object with the following properties in the results
 
@@ -44,7 +44,7 @@ The result from this call will be a collection of all the events the user has ac
 
 The result from this call will be a [collection](./#collections) of all the events the user has access to. This call also accepts the [pagination](./#pagination) and [filter](./#filtering) properties.
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |

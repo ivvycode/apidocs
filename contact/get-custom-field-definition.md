@@ -1,14 +1,14 @@
 # Get Custom Field Definition
 
-### Description
+## Description
 
 Get the definition of custom field.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getCustomFieldDefinition`
 
-### Returns
+## Returns
 
 An array of objects with the following properties
 
@@ -22,7 +22,7 @@ An array of objects with the following properties
 | selectValues | Values that can be selected with select fields |
 | fileTypes | Types of files that can be uploaded with the file custom field |
 
-### Types of field
+## Types of field
 
 * 0 = Small Text
 * 1 = Large Text

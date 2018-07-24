@@ -1,14 +1,14 @@
 # Add Refund To Booking
 
-### Description
+## Description
 
 We can add a refund to a booking using this API. The venueId, Booking Id and refund details are required. All invoice of the booking will be check for the refunded amount and if the amount is refundable then only the refund amount will be added to invoice.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/venue?action=addRefundToBooking`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | bookingId | The unique id of the booking to which the refund will be added | Required | integer |
 | refund | [The payment details to add to the booking](add-refund-to-booking.md#payment-details) |  |  |
 
-### Payment Details
+## Payment Details
 
 | Property | Description | Required |
 | --- | --- | --- |
@@ -24,21 +24,21 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | amount | The refund amount | number |
 | notes | Additional notes about the refund | string |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
 | success | Whether or not the refund was added to the booking |
 | refundDetails | A collection of invoiceId and refundId values |
 
-### Refund Details
+## Refund Details
 
 | Property | Description |
 | --- | --- |
 | invoiceId | The unique id of the invoice |
 | refundId | The id of the invoice refund |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
@@ -48,7 +48,7 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | Specific Code: 24147 | The refund amount must be greater than zero |
 | Specific Code: 24148 | The full refund amount could not be applied to the booking |
 
-### Example Request
+## Example Request
 
 `Add refund to booking`
 
@@ -64,7 +64,7 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

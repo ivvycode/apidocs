@@ -1,21 +1,21 @@
 # Get Contact
 
-### Description
+## Description
 
 Get the contact details.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getContact`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | id | The contacts identifier | Required | integer |
 | useEventSortOrder | If true, the eventInvitations and eventRegistrations will be returned ordered by the Event Start Date | Required | boolean |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -34,7 +34,7 @@ Get the contact details.
 | eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). |
 
-### Email status
+## Email status
 
 | \# | Description |
 | --- | --- |
@@ -44,7 +44,7 @@ Get the contact details.
 | 4 | Registering |
 | 5 | No Marketing |
 
-### Sms status
+## Sms status
 
 | \# | Description |
 | --- | --- |
@@ -53,7 +53,7 @@ Get the contact details.
 | 3 | Failed |
 | 4 | No Marketing |
 
-### Keys
+## Keys
 
 | Keys |
 | --- |
@@ -61,7 +61,7 @@ Get the contact details.
 | displayName |
 | value |
 
-### Event Invitations
+## Event Invitations
 
 | Property | Description |
 | --- | --- |
@@ -72,7 +72,7 @@ Get the contact details.
 | inviteLinkNo | Invitation link for No response for this contact to the event |
 | response | The contacts response to the invitation. [List of response values](get-contact.md#response-values). |
 
-### Response values
+## Response values
 
 | \# | Description |
 | --- | --- |
@@ -80,7 +80,7 @@ Get the contact details.
 | Y | Yes |
 | N | No |
 
-### Event Registrations Details
+## Event Registrations Details
 
 | Property | Description |
 | --- | --- |
@@ -99,7 +99,7 @@ Get the contact details.
 | guestDetails | An array of objects with [the guest details.](get-contact.md#guest-details) |
 | invoices | The list of invoices associated with the registration. Each element of the array is an object with [the invoice fields.](get-contact.md#invoice-details) |
 
-### Registration Status
+## Registration Status
 
 | \# | Description |
 | --- | --- |
@@ -107,7 +107,7 @@ Get the contact details.
 | 3 | Cancelled |
 | 4 | Payment Required |
 
-### Guest Details
+## Guest Details
 
 | Property | Description |
 | --- | --- |
@@ -117,7 +117,7 @@ Get the contact details.
 | attended | If the contact has attended the event |
 | attendedDateTime | When the contact attended the event |
 
-### Invoice Details
+## Invoice Details
 
 | Property | Description |
 | --- | --- |
@@ -132,7 +132,7 @@ Get the contact details.
 | invoiceUrl | The URL for the invoice |
 | invoiceUrlPdf | The URL for the invoice pdf |
 
-### Invoice current status
+## Invoice current status
 
 | \# | Description |
 | --- | --- |
@@ -145,7 +145,7 @@ Get the contact details.
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
@@ -153,7 +153,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 
 The contact identifier must be provided to fetch a specific contact from the system.
 
-### Example Request
+## Example Request
 
 `Get a specific contact`
 
@@ -163,7 +163,7 @@ The contact identifier must be provided to fetch a specific contact from the sys
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

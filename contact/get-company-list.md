@@ -1,28 +1,28 @@
 # Get Company List
 
-### Description
+## Description
 
 Get list of companies.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getCompanyList`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | perPage | The number of companies to get in a single api call | Required | integer |
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer |
 
-### Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -38,7 +38,7 @@ Get list of companies.
 | address | The company’s address. This is an an object with the address [keys](get-company-list.md#keys). |
 | modifiedDate | The modified date of the company |
 
-### Keys
+## Keys
 
 | keys |
 | --- |

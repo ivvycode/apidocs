@@ -1,6 +1,6 @@
 # Invoice
 
-### Namespace
+## Namespace
 
 ```text
 invoice

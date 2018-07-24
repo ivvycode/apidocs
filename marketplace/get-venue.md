@@ -1,6 +1,6 @@
 # Get Venue
 
-### Description
+## Description
 
 The result from this call will be the public details of a specific venue in the iVvy marketplace. The unique venue hash identifier is required, for example { "hashId": "abcdefghijklmnop" }
 
@@ -8,17 +8,17 @@ This call also accepts the availabilityStartDate and availabilityEndDate paramet
 
 `Example: Get a specific venue and it’s availability from 1st July 2015 to 7th July 2015`
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/venue?action=getVenue`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -28,7 +28,7 @@ This call also accepts the availabilityStartDate and availabilityEndDate paramet
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -259,14 +259,14 @@ This call also accepts the availabilityStartDate and availabilityEndDate paramet
 
 The following are properties in the example json response above that have special values.
 
-### ratingAuthority
+## ratingAuthority
 
 One of the following values:
 
 * 1 = AAA rated
 * 2 = Self rated
 
-### facilities
+## facilities
 
 An array of the following values:
 
@@ -309,14 +309,14 @@ An array of the following values:
 * 37 = Outside Catering Allowed
 * 38 = BYO Allowed
 
-### priceMethod \(package pricing\)
+## priceMethod \(package pricing\)
 
 One of the following values:
 
 * 1 = Per person
 * 2 = Flat rate
 
-### type \(function space layout\)
+## type \(function space layout\)
 
 One of the following values:
 
@@ -330,7 +330,7 @@ One of the following values:
 * 7 = Cocktail
 * 8 = Hollow Square
 
-### marketplaceEventTypes \(packages, function spaces and image library files\)
+## marketplaceEventTypes \(packages, function spaces and image library files\)
 
 An array of the following values:
 

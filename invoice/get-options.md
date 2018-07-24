@@ -1,18 +1,18 @@
 # Get Options
 
-### Description
+## Description
 
 The invoice and item response contains a field called "refType". These are constants in the iVvy system to match the invoice or item to a specific entity. To find out a description of what these constants refer to, you can make a call to the api to get the complete list
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/invoice?action=getOptions`
 
-### Parameters
+## Parameters
 
 Parameters No parameters required.
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |

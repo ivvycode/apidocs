@@ -1,21 +1,21 @@
 # Invite Contacts
 
-### Description
+## Description
 
 Invite contact\(s\) to event.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=inviteContacts`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | event | The event identifier to invite the contact to | Required | integer. |
 | contacts | An array of contact identifiers to invite to the event | Required | array of integers |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -29,7 +29,7 @@ To invite a contact to the event, pass through the event identifier and an array
 
 `Example: Invite contacts with identifiers 1, 2 and 3 to event with the identifier 4`
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -38,7 +38,7 @@ To invite a contact to the event, pass through the event identifier and an array
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

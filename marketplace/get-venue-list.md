@@ -1,6 +1,6 @@
 # Get Venue List
 
-### Description
+## Description
 
 This api call allows you to search the iVvy marketplace for venues that match the following criteria:
 
@@ -20,11 +20,11 @@ This call also accepts the pagination parameters. By default, only the first 10 
 
 `Example: Find all the venues in Brisbane that can provide weddings. Include their availability from 1st July 2015 to 7th July 2015`
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/marketplace?action=getVenueList`
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -38,7 +38,7 @@ This call also accepts the pagination parameters. By default, only the first 10 
 }
 ```
 
-### Example Response
+## Example Response
 
 `A collection of venues that match the criteria. A single venue will be represented by the following json example:`
 

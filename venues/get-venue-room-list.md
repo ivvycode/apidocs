@@ -1,14 +1,14 @@
 # Get Venue Room List
 
-### Description
+## Description
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties. The venueId is required, for example {"venuId":10}
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/venue?action=getVenueRoomList`
 
-### Example Request
+## Example Request
 
 `Get a specific Venue’s Room List`
 
@@ -18,7 +18,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

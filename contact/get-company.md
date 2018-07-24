@@ -1,20 +1,20 @@
 # Get Company
 
-### Description
+## Description
 
 Get company detail.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/contact?action=getCompany`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | id | The company’s identifier | Required | integer |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -30,7 +30,7 @@ Get company detail.
 | address | The company’s address. This is an an object with the [keys](get-company.md#keys) |
 | modifiedDate | The modified date of the company |
 
-### Keys
+## Keys
 
 | **keys** |
 | --- |
@@ -43,7 +43,7 @@ Get company detail.
 | countryCode \(e.g: AU\) |
 | postalCode |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
@@ -51,7 +51,7 @@ Get company detail.
 
 The company identifier must be provided to fetch a specific company from the system.
 
-### Example Request
+## Example Request
 
 `Get a specific company`
 
@@ -61,7 +61,7 @@ The company identifier must be provided to fetch a specific company from the sys
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

@@ -1,14 +1,14 @@
 # Get Event List
 
-### Description
+## Description
 
 Get list of event.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getEventList`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -21,7 +21,7 @@ Get list of event.
 | orderBy | Sort results |  | Supported parameter “startDate” |
 | orderDir | Sort direction |  | ‘asc’ or ‘desc’ |
 
-### Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -29,7 +29,7 @@ Get list of event.
 | beforeDate | Filter by end date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | status | Filter by status Array of the following values | Must be an array |
 
-### Returns
+## Returns
 
 A collection object with the following properties in the results.
 
@@ -50,13 +50,13 @@ A collection object with the following properties in the results.
 | venue | [Details of the venue of the event \(if the includeVenueDetails flag is set on the request\)](get-event-list.md#venue-details) |
 | tickets | [The tickets of an event \(if the includeTicketDetails flag is set on the request\)](get-event-list.md#event-ticket-details) |
 | information | [Event website information \(if the includeInformationDetails flag is set on the request\) This is an array of objects with the information properties](get-event-list.md#event-website-information-details). |
-| homepageContent  | Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. |
-| eventTags  | [The tags of the event.](get-event-list.md#event-tags) |
-| modifiedDate  | timestamp  |
+| homepageContent | Content of the website home page \(if the includeHomepageContent flag is set on the request\). Note this is the contents of the HTML that is entered in as the home page content of the event. |
+| eventTags | [The tags of the event.](get-event-list.md#event-tags) |
+| modifiedDate | timestamp |
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
-#### Event types
+### Event types
 
 | Type | Description |
 | --- | --- |
@@ -76,7 +76,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 
 The result from this call will be a collection of all the events the user has access to. This call also accepts the pagination and filter properties.
 
-#### Current status of event
+### Current status of event
 
 | Code | Description |
 | --- | --- |
@@ -84,7 +84,7 @@ The result from this call will be a collection of all the events the user has ac
 | 1 | Closed |
 | 3 | Launched |
 
-#### Venue details
+### Venue details
 
 | Property | Description |
 | --- | --- |
@@ -93,7 +93,7 @@ The result from this call will be a collection of all the events the user has ac
 | address | The address of the venue |
 | imageUrl | The URL to the image of the venue |
 
-#### Event ticket details
+### Event ticket details
 
 | Property | Description |
 | --- | --- |
@@ -105,7 +105,7 @@ The result from this call will be a collection of all the events the user has ac
 | isTaxFree | Amount of the ticket is tax free |
 | subscriptionGroups | [Subscription groups assigned to the ticket This an array of objects with subscription group properties](get-event-list.md#subscription-group-details). |
 
-#### Subscription group details
+### Subscription group details
 
 | Property | Description |
 | --- | --- |
@@ -113,7 +113,7 @@ The result from this call will be a collection of all the events the user has ac
 | groupName | The name for the group |
 | tagColour | The designated colour for the group |
 
-#### Event website information details
+### Event website information details
 
 | Property | Description |
 | --- | --- |
@@ -122,7 +122,7 @@ The result from this call will be a collection of all the events the user has ac
 | fileUrl | Attached file url of event information |
 | sortOrder | The order in which to sort the information |
 
-#### Event tags
+### Event tags
 
 | Property | Description |
 | --- | --- |

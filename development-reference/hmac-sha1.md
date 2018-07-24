@@ -9,7 +9,7 @@ echo -n "string to sign" | openssl dgst -sha1 -hmac "my secret key"
 (stdin)= a993876ea1218921a1c8551923473da7b310dfae
 ```
 
-## C\#
+## C\
 
 ```javascript
 Encoding encoding = Encoding.UTF8;

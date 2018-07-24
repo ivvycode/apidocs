@@ -2,7 +2,7 @@
 
 ## Description
 
-The repost action takes the asyncId as a parameter and returns the success of the call. 
+The repost action takes the asyncId as a parameter and returns the success of the call.
 
 {% hint style="info" %}
 Note a success of true does not mean the callback will be hit immediately.

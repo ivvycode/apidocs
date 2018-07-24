@@ -1,14 +1,14 @@
 # Add or Update Event
 
-### Description
+## Description
 
 Add or update event details.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=addOrUpdateEvent`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ This action call accepts the parameters of an event and will;
 
 NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
 
-### Returns
+## Returns
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 | id | The event’s unique identifier. The value will be null on failure. | integer |
 | code | The event’s unique code. The value will be null on failure. | string |
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -58,7 +58,7 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

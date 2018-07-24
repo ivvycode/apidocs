@@ -1,14 +1,14 @@
 # Add or Update Company
 
-### Description
+## Description
 
 Add or update company detail.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/contact?action=addOrUpdateCompany`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ Add or update company detail.
 | email | The company's email address |  |  |
 | address | The company’s address. This is an an object with the [keys](add-or-update-company.md#keys) |  |  |
 
-### Keys
+## Keys
 
 | keys |
 | --- |
@@ -36,7 +36,7 @@ Add or update company detail.
 | countryCode \(e.g: AU\) |
 | postalCode |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -64,9 +64,9 @@ The properties of the company currently supported are:
 * address
   * This is an object
 
-### `Adding a company`
+## `Adding a company`
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -83,7 +83,7 @@ The properties of the company currently supported are:
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -92,9 +92,9 @@ The properties of the company currently supported are:
 }
 ```
 
-### `Updating a company`
+## `Updating a company`
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -110,7 +110,7 @@ The properties of the company currently supported are:
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

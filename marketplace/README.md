@@ -1,6 +1,6 @@
 # Marketplace
 
-### Namespace
+## Namespace
 
 ```text
 marketplace

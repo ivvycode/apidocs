@@ -1,14 +1,14 @@
 # Add Items To Booking
 
-### Description
+## Description
 
 You can add one or more items to a booking with this API. The venueId and BookingId is required. Multiple items can be added together. There must be at least one additional item.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/venue?action=addItemsToBooking`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ You can add one or more items to a booking with this API. The venueId and Bookin
 | bookingId | The unique id of the booking to which the additional items will be added | Required | integer |
 | items | [Array of multiple items with additional item details.](add-items-to-booking.md#additional-item-details) |  | There must be at least one additional item. |
 
-### Additional item details
+## Additional item details
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -33,21 +33,21 @@ You can add one or more items to a booking with this API. The venueId and Bookin
 | endDate | Optionally the end date of the additional item, which must fall within the dates of the booking | timestamp |
 | excludedFromCommissions | Whether or not agents receive commission for the additional item | boolean |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
 | success | Whether or not the items were added to the booking |
 | items | The unique identifiers of the additional items in the same order as the request |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24140 | There must be at least one additional item |
 | Specific Code: 24141 | An additional item has invalid data |
 
-### Example Request
+## Example Request
 
 `Add items to booking`
 
@@ -74,7 +74,7 @@ You can add one or more items to a booking with this API. The venueId and Bookin
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

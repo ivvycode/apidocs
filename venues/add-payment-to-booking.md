@@ -1,14 +1,14 @@
 # Add Payment To Booking
 
-### Description
+## Description
 
 We can add the payment details of a booking using this API. The venueId, Booking Id and payment details are required. This will also create a payment and booking invoice.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/venue?action=addPaymentToBooking`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ We can add the payment details of a booking using this API. The venueId, Booking
 | bookingId | The unique id of the booking to which the payment will be added | Required | integer |
 | payment | The payment details to add to the booking |  |  |
 
-### Payment Details
+## Payment Details
 
 | Property | Description | Type |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ We can add the payment details of a booking using this API. The venueId, Booking
 | receiptNum | A receipt number of the payment transaction | string |
 | notes | Additional notes about the payment | string |
 
-### Payment methods
+## Payment methods
 
 | \# | Description |
 | --- | --- |
@@ -44,7 +44,7 @@ We can add the payment details of a booking using this API. The venueId, Booking
 | 11 | Point of Sale |
 | 12 | Wire Transfer |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -52,13 +52,13 @@ We can add the payment details of a booking using this API. The venueId, Booking
 | invoiceId | The unique id of the invoice to which the payment was added |
 | paymentId | The unique identifier of the payment made |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24136 | The payment details are invalid |
 
-### Example Request
+## Example Request
 
 `Add payment to booking`
 
@@ -76,7 +76,7 @@ We can add the payment details of a booking using this API. The venueId, Booking
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

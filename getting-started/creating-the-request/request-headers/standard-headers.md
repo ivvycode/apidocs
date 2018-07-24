@@ -4,15 +4,15 @@
 
 You will need to verify which region that you wish to integrate with to determine your host. If you are unsure, you can contact the support team for assistance.
 
-For integrations on our AU Servers, the host is: 
+For integrations on our AU Servers, the host is:
 
 * [api.ap-southeast-2.ivvy.com](http://api.ap-southeast-2.ivvy.com/)
 
-For integrations on our US Servers, the host is: 
+For integrations on our US Servers, the host is:
 
 * [api.us-west-2.ivvy.com](http://api.us-west-2.ivvy.com/)
 
-For integrations on our UK Servers, the host is: 
+For integrations on our UK Servers, the host is:
 
 * [api.eu-west-2.ivvy.com](http://api.eu-west-2.ivvy.com/)
 

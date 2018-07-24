@@ -1,20 +1,20 @@
 # Get Tax List
 
-### Description
+## Description
 
 This API will return all applicable tax list for the venue. venueId is required parameter to get the list of taxes.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/venue?action=getTaxList`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | venueId | The unique identifier of venue to which taxes belong | Required | integer |
 
-### Returns
+## Returns
 
 `A collection object with the following properties in the results`
 
@@ -23,7 +23,7 @@ This API will return all applicable tax list for the venue. venueId is required 
 | id | The unique invoice identifier |
 | name | The name of Tax |
 
-### Example Request
+## Example Request
 
 `Get Venues Tax List`
 
@@ -33,7 +33,7 @@ This API will return all applicable tax list for the venue. venueId is required 
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

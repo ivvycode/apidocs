@@ -1,21 +1,21 @@
 # Get Registration
 
-### Description
+## Description
 
 Get registration details.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getRegistration`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | id | The registration identifier | Required | integer |
 | eventId | The event identifier to which registration belongs | Required | integer |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -28,7 +28,7 @@ Get registration details.
 | phone | The phone number of event registration |
 | modifiedDate | The date & time the registration was last modified |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |

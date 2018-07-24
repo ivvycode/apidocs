@@ -1,6 +1,6 @@
 # Create Login Token
 
-### Description
+## Description
 
 Creates a login token that can be used to login to an event, on the behalf of a registered contact. This call takes an event identifier and a contact identifier and an optional referrer url to generate a single-use, time restricted token.
 
@@ -8,11 +8,11 @@ The result will be the token and a URL that can be used to redirect the user to 
 
 If the referrer is provided when creating the token, the browser’s referrer header will also be checked to ensure the request using the token has been redirected from the specific website saved against the token.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=createLoginToken`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -20,21 +20,21 @@ If the referrer is provided when creating the token, the browser’s referrer he
 | contact | The contact identifier to allow the login | Required | integer |
 | referrer | Referrer of the request which will be used in validating the token later |  |  |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
 | token | Single use, time restricted token for the contact to login to the iVvy Event Website |
 | loginUrl | The URL that must be used to authenticate the user with the token |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24099 | Unable to generate token |
 | Specific Code: 24098 | Unable to find event |
 
-### Example Request
+## Example Request
 
 `Example: Request a login token for a contact on an event`
 
@@ -45,7 +45,7 @@ If the referrer is provided when creating the token, the browser’s referrer he
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

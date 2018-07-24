@@ -1,6 +1,6 @@
 # Venue
 
-### Namespace
+## Namespace
 
 ```text
 venue

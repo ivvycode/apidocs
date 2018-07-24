@@ -1,21 +1,21 @@
 # Get Attendee
 
-### Description
+## Description
 
 Get attendee details.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getAttendee`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | id | The attendee identifier | Required | integer |
 | eventId | The event identifier to which attendee belongs | Required | integer |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -38,14 +38,14 @@ Get attendee details.
 | cost | The cost of ticket of event attendee |
 | customFields | The array of custom fields data of event attendee with below details |
 
-### Custom field details
+## Custom field details
 
 | Property | Description |
 | --- | --- |
 | name | The name of the custom field |
 | value | The value of the custom field for attendee |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |

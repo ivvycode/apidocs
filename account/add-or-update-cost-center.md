@@ -1,14 +1,14 @@
 # Add or Update Cost Center
 
-### Description
+## Description
 
 Add or update cost center details to the account. The cost center name and code are required.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/account?action=addOrUpdateCostCenter`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -17,21 +17,21 @@ Add or update cost center details to the account. The cost center name and code 
 | code | The code of the cost center | Required | string |
 | description | The complete description of the cost center |  | string |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
 | success | Whether or not the cost center was added to the account |
 | id | The unique identifier of the cost center |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24150 | Account does not exist |
 | Specific Code: 24150 | The cost centers details are invalid |
 
-### Example Request
+## Example Request
 
 `Example: Add a cost center to an account`
 
@@ -43,7 +43,7 @@ Add or update cost center details to the account. The cost center name and code 
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {

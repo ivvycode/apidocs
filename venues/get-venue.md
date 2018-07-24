@@ -1,14 +1,14 @@
 # Get Venue
 
-### Description
+## Description
 
 The result from this call will be the details of a specific venue to which the user has access. The unique venue identifier is required, for example {“id”:123}
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/venue?action=getVenue`
 
-### Example Request
+## Example Request
 
 `Get a specific venue`
 
@@ -18,7 +18,7 @@ The result from this call will be the details of a specific venue to which the u
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
@@ -255,14 +255,14 @@ The result from this call will be the details of a specific venue to which the u
 
 The following are properties in the example json response above that have special values.
 
-### ratingAuthority
+## ratingAuthority
 
 One of the following values:
 
 * 1 = AAA rated
 * 2 = Self rated
 
-### facilities
+## facilities
 
 An array of the following values:
 
@@ -305,14 +305,14 @@ An array of the following values:
 * 37 = Outside Catering Allowed
 * 38 = BYO Allowed
 
-### priceMethod \(package pricing\)
+## priceMethod \(package pricing\)
 
 One of the following values:
 
 * 1 = Per person
 * 2 = Flat rate
 
-### type \(function space layout\)
+## type \(function space layout\)
 
 One of the following values:
 
@@ -326,7 +326,7 @@ One of the following values:
 * 7 = Cocktail
 * 8 = Hollow Square
 
-### marketplaceEventTypes \(packages, function spaces and image library files\)
+## marketplaceEventTypes \(packages, function spaces and image library files\)
 
 An array of the following values:
 

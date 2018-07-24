@@ -1,14 +1,14 @@
 # Get Email Log List
 
-### Description
+## Description
 
 The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/account?action=getEmailLogList`
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -27,13 +27,13 @@ The result from this call will be a [collection](../interpreting-the-response/co
 | sentTime | The sent time of the email in UTC |
 | success | Whether or not email has been sent or not |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24151 | Account does not exist |
 
-### Example Response
+## Example Response
 
 `Example: Get a specific account’s Email Logs List`
 
@@ -66,7 +66,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 }
 ```
 
-### refType:
+## refType:
 
 One of the following values:
 
@@ -86,7 +86,7 @@ One of the following values:
 * 13 = Company
 * 14 = Floor Plan
 
-### type:
+## type:
 
 One of the following values:
 

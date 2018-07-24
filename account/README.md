@@ -1,10 +1,8 @@
 # Account
 
-### Namespace
+## Namespace
 
 ```text
 account
 ```
-
-
 

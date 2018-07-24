@@ -1,14 +1,14 @@
 # Get Cost Center List
 
-### Description
+## Description
 
 Fetches the list of cost centers in the account. No request params required.
 
-### Api Url
+## Api Url
 
 `[PlatformAddress]/api/1.0/account?action=getCostCenterList`
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -18,13 +18,13 @@ Fetches the list of cost centers in the account. No request params required.
 | description | The complete description of the cost center |
 | defaultType | Set if one of the default cost centers |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
 | Specific Code: 24150 | Account does not exist |
 
-### Example Response
+## Example Response
 
 `Example: get cost center list of the account`
 

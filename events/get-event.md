@@ -1,20 +1,20 @@
 # Get Event
 
-### Description
+## Description
 
 Add or update event details.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getEvent`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | id | The event identifier | Required | integer |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
@@ -43,14 +43,14 @@ Add or update event details.
 | includeMembership | Whether or not the event includes memberships |
 | eventTags | The tags of the event |
 
-### Event tags
+## Event tags
 
 | Code | Description |
 | --- | --- |
 | id | The unique identifier for the event tag |
 | name | The name of the event tag |
 
-### Throws
+## Throws
 
 | Property | Description |
 | --- | --- |

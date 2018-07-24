@@ -1,14 +1,14 @@
 # Add or Update Lead
 
-### Description
+## Description
 
 Add or update lead detail.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/contact?action=addOrUpdateLead`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
@@ -29,14 +29,14 @@ Add or update lead detail.
 | channel | The channel of lead |  | integer |
 | description | The description for the lead |  | integer |
 
-### Returns
+## Returns
 
 | Property | Description |
 | --- | --- |
 | success | Whether or not the lead was added to the account |
 | id | The unique id of the lead |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |

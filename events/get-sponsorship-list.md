@@ -1,20 +1,20 @@
 # Get Sponsorship List
 
-### Description
+## Description
 
 Get sponsorship list.
 
-### API URL
+## API URL
 
 `[PlatformAddress]/api/1.0/event?action=getSponsorshipList`
 
-### Parameters
+## Parameters
 
 | Property | Description | Required | Type |
 | --- | --- | --- | --- |
 | event | The event identifier | Required | integer |
 
-### Returns
+## Returns
 
 A collection array with the following object properties in the results
 
@@ -30,7 +30,7 @@ A collection array with the following object properties in the results
 | sponsorshipAmount | How much this sponsorship is for |
 | sponsorshipAmountPaid | How much has been paid by the sponsor so far |
 
-### Throws
+## Throws
 
 | Code | Description |
 | --- | --- |
@@ -41,7 +41,7 @@ Lists the sponsors that are sponsoring the event.
 
 `Example: Fetch the list of sponsors on an event`
 
-### Example Request
+## Example Request
 
 ```javascript
 {
@@ -49,7 +49,7 @@ Lists the sponsors that are sponsoring the event.
 }
 ```
 
-### Example Response
+## Example Response
 
 ```javascript
 {
