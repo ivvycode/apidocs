@@ -3,7 +3,6 @@
 * [API Documentation](README.md)
 * [Home](home.md)
 * [Getting Started](getting-started/README.md)
-  * [Introduction](getting-started/introduction.md)
   * [Obtaining Keys](getting-started/obtaining-keys.md)
   * [Creating the request](getting-started/creating-the-request/README.md)
     * [Method/URI Header](getting-started/creating-the-request/method-uri-header.md)
