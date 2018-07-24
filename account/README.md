@@ -1,0 +1,10 @@
+# Account
+
+### Namespace
+
+```text
+account
+```
+
+
+
