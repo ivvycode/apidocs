@@ -138,7 +138,7 @@ This is an example response for getContact
 | guestDetails | An array of objects with [the guest details.](get-contact.md#guest-details) |
 | invoices | The list of invoices associated with the registration. Each element of the array is an object with [the invoice fields.](get-contact.md#invoice-details) |
 
-### Registration Status
+#### Event Registration Status \(currentStatus\)
 
 | **\#** | **Description** |
 | --- | --- |
@@ -146,7 +146,7 @@ This is an example response for getContact
 | 3 | Cancelled |
 | 4 | Payment Required |
 
-### Guest Details
+#### Guest Details
 
 | **Property** | **Description** |
 | --- | --- |
