@@ -23,7 +23,7 @@
   * [Progress](batch/progress.md)
   * [Restart](batch/restart.md)
   * [Repost](batch/repost.md)
-* [Contact](contact/README.md)
+* [Contacts & Companies](contact/README.md)
   * [Get Contact List](contact/get-contact-list.md)
   * [Get Contact](contact/get-contact.md)
   * [Add or Update Contact](contact/add-or-update-contact.md)
