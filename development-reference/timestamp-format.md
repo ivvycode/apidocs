@@ -4,7 +4,14 @@ The iVvy API uses a timestamp format to represent dates and times. Every date us
 
 `yyyy-mm-dd HH:mm:ss`
 
-Where
+**Where:**
 
-\| --- \| --- \| \| yyyy \| The 4 digit year of the date \| \| mm \| The two digit month of the date, where January = 01 and December = 12 \| \| dd \| The two digit day of the month \| \| HH \| The two digit hour \| \| mm \| The two digit minute \| \| ss \| The two digit second \|
+* 'yyyy' is the 4 digit year of the date,
+* 'mm' is the two digit month of the date, where January = 01 and December = 12
+* 'dd' is the two digit day of the month,
+* 'HH' is the two digit hour,
+* 'mm' is the two digit minute, and
+* 'ss' is the two digit second
+
+
 
