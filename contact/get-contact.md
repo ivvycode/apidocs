@@ -1,6 +1,6 @@
 # Get Contact
 
-{% api-method method="get" host="\[PlatformAddress\]/api/1.0/contact?action=getContact" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getContact" path="" %}
 {% api-method-summary %}
 Get Contact
 {% endapi-method-summary %}
