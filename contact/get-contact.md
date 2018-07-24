@@ -25,7 +25,7 @@ If true, the eventInvitations and eventRegistrations will be returned ordered by
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+This is an example response for getContact
 {% endapi-method-response-example-description %}
 
 ```javascript
