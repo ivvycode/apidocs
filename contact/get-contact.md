@@ -28,8 +28,26 @@ The contact's identifier
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "id":"25146",
+    "firstName":"Test",
+    "lastName":"User",
+    "email":"user@test.com",
+    "phone":"0455550000",
+    "customFields":[
+        {"fieldId":"102","displayName":"Dietary Requirements","value":[""]},
+        {"fieldId":"103","displayName":"Shirt Size","value":["Medium"]}
+    ],
+    "groups":[
+        {"contactId":"25146","groupId":"2481","joinDate":"2012-04-16 21:07:04"},
+        {"contactId":"25146","groupId":"2485","joinDate":"2014-05-6 12:32:12"}
+    ],
+    "companies":[
+        4,5,6
+    ],
+    "externalId":"59fc43b6726be"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -181,30 +199,6 @@ The contact identifier must be provided to fetch a specific contact from the sys
 ```javascript
 { 
   "id":6
-}
-```
-
-## Example Response
-
-```javascript
-{
-    "id":"25146",
-    "firstName":"Test",
-    "lastName":"User",
-    "email":"user@test.com",
-    "phone":"0455550000",
-    "customFields":[
-        {"fieldId":"102","displayName":"Dietary Requirements","value":[""]},
-        {"fieldId":"103","displayName":"Shirt Size","value":["Medium"]}
-    ],
-    "groups":[
-        {"contactId":"25146","groupId":"2481","joinDate":"2012-04-16 21:07:04"},
-        {"contactId":"25146","groupId":"2485","joinDate":"2014-05-6 12:32:12"}
-    ],
-    "companies":[
-        4,5,6
-    ],
-    "externalId":"59fc43b6726be"
 }
 ```
 
