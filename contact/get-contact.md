@@ -56,7 +56,7 @@ This is an example response for getContact
 
 ## Returns
 
-| Property | Description |
+| **Property** | **Description** |
 | --- | --- |
 | id | The unique identifier for the contact |
 | firstName | The contact’s first name |
@@ -75,7 +75,7 @@ This is an example response for getContact
 
 ### Email Status
 
-| \# | Description |
+| **\#** | **Description** |
 | --- | --- |
 | 1 | Subscribed |
 | 2 | Unsubscribed |
@@ -85,7 +85,7 @@ This is an example response for getContact
 
 ### Sms status
 
-| \# | Description |
+| **\#** | **Description** |
 | --- | --- |
 | 1 | Subscribed |
 | 2 | Unsubscribed |
@@ -94,7 +94,7 @@ This is an example response for getContact
 
 ### Keys
 
-| Keys |
+| **Keys** |
 | --- |
 | fieldId |
 | displayName |
@@ -102,7 +102,7 @@ This is an example response for getContact
 
 ### Event Invitations
 
-| Property | Description |
+| **Property** | **Description** |
 | --- | --- |
 | eventId | The event identifier of the invitation |
 | eventCode | The code of the event of the invitation |
@@ -111,9 +111,9 @@ This is an example response for getContact
 | inviteLinkNo | Invitation link for No response for this contact to the event |
 | response | The contacts response to the invitation. [List of response values](get-contact.md#response-values). |
 
-#### Response values
+#### Event Invitations Response values
 
-| \# | Description |
+| **\#** | **Description** |
 | --- | --- |
 | U | Undecided |
 | Y | Yes |
@@ -121,7 +121,7 @@ This is an example response for getContact
 
 ### Event Registrations Details
 
-| Property | Description |
+| **Property** | **Description** |
 | --- | --- |
 | eventId | The event identifier of the registration |
 | eventCode | The code of the event of the registration |
@@ -140,7 +140,7 @@ This is an example response for getContact
 
 ### Registration Status
 
-| \# | Description |
+| **\#** | **Description** |
 | --- | --- |
 | 2 | Completed |
 | 3 | Cancelled |
@@ -148,7 +148,7 @@ This is an example response for getContact
 
 ### Guest Details
 
-| Property | Description |
+| **Property** | **Description** |
 | --- | --- |
 | contactId | The identifier for the contact if known |
 | fullName | Name of guest |
@@ -158,7 +158,7 @@ This is an example response for getContact
 
 ### Invoice Details
 
-| Property | Description |
+| **Property** | **Description** |
 | --- | --- |
 | id | The unique identifier for the invoice |
 | reference | The reference number of the invoice |
@@ -173,7 +173,7 @@ This is an example response for getContact
 
 #### Invoice current status
 
-| \# | Description |
+| **\#** | **Description** |
 | --- | --- |
 | 0 | Not Paid |
 | 1 | Unconfirmed Paid |
@@ -186,7 +186,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
 
 ## Throws
 
-| Code | Description |
+| **Code** | **Description** |
 | --- | --- |
 | Specific Code: 24096 | Unable to find contact |
 
