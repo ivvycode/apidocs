@@ -1,19 +1,40 @@
 # Get Contact
 
-## Description
+{% api-method method="get" host="\[PlatformAddress\]/api/1.0/contact?action=getContact" path="" %}
+{% api-method-summary %}
+Get Contact
+{% endapi-method-summary %}
 
-Get the contact details.
+{% api-method-description %}
+Get the contact details
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="useEventSortOrder" type="boolean" required=true %}
+if true, the eventInvitations and eventRegistrations will be returned ordered by Event Start Date
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=getContact`
+{% api-method-parameter name="Id" type="integer" required=true %}
+The contact's identifier
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The contacts identifier | Required | integer |
-| useEventSortOrder | If true, the eventInvitations and eventRegistrations will be returned ordered by the Event Start Date | Required | boolean |
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 

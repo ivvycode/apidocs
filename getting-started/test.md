@@ -10,5 +10,3 @@
 [PlatformAddress]/api/1.0/test?action=ping
 ```
 
-
-
