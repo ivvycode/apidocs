@@ -73,8 +73,6 @@ This is an example response for getContact
 | eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). |
 
-## Response Details
-
 ### Email Status
 
 | \# | Description |
@@ -113,7 +111,7 @@ This is an example response for getContact
 | inviteLinkNo | Invitation link for No response for this contact to the event |
 | response | The contacts response to the invitation. [List of response values](get-contact.md#response-values). |
 
-### Response values
+#### Response values
 
 | \# | Description |
 | --- | --- |
