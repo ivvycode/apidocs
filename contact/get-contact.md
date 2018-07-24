@@ -66,22 +66,22 @@ This example request will obtain the details of the contact with the id "6"
 
 ## Returns
 
-| **Property** | **Description** |
+| **Property** | **Description** | **Type** |
 | --- | --- |
-| id | The unique identifier for the contact |
-| firstName | The contact’s first name |
-| lastName | The contact’s last name |
-| email | The contact’s email address |
-| phone | The contact’s phone number |
-| status | The contact's [email status](get-contact.md#email-status) |
-| smsStatus | The contact’s [sms status](get-contact.md#sms-status) |
-| customFields | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact.md#keys). |
-| groups | The subscription group information for the contact. |
-| companies | This will an array company ids to which the contact belongs. |
-| externalId | This will be an external id of the contact |
-| modifiedDate | The modified date of the contact |
-| eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) |
-| eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). |
+| id | The unique identifier for the contact | integer |
+| firstName | The contact’s first name | string |
+| lastName | The contact’s last name | string |
+| email | The contact’s email address | string |
+| phone | The contact’s phone number | integer |
+| status | The contact's [email status](get-contact.md#email-status) | enum |
+| smsStatus | The contact’s [sms status](get-contact.md#sms-status) | enum |
+| customFields | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact.md#keys). | array |
+| groups | The subscription group information for the contact. | array |
+| companies | This will an array company ids to which the contact belongs. | array |
+| externalId | This will be an external id of the contact | integer |
+| modifiedDate | The modified date of the contact | date |
+| eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) | array |
+| eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array |
 
 ### Status Options - Email Registration Status 
 
