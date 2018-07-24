@@ -43,7 +43,7 @@ The result from this call will be a [collection](../interpreting-the-response/co
         "id": 3,
         "firstName": "Quamar",
         "lastName": "Boyer",
-        "email": "faly@gmail.com",
+        "email": "example@domain.com",
         "phone": "+247-92-9848064"
       },
       "currentStatus": 3,
