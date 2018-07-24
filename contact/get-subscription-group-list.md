@@ -2,7 +2,7 @@
 
 ## Description
 
-Get the list of subscription group.
+Subscription Groups are a feature that enables customers to segment their contacts into groups. These groups can then used for a range of purposes, including email and sms marketing, restricting access to event ticket types and content pages plus more.
 
 ## API URL
 

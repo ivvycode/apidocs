@@ -73,7 +73,6 @@
   * [Add or Update Cost Center](account/add-or-update-cost-center.md)
   * [Get Cost Center List](account/get-cost-center-list.md)
   * [Get Email Log List](account/get-email-log-list.md)
-* [Partners](partners.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
