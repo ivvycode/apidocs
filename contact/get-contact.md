@@ -54,6 +54,16 @@ This is an example response for getContact
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example Request
+
+This example request will obtain the details of the contact with the id "6"
+
+```javascript
+{ 
+  "id":6
+}
+```
+
 ## Returns
 
 | **Property** | **Description** |
@@ -73,7 +83,9 @@ This is an example response for getContact
 | eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). |
 
-### Email Status
+### Status Options - Email Registration Status 
+
+The status is the record of whether the contact has opted in to email communication.
 
 | **\#** | **Description** |
 | --- | --- |
@@ -84,6 +96,8 @@ This is an example response for getContact
 | 5 | No Marketing |
 
 ### Sms status
+
+The sms status is the record of whether the contact has opted in to sms communication.
 
 | **\#** | **Description** |
 | --- | --- |
@@ -191,14 +205,4 @@ The result from this call will be a [collection](../interpreting-the-response/co
 | Specific Code: 24096 | Unable to find contact |
 
 The contact identifier must be provided to fetch a specific contact from the system.
-
-## Example Request
-
-`Get a specific contact`
-
-```javascript
-{ 
-  "id":6
-}
-```
 
