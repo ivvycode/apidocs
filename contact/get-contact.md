@@ -12,12 +12,12 @@ Get the contact details
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="useEventSortOrder" type="boolean" required=true %}
-if true, the eventInvitations and eventRegistrations will be returned ordered by Event Start Date
+{% api-method-parameter name="id" type="integer" required=true %}
+The contact's identifier
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="Id" type="integer" required=true %}
-The contact's identifier
+{% api-method-parameter name="useEventSortOrder" type="boolean" required=true %}
+If true, the eventInvitations and eventRegistrations will be returned ordered by Event Start Date
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
