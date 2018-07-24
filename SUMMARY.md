@@ -1,7 +1,6 @@
 # Table of contents
 
 * [API Documentation](README.md)
-* [Home](home.md)
 * [Getting Started](getting-started/README.md)
   * [Obtaining Keys](getting-started/obtaining-keys.md)
   * [Creating the request](getting-started/creating-the-request/README.md)
