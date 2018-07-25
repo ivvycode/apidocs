@@ -1,6 +1,6 @@
 # Add or Update Event
 
-{% api-method method="get" host="\[PlatformAddress\]" path="/api/1.0/event?action=addOrUpdateEvent" %}
+{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/event?action=addOrUpdateEvent" %}
 {% api-method-summary %}
 addOrUpdateEvent
 {% endapi-method-summary %}
@@ -52,6 +52,24 @@ The primary contact user of the event. The value is an identifier of a user in t
 {% endapi-method-spec %}
 {% endapi-method %}
 
+## Example Request
+
+```javascript
+{
+  "eventType": 12,
+  "title": "A New Event",
+  "timezone": "Australia/Sydney",
+  "startDateTime": "2018-03-05 03:00:00 UTC",
+  "endDateTime": "2018-03-05 06:00:00 UTC",
+  "capacity": 10,
+  "budget": 150,
+  "costCenterId": 834,
+  "primaryContactUserId": 7821,
+  "eventTypeIds": [56,57],
+  "isAccommIncluded": false
+}
+```
+
 ## Parameters
 
 | Property | Description | Required | Type |
@@ -83,22 +101,4 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 | success | Whether or not the action succeeded \(i.e. the event as added or updated\). | boolean |
 | id | The event’s unique identifier. The value will be null on failure. | integer |
 | code | The event’s unique code. The value will be null on failure. | string |
-
-## Example Request
-
-```javascript
-{
-  "eventType": 12,
-  "title": "A New Event",
-  "timezone": "Australia/Sydney",
-  "startDateTime": "2018-03-05 03:00:00 UTC",
-  "endDateTime": "2018-03-05 06:00:00 UTC",
-  "capacity": 10,
-  "budget": 150,
-  "costCenterId": 834,
-  "primaryContactUserId": 7821,
-  "eventTypeIds": [56,57],
-  "isAccommIncluded": false
-}
-```
 
