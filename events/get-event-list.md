@@ -21,7 +21,7 @@ Get list of event.
 | orderBy | Sort results |  | Supported parameter “startDate” |
 | orderDir | Sort direction |  | ‘asc’ or ‘desc’ |
 
-## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ A collection object with the following properties in the results.
 | eventTags | [The tags of the event.](get-event-list.md#event-tags) |
 | modifiedDate | timestamp |
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
 ### Event types
 

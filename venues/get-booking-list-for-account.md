@@ -2,7 +2,7 @@
 
 ## Description
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties. The per page value is required, for example {"perPage":10}
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties. The per page value is required, for example {"perPage":10}
 
 ## API URL
 
@@ -79,7 +79,7 @@ One of the following values:
 * 5 = Ordering
 * 8 = Not Accepted
 
-## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |

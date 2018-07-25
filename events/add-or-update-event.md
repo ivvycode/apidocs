@@ -1,12 +1,56 @@
 # Add or Update Event
 
-## Description
+{% api-method method="get" host="\[PlatformAddress\]" path="/api/1.0/event?action=addOrUpdateEvent" %}
+{% api-method-summary %}
+addOrUpdateEvent
+{% endapi-method-summary %}
 
+{% api-method-description %}
 Add or update event details.
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="endDateTime" type="string" required=false %}
+When adding an event. The end date & time of the event. The value must be on or after startDateTime. \(Datatype = timestamp\)
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/event?action=addOrUpdateEvent`
+{% api-method-parameter name="capacity" type="integer" required=false %}
+The maximum number of attendees who can register for the event. A value of 0 \(zero\) represents no limit.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="budget" type="number" required=false %}
+A budget amount assigned to the event. \(Datatype = float\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="costCenterId" type="integer" required=false %}
+A cost center assigned to the event. The value is an identifier of a cost center in the account, which must be assignable to events.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="primaryContactUserId" type="integer" required=false %}
+The primary contact user of the event. The value is an identifier of a user in the account.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "success": true,
+  "id": 98481,
+  "code": "BAS4G248"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Parameters
 
@@ -55,16 +99,6 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
   "primaryContactUserId": 7821,
   "eventTypeIds": [56,57],
   "isAccommIncluded": false
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "success": true,
-  "id": 98481,
-  "code": "BAS4G248"
 }
 ```
 

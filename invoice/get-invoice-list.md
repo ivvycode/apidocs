@@ -15,7 +15,7 @@ Get list of invoices.
 | perPage | The number of invoices to get in a single api call | Required | integer |
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer |
 
-## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ A collection object with the following properties in the results
 | countryName | The country name of the address \(e.g. Australia\) |
 | postalCode | The postal code of the address |
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Example Response
 

@@ -15,7 +15,7 @@ Get list of companies.
 | perPage | The number of companies to get in a single api call | Required | integer |
 | start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer |
 
-## Additional [Filter ](../interpreting-the-response/filtering.md)Properties
+## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
@@ -51,5 +51,5 @@ Get list of companies.
 | countryCode \(e.g: AU\) |
 | postalCode |
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 

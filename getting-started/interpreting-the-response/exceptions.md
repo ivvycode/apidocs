@@ -1,6 +1,6 @@
 # Exceptions
 
-If an error occurred the response will be a [JSON](../development-reference/json-encoding.md) representation of what went wrong. This will provide the error code, a brief message as well as a specific code. The specific code is a useful piece of information to be provided in any bug reports.
+If an error occurred the response will be a [JSON](../../development-reference/json-encoding.md) representation of what went wrong. This will provide the error code, a brief message as well as a specific code. The specific code is a useful piece of information to be provided in any bug reports.
 
 Current exception codes and meanings are:
 

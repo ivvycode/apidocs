@@ -2,7 +2,7 @@
 
 ## Description
 
-The result from this call will be a [collection](../interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../interpreting-the-response/pagination.md) and [filter](../interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## API URL
 
@@ -87,7 +87,7 @@ One of the following values:
 | modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
-## Additional [Filter](../interpreting-the-response/filtering.md) Properties
+## Additional [Filter](../getting-started/interpreting-the-response/filtering.md) Properties
 
 | Property | Description | Type |
 | --- | --- | --- |
