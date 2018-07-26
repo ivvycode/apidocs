@@ -23,6 +23,8 @@
     * [Progress](getting-started/batch/progress.md)
     * [Restart](getting-started/batch/restart.md)
     * [Repost](getting-started/batch/repost.md)
+  * [Use Cases] (getting-started/use-cases/README.md)
+    * [Point Of Sale](getting-started/use-cases/point-of-sale.md)
 * [Contacts & Companies](contact/README.md)
   * [Get Contact List](contact/get-contact-list.md)
   * [Get Contact](contact/get-contact.md)
