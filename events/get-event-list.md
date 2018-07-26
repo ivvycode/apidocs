@@ -1,25 +1,64 @@
 # Get Event List
 
-## Description
+{% api-method method="get" host="\[PlatformAddress\]/api/1.0/event?action=getEventList" path="" %}
+{% api-method-summary %}
+getEventList
+{% endapi-method-summary %}
 
-Get list of event.
+{% api-method-description %}
+Get List of Events
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="perPage" type="integer" required=true %}
+The number of events to get in a single api call
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/event?action=getEventList`
+{% api-method-parameter name="start" type="integer" required=false %}
+The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result\)
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="includeVenueDetails" type="boolean" required=false %}
+If the response should include venue details
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| perPage | The number of events to get in a single api call. | Required | integer |
-| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) |  | integer |
-| includeVenueDetails | If the response should include venue details |  | boolean |
-| includeTicketDetails | If the response should include ticket details |  | boolean |
-| includeInformationDetails | If the response should include the event information |  | boolean |
-| includeHomepageContent | If the response should include the homepage content of the website |  | boolean |
-| orderBy | Sort results |  | Supported parameter “startDate” |
-| orderDir | Sort direction |  | ‘asc’ or ‘desc’ |
+{% api-method-parameter name="includeTicketDetails" type="boolean" required=false %}
+If the response should include ticket details
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="includeInformationDetails" type="boolean" required=false %}
+If the response should include the event information
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="includeHomepageContent" type="boolean" required=false %}
+If the response should include the homepage content of the website
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="orderBy" type="string" required=false %}
+Sort Results: Support Parameter 'startDate'
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="orderDir" type="string" required=false %}
+Sort Direction: Support Parameter 'asc' or 'desc'
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
