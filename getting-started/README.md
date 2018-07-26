@@ -1,9 +1,3 @@
----
-description: >-
-  Getting started with iVvy is easy with detailed documentation, SDKs and an
-  example app.
----
-
 # Getting Started
 
 The iVvy API allows apps to integrate directly with the iVvy product suite. Some typical use cases include:

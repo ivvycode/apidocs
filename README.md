@@ -1,7 +1,3 @@
----
-description: Welcome to the iVvy API Developer Documentation
----
-
 # API Documentation
 
 With iVvy's robust API, you can connect all your core business apps to meet your unique needs.
