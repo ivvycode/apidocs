@@ -12,7 +12,23 @@ Add or update event details.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="endDateTime" type="string" required=false %}
+{% api-method-parameter name="eventType" type="string" required=true %}
+Required when adding an event. Value must be 12. The value cannot be changed for an existing event. 
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="title" type="string" required=true %}
+Required when adding an event. The title of the event. Max Length: 140
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="timezone" type="string" required=true %}
+Required when adding an event. The timezone of the event. \(Datatype = timestamp\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="startDateTime" type="string" required=true %}
+When adding an event. The start date & time of the event.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="endDateTime" type="string" required=true %}
 When adding an event. The end date & time of the event. The value must be on or after startDateTime. \(Datatype = timestamp\)
 {% endapi-method-parameter %}
 
