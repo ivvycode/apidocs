@@ -1,15 +1,51 @@
 # Run
 
-## API URL
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/batch?action=run" path="" %}
+{% api-method-summary %}
+Run
+{% endapi-method-summary %}
 
-`[PlatformAddress]/api/1.0/batch?action=run`
+{% api-method-description %}
 
-## Parameters
+{% endapi-method-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| jobs | Array of api jobs to be run on the api. Each job needs to have the [keys](run.md#keys). | Required | string |
-| callbackUrl | The URL to hit with a POST request after the batch has been run, with a JSON object of the responses | Required | string |
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="jobs" type="string" required=true %}
+Array of api jobs to be run on the api. Each job needs to have keys
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="callbackUrl" type="string" required=true %}
+The URL to hit with a POST request after the batch has been run, with a JSON object of the responses
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "asyncId":"e35e06ee592d17a42dc9e6252a058617"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+```javascript
+{ 
+  "jobs":[{"namespace":"event",”action:"inviteContacts","params":{"event":1,"contacts":[1,2,3]}},     {"namespace":"event",”action:"inviteContacts","params":{"event":2,"contacts":[1,2,4]}},],
+  "callbackUrl":"http://example.callback.url.com"
+}
+```
 
 ## Keys
 
@@ -49,21 +85,4 @@ To run a batch job, an JSON object must be provided with the following keys:
       * action: The action of of the call for the response
       * request: The original request parameters used
       * response: The response of the api call
-
-## Example Request
-
-```javascript
-{ 
-  "jobs":[{"namespace":"event",”action:"inviteContacts","params":{"event":1,"contacts":[1,2,3]}},     {"namespace":"event",”action:"inviteContacts","params":{"event":2,"contacts":[1,2,4]}},],
-  "callbackUrl":"http://example.callback.url.com"
-}
-```
-
-## Example Response
-
-```javascript
-{
-    "asyncId":"e35e06ee592d17a42dc9e6252a058617"
-}
-```
 
