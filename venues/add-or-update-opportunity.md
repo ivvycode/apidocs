@@ -1,36 +1,152 @@
 # Add or Update Opportunity
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateOpportunity" path="" %}
+{% api-method-summary %}
+Add or Update Opportunity
+{% endapi-method-summary %}
 
-Add or update opportunity.
+{% api-method-description %}
 
-## API URL
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/venue?action=addOrUpdateOpportunity`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=false %}
+The unique identifier of opportunity   
+\(Leave empty if adding a new opportunity\)
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique venue if of the opportunity
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The unique identifier of opportunity\(Leave empty to add the opportunity to the system.\) |  | integer |
-| venueId | The unique venue id of opportunity | Required | integer |
-| qualityId | The quality of opportunity |  | integer |
-| companyId | The unique company id of opportunity | Required when lead belongs to company and id parameter is missing | integer |
-| industryId | The unique industry id of opportunity | Required when lead belongs to contact and id parameter is missing | integer |
-| sourceId | The unique source id of opportunity | Required when the id parameter is missing | integer |
-| confirmedQuoteId | The unique confirmed quote id of opportunity |  | integer |
-| confirmedQuoteStatus | The unique cancelled quote id of opportunity |  | integer |
-| cancelledQuoteId | The unique cancelled quote id of opportunity |  | integer |
-| lostToCompetition | The reson to lost to competition of opportunity |  |  |
-| closedDate | The closed date of opportunity |  |  |
-| companyLeadContactId | The unique contact id of the company contact | Required when lead belongs to company and id parameter is missing | integer |
-| contactId | The unique contact id of opportunity | Required when lead belongs to contact and id parameter is missing | integer |
-| name | The name for the opportunity | Required when the id parameter is missing |  |
-| ownerUserId | The sales person id of opportunity |  | integer |
-| typeId | The type of opportunity | Required when the id parameter is missing | integer |
-| stageId | The stage of opportunity | Required when the id parameter is missing | integer |
-| channel | The channel of opportunity |  | integer |
-| description | The description for the opportunity |  |  |
+{% api-method-parameter name="qualityId" type="integer" required=false %}
+The quality of opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="companyId" type="integer" required=false %}
+The unique company id of opportunity  
+\(Required when lead belongs to a company and the id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="industryId" type="integer" required=false %}
+The unique industry id of opportunity  
+\(Required when lead belongs to contact and id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sourceId" type="integer" required=false %}
+The unique source id of opportunity  
+\(Required when the ID parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="confirmedQuoteId" type="integer" required=false %}
+The unique confirmed quote id of opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="confirmedQuoteStatus" type="integer" required=false %}
+The status id of the confirmed quote
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="cancelledQuoteId" type="integer" required=false %}
+The unique cancelled quote id of opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lostToCompetition" type="integer" required=false %}
+The ID of the lost reason
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="closedDate" type="string" required=false %}
+The close date of the opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="companyLeadContactId" type="integer" required=false %}
+The unique contact ID of the company contact  
+\(Required when lead belongs to company and id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="contactId" type="integer" required=false %}
+The unique contact id of opportunity   
+\(Required when opportunity belongs to contact and id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=false %}
+The name for the opportunity  
+\(Required when id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="ownerUserId" type="integer" required=false %}
+The sales person id of opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="typeId" type="integer" required=false %}
+The type of opportunity  
+\(Required when id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="stageId" type="integer" required=false %}
+The stage of opportunity  
+\(Required when id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="stageReasonId" type="integer" required=false %}
+The unique stage reason id of opportunity 
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="channelId" type="string" required=false %}
+The channel id of Opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="description" type="string" required=false %}
+The description for the opportunity
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "success": true,
+  "id": 755
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+### Add Opportunity
+
+```javascript
+{
+  "venueId": "107",
+  "name": "Lead By API",
+  "contactId": "918",
+  "typeId": "18",
+  "sourceId": "25",
+  "stageId": "69",
+  "industryId": "77",
+  "stageReasonId": "127",
+  "closedDate": "2017-05-05"
+}
+```
+
+### Update Opportunity
+
+```javascript
+{
+  "id": 755,
+  "venueId": "107",
+  "name": "Updated Name"
+}
+```
 
 ## Returns
 
@@ -55,52 +171,4 @@ This call takes values for a opportunity, and either
    true or false\) and the opportunity identifier of the updated or newly
 
    created opportunity.
-
-## `Add opportunity`
-
-## Example Request
-
-```javascript
-{
-  "venueId": "107",
-  "name": "Lead By API",
-  "contactId": "918",
-  "typeId": "18",
-  "sourceId": "25",
-  "stageId": "69",
-  "industryId": "77",
-  "stageReasonId": "127",
-  "closedDate": "2017-05-05"
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "success": true,
-  "id": 755
-}
-```
-
-## `Update opportunity`
-
-## Example Request
-
-```javascript
-{
-  "id": 755,
-  "venueId": "107",
-  "name": "Updated Name"
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "success": true,
-  "id": 755
-}
-```
 
