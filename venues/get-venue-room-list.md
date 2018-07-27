@@ -1,26 +1,30 @@
 # Get Venue Room List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomList" path="" %}
+{% api-method-summary %}
+Get Venue Room List 
+{% endapi-method-summary %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties. The venueId is required, for example {"venuId":10}
+{% api-method-description %}
 
-## API URL
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/venue?action=getVenueRoomList`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The id of the venue
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Example Request
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-`Get a specific Venue’s Room List`
+{% endapi-method-response-example-description %}
 
-```javascript
-{
-  "venueId": 1
-}
 ```
-
-## Example Response
-
-```javascript
 {
   "meta": {
     "totalResults": 1,
@@ -42,6 +46,22 @@ The result from this call will be a [collection](../getting-started/interpreting
       "marketplaceName": null
     }
   ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties. The venueId is required, for example {"venuId":10}
+
+## Example Request
+
+`Get a specific Venue’s Room List`
+
+```javascript
+{
+  "venueId": 1
 }
 ```
 
