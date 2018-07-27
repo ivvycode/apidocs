@@ -1,21 +1,64 @@
 # Add or Update Cost Center
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=addOrUpdateCostCenter" path="" %}
+{% api-method-summary %}
+Add or Update Cost Center
+{% endapi-method-summary %}
 
-Add or update cost center details to the account. The cost center name and code are required.
+{% api-method-description %}
+Add or update cost center details to the account. 
+{% endapi-method-description %}
 
-## Api Url
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The unique identifier of the cost centre   
+\(Leave empty to add the cost centre to the account\)
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/account?action=addOrUpdateCostCenter`
+{% api-method-parameter name="name" type="string" required=true %}
+The name of the cost centre
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="code" type="string" required=true %}
+The code of the cost centre
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The unique identifier of the cost center \(Leave empty to add the cost center to the account.\) | Required | number |
-| name | The name of the cost center | Required | string |
-| code | The code of the cost center | Required | string |
-| description | The complete description of the cost center |  | string |
+{% api-method-parameter name="description" type="string" required=false %}
+The complete description of the coast centre
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "Success": true,
+  "Id": 5452
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+`Example: Add a cost center to an account`
+
+```javascript
+{
+  "name": "test cost center",
+  "code": "AB12",
+  "description": "The complete description of the cost center"
+}
+```
 
 ## Returns
 
@@ -30,25 +73,4 @@ Add or update cost center details to the account. The cost center name and code 
 | --- | --- |
 | Specific Code: 24150 | Account does not exist |
 | Specific Code: 24150 | The cost centers details are invalid |
-
-## Example Request
-
-`Example: Add a cost center to an account`
-
-```javascript
-{
-  "name": "test cost center",
-  "code": "AB12",
-  "description": "The complete description of the cost center"
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "Success": true,
-  "Id": 5452
-}
-```
 
