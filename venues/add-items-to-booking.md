@@ -1,20 +1,76 @@
 # Add Items To Booking
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addItemsToBooking" path="" %}
+{% api-method-summary %}
+Add Items to Booking
+{% endapi-method-summary %}
 
-You can add one or more items to a booking with this API. The venueId and BookingId is required. Multiple items can be added together. There must be at least one additional item.
+{% api-method-description %}
+Add one or more items to a booking. 
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique id of the venue to which the booking belongs
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/venue?action=addItemsToBooking`
+{% api-method-parameter name="bookingId" type="integer" required=true %}
+The unique id of the booking to which the additional items will be added
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="items" type="object" required=false %}
+Array of multiple items with additional item details
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| venueId | The unique id of the venue to which the booking belongs | Required | integer |
-| bookingId | The unique id of the booking to which the additional items will be added | Required | integer |
-| items | [Array of multiple items with additional item details.](add-items-to-booking.md#additional-item-details) |  | There must be at least one additional item. |
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "success": true,
+  "items": [
+    501
+  ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Multiple items can be added together. There must be at least one additional item.
+
+## Example Request
+
+```javascript
+{
+  "venueId": 2,
+  "bookingId": 2,
+  "items": [
+    {
+      "description": "The complete description of the additional item",
+      "quantity": 10,
+      "salePrice": 500,
+      "salePriceHasTax": true,
+      "salePriceTaxId": 2,
+      "cost": 15,
+      "costHasTax": true,
+      "costCentreId": 5,
+      "costCentreType": 2,
+      "startDate": "2015-01-19 00:00:00 UTC",
+      "endDate": "2015-01-22 00:00:00 UTC",
+      "excludedFromCommissions": true
+    }
+  ]
+}
+```
 
 ## Additional item details
 
@@ -46,42 +102,4 @@ You can add one or more items to a booking with this API. The venueId and Bookin
 | --- | --- |
 | Specific Code: 24140 | There must be at least one additional item |
 | Specific Code: 24141 | An additional item has invalid data |
-
-## Example Request
-
-`Add items to booking`
-
-```javascript
-{
-  "venueId": 2,
-  "bookingId": 2,
-  "items": [
-    {
-      "description": "The complete description of the additional item",
-      "quantity": 10,
-      "salePrice": 500,
-      "salePriceHasTax": true,
-      "salePriceTaxId": 2,
-      "cost": 15,
-      "costHasTax": true,
-      "costCentreId": 5,
-      "costCentreType": 2,
-      "startDate": "2015-01-19 00:00:00 UTC",
-      "endDate": "2015-01-22 00:00:00 UTC",
-      "excludedFromCommissions": true
-    }
-  ]
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "success": true,
-  "items": [
-    501
-  ]
-}
-```
 
