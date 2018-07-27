@@ -1,26 +1,30 @@
 # Get Booking
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBooking" path="" %}
+{% api-method-summary %}
+Get Booking
+{% endapi-method-summary %}
 
-The result from this call will be the details of a specific booking to which the user has access. The unique venue identifier is required, for example {“id”:123}
+{% api-method-description %}
+Get the details of a specific booking to which the user has access. 
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The id of the booking
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-`[PlatformAddress]/api/1.0/venue?action=getBooking`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-## Example Request
+{% endapi-method-response-example-description %}
 
-`Get a specific Booking`
-
-```javascript
-{
-  "id": 3
-}
 ```
-
-## Example Response
-
-```javascript
 {
   "id": 3,
   "venueId": 1,
@@ -74,6 +78,12 @@ The result from this call will be the details of a specific booking to which the
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+The result from this call will be the details of a specific booking to which the user has access. The unique booking identifier is required, for example {“id”:123}
 
 ## currentStatus
 

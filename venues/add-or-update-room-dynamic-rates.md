@@ -1,6 +1,7 @@
 # Add or Update Room Dynamic Rates
 
 ## Description
+
 Add or update the dynamic rates of venue rooms.
 
 NOTE: The dynamic data is only available to venues that integrate with a distribution channel.
@@ -31,6 +32,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ### Setting the room dynamic rate for a single date
 
 **REQUEST**
+
 ```javascript
 {
   "venueId": 123,
@@ -43,6 +45,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ```
 
 **RESPONSE**
+
 ```javascript
 {
   "success": true
@@ -52,6 +55,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ### Setting the room dynamic rate for a date range
 
 **REQUEST**
+
 ```javascript
 {
   "venueId": 123,
@@ -64,8 +68,10 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ```
 
 **RESPONSE**
+
 ```javascript
 {
   "success": true
 }
 ```
+
