@@ -1,12 +1,32 @@
 # Get Subscription Group List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getSubscriptionGroupList" path="" %}
+{% api-method-summary %}
+Get Subscription Group List
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 Subscription Groups are a feature that enables customers to segment their contacts into groups. These groups can then used for a range of purposes, including email and sms marketing, restricting access to event ticket types and content pages plus more.
-
-## API URL
-
-`[PlatformAddress]/api/1.0/contact?action=getSubscriptionGroupList`
 
 ## Returns
 
