@@ -1,43 +1,24 @@
 # Get Email Log List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=getEmailLogList" path="" %}
+{% api-method-summary %}
+Get Email Log List
+{% endapi-method-summary %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+{% api-method-description %}
 
-## Api Url
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/account?action=getEmailLogList`
+{% api-method-spec %}
+{% api-method-request %}
 
-## Returns
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description |
-| --- | --- |
-| id | The unique identifier of the email |
-| contactId | The contact id of of the email |
-| userId | The user id of of the email |
-| eventId | The event id of of the email |
-| type | The type of of the email |
-| refType | The reference type id of of the email |
-| refId | The reference id of of the email |
-| from | The from address of of the email |
-| to | The to address of the email |
-| bcc | The bcc of the email |
-| subject | The subject of the email |
-| body | The body of the email |
-| sentTime | The sent time of the email in UTC |
-| success | Whether or not email has been sent or not |
+{% endapi-method-response-example-description %}
 
-## Throws
-
-| Code | Description |
-| --- | --- |
-| Specific Code: 24151 | Account does not exist |
-
-## Example Response
-
-`Example: Get a specific account’s Email Logs List`
-
-```javascript
+```
 {
   "meta": {
     "totalResults": 1,
@@ -65,6 +46,37 @@ The result from this call will be a [collection](../getting-started/interpreting
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+
+## Returns
+
+| Property | Description |
+| --- | --- |
+| id | The unique identifier of the email |
+| contactId | The contact id of of the email |
+| userId | The user id of of the email |
+| eventId | The event id of of the email |
+| type | The type of of the email |
+| refType | The reference type id of of the email |
+| refId | The reference id of of the email |
+| from | The from address of of the email |
+| to | The to address of the email |
+| bcc | The bcc of the email |
+| subject | The subject of the email |
+| body | The body of the email |
+| sentTime | The sent time of the email in UTC |
+| success | Whether or not email has been sent or not |
+
+## Throws
+
+| Code | Description |
+| --- | --- |
+| Specific Code: 24151 | Account does not exist |
 
 ## refType:
 
