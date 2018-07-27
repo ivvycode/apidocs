@@ -1,36 +1,60 @@
 # Add or Update Room Counts
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateRoomCounts" path="" %}
+{% api-method-summary %}
+Add or Update Room Counts
+{% endapi-method-summary %}
 
-Add or update the dynamic inventory counts of venue rooms.
+{% api-method-description %}
+Add or update the dynamic inventory counts of venue rooms
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique id of the venue to which the room belongs
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="roomId" type="integer" required=true %}
+The unique id of the room for which the inventory count will be set
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="startDate" type="string" required=true %}
+The start date from which the room inventory count will be set \(Date Format\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="endDate" type="string" required=true %}
+The end date from which the room inventory count will be set \(Date Format\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="roomCount" type="integer" required=true %}
+The inventory count of the room from startDate to endDate
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "success": true
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 NOTE: The dynamic data is only available to venues that integrate with a distribution channel.
-
-## API URL
-
-`[PlatformAddress]/api/1.0/venue?action=addOrUpdateRoomCounts`
-
-## Parameters
-
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| venueId | The unique id of the venue to which the room belongs | Required | integer |
-| roomId | The unique id of the room for which the inventory count will be set | Required | integer |
-| startDate | The start date from which the room inventory count will be set | Required | date |
-| endDate | The end date until which the room inventory count will be set | Required | date |
-| roomCount | The inventory count of the room from startDate to endDate | Required | integer |
-
-## Returns
-
-| Property | Description | Type |
-| --- | --- | --- |
-| success | Whether or not the room inventory counts were updated | boolean |
 
 ## Examples
 
 ### Setting the room count for a single date
-
-**REQUEST**
 
 ```javascript
 {
@@ -42,17 +66,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 }
 ```
 
-**RESPONSE**
-
-```javascript
-{
-  "success": true
-}
-```
-
 ### Setting the room count for a date range
-
-**REQUEST**
 
 ```javascript
 {
@@ -64,11 +78,9 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 }
 ```
 
-**RESPONSE**
+## Returns
 
-```javascript
-{
-  "success": true
-}
-```
+| Property | Description | Type |
+| --- | --- | --- |
+| success | Whether or not the room inventory counts were updated | boolean |
 
