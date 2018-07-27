@@ -1,20 +1,70 @@
 # Add Refund To Booking
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addRefundToBooking" path="" %}
+{% api-method-summary %}
+Add Refund to Booking
+{% endapi-method-summary %}
 
-We can add a refund to a booking using this API. The venueId, Booking Id and refund details are required. All invoice of the booking will be check for the refunded amount and if the amount is refundable then only the refund amount will be added to invoice.
+{% api-method-description %}
+Add a refund to a booking using this api. 
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique id of the venue to which the booking belongs
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/venue?action=addRefundToBooking`
+{% api-method-parameter name="bookingId" type="integer" required=true %}
+The unique id of the booking to which the refund will be added
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="refund" type="object" required=false %}
+The payment details to add to the booking
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| venueId | The unique id of the venue to which the booking belongs | Required | integer |
-| bookingId | The unique id of the booking to which the refund will be added | Required | integer |
-| refund | [The payment details to add to the booking](add-refund-to-booking.md#payment-details) |  |  |
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "Success": true,
+  "refundDetails": [
+    {
+      "invoiceId": 1736,
+      "refundId": 180
+    }
+  ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+All invoices of the booking will be checked for the refunded amount and if the amount is refundable then only the refund amount will be added to invoice.
+
+## Example Request
+
+`Add refund to booking`
+
+```javascript
+{
+  "venueId": 2,
+  "bookingId": 2,
+  "refund": {
+    "refundDate": "2015-01-22 00:00:00 UTC",
+    "amount": 100,
+    "notes": "Note for refund"
+  }
+}
+```
 
 ## Payment Details
 
@@ -47,34 +97,4 @@ We can add a refund to a booking using this API. The venueId, Booking Id and ref
 | Specific Code: 24146 | Cannot refund more than the total amount payable on a booking |
 | Specific Code: 24147 | The refund amount must be greater than zero |
 | Specific Code: 24148 | The full refund amount could not be applied to the booking |
-
-## Example Request
-
-`Add refund to booking`
-
-```javascript
-{
-  "venueId": 2,
-  "bookingId": 2,
-  "refund": {
-    "refundDate": "2015-01-22 00:00:00 UTC",
-    "amount": 100,
-    "notes": "Note for refund"
-  }
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "Success": true,
-  "refundDetails": [
-    {
-      "invoiceId": 1736,
-      "refundId": 180
-    }
-  ]
-}
-```
 

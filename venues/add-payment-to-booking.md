@@ -1,66 +1,12 @@
 # Add Payment To Booking
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addPaymentToBooking" path="" %}
-{% api-method-summary %}
-Add Payment To Booking
-{% endapi-method-summary %}
+## Description
 
-{% api-method-description %}
-Add payment details to a booking. This will also generate an invoice that the payment is applied to. 
-{% endapi-method-description %}
+We can add the payment details of a booking using this API. The venueId, Booking Id and payment details are required. This will also create a payment and booking invoice.
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
-The unique id of the venue to which the booking belongs
-{% endapi-method-parameter %}
+## API URL
 
-{% api-method-parameter name="bookingId" type="integer" required=true %}
-The unique id of the booking to which the payment will be added
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="payment" type="object" required=false %}
-The payment details to add to the booking
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-  "Success": true,
-  "invoiceId": 1736,
-  "paymentId": 758
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-## Example Request
-
-`Add payment to booking`
-
-```javascript
-{
-  "venueId": 2,
-  "bookingId": 2,
-  "payment": {
-    "paidDate": "2015-01-22 00:00:00",
-    "amountPaid": 100,
-    "paymentMethod": 6,
-    "receiptNum": 12345,
-    "notes": "Note for payment"
-  }
-}
-```
+`[PlatformAddress]/api/1.0/venue?action=addPaymentToBooking`
 
 ## Parameters
 
@@ -111,4 +57,32 @@ The payment details to add to the booking
 | Code | Description |
 | --- | --- |
 | Specific Code: 24136 | The payment details are invalid |
+
+## Example Request
+
+`Add payment to booking`
+
+```javascript
+{
+  "venueId": 2,
+  "bookingId": 2,
+  "payment": {
+    "paidDate": "2015-01-22 00:00:00",
+    "amountPaid": 100,
+    "paymentMethod": 6,
+    "receiptNum": 12345,
+    "notes": "Note for payment"
+  }
+}
+```
+
+## Example Response
+
+```javascript
+{
+  "Success": true,
+  "invoiceId": 1736,
+  "paymentId": 758
+}
+```
 

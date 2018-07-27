@@ -31,6 +31,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ### Remove the room dynamic rates from a single date
 
 **REQUEST**
+
 ```javascript
 {
   "venueId": 123
@@ -42,6 +43,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ```
 
 **RESPONSE**
+
 ```javascript
 {
   "success": true
@@ -51,6 +53,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ### Remove the room dynamic rates from multiple dates
 
 **REQUEST**
+
 ```javascript
 {
   "venueId": 123
@@ -62,8 +65,10 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ```
 
 **RESPONSE**
+
 ```javascript
 {
   "success": true
 }
 ```
+
