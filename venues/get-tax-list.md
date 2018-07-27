@@ -1,41 +1,30 @@
 # Get Tax List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getTaxList" path="" %}
+{% api-method-summary %}
+Get Tax List
+{% endapi-method-summary %}
 
-This API will return all applicable tax list for the venue. venueId is required parameter to get the list of taxes.
+{% api-method-description %}
+Return the tax list for the venue. 
+{% endapi-method-description %}
 
-## Api Url
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The id of the venue
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-`[PlatformAddress]/api/1.0/venue?action=getTaxList`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-## Parameters
+{% endapi-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| venueId | The unique identifier of venue to which taxes belong | Required | integer |
-
-## Returns
-
-`A collection object with the following properties in the results`
-
-| Property | Description |
-| --- | --- |
-| id | The unique invoice identifier |
-| name | The name of Tax |
-
-## Example Request
-
-`Get Venues Tax List`
-
-```javascript
-{
-  "venueId": 2
-}
 ```
-
-## Example Response
-
-```javascript
 {
   "meta": {
     "totalResults": 1,
@@ -51,4 +40,27 @@ This API will return all applicable tax list for the venue. venueId is required 
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+`Get Venues Tax List`
+
+```javascript
+{
+  "venueId": 2
+}
+```
+
+## Returns
+
+`A collection object with the following properties in the results`
+
+| Property | Description |
+| --- | --- |
+| id | The unique invoice identifier |
+| name | The name of Tax |
 
