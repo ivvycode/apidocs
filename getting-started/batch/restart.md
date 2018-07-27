@@ -2,7 +2,7 @@
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/batch?action=restart" path="" %}
 {% api-method-summary %}
-
+Restart
 {% endapi-method-summary %}
 
 {% api-method-description %}
