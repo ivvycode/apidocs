@@ -1,27 +1,34 @@
 # Get Booking List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingList" path="" %}
+{% api-method-summary %}
+Get Booking List
+{% endapi-method-summary %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+{% api-method-description %}
+Get a list of bookings. 
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The id of the venue
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/venue?action=getBookingList`
+{% api-method-parameter name="perPage" type="integer" required=true %}
+The number of bookings to get in a single call
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Example Request
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-`Get a specific venue’s Booking List`
+{% endapi-method-response-example-description %}
 
-```javascript
-{
-  "venueId": "1",
-  "perPage": 1
-}
 ```
-
-## Example Response
-
-```javascript
 {
   "meta": {
     "totalResults": 256,
@@ -66,6 +73,23 @@ The result from this call will be a [collection](../getting-started/interpreting
       "beoFinalisedDate": "2015-02-09 03:37:39 UTC"
     }
   ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+
+## Example Request
+
+`Get a specific venue’s Booking List`
+
+```javascript
+{
+  "venueId": "1",
+  "perPage": 1
 }
 ```
 
