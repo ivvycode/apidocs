@@ -1,50 +1,34 @@
 # Add Contacts To Subscription Group
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=addContactsToSubscriptionGroup" path="" %}
+{% api-method-summary %}
+Add Contacts To Subscription Group
+{% endapi-method-summary %}
 
-Add contact details to subscription group.
+{% api-method-description %}
+Add contact details to subscription group
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="contacts" type="integer" required=true %}
+The contact identifiers to subscribe to the group. This is an array of contact identifiers
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=addContactsToSubscriptionGroup`
+{% api-method-parameter name="group" type="integer" required=true %}
+The subscription group identifier to add the contacts to
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| contacts | The contact identifiers to subscribe to the group | Required | integer \(This is an array of contact identifiers\) |
-| group | The subscription group identifier to add the contacts to | Required | integer |
+{% endapi-method-response-example-description %}
 
-## Returns
-
-An array of objects with the following properties
-
-| Property | Description |
-| --- | --- |
-| contactId | The contact this result is for |
-| status | If the contact was added to the group or not |
-
-## `Adds a number of contacts to a subscription group.`
-
-## Example Request
-
-Add 4 contacts to subscription group 2481
-
-```javascript
-{
-  "contacts": [
-    4,
-    6,
-    55,
-    33
-  ],
-  "group": 2481
-}
 ```
-
-## Example Response
-
-```javascript
 [
   {
     "contactId": 4,
@@ -64,4 +48,31 @@ Add 4 contacts to subscription group 2481
   }
 ]
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+```javascript
+{
+  "contacts": [
+    4,
+    6,
+    55,
+    33
+  ],
+  "group": 2481
+}
+```
+
+## Returns
+
+An array of objects with the following properties
+
+| Property | Description |
+| --- | --- |
+| contactId | The contact this result is for |
+| status | If the contact was added to the group or not |
 
