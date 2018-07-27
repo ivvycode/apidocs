@@ -1,19 +1,40 @@
 # Get Attendee
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getAttendee" path="" %}
+{% api-method-summary %}
+Get Attendee
+{% endapi-method-summary %}
 
-Get attendee details.
+{% api-method-description %}
 
-## API URL
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/event?action=getAttendee`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The attendee identifier
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="eventId" type="integer" required=true %}
+The event identifier to which attendee belongs
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The attendee identifier | Required | integer |
-| eventId | The event identifier to which attendee belongs | Required | integer |
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
