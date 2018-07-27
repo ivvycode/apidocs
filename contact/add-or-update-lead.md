@@ -1,33 +1,97 @@
 # Add or Update Lead
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=addOrUpdateLead" path="" %}
+{% api-method-summary %}
+Add or Update Lead
+{% endapi-method-summary %}
 
-Add or update lead detail.
+{% api-method-description %}
+Add or update the details of a lead
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The unique identifier of a lead   
+\(Leave empty to add the lead to the system\)
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=addOrUpdateLead`
+{% api-method-parameter name="qualityId" type="integer" required=true %}
+The quality of the lead
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="industryId" type="integer" required=false %}
+The unique industry of the lead.   
+\(Required when lead belongs to contact and id parameter is missing\)
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The unique identifier of lead\(Leave empty to add the lead to the system.\) | Required | integer |
-| qualityId | The quality of lead | Required | integer |
-| industryId | The unique industry id of lead | Required when lead belongs to contact and id parameter is missing | integer |
-| sourceId | The unique source id of lead |  | integer |
-|  |  | Required when the id parameter is missing |  |
-| companyId | The unique company id of lead | Required when lead belongs to company and id parameter is missing | integer |
-| companyLeadContactId | The unique company id of lead | Required when lead belongs to company and id parameter is missing | integer |
-| contactId | The unique contact id of lead | Required when lead belongs to contact and id parameter is missing | integer |
-| name | The name for the lead | Required when the id parameter is missing |  |
-| ownerUserId | The sales person id of lead |  | integer |
-| typeId | The type of lead |  | integer |
-|  |  | Required when the id parameter is missing |  |
-| stageId | The stage of lead |  | integer |
-|  |  | Required when the id parameter is missing |  |
-| channel | The channel of lead |  | integer |
-| description | The description for the lead |  | integer |
+{% api-method-parameter name="sourceId" type="integer" required=false %}
+The unique source id of the lead.   
+\(Required when the id parameter is missing. \)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="companyId" type="integer" required=false %}
+The unique company id of lead.   
+\(Required when lead belongs to company and id parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="companyLeadContactId" type="integer" required=false %}
+The unique company id of lead  
+\(Required when lead belongs to company and id parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="contactId" type="integer" required=false %}
+The unique contact id of lead  
+\(Required when lead belongs to contact and id parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=false %}
+The name for the lead  
+\(Required when the id parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="ownerUserId" type="integer" required=false %}
+The sales person id of lead
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="typeId" type="integer" required=false %}
+The type of lead   
+\(Required when id parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="stageId" type="integer" required=false %}
+The stage of lead  
+\(Required when id parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="stageReasonId" type="integer" required=false %}
+The unique stage reason id of opportunity
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="channelId" type="integer" required=false %}
+The channel Id of lead
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="description" type="string" required=false %}
+The description for the lead
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
