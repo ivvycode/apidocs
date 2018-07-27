@@ -1,34 +1,24 @@
 # Get Cost Center List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=getCostCenterList" path="" %}
+{% api-method-summary %}
 
-Fetches the list of cost centers in the account. No request params required.
+{% endapi-method-summary %}
 
-## Api Url
+{% api-method-description %}
+Fetches the list of cost centers in the account. No request params required. 
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/account?action=getCostCenterList`
+{% api-method-spec %}
+{% api-method-request %}
 
-## Returns
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description |
-| --- | --- |
-| id | The unique identifier of the cost center |
-| name | The name of the cost center |
-| code | The code of the cost center |
-| description | The complete description of the cost center |
-| defaultType | Set if one of the default cost centers |
+{% endapi-method-response-example-description %}
 
-## Throws
-
-| Code | Description |
-| --- | --- |
-| Specific Code: 24150 | Account does not exist |
-
-## Example Response
-
-`Example: get cost center list of the account`
-
-```javascript
+```
 {
   "meta": {
     "totalResults": 2,
@@ -54,4 +44,24 @@ Fetches the list of cost centers in the account. No request params required.
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Returns
+
+| Property | Description |
+| --- | --- |
+| id | The unique identifier of the cost center |
+| name | The name of the cost center |
+| code | The code of the cost center |
+| description | The complete description of the cost center |
+| defaultType | Set if one of the default cost centers |
+
+## Throws
+
+| Code | Description |
+| --- | --- |
+| Specific Code: 24150 | Account does not exist |
 
