@@ -1,26 +1,30 @@
 # Get Venue
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenue" path="" %}
+{% api-method-summary %}
+Get Venue
+{% endapi-method-summary %}
 
-The result from this call will be the details of a specific venue to which the user has access. The unique venue identifier is required, for example {“id”:123}
+{% api-method-description %}
+Get the details to a specific venue to which the user has access
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
 
-`[PlatformAddress]/api/1.0/venue?action=getVenue`
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Example Request
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-`Get a specific venue`
+{% endapi-method-response-example-description %}
 
-```javascript
-{
-  "id":21
-}
 ```
-
-## Example Response
-
-```javascript
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",
@@ -252,8 +256,20 @@ The result from this call will be the details of a specific venue to which the u
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-The following are properties in the example json response above that have special values.
+## Example Request
+
+`Get a specific venue`
+
+```javascript
+{
+  "id":21
+}
+```
 
 ## ratingAuthority
 
@@ -326,7 +342,9 @@ One of the following values:
 * 7 = Cocktail
 * 8 = Hollow Square
 
-## marketplaceEventTypes \(packages, function spaces and image library files\)
+## marketplaceEventTypes
+
+Packages, function spaces and image library file for the marketplaceEventType. 
 
 An array of the following values:
 
