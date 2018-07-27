@@ -1,36 +1,38 @@
 # Get Venue
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenue" path="" %}
+{% api-method-summary %}
+Get Venue
+{% endapi-method-summary %}
 
-The result from this call will be the public details of a specific venue in the iVvy marketplace. The unique venue hash identifier is required, for example { "hashId": "abcdefghijklmnop" }
+{% api-method-description %}
 
-This call also accepts the availabilityStartDate and availabilityEndDate parameters that are described by getVenueList. The behaviour is the same as getVenueList, but for only for the specific venue.
+{% endapi-method-description %}
 
-`Example: Get a specific venue and it’s availability from 1st July 2015 to 7th July 2015`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="hashId" type="string" required=true %}
+The unique venue has identifier
+{% endapi-method-parameter %}
 
-## Api Url
+{% api-method-parameter name="availabilityStartDate" type="string" required=false %}
+The availability start date \(Date Format\)
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/venue?action=getVenue`
+{% api-method-parameter name="availabilityEndDate" type="string" required=false %}
+The availability end date \(Date Format\)
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
+{% endapi-method-response-example-description %}
 
-
-## Example Request
-
-```javascript
-{
-  "hashId": "1efda3e35a75aabd13e8996037d35a79",
-  "availabilityStartDate": "2015-07-01",
-  "availabilityEndDate": "2015-07-07"
-}
 ```
-
-## Example Response
-
-```javascript
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",
@@ -254,6 +256,26 @@ This call also accepts the availabilityStartDate and availabilityEndDate paramet
       }
     }
   ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+The result from this call will be the public details of a specific venue in the iVvy marketplace. The unique venue hash identifier is required, for example { "hashId": "abcdefghijklmnop" }
+
+This call also accepts the availabilityStartDate and availabilityEndDate parameters that are described by getVenueList. The behaviour is the same as getVenueList, but for only for the specific venue.
+
+## Example Request
+
+`Example: Get a specific venue and it’s availability from 1st July 2015 to 7th July 2015`
+
+```javascript
+{
+  "hashId": "1efda3e35a75aabd13e8996037d35a79",
+  "availabilityStartDate": "2015-07-01",
+  "availabilityEndDate": "2015-07-07"
 }
 ```
 
