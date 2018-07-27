@@ -24,7 +24,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 | Property | Description | Type |
 | --- | --- | --- |
-| success | Whether or not the room inventory counts were updated. | boolean |
+| success | Whether or not the room inventory counts were updated | boolean |
 
 ## Examples
 
