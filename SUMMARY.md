@@ -61,6 +61,7 @@
   * [Add Payment To Booking](venues/add-payment-to-booking.md)
   * [Add Refund To Booking](venues/add-refund-to-booking.md)
   * [Get Tax List](venues/get-tax-list.md)
+  * [Add or Update Room Counts](venues/add-or-update-room-counts.md)
   * [Add or Update Opportunity](venues/add-or-update-opportunity.md)
   * [Convert Lead To Opportunity](venues/convert-lead-to-opportunity.md)
 * [Marketplace](marketplace/README.md)
