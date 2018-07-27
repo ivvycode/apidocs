@@ -1,18 +1,36 @@
 # Get Event
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getEvent" path="" %}
+{% api-method-summary %}
 
-Add or update event details.
+{% endapi-method-summary %}
 
-## API URL
+{% api-method-description %}
+Add or update event details
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/event?action=getEvent`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="integer" required=true %}
+The event identifier
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The event identifier | Required | integer |
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
