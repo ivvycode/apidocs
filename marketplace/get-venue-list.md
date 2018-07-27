@@ -1,48 +1,46 @@
 # Get Venue List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/marketplace?action=getVenueList" path="" %}
+{% api-method-summary %}
+Get Venue List
+{% endapi-method-summary %}
 
-This api call allows you to search the iVvy marketplace for venues that match the following criteria:
+{% api-method-description %}
 
-* countryCode \(required\): The 2 letter country code \(ISO\_3166-1\) of the venue
-* city \(optional\): The location city of the venue. Currently one of the following values:
-  * brisbane-qld
-  * sydney-nsw
-* eventTypes \(optional\): One or more of the following event types for which the venue can provide:
-  * 11 = Event
-  * 21 = Wedding
-  * 31 = Conference
-  * 41 = Meeting
-* availabilityStartDate \(optional\): The start date of the period from which to include the function space availability details of the venues. The value must be a string with the format YYYY-MM-DD, for example: 2015-05-20
-* availabilityEndDate \(optional\): The end date of the period from which to include the function space availability details of the venues. The value must be a string with the format YYYY-MM-DD, for example: 2015-05-25
+{% endapi-method-description %}
 
-This call also accepts the pagination parameters. By default, only the first 10 venues will be returned.
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="countryCode" type="string" required=true %}
+2 letter country code \(ISO-3166-1\) of the venue
+{% endapi-method-parameter %}
 
-`Example: Find all the venues in Brisbane that can provide weddings. Include their availability from 1st July 2015 to 7th July 2015`
+{% api-method-parameter name="city" type="string" required=false %}
+The location city of the venue.
+{% endapi-method-parameter %}
 
-## Api Url
+{% api-method-parameter name="eventTypes" type="integer" required=false %}
+One or more event types
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/marketplace?action=getVenueList`
+{% api-method-parameter name="availabilityStartDate" type="string" required=false %}
+Date Format YYYY-MM-DD
+{% endapi-method-parameter %}
 
-## Example Request
+{% api-method-parameter name="availabilityEndDate" type="string" required=false %}
+Date Format YYYY-MM-DD
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-```javascript
-{
-  "countryCode": "AU",
-  "city": "brisbane-qld",
-  "eventTypes": [
-    11
-  ],
-  "availabilityStartDate": "2015-07-01",
-  "availabilityEndDate": "2015-07-07"
-}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
 ```
-
-## Example Response
-
-`A collection of venues that match the criteria. A single venue will be represented by the following json example:`
-
-```javascript
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",
@@ -106,4 +104,40 @@ This call also accepts the pagination parameters. By default, only the first 10 
   }
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+`Example: Find all the venues in Brisbane that can provide weddings. Include their availability from 1st July 2015 to 7th July 2015`
+
+```javascript
+{
+  "countryCode": "AU",
+  "city": "brisbane-qld",
+  "eventTypes": [
+    11
+  ],
+  "availabilityStartDate": "2015-07-01",
+  "availabilityEndDate": "2015-07-07"
+}
+```
+
+This api call allows you to search the iVvy marketplace for venues that match the following criteria:
+
+* countryCode \(required\): The 2 letter country code \(ISO\_3166-1\) of the venue
+* city \(optional\): The location city of the venue. Currently one of the following values:
+  * brisbane-qld
+  * sydney-nsw
+* eventTypes \(optional\): One or more of the following event types for which the venue can provide:
+  * 11 = Event
+  * 21 = Wedding
+  * 31 = Conference
+  * 41 = Meeting
+* availabilityStartDate \(optional\): The start date of the period from which to include the function space availability details of the venues. The value must be a string with the format YYYY-MM-DD, for example: 2015-05-20
+* availabilityEndDate \(optional\): The end date of the period from which to include the function space availability details of the venues. The value must be a string with the format YYYY-MM-DD, for example: 2015-05-25
+
+This call also accepts the pagination parameters. By default, only the first 10 venues will be returned.
 
