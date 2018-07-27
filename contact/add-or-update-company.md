@@ -1,27 +1,114 @@
 # Add or Update Company
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=addOrUpdateCompany" path="" %}
+{% api-method-summary %}
+Add or Update Company
+{% endapi-method-summary %}
 
-Add or update company detail.
+{% api-method-description %}
+Add or update company details
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The company's identifier. \(Leave empty to add the company to the system\)
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=addOrUpdateCompany`
+{% api-method-parameter name="externalId" type="string" required=false %}
+Optionally a unique identifier of the company that is managed by an external application
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="businessName" type="string" required=false %}
+The company's business name. \(Mandatory if adding a new company\)
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The company’s identifier. \(Leave empty to add the company to the system.\) | Required | integer |
-| externalId | Optionally a unique identifier of the company that is managed by an external application |  |  |
-| businessName | The company's business name | Mandatory if adding a new company |  |
-| tradingName | The company's trading name |  |  |
-| businessNumber | The company's registration number |  |  |
-| phone | The company's phone number |  |  |
-| fax | The company's fax number |  |  |
-| website | The company's website |  |  |
-| email | The company's email address |  |  |
-| address | The company’s address. This is an an object with the [keys](add-or-update-company.md#keys) |  |  |
+{% api-method-parameter name="tradingName" type="string" required=false %}
+The company's trading name
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="businessNumber" type="string" required=false %}
+The company's registration number
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="phone" type="string" required=false %}
+The company's phone number
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="fax" type="string" required=false %}
+The company's fax number
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="website" type="string" required=false %}
+The company's website
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=false %}
+The company's email address
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="address" type="string" required=false %}
+The company's address. This is an object with the keys
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+Adding a company
+{
+  "success": true,
+  "id": 1618
+}
+
+Updating a company
+{
+  "id": 1618
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request: Adding a company
+
+```javascript
+{
+  "businessName": "New Company",
+  "tradingName": "ABC",
+  "email": "company@test.com",
+  "address": {
+    "line1": "address line 1",
+    "line2": "address line 2",
+    "stateCode": "QLD",
+    "postalCode": "4227",
+    "countryCode": "AU"
+  }
+}
+```
+
+## Example Request: Updating a Company
+
+```javascript
+{
+  "id": 1618,
+  "businessName": "Updated Company name",
+  "address": {
+    "line1": "address line 11",
+    "line2": "address line 22",
+    "stateCode": "QLD",
+    "postalCode": "4227",
+    "countryCode": "AU"
+  }
+}
+```
 
 ## Keys
 
@@ -63,58 +150,4 @@ The properties of the company currently supported are:
 * email
 * address
   * This is an object
-
-## `Adding a company`
-
-## Example Request
-
-```javascript
-{
-  "businessName": "New Company",
-  "tradingName": "ABC",
-  "email": "company@test.com",
-  "address": {
-    "line1": "address line 1",
-    "line2": "address line 2",
-    "stateCode": "QLD",
-    "postalCode": "4227",
-    "countryCode": "AU"
-  }
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "success": true,
-  "id": 1618
-}
-```
-
-## `Updating a company`
-
-## Example Request
-
-```javascript
-{
-  "id": 1618,
-  "businessName": "Updated Company name",
-  "address": {
-    "line1": "address line 11",
-    "line2": "address line 22",
-    "stateCode": "QLD",
-    "postalCode": "4227",
-    "countryCode": "AU"
-  }
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "id": 1618
-}
-```
 

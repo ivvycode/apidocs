@@ -1,19 +1,40 @@
 # Remove Contacts From Subscription Group
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=removeContactsFromSubscriptionGroup" path="" %}
+{% api-method-summary %}
+Remove Contacts From Subscription Groups
+{% endapi-method-summary %}
 
-Remove contact details from subscription group.
+{% api-method-description %}
+Remove contact details from a subscription group
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="contacts" type="integer" required=true %}
+The contact identifiers to unsubscribe from the group
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=removeContactsFromSubscriptionGroup`
+{% api-method-parameter name="" type="integer" required=true %}
+The subscription group identifier to remove the contacts from
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| contacts | The contact identifiers to unsubscribe from the group | Required | integer \(This is an array of contact identifiers\) |
-| group | The subscription group identifier to remove the contacts from | Required | integer |
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
