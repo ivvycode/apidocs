@@ -1,31 +1,60 @@
 # Add or Update Rate Plan Booking Rules
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateRatePlanBookingRules" path="" %}
+{% api-method-summary %}
+Add or Update Rate Plan Booking Rules 
+{% endapi-method-summary %}
 
-Add or update the booking rules of venue rate plans.
+{% api-method-description %}
+Add or Update the booking rules of venue rate plans
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique id of the venue to which the rate plan belongs
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="barId" type="integer" required=true %}
+The unique id of the rate plan to which the booking rule applies
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="roomId" type="integer" required=true %}
+The unique id of the room to which the booking rule applies
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="startDate" type="string" required=true %}
+The start date from which the booking rule will apply
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="endDate" type="string" required=true %}
+The end date until which the booking rule will apply
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="closeOutStatus" type="object" required=true %}
+The close out status of the booking rule from startDate to End Date
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "success": true
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 NOTE: The dynamic data is only available to venues that integrate with a distribution channel.
-
-## API URL
-
-`[PlatformAddress]/api/1.0/venue?action=addOrUpdateRatePlanBookingRules`
-
-## Parameters
-
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| venueId | The unique id of the venue to which the rate plan belongs | Required | integer |
-| barId | The unique id of the rate plan to which the booking rule applies | Required | integer |
-| roomId | The unique id of the room to which the booking rule applies | Required | integer |
-| startDate | The start date from which the booking rule will apply | Required | date |
-| endDate | The end date until which the booking rule will apply | Required | date |
-| closeOutStatus | The close out status of the booking rule from startDate to endDate | Required | [CloseOutStatus](add-or-update-rateplan-bookingrules.md#close-out-status) |
-
-## Returns
-
-| Property | Description | Type |
-| --- | --- | --- |
-| success | Whether or not the rate plan booking rules were updated | boolean |
 
 ## Examples
 
@@ -44,14 +73,6 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 }
 ```
 
-**RESPONSE**
-
-```javascript
-{
-  "success": true
-}
-```
-
 ### Setting the rate plan booking rules for a date range
 
 **REQUEST**
@@ -67,13 +88,11 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 }
 ```
 
-**RESPONSE**
+## Returns
 
-```javascript
-{
-  "success": true
-}
-```
+| Property | Description | Type |
+| --- | --- | --- |
+| success | Whether or not the rate plan booking rules were updated | boolean |
 
 ## Close Out Status
 
