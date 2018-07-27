@@ -1,8 +1,9 @@
 # Add or Update Room Counts
 
 ## Description
+Add or update the dynamic inventory counts of venue rooms.
 
-Add or update the dynamic inventory counts of venue rooms. NOTE: The dynamic inventory data is only available to venues that integrate with a distribution channel.
+NOTE: The dynamic data is only available to venues that integrate with a distribution channel.
 
 ## API URL
 
