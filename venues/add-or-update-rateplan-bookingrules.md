@@ -79,7 +79,5 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 The following close out status values are supported by the current booking rules.
 
-| Value | Description |
-| --- | --- |
-| 1 | The room is open for bookings |
-| 2 | The room is closed for bookings |
+\| 1 \| The room is open for bookings \| \| 2 \| The room is closed for bookings \|
+
