@@ -85,6 +85,14 @@ The id of the booking
 
 The result from this call will be the details of a specific booking to which the user has access. The unique booking identifier is required, for example {“id”:123}
 
+## Example Request
+
+```text
+{
+    "id":3
+}
+```
+
 ## currentStatus
 
 One of the following values:
