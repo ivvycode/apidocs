@@ -1,19 +1,40 @@
 # Get Company List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getCompanyList" path="" %}
+{% api-method-summary %}
+Get Company List
+{% endapi-method-summary %}
 
-Get list of companies.
+{% api-method-description %}
+Get a list of companies
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="perPage" type="integer" required=true %}
+The number of companies to get in a single call
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=getCompanyList`
+{% api-method-parameter name="start" type="integer" required=true %}
+The starting result of the page. Not this is zero based \(i.e. sending start = 0 will start from the first result.\)
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| perPage | The number of companies to get in a single api call | Required | integer |
-| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Required | integer |
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
