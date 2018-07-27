@@ -1,18 +1,30 @@
 # Get Venue List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueList" path="" %}
+{% api-method-summary %}
+Get Venue List
+{% endapi-method-summary %}
 
-Get list of venues.
+{% api-method-description %}
+Get a list of venues. 
+{% endapi-method-description %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
 
-## Api Url
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-`[PlatformAddress]/api/1.0/venue?action=getVenueList`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-## Example Response
+{% endapi-method-response-example-description %}
 
-```javascript
+```
 {
   "meta": {
     "totalResults": 19,
@@ -102,4 +114,10 @@ The result from this call will be a [collection](../getting-started/interpreting
   ]
 }
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
