@@ -1,57 +1,68 @@
 # Add or Update Contact
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=addOrUpdateContact" path="" %}
+{% api-method-summary %}
+Add or Update Contact
+{% endapi-method-summary %}
 
-Add or update contact details.
+{% api-method-description %}
+Add or update contact details
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=false %}
+The contact's identifier. \(Leave empty to add new contact\)
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/contact?action=addOrUpdateContact`
+{% api-method-parameter name="firstName" type="string" required=false %}
+The contact's first name \(required when id is missing\)
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="LastName" type="string" required=false %}
+The contact's last name \(required when id is missing\)
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The contact’s identifier. \(Leave empty to add the contact to the system.\) |  | integer |
-| firstName | The contact’s first name | Required \(when the id parameter is missing\) | string |
-| lastName | The contact’s last name | Required \(when the id parameter is missing\) | string |
-| email | The contact’s email address | Must be a valid email. | string |
-| phone | The contact’s phone number | Must be a valid phone number. | string |
-| groups | The array of subscription groups to set for the contact | Note : this list will override any groups currently set for the contact | string |
-| customFields | The array of custom fields to set on the contact | Each field will be validated depending on the type of field that is being set. |  |
-| companies | The array of companies to set the contact. | Each values will be validated depending on the type of field as well as it will verify that the given company is exist or not. |  |
+{% api-method-parameter name="email" type="string" required=false %}
+The contact's email address. Must be a valid email. \(required when id is missing\) 
+{% endapi-method-parameter %}
 
-## Returns
+{% api-method-parameter name="phone" type="string" required=false %}
+The contacts phone number. 
+{% endapi-method-parameter %}
 
-| Property | Description |
-| --- | --- |
-| success | If the contact was successfully added or updated |
-| id | The unique identifier for the contact |
-| message | Message of the failure \(if success was false\) |
+{% api-method-parameter name="groups" type="string" required=false %}
+The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact. 
+{% endapi-method-parameter %}
 
-This call takes values for a contact, and either
+{% api-method-parameter name="customFields" type="string" required=false %}
+The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set. 
+{% endapi-method-parameter %}
 
-1. Updates the values for that contact \(after you have provided an id in the parameters\), or
-2. Adds the contact to the system \(if the id parameter is missing\)
+{% api-method-parameter name="companies" type="string" required=false %}
+The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.  
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-The result of this call will contain the status of the result \(either true or false\) and the contact identifier of the updated or newly created contact.
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-The properties of the contact currently supported are:
+{% endapi-method-response-example-description %}
 
-* firstName
-* lastName
-* email
-* phone
-* groups
-  * This is an array of group objects with the ‘groupId’ key.
-* customFields
-  * This is an array of custom field objects with ‘fieldId’ and ‘value’ keys
-* Companies
-  * This is an array of companies Ids
+```
+{
+  "id":33884
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-## `Adding a contact`
-
-## Example Request
+## Example Request: Adding a contact
 
 ```javascript
 {
@@ -75,17 +86,7 @@ The properties of the contact currently supported are:
 }
 ```
 
-## Example Response
-
-```javascript
-{
-  "id":33884
-}
-```
-
-## `Updating a contact`
-
-## Example Request
+## Example Request: Updating a contact
 
 `Note : the groups will be set to only group 10, destroying the existing value`
 
@@ -99,11 +100,31 @@ The properties of the contact currently supported are:
 }
 ```
 
-## Example Response
+This call takes values for a contact, and either
 
-```javascript
-{
-   "id":33884
-}
-```
+1. Updates the values for that contact \(after you have provided an id in the parameters\), or
+2. Adds the contact to the system \(if the id parameter is missing\)
+
+The result of this call will contain the status of the result \(either true or false\) and the contact identifier of the updated or newly created contact.
+
+The properties of the contact currently supported are:
+
+* firstName
+* lastName
+* email
+* phone
+* groups
+  * This is an array of group objects with the ‘groupId’ key.
+* customFields
+  * This is an array of custom field objects with ‘fieldId’ and ‘value’ keys
+* Companies
+  * This is an array of companies Ids
+
+## Returns
+
+| Property | Description |
+| --- | --- |
+| success | If the contact was successfully added or updated |
+| id | The unique identifier for the contact |
+| message | Message of the failure \(if success was false\) |
 
