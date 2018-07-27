@@ -1,20 +1,44 @@
 # Convert Lead To Opportunity
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=convertLeadToOpportunity" path="" %}
+{% api-method-summary %}
+Convert Lead to Opportunity
+{% endapi-method-summary %}
 
-Convert lead to opportunity.
+{% api-method-description %}
 
-## API URL
+{% endapi-method-description %}
 
-`[PlatformAddress]/api/1.0/venue?action=convertLeadToOpportunity`
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="leadId" type="integer" required=true %}
+The unique identifier of lead
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique venue id of opportunity
+{% endapi-method-parameter %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| leadId | The unique identifier of lead | Required | integer |
-| venueId | The unique venue id of opportunity | Required | integer |
-| stageId | The stage of opportunity | Required | integer |
+{% api-method-parameter name="stageId" type="integer" required=true %}
+The stage of opportunity
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
