@@ -1,18 +1,104 @@
 # Get Invoice
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/invoice?action=getInvoice" path="" %}
+{% api-method-summary %}
+Get Invoice
+{% endapi-method-summary %}
 
-Get invoice details.
+{% api-method-description %}
+Get details of an invoice
+{% endapi-method-description %}
 
-## Api Url
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The invoice identifier
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-`[PlatformAddress]/api/1.0/invoice?action=getInvoice`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-## Parameters
+{% endapi-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The invoice identifier | Required | integer |
+```
+{
+  "id": 15,
+  "reference": 100000157,
+  "title": "test",
+  "description": null,
+  "currency": "AUD",
+  "totalCost": 150,
+  "totalTaxCost": 13.64,
+  "amountPaid": 150,
+  "toContactEmail": "wd42nc6d@h2k5lftg.com",
+  "toContactName": "wd42nc6d h2k5lftg",
+  "currentStatus": 2,
+  "createdDate": "2010-06-07 12:21:40 UTC",
+  "modifiedDate": "2015-07-18 01:32:39 UTC",
+  "refType": 1,
+  "refId": 107,
+  "taxRateUsed": 10,
+  "isTaxCharged": 1,
+  "paymentDueDate": "",
+  "eventId": 56,
+  "venueId": null,
+  "toContactId": 25148,
+  "toAddress": {
+    "line1": "66949VGT",
+    "line2": "9J08OO8E",
+    "line3": "3JVPX2E",
+    "line4": "8G6MLU9M",
+    "city": "2G6NP196",
+    "stateCode": "QLD",
+    "stateName": null,
+    "countryCode": "AU",
+    "countryName": null,
+    "postalCode": "5SA19NAQ"
+  },
+  "items": [
+    {
+      "description": "Registration 107 of event National Technology Conference",
+      "quantity": 1,
+      "unitCost": 150,
+      "totalCost": 150,
+      "totalTaxCost": 13.64,
+      "amountPaid": 150,
+      "refType": 0
+    }
+  ],
+  "payments": [
+    {
+      "paymentId": null,
+      "receiptNum": "6WCQRIXZ",
+      "amountPaid": 150,
+      "feeAmount": 0,
+      "feePercentage": 0,
+      "notes": "8TPCEN81",
+      "chequeNumber": null,
+      "paymentMethod": 6,
+      "paidDate": "2011-07-04 23:00:00 UTC"
+    }
+  ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+`Get a specific invoice`
+
+```javascript
+{ 
+  "id":15
+}
+```
 
 ## Returns
 
@@ -117,78 +203,4 @@ A collection object with the following properties in the results
 | Specific Code: 24137 | Unable to find invoice |
 
 The invoice identifier must be provided as part of this call to fetch the specific invoice. E.g. {"id":1} can be used to fetch the details of an invoice with the identifier of 1.
-
-## Example Request
-
-`Get a specific invoice`
-
-```javascript
-{ 
-  "id":15
-}
-```
-
-## Example Response
-
-```javascript
-{
-  "id": 15,
-  "reference": 100000157,
-  "title": "test",
-  "description": null,
-  "currency": "AUD",
-  "totalCost": 150,
-  "totalTaxCost": 13.64,
-  "amountPaid": 150,
-  "toContactEmail": "wd42nc6d@h2k5lftg.com",
-  "toContactName": "wd42nc6d h2k5lftg",
-  "currentStatus": 2,
-  "createdDate": "2010-06-07 12:21:40 UTC",
-  "modifiedDate": "2015-07-18 01:32:39 UTC",
-  "refType": 1,
-  "refId": 107,
-  "taxRateUsed": 10,
-  "isTaxCharged": 1,
-  "paymentDueDate": "",
-  "eventId": 56,
-  "venueId": null,
-  "toContactId": 25148,
-  "toAddress": {
-    "line1": "66949VGT",
-    "line2": "9J08OO8E",
-    "line3": "3JVPX2E",
-    "line4": "8G6MLU9M",
-    "city": "2G6NP196",
-    "stateCode": "QLD",
-    "stateName": null,
-    "countryCode": "AU",
-    "countryName": null,
-    "postalCode": "5SA19NAQ"
-  },
-  "items": [
-    {
-      "description": "Registration 107 of event National Technology Conference",
-      "quantity": 1,
-      "unitCost": 150,
-      "totalCost": 150,
-      "totalTaxCost": 13.64,
-      "amountPaid": 150,
-      "refType": 0
-    }
-  ],
-  "payments": [
-    {
-      "paymentId": null,
-      "receiptNum": "6WCQRIXZ",
-      "amountPaid": 150,
-      "feeAmount": 0,
-      "feePercentage": 0,
-      "notes": "8TPCEN81",
-      "chequeNumber": null,
-      "paymentMethod": 6,
-      "paidDate": "2011-07-04 23:00:00 UTC"
-    }
-  ]
-}
-```
 
