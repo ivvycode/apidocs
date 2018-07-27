@@ -1,12 +1,30 @@
 # Get Custom Field Definition
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getCustomFieldDefinition" path="" %}
+{% api-method-summary %}
+Get Custom Field Definition
+{% endapi-method-summary %}
 
-Get the definition of custom field.
+{% api-method-description %}
+Get the definition of custom field
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
 
-`[PlatformAddress]/api/1.0/contact?action=getCustomFieldDefinition`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
