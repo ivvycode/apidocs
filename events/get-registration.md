@@ -1,19 +1,40 @@
 # Get Registration
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getRegistration" path="" %}
+{% api-method-summary %}
+Get Registration
+{% endapi-method-summary %}
 
-Get registration details.
+{% api-method-description %}
+Get Registration Details
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="integer" required=true %}
+The registration identifier
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/event?action=getRegistration`
+{% api-method-parameter name="eventId" type="integer" required=true %}
+The event identifier to which registration belongs
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-## Parameters
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| id | The registration identifier | Required | integer |
-| eventId | The event identifier to which registration belongs | Required | integer |
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Returns
 
