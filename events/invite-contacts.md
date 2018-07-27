@@ -2,7 +2,7 @@
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=inviteContacts" path="" %}
 {% api-method-summary %}
-
+Invite Contacts
 {% endapi-method-summary %}
 
 {% api-method-description %}

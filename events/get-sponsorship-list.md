@@ -1,18 +1,49 @@
 # Get Sponsorship List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getSponsorshipList" path="" %}
+{% api-method-summary %}
+Get Sponsorship List
+{% endapi-method-summary %}
 
-Get sponsorship list.
+{% api-method-description %}
+Lists the sponsors that are sponsoring the event. 
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="event" type="integer" required=true %}
+The event identifier
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-`[PlatformAddress]/api/1.0/event?action=getSponsorshipList`
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-## Parameters
+{% endapi-method-response-example-description %}
 
-| Property | Description | Required | Type |
-| --- | --- | --- | --- |
-| event | The event identifier | Required | integer |
+```
+{
+"meta":{"totalResults":1,"start":0,"perPage":1,"count":1},"results":[{"id":"1","name":"Test Sponsor for event 1","description":"...","websiteAddress":"www.sponsor1.com","logoI
+mageUrl":"https://.../554ac739bcc9a.png","level":"9","customLevelId":null,"sponsorshipAmount":"44","sponsorshipAmountPaid":"4"}]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+## Example Request
+
+`Example: Fetch the list of sponsors on an event`
+
+```javascript
+{
+  "event":15593
+}
+```
 
 ## Returns
 
@@ -36,25 +67,4 @@ A collection array with the following object properties in the results
 | --- | --- |
 | Specific Code: 24094 | Event does not have sponsors |
 | Specific Code: 24100 | Unable to find event |
-
-Lists the sponsors that are sponsoring the event.
-
-`Example: Fetch the list of sponsors on an event`
-
-## Example Request
-
-```javascript
-{
-  "event":15593
-}
-```
-
-## Example Response
-
-```javascript
-{
-"meta":{"totalResults":1,"start":0,"perPage":1,"count":1},"results":[{"id":"1","name":"Test Sponsor for event 1","description":"...","websiteAddress":"www.sponsor1.com","logoI
-mageUrl":"https://.../554ac739bcc9a.png","level":"9","customLevelId":null,"sponsorshipAmount":"44","sponsorshipAmountPaid":"4"}]
-}
-```
 
