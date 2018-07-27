@@ -1,20 +1,44 @@
 # Get Registration List
 
-## Description
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getRegistrationList" path="" %}
+{% api-method-summary %}
+Get Registration List
+{% endapi-method-summary %}
 
-Get list of registration.
+{% api-method-description %}
+Get a list of registrations
+{% endapi-method-description %}
 
-## API URL
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="perPage" type="integer" required=true %}
+The number of registrations to get in a single api call. Must be an integer greater than 0 and maximum 100
+{% endapi-method-parameter %}
 
-`[PlatformAddress]/api/1.0/event?action=getRegistrationList`
+{% api-method-parameter name="start" type="integer" required=true %}
+The starting result of the page. Note this is zero based \(i.e. sending start = 0 will start from first result\). Must be 0 or greater
+{% endapi-method-parameter %}
 
-## Parameters
+{% api-method-parameter name="eventId" type="integer" required=true %}
+The event identifier. 
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
-| Property | Description | Type |
-| --- | --- | --- |
-| perPage | The number of registrations to get in a single api call | Must be an integer greater than 0 and maximum 100 |
-| start | The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\) | Must be an integer 0 or greater |
-| eventId | The event identifier | Must be a Integer |
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
