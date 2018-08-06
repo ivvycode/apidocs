@@ -55,7 +55,7 @@
     * [Add or Update Room Counts](venues/accommodation/add-or-update-room-counts.md)
     * [Add or Update Room Dynamic Rates](venues/accommodation/add-or-update-room-dynamic-rates.md)
     * [Remove Room Dynamic Rates](venues/accommodation/remove-room-dynamic-rates.md)
-    * [Add or Update Rate Plan Booking Rules](venues/accommodation/add-or-update-rate-plan-booking-rules.md)
+    * [Add or Update Rate Plan Booking Rules](venues/accommodation/add-or-update-rateplan-bookingrules.md)
   * [Get Venue](venues/get-venue.md)
   * [Get Venue List](venues/get-venue-list.md)
   * [Get Booking List](venues/get-booking-list.md)
