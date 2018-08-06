@@ -39,7 +39,7 @@ The event identifier to which registration belongs
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique registration identifier |
 | currentStatus | The current status of the event |
 | isExhibitor | Whether or not event registration is exhibitor |
@@ -52,7 +52,7 @@ The event identifier to which registration belongs
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24207 | Unable to find event |
 | Specific Code: 24208 | Invalid Registration Id |
 | Specific Code: 24209 | Registration not found |

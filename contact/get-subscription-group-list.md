@@ -33,7 +33,7 @@ Subscription Groups are a feature that enables customers to segment their contac
 An array with the following properties
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The subscription group identifier |
 | groupName | The name for the group |
 | memberCount | The number of contacts in the group |

@@ -113,7 +113,7 @@ Updating a company
 ## Keys
 
 | keys |
-| --- |
+| :--- |
 | line1 |
 | line2 |
 | line3 |
@@ -126,7 +126,7 @@ Updating a company
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | If the company was successfully added or updated |
 | id | The unique identifier for the company |
 | message | Message of the failure \(if success was false\) |

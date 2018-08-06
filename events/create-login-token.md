@@ -65,14 +65,14 @@ If the referrer is provided when creating the token, the browser’s referrer he
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | token | Single use, time restricted token for the contact to login to the iVvy Event Website |
 | loginUrl | The URL that must be used to authenticate the user with the token |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24099 | Unable to generate token |
 | Specific Code: 24098 | Unable to find event |
 

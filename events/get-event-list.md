@@ -63,7 +63,7 @@ Sort Direction: Support Parameter 'asc' or 'desc'
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | afterDate | Filter by start date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | beforeDate | Filter by end date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | status | Filter by status Array of the following values | Must be an array |
@@ -73,7 +73,7 @@ Sort Direction: Support Parameter 'asc' or 'desc'
 A collection object with the following properties in the results.
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique event identifier |
 | code | The code for the event |
 | eventType | [The type of event.](get-event-list.md#event-types) |
@@ -98,7 +98,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 ### Event types
 
 | Type | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Other |
 | 1 | Party |
 | 2 | Festival |
@@ -118,7 +118,7 @@ The result from this call will be a collection of all the events the user has ac
 ### Current status of event
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Draft |
 | 1 | Closed |
 | 3 | Launched |
@@ -126,7 +126,7 @@ The result from this call will be a collection of all the events the user has ac
 ### Venue details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | name | The venue name |
 | description | The description of the venue |
 | address | The address of the venue |
@@ -135,7 +135,7 @@ The result from this call will be a collection of all the events the user has ac
 ### Event ticket details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the ticket |
 | title | Title of the ticket |
 | capacity | Capacity of the ticket |
@@ -147,7 +147,7 @@ The result from this call will be a collection of all the events the user has ac
 ### Subscription group details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The subscription group identifier |
 | groupName | The name for the group |
 | tagColour | The designated colour for the group |
@@ -155,7 +155,7 @@ The result from this call will be a collection of all the events the user has ac
 ### Event website information details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | description | Description of the information |
 | information | Content of the information |
 | fileUrl | Attached file url of event information |
@@ -164,7 +164,7 @@ The result from this call will be a collection of all the events the user has ac
 ### Event tags
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the event tag |
 | name | The name of the event tag |
 

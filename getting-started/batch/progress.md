@@ -47,13 +47,13 @@ Fetch the progress of a batch job
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | progress | The progress of the batch job, as a percentage of work completed. |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24105 | Could not find batch |
 
 The progress action takes the asyncId as a parameter and returns back the progress of the batch job as a percentage.

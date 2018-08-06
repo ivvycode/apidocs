@@ -75,7 +75,7 @@ Multiple items can be added together. There must be at least one additional item
 ## Additional item details
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | description | The complete description of the additional item | string |
 | quantity | The quantity of the additional item | number |
 | salePrice | The sale price per quantity of the additional item. This amount will be interpreted as including or excluding a tax component based on the venue’s tax settings. | number |
@@ -92,14 +92,14 @@ Multiple items can be added together. There must be at least one additional item
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the items were added to the booking |
 | items | The unique identifiers of the additional items in the same order as the request |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24140 | There must be at least one additional item |
 | Specific Code: 24141 | An additional item has invalid data |
 

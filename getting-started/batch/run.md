@@ -50,20 +50,20 @@ The URL to hit with a POST request after the batch has been run, with a JSON obj
 ## Keys
 
 | namespace |
-| --- |
+| :--- |
 | action |
 | params |
 
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | asyncId | Identifier for the batch request |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24092 | Incorrect Job Format |
 | Specific Code: 24093 | Empty job parameter found |
 | Specific Code: 24091 | The information was not saved |

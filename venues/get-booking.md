@@ -98,7 +98,7 @@ The result from this call will be the details of a specific booking to which the
 One of the following values:
 
 | \# | Description |
-| --- | --- |
+| :--- | :--- |
 | 1 | Prospective |
 | 2 | Tentative |
 | 3 | Confirmed |

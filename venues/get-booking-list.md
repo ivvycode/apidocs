@@ -107,14 +107,14 @@ One of the following values:
 ## Additional Parameters
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
 ## Additional [Filter](../getting-started/interpreting-the-response/filtering.md) Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | companyId | Filter by unique id of company | integer |
 | contactId | Filter by unique id of contact | integer |
 

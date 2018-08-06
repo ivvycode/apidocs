@@ -65,7 +65,7 @@ The payment details to add to the booking
 ## Payment Details
 
 | Property | Description | Type |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | paidDate | The date & time of the payment | Timestamp in UTC |
 | amountPaid | The payment amount | number |
 | paymentMethod | [The payment method](add-payment-to-booking.md#payment-methods) |  |
@@ -75,7 +75,7 @@ The payment details to add to the booking
 ## Payment methods
 
 | \# | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Unknown |
 | 1 | Credit Card |
 | 2 | BPay |
@@ -93,7 +93,7 @@ The payment details to add to the booking
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the payment was added to the booking |
 | invoiceId | The unique id of the invoice to which the payment was added |
 | paymentId | The unique identifier of the payment made |
@@ -101,6 +101,6 @@ The payment details to add to the booking
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24136 | The payment details are invalid |
 

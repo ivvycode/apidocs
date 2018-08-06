@@ -63,14 +63,14 @@ The complete description of the coast centre
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the cost center was added to the account |
 | id | The unique identifier of the cost center |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24150 | Account does not exist |
 | Specific Code: 24150 | The cost centers details are invalid |
 

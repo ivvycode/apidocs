@@ -35,7 +35,7 @@ The event identifier
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique event identifier |
 | code | The code for the event |
 | title | The title of the event |
@@ -64,14 +64,14 @@ The event identifier
 ## Event tags
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the event tag |
 | name | The name of the event tag |
 
 ## Throws
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24097 | Unable to find event |
 
 The event identifier must be provided as part of this call to fetch the specific event. E.g. {"id":1} can be used to fetch the details of an event with the identifier of 1.

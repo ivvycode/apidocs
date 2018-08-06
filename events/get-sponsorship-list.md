@@ -50,7 +50,7 @@ mageUrl":"https://.../554ac739bcc9a.png","level":"9","customLevelId":null,"spons
 A collection array with the following object properties in the results
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique sponsor identifier |
 | name | The name of the sponsor |
 | description | The description of the sponsor |
@@ -64,7 +64,7 @@ A collection array with the following object properties in the results
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24094 | Event does not have sponsors |
 | Specific Code: 24100 | Unable to find event |
 

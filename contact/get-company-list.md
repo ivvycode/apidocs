@@ -39,14 +39,14 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the company |
 | externalId | Optionally a unique identifier of the company that is managed by an external application |
 | businessName | The company's business name |
@@ -62,7 +62,7 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 ## Keys
 
 | keys |
-| --- |
+| :--- |
 | line1 |
 | line2 |
 | line3 |

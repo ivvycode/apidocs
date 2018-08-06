@@ -64,7 +64,7 @@ The company's identifier
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the company |
 | externalId | Optionally a unique identifier of the company that is managed by an external application |
 | businessName | The company's business name |
@@ -80,7 +80,7 @@ The company's identifier
 ## Keys
 
 | **keys** |
-| --- |
+| :--- |
 | line1 |
 | line2 |
 | line3 |
@@ -93,7 +93,7 @@ The company's identifier
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24153 | Unable to find company |
 
 The company identifier must be provided to fetch a specific company from the system.

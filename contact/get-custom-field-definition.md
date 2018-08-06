@@ -31,7 +31,7 @@ Get the definition of custom field
 An array of objects with the following properties
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | fieldId | The unique identifier for this custom field |
 | fieldType | [The type of this field](get-custom-field-definition.md#types-of-field) |
 | displayName | The name of this field |

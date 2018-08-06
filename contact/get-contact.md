@@ -67,7 +67,7 @@ This example request will obtain the details of the contact with the id "6"
 ## Returns
 
 | **Property** | **Description** | **Type** |
-| --- | --- |
+| :--- | :--- | :--- |
 | id | The unique identifier for the contact | integer |
 | firstName | The contact’s first name | string |
 | lastName | The contact’s last name | string |
@@ -88,7 +88,7 @@ This example request will obtain the details of the contact with the id "6"
 The status is the record of whether the contact has opted in to email communication.
 
 | **\#** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | 1 | Subscribed |
 | 2 | Unsubscribed |
 | 3 | Bounced |
@@ -100,7 +100,7 @@ The status is the record of whether the contact has opted in to email communicat
 The sms status is the record of whether the contact has opted in to sms communication.
 
 | **\#** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | 1 | Subscribed |
 | 2 | Unsubscribed |
 | 3 | Failed |
@@ -109,7 +109,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 ### Custom Fields Keys
 
 | **Keys** |
-| --- |
+| :--- |
 | fieldId |
 | displayName |
 | value |
@@ -117,7 +117,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 ### Event Invitations
 
 | **Property** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | eventId | The event identifier of the invitation |
 | eventCode | The code of the event of the invitation |
 | eventStartDateTime | The timestamp the event is starting |
@@ -128,7 +128,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 #### Event Invitations Response values
 
 | **\#** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | U | Undecided |
 | Y | Yes |
 | N | No |
@@ -136,7 +136,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 ### Event Registrations Details
 
 | **Property** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | eventId | The event identifier of the registration |
 | eventCode | The code of the event of the registration |
 | eventStartDateTime | The timestamp the event is starting |
@@ -155,7 +155,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 #### Event Registration Status \(currentStatus\)
 
 | **\#** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | 2 | Completed |
 | 3 | Cancelled |
 | 4 | Payment Required |
@@ -163,7 +163,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 #### Guest Details
 
 | **Property** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | contactId | The identifier for the contact if known |
 | fullName | Name of guest |
 | email | Email address of guest |
@@ -173,7 +173,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 ### Invoice Details
 
 | **Property** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the invoice |
 | reference | The reference number of the invoice |
 | title | The title of the invoice |
@@ -188,7 +188,7 @@ The sms status is the record of whether the contact has opted in to sms communic
 #### Invoice current status
 
 | **\#** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | 0 | Not Paid |
 | 1 | Unconfirmed Paid |
 | 2 | Written Off |
@@ -201,7 +201,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 ## Throws
 
 | **Code** | **Description** |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24096 | Unable to find contact |
 
 The contact identifier must be provided to fetch a specific contact from the system.

@@ -120,7 +120,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | venueId | Filter invoices that belong to a specific Venue | integer |
@@ -129,7 +129,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 ## Reference type
 
 | \# | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Custom |
 | 1 | Event Registration |
 | 2 | Membership Sign Up |
@@ -141,7 +141,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 A collection object with the following properties in the results
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique invoice identifier |
 | reference | The unique reference number of the invoice |
 | title | The title of the invoice |
@@ -169,7 +169,7 @@ A collection object with the following properties in the results
 ## Current status
 
 | \# | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Not Paid |
 | 1 | Un-confirmed Paid |
 | 2 | Paid |
@@ -180,7 +180,7 @@ A collection object with the following properties in the results
 ## Address Details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | line1 | Line 1 of the address \(part of the "street"\) |
 | line2 | Line 2 of the address \(part of the "street"\) |
 | line3 | Line 3 of the address \(part of the "street"\) |

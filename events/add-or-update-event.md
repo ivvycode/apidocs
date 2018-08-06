@@ -97,7 +97,7 @@ NOTE: This action call only supports “Record Event Details” type events \(i.
 ## Returns
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | success | Whether or not the action succeeded \(i.e. the event as added or updated\). | boolean |
 | id | The event’s unique identifier. The value will be null on failure. | integer |
 | code | The event’s unique code. The value will be null on failure. | string |

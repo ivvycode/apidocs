@@ -33,7 +33,7 @@ The invoice and item response contains a field called "refType". These are const
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | invoiceRefTypes | The refType identifier and description of refTypes found in the invoice response. |
 | invoiceLineRefTypes | The refType identifier and description of refTypes found in the items of the invoice response. |
 | paymentMethods | The complete list of payment methods that might appear against a payment made on an invoice |

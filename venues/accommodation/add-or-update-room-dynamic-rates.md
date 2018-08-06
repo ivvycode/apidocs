@@ -87,6 +87,6 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 ## Returns
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | success | Whether or not the room dynamic rates were updated | boolean |
 

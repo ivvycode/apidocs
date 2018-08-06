@@ -41,7 +41,7 @@ The subscription group identifier to remove the contacts from
 An array of objects with the following properties
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | contactId | The contact this result is for |
 | status | If the contact was removed from the group or not |
 

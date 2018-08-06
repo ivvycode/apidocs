@@ -105,7 +105,7 @@ The invoice identifier
 A collection object with the following properties in the results
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique invoice identifier |
 | reference | The unique reference number of the invoice |
 | title | The title of the invoice |
@@ -135,7 +135,7 @@ A collection object with the following properties in the results
 ## Current status
 
 | \# | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Not Paid |
 | 1 | Un-confirmed Paid |
 | 2 | Paid |
@@ -146,7 +146,7 @@ A collection object with the following properties in the results
 ## Reference type
 
 | \# | Description |
-| --- | --- |
+| :--- | :--- |
 | 0 | Custom |
 | 1 | Event Registration |
 | 2 | Membership Sign Up |
@@ -156,7 +156,7 @@ A collection object with the following properties in the results
 ## Address Details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | line1 | Line 1 of the address \(part of the "street"\) |
 | line2 | Line 2 of the address \(part of the "street"\) |
 | line3 | Line 3 of the address \(part of the "street"\) |
@@ -171,7 +171,7 @@ A collection object with the following properties in the results
 ## Item Details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | description | The description of the item |
 | quantity | Quantity of the item |
 | unitCost | The unit cost of the item |
@@ -183,7 +183,7 @@ A collection object with the following properties in the results
 ## Payment Details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | paymentId | The identifier of the payment |
 | receiptNum | The receipt number of the payment |
 | amountPaid | The amount paid of the payment |
@@ -199,7 +199,7 @@ A collection object with the following properties in the results
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24137 | Unable to find invoice |
 
 The invoice identifier must be provided as part of this call to fetch the specific invoice. E.g. {"id":1} can be used to fetch the details of an invoice with the identifier of 1.

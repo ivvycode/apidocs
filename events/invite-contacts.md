@@ -67,7 +67,7 @@ An array of contact identifiers to invite to the event
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | results | An array of objects with the following properties |
 | contact | The contact identifier |
 | status | The status of the request |

@@ -69,7 +69,7 @@ All invoices of the booking will be checked for the refunded amount and if the a
 ## Payment Details
 
 | Property | Description | Required |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | refundDate | The date & time of the refund | timestamp in UTC |
 | amount | The refund amount | number |
 | notes | Additional notes about the refund | string |
@@ -77,21 +77,21 @@ All invoices of the booking will be checked for the refunded amount and if the a
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the refund was added to the booking |
 | refundDetails | A collection of invoiceId and refundId values |
 
 ## Refund Details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | invoiceId | The unique id of the invoice |
 | refundId | The id of the invoice refund |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24149 | The refund details are invalid |
 | Specific Code: 24145 | The booking does not have an amount that can be refunded |
 | Specific Code: 24146 | Cannot refund more than the total amount payable on a booking |

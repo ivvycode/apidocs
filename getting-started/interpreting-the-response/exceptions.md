@@ -5,7 +5,7 @@ If an error occurred the response will be a [JSON](../../development-reference/j
 Current exception codes and meanings are:
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | 400 | Bad Request |
 | 401 | Unauthorized |
 | 403 | Forbidden |

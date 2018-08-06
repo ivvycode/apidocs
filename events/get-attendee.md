@@ -39,7 +39,7 @@ The event identifier to which attendee belongs
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique registration identifier |
 | registrationStatus | The registration status of the event attendee |
 | contactId | The contactId of event attendee |
@@ -62,14 +62,14 @@ The event identifier to which attendee belongs
 ## Custom field details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | name | The name of the custom field |
 | value | The value of the custom field for attendee |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24211 | Unable to find event |
 | Specific Code: 24212 | Invalid Attendee Id |
 | Specific Code: 24213 | Attendee not found |

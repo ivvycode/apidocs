@@ -96,14 +96,14 @@ The description for the lead
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the lead was added to the account |
 | id | The unique id of the lead |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24215 | The request is empty |
 | Specific Code: 24216 | The lead does not exist |
 | Specific Code: 24218 | The lead details are invalid |

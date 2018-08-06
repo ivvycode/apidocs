@@ -39,14 +39,14 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 ## Additional [Filter](../getting-started/interpreting-the-response/filtering.md) Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier for the contact |
 | firstName | The contact’s first name |
 | lastName | The contact’s last name |
@@ -61,7 +61,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 ## keys
 
 | fieldId |
-| --- |
+| :--- |
 | displayName |
 | value |
 

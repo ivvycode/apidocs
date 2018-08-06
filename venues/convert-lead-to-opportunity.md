@@ -43,13 +43,13 @@ The stage of opportunity
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the lead was converted to opportunity or not |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24227 | The request is empty |
 | Specific Code: 24228 | The lead does not exist |
 

@@ -123,7 +123,7 @@ The properties of the contact currently supported are:
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | If the contact was successfully added or updated |
 | id | The unique identifier for the contact |
 | message | Message of the failure \(if success was false\) |

@@ -151,14 +151,14 @@ The description for the opportunity
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | success | Whether or not the opportunity was added to the venue |
 | id | The unique id of the opportunity |
 
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24221 | The request is empty |
 | Specific Code: 24222 | The opportunity does not exist |
 | Specific Code: 24224 | The opportunity details are invalid |

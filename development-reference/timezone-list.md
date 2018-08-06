@@ -1,7 +1,7 @@
 # Timezone List
 
 | **Timezone** | **Value** |
-| --- | --- |
+| :--- | :--- |
 | \(UTC-11:00\) Midway | Pacific/Midway |
 | \(UTC-11:00\) Niue | Pacific/Niue |
 | \(UTC-11:00\) Pago Pago | Pacific/Pago\_Pago |

@@ -52,7 +52,7 @@ Fetches the list of cost centers in the account. No request params required.
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier of the cost center |
 | name | The name of the cost center |
 | code | The code of the cost center |
@@ -62,6 +62,6 @@ Fetches the list of cost centers in the account. No request params required.
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24150 | Account does not exist |
 

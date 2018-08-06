@@ -49,7 +49,7 @@ No filters available
 A collection object with the following properties in the results
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique registration identifier |
 | registrationStatus | The registration status of the event attendee |
 | contactId | The contactId of event attendee |
@@ -71,7 +71,7 @@ A collection object with the following properties in the results
 ## Custom field details
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | name | The name of the custom field |
 | value | The value of the custom field for attendee |
 
@@ -80,6 +80,6 @@ The result from this call will be a [collection](../getting-started/interpreting
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24210 | Unable to find event |
 

@@ -72,7 +72,7 @@ The subscription group identifier to add the contacts to
 An array of objects with the following properties
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | contactId | The contact this result is for |
 | status | If the contact was added to the group or not |
 

@@ -65,7 +65,7 @@ The event identifier
 A collection object with the following properties of objects in the results
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique speaker identifier |
 | fullName | The speaker’s name |
 | organisation | The speaker’s organisation |
@@ -76,7 +76,7 @@ A collection object with the following properties of objects in the results
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24124 | Event does not have speakers |
 | Specific Code: 24101 | Unable to find event |
 

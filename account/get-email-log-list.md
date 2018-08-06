@@ -56,7 +56,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 ## Returns
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique identifier of the email |
 | contactId | The contact id of of the email |
 | userId | The user id of of the email |
@@ -75,7 +75,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24151 | Account does not exist |
 
 ## refType:

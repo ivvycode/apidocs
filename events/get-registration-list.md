@@ -43,7 +43,7 @@ The event identifier.
 ## Additional [Filter ](../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | modifiedDate | Filter by modified date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 
 ## Returns
@@ -51,7 +51,7 @@ The event identifier.
 A collection object with the following properties in the results
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique registration identifier |
 | currentStatus | The current status of the event |
 | isExhibitor | Whether or not event registration is exhibitor |
@@ -71,6 +71,6 @@ The result from this call will be a [collection](./#collections) of all the even
 ## Throws
 
 | Code | Description |
-| --- | --- |
+| :--- | :--- |
 | Specific Code: 24206 | Unable to find event |
 

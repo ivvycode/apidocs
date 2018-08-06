@@ -60,7 +60,7 @@ The id of the venue
 `A collection object with the following properties in the results`
 
 | Property | Description |
-| --- | --- |
+| :--- | :--- |
 | id | The unique invoice identifier |
 | name | The name of Tax |
 
