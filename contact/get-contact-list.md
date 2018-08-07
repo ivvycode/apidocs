@@ -42,6 +42,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 | :--- | :--- | :--- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
+| externalId | Filter by external unique id | Unique external Id in string |
 
 ## Returns
 
@@ -55,6 +56,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 | customFields | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact-list.md#keys). |
 | groups | The subscription group information for the contact. |
 | companies | This will an array company ids to which the contact belongs. |
+| companiesData | This will an array company containing id and businessName for each company to which the contact belongs. |
 | externalId | This will be external id of the contact |
 | modifiedDate | The modified date of the contact |
 

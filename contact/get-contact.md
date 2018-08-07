@@ -46,6 +46,11 @@ This is an example response for getContact
     "companies":[
         4,5,6
     ],
+    "companiesData":[
+        {"id":4,"businessName":"Company Name 1"},
+        {"id":5,"businessName":"Company Name 3 (Department)"},
+        {"id":6,"businessName":"Company Name 2"},
+    ],
     "externalId":"59fc43b6726be"
 }
 ```
@@ -59,7 +64,7 @@ This is an example response for getContact
 This example request will obtain the details of the contact with the id "6"
 
 ```javascript
-{ 
+{
   "id":6
 }
 ```
@@ -78,12 +83,13 @@ This example request will obtain the details of the contact with the id "6"
 | customFields | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact.md#keys). | array |
 | groups | The subscription group information for the contact. | array |
 | companies | This will an array company ids to which the contact belongs. | array |
+| companiesData | This will an array company containing id and businessName for each company to which the contact belongs. | array |
 | externalId | This will be an external id of the contact | integer |
 | modifiedDate | The modified date of the contact | date |
 | eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) | array |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array |
 
-### Status Options - Email Registration Status 
+### Status Options - Email Registration Status
 
 The status is the record of whether the contact has opted in to email communication.
 
