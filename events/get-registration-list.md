@@ -53,6 +53,7 @@ A collection object with the following properties in the results
 | Property | Description |
 | :--- | :--- |
 | id | The unique registration identifier |
+| eventName | The name of event that event registration belongs |
 | currentStatus | The current status of the event |
 | isExhibitor | Whether or not event registration is exhibitor |
 | completedDate | The registered date time of event registration |
