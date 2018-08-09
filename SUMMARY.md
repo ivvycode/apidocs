@@ -76,6 +76,7 @@
   * [Get Invoice List](invoice/get-invoice-list.md)
   * [Get Invoice](invoice/get-invoice.md)
   * [Get Options](invoice/get-options.md)
+  * [Add Payment](invoice/add-payment.md)
 * [Account](account/README.md)
   * [Add or Update Cost Center](account/add-or-update-cost-center.md)
   * [Get Cost Center List](account/get-cost-center-list.md)
