@@ -42,5 +42,5 @@ The accommodation Namespace on the iVvy API allows users to;
 * [Add or Update Room Counts](../../venues/accommodation/add-or-update-room-counts.md),  
 * [Add or Update Room Dynamic Rates](../../venues/accommodation/add-or-update-room-dynamic-rates.md), 
 * [Remove Room Dynamics Rates](../../venues/accommodation/remove-room-dynamic-rates.md), and
-* [Add or Update Rate Plan Booking Rules](../../venues/accommodation/add-or-update-rate-plan-booking-rules.md) 
+* [Add or Update Rate Plan Booking Rules]() 
 
