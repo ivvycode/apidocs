@@ -63,6 +63,7 @@ A collection object with the following properties in the results
 | phone | The phone number of event registration |
 | invoiceTotalCost | The total cost of event registration |
 | invoiceTotalPaid | The total amount paid of event registration |
+| createdDate | The date & time the registration was created |
 | modifiedDate | The date & time the registration was last modified |
 
 The result from this call will be a collection of all the events the user has access to. This call also accepts the pagination and filter properties.
