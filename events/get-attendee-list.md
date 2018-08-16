@@ -68,7 +68,7 @@ A collection object with the following properties in the results
 | cost | The cost of ticket of event attendee |
 | customFields | The array of custom fields data of event attendee with below details |
 | createdDate | The date & time the attendee was created |
-| modifiedDate | The date & time the attendee was last modified |
+| modifiedDate | The date & time the attendee was last modified. Note: Updating the contact details of an Attendee changes the modifiedDate of the Contact. It does not change the modifiedDate of the Attendee. |
 
 ## Custom field details
 
