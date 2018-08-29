@@ -61,6 +61,7 @@
   * [Get Booking List](venues/get-booking-list.md)
   * [Get Booking List For Account](venues/get-booking-list-for-account.md)
   * [Get Booking](venues/get-booking.md)
+  * [Get Booking Release Schedule](venues/get-booking-release-schedule.md)
   * [Get Venue Room List](venues/get-venue-room-list.md)
   * [Get Venue Rate Plan List](venues/get-venue-rate-plan-list.md)
   * [Add Items To Booking](venues/add-items-to-booking.md)
