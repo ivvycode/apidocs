@@ -134,9 +134,9 @@ The result from this call will be a [collection](../getting-started/interpreting
 | endDate | date | The departure date of the accommodation group |
 | overrideCapacity | boolean | Whether or not the accommodation group can exceed the general room availability |
 | costcenterId | integer | The unique id of the cost center assigned to the accommodation group |
-| dayRates | array | The array of Day Rate objects representing the daily rates of the accommodation group |
-| excludedTaxIds | array | The array of integers representing the unique ids of the taxes excluded from the daily rates |
-| roomOptions | array | The array of Room Option objects representing the additional room options of the accommodation group |
+| dayRates | array of [Day Rates](get-booking-accommodation-list.md#booking-accommodation-day-rates) | The daily rates of the accommodation group |
+| excludedTaxIds | array of integers | The unique ids of the taxes that are excluded from the daily rates |
+| roomOptions | array of [Room Options](get-booking-accommodation-list.md#booking-accommodation-room-option) | The additional room options of the accommodation group |
 | createdDate | datetime | The date & time the accommodation group was created |
 | modifiedDate | datetime | The date & time the acommodation group was last modified |
 
@@ -158,7 +158,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | numRooms | integer | The number of rooms on bookingDate to which the room option applies |
 | numOptionsPerRoom | integer | The number options added to each room \(numRooms\) on bookingDate |
 | price | number | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured |
-| excludedTaxIds | array | The array of integers representing the unique ids of the taxes excluded from price |
+| excludedTaxIds | array of integers | The unique ids of the taxes that are excluded from price |
 | costcenterId | integer | The unique id of the cost center assigned to the additional option |
 | numPayableByGuest | integer | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
