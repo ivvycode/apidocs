@@ -63,6 +63,7 @@
   * [Get Booking](venues/get-booking.md)
   * [Get Booking Accommodation List](venues/get-booking-accommodation-list.md)
   * [Get Venue Room List](venues/get-venue-room-list.md)
+  * [Get Venue Room Option List](venues/get-venue-room-option-list.md)
   * [Get Venue Rate Plan List](venues/get-venue-rate-plan-list.md)
   * [Add Items To Booking](venues/add-items-to-booking.md)
   * [Add Payment To Booking](venues/add-payment-to-booking.md)
