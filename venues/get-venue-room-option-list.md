@@ -1,6 +1,4 @@
----
-description: 'NOTE: This action has not been published.'
----
+**NOTE: This action has not been published**
 
 # Get Venue Room Option List
 
