@@ -90,9 +90,9 @@ The result from this call will be a [collection](../getting-started/interpreting
 | name | string | The name of the room option \(e.g. "Breakfast"\) |
 | description | string | The description of the room option. This can be html formatted text |
 | price | number | The sale price of the room option. The amount either includes or excludes tax depending on how the venue is configured |
-| priceExcludedTaxIds | array | The array of integers representing the unique ids of the taxes excluded from price |
+| priceExcludedTaxIds | array of integers | The unique ids of the taxes that are excluded from price |
 | cost | number | The cost of the room option. The amount either includes or excludes tax depending on how the venue is configured |
-| costExcludedTaxIds | array | The array of integers representing the unique ids of the taxes exlucded from cost |
+| costExcludedTaxIds | array of integers | The unique ids of the taxes that are excluded from cost |
 | costcenterId | integer | The unique id of the cost center assigned to the room option |
 | createdDate | datetime | The date & time the room option was created |
 | modifiedDate | datetime | The date & time the room option was last modified |
