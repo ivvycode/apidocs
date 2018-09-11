@@ -245,3 +245,4 @@ The result from this call will be a [collection](../getting-started/interpreting
 | lastName | string | The last name of the contact |
 | email | string | The email address of the contact |
 | phone | string | The mobile phone number of the contact |
+

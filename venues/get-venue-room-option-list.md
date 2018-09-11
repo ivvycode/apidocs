@@ -6,7 +6,7 @@ description: 'NOTE: This action has not been published.'
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomOptionList" path="" %}
 {% api-method-summary %}
-Get Venue Room Option List 
+Get Venue Room Option List
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -87,7 +87,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | :--- | :--- | :--- |
 | id | integer | The unique id of the room option |
 | venueId | integer | The unique id of the venue to which the room option belongs |
-| name | string | The name of the room option (e.g. "Breakfast") |
+| name | string | The name of the room option \(e.g. "Breakfast"\) |
 | description | string | The description of the room option. This can be html formatted text |
 | price | number | The sale price of the room option. The amount either includes or excludes tax depending on how the venue is configured |
 | priceExcludedTaxIds | array | The array of integers representing the unique ids of the taxes excluded from price |
@@ -96,3 +96,4 @@ The result from this call will be a [collection](../getting-started/interpreting
 | costcenterId | integer | The unique id of the cost center assigned to the room option |
 | createdDate | datetime | The date & time the room option was created |
 | modifiedDate | datetime | The date & time the room option was last modified |
+
