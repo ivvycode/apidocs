@@ -186,7 +186,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | currentStatus | integer | The current [status](get-booking-room-reservation-list.md#room-reservation-status) of the room reservation |
 | isFromGroup | boolean | Whether or not the room reservation applies to an [accommodation group](get-booking-accommodation-list.md) |
 | totalAmount | number | The total amount of the room reservation. The amount either includes or excludes tax depending on how the venue is configured |
-| rooms | array of [Reserved Rooms](get-booking-room-reservation-list.md#room-reservation-individual-room) | The details of the rooms that have been reserved |
+| rooms | array of [Reserved Rooms](get-booking-room-reservation-list.md#reserved-room) | The details of the rooms that have been reserved |
 
 ## Room Reservation Status
 
