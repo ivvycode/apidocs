@@ -17,7 +17,7 @@ Get a list of booking accommodation \(i.e. groups\) for a venue.
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="venueId" type="integer" required=true %}
-The unique identifier of the venue to which the bookings belong
+The unique id of the venue to which the bookings belong
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bookingId" type="integer" required=false %}
