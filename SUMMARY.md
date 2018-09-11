@@ -62,7 +62,7 @@
   * [Get Booking List For Account](venues/get-booking-list-for-account.md)
   * [Get Booking](venues/get-booking.md)
   * [Get Booking Accommodation List](venues/get-booking-accommodation-list.md)
-  * [Get Booking Reservation List](venues/get-booking-reservation-list.md)
+  * [Get Booking Room Reservation List](venues/get-booking-room-reservation-list.md)
   * [Get Venue Room List](venues/get-venue-room-list.md)
   * [Get Venue Room Option List](venues/get-venue-room-option-list.md)
   * [Get Venue Rate Plan List](venues/get-venue-rate-plan-list.md)
