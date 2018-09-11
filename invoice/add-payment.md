@@ -40,8 +40,12 @@ This endpoint allows you to get free cakes.
  The credit card type \(“unknown”, “visa”, “master”, “amex”, “diners”\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="feePercentage" type="string" required=false %}
+{% api-method-parameter name="feePercentage" type="number" required=false %}
  The credit card fee percentage. The fee amount must be included in amountPaid
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="feeExcludedTaxIds" type="array" required=false %}
+ An array of tax ids which will be excluded from the payment.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="chequeNumber" type="string" required=true %}
@@ -84,6 +88,27 @@ Pa{
 {% endapi-method-spec %}
 {% endapi-method %}
 
+## paymentMethod
+0 = Unknown   
+1 = Credit Card   
+2 = BPay   
+3 = Direct Deposit   
+4 = PayPal   
+5 = Cheque   
+6 = Cash   
+8 = Accounts Receivable   
+9 = EFTPOS   
+10 = WriteOff   
+11 = Point of Sale   
+12 = Wire Transfer
+
+## cardType
+0 = Unknown  
+1 = Visa  
+2 = Master Card  
+3 = Amex  
+4 = Diners
+
 ## Example Request
 
 ```text
@@ -117,5 +142,4 @@ Example: Add Payment to an invoice
 | 24237 | Cannot use "gateway" or "paymentId" to make the invoice payment |
 | 24238 | Unable to find invoice |
 | 24239 | The payment details are invalid |
-| 24240 | Other error |
-| 24241 | An unknown error has occurred |
+| 24240 | An unknown error has occurred |
