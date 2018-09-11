@@ -25,11 +25,11 @@ The unique id of the room to which the booking rule applies
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="startDate" type="string" required=true %}
-The start date from which the booking rule will apply (Date Format)
+The start date from which the booking rule will apply \(Date Format\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="endDate" type="string" required=true %}
-The end date until which the booking rule will apply (Date Format)
+The end date until which the booking rule will apply \(Date Format\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="closeOutStatus" type="integer" required=true %}
