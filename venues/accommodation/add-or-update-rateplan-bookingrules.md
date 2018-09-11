@@ -25,15 +25,15 @@ The unique id of the room to which the booking rule applies
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="startDate" type="string" required=true %}
-The start date from which the booking rule will apply
+The start date from which the booking rule will apply (Date Format)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="endDate" type="string" required=true %}
-The end date until which the booking rule will apply
+The end date until which the booking rule will apply (Date Format)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="closeOutStatus" type="object" required=true %}
-The close out status of the booking rule from startDate to End Date
+{% api-method-parameter name="closeOutStatus" type="integer" required=true %}
+The close out status of the booking rule from startDate to endDate. 1 = Open, 2 = Closed
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}

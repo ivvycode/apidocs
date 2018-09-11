@@ -25,11 +25,11 @@ The unique id of the room to which the rate applies
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="startDate" type="string" required=true %}
-The start date from which the dynamic rate will be set
+The start date from which the dynamic rate will be set (Date Format)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="endDate" type="string" required=true %}
-The end date from which the dynamic rate will be set
+The end date from which the dynamic rate will be set (Date Format)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cost" type="number" required=true %}
