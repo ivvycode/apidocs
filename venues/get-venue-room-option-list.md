@@ -1,6 +1,8 @@
+# Get Venue Room Option List
+
 **NOTE: This action has not been published**
 
-# Get Venue Room Option List
+## Get Venue Room Option List
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomOptionList" path="" %}
 {% api-method-summary %}
@@ -79,7 +81,7 @@ The number of booking accomodation groups to fetch
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of room options the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-## Venue Room Option
+### Venue Room Option
 
 | Property | Type | Description |
 | :--- | :--- | :--- |

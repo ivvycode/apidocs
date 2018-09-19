@@ -1,6 +1,8 @@
+# Get Booking Room Reservation List
+
 **NOTE: This action has not been published**
 
-# Get Booking Room Reservation List
+## Get Booking Room Reservation List
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingRoomReservationList" path="" %}
 {% api-method-summary %}
@@ -171,7 +173,7 @@ The number of booking room reservations to fetch
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking room reservation records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-## Booking Room Reservation
+### Booking Room Reservation
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -186,7 +188,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | totalAmount | number | The total amount of the room reservation. The amount either includes or excludes tax depending on how the venue is configured |
 | rooms | array of [Reserved Rooms](get-booking-room-reservation-list.md#reserved-room) | The details of the rooms that have been reserved |
 
-## Room Reservation Status
+### Room Reservation Status
 
 | Status | Description |
 | :--- | :--- |
@@ -194,7 +196,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | 2 | Confirmed |
 | 3 | Cancelled |
 
-## Reserved Room
+### Reserved Room
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -217,7 +219,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | cancelledDate | datetime | The date & time the reserved room was cancelled |
 | dayRates | array of [Day Rates](get-booking-room-reservation-list.md#reserved-room-day-rates) | The daily rates of the reserved room |
 
-## Reserved Room Day Rates
+### Reserved Room Day Rates
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -225,7 +227,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | barId | integer | The unique id of the rate plan assigned to the dayDate of the reserved room. If the reserved room applies to an accommodation group \(see property _isFromGroup_ above\) then this will always be the room type assigned to the accommodation group |
 | cost | number | The rate amount for the reserved room on dayDate. The amount either includes or excludes tax depending on how the venue is configured |
 
-## Guest
+### Guest
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -234,7 +236,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | primaryPhone | string | The primary phone number of the guest |
 | address | [Address](../development-reference/address-format.md) | The address of the guest |
 
-## Guest Contact Details
+### Guest Contact Details
 
 | Property | Type | Description |
 | :--- | :--- | :--- |

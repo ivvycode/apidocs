@@ -1,6 +1,8 @@
+# Get Booking Accommodation List
+
 **NOTE: This action has not been published**
 
-# Get Booking Accommodation List
+## Get Booking Accommodation List
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingAccommodationList" path="" %}
 {% api-method-summary %}
@@ -118,7 +120,7 @@ The number of booking accomodation groups to fetch
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking accomodation records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-## Booking Accommodation \(Group\)
+### Booking Accommodation \(Group\)
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -138,7 +140,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | createdDate | datetime | The date & time the accommodation group was created |
 | modifiedDate | datetime | The date & time the acommodation group was last modified |
 
-## Booking Accommodation Day Rates
+### Booking Accommodation Day Rates
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -147,7 +149,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | cost | number | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
 | numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
-## Booking Accommodation Room Option
+### Booking Accommodation Room Option
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
