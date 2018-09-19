@@ -50,7 +50,8 @@ The company's email address
 
 {% api-method-parameter name="address" type="string" required=true %}
 The company's address. This is an object with the keys  
-Required only when adding a new contact. 
+  
+stateCode, postalCode and countryCode are required when adding a new Company.   
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
