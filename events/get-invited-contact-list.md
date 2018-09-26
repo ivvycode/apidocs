@@ -2,7 +2,7 @@
 
 ## Get Invited Contact List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getInvitedContactList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getInvitedContactList" path="" %}
 {% api-method-summary %}
 Get Invited Contact List
 {% endapi-method-summary %}
