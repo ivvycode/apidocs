@@ -94,6 +94,8 @@ The number of booking accomodation groups to fetch
                 "numOptionsPerRoom": 1,
                 "price": 65,
                 "excludedTaxIds": [],
+                "totalAmount": 715,
+                "totalTaxAmount": 65.01,
                 "costcenterId": 1377,
                 "numPayableByGuest": 11
             },
@@ -104,6 +106,8 @@ The number of booking accomodation groups to fetch
                 "numOptionsPerRoom": 1,
                 "price": 80,
                 "excludedTaxIds": [],
+                "totalAmount": 800,
+                "totalTaxAmount": 72.7,
                 "costcenterId": 1377,
                 "numPayableByGuest": 10
             }
@@ -159,6 +163,8 @@ The result from this call will be a [collection](../getting-started/interpreting
 | numOptionsPerRoom | integer | The number options added to each room \(numRooms\) on bookingDate |
 | price | number | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured |
 | excludedTaxIds | array of integers | The unique ids of the taxes that are excluded from price |
+| totalAmount | number | The total value of the additional option on this date, including all applicable taxes |
+| totalTaxAmount | number | The total tax amount included in totalAmount |
 | costcenterId | integer | The unique id of the cost center assigned to the additional option |
 | numPayableByGuest | integer | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
