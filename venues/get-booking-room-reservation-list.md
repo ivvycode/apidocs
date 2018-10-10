@@ -181,11 +181,14 @@ The result from this call will be a [collection](../getting-started/interpreting
 | venueId | integer | The unique id of the venue to which the booking belongs |
 | bookingId | integer | The unique id of the booking to which the room reservation belongs |
 | reference | integer | A unique reference assigned to the room reservation |
-| mainGuestId | integer | The unique id of the venue guest |
+| mainGuestId | integer | The unique id of the main guest of the reservation |
 | mainGuest | [Guest](get-booking-room-reservation-list.md#guest) | Details of the main guest of the room reservation |
 | currentStatus | integer | The current [status](get-booking-room-reservation-list.md#room-reservation-status) of the room reservation |
+| cancelledDate | datetime | The date & time the room reservation was cancelled |
 | isFromGroup | boolean | Whether or not the room reservation applies to an [accommodation group](get-booking-accommodation-list.md) |
 | totalAmount | number | The total amount of the room reservation. The amount either includes or excludes tax depending on how the venue is configured |
+| createdDate | datetime | The date & time the room reservation was created |
+| modifiedDate | datetime | The date & time the room reservation was last modified |
 | rooms | array of [Reserved Rooms](get-booking-room-reservation-list.md#reserved-room) | The details of the rooms that have been reserved |
 
 ### Room Reservation Status
