@@ -45,11 +45,11 @@ The array of companies to set on the contact. Each value will be validated depen
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="enum" required=false %}
-The contact's email subscription status. Possible values are 1 = Subscribed, 2 = Unsubscribed, 3 = Bounced, 4 = Registering, 5 = No Marketing. The value of this field will be [one of the following current status](add-or-update-contact.md#email-status)
+The contact's email subscription status. Possible values are 1 = Subscribed, 2 = Unsubscribed, 3 = Bounced, 4 = Registering, 5 = No Marketing.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="smsStatus" type="enum" required=false %}
-The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = Unsubscribed, 3 = Failed, 4 = No Marketing.The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
+The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = Unsubscribed, 3 = Failed, 4 = No Marketing.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -76,8 +76,6 @@ The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = U
 {
   "id": 33884,
   "firstName": "Bobby",
-  "status": 2,
-  "smsStatus": 2,
   "groups": [
     {
       "groupId": 10
@@ -92,7 +90,9 @@ The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = U
   "companies": [
     4,
     5
-  ]
+  ],
+  "status": 2,
+  "smsStatus": 2,
 }
 ```
 
@@ -104,11 +104,11 @@ The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = U
 {
   "id":33884,
   "firstName":"Bobby",
-  "status": 2,
-  "smsStatus": 2,
   "groups":[{"groupId":10}],
   "customFields":[{"fieldId":33443,"value":"No"}],
-  "companies":[4,5]
+  "companies":[4,5],
+  "status": 2,
+  "smsStatus": 2,
 }
 ```
 
