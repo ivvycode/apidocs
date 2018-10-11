@@ -46,6 +46,14 @@ The array of companies to set on the contact. Each value will be validated depen
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
+{% api-method-parameter name="status" type="enum" required=false %}
+The contact's email status
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="smsStatus" type="enum" required=false %}
+The contact's sms status
+{% endapi-method-parameter %}
+
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
@@ -68,6 +76,8 @@ The array of companies to set on the contact. Each value will be validated depen
 {
   "id": 33884,
   "firstName": "Bobby",
+  "status": 2,
+  "smsStatus": 2,
   "groups": [
     {
       "groupId": 10
@@ -94,6 +104,8 @@ The array of companies to set on the contact. Each value will be validated depen
 {
   "id":33884,
   "firstName":"Bobby",
+  "status": 2,
+  "smsStatus": 2,
   "groups":[{"groupId":10}],
   "customFields":[{"fieldId":33443,"value":"No"}],
   "companies":[4,5]
@@ -119,6 +131,10 @@ The properties of the contact currently supported are:
   * This is an array of custom field objects with ‘fieldId’ and ‘value’ keys
 * Companies
   * This is an array of companies Ids
+* status
+  * The current status of the email susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#email-status)
+* status
+  * The current status of the sms susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
 
 ## Returns
 
@@ -128,3 +144,25 @@ The properties of the contact currently supported are:
 | id | The unique identifier for the contact |
 | message | Message of the failure \(if success was false\) |
 
+### Status Options - Email Registration Status 
+
+The status is the record of whether the contact has opted in to email communication.
+
+| **\#** | **Description** |
+| :--- | :--- |
+| 1 | Subscribed |
+| 2 | Unsubscribed |
+| 3 | Bounced |
+| 4 | Registering |
+| 5 | No Marketing |
+
+### Sms status
+
+The sms status is the record of whether the contact has opted in to sms communication.
+
+| **\#** | **Description** |
+| :--- | :--- |
+| 1 | Subscribed |
+| 2 | Unsubscribed |
+| 3 | Failed |
+| 4 | No Marketing |
