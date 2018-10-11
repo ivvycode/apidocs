@@ -44,7 +44,6 @@ The array of custom fields to set on the contact. Each field will be validated d
 The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.  
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
-{% endapi-method-request %}
 
 {% api-method-parameter name="status" type="enum" required=false %}
 The contact's email status
@@ -53,6 +52,7 @@ The contact's email status
 {% api-method-parameter name="smsStatus" type="enum" required=false %}
 The contact's sms status
 {% endapi-method-parameter %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
