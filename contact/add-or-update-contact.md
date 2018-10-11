@@ -41,15 +41,15 @@ The array of custom fields to set on the contact. Each field will be validated d
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companies" type="string" required=false %}
-The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.  
+The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="enum" required=false %}
-The contact's email status
+The contact's email subscription status. Possible values are 1 = Subscribed, 2 = Unsubscribed, 3 = Bounced, 4 = Registering, 5 = No Marketing. The value of this field will be [one of the following current status](add-or-update-contact.md#email-status)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="smsStatus" type="enum" required=false %}
-The contact's sms status
+The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = Unsubscribed, 3 = Failed, 4 = No Marketing.The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
