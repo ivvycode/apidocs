@@ -132,9 +132,9 @@ The properties of the contact currently supported are:
 * Companies
   * This is an array of companies Ids
 * status
-  * The current status of the email susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#email-status)
+  * The current status of the email susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact#email-status)
 * status
-  * The current status of the sms susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
+  * The current status of the sms susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact#sms-status)
 
 ## Returns
 
