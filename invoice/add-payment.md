@@ -6,7 +6,9 @@ Add Payment
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+Add a payment against a specific invoice within iVvy.   
+  
+Payments will only be accepted if that amount is outstanding on the invoice. Over pays will not be accepted.  
 {% endapi-method-description %}
 
 {% api-method-spec %}
