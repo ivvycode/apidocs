@@ -21,7 +21,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="eventId" type="integer" required=true %}
-The event identifier. 
+The event identifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -32,7 +32,7 @@ The event identifier.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

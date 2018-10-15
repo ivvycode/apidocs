@@ -61,7 +61,10 @@
   * [Get Booking List](venues/get-booking-list.md)
   * [Get Booking List For Account](venues/get-booking-list-for-account.md)
   * [Get Booking](venues/get-booking.md)
+  * [Get Booking Accommodation List](venues/get-booking-accommodation-list.md)
+  * [Get Booking Room Reservation List](venues/get-booking-room-reservation-list.md)
   * [Get Venue Room List](venues/get-venue-room-list.md)
+  * [Get Venue Room Option List](venues/get-venue-room-option-list.md)
   * [Get Venue Rate Plan List](venues/get-venue-rate-plan-list.md)
   * [Add Items To Booking](venues/add-items-to-booking.md)
   * [Add Payment To Booking](venues/add-payment-to-booking.md)
@@ -87,6 +90,7 @@
   * [JSON Encoding](development-reference/json-encoding.md)
   * [Timestamp Format](development-reference/timestamp-format.md)
   * [Date Format](development-reference/date-format.md)
+  * [Address Format](development-reference/address-format.md)
   * [URLEncoding](development-reference/urlencoding.md)
   * [Timezone List](development-reference/timezone-list.md)
 
