@@ -46,6 +46,7 @@
   * [Get Registration List](events/get-registration-list.md)
   * [Get Attendee](events/get-attendee.md)
   * [Get Attendee List](events/get-attendee-list.md)
+  * [Get Invited Contact List](events/get-invited-contact-list.md)
   * [Invite Contacts](events/invite-contacts.md)
   * [Get Sponsorship List](events/get-sponsorship-list.md)
   * [Get Speaker List](events/get-speaker-list.md)
