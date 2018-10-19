@@ -12,19 +12,23 @@ Add or update contact details
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="externalId" type="string" required=false %}
+Reference to the ID of the contact in an external system. 
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id" type="integer" required=false %}
 The contact's identifier. \(Leave empty to add new contact\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="firstName" type="string" required=false %}
+{% api-method-parameter name="firstName" type="string" required=true %}
 The contact's first name \(required when id is missing\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="LastName" type="string" required=false %}
+{% api-method-parameter name="LastName" type="string" required=true %}
 The contact's last name \(required when id is missing\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="email" type="string" required=false %}
+{% api-method-parameter name="email" type="string" required=true %}
 The contact's email address. Must be a valid email. \(required when id is missing\) 
 {% endapi-method-parameter %}
 
@@ -66,8 +70,9 @@ The array of companies to set on the contact. Each value will be validated depen
 
 ```javascript
 {
-  "id": 33884,
   "firstName": "Bobby",
+  "lastName": "Smith",
+  "email": "bobbysmith@hotmail.com",
   "groups": [
     {
       "groupId": 10
@@ -82,7 +87,8 @@ The array of companies to set on the contact. Each value will be validated depen
   "companies": [
     4,
     5
-  ]
+  ],
+  "externalId" : "12345"
 }
 ```
 
