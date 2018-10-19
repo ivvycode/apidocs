@@ -75,19 +75,19 @@ The number of invited contacts to fetch
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of invited contact records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-### Invited Contact
+### Returns
 
-| Property | Type | Description |
+| Property | Description | Type |
 | :--- | :--- | :--- |
-| eventId | integer | The unique id of the event for invited contact |
-| contactId | integer | The unique contact id of the invited contact |
-| firstName | integer | The first name of the invited contact |
-| lastName | integer | The last name of the invited contact |
-| email | string | The email of the invited contact |
-| phone | string | The phone number of the invited contact |
-| response | string | The [response](get-invited-contact-list.md#response) from the invited contact |
-| registrationId | integer | The registration id of the invited contact |
-| modifiedDate | datetime | The date & time the invited contact was last modified |
+| eventId | The unique id of the event for invited contact | integer |
+| contactId | The unique contact id of the invited contact | integer |
+| firstName | The first name of the invited contact | integer |
+| lastName | The last name of the invited contact | integer |
+| email | The email of the invited contact | string |
+| phone | The phone number of the invited contact | string |
+| response | The [response](get-invited-contact-list.md#response) from the invited contact | string |
+| registrationId | The registration id of the invited contact | integer |
+| modifiedDate | The date & time the invited contact was last modified | datetime |
 
 ### Response
 
