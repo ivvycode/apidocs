@@ -148,7 +148,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | numRooms | integer | The number of rooms booked on bookingDate |
 | cost | number | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
 | numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
-| numFreeRooms | integer | The number of complimentary (free) rooms on bookingDate. This number is included in numRooms |
+| numFreeRooms | integer | The number of complimentary \(free\) rooms on bookingDate. This number is included in numRooms |
 
 ### Booking Accommodation Room Option
 

@@ -264,3 +264,4 @@ The result from this call will be a [collection](../getting-started/interpreting
 | phone | string | The mobile phone number of the contact |
 | createdDate | datetime | The date & time the contact was created |
 | modifiedDate | datetime | The date & time the contact was last modified |
+
