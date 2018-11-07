@@ -1,9 +1,5 @@
 # Get Venue Room Option List
 
-**NOTE: This action has not been published**
-
-## Get Venue Room Option List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomOptionList" path="" %}
 {% api-method-summary %}
 Get Venue Room Option List

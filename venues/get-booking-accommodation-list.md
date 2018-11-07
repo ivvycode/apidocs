@@ -1,9 +1,5 @@
 # Get Booking Accommodation List
 
-**NOTE: This action has not been published**
-
-## Get Booking Accommodation List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingAccommodationList" path="" %}
 {% api-method-summary %}
 Get Booking Accommodation List

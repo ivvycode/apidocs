@@ -1,9 +1,5 @@
 # Get Booking Room Reservation List
 
-**NOTE: This action has not been published**
-
-## Get Booking Room Reservation List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingRoomReservationList" path="" %}
 {% api-method-summary %}
 Get Booking Room Reservation List
