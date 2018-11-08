@@ -166,6 +166,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | venueId | Filter invoices that belong to a specific Venue | integer |
 | refType | Filter by a specific reference type. The[ reference type](get-invoice-list.md#reference-type) of the invoice | integer |
+| includePaymentDetails | Filter to determine whether payments are included in the response | true / false |
 
 ## Reference type
 
