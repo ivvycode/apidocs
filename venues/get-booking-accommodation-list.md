@@ -116,7 +116,7 @@ The unique id of the booking to which the accommodation belongs
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking accomodation records the user has access to. This call returns all accommodation records for a specific venue booking - it does not accept [pagination](../getting-started/interpreting-the-response/pagination.md) or [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-### Booking Accommodation \(Group\)
+## Booking Accommodation \(Group\)
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -136,7 +136,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | createdDate | datetime | The date & time the accommodation group was created |
 | modifiedDate | datetime | The date & time the acommodation group was last modified |
 
-### Booking Accommodation Day Rates
+## Booking Accommodation Day Rates
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -146,7 +146,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 | numFreeRooms | integer | The number of complimentary \(free\) rooms on bookingDate. This number is included in numRooms |
 
-### Booking Accommodation Room Option
+## Booking Accommodation Room Option
 
 | Property | Type | Description |
 | :--- | :--- | :--- |

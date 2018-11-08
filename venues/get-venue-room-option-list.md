@@ -77,7 +77,7 @@ The number of booking accomodation groups to fetch
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of room options the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-### Venue Room Option
+## Venue Room Option
 
 | Property | Type | Description |
 | :--- | :--- | :--- |

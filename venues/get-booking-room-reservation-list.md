@@ -181,7 +181,7 @@ The number of booking room reservations to fetch
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking room reservation records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
-### Booking Room Reservation
+## Booking Room Reservation
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -199,7 +199,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | modifiedDate | datetime | The date & time the room reservation was last modified |
 | rooms | array of [Reserved Rooms](get-booking-room-reservation-list.md#reserved-room) | The details of the rooms that have been reserved |
 
-### Room Reservation Status
+## Room Reservation Status
 
 | Status | Description |
 | :--- | :--- |
@@ -207,7 +207,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | 2 | Confirmed |
 | 3 | Cancelled |
 
-### Reserved Room
+## Reserved Room
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -230,7 +230,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | cancelledDate | datetime | The date & time the reserved room was cancelled |
 | dayRates | array of [Day Rates](get-booking-room-reservation-list.md#reserved-room-day-rates) | The daily rates of the reserved room |
 
-### Reserved Room Day Rates
+## Reserved Room Day Rates
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -238,7 +238,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | barId | integer | The unique id of the rate plan assigned to the dayDate of the reserved room. If the reserved room applies to an accommodation group \(see property _isFromGroup_ above\) then this will always be the room type assigned to the accommodation group |
 | cost | number | The rate amount for the reserved room on dayDate. The amount either includes or excludes tax depending on how the venue is configured |
 
-### Guest
+## Guest
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -249,7 +249,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | createdDate | datetime | The date & time the venue guest was created |
 | modifiedDate | datetime | The date & time the venue guest was last modified |
 
-### Guest Contact Details
+## Guest Contact Details
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
