@@ -1,45 +1,90 @@
-# Financial Accounting Systems
+# CRM Integrations
 
-Financial integrations compose of copying the financial history out of iVvy and into a users financial system for reconciliation and reporting.
+CRM Integrations typically have different modules completed in them for transfer. 
+* [Contacts](../../use-cases/crm-systems.md#Contacts)
+* Contact Emails (../../use-cases/crm-systems.md#Contact-Emails)
+* Events Software Users (../../use-cases/crm-systems.md#Event-Software-Users)
+  * Event Registrations (../../use-cases/crm-systems.md#Event-Registrations)
+  * Events (../../use-cases/crm-systems.md#Events)
+  * Event Attendees (../../use-cases/crm-systems.md#Event-Attendees)
+* Venues Software Users (../../use-cases/crm-systems.md#Venue-Software-Users)
+  * Companies (../../use-cases/crm-systems.md#Companies)
+  * Quotes & Bookings (../../use-cases/crm-systems.md#Quotes-and-Bookings)
 
-As there is a vast difference between the way the venues and events invoicing systems work, historically they have been completed separately. Typically iVvy only sync paid invoices on Event Integrations, as events invoices can constantly change up until the point they are paid. However venues invoices do not commonly change, so the process of syncing them and paying them later is followed in the Venues integration.
+# Contacts
+Contacts are preferred to be transferred two ways between iVvy and the CRM system so that both systems are always kept up to date. 
 
-When creating a financial integration there are a lot of different steps and scenarios to consider. 
+It is important to remember that iVvy uses three fields to uniquely identify a contact: first name, last name and email. Other systems may not use the same identifiers, so it is recommended that a constant identifier is used (such as a contact ID) to make a permanent pairing of the contacts. iVvy does have a field to store a externalId that our integrations typically use to store the contact ID from the other system. 
 
-1. **Contact or Company:** Each invoice will need to have a contact and/or company assigned 
-2. **Currency:** What currency is the invoice in, and how does it need to be added into the financial system.
-3. **Tax:** Tax tax rate is the invoice and its line items using, and how is this translated into the financial system. 
-4. **Item Ledger Accounts:** Line items in a financial system will typically have a revenue account assigned. Logic around achieving this will need to be decided. 
-5. **Bank accounts:** When transferring payments into a financial system, the bank account that the funds are sitting in needs to be allocated. 
-6. **Historical Data:** If you want to do historical data or just data from when the installation occurs.
-7. **Transferring payments both ways:** This is a common scenario if a user \* Has a payment gateway in iVvy \* Is adding payments through the financial system to the invoices, such as a bank feed directly into their finance program. 
-8. **Existing Contacts:** Financial systems may already have a debtor list. A good algorithm to match up contacts in iVvy and the Financial System when syncing invoices and creating a constant between the two such as a contact ID is highly recommended to avoid duplicates.
+Typical endpoints used when doing a 2 way contact sync. 
+* [Get Contact List](../../contact/get-contact-list.md): Using this call with a filter of modifiedDate can give you the list of contacts that were modified in iVvy since the last sync. This minimises the amount of time that is spent comparing the contacts between the two systems. You may or may not also use the get Contact action which returns a single contact. 
+* [Add or Update Contact](../../contact/add-or-update-contact.md) for when the contacts are being synced back into iVvy.
+* [Get subscription group](../../contact/get-subscription-group-list.md) list and [add Contacts to subscription group](../../contact/add-contacts-to-subscription-group.md) if the integration will be supporting syncing of subscription groups. 
 
-No two users are the same so iVvy integrations normally offer these as options for the user to set during installation rather than hard wiring them. This allows more flexibility for the end user.
+Remember to provide a method to map custom fields between the two systems if they are also being synced in the integration. 
 
-## Common API Actions that would be used in a financial Integration
+# Contact Emails
+As an email is usually stored against a singular action in iVvy, they cannot be received into iVvy from a third party. So contact emails are a one way sync out of iVvy and into the CRM so that the CRM has a comprehensive history of all correspondence sent to the contact. 
 
-1. **Fetch the Invoices**
+Typical endpoints used when doing an email sync from iVvy to a CRM:
+* [Get Email Log List](../../account/get-email-log-list.md) returns a collection of the emails that have been sent. The content in the body in returned HTML format so it is wise to consider this when syncing the emails into a third party system. 
 
-   Invoices can be fetched from iVvy via the [getInvoice](../../invoice/get-invoice.md) and [getInvoiceList](../../invoice/get-invoice-list.md)  API actions. 
+# Event Software Users
+If completing a integration for Events users, these are some optional modules that have been popular demand. 
 
-   From these actions currency, tax, items and payment information can be accessed. If completing a separate events or venue integration [filtering by refType](../../invoice/get-invoice-list.md#reference-type) is recommended to get the correct invoices that need to be sourced.   
-   One important thing to note for invoices is they may not always have a company ID or contact ID. Invoices in iVvy can be assigned to an “Other”. So this makes working with a contact database tricky in this situation. Typically if there is no contact or company for the invoice the default contact/company is sourced from the Booking or the Event that the invoice is associated with to create the corresponding contact in the Financial System.
+## Event Registrations
+Event registrations are usually synced into the CRM as opportunities. This is normally optional so that the user can use the CRM portion and not be forced into this feature if they do not wish to use it. 
 
-2. **Fetching a contact or company for each invoice** A contact or company can be fetched from the iVvy system using the [Get Contact](../../contact/get-contact.md) / [Get Contact List](../../contact/get-contact-list.md) or [Get Company](../../contact/get-company.md) / [Get Company List](../../contact/get-company-list.md) actions. The list actions return different data to the individual actions so make sure you are calling the correct action that returns the information you are looking for. Both may be used in some cases.
-3. **Mapping an Invoice Status** It is recommended to look at the invoice status in iVvy and the financial system and map them accordingly deciding on what behavior happens as the status changes in iVvy. The list of [iVvy invoice status](../../invoice/get-invoice-list.md#current-status) can be found here.
-4. **Assigning line items to an account in the Financial System** Each line item in iVvy has a refType. These are iVvy constants that could be used to map to a revenue account in the financial system. These can be accessed by the [getOptions](../../invoice/get-options.md) action.
-5. **Adding a payment back to iVvy on a two way sync** If both systems are taking payments it makes sense to transfer payments back to iVvy that were taking in the financial system. This can be done by the [Add Payment](../../invoice/add-payment.md) endpoint. The invoice has to be existing in iVvy already \(a new one cannot be created\), and invoices cannot be overpaid via the API.
+This is associated with the revenue of event registrations being displayed in the CRM system so that more accurate forecasting is completed. It also attaches to the contacts/companies history so that the CRM user can see an accurate historic relationship with the contact/company. This is a one way sync out of iVvy and into the CRM system. 
 
-## Venues Invoices
+Typical Endpoints used when doing an Event Registration syncs into Opportunities in a CRM. 
+* [Get Registration List](../../events/get-registration-list.md) can be used to fetch the latest created and modified event registrations from the iVvy system. 
 
-Please note this is a general overview which changes for different financial systems depending on how the system works with credit notes and refunds.
+Important point to remember is that returned event registrations include both delegate and exhibitor registrations. The data may be filtered depending on which is being targeted. Typical iVvy integrations include both. For a list of registration status they can be found under [Registration Current Status Details](../../events/get-registration-list.md#registration-current-status-details). 
 
-![](../../.gitbook/assets/invoices-venues.png)
+Usually only paid “completed” status registrations would be synced, because until payment is received they are not guaranteed as income.
 
-## Events Invoices
+## Events 
+Events are synced one way out of iVvy and into CRM campaigns. This is normally optional so that the user can use the CRM portion and not be forced into this feature if they do not wish to use it. 
 
-Please note this is a general overview which changes for different financial systems depending on how the system works with credit notes and refunds. The iVvy events API does not pass credit note information so if a user needs to create a refund/credit this is done manually in the financial system.
+This gives the CRM user access to a comprehensive history of what events took place for their clients, and which of the contacts (refer campaign members) actually attended their events. This gives a more comprehensive report of the history and relationship with the customer in the CRM. 
 
-![](../../.gitbook/assets/invoices-events.png)
+Typical Endpoints used when syncing events into a CRM. 
+* [Get Event List](../../events/get-event-list.md) returns a list of events in the iVvy account. These can then be synced into the corresponding CRM system. 
 
+## Event Attendees
+Attendees in an iVvy event are synced against the campaign in the CRM as an attendee member. This is included in the optional “Events (campaigns)” module. Part of this sync includes keeping the invitation and attendance status periodically up to date.
+
+Typical Endpoints used when syncing event members into a CRM. 
+* [Get Invited Contact List](../../events/get-invited-contact-list.md) gives a list of contacts invited to the event. This action will return a response on if they clicked yes, no or haven’t responded yet, however it also updates a registration ID field when the contact progresses onto a registration. 
+* [Get Attendee List](../../events/get-attendee-list.md) will give a list of contacts that have registered for the event. 
+
+Event Registration Progress:
+Initially a contact would start as an invitation with the following invitation status:  
+* U = Undecided
+* Y = Yes
+* N = No
+
+If the attendee has clicked yes than they will be now found in the attendee list as they have completed their registration. Once on the attendee list (meaning they will attend) the “hasAttended” and “sessionHasAttended” flags will verify if the user registered but did or did not attend. 
+
+One point to remember is that if the event is not invite only, attendees can still register that haven’t been invited so there may be records in the attendee list that are not in the invited contact list that need to be considered. 
+
+# Venue Software Users
+If completing a integration for Venues users, these are some optional modules that have been popular demand. 
+
+## Companies
+The venues software has a component to store companies against contacts (whereas events does not) so a two way company sync (or as some CRMs refer to them as accounts) to keep the two systems up to date. The same as contacts, a company has an externalID field in iVvy that can be used as the constant to map the company together so if there is a name change, then the two companies are still connected and can be kept up to date. 
+
+Typical Endpoints used when doing a Company sync
+* [Get Company List](../../contact/get-company-list.md) and [Get Company](../../contact/get-company.md) if completing company syncs. 
+* [Add or Update Company](../../contact/add-or-update-company.md), if sending data back from the third party CRM. 
+
+## Quotes and Bookings
+Venues may wish for their quotes and bookings to appear in their CRM against the contact / company as an Opportunity. This is usually “optional” so that if the venue wishes to use the CRM, they aren’t forced to use the bookings / quotes module if they do not wish to. 
+
+iVvy does not allow for quotes/bookings to be pushed back into the system, and the data in an opportunity does not usually meet the minimum requirements of a quote or booking in the iVvy system so it’s completed as a one way sync out of iVvy and into the CRM System. 
+
+Typical Endpoints used when doing a Quotes / Bookings Sync
+* [getBookingListForAccount](../../venues/get-booking-list-for-account.md) (this returns bookings for all venues) [getBookingList](../../venues/get-booking-list.md) (returns all bookings for a single venue) or [getBooking](../../venues/get-booking.md) (returns a single booking) can be used to source a list of quotes and bookings out of a venue.  To differentiate between a quote and a booking the current status will identify if its Prospective (quote) or Tentative / Confirmed (Booking). 
+
+To get the latest bookings that have been created or modified, the result can be filtered by a modifiedDateAfter parameter. 
