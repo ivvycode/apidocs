@@ -2,14 +2,14 @@
 
 CRM Integrations typically have different modules completed in them for transfer. 
 * [Contacts](../../use-cases/crm-systems.md#Contacts)
-* Contact Emails (../../use-cases/crm-systems.md#Contact-Emails)
-* Events Software Users (../../use-cases/crm-systems.md#Event-Software-Users)
-  * Event Registrations (../../use-cases/crm-systems.md#Event-Registrations)
-  * Events (../../use-cases/crm-systems.md#Events)
-  * Event Attendees (../../use-cases/crm-systems.md#Event-Attendees)
-* Venues Software Users (../../use-cases/crm-systems.md#Venue-Software-Users)
-  * Companies (../../use-cases/crm-systems.md#Companies)
-  * Quotes & Bookings (../../use-cases/crm-systems.md#Quotes-and-Bookings)
+* [Contact Emails](../../use-cases/crm-systems.md#Contact-Emails)
+* [Events Software Users](../../use-cases/crm-systems.md#Event-Software-Users)
+  * [Event Registrations](../../use-cases/crm-systems.md#Event-Registrations)
+  * [Events](../../use-cases/crm-systems.md#Events)
+  * [Event Attendees](../../use-cases/crm-systems.md#Event-Attendees)
+* [Venues Software Users](../../use-cases/crm-systems.md#Venue-Software-Users)
+  * [Companies](../../use-cases/crm-systems.md#Companies)
+  * [Quotes & Bookings](../../use-cases/crm-systems.md#Quotes-and-Bookings)
 
 # Contacts
 Contacts are preferred to be transferred two ways between iVvy and the CRM system so that both systems are always kept up to date. 
