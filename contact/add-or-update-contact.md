@@ -11,7 +11,7 @@ Add or update contact details
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="externalId" type="string" required=false %}
 Reference to the ID of the contact in an external system. 
 {% endapi-method-parameter %}
@@ -47,7 +47,7 @@ The array of custom fields to set on the contact. Each field will be validated d
 {% api-method-parameter name="companies" type="string" required=false %}
 The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.  
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
