@@ -27,8 +27,8 @@ A successful response to an add or update operation.
 ```
 {% endapi-method-response-example %}
 {% api-method-response-example httpCode=400 %}
-Failure to add or update the accommodation with a specific error message.
 {% api-method-response-example-description %}
+Failure to add or update the accommodation with a general error message, or a message that applies to specific request data.
 {% endapi-method-response-example-description %}
 ```javascript
 {
@@ -37,12 +37,6 @@ Failure to add or update the accommodation with a specific error message.
   "specificCode": 24248
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response-example %}
-{% api-method-response-example httpCode=400 %}
-Failure to add or update the accommodation with an error message that applies to a specific request value.
-{% api-method-response-example-description %}
-{% endapi-method-response-example-description %}
 ```javascript
 {
   "errorCode": 400,
@@ -51,11 +45,10 @@ Failure to add or update the accommodation with an error message that applies to
 }
 ```
 {% endapi-method-response-example %}
-
 {% endapi-method-response-example %}
 {% api-method-response-example httpCode=500 %}
-Failure for an unknown and/or unexpected error.
 {% api-method-response-example-description %}
+Failure for an unknown and/or unexpected error.
 {% endapi-method-response-example-description %}
 ```javascript
 {
