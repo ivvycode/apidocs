@@ -33,6 +33,7 @@ The unique id of the accommodation group to remove
 {% api-method-response-example-description %}
 Successfully removing an accommodation group from a booking.
 {% endapi-method-response-example-description %}
+
 ```javascript
 {
   "success": true,
@@ -40,3 +41,7 @@ Successfully removing an accommodation group from a booking.
 }
 ```
 {% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+

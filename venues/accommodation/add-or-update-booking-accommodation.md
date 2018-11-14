@@ -21,6 +21,7 @@ A json object that represents the accommodation group to add or update. See belo
 {% api-method-response-example-description %}
 A successful response to an add or update operation.
 {% endapi-method-response-example-description %}
+
 ```javascript
 {
   "success": true,
@@ -28,10 +29,12 @@ A successful response to an add or update operation.
 }
 ```
 {% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 Invalid request data that prevents the accommodation group from being added/updated.
 {% endapi-method-response-example-description %}
+
 ```javascript
 {
   "errorCode": 400,
@@ -85,3 +88,4 @@ Invalid request data that prevents the accommodation group from being added/upda
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from price |
 | costcenterId | integer | optional | The unique id of the cost center assigned to the additional option |
 | numPayableByGuest | integer | required | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+
