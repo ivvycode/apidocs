@@ -114,7 +114,7 @@ The unique id of the booking to which the accommodation belongs
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking accomodation records the user has access to. This call returns all accommodation records for a specific venue booking - it does not accept [pagination](../getting-started/interpreting-the-response/pagination.md) or [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking accomodation records the user has access to. This call returns all accommodation records for a specific venue booking - it does not accept [pagination](../../getting-started/interpreting-the-response/pagination.md) or [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Booking Accommodation \(Group\)
 

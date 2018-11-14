@@ -179,7 +179,7 @@ The number of booking room reservations to fetch
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking room reservation records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking room reservation records the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Booking Room Reservation
 
@@ -245,7 +245,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | id | integer | The unique id of the venue guest |
 | contact | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest |
 | primaryPhone | string | The primary phone number of the guest |
-| address | [Address](../development-reference/address-format.md) | The address of the guest |
+| address | [Address](../../development-reference/address-format.md) | The address of the guest |
 | createdDate | datetime | The date & time the venue guest was created |
 | modifiedDate | datetime | The date & time the venue guest was last modified |
 
@@ -253,7 +253,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| id | integer | The unique id of the [contact](../contact/get-contact.md) |
+| id | integer | The unique id of the [contact](../../contact/get-contact.md) |
 | firstName | string | The first name of the contact |
 | lastName | string | The last name of the contact |
 | email | string | The email address of the contact |
