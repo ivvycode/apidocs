@@ -57,6 +57,7 @@
   * [Accommodation](venues/accommodation/README.md)
     * [Get Booking Accommodation List](venues/accommodation/get-booking-accommodation-list.md)
     * [Add or Update Booking Accommodation](venues/accommodation/add-or-update-booking-accommodation.md)
+    * [Remove Booking Accommodation](venues/accommodation/remove-booking-accommodation.md)
     * [Get Booking Room Reservation List](venues/accommodation/get-booking-room-reservation-list.md)
     * [Add or Update Room Counts](venues/accommodation/add-or-update-room-counts.md)
     * [Add or Update Room Dynamic Rates](venues/accommodation/add-or-update-room-dynamic-rates.md)
