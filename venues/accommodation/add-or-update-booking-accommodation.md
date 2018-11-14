@@ -19,6 +19,7 @@ A json object that represents the accommodation group to add or update. See belo
 {% api-method-response-example-description %}
 A successful response to an add or update operation.
 {% endapi-method-response-example-description %}
+
 ```javascript
 {
   "success": true,
@@ -26,10 +27,12 @@ A successful response to an add or update operation.
 }
 ```
 {% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 Invalid request data that prevents the accommodation group from being added/updated.
 {% endapi-method-response-example-description %}
+
 ```javascript
 {
   "errorCode": 400,
@@ -44,3 +47,10 @@ Invalid request data that prevents the accommodation group from being added/upda
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+| Test | Test2 |
+| :--- | :--- |
+| **agadf** | Content |
+
+
+
