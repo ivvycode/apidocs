@@ -11,6 +11,8 @@ Adds or updates the details of a specific booking accommodation group on a speci
 
 {% api-method-spec %}
 {% api-method-request %}
+A json object that represents the accommodation group to add or update. See below for the data description.
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -25,6 +27,3 @@ Adds or updates the details of a specific booking accommodation group on a speci
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
