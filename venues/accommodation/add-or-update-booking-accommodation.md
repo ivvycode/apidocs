@@ -28,37 +28,19 @@ A successful response to an add or update operation.
 {% endapi-method-response-example %}
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
-Failure to add or update the accommodation with a general error message, or a message that applies to specific request data.
+Invalid request data that prevents the accommodation group from being added/updated.
 {% endapi-method-response-example-description %}
 ```javascript
 {
   "errorCode": 400,
-  "message": "The booking details were not updated",
-  "specificCode": 24248
-}
-```
-```javascript
-{
-  "errorCode": 400,
-  "message": "endDate: The end date must be after the start date",
-  "specificCode": 24249
+  "message": "The request contains invalid data",
+  "specificCode": 24248,
+  "additionalMessages": [
+      "2019-01-01: The number of rooms can't exceed 30"
+  ],
 }
 ```
 {% endapi-method-response-example %}
-{% endapi-method-response-example %}
-{% api-method-response-example httpCode=500 %}
-{% api-method-response-example-description %}
-Failure for an unknown and/or unexpected error.
-{% endapi-method-response-example-description %}
-```javascript
-{
-  "errorCode": 500,
-  "message": "An unknown error has occurred",
-  "specificCode": 24250
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
