@@ -17,13 +17,55 @@ A json object that represents the accommodation group to add or update. See belo
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+A successful response to an add or update operation.
 {% endapi-method-response-example-description %}
-
-```
-
+```javascript
+{
+  "success": true,
+  "id": 1423
+}
 ```
 {% endapi-method-response-example %}
+{% api-method-response-example httpCode=400 %}
+Failure to add or update the accommodation with a specific error message.
+{% api-method-response-example-description %}
+{% endapi-method-response-example-description %}
+```javascript
+{
+  "errorCode": 400,
+  "message": "The booking details were not updated",
+  "specificCode": 24248
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response-example %}
+{% api-method-response-example httpCode=400 %}
+Failure to add or update the accommodation with an error message that applies to a specific request value.
+{% api-method-response-example-description %}
+{% endapi-method-response-example-description %}
+```javascript
+{
+  "errorCode": 400,
+  "message": "endDate: The end date must be after the start date",
+  "specificCode": 24249
+}
+```
+{% endapi-method-response-example %}
+
+{% endapi-method-response-example %}
+{% api-method-response-example httpCode=500 %}
+Failure for an unknown and/or unexpected error.
+{% api-method-response-example-description %}
+{% endapi-method-response-example-description %}
+```javascript
+{
+  "errorCode": 500,
+  "message": "An unknown error has occurred",
+  "specificCode": 24250
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
