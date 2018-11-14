@@ -1,6 +1,6 @@
 # Add or Update Booking Accommodation
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateBookingAccommodation" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=addOrUpdateBookingAccommodation" %}
 {% api-method-summary %}
 Add or Update Booking Accommodation
 {% endapi-method-summary %}
@@ -9,4 +9,22 @@ Add or Update Booking Accommodation
 Adds or updates the details of a specific booking accommodation group on a specific venue booking.
 {% endapi-method-description %}
 
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
 {% endapi-method %}
+
+
+

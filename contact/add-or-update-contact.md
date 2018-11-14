@@ -13,7 +13,7 @@ Add or update contact details
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="externalId" type="string" required=false %}
-Reference to the ID of the contact in an external system. 
+Reference to the ID of the contact in an external system.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="integer" required=false %}
@@ -29,23 +29,23 @@ The contact's last name \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="string" required=true %}
-The contact's email address. Must be a valid email. \(required when id is missing\) 
+The contact's email address. Must be a valid email. \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="phone" type="string" required=false %}
-The contacts phone number. 
+The contacts phone number.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="groups" type="string" required=false %}
-The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact. 
+The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="customFields" type="string" required=false %}
-The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set. 
+The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companies" type="string" required=false %}
-The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.  
+The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -56,7 +56,7 @@ The array of companies to set on the contact. Each value will be validated depen
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id":33884
 }
