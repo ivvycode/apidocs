@@ -45,3 +45,8 @@ Successfully removing an accommodation group from a booking.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+| Error Type | Reason |
+| :--- | :--- |
+| 1 | Unknown error |
+| 2 | The accommodation group has room reservations, and cannot be removed |
+
