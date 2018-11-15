@@ -1,16 +1,12 @@
 # Get Booking Accommodation List
 
-**NOTE: This action has not been published**
-
-## Get Booking Accommodation List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingAccommodationList" path="" %}
 {% api-method-summary %}
 Get Booking Accommodation List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of booking accommodation \(i.e. groups\) for a venue.
+Get a list of booking accommodation \(i.e. groups\) for a specific venue booking.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -20,16 +16,8 @@ Get a list of booking accommodation \(i.e. groups\) for a venue.
 The unique id of the venue to which the bookings belong
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="bookingId" type="integer" required=false %}
+{% api-method-parameter name="bookingId" type="integer" required=true %}
 The unique id of the booking to which the accommodation belongs
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="start" type="integer" required=false %}
-The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="perPage" type="integer" required=true %}
-The number of booking accomodation groups to fetch
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -43,10 +31,10 @@ The number of booking accomodation groups to fetch
 ```text
 {
     "meta": {
-        "totalResults": 1,
+        "totalResults": 5,
         "start": 0,
         "perPage": 5,
-        "count": 1
+        "count": 5
     },
     "results": [{
         "id": 1432,
@@ -64,25 +52,29 @@ The number of booking accomodation groups to fetch
                 "bookingDate": "2018-08-27",
                 "numRooms": 11,
                 "cost": 180,
-                "numPayableByGuest": 11
+                "numPayableByGuest": 11,
+                "numFreeRooms": 1
             },
             {
                 "bookingDate": "2018-08-28",
                 "numRooms": 12,
                 "cost": 190,
-                "numPayableByGuest": 12
+                "numPayableByGuest": 12,
+                "numFreeRooms": 1
             },
             {
                 "bookingDate": "2018-08-29",
                 "numRooms": 13,
                 "cost": 175,
-                "numPayableByGuest": 13
+                "numPayableByGuest": 13,
+                "numFreeRooms": 1
             },
             {
                 "bookingDate": "2018-08-30",
                 "numRooms": 14,
                 "cost": 210,
-                "numPayableByGuest": 14
+                "numPayableByGuest": 14,
+                "numFreeRooms": 1
             }
         ],
         "excludedTaxIds": [],
@@ -122,9 +114,9 @@ The number of booking accomodation groups to fetch
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of booking accomodation records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking accomodation records the user has access to. This call returns all accommodation records for a specific venue booking - it does not accept [pagination](../../getting-started/interpreting-the-response/pagination.md) or [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
-### Booking Accommodation \(Group\)
+## Booking Accommodation \(Group\)
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -144,7 +136,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | createdDate | datetime | The date & time the accommodation group was created |
 | modifiedDate | datetime | The date & time the acommodation group was last modified |
 
-### Booking Accommodation Day Rates
+## Booking Accommodation Day Rates
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -152,8 +144,9 @@ The result from this call will be a [collection](../getting-started/interpreting
 | numRooms | integer | The number of rooms booked on bookingDate |
 | cost | number | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
 | numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| numFreeRooms | integer | The number of complimentary \(free\) rooms on bookingDate. This number is included in numRooms |
 
-### Booking Accommodation Room Option
+## Booking Accommodation Room Option
 
 | Property | Type | Description |
 | :--- | :--- | :--- |

@@ -28,7 +28,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 29016,
@@ -71,6 +71,26 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
         "countryName": null,
         "postalCode": "5SA19NAQ"
       },
+      "payments": [
+                {
+                    "paymentId": null,
+                    "receiptNum": 2,
+                    "invoiceId": 15,
+                    "customGatewayName": null,
+                    "paidBy": null,
+                    "registrationId": null,
+                    "registrationDate": null,
+                    "invoiceReference": 1007002,
+                    "invoiceStatus": 0,
+                    "feeAmount": null,
+                    "merchantReference": null,
+                    "eventTitle": "Event Testing",
+                    "eventCode": "X18KPN",
+                    "eventTimezone": "Pacific/Niue",
+                    "venueBusinessName": null,
+                    "customOptions": []
+                },
+      ],
       "bookingCode": null
     },
     {
@@ -107,6 +127,26 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
         "countryName": null,
         "postalCode": "S90I9GG"
       },
+      "payments": [
+        {
+            "paymentId": 47,
+            "receiptNum": "",
+            "invoiceId": 64,
+            "customGatewayName": "Custom Payment Method 1",
+            "paidBy": null,
+            "registrationId": null,
+            "registrationDate": null,
+            "invoiceReference": 1007002,
+            "invoiceStatus": 0,
+            "feeAmount": 0,
+            "merchantReference": "1007002_1",
+            "eventTitle": "Event Testing",
+            "eventCode": "X18KPN",
+            "eventTimezone": "Pacific/Niue",
+            "venueBusinessName": null,
+            "customOptions": []
+        }
+      ],
       "bookingCode": null
     }
   ]
@@ -122,6 +162,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 | Property | Description | Type |
 | :--- | :--- | :--- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
+| includePaymentDetails | Filter by Payment Details | boolean |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | venueId | Filter invoices that belong to a specific Venue | integer |
 | refType | Filter by a specific reference type. The[ reference type](get-invoice-list.md#reference-type) of the invoice | integer |
@@ -165,6 +206,7 @@ A collection object with the following properties in the results
 | toContactId | Contact Id against which invoice is created |
 | toAddress | [The “to” Address of the invoice](get-invoice-list.md#address-details) |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
+| payments | List of payments of the invoice Payment Details |
 
 ## Current status
 
@@ -191,6 +233,21 @@ A collection object with the following properties in the results
 | countryCode | The country code of the address \(e.g. AU\) |
 | countryName | The country name of the address \(e.g. Australia\) |
 | postalCode | The postal code of the address |
+
+## Payment Details
+
+| Property | Description |
+| :--- | :--- |
+| paymentId | The identifier of the payment |
+| receiptNum | The receipt number of the payment |
+| amountPaid | The amount paid of the payment |
+| notes | The notes of the payment |
+| chequeNumber | The chequeNumber of the payment |
+| paymentMethod | The payment method of the payment |
+| paidDate | The paid timestamp of the payment |
+| feePercentage | The percentage fee included in amountPaid |
+| feeAmount | The fee amount included in amountPaid |
+| invoiceId | The unique invoice identifier |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 

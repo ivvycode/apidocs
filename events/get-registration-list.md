@@ -54,7 +54,7 @@ A collection object with the following properties in the results
 | :--- | :--- |
 | id | The unique registration identifier |
 | eventName | The name of event that event registration belongs |
-| currentStatus | The current status of the event |
+| currentStatus | The current status of the event registration |
 | isExhibitor | Whether or not event registration is exhibitor |
 | completedDate | The registered date time of event registration |
 | mainContactId | The main contact id of event registration |
@@ -74,4 +74,12 @@ The result from this call will be a [collection](./#collections) of all the even
 | Code | Description |
 | :--- | :--- |
 | Specific Code: 24206 | Unable to find event |
+
+## Registration Current Status Details
+
+| Property | Description |
+| :--- | :--- |
+| 1 | In Progress |
+| 2 | Completed |
+| 4 | Payment Waiting  |
 
