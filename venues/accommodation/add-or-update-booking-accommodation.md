@@ -96,7 +96,8 @@ Updating an existing accommodation group **overlays** the existing data. Optiona
 If the start and/or end dates of the accommodation group change:  
 \* Any existing rates on dates that no longer apply \(i.e. _bookingDate_ is outside the new group dates\) will be removed.  
 \* Any existing room options on dates that no longer apply \(i.e. _bookingDate_ is outside the new group dates\) will be removed.  
-\* Rates for any new dates are required.
+\* Rates for any new dates are required.  
+\* If the accommodation group dates extend beyond the accommodation dates of the booking \(to which the group belongs\) then the booking's accommodation dates will be adjusted to include the new date range.
 
 Day rates override existing data based on the _bookingDate_ value in the request. For example, to change the rate on 23/12/2019:  
 `{  
