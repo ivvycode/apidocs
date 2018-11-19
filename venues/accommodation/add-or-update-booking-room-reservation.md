@@ -102,17 +102,24 @@ Invalid request data that prevents the room reservation from being added/updated
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| dayDate | date | required | The date of the reserved room to which the rate applies |
+| cost | number | required | The rate amount for the reserved room on dayDate. The amount either includes or excludes tax depending on how the venue is configured |
 
 ## Guest
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| id | integer | optional | The unique id of the venue guest to update |
+| contact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest |
+| primaryPhone | string | optional | The primary phone number of the guest |
+| address | [Address](../../development-reference/address-format.md) | optional | The address of the guest |
 
 ## Guest Contact Details
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| firstName | string | required | The first name of the contact |
+| lastName | string | required | The last name of the contact |
+| email | string | required | The email address of the contact |
+| phone | string | optional | The mobile phone number of the contact |
 
