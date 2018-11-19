@@ -133,6 +133,49 @@ This action only supports adding a room reservation to a booking that has [accom
 
 Updating an existing room reservation **overlays** the existing data. Optional request data that is excluded will not change existing data. This does not guarantee that the request data will validate if other data is changed. For example, if the departure date of a reserved room is extended, rates for the **new** dates will be required.
 
+The following is an example of an update request that updates an existing room \(_id_ 400\) and adds a new room:
+
+```javascript
+"rooms": [
+  {
+    "id": 400,
+    "arrivalDate": "2019-01-01",
+    "departureDate": "2019-02-03",
+    "dayRates": [
+      {
+        "dayDate": "2019-01-01",
+        "cost": 100
+      },
+      {
+        "dayDate": "2019-01-02",
+        "cost": 101
+      }
+    ]
+  },
+  {
+    "guest": {
+      "id": 301
+    },
+    "groupId": 1,
+    "arrivalDate": "2019-01-01",
+    "departureDate": "2019-02-03",
+    "numAdultGuests": 1,
+    "numChildGuests": 0,
+    "dayRates": [
+      {
+        "dayDate": "2019-01-01",
+        "cost": 100
+      },
+      {
+        "dayDate": "2019-01-02",
+        "cost": 101
+      }
+    ]
+]
+```
+
+Existing rooms can be **removed** from a reservation by passing their unique identifier in the _removeRooms_ of the request. Rooms are removed before other rooms in the request are added/updated.
+
 ## Notes on guest details in the request
 
 Guests are **uniquely** identified based on the following \(in order\):  
