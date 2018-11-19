@@ -15,11 +15,7 @@ Adds or updates the details of a specific room reservation on a specific venue b
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+A json object that represents the room reservation to add or update. See below for the data description.
 {% endapi-method-request %}
 
 {% api-method-response %}
