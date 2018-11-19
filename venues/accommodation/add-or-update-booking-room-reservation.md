@@ -88,7 +88,15 @@ Invalid request data that prevents the room reservation from being added/updated
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| id | integer | optional | The unique id of the individual reserved room on the reservation to update. Omit this to create a new room on the reservation |
+| guest | [Guest](add-or-update-booking-room-reservation.md#guest) | required on add, optional on update | Details of the guest on the individual reservation room |
+| groupId | integer | required on add, optional on update | The unique id of the [accommodation group](add-or-update-booking-accommodation.md#booking-accommodation-group) from which the room is reserved |
+| arrivalDate | date | required on add, optional on update | The arrival date of the reserved room |
+| departureDate | date | required on add, optional on update | The departure date of the reserved room |
+| excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from the daily rates |
+| numAdultGuests | integer | required on add, optional on update | The number of adults on the reserved room. The value cannot exceed 10 |
+| numChildGuests | integer | required on add, optional on update | The number of children on the reserved room. The value cannot exceed 10 |
+| dayRates | array of [Day Rates](add-or-update-booking-room-reservation.md#reserved-room-day-rates) | required on add, optional on update | The daily rates of the reserved room |
 
 ## Reserved Room Day Rates
 
