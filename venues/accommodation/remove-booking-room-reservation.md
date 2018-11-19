@@ -8,7 +8,9 @@ Remove Booking Room Reservation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Remove a room reservation from a specific booking
+Remove a room reservation from a specific booking. The booking must satisfy the following:  
+\* Accommodation is included.  
+\* The status must be "confirmed".
 {% endapi-method-description %}
 
 {% api-method-spec %}
