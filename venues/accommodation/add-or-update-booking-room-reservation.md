@@ -133,3 +133,81 @@ This action only supports adding a room reservation to a booking that has [accom
 
 Updating an existing room reservation **overlays** the existing data. Optional request data that is excluded will not change existing data. This does not guarantee that the request data will validate if other data is changed. For example, if the departure date of a reserved room is extended, rates for the **new** dates will be required.
 
+## Notes on guest details in the request
+
+Guests are **uniquely** identified based on the following \(in order\):  
+1\) The unique _id_ value of the guest.  
+2\) The combination of the guest's _email_, _firstName_, and _lastName_ \(case insensitive\).
+
+Consider the following [guest](add-or-update-booking-room-reservation.md#guest) objects:
+
+```javascript
+{
+  "id": 101,
+  "primaryPhone": "123456789"
+}
+
+{
+  "contact": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@somewhere.com"
+  },
+  "primaryPhone": "0419111222"
+}
+```
+
+The first object will update the guest with the unique id _101_. The request will fail if the guest does not exist. Only the _primaryPhone_ of the guest will be updated.
+
+The second object will either create a new guest or update an existing one. If a guest already exists with the _firstName_ "John", _lastName_ "Doe", and _email_ "john.doe@somewhere.com" then that guest will be updated \(only the _primaryPhone_ of the guest will be updated\). Otherwise a new guest will be created.
+
+If the same guest details appear multiple times in the request, only the details of the **first** guest are applied. For example, consider the following request data \(some details are omitted for simplicity\):
+
+```javascript
+{
+  "venueId": 13,
+  "bookingId": 1413,
+  "mainGuest": {
+    "contact": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "John.Doe@somewhere.com",
+      "phone": "12345678"
+    },
+    "primaryPhone": "12345678"
+  },
+  "rooms": [
+    {
+      "guest": {
+        "contact": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "email": "John.Doe@somewhere.com",
+          "phone": "87654321"
+        },
+        "primaryPhone": "87654321"
+      },
+      "groupId": 54,
+      "arrivalDate": "2019-01-01",
+      "departureDate": "2019-01-04"
+    },
+    {
+      "guest": {
+        "contact": {
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "email": "Jane.Doe@somewhere.com",
+          "phone": "123123123"
+        },
+        "primaryPhone": "123123123"
+      },
+      "groupId": 55,
+      "arrivalDate": "2019-01-01",
+      "departureDate": "2019-01-04"
+    }
+  ]
+}
+```
+
+There are 2 **unique** guests in the above request data: John Doe, and Jane Doe. John Doe appears in the request twice \(first as _mainGuest_ and second as the _guest_ on the first room\). The details of the first appearance will be used when updating John Doe, therefore the _primaryPhone_ value will be "12345678", not "87654321".
+
