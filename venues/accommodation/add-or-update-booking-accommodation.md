@@ -8,7 +8,7 @@ Add or Update Booking Accommodation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Adds or updates the details of a specific booking accommodation group on a specific venue booking.
+Adds or updates the details of a specific booking accommodation group on a specific venue booking. This action will fail if the booking cannot support accommodation blocks.
 {% endapi-method-description %}
 
 {% api-method-spec %}
