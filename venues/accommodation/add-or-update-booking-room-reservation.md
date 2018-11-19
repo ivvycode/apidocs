@@ -123,3 +123,13 @@ Invalid request data that prevents the room reservation from being added/updated
 | email | string | required | The email address of the contact |
 | phone | string | optional | The mobile phone number of the contact |
 
+## Notes on adding a room reservation
+
+This action only supports adding a "not confirmed" room reservation. To add a "confirmed" room reservation, you will need to call the [confirmBookingRoomReservation](confirm-booking-room-reservation.md#confirm-booking-room-reservation) action after a successfull add.
+
+This action only supports adding a room reservation to a booking that has [accommodation groups](add-or-update-booking-accommodation.md#booking-accommodation-group). The [rooms](add-or-update-booking-room-reservation.md#reserved-room) on the reservation must be assigned to a group.
+
+## Notes on updating a room reservation
+
+Updating an existing room reservation **overlays** the existing data. Optional request data that is excluded will not change existing data. This does not guarantee that the request data will validate if other data is changed. For example, if the departure date of a reserved room is extended, rates for the **new** dates will be required.
+
