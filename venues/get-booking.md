@@ -754,31 +754,28 @@ One of the following values:
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the booking package was last modified |
 | totalAmount | double | The total amount of the booking package including tax amount |
 | totalTaxAmount | double | The tax amount of the booking package |
-| priceMethod | enum \(Package Price Method\) | The price method of the booking package |
-| costcenters | Array of Package Cost Centre | The list of costcenter and its individual value of the booking package |
+| priceMethod | enum \([Package Price Method](get-booking.md#package-price-method)\) | The price method of the booking package |
+| costcenters | Array of [Package Cost Centre](get-booking.md#package-cost-center) | The list of costcenter and its individual value of the booking package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | smallDescription | string | The small description of the booking package |
 
-## Additional Item
+## Package Price Method
+
+| Value | Description |
+| :--- | :--- |
+| 1 | Per Person |
+| 2 | Flat Rate |
+
+## Package Cost Center
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| id | integer | The list of additional items of the booking |
-| description | string | The description of the item |
-| quantity | integer | The quantity of the item |
-| totalCost | double | The sale price of the item |
-| totalCostExcludedTaxIds | array | The sale price excluded tax identifiers |
-| actualCost | double | The cost of the item |
-| actualCostExcludedTaxIds | array | The cost excluded tax identifiers |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was last modified |
-| costcenterId | integer | The cost center identifier to which the revenue applies |
-| totalAmount | double | The total amount of the item including tax amount |
-| totalTaxAmount | double | The tax amount of the item |
-| startDateTime | [timestamp](../development-reference/timestamp-format.md) | The start date and time of the item |
-| endDateTime | [timestamp](../development-reference/timestamp-format.md) | The end date and time of item |
-| taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
-| dayTaxDetails | Array of Day Tax Detail | The individual tax for each date. Empty when no start date time not set |
+| costcenterId | integer | The unique identifier of the cost center |
+| value | double | The amount of the cost center |
+| excludedTaxIds | array | The excluded tax identifiers |
+| totalAmount | double | The amount of the cost center |
+| totalTaxAmount | double | The total tax amount of the cost center |
+| taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | The individual tax amount |
 
 ## Beverage
 
@@ -870,6 +867,27 @@ One of the following values:
 | totalTaxAmount | double | The tax amount of the product |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
+## Additional Item
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The list of additional items of the booking |
+| description | string | The description of the item |
+| quantity | integer | The quantity of the item |
+| totalCost | double | The sale price of the item |
+| totalCostExcludedTaxIds | array | The sale price excluded tax identifiers |
+| actualCost | double | The cost of the item |
+| actualCostExcludedTaxIds | array | The cost excluded tax identifiers |
+| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was created |
+| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was last modified |
+| costcenterId | integer | The cost center identifier to which the revenue applies |
+| totalAmount | double | The total amount of the item including tax amount |
+| totalTaxAmount | double | The tax amount of the item |
+| startDateTime | [timestamp](../development-reference/timestamp-format.md) | The start date and time of the item |
+| endDateTime | [timestamp](../development-reference/timestamp-format.md) | The end date and time of item |
+| taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
+| dayTaxDetails | Array of Day Tax Detail | The individual tax for each date. Empty when no start date time not set |
+
 ## Service Fee
 
 | Property | Type | Description |
@@ -896,24 +914,6 @@ One of the following values:
 | id | integer | The unique identifier of tax in venue |
 | tax | double | The amount of tax applied |
 
-## Package Price Method
-
-| \# | Description |
-| :--- | :--- |
-| 1 | Per Person |
-| 2 | Flat Rate |
-
-## Package Cost Center
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| costcenterId | integer | The unique identifier of the cost center |
-| value | double | The amount of the cost center |
-| excludedTaxIds | array | The excluded tax identifiers |
-| totalAmount | double | The amount of the cost center |
-| totalTaxAmount | double | The total tax amount of the cost center |
-| taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | The individual tax amount |
-
 ## Day Tax Detail
 
 | Property | Type | Description |
@@ -923,7 +923,7 @@ One of the following values:
 
 ## Service Fee Reference Types
 
-| \# | Description | Value of refId | Value of ref2Id | Value of ref3Id |
+| Value | Description | Value of refId | Value of ref2Id | Value of ref3Id |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Booking Accommodation | Booking Accommodation Identifier |  |  |
 | 2 | Booking Accommodation Option | Booking Accommodation Identifier | Booking Accommodation Option Id \(roomOptionId\) | Booking Accommodation Option Number \(roomOptionNum\) |
@@ -935,4 +935,3 @@ One of the following values:
 | 8 | Resource | Booking Session Resource Identifier |  |  |
 | 9 | Additional Item | Booking Additional Item Identifier |  |  |
 | 11 | Service | Booking Service Identifier |  |  |
-
