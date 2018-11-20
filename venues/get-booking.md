@@ -886,7 +886,7 @@ One of the following values:
 | startDateTime | [timestamp](../development-reference/timestamp-format.md) | The start date and time of the item |
 | endDateTime | [timestamp](../development-reference/timestamp-format.md) | The end date and time of item |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
-| dayTaxDetails | Array of Day Tax Detail | The individual tax for each date. Empty when no start date time not set |
+| dayTaxDetails | Array of [Day Tax Detail](get-booking.md#day-tax-detail) | The individual tax for each date. Empty when no start date time not set |
 
 ## Service Fee
 
