@@ -21,7 +21,8 @@ A json object that represents the room reservation to add or update. See below f
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A successful response to an add or update operation.
+A successful response to an add or update operation.  
+NOTE: The "rooms" in the response are returned in the same order as the "rooms" in the request.
 {% endapi-method-response-example-description %}
 
 ```javascript
