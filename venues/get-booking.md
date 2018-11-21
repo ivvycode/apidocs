@@ -12,7 +12,7 @@ Get Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get the details of a specific booking to which the user has access. 
+Get the details of a specific booking to which the user has access.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -30,7 +30,7 @@ The id of the booking
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": 3,
   "venueId": 1,
@@ -807,7 +807,7 @@ One of the following values:
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of the menu |
 | name | string | The name of the menu |
-| menuVenueId | integer | The venue identifier to which the menu package belongs |
+| menuVenueId | integer | The venue identifier to which the menu package belongs. This can be different than booking's venue id |
 | menuId | integer | The reference menu identifier in venue menus |
 | sessionId | integer | The session identifier to which this menu belongs |
 | cost | double | The cost of the menu |
@@ -886,14 +886,14 @@ One of the following values:
 | startDateTime | [timestamp](../development-reference/timestamp-format.md) | The start date and time of the item |
 | endDateTime | [timestamp](../development-reference/timestamp-format.md) | The end date and time of item |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
-| dayTaxDetails | Array of [Day Tax Detail](get-booking.md#day-tax-detail) | The individual tax for each date. Empty when no start date time not set |
+| dayTaxDetails | Array of [Day Tax Detail](get-booking.md#day-tax-detail) | The individual tax for each date. Empty when start date time is empty. |
 
 ## Service Fee
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of the applied service fee |
-| refType | enum \(Service Fee Reference Type\) | The item reference type to which the service fee applies |
+| refType | enum \([Service Fee Reference Type](get-booking.md#service-fee-reference-types)\) | The item reference type to which the service fee applies |
 | refId | integer | The first identifier for identifying reference item in the booking |
 | ref2Id | integer | The second identifier for identifying the reference item in the booking |
 | ref3Id | integer | The third identifier for identifying the reference item in the booking |
@@ -935,3 +935,4 @@ One of the following values:
 | 8 | Resource | Booking Session Resource Identifier |  |  |
 | 9 | Additional Item | Booking Additional Item Identifier |  |  |
 | 11 | Service | Booking Service Identifier |  |  |
+
