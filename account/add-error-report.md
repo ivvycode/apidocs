@@ -1,5 +1,7 @@
 # Add Error Report
 
+**NOTE: This action has not been published**
+
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=addErrorReport" path="" %}
 {% api-method-summary %}
 Add Error Report
@@ -93,7 +95,6 @@ One of the following value:
 
 | Type | refType |
 | :--- | :--- |
-| Custom | 0 |
 | Venue Booking | 1 |
 | Accommodation Group | 2 |
 | Room Reservation | 3 |
