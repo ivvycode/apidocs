@@ -27,25 +27,27 @@ The severity level of an error report
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="refType" type="integer" required=true %}
-The [type](add-error-report.md#reftype) of the error report e.g. booking, accommodation group..
+The type of the error report e.g. booking, accommodation group..
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="venueId" type="integer" required=false %}
-The unique venue id of related error report
-\(Required for venue booking error\)
+{% api-method-parameter name="refId1" type="integer" required=false %}
+The reference identifier 1 of the error report
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="bookingId" type="integer" required=false %}
-The unique booking id of related error report
-\(Required for venue booking error\)
+{% api-method-parameter name="refId2" type="integer" required=false %}
+The reference identifier 2 of the error report
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="accommodationId" type="integer" required=false %}
-The unique accommodation id of related error report \(Required for accommodation group error\)
+{% api-method-parameter name="refId3" type="integer" required=false %}
+The reference identifier 3 of the error report
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="roomReservationId" type="integer" required=false %}
-The unique room reservation id of related error report \(Required for room reservation error\)
+{% api-method-parameter name="refId4" type="integer" required=false %}
+The reference identifier 4 of the error report
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="refId5" type="integer" required=false %}
+The reference identifier 5 of the error report
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -73,12 +75,12 @@ The unique room reservation id of related error report \(Required for room reser
 
 ```javascript
 {
-  "refType": 1,
+  "refType": 2,
   "code": "254856",
   "message": "This is an error reported while booking",
   "level": 3,
-  "venueId": 107,
-  "bookingId": 2256
+  "refId1": 107,
+  "refId2": 2256,
 }
 ```
 
@@ -95,16 +97,40 @@ One of the following value:
 
 | Type | refType |
 | :--- | :--- |
-| Venue Booking | 1 |
-| Accommodation Group | 2 |
-| Room Reservation | 3 |
+| Custom | 1 |
+| Venue Booking | 2 |
+| Accommodation Group | 3 |
+| Room Reservation | 4 |
+
+Pass refIds as per below mapping. All below mentioned refIds are mandatory to pass in order to save an error report against specific model.
+
+## RefType-RefId Mapping
+
+#### Venue Booking
+
+| RefId | Related identifier |
+| :--- | :--- |
+| refId1 |  The identifier of venue |
+| refId2 | The identifier of venue booking |
+
+#### Accommodation Group
+
+| RefId | Related identifier |
+| :--- | :--- |
+| refId1 |  The identifier of venue |
+| refId2 | The identifier of venue booking |
+| refId3 | The identifier of booking accommodation group |
+
+#### Room Reservation
+
+| RefId | Related identifier |
+| :--- | :--- |
+| refId1 | The identifier of venue |
+| refId2 | The identifier of venue booking |
+| refId3 | The identifier of room reservation |
 
 ## Throws
 
 | Code | Description |
 | :--- | :--- |
-| Specific Code: 24263 | The error report details are invalid. |
-| Specific Code: 24264 | Detailed described error |
-
-
-
+| Specific Code: 24262 | The error report details are invalid. |
