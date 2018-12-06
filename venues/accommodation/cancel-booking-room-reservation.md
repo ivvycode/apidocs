@@ -49,7 +49,7 @@ Successfully cancelling a room reservation from a booking
 | :--- | :--- |
 | 0 | Unknown error |
 | 1 | The reservation is already cancelled \(and cannot be cancelled again\) |
-| 2 | The reservation status is not "not confirmed" |
+| 2 | Only "confirmed" reservations can be cancelled |
 | 3 | Unknown channel error |
 | 4 | Unknown channel error |
 | 5 | One or more individual rooms on the reservation cannot be cancelled |
