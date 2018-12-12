@@ -63,6 +63,7 @@
     * [Remove Booking Room Reservation](venues/accommodation/remove-booking-room-reservation.md)
     * [Confirm Booking Room Reservation](venues/accommodation/confirm-booking-room-reservation.md)
     * [Cancel Booking Room Reservation](venues/accommodation/cancel-booking-room-reservation.md)
+    * [Change Status of Booking Room Reservation](venues/accommodation/change-status-of-booking-room-reservation.md)
     * [Add or Update Room Counts](venues/accommodation/add-or-update-room-counts.md)
     * [Add or Update Room Dynamic Rates](venues/accommodation/add-or-update-room-dynamic-rates.md)
     * [Remove Room Dynamic Rates](venues/accommodation/remove-room-dynamic-rates.md)
