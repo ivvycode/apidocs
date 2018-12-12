@@ -25,6 +25,10 @@ The unique id of the booking to which the room reservation belongs
 {% api-method-parameter name="id" type="integer" required=true %}
 The unique id of the room reservation to cancel
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="roomId" type="integer" required=false %}
+Optionally, the unique id of the individual room on the reservation to cancel
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -53,4 +57,5 @@ Successfully cancelling a room reservation from a booking
 | 3 | Unknown channel error |
 | 4 | Unknown channel error |
 | 5 | One or more individual rooms on the reservation cannot be cancelled |
+| 6 | The status of the reservation prevents it from being cancelled. Only "not confirmed", "confirmed", "checked in", and "checked out" reservations can be cancelled |
 
