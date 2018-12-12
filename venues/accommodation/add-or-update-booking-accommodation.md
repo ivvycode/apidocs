@@ -63,6 +63,7 @@ Invalid request data that prevents the accommodation group from being added/upda
 | startDate | date | required | The arrival date of the accommodation group |
 | endDate | date | required | The departure date of the accommodation group |
 | overrideCapacity | boolean | optional | Whether or not the accommodation group can exceed the general room availability |
+| cutOffDate | date | optional | The date after which changes to the accommodation group are not allowed |
 | dayRates | array of [Day Rates](add-or-update-booking-accommodation.md#booking-accommodation-day-rates) | required on add, optional on update | The daily rates of the accommodation group |
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from the daily rates |
 | roomOptions | array of [Room Options](add-or-update-booking-accommodation.md#booking-accommodation-room-option) | optional | The additional room options of the accommodation group |
