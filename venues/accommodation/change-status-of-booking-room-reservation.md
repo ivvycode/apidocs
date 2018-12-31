@@ -8,9 +8,7 @@ Change Status of Booking Room Reservation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Change the status of a specific room reservation on a venue booking.
-**NOTE:** Currently this only supports changing the status to "checked in" or "checked out".
-Use [this](confirm-booking-room-reservation.md) action to confirm a room reservation, and [this](cancel-booking-room-reservation.md) one to cancel.
+Change the status of a specific room reservation on a venue booking. **NOTE:** Currently this only supports changing the status to "checked in" or "checked out". Use this action to confirm a room reservation, and this one to cancel.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -57,6 +55,4 @@ Successfully changing a confirmed room reservation to checked-in
 | 1 | The new status is the same as the current status |
 | 2 | The current status cannot transition to the new status |
 | 3 | The new status is not supported. Only "checked in" and "checked out" are supported |
-
-
 

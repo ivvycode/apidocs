@@ -19,7 +19,7 @@ The distinguish code of error report
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message" type="string" required=true %}
-Th message description of an error  report
+Th message description of an error report
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="level" type="integer" required=true %}
@@ -110,14 +110,14 @@ Pass refIds as per below mapping. All below mentioned refIds are mandatory to pa
 
 | RefId | Related identifier |
 | :--- | :--- |
-| refId1 |  The identifier of venue |
+| refId1 | The identifier of venue |
 | refId2 | The identifier of venue booking |
 
 #### Accommodation Group
 
 | RefId | Related identifier |
 | :--- | :--- |
-| refId1 |  The identifier of venue |
+| refId1 | The identifier of venue |
 | refId2 | The identifier of venue booking |
 | refId3 | The identifier of booking accommodation group |
 
@@ -134,3 +134,4 @@ Pass refIds as per below mapping. All below mentioned refIds are mandatory to pa
 | Code | Description |
 | :--- | :--- |
 | Specific Code: 24262 | The error report details are invalid. |
+

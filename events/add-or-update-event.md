@@ -12,6 +12,10 @@ Add or update event details.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="businessUnitId" type="integer" required=false %}
+Required when business unit defined in event's account
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="eventType" type="string" required=true %}
 Required when adding an event. Value must be 12. The value cannot be changed for an existing event. 
 {% endapi-method-parameter %}
