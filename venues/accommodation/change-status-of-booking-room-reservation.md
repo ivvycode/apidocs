@@ -27,7 +27,7 @@ The unique id of the room reservation to change status
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="integer" required=true %}
-The [status](get-booking-room-reservation-list.md#room-reservation-status) to which the room reservation will be changed. Only a value of 4 (Checked In) or 5 (Checked Out) are supported by this action
+The status to which the room reservation will be changed. Only a value of 4 \(Checked In\) or 5 \(Checked Out\) are supported by this action
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -48,6 +48,14 @@ Successfully changing a confirmed room reservation to checked-in
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Status Transition
+
+The following describes how the [status](get-booking-room-reservation-list.md#room-reservation-status) of a booking room reservation can transition from one status to another.
+
+![](../../.gitbook/assets/booking-room-reservation-status-transitions.png)
+
+## Response Error Types
 
 | Error Type | Reason |
 | :--- | :--- |
