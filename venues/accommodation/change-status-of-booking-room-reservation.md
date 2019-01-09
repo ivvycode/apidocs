@@ -55,6 +55,11 @@ The following describes how the [status](get-booking-room-reservation-list.md#ro
 
 ![](../../.gitbook/assets/booking-room-reservation-status-transitions.png)
 
+NOTES:  
+To delete a booking room reservation, use the [Remove Booking Room Reservation](remove-booking-room-reservation.md) action.  
+To confirm a booking room reservation, use the [Confirm Booking Room Reservation](confirm-booking-room-reservation.md) action.  
+To cancel a booking room reservation, use the [Cancel Booking Room Reservation](cancel-booking-room-reservation.md) action.
+
 ## Response Error Types
 
 | Error Type | Reason |
