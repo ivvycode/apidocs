@@ -206,6 +206,8 @@ The result from this call will be a [collection](../../getting-started/interpret
 | 1 | Not confirmed |
 | 2 | Confirmed |
 | 3 | Cancelled |
+| 4 | Checked In |
+| 5 | Checked Out |
 
 ## Reserved Room
 
