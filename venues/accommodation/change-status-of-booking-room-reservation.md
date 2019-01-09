@@ -27,7 +27,7 @@ The unique id of the room reservation to change status
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="integer" required=true %}
-The [status](get-booking-room-reservation-list.md#room-reservation-status) to which the room reservation will be changed
+The [status](get-booking-room-reservation-list.md#room-reservation-status) to which the room reservation will be changed. Only a value of 4 (Checked In) or 5 (Checked Out) are supported by this action
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
