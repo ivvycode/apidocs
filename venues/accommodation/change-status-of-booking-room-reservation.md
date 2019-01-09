@@ -49,7 +49,7 @@ Successfully changing a confirmed room reservation to checked-in
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Status Transition
+## Status Transitions
 
 The following describes how the [status](get-booking-room-reservation-list.md#room-reservation-status) of a booking room reservation can transition from one status to another.
 
