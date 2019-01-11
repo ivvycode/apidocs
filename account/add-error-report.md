@@ -1,7 +1,5 @@
 # Add Error Report
 
-**NOTE: This action has not been published**
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=addErrorReport" path="" %}
 {% api-method-summary %}
 Add Error Report
