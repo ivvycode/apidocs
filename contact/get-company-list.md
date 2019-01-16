@@ -42,6 +42,8 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | :--- | :--- | :--- |
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
+| venueId | Filter by specific Venue | integer |
+| venueGroupId | Filter by SPecific Venue Group | integer |
 
 ## Returns
 
