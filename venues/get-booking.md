@@ -37,7 +37,9 @@ The id of the booking
   "code": "123a",
   "name": "Ava Donovan",
   "eventType": "Holiday",
+  "companyId": null,
   "company": null,
+  "contactId": null,
   "contact": null,
   "currentStatus": 3,
   "totalAmount": 2600,
@@ -649,7 +651,9 @@ The result from this call will be the details of a specific booking to which the
 | code | string | A reference assigned to the booking by the venue \(not unique\) |
 | name | string | The name of the booking |
 | eventType | string | The event type of the booking |
+| companyId | integer | The unique id of the company assigned to the booking |
 | company | [Company](get-booking.md#company) | The details of the company assigned to the booking |
+| contactId | integer | The unique id of the contact assigned to the booking |
 | contact | [Contact](get-booking.md#contact) | The details of the contact assigned to the booking |
 | currentStatus | enum | The current status of the booking. See [Status](get-booking.md#status) |
 | totalAmount | double | The total amount of the booking, including tax |

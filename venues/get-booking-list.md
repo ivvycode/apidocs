@@ -43,10 +43,12 @@ The number of bookings to get in a single call
       "code": "HR5ZASGMQ1",
       "name": "Some Booking",
       "eventType": "Holiday",
+      "companyId": 4,
       "company": {
         "id": 4,
         "businessName": "Some Business"
       },
+      "contactId": 3,
       "contact": {
         "id": 3,
         "firstName": "Quamar",
