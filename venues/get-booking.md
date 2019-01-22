@@ -1,6 +1,6 @@
 ---
 description: >-
-  Note: Section sessions, packages, additionalItems, beverages, menus,
+  Note: Section sessions, packages, additionalItems, beveragePackages, menus,
   resources, products and serviceFees are not published yet.
 ---
 
@@ -84,547 +84,547 @@ The id of the booking
       "totalTaxAmount": 227.273
     }
   ],
+  "packages": [
+    {
+      "id": 5082,
+      "bookingDate": "2018-12-30",
+      "numberAttendees": 30,
+      "price": 40,
+      "createdDate": "2018-11-07 03:56:35 UTC",
+      "modifiedDate": "2018-11-07 03:56:35 UTC",
+      "totalAmount": 1200,
+      "totalTaxAmount": 109.091,
+      "priceMethod": 1,
+      "costcenters": [
+        {
+          "costcenterId": 2,
+          "value": 10,
+          "excludedTaxIds": [],
+          "totalAmount": 300,
+          "totalTaxAmount": 27.272727,
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 27.272727
+            }
+          ]
+        },
+        {
+          "costcenterId": 3,
+          "value": 10,
+          "excludedTaxIds": [],
+          "totalAmount": 300,
+          "totalTaxAmount": 27.272727,
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 27.272727
+            }
+          ]
+        },
+        {
+          "costcenterId": 4,
+          "value": 10,
+          "excludedTaxIds": [],
+          "totalAmount": 300,
+          "totalTaxAmount": 27.272727,
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 27.272727
+            }
+          ]
+        },
+        {
+          "costcenterId": 5,
+          "value": 10,
+          "excludedTaxIds": [],
+          "totalAmount": 300,
+          "totalTaxAmount": 27.272727,
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 27.272727
+            }
+          ]
+        }
+      ],
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 109.091
+        }
+      ],
+      "smallDescription": "Package Small Description"
+    }
+  ],
   "sessions": [
+    {
+      "id": 13185,
+      "name": "Computer Graphics",
+      "startDate": "2018-12-30",
+      "endDate": "2018-12-30",
+      "startTime": "10:00:00",
+      "endTime": "11:00:00",
+      "spaceVenueId": 1,
+      "spaceId": 2,
+      "spaceLayout": null,
+      "customLayoutName": "Custom",
+      "cost": 50,
+      "totalAmount": 50,
+      "totalTaxAmount": 4.545,
+      "excludedTaxIds": [],
+      "costcenterId": 5,
+      "includeInPackage": false,
+      "bookingPackageId": 5082,
+      "createdDate": "2018-11-07 03:56:35 UTC",
+      "modifiedDate": "2018-11-07 03:57:36 UTC",
+      "taxDetails": [
         {
-            "id": 13185,
-            "name": "Computer Graphics",
-            "startDate": "2018-12-30",
-            "endDate": "2018-12-30",
-            "startTime": "10:00:00",
-            "endTime": "11:00:00",
-            "spaceVenueId": 1,
-            "spaceId": 2,
-            "spaceLayout": null,
-            "customLayoutName": "Custom",
-            "cost": 50,
-            "totalAmount": 50,
-            "totalTaxAmount": 4.545,
-            "excludedTaxIds": [],
-            "costcenterId": 5,
-            "includeInPackage": false,
-            "bookingPackageId": 5082,
-            "createdDate": "2018-11-07 03:56:35 UTC",
-            "modifiedDate": "2018-11-07 03:57:36 UTC",
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 4.545
-                }
-            ]
+          "id": 1,
+          "tax": 4.545
         }
-    ],
-    "packages": [
+      ]
+    }
+  ],
+  "menus": [
+    {
+      "id": 6686,
+      "name": "Main Course",
+      "menuVenueId": 1,
+      "menuId": 3,
+      "sessionId": 13185,
+      "cost": 10,
+      "excludedTaxIds": [],
+      "startDate": "2018-12-30",
+      "endDate": "2018-12-30",
+      "startTime": "10:00:00",
+      "endTime": "11:00:00",
+      "includeInPackage": false,
+      "bookingPackageId": null,
+      "createdDate": "2018-11-15 06:48:38 UTC",
+      "modifiedDate": "2018-11-15 06:48:38 UTC",
+      "costcenterId": 2,
+      "totalAmount": 300,
+      "totalTaxAmount": 27.273,
+      "taxDetails": [
         {
-            "id": 5082,
-            "bookingDate": "2018-12-30",
-            "numberAttendees": 30,
-            "price": 40,
-            "createdDate": "2018-11-07 03:56:35 UTC",
-            "modifiedDate": "2018-11-07 03:56:35 UTC",
-            "totalAmount": 1200,
-            "totalTaxAmount": 109.091,
-            "priceMethod": 1,
-            "costcenters": [
-                {
-                    "costcenterId": 2,
-                    "value": 10,
-                    "excludedTaxIds": [],
-                    "totalAmount": 300,
-                    "totalTaxAmount": 27.272727,
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 27.272727
-                        }
-                    ]
-                },
-                {
-                    "costcenterId": 3,
-                    "value": 10,
-                    "excludedTaxIds": [],
-                    "totalAmount": 300,
-                    "totalTaxAmount": 27.272727,
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 27.272727
-                        }
-                    ]
-                },
-                {
-                    "costcenterId": 4,
-                    "value": 10,
-                    "excludedTaxIds": [],
-                    "totalAmount": 300,
-                    "totalTaxAmount": 27.272727,
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 27.272727
-                        }
-                    ]
-                },
-                {
-                    "costcenterId": 5,
-                    "value": 10,
-                    "excludedTaxIds": [],
-                    "totalAmount": 300,
-                    "totalTaxAmount": 27.272727,
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 27.272727
-                        }
-                    ]
-                }
-            ],
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 109.091
-                }
-            ],
-            "smallDescription": "Package Small Description"
+          "id": 1,
+          "tax": 27.273
         }
-    ],
-    "additionalItems": [
+      ]
+    }
+  ],
+  "beveragePackages": [
+    {
+      "id": 6204,
+      "name": "Beverage Package 1",
+      "sessionId": 13185,
+      "beverageVenueId": 1,
+      "beverageId": 2,
+      "cost": 70,
+      "excludedTaxIds": [],
+      "startDate": "2018-12-30",
+      "endDate": "2018-12-30",
+      "startTime": "10:00:00",
+      "endTime": "11:00:00",
+      "includeInPackage": false,
+      "bookingPackageId": null,
+      "createdDate": "2018-11-15 06:48:58 UTC",
+      "modifiedDate": "2018-11-15 06:48:58 UTC",
+      "costcenterId": 3,
+      "totalAmount": 2100,
+      "totalTaxAmount": 190.909,
+      "taxDetails": [
         {
-            "id": 3935,
-            "description": "Some Additional Item",
-            "quantity": 1,
-            "totalCost": 100,
-            "totalCostExcludedTaxIds": [
-                3676
-            ],
-            "actualCost": 0,
-            "actualCostExcludedTaxIds": [],
-            "createdDate": "2018-11-15 07:18:17 UTC",
-            "modifiedDate": "2018-11-16 01:15:05 UTC",
-            "costcenterId": 4,
-            "totalAmount": 100,
-            "totalTaxAmount": 9.091,
-            "startDateTime": null,
-            "endDateTime": null,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 9.091
-                }
-            ],
-            "dayTaxDetails": []
-        },
-        {
-            "id": 3936,
-            "description": "Another additional item",
-            "quantity": 1,
-            "totalCost": 110,
-            "totalCostExcludedTaxIds": [],
-            "actualCost": 0,
-            "actualCostExcludedTaxIds": [],
-            "createdDate": "2018-11-15 07:19:59 UTC",
-            "modifiedDate": "2018-11-15 07:19:59 UTC",
-            "costcenterId": 4,
-            "totalAmount": 110,
-            "totalTaxAmount": 10,
-            "startDateTime": "2018-12-30 09:00:00",
-            "endDateTime": "2019-01-01 10:00:00",
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 9.999
-                }
-            ],
-            "dayTaxDetails": [
-                {
-                    "date": "2018-12-30",
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 3.333333
-                        }
-                    ]
-                },
-                {
-                    "date": "2018-12-31",
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 3.333333
-                        }
-                    ]
-                },
-                {
-                    "date": "2019-01-01",
-                    "taxDetails": [
-                        {
-                            "id": 1,
-                            "tax": 3.333333
-                        }
-                    ]
-                }
-            ]
+          "id": 1,
+          "tax": 190.909
         }
-    ],
-    "beverages": [
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": 6437,
+      "name": null,
+      "sessionId": 13185,
+      "cost": 5,
+      "excludedTaxIds": [],
+      "quantity": 1,
+      "startDate": "2018-12-30",
+      "endDate": "2018-12-30",
+      "startTime": "10:00:00",
+      "endTime": "11:00:00",
+      "includeInPackage": false,
+      "bookingPackageId": null,
+      "createdDate": "2018-11-15 06:49:31 UTC",
+      "modifiedDate": "2018-11-15 06:49:31 UTC",
+      "costcenterId": 4,
+      "totalAmount": 5,
+      "totalTaxAmount": 0.455,
+      "taxDetails": [
         {
-            "id": 6204,
-            "name": "Beverage Package 1",
-            "sessionId": 13185,
-            "beverageVenueId": 1,
-            "beverageId": 2,
-            "cost": 70,
-            "excludedTaxIds": [],
-            "startDate": "2018-12-30",
-            "endDate": "2018-12-30",
-            "startTime": "10:00:00",
-            "endTime": "11:00:00",
-            "includeInPackage": false,
-            "bookingPackageId": null,
-            "createdDate": "2018-11-15 06:48:58 UTC",
-            "modifiedDate": "2018-11-15 06:48:58 UTC",
-            "costcenterId": 3,
-            "totalAmount": 2100,
-            "totalTaxAmount": 190.909,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 190.909
-                }
-            ]
+          "id": 1,
+          "tax": 0.455
         }
-    ],
-    "menus": [
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 5305,
+      "name": null,
+      "sessionId": 13185,
+      "cost": 100,
+      "excludedTaxIds": [],
+      "quantity": 1,
+      "includeInPackage": false,
+      "bookingPackageId": null,
+      "createdDate": "2018-11-15 06:49:57 UTC",
+      "modifiedDate": "2018-11-15 06:49:57 UTC",
+      "costcenterId": 4,
+      "totalAmount": 100,
+      "totalTaxAmount": 9.091,
+      "taxDetails": [
         {
-            "id": 6686,
-            "name": "Main Course",
-            "menuVenueId": 1,
-            "menuId": 3,
-            "sessionId": 13185,
-            "cost": 10,
-            "excludedTaxIds": [],
-            "startDate": "2018-12-30",
-            "endDate": "2018-12-30",
-            "startTime": "10:00:00",
-            "endTime": "11:00:00",
-            "includeInPackage": false,
-            "bookingPackageId": null,
-            "createdDate": "2018-11-15 06:48:38 UTC",
-            "modifiedDate": "2018-11-15 06:48:38 UTC",
-            "costcenterId": 2,
-            "totalAmount": 300,
-            "totalTaxAmount": 27.273,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 27.273
-                }
-            ]
+          "id": 1,
+          "tax": 9.091
         }
-    ],
-    "resources": [
+      ]
+    }
+  ],
+  "additionalItems": [
+    {
+      "id": 3935,
+      "description": "Some Additional Item",
+      "quantity": 1,
+      "totalCost": 100,
+      "totalCostExcludedTaxIds": [
+        3676
+      ],
+      "actualCost": 0,
+      "actualCostExcludedTaxIds": [],
+      "createdDate": "2018-11-15 07:18:17 UTC",
+      "modifiedDate": "2018-11-16 01:15:05 UTC",
+      "costcenterId": 4,
+      "totalAmount": 100,
+      "totalTaxAmount": 9.091,
+      "startDateTime": null,
+      "endDateTime": null,
+      "taxDetails": [
         {
-            "id": 6437,
-            "name": null,
-            "sessionId": 13185,
-            "cost": 5,
-            "excludedTaxIds": [],
-            "quantity": 1,
-            "startDate": "2018-12-30",
-            "endDate": "2018-12-30",
-            "startTime": "10:00:00",
-            "endTime": "11:00:00",
-            "includeInPackage": false,
-            "bookingPackageId": null,
-            "createdDate": "2018-11-15 06:49:31 UTC",
-            "modifiedDate": "2018-11-15 06:49:31 UTC",
-            "costcenterId": 4,
-            "totalAmount": 5,
-            "totalTaxAmount": 0.455,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.455
-                }
-            ]
+          "id": 1,
+          "tax": 9.091
         }
-    ],
-    "products": [
+      ],
+      "dayTaxDetails": []
+    },
+    {
+      "id": 3936,
+      "description": "Another additional item",
+      "quantity": 1,
+      "totalCost": 110,
+      "totalCostExcludedTaxIds": [],
+      "actualCost": 0,
+      "actualCostExcludedTaxIds": [],
+      "createdDate": "2018-11-15 07:19:59 UTC",
+      "modifiedDate": "2018-11-15 07:19:59 UTC",
+      "costcenterId": 4,
+      "totalAmount": 110,
+      "totalTaxAmount": 10,
+      "startDateTime": "2018-12-30 09:00:00",
+      "endDateTime": "2019-01-01 10:00:00",
+      "taxDetails": [
         {
-            "id": 5305,
-            "name": null,
-            "sessionId": 13185,
-            "cost": 100,
-            "excludedTaxIds": [],
-            "quantity": 1,
-            "includeInPackage": false,
-            "bookingPackageId": null,
-            "createdDate": "2018-11-15 06:49:57 UTC",
-            "modifiedDate": "2018-11-15 06:49:57 UTC",
-            "costcenterId": 4,
-            "totalAmount": 100,
-            "totalTaxAmount": 9.091,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 9.091
-                }
-            ]
+          "id": 1,
+          "tax": 9.999
         }
-    ],
-    "serviceFees": [
+      ],
+      "dayTaxDetails": [
         {
-            "id": 3262,
-            "refType": 9,
-            "refId": 3936,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 4,
-            "amount": 3.333333,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:36 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 3.666333,
-            "totalTaxAmount": 0.333,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.333
-                }
-            ]
+          "date": "2018-12-30",
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 3.333333
+            }
+          ]
         },
         {
-            "id": 3264,
-            "refType": 9,
-            "refId": 3936,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-31",
-            "refCostcenterId": 4,
-            "amount": 3.333333,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:36 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 3.666333,
-            "totalTaxAmount": 0.333,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.333
-                }
-            ]
+          "date": "2018-12-31",
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 3.333333
+            }
+          ]
         },
         {
-            "id": 3266,
-            "refType": 9,
-            "refId": 3936,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2019-01-01",
-            "refCostcenterId": 4,
-            "amount": 3.333333,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:36 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 3.666333,
-            "totalTaxAmount": 0.333,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.333
-                }
-            ]
-        },
-        {
-            "id": 3271,
-            "refType": 3,
-            "refId": 5082,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 2,
-            "amount": 27.272727,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:36 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 29.999727,
-            "totalTaxAmount": 2.727,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 2.727
-                }
-            ]
-        },
-        {
-            "id": 3272,
-            "refType": 3,
-            "refId": 5082,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 3,
-            "amount": 27.272727,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:36 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 29.999727,
-            "totalTaxAmount": 2.727,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 2.727
-                }
-            ]
-        },
-        {
-            "id": 3273,
-            "refType": 3,
-            "refId": 5082,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 4,
-            "amount": 27.272727,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:36 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 29.999727,
-            "totalTaxAmount": 2.727,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 2.727
-                }
-            ]
-        },
-        {
-            "id": 3274,
-            "refType": 3,
-            "refId": 5082,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 5,
-            "amount": 27.272727,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:37 UTC",
-            "modifiedDate": "2018-11-20 00:15:09 UTC",
-            "totalAmount": 29.999727,
-            "totalTaxAmount": 2.727,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 2.727
-                }
-            ]
-        },
-        {
-            "id": 3275,
-            "refType": 4,
-            "refId": 13185,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 5,
-            "amount": 4.546,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:37 UTC",
-            "modifiedDate": "2018-11-20 00:15:10 UTC",
-            "totalAmount": 5.001,
-            "totalTaxAmount": 0.455,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.455
-                }
-            ]
-        },
-        {
-            "id": 3276,
-            "refType": 5,
-            "refId": 6686,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 2,
-            "amount": 27.273,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:37 UTC",
-            "modifiedDate": "2018-11-20 00:15:10 UTC",
-            "totalAmount": 30,
-            "totalTaxAmount": 2.727,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 2.727
-                }
-            ]
-        },
-        {
-            "id": 3277,
-            "refType": 6,
-            "refId": 6204,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 3,
-            "amount": 190.909,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:37 UTC",
-            "modifiedDate": "2018-11-20 00:15:10 UTC",
-            "totalAmount": 210,
-            "totalTaxAmount": 19.091,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 19.091
-                }
-            ]
-        },
-        {
-            "id": 3278,
-            "refType": 7,
-            "refId": 5305,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 4,
-            "amount": 9.091,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:37 UTC",
-            "modifiedDate": "2018-11-20 00:15:10 UTC",
-            "totalAmount": 10,
-            "totalTaxAmount": 0.909,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.909
-                }
-            ]
-        },
-        {
-            "id": 3279,
-            "refType": 8,
-            "refId": 6437,
-            "ref2Id": 0,
-            "ref3Id": 0,
-            "refDate": "2018-12-30",
-            "refCostcenterId": 4,
-            "amount": 0.455,
-            "excludedTaxIds": [],
-            "createdDate": "2018-11-15 07:27:37 UTC",
-            "modifiedDate": "2018-11-20 00:15:10 UTC",
-            "totalAmount": 0.501,
-            "totalTaxAmount": 0.046,
-            "taxDetails": [
-                {
-                    "id": 1,
-                    "tax": 0.046
-                }
-            ]
+          "date": "2019-01-01",
+          "taxDetails": [
+            {
+              "id": 1,
+              "tax": 3.333333
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ],
+  "serviceFees": [
+    {
+      "id": 3262,
+      "refType": 9,
+      "refId": 3936,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 4,
+      "amount": 3.333333,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:36 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 3.666333,
+      "totalTaxAmount": 0.333,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 0.333
+        }
+      ]
+    },
+    {
+      "id": 3264,
+      "refType": 9,
+      "refId": 3936,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-31",
+      "refCostcenterId": 4,
+      "amount": 3.333333,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:36 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 3.666333,
+      "totalTaxAmount": 0.333,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 0.333
+        }
+      ]
+    },
+    {
+      "id": 3266,
+      "refType": 9,
+      "refId": 3936,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2019-01-01",
+      "refCostcenterId": 4,
+      "amount": 3.333333,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:36 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 3.666333,
+      "totalTaxAmount": 0.333,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 0.333
+        }
+      ]
+    },
+    {
+      "id": 3271,
+      "refType": 3,
+      "refId": 5082,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 2,
+      "amount": 27.272727,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:36 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 29.999727,
+      "totalTaxAmount": 2.727,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 2.727
+        }
+      ]
+    },
+    {
+      "id": 3272,
+      "refType": 3,
+      "refId": 5082,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 3,
+      "amount": 27.272727,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:36 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 29.999727,
+      "totalTaxAmount": 2.727,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 2.727
+        }
+      ]
+    },
+    {
+      "id": 3273,
+      "refType": 3,
+      "refId": 5082,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 4,
+      "amount": 27.272727,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:36 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 29.999727,
+      "totalTaxAmount": 2.727,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 2.727
+        }
+      ]
+    },
+    {
+      "id": 3274,
+      "refType": 3,
+      "refId": 5082,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 5,
+      "amount": 27.272727,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:37 UTC",
+      "modifiedDate": "2018-11-20 00:15:09 UTC",
+      "totalAmount": 29.999727,
+      "totalTaxAmount": 2.727,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 2.727
+        }
+      ]
+    },
+    {
+      "id": 3275,
+      "refType": 4,
+      "refId": 13185,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 5,
+      "amount": 4.546,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:37 UTC",
+      "modifiedDate": "2018-11-20 00:15:10 UTC",
+      "totalAmount": 5.001,
+      "totalTaxAmount": 0.455,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 0.455
+        }
+      ]
+    },
+    {
+      "id": 3276,
+      "refType": 5,
+      "refId": 6686,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 2,
+      "amount": 27.273,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:37 UTC",
+      "modifiedDate": "2018-11-20 00:15:10 UTC",
+      "totalAmount": 30,
+      "totalTaxAmount": 2.727,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 2.727
+        }
+      ]
+    },
+    {
+      "id": 3277,
+      "refType": 6,
+      "refId": 6204,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 3,
+      "amount": 190.909,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:37 UTC",
+      "modifiedDate": "2018-11-20 00:15:10 UTC",
+      "totalAmount": 210,
+      "totalTaxAmount": 19.091,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 19.091
+        }
+      ]
+    },
+    {
+      "id": 3278,
+      "refType": 7,
+      "refId": 5305,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 4,
+      "amount": 9.091,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:37 UTC",
+      "modifiedDate": "2018-11-20 00:15:10 UTC",
+      "totalAmount": 10,
+      "totalTaxAmount": 0.909,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 0.909
+        }
+      ]
+    },
+    {
+      "id": 3279,
+      "refType": 8,
+      "refId": 6437,
+      "ref2Id": 0,
+      "ref3Id": 0,
+      "refDate": "2018-12-30",
+      "refCostcenterId": 4,
+      "amount": 0.455,
+      "excludedTaxIds": [],
+      "createdDate": "2018-11-15 07:27:37 UTC",
+      "modifiedDate": "2018-11-20 00:15:10 UTC",
+      "totalAmount": 0.501,
+      "totalTaxAmount": 0.046,
+      "taxDetails": [
+        {
+          "id": 1,
+          "tax": 0.046
+        }
+      ]
+    }
+  ]
 }
 ```
 {% endapi-method-response-example %}
@@ -673,13 +673,13 @@ The result from this call will be the details of a specific booking to which the
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | dailyRevenue | Array of [DailyRevenue](get-booking.md#daily-revenue) | The daily revenue data of booking |
-| sessions | Array of [Session](get-booking.md#session) | The list of sessions of booking |
 | packages | Array of [Package](get-booking.md#package) | The list of packages of the booking |
-| additionalItems | Array of [Additional Item](get-booking.md#additional-item) | The list of additional items of the booking |
-| beverages | Array of [Beverage](get-booking.md#beverage) | The list of beverage packages of the booking |
+| sessions | Array of [Session](get-booking.md#session) | The list of sessions of booking |
 | menus | Array of [Menu](get-booking.md#menu) | The list of menus of the booking |
+| beveragePackages | Array of [Beverage Package](get-booking.md#beverage-package) | The list of beverage packages of the booking |
 | resources | Array of [Resource](get-booking.md#menu) | The list of resources of the booking |
 | products | Array of [Product](get-booking.md#product) | The list of products of the booking |
+| additionalItems | Array of [Additional Item](get-booking.md#additional-item) | The list of additional items of the booking |
 | serviceFees | Array of [Service Fees](get-booking.md#service-fee) | The list of service fee applied to different items of the booking |
 
 ## Status
@@ -721,31 +721,6 @@ One of the following values:
 | email | string | The email address of the contact |
 | phone | string | The phone number of the contact |
 
-## Session
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| id | integer | The unique identifier of the session |
-| name | string | The name of the session |
-| startDate | [Date](../development-reference/date-format.md) | The start date of the session |
-| endDate | [Date](../development-reference/date-format.md) | The end date of the session |
-| startTime | Time | The start time of the session |
-| endTime | Time | The end time of the session |
-| spaceVenueId | integer | The id of the venue to which the space \(spaceId\) belongs \(it can be different to the booking's venueId\) |
-| spaceId | integer | The space identifier booked by the session |
-| spaceLayout | integer | The space layout identifier of the session |
-| customLayoutName | string | The space layout name when space layout is custom |
-| cost | double | The cost of the session |
-| totalAmount | double | The total amount of session including tax amount |
-| totalTaxAmount | double | The tax amount of the session |
-| excludedTaxIds | array | The excluded tax identifiers of the session |
-| costcenterId | integer | The cost center identifier to which the session\'s revenue applies |
-| includeInPackage | boolean | Whether or not the booking session is included in booking package |
-| bookingPackageId | integer | The booking package identifier if the booking session is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was last modified |
-| taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
-
 ## Package
 
 | Property | Type | Description |
@@ -781,28 +756,29 @@ One of the following values:
 | totalTaxAmount | double | The total tax amount of the cost center |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | The individual tax amount |
 
-## Beverage
+## Session
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| id | integer | The unique identifier of the beverage package |
-| name | string | The name of the beverage package |
-| sessionId | integer | The session identifier to which this beverage package belongs |
-| beverageVenueId | integer | The venue identifier to which the beverage package belongs. This can be different than booking's venue id |
-| beverageId | integer | The reference beverage package identifier in venue beverage packages |
-| cost | double | The cost of the beverage package |
-| excludedTaxIds | array | The excluded tax identifiers |
-| startDate | [Date](../development-reference/date-format.md) | The start date of the beverage package |
-| endDate | [Date](../development-reference/date-format.md) | The end date of the beverage package |
-| startTime | Time | The start time of the beverage package |
-| endTime | Time | The end time of the beverage package |
-| includeInPackage | boolean | Whether or not the beverage package is included in booking package |
-| bookingPackageId | integer | The booking package identifier if beverage package is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was last modified |
-| costcenterId | integer | The cost center identifier to which the revenue applies |
-| totalAmount | double | The total amount of the beverage package including tax |
-| totalTaxAmount | double | The tax amount of the beverage package |
+| id | integer | The unique identifier of the session |
+| name | string | The name of the session |
+| startDate | [Date](../development-reference/date-format.md) | The start date of the session |
+| endDate | [Date](../development-reference/date-format.md) | The end date of the session |
+| startTime | Time | The start time of the session |
+| endTime | Time | The end time of the session |
+| spaceVenueId | integer | The id of the venue to which the space \(spaceId\) belongs \(it can be different to the booking's venueId\) |
+| spaceId | integer | The space identifier booked by the session |
+| spaceLayout | integer | The space layout identifier of the session |
+| customLayoutName | string | The space layout name when space layout is custom |
+| cost | double | The cost of the session |
+| totalAmount | double | The total amount of session including tax amount |
+| totalTaxAmount | double | The tax amount of the session |
+| excludedTaxIds | array | The excluded tax identifiers of the session |
+| costcenterId | integer | The cost center identifier to which the session's revenue applies |
+| includeInPackage | boolean | Whether or not the booking session is included in booking package |
+| bookingPackageId | integer | The booking package identifier if the booking session is included in package |
+| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was created |
+| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was last modified |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
 ## Menu
@@ -827,6 +803,30 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the menu including tax |
 | totalTaxAmount | double | The tax amount of the menu |
+| taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
+
+## Beverage Package
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the beverage package |
+| name | string | The name of the beverage package |
+| sessionId | integer | The session identifier to which this beverage package belongs |
+| beverageVenueId | integer | The venue identifier to which the beverage package belongs. This can be different than booking's venue id |
+| beverageId | integer | The reference beverage package identifier in venue beverage packages |
+| cost | double | The cost of the beverage package |
+| excludedTaxIds | array | The excluded tax identifiers |
+| startDate | [Date](../development-reference/date-format.md) | The start date of the beverage package |
+| endDate | [Date](../development-reference/date-format.md) | The end date of the beverage package |
+| startTime | Time | The start time of the beverage package |
+| endTime | Time | The end time of the beverage package |
+| includeInPackage | boolean | Whether or not the beverage package is included in booking package |
+| bookingPackageId | integer | The booking package identifier if beverage package is included in package |
+| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was created |
+| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was last modified |
+| costcenterId | integer | The cost center identifier to which the revenue applies |
+| totalAmount | double | The total amount of the beverage package including tax |
+| totalTaxAmount | double | The tax amount of the beverage package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
 ## Resource
@@ -877,7 +877,7 @@ One of the following values:
 | :--- | :--- | :--- |
 | id | integer | The list of additional items of the booking |
 | description | string | The description of the item |
-| quantity | integer | The quantity of the item |
+| quantity | double | The quantity of the item |
 | totalCost | double | The sale price of the item |
 | totalCostExcludedTaxIds | array | The sale price excluded tax identifiers |
 | actualCost | double | The cost of the item |
@@ -934,9 +934,8 @@ One of the following values:
 | 3 | Package | Booking Package Identifier |  |  |
 | 4 | Session | Booking Session Identifier |  |  |
 | 5 | Menu / Food | Booking Session Menu Identifier |  |  |
-| 6 | Beverage | Booking Session Beverage Identifier |  |  |
+| 6 | Beverage Package | Booking Session Beverage Package Identifier |  |  |
 | 7 | Product | Booking Session Product Identifier |  |  |
 | 8 | Resource | Booking Session Resource Identifier |  |  |
 | 9 | Additional Item | Booking Additional Item Identifier |  |  |
 | 11 | Service | Booking Service Identifier |  |  |
-
