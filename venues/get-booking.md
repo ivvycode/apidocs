@@ -41,6 +41,7 @@ The id of the booking
   "company": null,
   "contactId": null,
   "contact": null,
+  "isConfidential": false,
   "currentStatus": 3,
   "totalAmount": 2600,
   "totalTaxAmount": 0,
@@ -54,8 +55,12 @@ The id of the booking
   "isAccommIncluded": false,
   "dateAccomStart": "",
   "dateAccomEnd": "",
+  "focRoomsDenominator": 0,
+  "maxNumFocRoomsPerDay: 0,
   "hasPackages": true,
   "decisionDate": "",
+  "canBeMoved": false,
+  "bookedById": 123,
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
   "dailyRevenue": [
@@ -655,6 +660,7 @@ The result from this call will be the details of a specific booking to which the
 | company | [Company](get-booking.md#company) | The details of the company assigned to the booking |
 | contactId | integer | The unique id of the contact assigned to the booking |
 | contact | [Contact](get-booking.md#contact) | The details of the contact assigned to the booking |
+| isConfidential | boolean | Whether or not the booking is confidential |
 | currentStatus | enum | The current status of the booking. See [Status](get-booking.md#status) |
 | totalAmount | double | The total amount of the booking, including tax |
 | totalTaxAmount | double | The total tax of the booking |
@@ -668,8 +674,12 @@ The result from this call will be the details of a specific booking to which the
 | isAccommIncluded | boolean | Whether or not the booking includes accommodation |
 | dateAccomStart | [timestamp](../development-reference/timestamp-format.md) | The start accommodation date of the booking |
 | dateAccomEnd | [timestamp](../development-reference/timestamp-format.md) | The end accommodation date of the booking |
+| focRoomsDenominator | int | The number of accommodation rooms in which one room is complimentary. For example if the value is 5, then 1 in 5 accommodation rooms will be complimentary. |
+| maxNumFocRoomsPerDay | int | The maximum number of accommodation rooms per day that can be complimentary |
 | hasPackages | boolean | Whether or not the booking has packages |
 | decisionDate | [timestamp](../development-reference/timestamp-format.md) | The date before which the event/accommodation dates must be decided |
+| canBeMoved | boolean | Whether or not the event/accommodation dates of the booking are flexible |
+| bookedById | integer | The unique id of the event coordinator user assigned to the booking |
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | dailyRevenue | Array of [DailyRevenue](get-booking.md#daily-revenue) | The daily revenue data of booking |
