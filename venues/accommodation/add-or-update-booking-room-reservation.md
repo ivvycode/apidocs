@@ -9,8 +9,10 @@ Add or Update Booking Room Reservation
 
 {% api-method-description %}
 Adds or updates the details of a specific room reservation on a specific venue booking. The booking must satisfy the following:  
+  
 \* Accommodation is included, and the booking has accommodation groups.  
-\* The status must be "confirmed".
+  
+\* The status must be "not confirmed", "confirmed", "checked in" or "checked out"
 {% endapi-method-description %}
 
 {% api-method-spec %}

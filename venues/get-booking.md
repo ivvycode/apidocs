@@ -949,3 +949,4 @@ One of the following values:
 | 8 | Resource | Booking Session Resource Identifier |  |  |
 | 9 | Additional Item | Booking Additional Item Identifier |  |  |
 | 11 | Service | Booking Service Identifier |  |  |
+

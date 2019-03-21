@@ -28,7 +28,7 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

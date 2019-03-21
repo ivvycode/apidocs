@@ -8,7 +8,7 @@ Confirm Booking Room Reservation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Confirm a room reservation on a booking. Once a room reservation is confirmed, no other updates are allowed.
+Confirm a room reservation on a booking. 
 {% endapi-method-description %}
 
 {% api-method-spec %}

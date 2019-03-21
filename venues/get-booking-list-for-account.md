@@ -24,7 +24,7 @@ The number of bookings to get in a single call
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 325,
