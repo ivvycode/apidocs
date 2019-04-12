@@ -628,7 +628,25 @@ The id of the booking
           "tax": 0.046
         }
       ]
-    }
+    },
+    "salesPerson": "Jack Smith",
+    "bookedBy": "Oliver Brown",
+    "foodBeveragePayableBy": "Master Account",
+    "totalAttendees": 20,
+    "hasCommissions": 1,
+    "hasCommissionPaid": 1,
+    "agent": "Company Name",
+    "commissionByCostCentres": {
+        "2019-04-04": {
+            "costcenterId": 2,
+            "commission": 31.7
+        },
+        "2019-04-05": {
+            "costcenterId": 2,
+            "commission": 1.7
+        }
+    },
+    "bookingType": "Detailed"
   ]
 }
 ```
@@ -691,6 +709,15 @@ The result from this call will be the details of a specific booking to which the
 | products | Array of [Product](get-booking.md#product) | The list of products of the booking |
 | additionalItems | Array of [Additional Item](get-booking.md#additional-item) | The list of additional items of the booking |
 | serviceFees | Array of [Service Fees](get-booking.md#service-fee) | The list of service fee applied to different items of the booking |
+| salesPerson | string | The name of sales Person in the booking |
+| bookedBy | string | The name of the user that created the booking |
+| foodBeveragePayableBy | string | The Food and Beverage can be payable by |
+| totalAttendees | integer | The total number of attendees for the booking |
+| hasCommissions | boolean | The booking pay comissions to an agent |
+| hasCommissionPaid | boolean | The commission has been paid for the booking |
+| agent | string | The name of the agent in the booking |
+| commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) |
+| bookingType | string | Type of Bookings |
 
 ## Status
 
@@ -950,3 +977,9 @@ One of the following values:
 | 9 | Additional Item | Booking Additional Item Identifier |  |  |
 | 11 | Service | Booking Service Identifier |  |  |
 
+## Commission By Cost Centres
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| costcenterId | integer | The cost center identifier to which the revenue applies |
+| commission | integer | The commission amount by Cost Centres in the Booking |
