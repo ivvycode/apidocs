@@ -72,3 +72,12 @@ The result from this call will be a [collection](../getting-started/interpreting
 }
 ```
 
+## status:
+
+One of the following values:
+
+* 0 = Not Started
+* 1 = In Progress
+* 2 = On Hold
+* 3 = Cancelled
+* 4 = Completed
