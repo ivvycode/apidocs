@@ -97,6 +97,7 @@
   * [Add Error Report](account/add-error-report.md)
 * [CRM](crm/README.md)
   * [Get Task List](crm/get-task-list.md)
+  * [Get Activity List](crm/get-activity-list.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
