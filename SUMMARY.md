@@ -96,6 +96,7 @@
   * [Get Email Log List](account/get-email-log-list.md)
   * [Add Error Report](account/add-error-report.md)
 * [CRM](crm/README.md)
+  * [Get Lead/Opportunity List](crm/get-opportunity-list.md)
   * [Get Task List](crm/get-task-list.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
