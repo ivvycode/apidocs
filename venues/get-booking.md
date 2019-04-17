@@ -717,7 +717,7 @@ The result from this call will be the details of a specific booking to which the
 | hasCommissionPaid | boolean | The commission has been paid for the booking |
 | agent | string | The name of the agent in the booking |
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) |
-| bookingType | string | Type of Bookings |
+| bookingType | string | The type of Booking selected for the Booking [Booking Types](get-booking.md#booking-types) |
 
 ## Status
 
@@ -983,3 +983,13 @@ One of the following values:
 | :--- | :--- | :--- |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | commission | integer | The commission amount by Cost Centres in the Booking |
+
+## Booking Types
+
+One of the following values:
+
+| \# | Description |
+| :--- | :--- |
+| 1 | Simple |
+| 2 | Detailed |
+| 3 | Accommodation Only |
