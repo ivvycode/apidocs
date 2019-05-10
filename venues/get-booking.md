@@ -710,14 +710,19 @@ The result from this call will be the details of a specific booking to which the
 | additionalItems | Array of [Additional Item](get-booking.md#additional-item) | The list of additional items of the booking |
 | serviceFees | Array of [Service Fees](get-booking.md#service-fee) | The list of service fee applied to different items of the booking |
 | salesPerson | string | The name of sales Person in the booking |
+| salesPersonEmail | string | The email of sales Person in the booking |
+| salesPersonPhone | string | The phone of sales Person in the booking |
 | bookedBy | string | The name of the user that created the booking |
+| bookedByEmail | string | The email of the user that created the booking |
+| bookedByPhone | string | The phone of the user that created the booking |
+| bccLeadEmail | string | The email address that can be used to record emails against this lead |
 | foodBeveragePayableBy | string | The Food and Beverage can be payable by |
 | totalAttendees | integer | The total number of attendees for the booking |
 | hasCommissions | boolean | The booking pay comissions to an agent |
 | hasCommissionPaid | boolean | The commission has been paid for the booking |
 | agent | string | The name of the agent in the booking |
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) |
-| bookingType | string | Type of Bookings |
+| bookingType | string | The type of Booking selected for the Booking [Booking Types](get-booking.md#booking-types) |
 
 ## Status
 
@@ -983,3 +988,13 @@ One of the following values:
 | :--- | :--- | :--- |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | commission | integer | The commission amount by Cost Centres in the Booking |
+
+## Booking Types
+
+One of the following values:
+
+| \# | Description |
+| :--- | :--- |
+| 1 | Simple |
+| 2 | Detailed |
+| 3 | Accommodation Only |
