@@ -42,6 +42,7 @@ The unique id of the venue to which the opportunity belongs
             "ownerFullName": "First Last",
             "contactId": null,
             "companyId": 113,
+            "currentBookingId": 5,
             "qualityId": 2,
             "quality": "B-Grade",
             "stageId": 47,
