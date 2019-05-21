@@ -21,7 +21,7 @@ To help you get started we offer sdk libraries in [C\#](https://github.com/ivvyc
 **Next Steps:**
 
 * Download an [example extension](https://github.com/ivvycode/example-extension) designed to work on the AWS infrastructure 
-* Try making an [API call](https://developer.ivvy.com/getting-started/test/ping)
+* Try making an [API call](https://developer.ivvy.com/getting-started/test)
 * [Contact the iVvy Integration Team](https://www.ivvy.com.au/events/contact.html) for additional support
 
 
