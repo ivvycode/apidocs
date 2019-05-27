@@ -6,9 +6,7 @@ Get Venue List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Fetch a list of venues that are visible in the marketplace.
-
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the venues visible in the marketplace matching the request criteria below. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) properties.
+Fetch a list of venues that are visible in the marketplace.The result from this call will be a collection of all the venues visible in the marketplace matching the request criteria below. This call also accepts the pagination properties.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -33,7 +31,8 @@ Use this to filter venues that do, or do not, allow live bookings
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
-```
+
+```text
 {
   "meta": {
     "totalResults": 1,
@@ -65,8 +64,8 @@ Use this to filter venues that do, or do not, allow live bookings
       "numAccommodationRooms": 200,
       "maxSpaceArea": null,
       "totalSpaceArea": null,
-      "longitude": 153.4065773,
-      "latitude": -28.0067947,
+      "longitude": "153.4065773",
+      "latitude": "-28.0067947",
       "primaryAddress": {
         "line1": "2 Boston Court",
         "line2": "",
@@ -116,7 +115,7 @@ Use this to filter venues that do, or do not, allow live bookings
 
 ## Example Request
 
-`Example: Fetch the 2nd batch of 100 venues visible in the marketplace. Include their availability from 1st July 2015 to 7th July 2015`
+Example: Fetch the 2nd batch of 100 venues visible in the marketplace. Include their availability from 1st July 2015 to 7th July 2015
 
 ```javascript
 {
@@ -125,3 +124,4 @@ Use this to filter venues that do, or do not, allow live bookings
   "availabilityEndDate": "2015-07-07"
 }
 ```
+
