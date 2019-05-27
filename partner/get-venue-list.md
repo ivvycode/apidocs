@@ -1,3 +1,7 @@
+---
+description: 'NOTE: This action has not been published yet.'
+---
+
 # Get Venue List
 
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/partner?action=getVenueList" %}

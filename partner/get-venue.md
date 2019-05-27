@@ -1,3 +1,7 @@
+---
+description: 'NOTE: This action has not been published yet.'
+---
+
 # Get Venue
 
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/partner?action=getVenue" %}
@@ -413,3 +417,4 @@ One of the following values:
 * 2 = Catering
 * 3 = Hotel Personnel
 * 4 = Accommodation
+
