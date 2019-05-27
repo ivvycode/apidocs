@@ -85,6 +85,8 @@
 * [Marketplace](marketplace/README.md)
   * [Get Venue List](marketplace/get-venue-list.md)
   * [Get Venue](marketplace/get-venue.md)
+* [Partner](partner/README.md)
+  * [Get Venue List](partner/get-venue-list.md)
 * [Invoice](invoice/README.md)
   * [Get Invoice List](invoice/get-invoice-list.md)
   * [Get Invoice](invoice/get-invoice.md)

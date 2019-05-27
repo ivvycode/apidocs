@@ -12,6 +12,8 @@ With iVvy's robust API, you can connect all your core business apps to meet your
 
 {% page-ref page="marketplace/" %}
 
+{% page-ref page="partner/" %}
+
 {% page-ref page="invoice/" %}
 
 {% page-ref page="account/" %}
