@@ -32,7 +32,7 @@ Use this to filter venues that do, or do not, allow live bookings
 
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "meta": {
     "totalResults": 1,

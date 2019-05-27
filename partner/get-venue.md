@@ -16,11 +16,11 @@ This endpoint fetches the public details of a specific venue in the iVvy marketp
 The unique identifier of the venue
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="availabilityStartDate" type="string" required=false %}
+{% api-method-parameter name="availabilityStartDate" type="date" required=false %}
 The start date of the period from which to include the function space availability details of the venues
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="availabilityEndDate" type="string" required=false %}
+{% api-method-parameter name="availabilityEndDate" type="date" required=false %}
 The end date of the period from which to include the function space availability details of the venues
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -29,7 +29,7 @@ The end date of the period from which to include the function space availability
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -255,6 +255,55 @@ Cake successfully retrieved.
         "contentType": "image/jpeg"
       }
     }
+  ],
+  "menus": [
+    {
+      "marketplaceName": "Breakfast Buffet",
+      "smallDescription": "A variety of options.",
+      "image": null,
+      "minimumPax": 1,
+      "maximumPax": 10,
+      "marketplaceCategories": [1],
+      "currentStatus": 1,
+      "activePeriodStart": {
+        "month": 1,
+        "date": 17
+      },
+      "activePeriodEnd" => {
+        "month": 6,
+        "date": 7
+      }
+    }
+  ],
+  "beveragePackages": [
+    {
+      "marketplaceName": "Dinner Drinks",
+      "smallDescription": "A nice collection of beers and wines for dinner.",
+      "minPax": 0,
+      "maxPax": 0,
+      "marketplaceCategories": [5, 6],
+      "currentStatus": 1,
+      "activePeriodStart": null,
+      "activePeriodEnd": null
+    }
+  ],
+  "reviews": [
+    "reviewDate": "2019-03-27 14:37:30",
+    "reviewComment": "Great service and hospitality",
+    "replyDate": null,
+    "replierComment": null,
+    "reviewerName": "John Doe",
+    "reviewRatingAvg": 3,
+    "ratings": [
+      {
+        "ratingType": 1,
+        "rating": 3
+      },
+      {
+        "ratingType": 2,
+        "rating": 3
+      }
+    ]
   ]
 }
 ```
@@ -263,5 +312,104 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+The following are properties in the example json response above that have special values.
 
+## ratingAuthority
 
+One of the following values:
+
+* 1 = AAA rated
+* 2 = Self rated
+
+## facilities
+
+An array of the following values:
+
+* 1 = Air Conditioning
+* 2 = Airport Shuttle
+* 3 = Audio Visual
+* 4 = BBQ
+* 6 = Business Centre
+* 7 = Ceremony On Site
+* 8 = Child Minding
+* 9 = Disabled Access
+* 10 = Dry Cleaning
+* 11 = Express Checkout
+* 12 = Free Parking
+* 13 = Gaming Area
+* 14 = Gymnasium
+* 15 = Internet Access
+* 16 = Laundry
+* 39 = Liquor License
+* 17 = Mobile Bar
+* 18 = Open 24 Hours
+* 19 = Outdoor Area
+* 20 = Parking Available
+* 21 = Pay TV
+* 22 = Playground
+* 23 = Printing Services
+* 24 = Public Transport
+* 25 = Restaurant On Site
+* 26 = Sauna Steam Room
+* 27 = Smoking Permitted
+* 28 = Spa
+* 29 = Staging
+* 30 = Street Parking
+* 31 = Swimming Pool
+* 32 = Tour Desk
+* 33 = Undercover Parking
+* 34 = Valet Parking
+* 35 = Wheelchair Access
+* 36 = Wifi Access
+* 37 = Outside Catering Allowed
+* 38 = BYO Allowed
+
+## priceMethod \(package pricing\)
+
+One of the following values:
+
+* 1 = Per person
+* 2 = Flat rate
+
+## type \(function space layout\)
+
+One of the following values:
+
+* 0 = Custom
+* 1 = Theatre
+* 2 = Classroom
+* 3 = U-Shape
+* 4 = Cabaret
+* 5 = Boardroom
+* 6 = Banquet
+* 7 = Cocktail
+* 8 = Hollow Square
+
+## marketplaceEventTypes \(packages, function spaces and image library files\)
+
+An array of the following values:
+
+* 11 = Event
+* 21 = Wedding
+* 31 = Conference
+* 41 = Meeting
+
+## marketplaceCategories \(menus, beverage packages\)
+
+An array of the following values:
+
+* 1 = Breakfast
+* 2 = Morning Break
+* 3 = Lunch
+* 4 = Afternoon Break
+* 5 = Dinner
+* 6 = Cocktail
+
+## ratingType \(ratings\)
+
+One of the following values:
+
+* 1 = Event Space
+* 2 = Catering
+* 3 = Hotel Personnel
+* 4 = Accommodation
