@@ -52,7 +52,7 @@ Sort Direction: Support Parameter 'asc' or 'desc'
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

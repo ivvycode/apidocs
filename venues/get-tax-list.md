@@ -6,7 +6,7 @@ Get Tax List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Return the tax list for the venue. 
+Return the tax list for the venue.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,7 +24,7 @@ The id of the venue
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 1,

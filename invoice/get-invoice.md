@@ -24,7 +24,7 @@ The invoice identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": 15,
   "reference": 100000157,

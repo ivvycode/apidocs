@@ -28,7 +28,7 @@ The event identifier to which registration belongs
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

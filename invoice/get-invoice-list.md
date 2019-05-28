@@ -28,7 +28,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 29016,

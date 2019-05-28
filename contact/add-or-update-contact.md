@@ -25,19 +25,19 @@ The contact's last name \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="string" required=false %}
-The contact's email address. Must be a valid email. \(required when id is missing\) 
+The contact's email address. Must be a valid email. \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="phone" type="string" required=false %}
-The contacts phone number. 
+The contacts phone number.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="groups" type="string" required=false %}
-The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact. 
+The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="customFields" type="string" required=false %}
-The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set. 
+The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companies" type="string" required=false %}
@@ -60,7 +60,7 @@ The contact's sms subscription status. Possible values are 1 = Subscribed, 2 = U
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id":33884
 }
@@ -166,3 +166,4 @@ The sms status is the record of whether the contact has opted in to sms communic
 | 2 | Unsubscribed |
 | 3 | Failed |
 | 4 | No Marketing |
+

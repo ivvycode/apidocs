@@ -6,7 +6,7 @@ Get Booking List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of bookings. 
+Get a list of bookings.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -28,7 +28,7 @@ The number of bookings to get in a single call
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 256,

@@ -13,7 +13,7 @@ Add or update event details.
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="eventType" type="string" required=true %}
-Required when adding an event. Value must be 12. The value cannot be changed for an existing event. 
+Required when adding an event. Value must be 12. The value cannot be changed for an existing event.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="title" type="string" required=true %}
@@ -56,7 +56,7 @@ The primary contact user of the event. The value is an identifier of a user in t
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "success": true,
   "id": 98481,

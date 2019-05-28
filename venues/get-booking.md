@@ -730,11 +730,11 @@ The result from this call will be the details of a specific booking to which the
 | salesPersonUser | Array of [Sales Person](get-booking.md#sales-person) | The details of sales Person in the booking |
 | bookedByUser | Array of [Booked By](get-booking.md#booked-by) | The details of the user that created the booking |
 | leadBccEmail | string | The email address that can be used to record emails against this lead |
-| foodBeveragePayableBy |  enum \([Food Beverage Payable By](get-booking.md#food-beverage-payableby)\)  | The Food and Beverage can be payable by |
+| foodBeveragePayableBy | enum \([Food Beverage Payable By](get-booking.md#food-beverage-payableby)\) | The Food and Beverage can be payable by |
 | totalAttendees | integer | The total number of attendees for the booking |
 | hasCommissions | boolean | The booking pay comissions to an agent |
 | hasCommissionPaid | boolean | The commission has been paid for the booking |
-| agent | Array of [Agent](get-booking.md#agent)  | The details of the agent in the booking |
+| agent | Array of [Agent](get-booking.md#agent) | The details of the agent in the booking |
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking |
 | bookingType | enum \([Booking Types](get-booking.md#get-booking.md#booking-types)\) | The type of Booking selected for the Booking |
 

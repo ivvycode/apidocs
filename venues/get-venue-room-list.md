@@ -2,7 +2,7 @@
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomList" path="" %}
 {% api-method-summary %}
-Get Venue Room List 
+Get Venue Room List
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -24,7 +24,7 @@ The id of the venue
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 1,

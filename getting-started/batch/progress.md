@@ -24,7 +24,7 @@ The asyncId for the batch job to check progress for
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 { 
   "progress":33
 }

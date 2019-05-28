@@ -24,7 +24,7 @@ The company's identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": "25146",
   "businessName": "Test",

@@ -40,7 +40,7 @@ The inventory count of the room from startDate to endDate
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "success": true
 }
