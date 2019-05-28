@@ -22,6 +22,8 @@ Browse through the topics below to find exactly what you're looking for or check
 
 {% page-ref page="marketplace/" %}
 
+{% page-ref page="partner/" %}
+
 {% page-ref page="invoice/" %}
 
 {% page-ref page="account/" %}
