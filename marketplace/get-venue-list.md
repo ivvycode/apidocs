@@ -40,7 +40,7 @@ Date Format YYYY-MM-DD
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",

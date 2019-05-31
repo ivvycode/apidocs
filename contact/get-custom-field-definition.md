@@ -18,7 +18,7 @@ Get the definition of custom field
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

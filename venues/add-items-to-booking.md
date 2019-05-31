@@ -6,7 +6,7 @@ Add Items to Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Add one or more items to a booking. 
+Add one or more items to a booking.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -32,7 +32,7 @@ Array of multiple items with additional item details
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "success": true,
   "items": [

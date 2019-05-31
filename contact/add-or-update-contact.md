@@ -29,6 +29,7 @@ The contact's last name \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="string" required=true %}
+
 The contact's email address. Must be a valid email. \(required when id is missing\)
 {% endapi-method-parameter %}
 

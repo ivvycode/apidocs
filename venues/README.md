@@ -1,6 +1,6 @@
 # Venue
 
-The venue namespace is the used for the Venue Management software that is used by hotels, venues, and restaurants to manage Bookings for Group Food & Beverage, Meetings Space,  Group Accommodation and Audio Visual. 
+The venue namespace is the used for the Venue Management software that is used by hotels, venues, and restaurants to manage Bookings for Group Food & Beverage, Meetings Space, Group Accommodation and Audio Visual.
 
 Typical use cases for this API include:
 
@@ -14,6 +14,4 @@ Typical use cases for this API include:
 ```text
 venue
 ```
-
-
 

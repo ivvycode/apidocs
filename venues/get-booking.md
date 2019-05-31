@@ -628,7 +628,43 @@ The id of the booking
           "tax": 0.046
         }
       ]
-    }
+    },
+    "salesPersonUser": {
+        "id": 1,
+        "firstName": "Jack",
+        "lastName": "Smith",
+        "email": "jack@smith.com",
+        "phone": 61482154689
+    },
+    "bookedByUser": {
+        "id": 3,
+        "firstName": "Oliver",
+        "lastName": "Brown",
+        "email": "oliver@brown.com",
+        "phone": 61582154689
+    },
+    "leadBccEmail": "lead-1-111-6895d8@ivvy.com",
+    "foodBeveragePayableBy": 1,
+    "totalAttendees": 20,
+    "hasCommissions": 1,
+    "hasCommissionPaid": 1,
+    "agent": {
+        "id": 2,
+        "businessName": "company Name",
+        "email": "company@name.com",
+        "phone": "+354-80-6090113"
+    },
+    "commissionByCostCentres": [{
+        "2019-04-04": {
+            "costcenterId": 2,
+            "commission": 31.7
+        },
+        "2019-04-05": {
+            "costcenterId": 2,
+            "commission": 1.7
+        }
+    }],
+    "bookingType": 1
   ]
 }
 ```
@@ -691,6 +727,16 @@ The result from this call will be the details of a specific booking to which the
 | products | Array of [Product](get-booking.md#product) | The list of products of the booking |
 | additionalItems | Array of [Additional Item](get-booking.md#additional-item) | The list of additional items of the booking |
 | serviceFees | Array of [Service Fees](get-booking.md#service-fee) | The list of service fee applied to different items of the booking |
+| salesPersonUser | Array of [Sales Person](get-booking.md#sales-person) | The details of sales Person in the booking |
+| bookedByUser | Array of [Booked By](get-booking.md#booked-by) | The details of the user that created the booking |
+| leadBccEmail | string | The email address that can be used to record emails against this lead |
+| foodBeveragePayableBy | enum \([Food Beverage Payable By](get-booking.md#food-beverage-payableby)\) | The Food and Beverage can be payable by |
+| totalAttendees | integer | The total number of attendees for the booking |
+| hasCommissions | boolean | The booking pay comissions to an agent |
+| hasCommissionPaid | boolean | The commission has been paid for the booking |
+| agent | Array of [Agent](get-booking.md#agent) | The details of the agent in the booking |
+| commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking |
+| bookingType | enum \([Booking Types](get-booking.md#get-booking.md#booking-types)\) | The type of Booking selected for the Booking |
 
 ## Status
 
@@ -950,3 +996,57 @@ One of the following values:
 | 9 | Additional Item | Booking Additional Item Identifier |  |  |
 | 11 | Service | Booking Service Identifier |  |  |
 
+## Commission By Cost Centres
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| costcenterId | integer | The cost center identifier to which the revenue applies |
+| commission | integer | The commission amount by Cost Centres in the Booking |
+
+## Booking Types
+
+One of the following values:
+
+| \# | Description |
+| :--- | :--- |
+| 1 | Simple |
+| 2 | Detailed |
+| 3 | Accommodation Only |
+
+## Food Beverage Payable By
+
+One of the following values:
+
+| \# | Description |
+| :--- | :--- |
+| 1 | Master Account |
+| 2 | Guests |
+
+## Sales Person
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the sales person |
+| firstName | string | The first name of the sales person |
+| lastName | string | The last name of the sales person |
+| email | string | The email address of the sales person |
+| phone | string | The phone number of the sales person |
+
+## Booked By
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the co-ordinator |
+| firstName | string | The first name of the co-ordinator |
+| lastName | string | The last name of the co-ordinator |
+| email | string | The email address of the co-ordinator |
+| phone | string | The phone number of the co-ordinator |
+
+## Agent
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the company |
+| businessName | integer | The business name of the company |
+| email | string | The email address of the company |
+| phone | string | The phone number of the company |

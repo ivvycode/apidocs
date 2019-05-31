@@ -13,5 +13,3 @@ The iVvy API uses a timestamp format to represent dates and times. Every date us
 * 'mm' is the two digit minute, and
 * 'ss' is the two digit second
 
-
-

@@ -28,7 +28,7 @@ The subscription group identifier to remove the contacts from
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

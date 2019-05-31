@@ -6,7 +6,7 @@ Get Venue Rate Plan List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get the rate plan for a specific venue. 
+Get the rate plan for a specific venue.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,7 +24,7 @@ The id of the venue
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 2,

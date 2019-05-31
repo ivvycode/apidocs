@@ -24,7 +24,7 @@ The venue Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",
@@ -344,7 +344,7 @@ One of the following values:
 
 ## marketplaceEventTypes
 
-Packages, function spaces and image library file for the marketplaceEventType. 
+Packages, function spaces and image library file for the marketplaceEventType.
 
 An array of the following values:
 
