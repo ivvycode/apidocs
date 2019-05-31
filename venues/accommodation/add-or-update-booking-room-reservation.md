@@ -83,6 +83,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | id | integer | optional | The unique id of the room reservation to update - a new room reservation will be created if this parameter is not present |
 | venueId | integer | required | The unique id of the venue to which the booking belongs |
 | bookingId | integer | required | The unique id of the booking to which the room reservation belongs |
+| canBeEdited | boolean | optional | Whether or not updates to the booking room reservation are allowed |
 | mainGuest | [Guest](add-or-update-booking-room-reservation.md#guest) | required on add, optional on update | Details of the main guest of the room reservation |
 | rooms | array of [Reserved Rooms](add-or-update-booking-room-reservation.md#reserved-room) | required on add, optional on update | Details of the individually reserved rooms on the reservation |
 | removeRooms | array of integers | optional | The unique id of the individual rooms to remove from an existing reservation |
