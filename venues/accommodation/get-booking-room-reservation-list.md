@@ -259,6 +259,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | isCancelled | boolean | Whether or not the reserved room is cancelled |
 | cancelledDate | datetime | The date & time the reserved room was cancelled |
 | dayRates | array of [Day Rates](get-booking-room-reservation-list.md#reserved-room-day-rates) | The daily rates of the reserved room |
+| additionalGuests | array of [Additional Guests](get-booking-room-reservation-list.md#reserved-room-additional-guests) | The additional guests of the reserved room |
 
 ## Reserved Room Day Rates
 
@@ -267,6 +268,16 @@ The result from this call will be a [collection](../../getting-started/interpret
 | dayDate | date | The date of the reserved room to which the rate applies |
 | barId | integer | The unique id of the rate plan assigned to the dayDate of the reserved room. If the reserved room applies to an accommodation group \(see property _isFromGroup_ above\) then this will always be the room type assigned to the accommodation group |
 | cost | number | The rate amount for the reserved room on dayDate. The amount either includes or excludes tax depending on how the venue is configured |
+
+## Reserved Room Additional Guests
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| guestId | integer | The identifier of guest being updated on the reserved room |
+| guest | [Guest](get-booking-room-reservation-list.md#guest) | The additional guest details for the reserved room |
+| arrivalDate | date | The arrival date of the additional guest |
+| departureDate | date | The departure date of the additional guest |
+| guestType | enum | The sharing type of additional guest. See [Additional Guest Type](add-or-update-booking-room-reservation.md#additional-guest-type) |
 
 ## Guest
 
