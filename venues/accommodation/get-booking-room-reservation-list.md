@@ -188,6 +188,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | id | integer | The unique id of the booking room reservation |
 | venueId | integer | The unique id of the venue to which the booking belongs |
 | bookingId | integer | The unique id of the booking to which the room reservation belongs |
+| canBeEdited | boolean | Whether or not changes to the booking room reservation are allowed |
 | reference | integer | A unique reference assigned to the room reservation |
 | mainGuestId | integer | The unique id of the main guest of the reservation |
 | mainGuest | [Guest](get-booking-room-reservation-list.md#guest) | Details of the main guest of the room reservation |
