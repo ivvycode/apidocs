@@ -36,7 +36,7 @@ The number of booking room reservations to fetch
 
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
     "meta": {
         "totalResults": 1,
@@ -119,7 +119,8 @@ The number of booking room reservations to fetch
                         "barId": 57,
                         "cost": 175.00
                     }
-                ]
+                ],
+                "additionalGuests": []
             },
             {
                 "id": 124,
@@ -164,11 +165,37 @@ The number of booking room reservations to fetch
                 "modifiedDate": "2018-08-17 14:52:21 UTC",
                 "isCancelled": false,
                 "cancelledDate": null,                
-                "dayRates": [{
-                    "date": "2018-09-02",
-                    "barId": 57,
-                    "cost": 200.00
-                }]
+                "dayRates": [
+                    {
+                        "date": "2018-09-02",
+                        "barId": 57,
+                        "cost": 200.00
+                    }
+                ],
+                "additionalGuests": [
+                    {
+                        "guestId": 601,
+                        "guest": {
+                            "id": 601,
+                            "contact": {
+                                "id": 800,
+                                "firstName": "Jane",
+                                "lastName": "Doe",
+                                "email": "Jane.Doe@test.com",
+                                "phone": "123654789",
+                                "createdDate": "2018-08-17 18:43:33 UTC",
+                                "modifiedDate": "2018-08-17 18:43:33 UTC"
+                            },
+                            "primaryPhone": "123654789",
+                            "address": null,
+                            "createdDate": "2018-08-17 18:43:33 UTC",
+                            "modifiedDate": "2018-08-17 18:43:33 UTC"
+                        },
+                        "arrivalDate": "2018-09-02",
+                        "departureDate": "2018-09-03",
+                        "guestType": 2
+                    }
+                ]
             }
         ]
     }]
