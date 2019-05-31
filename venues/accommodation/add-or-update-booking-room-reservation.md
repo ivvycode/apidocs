@@ -40,14 +40,22 @@ NOTE: The "rooms" in the response are returned in the same order as the "rooms" 
       "guest": {
         "id": 101,
         "contactId": 43213
-      }
+      },
+      "additionalGuests": []
     },
     {
       "id": 4002,
       "guest": {
         "id": 102,
         "contactId": 44321
-      }
+      },
+      "additionalGuests": [
+        {
+          "guestId": 103,
+          "contactId": 43277,
+          "guestType": 2
+        }
+      ]
     }
   ]
 }
