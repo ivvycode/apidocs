@@ -56,6 +56,7 @@ Successfully confirming a room reservation from a booking
 | 6 | Unknown channel error |
 | 7 | One or more individual rooms on the reservation cannot be confirmed |
 | 8 | Unknown channel error |
+| 9 | The canBeEdited flag of the room reservation is false, which prevents any changes |
 
 
 
