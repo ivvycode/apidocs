@@ -1,7 +1,5 @@
 # Cancel Booking Room Reservation
 
-**NOTE: This action has not been published**
-
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=cancelBookingRoomReservation" %}
 {% api-method-summary %}
 Cancel Booking Room Reservation
@@ -58,4 +56,5 @@ Successfully cancelling a room reservation from a booking
 | 4 | Unknown channel error |
 | 5 | One or more individual rooms on the reservation cannot be cancelled |
 | 6 | The status of the reservation prevents it from being cancelled. Only "not confirmed", "confirmed", "checked in", and "checked out" reservations can be cancelled |
+| 7 | The canBeEdited flag of the room reservation is false, which prevents any changes |
 

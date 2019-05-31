@@ -1,7 +1,5 @@
 # Add or Update Booking Room Reservation
 
-**NOTE: This action has not been published**
-
 {% api-method method="post" host="\[PlatformAddress\]" path=" /api/1.0/venue?action=addOrUpdateBookingRoomReservation" %}
 {% api-method-summary %}
 Add or Update Booking Room Reservation

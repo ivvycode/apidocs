@@ -1,7 +1,5 @@
 # Change Status of Booking Room Reservation
 
-**NOTE: This action has not been published**
-
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=changeStatusOfBookingRoomReservation" %}
 {% api-method-summary %}
 Change Status of Booking Room Reservation
@@ -68,4 +66,5 @@ To cancel a booking room reservation, use the [Cancel Booking Room Reservation](
 | 1 | The new status is the same as the current status |
 | 2 | The current status cannot transition to the new status |
 | 3 | The new status is not supported. Only "checked in" and "checked out" are supported |
+| 4 | The canBeEdited flag of the room reservation is false, which prevents any changes |
 

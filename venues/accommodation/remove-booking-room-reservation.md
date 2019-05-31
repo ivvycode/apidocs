@@ -1,7 +1,5 @@
 # Remove Booking Room Reservation
 
-**NOTE: This action has not been published**
-
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=removeBookingRoomReservation" %}
 {% api-method-summary %}
 Remove Booking Room Reservation
