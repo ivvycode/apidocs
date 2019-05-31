@@ -153,7 +153,7 @@ This action only supports adding a room reservation to a booking that has [accom
 
 ## Notes on updating a room reservation
 
-Updating an existing room reservation **overlays** the existing data. Optional request data that is excluded will not change existing data. This does not guarantee that the request data will validate if other data is changed. For example, if the departure date of a reserved room is extended, rates for the **new** dates will be required.
+Updating an existing room reservation **overlays** the existing data. Optional request data that is excluded will not change existing data \(with the exception of _additionalGuests_ - see below\). This does not guarantee that the request data will validate if other data is changed. For example, if the departure date of a reserved room is extended, rates for the **new** dates will be required.
 
 The following is an example of an update request that updates an existing room \(_id_ 400\) and adds a new room:
 
@@ -197,6 +197,12 @@ The following is an example of an update request that updates an existing room \
 ```
 
 Existing rooms can be **removed** from a reservation by passing their unique identifier in the _removeRooms_ of the request. Rooms are removed before other rooms in the request are added/updated.
+
+### Updating additional guests on a reserved room
+
+The _additionalGuests_ request param can be used to set the additional guest details of a reserved room. If this value is present in the request, it will become the **new** list of additional guests on the room. Therefore if you do **not** want to remove an additional guest, it must be present \(at least the _guestId_ value\) in the array.
+
+If the value is **not** present in the request, the existing list of additional guests will remain. The details of the additional guests will still be validated against the updated reservation details. For example, if the _arrivalDate_ of the reserved rooms is updated, the new value will be validated against the existing additional guests. If the _arrivalDate_ of an existing additional guest is invalid, the request will be rejected.
 
 ## Notes on guest details in the request
 
