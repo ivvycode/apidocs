@@ -99,7 +99,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | numAdultGuests | integer | required on add, optional on update | The number of adults on the reserved room. The value cannot exceed 10 |
 | numChildGuests | integer | required on add, optional on update | The number of children on the reserved room. The value cannot exceed 10 |
 | dayRates | array of [Day Rates](add-or-update-booking-room-reservation.md#reserved-room-day-rates) | required on add, optional on update | The daily rates of the reserved room |
-| ~~additionalGuests~~ | array of [Additional  Guests](add-or-update-booking-room-reservation.md#reserved-room-additional-guests) | optional | The additional guests of the reserved room. **This property is currently unavailable.** |
+| additionalGuests | array of [Additional  Guests](add-or-update-booking-room-reservation.md#reserved-room-additional-guests) | optional | The additional guests of the reserved room |
 
 ## Reserved Room Day Rates
 
@@ -110,13 +110,13 @@ Invalid request data that prevents the room reservation from being added/updated
 
 ## Reserved Room Additional Guests
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| guest | [Guest](add-or-update-booking-room-reservation.md#guest) | required when **guestId** is not set | The additional guest details for the reserved room |
-| guestId | integer | required when **guest** is not set | The identifier of guest being updated on the reserved room |
-| arrivalDate | date | optional | The arrival date of the additional guest |
-| departureDate | date | optional | The departure date of the additional guest |
-| guestType | enum | optional | The sharing type of additional guest. See [Additional Guest Type](add-or-update-booking-room-reservation.md#additional-guest-type) |
+| Property | Type | Required | Description |  |
+| :--- | :--- | :--- | :--- | :--- |
+| guestId | integer | required when **guest** is not set | The identifier of guest being updated on the reserved room |  |
+| guest | [Guest](add-or-update-booking-room-reservation.md#guest) | required when **guestId** is not set | The additional guest details for the reserved room |  |
+| arrivalDate | date | optional | The arrival date of the additional guest |  |
+| departureDate | date | optional | The departure date of the additional guest |  |
+| guestType | enum | optional \(required for **new** guests\) | The sharing type of additional guest. See [Additional Guest Type](add-or-update-booking-room-reservation.md#additional-guest-type) |  |
 
 ## Guest
 
