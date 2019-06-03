@@ -13,7 +13,7 @@ Get a list of lead types.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="venueId" type="integer" required=false %}
-The unique id of the venue to which the lead belongs
+The unique id of the venue to which the lead type belongs
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -29,13 +29,13 @@ The unique id of the venue to which the lead belongs
     "meta": {
         "totalResults": 1,
         "start": 0,
-        "perPage": 100,
+        "perPage": 10,
         "count": 1
     },
     "results": [
         {
-            "leadId": 1,
-            "leadTypeName": "Reseller",
+            "id": 1,
+            "type": "Reseller",
         }
     ]
 }
