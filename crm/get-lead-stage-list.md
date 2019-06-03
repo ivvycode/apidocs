@@ -34,8 +34,8 @@ The unique id of the venue to which the lead belongs
     },
     "results": [
         {
-            "stageId": 1,
-            "stageName": "Quoted"
+            "id": 1,
+            "name": "Quoted"
         }
     ]
 }
