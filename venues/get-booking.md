@@ -189,7 +189,8 @@ The id of the booking
           "id": 1,
           "tax": 4.545
         }
-      ]
+      ],
+      "minAttendeesGuaranteed": 2000,
     }
   ],
   "menus": [
@@ -664,7 +665,9 @@ The id of the booking
             "commission": 1.7
         }
     }],
-    "bookingType": 1
+    "bookingType": 1,
+    "leadId": 2,
+    "minAttendeesGuaranteed": 10
   ]
 }
 ```
@@ -737,6 +740,8 @@ The result from this call will be the details of a specific booking to which the
 | agent | Array of [Agent](get-booking.md#agent) | The details of the agent in the booking |
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking |
 | bookingType | enum \([Booking Types](get-booking.md#get-booking.md#booking-types)\) | The type of Booking selected for the Booking |
+| leadId | integer | The id of the Opportunity for the Booking |
+| minAttendeesGuaranteed | integer | The minimum number of attendees for the Booking |
 
 ## Status
 
@@ -836,6 +841,7 @@ One of the following values:
 | createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was created |
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was last modified |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
+| minAttendeesGuaranteed | integer | The minimum number of attendees for the Booking session |
 
 ## Menu
 
