@@ -83,7 +83,7 @@ This example request will obtain the details of the contact with the id "6"
 | eventInvitations | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations) | array |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array |
 
-### Status Options - Email Registration Status 
+### Status Options - Email Registration Status
 
 The status is the record of whether the contact has opted in to email communication.
 

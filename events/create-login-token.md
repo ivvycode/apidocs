@@ -32,7 +32,7 @@ Referrer of the request which will be used in validating the token later
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "token":"fc877d1bae56ebc5a8e19b29a3df67de",
   "loginUrl":"http://wired.ivvy.com/event/SQ6EXR/registration/login/token?t=fc877d1bae56ebc5a8e19b29a3df67de&contact=297466"

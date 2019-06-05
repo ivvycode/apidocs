@@ -24,7 +24,7 @@ The event identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta":{
     "totalResults":1,

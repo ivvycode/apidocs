@@ -28,7 +28,7 @@ The subscription group identifier to add the contacts to
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
   {
     "contactId": 4,

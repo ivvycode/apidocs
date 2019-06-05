@@ -24,7 +24,7 @@ The event identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

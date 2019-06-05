@@ -28,7 +28,7 @@ The event identifier to which attendee belongs
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

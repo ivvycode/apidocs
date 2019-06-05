@@ -24,7 +24,7 @@ The restart action takes the asyncId as a parameter and returns the success of t
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "restarted":true
 }

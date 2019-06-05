@@ -6,7 +6,7 @@ Get Sponsorship List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Lists the sponsors that are sponsoring the event. 
+Lists the sponsors that are sponsoring the event.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -24,7 +24,7 @@ The event identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
 "meta":{"totalResults":1,"start":0,"perPage":1,"count":1},"results":[{"id":"1","name":"Test Sponsor for event 1","description":"...","websiteAddress":"www.sponsor1.com","logoI
 mageUrl":"https://.../554ac739bcc9a.png","level":"9","customLevelId":null,"sponsorshipAmount":"44","sponsorshipAmountPaid":"4"}]

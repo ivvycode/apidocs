@@ -13,7 +13,7 @@ Add or update the details of a lead
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=true %}
-The unique identifier of a lead   
+The unique identifier of a lead  
 \(Leave empty to add the lead to the system\)
 {% endapi-method-parameter %}
 
@@ -22,17 +22,17 @@ The quality of the lead
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="industryId" type="integer" required=false %}
-The unique industry of the lead.   
+The unique industry of the lead.  
 \(Required when lead belongs to contact and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourceId" type="integer" required=false %}
-The unique source id of the lead.   
+The unique source id of the lead.  
 \(Required when the id parameter is missing. \)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companyId" type="integer" required=false %}
-The unique company id of lead.   
+The unique company id of lead.  
 \(Required when lead belongs to company and id parameter is missing\)
 {% endapi-method-parameter %}
 
@@ -56,7 +56,7 @@ The sales person id of lead
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="typeId" type="integer" required=false %}
-The type of lead   
+The type of lead  
 \(Required when id parameter is missing\)
 {% endapi-method-parameter %}
 
@@ -85,7 +85,7 @@ The description for the lead
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
