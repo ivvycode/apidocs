@@ -11,11 +11,6 @@ Get a list of lead types.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=false %}
-The unique id of the venue to which the lead type belongs
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -46,13 +41,3 @@ The unique id of the venue to which the lead type belongs
 {% endapi-method %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the lead types the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
-
-## Example Request
-
-`Get a specific venue’s Lead Type List`
-
-```javascript
-{
-  "venueId": "1",
-}
-```
