@@ -1,22 +1,15 @@
-# Get Opportunity List
+# Get Lead List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getOpportunityList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getLeadList" path="" %}
 {% api-method-summary %}
-Get Opportunity List
+Get Lead List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of opportunity.
+Get a list of lead.
 {% endapi-method-description %}
 
 {% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueIds" type="integer" required=false %}
-The array of venue ids to which the opportunity belongs
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -35,8 +28,7 @@ The array of venue ids to which the opportunity belongs
     "results": [
         {
 	    "id": 763,
-            "venueId": 1,
-            "name": "Opprotunity Name",
+            "name": "Lead Name",
             "description": "This is test description",
 	    "ownerUser": {
                 "id": 549,
@@ -82,14 +74,4 @@ The array of venue ids to which the opportunity belongs
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the opportunities the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
-
-## Example Request
-
-`Get a specific venues' opportunity List`
-
-```javascript
-{
-  "venueId": [1,2],
-}
-```
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the leads the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
