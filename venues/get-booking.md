@@ -667,7 +667,6 @@ The id of the booking
     }],
     "bookingType": 1,
     "opportunityId": 2,
-    "minAttendeesGuaranteed": 10
   ]
 }
 ```
@@ -741,7 +740,6 @@ The result from this call will be the details of a specific booking to which the
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking |
 | bookingType | enum \([Booking Types](get-booking.md#get-booking.md#booking-types)\) | The type of Booking selected for the Booking |
 | opportunityId | integer | The id of the Opportunity for the Booking |
-| minAttendeesGuaranteed | integer | The minimum number of attendees for the Booking |
 
 ## Status
 
