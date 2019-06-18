@@ -6,7 +6,7 @@ Get Venue List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of venues. 
+Get a list of venues.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -18,7 +18,7 @@ Get a list of venues.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 19,

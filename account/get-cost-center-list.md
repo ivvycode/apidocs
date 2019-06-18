@@ -6,7 +6,7 @@
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Fetches the list of cost centers in the account. No request params required. 
+Fetches the list of cost centers in the account. No request params required.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -18,7 +18,7 @@ Fetches the list of cost centers in the account. No request params required.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 2,

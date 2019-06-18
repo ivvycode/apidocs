@@ -28,6 +28,7 @@
     * [Financial Accounting Systems](getting-started/use-cases/accounting-systems.md)
     * [Point Of Sale](getting-started/use-cases/point-of-sale.md)
     * [Property Management Systems](getting-started/use-cases/property-management-systems.md)
+* [crm](crm.md)
 * [Contacts & Companies](contact/README.md)
   * [Get Contact List](contact/get-contact-list.md)
   * [Get Contact](contact/get-contact.md)

@@ -17,7 +17,7 @@ The number of attendees to get in a single api all
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start" type="integer" required=true %}
-The starting result of the page. Note this is zero based \(i.e. sending start = 0 will start from first result. 
+The starting result of the page. Note this is zero based \(i.e. sending start = 0 will start from first result.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="eventId" type="integer" required=true %}
@@ -32,7 +32,7 @@ The event identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

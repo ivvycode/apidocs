@@ -24,7 +24,7 @@ Repost
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "reposted":true
 }

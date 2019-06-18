@@ -13,7 +13,7 @@ Add or Update Opportunity
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique identifier of opportunity   
+The unique identifier of opportunity  
 \(Leave empty if adding a new opportunity\)
 {% endapi-method-parameter %}
 
@@ -65,7 +65,7 @@ The unique contact ID of the company contact
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contactId" type="integer" required=false %}
-The unique contact id of opportunity   
+The unique contact id of opportunity  
 \(Required when opportunity belongs to contact and id is missing\)
 {% endapi-method-parameter %}
 
@@ -89,7 +89,7 @@ The stage of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="stageReasonId" type="integer" required=false %}
-The unique stage reason id of opportunity 
+The unique stage reason id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="channelId" type="string" required=false %}
@@ -108,7 +108,7 @@ The description for the opportunity
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "success": true,
   "id": 755
