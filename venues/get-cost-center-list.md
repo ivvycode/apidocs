@@ -37,8 +37,7 @@ The id of the venue
             "id": 1,
             "name": "Food",
             "code": "venueccfd",
-            "description": "Venue food cost center",
-            "defaultType": null
+            "description": "Venue food cost center"
         }
     ]
 }
@@ -58,7 +57,6 @@ The result from this call will be a [collection](../getting-started/interpreting
 | name | The name of the cost center |
 | code | The code of the cost center |
 | description | The complete description of the cost center |
-| defaultType | Set if one of the default cost centers |
 
 ## Throws
 
@@ -66,4 +64,3 @@ The result from this call will be a [collection](../getting-started/interpreting
 | :--- | :--- |
 | Specific Code: 24270 | Account does not exist |
 | Specific Code: 24271 | Venue does not exist |
-
