@@ -199,7 +199,7 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 | 0 | Unknown |
 | 100 | Fee \( \[102\] =&gt; Card Fee, \[103\] =&gt; Payment Fee\) |
 | 500 | Deposit |
-| 501  | Package |
+| 501 | Package |
 | 502 | Invoice |
 | 503 | Payment |
 | 505 | Session |

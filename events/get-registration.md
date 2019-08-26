@@ -51,7 +51,7 @@ The event identifier to which registration belongs
 | mainContactId | The id of the main contact for the event registration |
 | invoiceTotalCost | Total Cost of the invoices for the event registration |
 | invoiceTotalPaid | Total payments of the invoices for the event registration |
-| createdDate | The date that the event registration was initially created.  |
+| createdDate | The date that the event registration was initially created. |
 
 ## Throws
 

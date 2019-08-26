@@ -63,6 +63,7 @@ The id of the booking
   "bookedById": 123,
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
+  "otaFolioRef": "ven1234"
   "dailyRevenue": [
     {
       "costcenterId": 1276,
@@ -720,6 +721,7 @@ The result from this call will be the details of a specific booking to which the
 | bookedById | integer | The unique id of the event coordinator user assigned to the booking |
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
+| otaFolioRef | string | The recorded Folio ID of a booking. |
 | dailyRevenue | Array of [DailyRevenue](get-booking.md#daily-revenue) | The daily revenue data of booking |
 | packages | Array of [Package](get-booking.md#package) | The list of packages of the booking |
 | sessions | Array of [Session](get-booking.md#session) | The list of sessions of booking |
@@ -1054,3 +1056,4 @@ One of the following values:
 | businessName | integer | The business name of the company |
 | email | string | The email address of the company |
 | phone | string | The phone number of the company |
+

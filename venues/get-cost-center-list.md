@@ -1,4 +1,4 @@
-# Get Venue Cost Center List
+# Get Cost Center List
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getCostCenterList" path="" %}
 {% api-method-summary %}
@@ -64,3 +64,4 @@ The result from this call will be a [collection](../getting-started/interpreting
 | :--- | :--- |
 | Specific Code: 24270 | Account does not exist |
 | Specific Code: 24271 | Venue does not exist |
+

@@ -29,7 +29,6 @@ The contact's last name \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email" type="string" required=true %}
-
 The contact's email address. Must be a valid email. \(required when id is missing\)
 {% endapi-method-parameter %}
 
@@ -54,7 +53,7 @@ The contact's email subscription status.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="smsStatus" type="enum" required=false %}
-The contact's sms subscription status. 
+The contact's sms subscription status.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

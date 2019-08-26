@@ -10,6 +10,13 @@ Get a list of lead.
 {% endapi-method-description %}
 
 {% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -27,24 +34,24 @@ Get a list of lead.
     },
     "results": [
         {
-	    "id": 763,
+        "id": 763,
             "name": "Lead Name",
             "description": "This is test description",
-	    "ownerUser": {
+        "ownerUser": {
                 "id": 549,
                 "firstName": "First",
                 "lastName": "Last",
                 "email": "first@last.com",
                 "phone": ""
             },
-	    "contact": {
+        "contact": {
                 "id": 580,
                 "firstName": "First",
                 "lastName": "last",
                 "email": "filrst.last@email.com",
                 "phone": 614535435
             },
-	    "company": {
+        "company": {
                 "id": 214,
                 "businessName": "Company BusinessName",
                 "businessNumber": "BUS123",
@@ -75,3 +82,4 @@ Get a list of lead.
 {% endapi-method %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the leads the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+
