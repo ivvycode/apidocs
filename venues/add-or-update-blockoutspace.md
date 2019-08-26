@@ -1,4 +1,4 @@
-# Add or Update Blockout Space
+# Add or Update Space Blockout
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateSpaceBlockout" path="" %}
 {% api-method-summary %}
@@ -57,7 +57,7 @@ When adding a Space Blockout. The end date & time of the Space Blockout. The val
 
 ## Example Request
 
-### Add Blockout Space
+### Add Space Blockout
 
 ```javascript
 {
@@ -69,7 +69,7 @@ When adding a Space Blockout. The end date & time of the Space Blockout. The val
 }
 ```
 
-### Update Blockout Space
+### Update Space Blockout
 
 ```javascript
 {
@@ -91,13 +91,13 @@ When adding a Space Blockout. The end date & time of the Space Blockout. The val
 | Code | Description |
 | :--- | :--- |
 | Specific Code: 24270 | The request is empty |
-| Specific Code: 24271 | The Blockout Space does not exist |
-| Specific Code: 24272 | The Blockout Space details are invalid |
+| Specific Code: 24271 | The Space Blockout does not exist |
+| Specific Code: 24272 | The Space Blockout details are invalid |
 | Specific Code: 24273 | An unknown error has occurred |
 
-This call takes values for a Blockout Space, and either
+This call takes values for a Space Blockout, and either
 
-1. Updates the values for that Blockout Space \(after you have provided an id in the parameters\), or
-2. Adds the Blockout Space to the system \(if the id parameter is missing\)
-    1. The result of this call will contain the status of the result \(either true or false\) and the Blockout Space identifier of the updated or newly created Blockout Space.
+1. Updates the values for that Space Blockout \(after you have provided an id in the parameters\), or
+2. Adds the Space Blockout to the system \(if the id parameter is missing\)
+    1. The result of this call will contain the status of the result \(either true or false\) and the Space Blockout identifier of the updated or newly created Space Blockout.
 
