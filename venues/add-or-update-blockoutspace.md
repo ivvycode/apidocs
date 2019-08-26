@@ -1,8 +1,8 @@
 # Add or Update Blockout Space
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=AddOrUpdateBlockoutSpace" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateSpaceBlockout" path="" %}
 {% api-method-summary %}
-Add or Update Blockout Space
+Add or Update Space Blockout
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -13,29 +13,29 @@ Add or Update Blockout Space
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique identifier of Blockout Space  
-\(Leave empty if adding a new Blockout Space\)
+The unique identifier of Space Blockout
+\(Leave empty if adding a new Space Blockout\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="venueId" type="integer" required=true %}
-The unique venue if of the Blockout Space
+The unique venue if of the Space Blockout
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="spaceId" type="integer" required=false %}
-The function space of Blockout Space
+The function space of Space Blockout
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
-The name for the Blockout Space
+The name for the Space Blockout
 \(Required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="startDateTime" type="string" required=true %}
-When adding an Blockout Space. The start date & time of the Blockout Space.
+When adding a Space Blockout. The start date & time of the Space Blockout.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="endDateTime" type="string" required=true %}
-When adding an Blockout Space. The end date & time of the Blockout Space. The value must be on or after startDateTime. \(Datatype = timestamp\)
+When adding a Space Blockout. The end date & time of the Space Blockout. The value must be on or after startDateTime. \(Datatype = timestamp\)
 {% endapi-method-parameter %}
 
 {% api-method-response %}
@@ -62,7 +62,7 @@ When adding an Blockout Space. The end date & time of the Blockout Space. The va
 ```javascript
 {
   "venueId": "107",
-  "name": "Blockout space API",
+  "name": "Space Blockout API",
   "spaceId": 1,
   "startDateTime": "2018-03-05 03:00:00 UTC",
   "endDateTime": "2018-03-05 06:00:00 UTC",
@@ -83,8 +83,8 @@ When adding an Blockout Space. The end date & time of the Blockout Space. The va
 
 | Property | Description |
 | :--- | :--- |
-| success | Whether or not the Blockout Space was added to the venue |
-| id | The unique id of the Blockout Space |
+| success | Whether or not the Space Blockout was added to the venue |
+| id | The unique id of the Space Blockout |
 
 ## Throws
 
