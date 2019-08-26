@@ -63,7 +63,6 @@ The id of the booking
   "bookedById": 123,
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
-  "otaFolioRef": "ven1234"
   "dailyRevenue": [
     {
       "costcenterId": 1276,

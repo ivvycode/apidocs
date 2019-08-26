@@ -77,8 +77,7 @@ The number of bookings to get in a single call
       "canBeMoved": false,
       "bookedById": 123,
       "isBeoFinalised": true,
-      "beoFinalisedDate": "2015-02-09 03:37:39 UTC",
-      "otaFolioRef": "ven1234"
+      "beoFinalisedDate": "2015-02-09 03:37:39 UTC"
     }
   ]
 }
