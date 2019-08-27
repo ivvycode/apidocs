@@ -83,6 +83,8 @@
   * [Add or Update Opportunity](venues/add-or-update-opportunity.md)
   * [Convert Lead To Opportunity](venues/convert-lead-to-opportunity.md)
   * [Get Cost Center List](venues/get-cost-center-list.md)
+  * [Add or Update Blockout Space] (venues/add-or-update-blockoutspace.md)
+  * [Remove Blockout Space] (venues/remove-blockoutspace.md)
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
   * [Get Venue](partner/get-venue.md)
