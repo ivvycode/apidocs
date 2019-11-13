@@ -64,6 +64,8 @@ The array of venue ids to which the opportunity belongs
             "quality": "B-Grade",
             "stageId": 47,
             "stageName": "Interested",
+            "stageReasonId": 245,
+            "stageReasonName": "Price under budget",
             "typeId": 3,
             "type": "Reseller",
             "sourceId": 13,

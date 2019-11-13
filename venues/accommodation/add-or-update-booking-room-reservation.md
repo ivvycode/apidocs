@@ -143,6 +143,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | lastName | string | required | The last name of the contact |
 | email | string | required | The email address of the contact |
 | phone | string | optional | The mobile phone number of the contact |
+| groups | array | optional | This is an array of group objects with the ‘groupId’ key. |
 
 ## Additional Guest Type
 
@@ -230,7 +231,8 @@ Consider the following [guest](add-or-update-booking-room-reservation.md#guest) 
   "contact": {
     "firstName": "John",
     "lastName": "Doe",
-    "email": "john.doe@somewhere.com"
+    "email": "john.doe@somewhere.com",
+    "groups": [{"groupId": 10}],
   },
   "primaryPhone": "0419111222"
 }
@@ -251,7 +253,8 @@ If the same guest details appear multiple times in the request, only the details
       "firstName": "John",
       "lastName": "Doe",
       "email": "John.Doe@somewhere.com",
-      "phone": "12345678"
+      "phone": "12345678",
+      "groups": [{"groupId": 10}],
     },
     "primaryPhone": "12345678"
   },
@@ -262,7 +265,8 @@ If the same guest details appear multiple times in the request, only the details
           "firstName": "John",
           "lastName": "Doe",
           "email": "John.Doe@somewhere.com",
-          "phone": "87654321"
+          "phone": "87654321",
+          "groups": [{"groupId": 10}],
         },
         "primaryPhone": "87654321"
       },
@@ -276,7 +280,8 @@ If the same guest details appear multiple times in the request, only the details
           "firstName": "Jane",
           "lastName": "Doe",
           "email": "Jane.Doe@somewhere.com",
-          "phone": "123123123"
+          "phone": "123123123",
+          "groups": [{"groupId": 10}],
         },
         "primaryPhone": "123123123"
       },
