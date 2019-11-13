@@ -1,4 +1,4 @@
-# Add or Update Space Blockout
+# Add or Update Blockout Space
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateSpaceBlockout" path="" %}
 {% api-method-summary %}
@@ -11,32 +11,6 @@ Add or Update Space Blockout
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=false %}
-The unique identifier of Space Blockout
-\(Leave empty if adding a new Space Blockout\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="venueId" type="integer" required=true %}
-The unique venue if of the Space Blockout
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="spaceId" type="integer" required=false %}
-The function space of Space Blockout
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="name" type="string" required=false %}
-The name for the Space Blockout
-\(Required when id is missing\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="startDateTime" type="string" required=true %}
-When adding a Space Blockout. The start date & time of the Space Blockout.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="endDateTime" type="string" required=true %}
-When adding a Space Blockout. The end date & time of the Space Blockout. The value must be on or after startDateTime. \(Datatype = timestamp\)
-{% endapi-method-parameter %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -99,5 +73,5 @@ This call takes values for a Space Blockout, and either
 
 1. Updates the values for that Space Blockout \(after you have provided an id in the parameters\), or
 2. Adds the Space Blockout to the system \(if the id parameter is missing\)
-    1. The result of this call will contain the status of the result \(either true or false\) and the Space Blockout identifier of the updated or newly created Space Blockout.
+   1. The result of this call will contain the status of the result \(either true or false\) and the Space Blockout identifier of the updated or newly created Space Blockout.
 

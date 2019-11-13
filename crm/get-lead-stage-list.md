@@ -11,7 +11,6 @@ Get a list of lead stages.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -41,3 +40,4 @@ Get a list of lead stages.
 {% endapi-method %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the lead stages the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+

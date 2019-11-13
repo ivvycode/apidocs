@@ -30,23 +30,27 @@ This is an example response for getContact
 
 ```javascript
 {
-    "id":"25146",
-    "firstName":"Test",
-    "lastName":"User",
-    "email":"user@test.com",
-    "phone":"0455550000",
-    "customFields":[
-        {"fieldId":"102","displayName":"Dietary Requirements","value":[""]},
-        {"fieldId":"103","displayName":"Shirt Size","value":["Medium"]}
+    "id": 7427530,
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "user@test.com",
+    "phone": "0455550000",
+    "status": 1,
+    "smsStatus": 1,
+    "customFields": [],
+    "groups": [
+        {
+            "contactId": 7427530,
+            "groupId": 57138,
+            "joinDate": "2018-09-07 02:11:47"
+        }
     ],
-    "groups":[
-        {"contactId":"25146","groupId":"2481","joinDate":"2012-04-16 21:07:04"},
-        {"contactId":"25146","groupId":"2485","joinDate":"2014-05-6 12:32:12"}
-    ],
-    "companies":[
-        4,5,6
-    ],
-    "externalId":"59fc43b6726be"
+    "companies": [4, 5, 6],
+    "companiesData": [],
+    "externalId": null,
+    "modifiedDate": "2018-09-07 02:11:47 UTC",
+    "eventInvitations": [],
+    "eventRegistrations": []
 }
 ```
 {% endapi-method-response-example %}
