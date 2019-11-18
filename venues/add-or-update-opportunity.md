@@ -151,7 +151,20 @@ The description for the opportunity
   "stageId": "69",
   "industryId": "77",
   "stageReasonId": "127",
-  "closedDate": "2017-05-05"
+  "closedDate": "2017-05-05",
+  "referralCompany": {
+		"businessName": "Business",
+		"primaryContact": {
+			"firstName": "Test",
+			"lastName": "Test",
+			"email": "Test@gmail.com"
+		}
+	},
+	"referralContact": {
+		"firstName": "Test",
+		"lastName": "Test",
+		"email": "Test@gmail.com"
+	}
 }
 ```
 
