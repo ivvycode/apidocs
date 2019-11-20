@@ -40,21 +40,19 @@ The unique source id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="referralContactId" type="integer" required=false %}
-The contact Id of referral for "Referral Program" source.
-\(Required when the source is Referral Program and referralContact parameter is missing \)
+The contact Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralContact parameter is missing \)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="referralContact" type="object" required=false %}
-The data array of contact. See [addOrUpdateContact](contact/add-or-update-contact.md#add-or-update-contact) API in contact namespace for parameters.
+The data array of contact. See addOrUpdateContact API in contact namespace for parameters.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="referralCompanyId" type="integer" required=false %}
-The company Id of referral for "Referral Program" source.
-\(Required when the source is Referral Program and referralCompany parameter is missing \)
+The company Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralCompany parameter is missing \)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="referralCompany" type="object" required=false %}
-The data array of company. See [addOrUpdateCompany](contact/add-or-update-company.md#add-or-update-company) API in contact namespace for parameters.
+The data array of company. See addOrUpdateCompany API in contact namespace for parameters.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="confirmedQuoteId" type="integer" required=false %}
@@ -153,18 +151,18 @@ The description for the opportunity
   "stageReasonId": "127",
   "closedDate": "2017-05-05",
   "referralCompany": {
-		"businessName": "Business",
-		"primaryContact": {
-			"firstName": "Test",
-			"lastName": "Test",
-			"email": "Test@gmail.com"
-		}
-	},
-	"referralContact": {
-		"firstName": "Test",
-		"lastName": "Test",
-		"email": "Test@gmail.com"
-	}
+        "businessName": "Business",
+        "primaryContact": {
+            "firstName": "Test",
+            "lastName": "Test",
+            "email": "Test@gmail.com"
+        }
+    },
+    "referralContact": {
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "Test@gmail.com"
+    }
 }
 ```
 

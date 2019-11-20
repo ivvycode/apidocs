@@ -50,6 +50,7 @@ The invoice identifier
     "toContactId": null,
     "payments": [
         {
+            "id": 63791,
             "paymentId": 0,
             "receiptNum": 729424,
             "amountPaid": 233.45,
@@ -214,7 +215,8 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 
 | Property | Description |
 | :--- | :--- |
-| paymentId | The identifier of the payment |
+| id | The unique identifier of the payment |
+| paymentId | The identifier of the credit card payment transaction \(if payment was by credit card\) |
 | receiptNum | The receipt number of the payment |
 | amountPaid | The amount paid of the payment |
 | notes | The notes of the payment |

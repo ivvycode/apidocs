@@ -202,7 +202,8 @@ A collection object with the following properties in the results
 
 | Property | Description |
 | :--- | :--- |
-| paymentId | The identifier of the payment |
+| id | The unique identifier of the payment |
+| paymentId | The identifier of the credit card payment transaction \(if payment was by credit card\) |
 | receiptNum | The receipt number of the payment |
 | amountPaid | The amount paid of the payment |
 | notes | The notes of the payment |
