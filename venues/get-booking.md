@@ -68,27 +68,32 @@ The id of the booking
     {
       "costcenterId": 1276,
       "revenueDate": "2015-09-04",
-      "totalAmount": 2500,
-      "totalTaxAmount": 227.273
+      "totalAmount": 900,
+      "totalDiscountAmount": 100,
+      "totalTaxAmount": 81.818
     },
     {
       "costcenterId": 1277,
       "revenueDate": "2015-09-04",
-      "totalAmount": 2500,
-      "totalTaxAmount": 227.273
+      "totalAmount": 900,
+      "totalDiscountAmount": 100,
+      "totalTaxAmount": 81.818
     },
     {
       "costcenterId": 1278,
       "revenueDate": "2015-09-04",
-      "totalAmount": 2500,
-      "totalTaxAmount": 227.273
+      "totalAmount": 900,
+      "totalDiscountAmount": 100,
+      "totalTaxAmount": 81.818
     },
     {
       "costcenterId": 1279,
       "revenueDate": "2015-09-04",
-      "totalAmount": 2500,
-      "totalTaxAmount": 227.273
-    }
+      "totalAmount": 900,
+      "totalDiscountAmount": 100,
+      "totalTaxAmount": 81.818
+    },
+    ...
   ],
   "packages": [
     {
@@ -99,6 +104,7 @@ The id of the booking
       "createdDate": "2018-11-07 03:56:35 UTC",
       "modifiedDate": "2018-11-07 03:56:35 UTC",
       "totalAmount": 1200,
+      "totalDiscount": 100,
       "totalTaxAmount": 109.091,
       "priceMethod": 1,
       "costcenters": [
@@ -107,6 +113,7 @@ The id of the booking
           "value": 10,
           "excludedTaxIds": [],
           "totalAmount": 300,
+          "totalDiscount": 100,
           "totalTaxAmount": 27.272727,
           "taxDetails": [
             {
@@ -120,6 +127,7 @@ The id of the booking
           "value": 10,
           "excludedTaxIds": [],
           "totalAmount": 300,
+          "totalDiscount": 100,
           "totalTaxAmount": 27.272727,
           "taxDetails": [
             {
@@ -133,6 +141,7 @@ The id of the booking
           "value": 10,
           "excludedTaxIds": [],
           "totalAmount": 300,
+          "totalDiscount": 100,
           "totalTaxAmount": 27.272727,
           "taxDetails": [
             {
@@ -146,6 +155,7 @@ The id of the booking
           "value": 10,
           "excludedTaxIds": [],
           "totalAmount": 300,
+          "totalDiscount": 100,
           "totalTaxAmount": 27.272727,
           "taxDetails": [
             {
@@ -177,7 +187,9 @@ The id of the booking
       "spaceLayout": null,
       "customLayoutName": "Custom",
       "cost": 50,
+      "discount": 5,
       "totalAmount": 50,
+      "totalDiscount": 10,
       "totalTaxAmount": 4.545,
       "excludedTaxIds": [],
       "costcenterId": 5,
@@ -202,6 +214,7 @@ The id of the booking
       "menuId": 3,
       "sessionId": 13185,
       "cost": 10,
+      "discount": 5,
       "excludedTaxIds": [],
       "startDate": "2018-12-30",
       "endDate": "2018-12-30",
@@ -213,6 +226,7 @@ The id of the booking
       "modifiedDate": "2018-11-15 06:48:38 UTC",
       "costcenterId": 2,
       "totalAmount": 300,
+      "totalDiscount": 10,
       "totalTaxAmount": 27.273,
       "taxDetails": [
         {
@@ -230,6 +244,7 @@ The id of the booking
       "beverageVenueId": 1,
       "beverageId": 2,
       "cost": 70,
+      "discount": 5,
       "excludedTaxIds": [],
       "startDate": "2018-12-30",
       "endDate": "2018-12-30",
@@ -241,6 +256,7 @@ The id of the booking
       "modifiedDate": "2018-11-15 06:48:58 UTC",
       "costcenterId": 3,
       "totalAmount": 2100,
+      "totalDiscount": 10,
       "totalTaxAmount": 190.909,
       "taxDetails": [
         {
@@ -256,6 +272,7 @@ The id of the booking
       "name": null,
       "sessionId": 13185,
       "cost": 5,
+      "discount": 5,
       "excludedTaxIds": [],
       "quantity": 1,
       "startDate": "2018-12-30",
@@ -268,6 +285,7 @@ The id of the booking
       "modifiedDate": "2018-11-15 06:49:31 UTC",
       "costcenterId": 4,
       "totalAmount": 5,
+      "totalDiscount": 10,
       "totalTaxAmount": 0.455,
       "taxDetails": [
         {
@@ -283,6 +301,7 @@ The id of the booking
       "name": null,
       "sessionId": 13185,
       "cost": 100,
+      "discount": 5,
       "excludedTaxIds": [],
       "quantity": 1,
       "includeInPackage": false,
@@ -291,6 +310,7 @@ The id of the booking
       "modifiedDate": "2018-11-15 06:49:57 UTC",
       "costcenterId": 4,
       "totalAmount": 100,
+      "totalDiscount": 10,
       "totalTaxAmount": 9.091,
       "taxDetails": [
         {
@@ -306,6 +326,7 @@ The id of the booking
       "description": "Some Additional Item",
       "quantity": 1,
       "totalCost": 100,
+      "totalCostDiscount": 10,
       "totalCostExcludedTaxIds": [
         3676
       ],
@@ -315,6 +336,7 @@ The id of the booking
       "modifiedDate": "2018-11-16 01:15:05 UTC",
       "costcenterId": 4,
       "totalAmount": 100,
+      "totalDiscount": 10,
       "totalTaxAmount": 9.091,
       "startDateTime": null,
       "endDateTime": null,
@@ -331,6 +353,7 @@ The id of the booking
       "description": "Another additional item",
       "quantity": 1,
       "totalCost": 110,
+      "totalCostDiscount": 11,
       "totalCostExcludedTaxIds": [],
       "actualCost": 0,
       "actualCostExcludedTaxIds": [],
@@ -338,6 +361,7 @@ The id of the booking
       "modifiedDate": "2018-11-15 07:19:59 UTC",
       "costcenterId": 4,
       "totalAmount": 110,
+      "totalDiscount": 10,
       "totalTaxAmount": 10,
       "startDateTime": "2018-12-30 09:00:00",
       "endDateTime": "2019-01-01 10:00:00",
@@ -763,6 +787,7 @@ One of the following values:
 | costcenterId | integer | The unique identifier of the cost center to which the revenue applies |
 | revenueDate | [Date](../development-reference/date-format.md) | The date on which the revenue applies |
 | totalAmount | double | The total revenue amount, including tax |
+| totalDiscountAmount | number | The amount of total discount |
 | totalTaxAmount | double | The total tax amount that is included in the total revenue amount |
 
 ## Company
@@ -793,6 +818,7 @@ One of the following values:
 | createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the booking package was added to this booking |
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the booking package was last modified |
 | totalAmount | double | The total amount of the booking package including tax amount |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the booking package |
 | priceMethod | enum \([Package Price Method](get-booking.md#package-price-method)\) | The price method of the booking package |
 | costcenters | Array of [Package Cost Centre](get-booking.md#package-cost-center) | The list of costcenter and its individual value of the booking package |
@@ -812,8 +838,10 @@ One of the following values:
 | :--- | :--- | :--- |
 | costcenterId | integer | The unique identifier of the cost center |
 | value | double | The amount of the cost center |
+| discount | double | The amount of the discount on value |
 | excludedTaxIds | array | The excluded tax identifiers |
 | totalAmount | double | The amount of the cost center |
+| totalDiscount | double | The amount of the total discount |
 | totalTaxAmount | double | The total tax amount of the cost center |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | The individual tax amount |
 
@@ -832,7 +860,9 @@ One of the following values:
 | spaceLayout | integer | The space layout identifier of the session |
 | customLayoutName | string | The space layout name when space layout is custom |
 | cost | double | The cost of the session |
+| discount | double | The amount of the discount on cost |
 | totalAmount | double | The total amount of session including tax amount |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the session |
 | excludedTaxIds | array | The excluded tax identifiers of the session |
 | costcenterId | integer | The cost center identifier to which the session's revenue applies |
@@ -853,6 +883,7 @@ One of the following values:
 | menuId | integer | The reference menu identifier in venue menus |
 | sessionId | integer | The session identifier to which this menu belongs |
 | cost | double | The cost of the menu |
+| discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | startDate | [Date](../development-reference/date-format.md) | The start date of the menu |
 | endDate | [Date](../development-reference/date-format.md) | The end date of the menu |
@@ -864,6 +895,7 @@ One of the following values:
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the menu was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the menu including tax |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the menu |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
@@ -877,6 +909,7 @@ One of the following values:
 | beverageVenueId | integer | The venue identifier to which the beverage package belongs. This can be different than booking's venue id |
 | beverageId | integer | The reference beverage package identifier in venue beverage packages |
 | cost | double | The cost of the beverage package |
+| discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | startDate | [Date](../development-reference/date-format.md) | The start date of the beverage package |
 | endDate | [Date](../development-reference/date-format.md) | The end date of the beverage package |
@@ -888,6 +921,7 @@ One of the following values:
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the beverage package including tax |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the beverage package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
@@ -899,6 +933,7 @@ One of the following values:
 | name | string | The name of the resource |
 | sessionId | integer | The session identifier to which this resource belongs |
 | cost | double | The cost of the resource |
+| discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | quantity | integer | The quantity of the resource |
 | startDate | [Date](../development-reference/date-format.md) | The start date of the resource |
@@ -911,6 +946,7 @@ One of the following values:
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the resource was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the resource including tax |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the resource |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
@@ -922,6 +958,7 @@ One of the following values:
 | name | string | The name of the product |
 | sessionId | integer | The session identifier to which this product belongs |
 | cost | double | The cost of the product |
+| discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | quantity | integer | The quantity of the product |
 | includeInPackage | boolean | Whether or not the product is included in booking package |
@@ -930,6 +967,7 @@ One of the following values:
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the product was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the product including tax |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the product |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
@@ -941,6 +979,7 @@ One of the following values:
 | description | string | The description of the item |
 | quantity | double | The quantity of the item |
 | totalCost | double | The sale price of the item |
+| totalCostDiscount | double | The amount of the discount on totalCost |
 | totalCostExcludedTaxIds | array | The sale price excluded tax identifiers |
 | actualCost | double | The cost of the item |
 | actualCostExcludedTaxIds | array | The cost excluded tax identifiers |
@@ -948,6 +987,7 @@ One of the following values:
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the item including tax amount |
+| totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the item |
 | startDateTime | [timestamp](../development-reference/timestamp-format.md) | The start date and time of the item |
 | endDateTime | [timestamp](../development-reference/timestamp-format.md) | The end date and time of item |

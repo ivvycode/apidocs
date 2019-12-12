@@ -53,6 +53,7 @@ The unique id of the booking to which the accommodation belongs
                 "bookingDate": "2018-08-27",
                 "numRooms": 11,
                 "cost": 180,
+                "discount": 10,
                 "numPayableByGuest": 11,
                 "numFreeRooms": 1
             },
@@ -60,6 +61,7 @@ The unique id of the booking to which the accommodation belongs
                 "bookingDate": "2018-08-28",
                 "numRooms": 12,
                 "cost": 190,
+                "discount": 10,
                 "numPayableByGuest": 12,
                 "numFreeRooms": 1
             },
@@ -67,6 +69,7 @@ The unique id of the booking to which the accommodation belongs
                 "bookingDate": "2018-08-29",
                 "numRooms": 13,
                 "cost": 175,
+                "discount": 10,
                 "numPayableByGuest": 13,
                 "numFreeRooms": 1
             },
@@ -74,6 +77,7 @@ The unique id of the booking to which the accommodation belongs
                 "bookingDate": "2018-08-30",
                 "numRooms": 14,
                 "cost": 210,
+                "discount": 10,
                 "numPayableByGuest": 14,
                 "numFreeRooms": 1
             }
@@ -86,8 +90,10 @@ The unique id of the booking to which the accommodation belongs
                 "numRooms": 11,
                 "numOptionsPerRoom": 1,
                 "price": 65,
+                "discount": 10,
                 "excludedTaxIds": [],
                 "totalAmount": 715,
+                "totalDiscount": 10,
                 "totalTaxAmount": 65.01,
                 "costcenterId": 1377,
                 "numPayableByGuest": 11
@@ -98,8 +104,10 @@ The unique id of the booking to which the accommodation belongs
                 "numRooms": 10,
                 "numOptionsPerRoom": 1,
                 "price": 80,
+                "discount": 10,
                 "excludedTaxIds": [],
                 "totalAmount": 800,
+                "totalDiscount": 10,
                 "totalTaxAmount": 72.7,
                 "costcenterId": 1377,
                 "numPayableByGuest": 10
@@ -145,6 +153,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | bookingDate | date | The date of the accommodation group to which the rate applies |
 | numRooms | integer | The number of rooms booked on bookingDate |
 | cost | number | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
+| discount | number | The amount of discount |
 | numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 | numFreeRooms | integer | The number of complimentary \(free\) rooms on bookingDate. This number is included in numRooms |
 
@@ -157,8 +166,10 @@ The result from this call will be a [collection](../../getting-started/interpret
 | numRooms | integer | The number of rooms on bookingDate to which the room option applies |
 | numOptionsPerRoom | integer | The number options added to each room \(numRooms\) on bookingDate |
 | price | number | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured |
+| discount | number | The amount of discount on price |
 | excludedTaxIds | array of integers | The unique ids of the taxes that are excluded from price |
 | totalAmount | number | The total value of the additional option on this date, including all applicable taxes |
+| totalDiscount | number | The amount of total discount of option on this date |
 | totalTaxAmount | number | The total tax amount included in totalAmount |
 | costcenterId | integer | The unique id of the cost center assigned to the additional option |
 | numPayableByGuest | integer | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
