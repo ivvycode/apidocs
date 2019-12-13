@@ -1,6 +1,6 @@
 # Get Venue
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenue" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/marketplace?action=getVenue" path="" %}
 {% api-method-summary %}
 Get Venue
 {% endapi-method-summary %}
@@ -32,7 +32,7 @@ The availability end date \(Date Format\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",

@@ -48,8 +48,12 @@ The company's website
 The company's email address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="address" type="string" required=false %}
-The company's address. This is an object with the keys
+{% api-method-parameter name="address" type="string" required=true %}
+The company's address. This is an object with the keysstateCode, postalCode and countryCode are required when adding a new Company.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="updateIfExists" type="boolean" required=false %}
+Whether or not to update the company by businessName when id parameter is missing.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -60,7 +64,7 @@ The company's address. This is an object with the keys
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 Adding a company
 {
   "success": true,

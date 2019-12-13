@@ -24,65 +24,76 @@ The invoice identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
-  "id": 15,
-  "reference": 100000157,
-  "title": "test",
-  "description": null,
-  "currency": "AUD",
-  "totalCost": 150,
-  "totalTaxCost": 13.64,
-  "amountPaid": 150,
-  "toContactEmail": "wd42nc6d@h2k5lftg.com",
-  "toContactName": "wd42nc6d h2k5lftg",
-  "currentStatus": 2,
-  "createdDate": "2010-06-07 12:21:40 UTC",
-  "modifiedDate": "2015-07-18 01:32:39 UTC",
-  "refType": 1,
-  "refId": 107,
-  "taxRateUsed": 10,
-  "isTaxCharged": 1,
-  "paymentDueDate": "",
-  "eventId": 56,
-  "venueId": null,
-  "toContactId": 25148,
-  "toAddress": {
-    "line1": "66949VGT",
-    "line2": "9J08OO8E",
-    "line3": "3JVPX2E",
-    "line4": "8G6MLU9M",
-    "city": "2G6NP196",
-    "stateCode": "QLD",
-    "stateName": null,
-    "countryCode": "AU",
-    "countryName": null,
-    "postalCode": "5SA19NAQ"
-  },
-  "items": [
-    {
-      "description": "Registration 107 of event National Technology Conference",
-      "quantity": 1,
-      "unitCost": 150,
-      "totalCost": 150,
-      "totalTaxCost": 13.64,
-      "amountPaid": 150,
-      "refType": 0
-    }
-  ],
-  "payments": [
-    {
-      "paymentId": null,
-      "receiptNum": "6WCQRIXZ",
-      "amountPaid": 150,
-      "feeAmount": 0,
-      "feePercentage": 0,
-      "notes": "8TPCEN81",
-      "chequeNumber": null,
-      "paymentMethod": 6,
-      "paidDate": "2011-07-04 23:00:00 UTC"
-    }
-  ]
+    "id": 957114,
+    "reference": 1007458,
+    "title": "Deposit Invoice",
+    "description": "Example Invoice Description",
+    "currency": "AUD",
+    "totalCost": 233.45,
+    "totalTaxCost": 21.22,
+    "amountPaid": 233.45,
+    "toContactEmail": "example@ivvy.com",
+    "toContactName": "Example Name",
+    "currentStatus": 2,
+    "createdDate": "2018-06-11 06:06:42 UTC",
+    "issuedDate": "2018-06-11 06:06:42 UTC",
+    "modifiedDate": "2018-06-11 06:06:43 UTC",
+    "refType": 4,
+    "refId": 92471,
+    "taxRateUsed": null,
+    "isTaxCharged": 1,
+    "paymentDueDate": "2018-06-11 06:06:42 UTC",
+    "eventId": null,
+    "venueId": 1683,
+    "toContactId": null,
+    "payments": [
+        {
+            "id": 63791,
+            "paymentId": 0,
+            "receiptNum": 729424,
+            "amountPaid": 233.45,
+            "feeAmount": 3.45,
+            "feePercentage": 1.5,
+            "notes": "",
+            "chequeNumber": null,
+            "paymentMethod": 1,
+            "paidDate": "2018-06-11 06:06:42 UTC"
+        }
+    ],
+    "toAddress": {
+        "line1": 1,
+        "line2": "",
+        "line3": "",
+        "line4": "",
+        "city": "asdf",
+        "stateCode": "QLD",
+        "stateName": null,
+        "countryCode": "AU",
+        "countryName": null,
+        "postalCode": 2222
+    },
+    "items": [
+        {
+            "description": "Deposit payment for Christmas Party",
+            "quantity": 1,
+            "unitCost": 230,
+            "totalCost": 230,
+            "totalTaxCost": 20.91,
+            "amountPaid": 230,
+            "refType": 500
+        },
+        {
+            "description": "1.5% iVvy Marketplace transaction fee included in AU$233.45 payment made Jun 11, 2018",
+            "quantity": 1,
+            "unitCost": 3.45,
+            "totalCost": 3.45,
+            "totalTaxCost": 0.31,
+            "amountPaid": 3.45,
+            "refType": 103
+        }
+    ]
 }
 ```
 {% endapi-method-response-example %}
@@ -180,11 +191,32 @@ A collection object with the following properties in the results
 | amountPaid | The amount paid of the item' |
 | refType | The reference type of the item |
 
+## Item Ref Type
+
+Used to categorise the line based on the type of item sold. Note: This isn't linked to cost centres as a package can be a single line on an invoice, but revenue can be allocated to multiple cost centres.
+
+| RefType | Description |
+| :--- | :--- |
+| 0 | Unknown |
+| 100 | Fee \( \[102\] =&gt; Card Fee, \[103\] =&gt; Payment Fee\) |
+| 500 | Deposit |
+| 501 | Package |
+| 502 | Invoice |
+| 503 | Payment |
+| 505 | Session |
+| 506 | Menu Package |
+| 507 | Beverage Package |
+| 508 | Resource |
+| 509 | Product |
+| 510 | Accommodation |
+| 511 | Additional Line |
+
 ## Payment Details
 
 | Property | Description |
 | :--- | :--- |
-| paymentId | The identifier of the payment |
+| id | The unique identifier of the payment |
+| paymentId | The identifier of the credit card payment transaction \(if payment was by credit card\) |
 | receiptNum | The receipt number of the payment |
 | amountPaid | The amount paid of the payment |
 | notes | The notes of the payment |

@@ -17,7 +17,7 @@ The number of attendees to get in a single api all
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start" type="integer" required=true %}
-The starting result of the page. Note this is zero based \(i.e. sending start = 0 will start from first result. 
+The starting result of the page. Note this is zero based \(i.e. sending start = 0 will start from first result.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="eventId" type="integer" required=true %}
@@ -32,7 +32,7 @@ The event identifier
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -67,6 +67,8 @@ A collection object with the following properties in the results
 | sessionAttendedTimestamp | The session attended date time of event attendee |
 | cost | The cost of ticket of event attendee |
 | customFields | The array of custom fields data of event attendee with below details |
+| createdDate | The date & time the attendee was created |
+| modifiedDate | The date & time the attendee was last modified. Note: Updating the contact details of an Attendee changes the modifiedDate of the Contact. It does not change the modifiedDate of the Attendee. |
 
 ## Custom field details
 

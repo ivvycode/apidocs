@@ -13,7 +13,7 @@ Add or Update Opportunity
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique identifier of opportunity   
+The unique identifier of opportunity  
 \(Leave empty if adding a new opportunity\)
 {% endapi-method-parameter %}
 
@@ -31,13 +31,28 @@ The unique company id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="industryId" type="integer" required=false %}
-The unique industry id of opportunity  
-\(Required when lead belongs to contact and id is missing\)
+The unique industry id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourceId" type="integer" required=false %}
 The unique source id of opportunity  
 \(Required when the ID parameter is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="referralContactId" type="integer" required=false %}
+The contact Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralContact parameter is missing \)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="referralContact" type="object" required=false %}
+The data array of contact. See addOrUpdateContact API in contact namespace for parameters.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="referralCompanyId" type="integer" required=false %}
+The company Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralCompany parameter is missing \)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="referralCompany" type="object" required=false %}
+The data array of company. See addOrUpdateCompany API in contact namespace for parameters.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="confirmedQuoteId" type="integer" required=false %}
@@ -66,7 +81,7 @@ The unique contact ID of the company contact
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contactId" type="integer" required=false %}
-The unique contact id of opportunity   
+The unique contact id of opportunity  
 \(Required when opportunity belongs to contact and id is missing\)
 {% endapi-method-parameter %}
 
@@ -90,7 +105,7 @@ The stage of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="stageReasonId" type="integer" required=false %}
-The unique stage reason id of opportunity 
+The unique stage reason id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="channelId" type="string" required=false %}
@@ -109,7 +124,7 @@ The description for the opportunity
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "success": true,
   "id": 755
@@ -134,7 +149,20 @@ The description for the opportunity
   "stageId": "69",
   "industryId": "77",
   "stageReasonId": "127",
-  "closedDate": "2017-05-05"
+  "closedDate": "2017-05-05",
+  "referralCompany": {
+        "businessName": "Business",
+        "primaryContact": {
+            "firstName": "Test",
+            "lastName": "Test",
+            "email": "Test@gmail.com"
+        }
+    },
+    "referralContact": {
+        "firstName": "Test",
+        "lastName": "Test",
+        "email": "Test@gmail.com"
+    }
 }
 ```
 

@@ -28,7 +28,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -43,6 +43,8 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 | fromModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | toModifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | externalId | Filter by external unique id | Unique external Id in string |
+| venueId | Filter by specific Venue | integer |
+| venueGroupId | Filter by SPecific Venue Group | integer |
 
 ## Returns
 

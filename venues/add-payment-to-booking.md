@@ -6,7 +6,7 @@ Add Payment To Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Add a payment to a booking. This will also generate an invoice to apply the payment to. 
+Add a payment to a booking. This will also generate an invoice to apply the payment to.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -32,7 +32,7 @@ The payment details to add to the booking
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "Success": true,
   "invoiceId": 1736,

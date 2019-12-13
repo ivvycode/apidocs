@@ -6,14 +6,14 @@ Add or Update Cost Center
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Add or update cost center details to the account. 
+Add or update cost center details to the account.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=true %}
-The unique identifier of the cost centre   
+The unique identifier of the cost centre  
 \(Leave empty to add the cost centre to the account\)
 {% endapi-method-parameter %}
 
@@ -37,7 +37,7 @@ The complete description of the coast centre
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "Success": true,
   "Id": 5452

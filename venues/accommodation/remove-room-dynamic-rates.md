@@ -40,7 +40,7 @@ The end date until which the dynamic rate will be removed \(Date Format\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "success": true
 }

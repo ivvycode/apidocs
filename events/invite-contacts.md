@@ -6,7 +6,7 @@ Invite Contacts
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Invite contact\(s\) to event. 
+Invite contact\(s\) to event.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -17,7 +17,7 @@ The event identifier to invite the contact to
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contacts" type="integer" required=true %}
-An array of contact identifiers to invite to the event 
+An array of contact identifiers to invite to the event
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -28,7 +28,7 @@ An array of contact identifiers to invite to the event
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "results":[
         {

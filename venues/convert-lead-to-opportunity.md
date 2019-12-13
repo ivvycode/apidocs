@@ -32,7 +32,7 @@ The stage of opportunity
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

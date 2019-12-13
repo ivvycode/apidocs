@@ -21,7 +21,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start = 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="eventId" type="integer" required=true %}
-The event identifier. 
+The event identifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -32,7 +32,7 @@ The event identifier.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -53,7 +53,8 @@ A collection object with the following properties in the results
 | Property | Description |
 | :--- | :--- |
 | id | The unique registration identifier |
-| currentStatus | The current status of the event |
+| eventName | The name of event that event registration belongs |
+| currentStatus | The current status of the event registration |
 | isExhibitor | Whether or not event registration is exhibitor |
 | completedDate | The registered date time of event registration |
 | mainContactId | The main contact id of event registration |
@@ -62,6 +63,7 @@ A collection object with the following properties in the results
 | phone | The phone number of event registration |
 | invoiceTotalCost | The total cost of event registration |
 | invoiceTotalPaid | The total amount paid of event registration |
+| createdDate | The date & time the registration was created |
 | modifiedDate | The date & time the registration was last modified |
 
 The result from this call will be a collection of all the events the user has access to. This call also accepts the pagination and filter properties.
@@ -73,4 +75,12 @@ The result from this call will be a [collection](./#collections) of all the even
 | Code | Description |
 | :--- | :--- |
 | Specific Code: 24206 | Unable to find event |
+
+## Registration Current Status Details
+
+| Property | Description |
+| :--- | :--- |
+| 1 | In Progress |
+| 2 | Completed |
+| 4 | Payment Waiting  |
 

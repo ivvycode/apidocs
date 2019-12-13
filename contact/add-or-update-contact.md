@@ -11,39 +11,51 @@ Add or update contact details
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="externalId" type="string" required=false %}
+Reference to the ID of the contact in an external system.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id" type="integer" required=false %}
 The contact's identifier. \(Leave empty to add new contact\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="firstName" type="string" required=false %}
+{% api-method-parameter name="firstName" type="string" required=true %}
 The contact's first name \(required when id is missing\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="LastName" type="string" required=false %}
+{% api-method-parameter name="LastName" type="string" required=true %}
 The contact's last name \(required when id is missing\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="email" type="string" required=false %}
-The contact's email address. Must be a valid email. \(required when id is missing\) 
+{% api-method-parameter name="email" type="string" required=true %}
+The contact's email address. Must be a valid email. \(required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="phone" type="string" required=false %}
-The contacts phone number. 
+The contacts phone number.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="groups" type="string" required=false %}
-The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact. 
+The array of subscription groups to set for the contact. Note: This list will override any groups currently set for the contact.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="customFields" type="string" required=false %}
-The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set. 
+The array of custom fields to set on the contact. Each field will be validated depending on the type of field that is set.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companies" type="string" required=false %}
-The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.  
+The array of companies to set on the contact. Each value will be validated depending on the type of field as well as it will verify that the given company exists or not.
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+
+{% api-method-parameter name="status" type="enum" required=false %}
+The contact's email subscription status.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="smsStatus" type="enum" required=false %}
+The contact's sms subscription status.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -52,7 +64,7 @@ The array of companies to set on the contact. Each value will be validated depen
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "id":33884
 }
@@ -66,8 +78,9 @@ The array of companies to set on the contact. Each value will be validated depen
 
 ```javascript
 {
-  "id": 33884,
   "firstName": "Bobby",
+  "lastName": "Smith",
+  "email": "bobbysmith@hotmail.com",
   "groups": [
     {
       "groupId": 10
@@ -82,7 +95,10 @@ The array of companies to set on the contact. Each value will be validated depen
   "companies": [
     4,
     5
-  ]
+  ],
+  "status": 2,
+  "smsStatus": 2,
+  "externalId" : "12345"
 }
 ```
 
@@ -96,7 +112,9 @@ The array of companies to set on the contact. Each value will be validated depen
   "firstName":"Bobby",
   "groups":[{"groupId":10}],
   "customFields":[{"fieldId":33443,"value":"No"}],
-  "companies":[4,5]
+  "companies":[4,5],
+  "status": 2,
+  "smsStatus": 2,
 }
 ```
 
@@ -119,6 +137,10 @@ The properties of the contact currently supported are:
   * This is an array of custom field objects with ‘fieldId’ and ‘value’ keys
 * Companies
   * This is an array of companies Ids
+* status
+  * The current status of the email susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#email-status)
+* smsStatus
+  * The current status of the sms susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
 
 ## Returns
 
@@ -127,4 +149,27 @@ The properties of the contact currently supported are:
 | success | If the contact was successfully added or updated |
 | id | The unique identifier for the contact |
 | message | Message of the failure \(if success was false\) |
+
+### Email Status
+
+The status is the record of whether the contact has opted in to email communication.
+
+| **\#** | **Description** |
+| :--- | :--- |
+| 1 | Subscribed |
+| 2 | Unsubscribed |
+| 3 | Bounced |
+| 4 | Registering |
+| 5 | No Marketing |
+
+### Sms status
+
+The sms status is the record of whether the contact has opted in to sms communication.
+
+| **\#** | **Description** |
+| :--- | :--- |
+| 1 | Subscribed |
+| 2 | Unsubscribed |
+| 3 | Failed |
+| 4 | No Marketing |
 

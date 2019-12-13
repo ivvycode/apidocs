@@ -6,7 +6,7 @@ Add Refund to Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Add a refund to a booking using this api. 
+Add a refund to a booking using this api.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -32,7 +32,7 @@ The payment details to add to the booking
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "Success": true,
   "refundDetails": [

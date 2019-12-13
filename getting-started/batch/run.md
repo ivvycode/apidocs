@@ -28,7 +28,7 @@ The URL to hit with a POST request after the batch has been run, with a JSON obj
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "asyncId":"e35e06ee592d17a42dc9e6252a058617"
 }

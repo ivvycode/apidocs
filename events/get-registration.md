@@ -28,7 +28,7 @@ The event identifier to which registration belongs
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -48,6 +48,10 @@ The event identifier to which registration belongs
 | lastName | The last name of the event registration |
 | phone | The phone number of event registration |
 | modifiedDate | The date & time the registration was last modified |
+| mainContactId | The id of the main contact for the event registration |
+| invoiceTotalCost | Total Cost of the invoices for the event registration |
+| invoiceTotalPaid | Total payments of the invoices for the event registration |
+| createdDate | The date that the event registration was initially created. |
 
 ## Throws
 
