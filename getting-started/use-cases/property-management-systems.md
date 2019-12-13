@@ -1,6 +1,6 @@
 # Property Management Systems
 
-
+PMS Integrations are designed to allow the user to keep accommodation up to date between iVvy and their PMS System. They provide live availability and rates from the PMS to iVvy so that accommodation can be booked real time with the correct pricing. 
 
 ## Group Accommodation Blocks
 
