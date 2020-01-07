@@ -62,9 +62,19 @@ Invalid request data that prevents the accommodation group from being added/upda
 | endDate | date | required | The departure date of the accommodation group |
 | overrideCapacity | boolean | optional | Whether or not the accommodation group can exceed the general room availability |
 | cutOffDate | date | optional | The date after which changes to the accommodation group are not allowed |
+| dayRatesActual | array of [Day Rates Actual](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-actual) | optional | The daily actual rates of the accommodation group |
 | dayRates | array of [Day Rates](add-or-update-booking-accommodation.md#booking-accommodation-day-rates) | required on add, optional on update | The daily rates of the accommodation group |
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from the daily rates |
 | roomOptions | array of [Room Options](add-or-update-booking-accommodation.md#booking-accommodation-room-option) | optional | The additional room options of the accommodation group |
+
+## Booking Accommodation Day Rates Actual
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| bookingDate | date | true | The actual date of the accommodation group to which the rate applies |
+| numRooms | integer | true | The actual number of rooms booked on bookingDate |
+| cost | number | true | The actual rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
+| numPayableByGuest | integer | true | The actual number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
 ## Booking Accommodation Day Rates
 
