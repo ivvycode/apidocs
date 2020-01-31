@@ -25,7 +25,40 @@ The event identifier
 {% endapi-method-response-example-description %}
 
 ```text
-
+{
+    "id": 144428,
+    "code": "EVENTCODE",
+    "eventType": 0,
+    "title": "test",
+    "timezone": "Australia/Brisbane",
+    "capacity": 123,
+    "domainName": null,
+    "startDateTime": "2019-09-28 06:00:00 UTC",
+    "endDateTime": "2019-10-31 07:00:00 UTC",
+    "numRegistered": 26,
+    "currentStatus": 3,
+    "contactName": "",
+    "contactEmail": "",
+    "websiteUrl": "https://www.ivvy.com.au/event/EVENTCODE/",
+    "websiteTemplateBannerImageUrl": "",
+    "eventTags": [],
+    "appTitle": null,
+    "twitter": null,
+    "appBanner": 0,
+    "map": null,
+    "includeSpeakers": false,
+    "displaySpeakers": false,
+    "includeSponsors": false,
+    "displaySponsors": false,
+    "includeBooths": true,
+    "displayExhibitors": false,
+    "includeAbstracts": false,
+    "displayAbstracts": false,
+    "useMultipleSessions": true,
+    "includeHotels": false,
+    "includeTravel": false,
+    "includeMembership": false
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
