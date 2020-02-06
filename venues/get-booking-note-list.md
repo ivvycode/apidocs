@@ -1,4 +1,4 @@
-# Get Booking Note
+# Get Booking Note List
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingNoteList" path="" %}
 {% api-method-summary %}
