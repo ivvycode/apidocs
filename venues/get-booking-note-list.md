@@ -89,6 +89,8 @@ The result from this call will be a [collection](../getting-started/interpreting
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | id | integer | The unique id of the booking note |
+| venueId | integer | The unique id of the venue to which the note belongs |
+| bookingId | integer | The unique id of the booking to which the note belongs |
 | isPrivate | boolean | Whether or not the booking note is private |
 | description | text | The description of the booking note |
 | typeId | integer | The type of the booking note |
