@@ -43,6 +43,8 @@ The number of booking notes to get in a single call
     "results": [
         {
             "id": 409,
+            "venueId": 1,
+            "bookingId": 7192,
             "isPrivate": false,
             "description": "<p>Some note for Booking Accommodation</p> ",
             "typeId": 8,
@@ -52,6 +54,8 @@ The number of booking notes to get in a single call
         },
         {
             "id": 434,
+            "venueId": 1,
+            "bookingId": 7192,
             "isPrivate": false,
             "description": "<p>A note for booking session</p> ",
             "typeId": 2,
@@ -96,6 +100,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 
 One of the following values:
 
+* No Type = 0
 * Type Booking = 1
 * Type Session = 2
 * Type Billing = 3
