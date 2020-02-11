@@ -63,7 +63,12 @@ The id of the booking
   "bookedById": 123,
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
-  "otaFolioRef": "ven1234"
+  "otaFolioRef": "ven1234",
+  "accommCutOffDate": "2019-12-04 00:00:00 UTC",
+  "accommCancellationDate": "2019-01-11 00:00:00 UTC",
+  "accommChargingMethod": 2,
+  "accommGuaranteeRequired": false,
+  "accommExternalBlockId": "test 123",
   "dailyRevenue": [
     {
       "costcenterId": 1276,
@@ -746,6 +751,11 @@ The result from this call will be the details of a specific booking to which the
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | otaFolioRef | string | The recorded Folio ID of a booking. |
+| accommCutOffDate | [timestamp](../development-reference/timestamp-format.md) | After this date no more reservations may be made against the Block for the entire date range. |
+| accommCancellationDate | [timestamp](../development-reference/timestamp-format.md) | The last date a customer can cancel their Group Accommodation without financial penalty. |
+| accommChargingMethod | enum \([Charging Method](get-booking.md#get-booking.md#charging-method)\) | A record of the Charging Method for Documents, Note that values will still need to be altered in the Block. |
+| accommGuaranteeRequired | boolean | Indicates whether the customer is required to guarantee their reservation with a credit card. |
+| accommExternalBlockId | string | The Block ID from an external PMS. |
 | dailyRevenue | Array of [DailyRevenue](get-booking.md#daily-revenue) | The daily revenue data of booking |
 | packages | Array of [Package](get-booking.md#package) | The list of packages of the booking |
 | sessions | Array of [Session](get-booking.md#session) | The list of sessions of booking |
