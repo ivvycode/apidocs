@@ -104,6 +104,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | numChildGuests | integer | required on add, optional on update | The number of children on the reserved room. The value cannot exceed 10 |
 | dayRates | array of [Day Rates](add-or-update-booking-room-reservation.md#reserved-room-day-rates) | required on add, optional on update | The daily rates of the reserved room |
 | additionalGuests | array of [Additional  Guests](add-or-update-booking-room-reservation.md#reserved-room-additional-guests) | optional | The additional guests of the reserved room |
+| overrideBlockCapacity | boolean | optional | Whether or not the reservations can exceed the block capacity |
 
 ## Reserved Room Day Rates
 
