@@ -195,7 +195,8 @@ The number of booking room reservations to fetch
                         "departureDate": "2018-09-03",
                         "guestType": 2
                     }
-                ]
+                ],
+                "overrideBlockCapacity": true
             }
         ]
     }]
@@ -260,6 +261,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | cancelledDate | datetime | The date & time the reserved room was cancelled |
 | dayRates | array of [Day Rates](get-booking-room-reservation-list.md#reserved-room-day-rates) | The daily rates of the reserved room |
 | additionalGuests | array of [Additional Guests](get-booking-room-reservation-list.md#reserved-room-additional-guests) | The additional guests of the reserved room |
+| overrideBlockCapacity | boolean|  Whether or not the number of reservations can exceed the block |
 
 ## Reserved Room Day Rates
 
