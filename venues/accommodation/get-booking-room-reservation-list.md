@@ -92,6 +92,7 @@ The number of booking room reservations to fetch
                 "barId": 57,
                 "roomId": 14,
                 "groupId": 7589,
+                "currentStatus": 3,
                 "numRooms": 1,
                 "arrivalDate": "2018-09-01",
                 "departureDate": "2018-09-04",
@@ -154,6 +155,7 @@ The number of booking room reservations to fetch
                 "barId": 57,
                 "roomId": 14,
                 "groupId": 7589,
+                "currentStatus": 3,
                 "numRooms": 1,
                 "arrivalDate": "2018-09-02",
                 "departureDate": "2018-09-03",
@@ -164,7 +166,7 @@ The number of booking room reservations to fetch
                 "createdDate": "2018-08-17 14:52:21 UTC",
                 "modifiedDate": "2018-08-17 14:52:21 UTC",
                 "isCancelled": false,
-                "cancelledDate": null,                
+                "cancelledDate": null,
                 "dayRates": [
                     {
                         "date": "2018-09-02",
@@ -248,6 +250,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | barId | integer | The unique id of the rate plan assigned to the reserved room. If the reserved room applies to an accommodation group \(see property _isFromGroup_ above\) then this will always be the rate plan assigned to the accommodation group |
 | roomId | integer | The unique id of the room type that is reserved. If the reserved room applies to an accommodation group \(see property _isFromGroup_ above\) then this will always be the room type assigned to the accommodation group |
 | groupId | integer | The unique id of the [accommodation group](get-booking-accommodation-list.md) from which the room is reserved \(see property _isFromGroup_ above\) |
+| currentStatus | integer | The current [status](get-booking-room-reservation-list.md#reserved-room-status) of the reserved room |
 | numRooms | integer | The number of rooms reserved. This value is always 1 |
 | arrivalDate | date | The arrival date of the reserved room |
 | departureDate | date | The departure date of the reserved room |
@@ -262,6 +265,16 @@ The result from this call will be a [collection](../../getting-started/interpret
 | dayRates | array of [Day Rates](get-booking-room-reservation-list.md#reserved-room-day-rates) | The daily rates of the reserved room |
 | additionalGuests | array of [Additional Guests](get-booking-room-reservation-list.md#reserved-room-additional-guests) | The additional guests of the reserved room |
 | overrideBlockCapacity | boolean|  Whether or not the number of reservations can exceed the block |
+
+## Reserved Room Status
+
+| Status | Description |
+| :--- | :--- |
+| 1 | Not confirmed |
+| 2 | Confirmed |
+| 3 | Cancelled |
+| 4 | Checked In |
+| 5 | Checked Out |
 
 ## Reserved Room Day Rates
 
