@@ -44,6 +44,22 @@ The company's identifier
     "countryCode": "AU",
     "postalCode": "4227"
   }
+  "primaryAccountManager": "Test User",
+  "secondaryAccountManager": "Test User",
+  "industry": "Industry Name",
+  "primaryContact": "Test User",
+  "agentcommission": {
+      "commissionRoomHireValue": 123,
+      "commissionRoomHireType": "CHF",
+      "commissionFoodValue": 222,
+      "commissionFoodType": "CHF",
+      "commissionBeverageValue": 333,
+      "commissionBeverageType": "CHF",
+      "commissionAudioVisualValue": 444,
+      "commissionAudioVisualType": "CHF",
+      "commissionAccommodationValue": 555,
+      "commissionAccommodationType": "CHF"
+  }
 }
 ```
 {% endapi-method-response-example %}
@@ -76,6 +92,11 @@ The company's identifier
 | email | The company's email address |
 | address | The company’s address. This is an an object with the [keys](get-company.md#keys) |
 | modifiedDate | The modified date of the company |
+| primaryAccountManager | The primary account manager of the company |
+| secondaryAccountManager | The secondary account manager of the company |
+| industry | The industry of the company |
+| primaryContact | The primary contact of the company |
+| agentcommission | The commission amount of the company. This is an an object with the [keys](get-company.md#commission) |
 
 ## Keys
 
@@ -89,6 +110,21 @@ The company's identifier
 | stateCode \(e.g: QLD\) |
 | countryCode \(e.g: AU\) |
 | postalCode |
+
+## commission
+
+| **commission types** |
+| :--- |
+| commissionRoomHireValue |
+| commissionRoomHireType |
+| commissionFoodValue |
+| commissionFoodType |
+| commissionBeverageValue |
+| commissionBeverageType |
+| commissionAudioVisualValue |
+| commissionAudioVisualType |
+| commissionAccommodationValue |
+| commissionAccommodationType |
 
 ## Throws
 

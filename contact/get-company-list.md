@@ -60,6 +60,11 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | email | The company's email address |
 | address | The company’s address. This is an an object with the address [keys](get-company-list.md#keys). |
 | modifiedDate | The modified date of the company |
+| primaryAccountManager | The primary account manager of the company |
+| secondaryAccountManager | The secondary account manager of the company |
+| industry | The industry of the company |
+| primaryContact | The primary contact of the company |
+| agentcommission | The commission amount of the company. This is an an object with the [keys](get-company.md#commission) |
 
 ## Keys
 
@@ -73,6 +78,21 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | stateCode \(e.g: QLD\) |
 | countryCode \(e.g: AU\) |
 | postalCode |
+
+## commission
+
+| **commission types** |
+| :--- |
+| commissionRoomHireValue |
+| commissionRoomHireType |
+| commissionFoodValue |
+| commissionFoodType |
+| commissionBeverageValue |
+| commissionBeverageType |
+| commissionAudioVisualValue |
+| commissionAudioVisualType |
+| commissionAccommodationValue |
+| commissionAccommodationType |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 

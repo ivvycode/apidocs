@@ -52,6 +52,62 @@ The company's email address
 The company's address. This is an object with the keysstateCode, postalCode and countryCode are required when adding a new Company.
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="primaryAccountManagerId" type="integer" required=false %}
+The id of primary account manager of the company
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="secondaryAccountManagerId" type="integer" required=false %}
+The id of secondary account manager of the company
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="industryId" type="integer" required=false %}
+The industry id of company
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="isAgent" type="integer" required=false %}
+Whether the company has an agent or not.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionSpace" type="integer" required=false %}
+The commission amount of the company for Space.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionSpaceType" type="integer" required=false %}
+The commission amount type of the company for Space.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionFood" type="integer" required=false %}
+The commission amount of the company for food.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionFoodType" type="integer" required=false %}
+The commission amount type of the company for food.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionBeverage" type="integer" required=false %}
+The commission amount of the company for beverage.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionBeverageType" type="integer" required=false %}
+The commission amount type of the company for beverage.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionAudioVisual" type="integer" required=false %}
+The commission amount of the company for audio visual.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionAudioVisualType" type="integer" required=false %}
+The commission amount type of the company for audio visual.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionAccommodation" type="integer" required=false %}
+The commission amount of the company for accommodation.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="commissionAccommodationType" type="integer" required=false %}
+The commission amount type of the company for accommodation.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="updateIfExists" type="boolean" required=false %}
 Whether or not to update the company by businessName when id parameter is missing.
 {% endapi-method-parameter %}
@@ -94,7 +150,21 @@ Updating a company
     "stateCode": "QLD",
     "postalCode": "4227",
     "countryCode": "AU"
-  }
+  },
+  "primaryAccountManagerId": 123,
+  "secondaryAccountManagerId": 123,
+  "industryId": 11,
+  "isAgent": 1,
+  "commissionSpace": 20,
+  "commissionSpaceType" : 2,
+  "commissionFoodType": "2",
+  "commissionFood":"10",
+  "commissionBeverage": 30,
+  "commissionBeverageType" : 1,
+  "commissionAudioVisual": 50,
+  "commissionAudioVisualType" : 2,
+  "commissionAccommodation": 50,
+  "commissionAccommodationType": 1
 }
 ```
 
@@ -111,6 +181,20 @@ Updating a company
     "postalCode": "4227",
     "countryCode": "AU"
   }
+  "primaryAccountManagerId": 123,
+  "secondaryAccountManagerId": 123,
+  "industryId": 11,
+  "isAgent": 1,
+  "commissionSpace": 20,
+  "commissionSpaceType" : 2,
+  "commissionFoodType": "2",
+  "commissionFood":"10",
+  "commissionBeverage": 30,
+  "commissionBeverageType" : 1,
+  "commissionAudioVisual": 50,
+  "commissionAudioVisualType" : 2,
+  "commissionAccommodation": 50,
+  "commissionAccommodationType": 1
 }
 ```
 
@@ -154,4 +238,18 @@ The properties of the company currently supported are:
 * email
 * address
   * This is an object
+* primaryAccountManagerId
+* secondaryAccountManagerId
+* industryId
+* isAgent
+* commissionSpace
+* commissionSpaceType
+* commissionFoodType,
+* commissionFood
+* commissionBeverage
+* commissionBeverageType
+* commissionAudioVisual
+* commissionAudioVisualType
+* commissionAccommodation
+* commissionAccommodationType
 
