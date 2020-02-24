@@ -60,11 +60,20 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | email | The company's email address |
 | address | The company’s address. This is an an object with the address [keys](get-company-list.md#keys). |
 | modifiedDate | The modified date of the company |
-| primaryAccountManager | The primary account manager of the company |
-| secondaryAccountManager | The secondary account manager of the company |
-| industry | The industry of the company |
-| primaryContact | The primary contact of the company |
-| agentcommission | The commission amount of the company. This is an an object with the [keys](get-company.md#commission) |
+| primaryAccountManager | The primary account manager of the company. This is an an object with the [keys](get-company-list.md#primaryaccountmanager)  |
+| secondaryAccountManager | The secondary account manager of the company. This is an an object with the [keys](get-company-list.md#secondaryaccountmanager)  |
+| industry | The industry of the company. This is an an object with the [keys](get-company-list.md#industry)  |
+| primaryContact | The primary contact of the company. This is an an object with the [keys](get-company-list.md#primarycontact) |
+| commissionSpace | The commission amount of the company space.|
+| commissionSpaceType | The commission amount type of the company space.|
+| commissionFoodValue | The commission amount of the company food.|
+| commissionFoodType | The commission amount type of the company food.|
+| commissionBeverageValue | The commission amount of the company beverage.|
+| commissionBeverageType | The commission amount type of the company beverage.|
+| commissionAudioVisualValue | The commission amount of the company audio visual.|
+| commissionAudioVisualType | The commission amount type of the company audio visual.|
+| commissionAccommodationValue | The commission amount of the company accommodation.|
+| commissionAccommodationType | The commission amount type of the accommodation.|
 
 ## Keys
 
@@ -79,20 +88,40 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | countryCode \(e.g: AU\) |
 | postalCode |
 
-## commission
+## primarycontact
 
-| **commission types** |
-| :--- |
-| commissionRoomHireValue |
-| commissionRoomHireType |
-| commissionFoodValue |
-| commissionFoodType |
-| commissionBeverageValue |
-| commissionBeverageType |
-| commissionAudioVisualValue |
-| commissionAudioVisualType |
-| commissionAccommodationValue |
-| commissionAccommodationType |
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the contact |
+| firstName | string | The first name of the contact |
+| lastName | string | The last name of the contact |
+| email | string | The email address of the contact |
+| phone | string | The phone number of the contact |
+
+## primaryaccountmanager
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the primary account manager |
+| firstName | string | The first name of the primary account manager |
+| lastName | string | The last name of the primary account manager |
+| email | string | The email address of the primary account manager |
+
+## secondaryaccountmanager
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the secondary account manager |
+| firstName | string | The first name of the secondary account manager |
+| lastName | string | The last name of the secondary account manager |
+| email | string | The email address of the secondary account manager |
+
+## industry
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique identifier of the industry |
+| name | string | The name of the industry |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
