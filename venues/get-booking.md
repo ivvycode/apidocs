@@ -796,6 +796,7 @@ One of the following values:
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
+| venueId | integer | The unique identifier of the venue to which the cost center belongs |
 | costcenterId | integer | The unique identifier of the cost center to which the revenue applies |
 | revenueDate | [Date](../development-reference/date-format.md) | The date on which the revenue applies |
 | totalAmount | double | The total revenue amount, including tax |
