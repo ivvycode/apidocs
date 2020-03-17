@@ -43,7 +43,14 @@ The company's identifier
     "stateCode": "QLD",
     "countryCode": "AU",
     "postalCode": "4227"
-  }
+  },
+  "customFields": [
+        {
+            "fieldId": 5,
+            "displayName": "Birth Date",
+            "value": "1985-03-17 23:00:00 UTC"
+        }
+    ]
 }
 ```
 {% endapi-method-response-example %}
@@ -76,6 +83,7 @@ The company's identifier
 | email | The company's email address |
 | address | The company’s address. This is an an object with the [keys](get-company.md#keys) |
 | modifiedDate | The modified date of the company |
+| customFields | The custom field information for the company. This is an array of fields, each an object with the [keys](get-company.md#custom-fields-keys). | array |
 
 ## Keys
 
@@ -89,6 +97,12 @@ The company's identifier
 | stateCode \(e.g: QLD\) |
 | countryCode \(e.g: AU\) |
 | postalCode |
+
+### Custom Fields Keys
+
+| fieldId |
+| displayName |
+| value |
 
 ## Throws
 

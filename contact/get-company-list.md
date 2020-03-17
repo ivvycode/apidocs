@@ -60,6 +60,7 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | email | The company's email address |
 | address | The company’s address. This is an an object with the address [keys](get-company-list.md#keys). |
 | modifiedDate | The modified date of the company |
+| customFields | The custom field information for the company. This is an array of fields, each an object with the [keys](get-company-list.md#custom-fields-keys). | array |
 
 ## Keys
 
@@ -73,6 +74,12 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | stateCode \(e.g: QLD\) |
 | countryCode \(e.g: AU\) |
 | postalCode |
+
+### Custom Fields Keys
+
+| fieldId |
+| displayName |
+| value |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
