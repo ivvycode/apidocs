@@ -238,7 +238,8 @@ The id of the booking
           "id": 1,
           "tax": 27.273
         }
-      ]
+      ],
+      "totalAttendees": 2000,
     }
   ],
   "beveragePackages": [
@@ -268,7 +269,8 @@ The id of the booking
           "id": 1,
           "tax": 190.909
         }
-      ]
+      ],
+      "totalAttendees": 2000,
     }
   ],
   "resources": [
@@ -908,6 +910,7 @@ One of the following values:
 | totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the menu |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
+| totalAttendees | integer | The minimum number of attendees for the menu |
 
 ## Beverage Package
 
@@ -934,6 +937,7 @@ One of the following values:
 | totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the beverage package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
+| totalAttendees | integer | The minimum number of attendees for the beverage package |
 
 ## Resource
 
@@ -1106,4 +1110,3 @@ One of the following values:
 | businessName | integer | The business name of the company |
 | email | string | The email address of the company |
 | phone | string | The phone number of the company |
-
