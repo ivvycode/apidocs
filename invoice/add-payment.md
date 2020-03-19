@@ -30,6 +30,11 @@ The payment amount
 The payment method
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="customPaymentMethodId" type="integer" required=false %}
+The id of custom payment method
+The paymentMethod should be "Unknown" when the customPaymentMethodId is used.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="receiptNum" type="string" required=true %}
 A receipt number
 {% endapi-method-parameter %}

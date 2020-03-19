@@ -55,7 +55,8 @@ The payment details to add to the booking
   "payment": {
     "paidDate": "2015-01-22 00:00:00",
     "amountPaid": 100,
-    "paymentMethod": 6,
+    "paymentMethod": 0,
+    "customPaymentMethodId": 2,
     "receiptNum": 12345,
     "notes": "Note for payment"
   }
@@ -69,6 +70,7 @@ The payment details to add to the booking
 | paidDate | The date & time of the payment | Timestamp in UTC |
 | amountPaid | The payment amount | number |
 | paymentMethod | [The payment method](add-payment-to-booking.md#payment-methods) |  |
+| customPaymentMethodId | The id of the custom payment method used in transaction | number |
 | receiptNum | A receipt number of the payment transaction | string |
 | notes | Additional notes about the payment | string |
 
