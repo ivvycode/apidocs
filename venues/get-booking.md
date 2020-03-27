@@ -894,7 +894,7 @@ One of the following values:
 | name | string | The name of the menu |
 | menuVenueId | integer | The venue identifier to which the menu package belongs. This can be different than booking's venue id |
 | menuId | integer | The reference menu identifier in venue menus |
-| menuCategoryId | integer \([Menu Category List](get-booking.md#menu-category)\) | The reference menu category identifier in venue menus |
+| menuTypeCategory | integer \([Menu Category List](get-booking.md#menu-category)\) | The reference menu category identifier in venue menus |
 | sessionId | integer | The session identifier to which this menu belongs |
 | cost | double | The cost of the menu |
 | discount | double | The amount of the discount on cost |
