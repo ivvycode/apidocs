@@ -30,6 +30,11 @@ The payment amount
 The payment method
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="customPaymentMethodId" type="integer" required=true %}
+The custom payment method id
+Required if paymentMethod = custom
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="receiptNum" type="string" required=true %}
 A receipt number
 {% endapi-method-parameter %}
@@ -126,6 +131,7 @@ Example: Add Payment to an invoice
 10 = WriteOff  
 11 = Point of Sale  
 12 = Wire Transfer
+13 = Custom
 
 ## cardType
 
