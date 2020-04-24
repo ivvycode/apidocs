@@ -46,7 +46,7 @@ Required if paymentMethod = credit card
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="feePercentage" type="number" required=false %}
-The credit card fee percentage. The fee amount must be included in amountPaid
+The credit card fee percentage. 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="feeExcludedTaxIds" type="array" required=false %}
