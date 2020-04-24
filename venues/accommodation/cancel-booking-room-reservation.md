@@ -25,7 +25,11 @@ The unique id of the room reservation to cancel
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="roomId" type="integer" required=false %}
-Optionally, the unique id of the individual room on the reservation to cancel
+*DEPRECATED: Use roomIds instead* Optionally, the unique id of the individual room on the reservation to cancel
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="roomIds" type="array" required=false %}
+Optionally, the array of ids of the individual rooms on the reservation to cancel
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -39,13 +43,39 @@ Successfully cancelling a room reservation from a booking
 ```javascript
 {
   "success": true,
-  "errorType": null
+  "errorType": null,
+  "failedRooms": []
 }
 ```
+{% api-method-response-example-description %}
+Cancelling one or more rooms failed when roomIds were set in request
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "success": false,
+  "errorType": 8,
+  "failedRooms": [
+      {
+          "id": 123,
+          "errorCode": 1,
+          "errorMessage": "The room has already been cancelled"
+      },
+      {
+          "id": 456,
+          "errorCode": 1,
+          "errorMessage": "The room has already been cancelled"
+      }
+  ]
+}
+```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Response Error Types
 
 | Error Type | Reason |
 | :--- | :--- |
@@ -57,4 +87,13 @@ Successfully cancelling a room reservation from a booking
 | 5 | One or more individual rooms on the reservation cannot be cancelled |
 | 6 | The status of the reservation prevents it from being cancelled. Only "not confirmed", "confirmed", "checked in", and "checked out" reservations can be cancelled |
 | 7 | The canBeEdited flag of the room reservation is false, which prevents any changes |
+| 8 | Cancelling one or more room failed when roomIds parameter were set. See "failedRooms" in response for more details  |
+
+## Failed Rooms Error Codes
+
+| Code | Message |
+| :--- | :--- |
+| 1 | The room has already been cancelled |
+| 2 | The room cannot be cancelled |
+| 3 | The reservation of the room cannot be edited |
 

@@ -6,7 +6,7 @@ Confirm Booking Room Reservation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Confirm a room reservation on a booking. 
+Confirm a room reservation on a booking.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,6 +23,10 @@ The unique id of the booking to which the room reservation belongs
 {% api-method-parameter name="id" type="integer" required=true %}
 The unique id of the room reservation to confirm
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="roomIds" type="array" required=false %}
+Optionally, the array of ids of the individual rooms on the reservation to cancel
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -38,10 +42,35 @@ Successfully confirming a room reservation from a booking
   "errorType": null
 }
 ```
+{% api-method-response-example-description %}
+Confirming one or more rooms failed when roomIds were set in request
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "success": false,
+  "errorType": 10,
+  "failedRooms": [
+      {
+          "id": 123,
+          "errorCode": 2,
+          "errorMessage": "The room has been cancelled"
+      },
+      {
+          "id": 456,
+          "errorCode": 2,
+          "errorMessage": "The room has been cancelled"
+      }
+  ]
+}
+```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Response Error Types
 
 | Error Type | Reason |
 | :--- | :--- |
@@ -55,6 +84,15 @@ Successfully confirming a room reservation from a booking
 | 7 | One or more individual rooms on the reservation cannot be confirmed |
 | 8 | Unknown channel error |
 | 9 | The canBeEdited flag of the room reservation is false, which prevents any changes |
+| 10 | Confirming one or more room failed when roomIds parameter were set. See "failedRooms" in response for more details |
 
+## Failed Rooms Error Codes
 
+| Code | Message |
+| :--- | :--- |
+| 1 | The room has already been confirmed |
+| 2 | The room has been cancelled |
+| 3 | There are not enough rooms available in group |
+| 4 | Room cannot be booked |
+| 5 | The reservation cannot be edited |
 

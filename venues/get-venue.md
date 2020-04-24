@@ -253,7 +253,25 @@ The venue Id
         "contentType": "image/jpeg"
       }
     }
-  ]
+  ],
+  "menus": [
+    {
+        "id": 1,
+        "name": "Lunch",
+        "marketplaceName": "Lunch",
+        "smallDescription": "Buffet Lunch",
+        "menuTypeCategory": 1,
+        "image": null,
+        "minimumPax": null,
+        "maximumPax": null,
+        "marketplaceCategories": [
+            3
+        ],
+        "currentStatus": 1,
+        "activePeriodStart": null,
+        "activePeriodEnd": null
+    }
+  ],
 }
 ```
 {% endapi-method-response-example %}
