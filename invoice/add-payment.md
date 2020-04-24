@@ -6,9 +6,7 @@ Add Payment
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Add a payment against a specific invoice within iVvy.   
-  
-Payments will only be accepted if that amount is outstanding on the invoice. Over pays will not be accepted.  
+Add a payment against a specific invoice within iVvy.Payments will only be accepted if that amount is outstanding on the invoice. Over pays will not be accepted.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -31,8 +29,7 @@ The payment method
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="customPaymentMethodId" type="integer" required=true %}
-The custom payment method id
-Required if paymentMethod = custom
+The custom payment method id Required if paymentMethod = custom
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="receiptNum" type="string" required=true %}
@@ -57,17 +54,17 @@ An array of tax ids which will be excluded from the payment.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="chequeNumber" type="string" required=true %}
-The cheque number   
-Required if paymentMethod = "cheque"  
+The cheque number  
+Required if paymentMethod = "cheque"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="chequeDrawerName" type="string" required=false %}
-The cheque drawer number   
+The cheque drawer number  
 If paymentMethod = “cheque”
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="chequeBankBranch" type="string" required=false %}
-The cheque bank branch   
+The cheque bank branch  
 If paymentMethod = “cheque”
 {% endapi-method-parameter %}
 
@@ -77,7 +74,7 @@ If paymentMethod = “direct deposit”
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="eftPaymentReference" type="string" required=false %}
-The payment reference   
+The payment reference  
 If paymentMethod = “direct deposit”
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
@@ -130,7 +127,7 @@ Example: Add Payment to an invoice
 9 = EFTPOS  
 10 = WriteOff  
 11 = Point of Sale  
-12 = Wire Transfer
+12 = Wire Transfer   
 13 = Custom
 
 ## cardType
