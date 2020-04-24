@@ -86,6 +86,8 @@
   * [Get Cost Center List](venues/get-cost-center-list.md)
   * [Add or Update Blockout Space](venues/add-or-update-blockoutspace.md)
   * [Remove Blockout Space](venues/remove-blockoutspace.md)
+  * [Get Menus](venues/get-menu-list.md)
+  * [Get Beverage Packages](venues/get-beverage-package-list.md)
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
   * [Get Venue](partner/get-venue.md)
