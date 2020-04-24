@@ -1,4 +1,4 @@
-# Get Menu List
+# Get Menus
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getMenuList" path="" %}
 {% api-method-summary %}
@@ -79,6 +79,7 @@ The result from this call will be a [collection](../getting-started/interpreting
   "perPage": "50",
 }
 ```
+
 ## Menu
 
 | Property | Type | Description |
@@ -88,11 +89,10 @@ The result from this call will be a [collection](../getting-started/interpreting
 | minimumPax | integer | The minimum number of people allowed within a single session to order this menu |
 | maximumPax | ineger | The maximum number of people allowed within a single session to order this menu |
 | cost | integer | The price of the menu |
-| costType | integer [Cost Type](get-menu-list.md#Cost Type)| The price type of the menu |
+| costType | integer [Cost Type](get-menu-list.md#cost-type-menu-pricing) | The price type of the menu |
 | smallDescription | text | The small description of the menu |
 | marketplaceName | text | The name of the menu displayed in marketplace booking engines |
 | marketplaceEventTypes | text | The event types of the menu displayed in marketplace booking engines |
-
 
 ## Cost Type \(menu pricing\)
 
@@ -100,3 +100,4 @@ One of the following values:
 
 * 1 = Per person
 * 2 = Flat rate
+
