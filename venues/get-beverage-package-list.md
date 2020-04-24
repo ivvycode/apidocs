@@ -1,4 +1,4 @@
-# Get Beverage Package List
+# Get Beverage Packages
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBeveragePackageList" path="" %}
 {% api-method-summary %}
@@ -79,6 +79,7 @@ The result from this call will be a [collection](../getting-started/interpreting
   "perPage": "50",
 }
 ```
+
 ## Beverage Package
 
 | Property | Type | Description |
@@ -86,13 +87,12 @@ The result from this call will be a [collection](../getting-started/interpreting
 | id | integer | The unique id of the Beverage Package |
 | name | text | The name of the Beverage Package |
 | minimumPax | integer | The minimum number of people allowed within a single session to order this Beverage Package |
-| maximumPax | ineger | The maximum number of people allowed within a single session to order this Beverage Package |
+| maximumPax | integer | The maximum number of people allowed within a single session to order this Beverage Package |
 | price | integer | The price of the Beverage Package |
-| priceType | integer [Price Type](get-Beverage Package-list.md#Cost Type)| The price type of the Beverage Package |
+| priceType | integer [Price Type](get-beverage-package-list.md#price-type-beverage-package-pricing) | The price type of the Beverage Package |
 | smallDescription | text | The small description of the Beverage Package |
 | marketplaceName | text | The name of the Beverage Package displayed in marketplace booking engines |
 | marketplaceEventTypes | text | The event types of the Beverage Package displayed in marketplace booking engines |
-
 
 ## Price Type \(Beverage Package pricing\)
 
@@ -100,3 +100,4 @@ One of the following values:
 
 * 1 = Per person
 * 2 = Flat rate
+

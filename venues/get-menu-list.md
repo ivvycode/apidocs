@@ -87,7 +87,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | id | integer | The unique id of the menu |
 | name | text | The name of the menu |
 | minimumPax | integer | The minimum number of people allowed within a single session to order this menu |
-| maximumPax | integer | The maximum number of people allowed within a single session to order this menu |
+| maximumPax | ineger | The maximum number of people allowed within a single session to order this menu |
 | cost | integer | The price of the menu |
 | costType | integer [Cost Type](get-menu-list.md#cost-type-menu-pricing) | The price type of the menu |
 | smallDescription | text | The small description of the menu |
