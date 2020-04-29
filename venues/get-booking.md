@@ -191,6 +191,7 @@ The id of the booking
       "spaceId": 2,
       "spaceLayout": null,
       "customLayoutName": "Custom",
+      "tariffId": 50,
       "cost": 50,
       "discount": 5,
       "totalAmount": 50,
