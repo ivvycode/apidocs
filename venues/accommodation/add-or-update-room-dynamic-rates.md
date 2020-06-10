@@ -1,6 +1,6 @@
 # Add or Update Room Dynamic Rates
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateRoomDynamicRates" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateRoomDynamicRatesCollection" path="" %}
 {% api-method-summary %}
 Add or Update Room Dynamics Rates
 {% endapi-method-summary %}
@@ -16,24 +16,8 @@ Add or update the dynamic rates of venue rooms
 The unique id of the venue to which the rate plan belongs
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="barId" type="integer" required=true %}
-The unique id of the rate plan to which the dynamic rate applies
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="roomId" type="integer" required=true %}
-The unique id of the room to which the rate applies
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="startDate" type="string" required=true %}
-The start date from which the dynamic rate will be set \(Date Format\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="endDate" type="string" required=true %}
-The end date from which the dynamic rate will be set \(Date Format\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="cost" type="number" required=true %}
-The rate amount from startDate to endDate. The amount must either include or exclude tax depending on how the venue has been configured
+{% api-method-parameter name="items" type="array" required=true %}
+The array of items. See Item table below for individual item data.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -62,12 +46,16 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-  "venueId": 123,
-  "barId": 456,
-  "roomId": 789,
-  "startDate": "2018-07-27",
-  "endDate": "2018-07-27",
-  "cost": 240.00
+	"venueId": 1,
+	"items": [
+		{
+			"startDate": "2020-05-01",
+			"endDate": "2020-05-01",
+			"roomId": 2,
+			"barId": 1,
+			"cost": 100
+		}
+	]
 }
 ```
 
@@ -75,12 +63,37 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-  "venueId": 123,
-  "barId": 456,
-  "roomId": 789,
-  "startDate": "2018-07-27",
-  "endDate": "2018-08-03",
-  "cost": 234.50
+	"venueId": 1,
+	"items": [
+		{
+			"startDate": "2020-05-01",
+			"endDate": "2020-05-10",
+			"roomId": 2,
+			"barId": 1,
+			"cost": 100
+		},
+		{
+			"startDate": "2020-05-01",
+			"endDate": "2020-05-10",
+			"roomId": 2,
+			"barId": 147,
+			"cost": 150
+		},
+		{
+			"startDate": "2020-05-01",
+			"endDate": "2020-05-10",
+			"roomId": 3,
+			"barId": 1,
+			"cost": 100
+		},
+		{
+			"startDate": "2020-05-01",
+			"endDate": "2020-05-10",
+			"roomId": 3,
+			"barId": 147,
+			"cost": 100
+		}
+	]
 }
 ```
 
@@ -90,3 +103,12 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 | :--- | :--- | :--- |
 | success | Whether or not the room dynamic rates were updated | boolean |
 
+## Item Details
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| barId | integer | required | The unique id of the rate plan to which the dynamic rate applies |
+| roomId | integer | required | The unique id of the room to which the rate applies |
+| startDate | date | required | The start date from which the dynamic rate will be set (Date Format) |
+| endDate | date | required | The end date from which the dynamic rate will be set (Date Format) |
+| cost | integer | required | The rate amount from startDate to endDate. The amount must either include or exclude tax depending on how the venue has been configured |
