@@ -109,6 +109,7 @@
   * [Get Lead Stage List](crm/get-lead-stage-list.md)
   * [Get Lead Type List](crm/get-lead-type-list.md)
   * [Get Lead Source List](crm/get-lead-source-list.md)
+  * [Add or Update Activity Purpose](crm/add-or-update-activity-purpose.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)

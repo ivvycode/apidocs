@@ -17,7 +17,7 @@ A json object that represents the room reservation to add or update. See below f
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A successful response to an add or update operation.  
+A successful response to an add or update operation.
 NOTE: The "rooms" in the response are returned in the same order as the "rooms" in the request.
 {% endapi-method-response-example-description %}
 
@@ -105,6 +105,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | dayRates | array of [Day Rates](add-or-update-booking-room-reservation.md#reserved-room-day-rates) | required on add, optional on update | The daily rates of the reserved room |
 | additionalGuests | array of [Additional  Guests](add-or-update-booking-room-reservation.md#reserved-room-additional-guests) | optional | The additional guests of the reserved room |
 | overrideBlockCapacity | boolean | optional | Whether or not the reservations can exceed the block capacity |
+| externalReference | text | optional | External system identifier for this reserved room. eg. PMS ID. Allowed max length is 254 Characters. |
 
 ## Reserved Room Day Rates
 
@@ -212,8 +213,8 @@ If the value is **not** present in the request, the existing list of additional 
 
 ## Notes on guest details in the request
 
-Guests are **uniquely** identified based on the following \(in order\):  
-1\) The unique _id_ value of the guest.  
+Guests are **uniquely** identified based on the following \(in order\):
+1\) The unique _id_ value of the guest.
 2\) The combination of the guest's _email_, _firstName_, and _lastName_ \(case insensitive\).
 
 Consider the following [guest](add-or-update-booking-room-reservation.md#guest) objects:
