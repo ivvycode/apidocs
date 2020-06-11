@@ -47,6 +47,10 @@ The reference identifier 4 of the error report
 {% api-method-parameter name="refId5" type="integer" required=false %}
 The reference identifier 5 of the error report
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="debugData" type="string" required=false %}
+The information for debugging this error. Maximum 1000 characters allowed.
+{% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -87,7 +91,7 @@ The reference identifier 5 of the error report
 | Property | Description |
 | :--- | :--- |
 | success | Whether or not the error report was added to the account |
-| id | The unique id of the error report |
+| id | The unique id of the error report. This will be the same id if similar error already exist in database |
 
 ## RefType
 
