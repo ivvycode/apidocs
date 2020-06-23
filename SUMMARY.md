@@ -112,6 +112,7 @@
   * [Add or Update Activity Purpose](crm/add-or-update-activity-purpose.md)
   * [Add or Update Lead Quality](crm/add-or-update-lead-quality.md)
   * [Add or Update Lead Stage](crm/add-or-update-lead-stage.md)
+  * [Add or Update Lead Source](crm/add-or-update-lead-source.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
