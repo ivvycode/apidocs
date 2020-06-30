@@ -64,6 +64,7 @@ Invalid request data that prevents the accommodation group from being added/upda
 | cutOffDate | date | optional | The date after which changes to the accommodation group are not allowed |
 | dayRatesActual | array of [Day Rates Actual](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-actual) | optional | The daily actual rates of the accommodation group |
 | dayRatesForecast | array of [Day Rates Forecast](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-forecast) | optional | The daily forecast rates of the accommodation group |
+| dayRatesNet | array of [Day Rates Net](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-net) | The daily net rates of the accommodation group |
 | dayRates | array of [Day Rates](add-or-update-booking-accommodation.md#booking-accommodation-day-rates) | required on add, optional on update | The daily rates of the accommodation group |
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from the daily rates |
 | roomOptions | array of [Room Options](add-or-update-booking-accommodation.md#booking-accommodation-room-option) | optional | The additional room options of the accommodation group |
@@ -85,6 +86,16 @@ Invalid request data that prevents the accommodation group from being added/upda
 | numRooms | integer | true | The forecast number of rooms booked on bookingDate |
 | cost | number | true | The forecast rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
 | numPayableByGuest | integer | true | The forecast number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+
+## Booking Accommodation Day Rates Net
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| bookingDate | date | The date of the accommodation group to which the rate applies |
+| numRooms | integer | The number of rooms booked on bookingDate |
+| cost | number | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
+| discount | number | The amount of discount |
+| numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
 ## Booking Accommodation Day Rates
 
