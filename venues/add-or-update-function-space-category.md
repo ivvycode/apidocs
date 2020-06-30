@@ -52,8 +52,8 @@ The name of the event space category
 
 ```javascript
 {
+  "venueId": "1",
   "name": "Category 1",
-  "type": "1",
 }
 ```
 
