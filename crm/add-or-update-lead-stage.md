@@ -13,13 +13,11 @@ Add or Update Lead Stage
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the lead stage
-\(Leave empty if adding a new lead stage\)
+The unique id of the lead stage \(Leave empty if adding a new lead stage\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
-The name of the crm lead stage
-\(Required when the ID parameter is missing\)
+The name of the crm lead stage \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="colour" type="string" required=false %}
@@ -27,8 +25,7 @@ The colour for the stage will help to identify and group leads/opportunities
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="applyTo" type="strings" required=false %}
-Whether lead stage [applies to](add-or-update-lead-stage.md#applies-to) lead or opportunity
-\(Required when the ID parameter is missing\)
+Whether lead stage applies to lead or opportunity \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -50,10 +47,12 @@ Whether lead stage [applies to](add-or-update-lead-stage.md#applies-to) lead or 
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Applies To
+## applyTo
 
-| 1 | Opportunity |
-| 2 | Lead |
+Equal to one of the following values
+
+* 1 = Opportunity
+* 2 = Lead
 
 ## Example Request
 
