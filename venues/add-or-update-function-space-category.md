@@ -1,5 +1,6 @@
 # Add or Update Function Space Category
-# Add or Update Function Space Category
+
+## Add or Update Function Space Category
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateFunctionSpaceCategory" path="" %}
 {% api-method-summary %}
@@ -13,19 +14,15 @@ Add or Update Venue Space Category
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-
 {% api-method-parameter name="venueId" type="integer" required=true %}
 
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the space category
-\(Leave empty if adding a new space category\)
+The unique id of the space category \(Leave empty if adding a new space category\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=true %}
-The name of the event space category
-\(Required when the ID parameter is missing\)
+The name of the event space category \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -46,9 +43,9 @@ The name of the event space category
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example Request
+### Example Request
 
-### Add space category
+#### Add space category
 
 ```javascript
 {
@@ -57,7 +54,7 @@ The name of the event space category
 }
 ```
 
-### Update space category
+#### Update space category
 
 ```javascript
 {
@@ -66,14 +63,14 @@ The name of the event space category
 }
 ```
 
-## Returns
+### Returns
 
 | Property | Description |
 | :--- | :--- |
 | success | Whether or not the space category was added |
 | id | The unique id of the space category |
 
-## Throws
+### Throws
 
 | Code | Description |
 | :--- | :--- |
