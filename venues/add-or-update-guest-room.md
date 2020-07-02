@@ -11,6 +11,62 @@ Add or Update Guest Room
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+
+{% api-method-parameter name="id" type="integer" required=false %}
+The unique id of the guest room
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="venueId" type="integer" required=true %}
+The unique id of the venue to which the rate plan belongs
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=true %}
+The name of the venue room
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="code" type="string" required=true %}
+The unique code assigned to the room
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="categoryIds" type="array" required=false %}
+An array of category ids to which the room belongs.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="capacity" type="integer" required=true %}
+The total number of this room type at the venue.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="description" type="string" required=true %}
+A html formatted description of the room.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="numStandardAdults" type="integer" required=true %}
+The number of standard adults allowed in the room.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="numExtraAdults" type="integer" required=true %}
+The number of standard adults allowed in the room.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="extraAdultCost" type="number" required=true %}
+The price of adding an extra adult to the room.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="canSmoke" type="bool" required=true %}
+Whether or not smoking is allowed in the room.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="active" type="bool" required=true %}
+Whether or not venue room is active on marketplace.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="marketplaceName" type="bool" required=true %}
+Whether or not venue room is active on marketplace.
+{% endapi-method-parameter %}
+
+{% endapi-method-path-parameters %} 
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
