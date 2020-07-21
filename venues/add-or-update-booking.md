@@ -12,6 +12,8 @@ NOTE: The venue must have access to _normal bookings_ in order to call this api 
 
 {% api-method-spec %}
 {% api-method-request %}
+A json object that represents the booking to add or update. See below for the data description.
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
