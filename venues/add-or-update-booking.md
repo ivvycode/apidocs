@@ -113,7 +113,7 @@ Something unexpected occurred whilst processing the request. The booking should 
 | accommExternalBlockId | string | optional | The block id from an external pms \(property management system\). Only applies when the booking includes accommodation. |
 | accommReservationMethod | [Reservation Method](add-or-update-booking.md#accommodation-reservation-methods) | optional | The method by which attendees will reserve rooms from the accommodation blocks on the booking. Only applies when the booking includes accommodation. |
 | accommReservationCancellationDate | date | optional | The date after which reservations from the accommodation blocks cannot be cancelled. Only applies when the booking includes accommodation. |
-| accommArrivalMethod | Arrival Method | optional | The method by which the group attendees will arrive at the venue. Only applies when the booking includes accommodation. |
+| accommArrivalMethod | [Arrival Method](add-or-update-booking.md#accommodation-arrival-methods) | optional | The method by which the group attendees will arrive at the venue. Only applies when the booking includes accommodation. |
 | isConfidential | boolean | optional | Whether or not the booking is confidential. Only applies when the venue's account has access to confidential meetings. |
 | otaFolioRef | string | optional | The Folio ID from the external postings extension installed by the venue. |
 | bookingRoleUserId1 | string | optional | The unique id of the account user assigned to the booking role label 1 |
@@ -193,8 +193,8 @@ A quote \(i.e. booking status is _prospective_\) that is assigned to an opportun
 
 ### Adding an event template to a new booking
 
-Setting _packageId_ in the request when adding a _new_ booking will attempt to add that event template to _all_ event days of the booking _after_ the booking is created. There is no guarantee that the event template will be successfully added to all days of the booking. When the event template cannot be added to the booking, one or more [warnings](add-or-update-booking.md#response-warnings) will be returned in the response.  
-  
+Setting _packageId_ in the request when adding a _new_ booking will attempt to add that event template to _all_ event days of the booking _after_ the booking is created. There is no guarantee that the event template will be successfully added to all days of the booking. When the event template cannot be added to the booking, one or more [warnings](add-or-update-booking.md#response-warnings) will be returned in the response.
+
 There are also the following additional restrictions:
 
 * An event template can only be added when the venue has function spaces.
