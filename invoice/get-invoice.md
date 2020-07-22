@@ -59,7 +59,8 @@ The invoice identifier
             "notes": "",
             "chequeNumber": null,
             "paymentMethod": 1,
-            "paidDate": "2018-06-11 06:06:42 UTC"
+            "paidDate": "2018-06-11 06:06:42 UTC",
+            "cardType": 3,
         }
     ],
     "toAddress": {
@@ -225,6 +226,7 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 | paidDate | The paid timestamp of the payment |
 | feePercentage | The percentage fee included in amountPaid |
 | feeAmount | The fee amount included in amountPaid |
+| cardType | The type of card used for a credit card payment |
 
 `Note about fee: If the payment is applied to multiple invoices, the fee amount is applied to the first invoice only.`
 
