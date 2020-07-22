@@ -34,30 +34,30 @@ The array of venue ids to which the opportunity belongs
     },
     "results": [
         {
-        "id": 763,
+            "id": 763,
             "venueId": 1,
             "name": "Opprotunity Name",
             "description": "This is test description",
-        "ownerUser": {
-                "id": 549,
-                "firstName": "First",
-                "lastName": "Last",
-                "email": "first@last.com",
-                "phone": ""
+            "ownerUser": {
+                    "id": 549,
+                    "firstName": "First",
+                    "lastName": "Last",
+                    "email": "first@last.com",
+                    "phone": ""
             },
-        "contact": {
-                "id": 580,
-                "firstName": "First",
-                "lastName": "last",
-                "email": "filrst.last@email.com",
-                "phone": 614535435
+            "contact": {
+                    "id": 580,
+                    "firstName": "First",
+                    "lastName": "last",
+                    "email": "filrst.last@email.com",
+                    "phone": 614535435
             },
-        "company": {
-                "id": 214,
-                "businessName": "Company BusinessName",
-                "businessNumber": "BUS123",
-                "phone": null,
-                "email": company@owner.com
+            "company": {
+                    "id": 214,
+                    "businessName": "Company BusinessName",
+                    "businessNumber": "BUS123",
+                    "phone": null,
+                    "email": company@owner.com
             },
             "currentBookingId": 5,
             "qualityId": 2,
@@ -72,7 +72,9 @@ The array of venue ids to which the opportunity belongs
             "sourceName": "Newspaper",
             "channelId": 8,
             "channelName": "PCO",
-            "leadEmailAddress": "lead-2-763-facdb9@ivvy.blueweb",
+            "leadBccEmail": "lead-2-763-facdb9@ivvy.blueweb",
+            "closedDate": "2019-04-19 09:00:00 UTC",
+            "lostToCompetition": "More capacity available",
             "createdDate": "2019-04-12 09:00:35 UTC",
             "modifiedDate": "2019-04-12 09:00:35 UTC"
         }
