@@ -50,8 +50,8 @@ The id of the booking
   "venueTimezone": "Australia/Brisbane",
   "createdDate": "2015-01-21 09:50:49 UTC",
   "modifiedDate": "2016-04-06 07:51:56 UTC",
-  "dateEventStart": "1996-02-19 00:00:00 UTC",
-  "dateEventEnd": "2002-11-06 00:00:00 UTC",
+  "dateEventStart": "1996-02-19",
+  "dateEventEnd": "2002-11-06",
   "isAccommIncluded": false,
   "dateAccomStart": "",
   "dateAccomEnd": "",
@@ -64,8 +64,8 @@ The id of the booking
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
   "otaFolioRef": "ven1234",
-  "accommCutOffDate": "2019-12-04 00:00:00 UTC",
-  "accommCancellationDate": "2019-01-11 00:00:00 UTC",
+  "accommCutOffDate": "2019-12-04",
+  "accommCancellationDate": "2019-01-11",
   "accommChargingMethod": 2,
   "accommGuaranteeRequired": false,
   "accommExternalBlockId": "test 123",
@@ -740,22 +740,22 @@ The result from this call will be the details of a specific booking to which the
 | venueTimezone | [timezone](../development-reference/timezone-list.md) | The timezone of the venue |
 | createdDate | [timestamp](../development-reference/timestamp-format.md) | The date & time the booking was created |
 | modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time the booking was last modified |
-| dateEventStart | [timestamp](../development-reference/timestamp-format.md) | The start event date of the booking |
-| dateEventEnd | [timestamp](../development-reference/timestamp-format.md) | The end event date of the booking |
+| dateEventStart | [Date](../development-reference/date-format.md) | The start event date of the booking |
+| dateEventEnd | [Date](../development-reference/date-format.md) | The end event date of the booking |
 | isAccommIncluded | boolean | Whether or not the booking includes accommodation |
-| dateAccomStart | [timestamp](../development-reference/timestamp-format.md) | The start accommodation date of the booking |
-| dateAccomEnd | [timestamp](../development-reference/timestamp-format.md) | The end accommodation date of the booking |
+| dateAccomStart | [Date](../development-reference/date-format.md) | The start accommodation date of the booking |
+| dateAccomEnd | [Date](../development-reference/date-format.md) | The end accommodation date of the booking |
 | focRoomsDenominator | int | The number of accommodation rooms in which one room is complimentary. For example if the value is 5, then 1 in 5 accommodation rooms will be complimentary. |
 | maxNumFocRoomsPerDay | int | The maximum number of accommodation rooms per day that can be complimentary |
 | hasPackages | boolean | Whether or not the booking has packages |
-| decisionDate | [timestamp](../development-reference/timestamp-format.md) | The date before which the event/accommodation dates must be decided |
+| decisionDate | [Date](../development-reference/date-format.md) | The date before which the event/accommodation dates must be decided |
 | canBeMoved | boolean | Whether or not the event/accommodation dates of the booking are flexible |
 | bookedById | integer | The unique id of the event coordinator user assigned to the booking |
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | otaFolioRef | string | The recorded Folio ID of a booking. |
-| accommCutOffDate | [timestamp](../development-reference/timestamp-format.md) | After this date no more reservations may be made against the Block for the entire date range. |
-| accommCancellationDate | [timestamp](../development-reference/timestamp-format.md) | The last date a customer can cancel their Group Accommodation without financial penalty. |
+| accommCutOffDate | [Date](../development-reference/date-format.md) | After this date no more reservations may be made against the Block for the entire date range. |
+| accommCancellationDate | [Date](../development-reference/date-format.md) | The last date a customer can cancel their Group Accommodation without financial penalty. |
 | accommChargingMethod | enum \([Charging Method](get-booking.md#get-booking.md#charging-method)\) | A record of the Charging Method for Documents, Note that values will still need to be altered in the Block. |
 | accommGuaranteeRequired | boolean | Indicates whether the customer is required to guarantee their reservation with a credit card. |
 | accommExternalBlockId | string | The Block ID from an external PMS. |
