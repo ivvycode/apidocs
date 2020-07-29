@@ -1,4 +1,4 @@
-# Add or Update Booking \(In Development\)
+# Add or Update Booking
 
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=addOrUpdateBooking" %}
 {% api-method-summary %}
