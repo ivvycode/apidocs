@@ -13,7 +13,7 @@ Add or Update Opportunity
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique identifier of opportunity  
+The unique identifier of opportunity
 \(Leave empty if adding a new opportunity\)
 {% endapi-method-parameter %}
 
@@ -26,8 +26,12 @@ The quality of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companyId" type="integer" required=false %}
-The unique company id of opportunity  
+The unique company id of opportunity
 \(Required when lead belongs to a company and the id is missing\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="company" type="object" required=false %}
+The data array of company. See addOrUpdateCompany API in contact namespace for parameters. See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-opportunity).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="industryId" type="integer" required=false %}
@@ -35,7 +39,7 @@ The unique industry id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourceId" type="integer" required=false %}
-The unique source id of opportunity  
+The unique source id of opportunity
 \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 
@@ -76,17 +80,21 @@ The close date of the opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companyLeadContactId" type="integer" required=false %}
-The unique contact ID of the company contact  
+The unique contact ID of the company contact
 \(Required when lead belongs to company and id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contactId" type="integer" required=false %}
-The unique contact id of opportunity  
+The unique contact id of opportunity
 \(Required when opportunity belongs to contact and id is missing\)
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="contact" type="object" required=false %}
+The data array of contact. See addOrUpdateContact API in contact namespace for parameters. See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-opportunity).
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="name" type="string" required=false %}
-The name for the opportunity  
+The name for the opportunity
 \(Required when id is missing\)
 {% endapi-method-parameter %}
 
@@ -95,12 +103,12 @@ The sales person id of opportunity
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="typeId" type="integer" required=false %}
-The type of opportunity  
+The type of opportunity
 \(Required when id is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="stageId" type="integer" required=false %}
-The stage of opportunity  
+The stage of opportunity
 \(Required when id is missing\)
 {% endapi-method-parameter %}
 
@@ -115,6 +123,11 @@ The channel id of Opportunity
 {% api-method-parameter name="description" type="string" required=false %}
 The description for the opportunity
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="customFields" type="array" required=false %}
+The custom field values of the opportunity. A custom field value might be required depending on how it has been configured in the venue's account. See [Custom Field](add-or-update-opportunity.md#custom-field)
+{% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -134,6 +147,23 @@ The description for the opportunity
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Custom Field
+
+A opportunity custom field is an object with the following details.
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| fieldId | integer | required | The unique id of the opportunity custom field |
+| fieldValue | mixed | required | The value of the opportunity custom field. Depends on the type of custom field value. |
+
+## Special Considerations
+
+### Assigning a company/contact to the opportunity
+
+The _contact type_ of a opportunity is either a _company_ **or** a _contact_. When _companyId_ **or** _company_ is present in the request then the _contact type_ of the opportunity is set to _company_, and the _contactId_ **or** _contact_ must be a contact that belongs to that company. Otherwise the _contact type_ of the opportunity is set to _contact_ and contactId can be any valid contact in the venue's account.
+
+If _contact_ and _company_ are present in request then it will link given contact to company.
 
 ## Example Request
 
