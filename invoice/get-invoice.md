@@ -83,6 +83,23 @@ The invoice identifier
             "totalTaxCost": 20.91,
             "amountPaid": 230,
             "refType": 500
+            "costCenters": [
+                {
+                    "costcenterId": 1,
+                    "totalCost": 100,
+                    "totalTaxCost": 10
+                },
+                {
+                    "costcenterId": 2,
+                    "totalCost": 100,
+                    "totalTaxCost": 10
+                },
+                {
+                    "costcenterId": 3,
+                    "totalCost": 30,
+                    "totalTaxCost": 0.91
+                },
+            ]
         },
         {
             "description": "1.5% iVvy Marketplace transaction fee included in AU$233.45 payment made Jun 11, 2018",
@@ -91,7 +108,24 @@ The invoice identifier
             "totalCost": 3.45,
             "totalTaxCost": 0.31,
             "amountPaid": 3.45,
-            "refType": 103
+            "refType": 103,
+            "costCenters": [
+                {
+                    "costcenterId": 1,
+                    "totalCost": 1.50,
+                    "totalTaxCost": 0.15
+                },
+                {
+                    "costcenterId": 2,
+                    "totalCost": 1.50,
+                    "totalTaxCost": 0.15
+                },
+                {
+                    "costcenterId": 3,
+                    "totalCost": 0.45,
+                    "totalTaxCost": 0.01
+                },
+            ]
         }
     ]
 }
@@ -106,7 +140,7 @@ The invoice identifier
 `Get a specific invoice`
 
 ```javascript
-{ 
+{
   "id":15
 }
 ```
@@ -190,6 +224,7 @@ A collection object with the following properties in the results
 | totalTaxCost | The tax of the item |
 | amountPaid | The amount paid of the item' |
 | refType | The reference type of the item |
+| costCenters | The total cost and total tax cost by cost center |
 
 ## Item Ref Type
 
