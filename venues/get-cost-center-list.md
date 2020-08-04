@@ -37,7 +37,8 @@ The id of the venue
             "id": 1,
             "name": "Food",
             "code": "venueccfd",
-            "description": "Venue food cost center"
+            "description": "Venue food cost center",
+            "parentId": 321,
         }
     ]
 }
@@ -57,6 +58,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | name | The name of the cost center |
 | code | The code of the cost center |
 | description | The complete description of the cost center |
+| parentId | The unique identifier of the parent account cost center |
 
 ## Throws
 
