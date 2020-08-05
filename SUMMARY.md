@@ -89,6 +89,7 @@
   * [Remove Blockout Space](venues/remove-blockoutspace.md)
   * [Get Menus](venues/get-menu-list.md)
   * [Get Beverage Packages](venues/get-beverage-package-list.md)
+  * [Add or Update Guest Room](venues/add-or-update-guest-room.md)
   * [Add or Update Function Space Category](venues/add-or-update-function-space-category.md)
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
