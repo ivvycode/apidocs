@@ -6,7 +6,7 @@ Add or Update Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Adds or updates the details of a venue booking.  
+Adds or updates the details of a venue booking.
 NOTE: The venue must have access to _normal bookings_ in order to call this api action.
 {% endapi-method-description %}
 
@@ -92,7 +92,9 @@ Something unexpected occurred whilst processing the request. The booking should 
 | code | string | optional | The unique reference code of the booking. Excluding this parameter from the request when adding a booking will cause the system to generate the code. The venue can be configured to prevent the code of an existing booking from being changed. |
 | name | string | optional | The booking name. Required when adding a new booking. |
 | companyId | integer | optional | The unique id of the company to assign to the booking. See [assigning a company/contact to the booking](add-or-update-booking.md#assigning-a-company-contact-to-the-booking). |
+| company | object | optional | The data array of company. See addOrUpdateCompany API in contact namespace for parameters. |
 | contactId | integer | optional | The unique id of the contact to assign to the booking See [assigning a company/contact to the booking](add-or-update-booking.md#assigning-a-company-contact-to-the-booking). |
+| contact | object | optional | The data array of contact. See addOrUpdateContact API in contact namespace for parameters. |
 | industryId | integer | optional | The unique id of the industry to which the _contact_ belongs when a _contact_ is [assigned to the booking](add-or-update-booking.md#assigning-a-company-contact-to-the-booking). |
 | purchaseOrderNumber | string | optional | The purchase order number of the booking. |
 | eventTypeId | integer | optional | The unique id of the booking event type. Required when adding a booking. |
@@ -187,7 +189,9 @@ A booking custom field is an object with the following details.
 
 ### Assigning a company/contact to the booking
 
-The _contact type_ of a booking is either a _company_ **or** a _contact_. When _companyId_ is present in the request then the _contact type_ of the booking is set to _company_, and the _contactId_ must be a contact that belongs to that company. Otherwise the _contact type_ of the booking is set to _contact_ and contactId can be any valid contact in the venue's account.
+The _contact type_ of a booking is either a _company_ **or** a _contact_. When _companyId_ **or** _company_ is present in the request then the _contact type_ of the booking is set to _company_, and the _contactId_ **or** _contact_ must be a contact that belongs to that company. Otherwise the _contact type_ of the booking is set to _contact_ and contactId can be any valid contact in the venue's account.
+
+If _contact_ and _company_ are present in request then it will link given contact to company.
 
 A quote \(i.e. booking status is _prospective_\) that is assigned to an opportunity is forced to have the same _companyId_ and _contactId_ of the opportunity. Trying to change these values to something else will have no effect when updating the quote.
 

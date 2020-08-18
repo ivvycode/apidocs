@@ -13,7 +13,7 @@ Add or update the details of a lead
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=true %}
-The unique identifier of a lead  
+The unique identifier of a lead
 \(Leave empty to add the lead to the system\)
 {% endapi-method-parameter %}
 
@@ -22,32 +22,40 @@ The quality of the lead
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="industryId" type="integer" required=false %}
-The unique industry of the lead.  
+The unique industry of the lead.
 \(Required when lead belongs to contact and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourceId" type="integer" required=false %}
-The unique source id of the lead.  
+The unique source id of the lead.
 \(Required when the id parameter is missing. \)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companyId" type="integer" required=false %}
-The unique company id of lead.  
+The unique company id of lead.
 \(Required when lead belongs to company and id parameter is missing\)
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="company" type="object" required=false %}
+The data array of company. See addOrUpdateCompany API in contact namespace for parameters. See [assigning a company/contact to the lead](add-or-update-lead.md#assigning-a-company-contact-to-the-lead).
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="companyLeadContactId" type="integer" required=false %}
-The unique company id of lead  
+The unique company id of lead
 \(Required when lead belongs to company and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contactId" type="integer" required=false %}
-The unique contact id of lead  
+The unique contact id of lead
 \(Required when lead belongs to contact and id parameter is missing\)
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="contact" type="object" required=false %}
+The data array of contact. See addOrUpdateContact API in contact namespace for parameters. See [assigning a company/contact to the lead](add-or-update-lead.md#assigning-a-company-contact-to-the-lead).
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="name" type="string" required=false %}
-The name for the lead  
+The name for the lead
 \(Required when the id parameter is missing\)
 {% endapi-method-parameter %}
 
@@ -56,12 +64,12 @@ The sales person id of lead
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="typeId" type="integer" required=false %}
-The type of lead  
+The type of lead
 \(Required when id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="stageId" type="integer" required=false %}
-The stage of lead  
+The stage of lead
 \(Required when id parameter is missing\)
 {% endapi-method-parameter %}
 
@@ -76,6 +84,11 @@ The channel Id of lead
 {% api-method-parameter name="description" type="string" required=false %}
 The description for the lead
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="customFields" type="array" required=false %}
+The custom field values of the lead. A custom field value might be required depending on how it has been configured in the account. See [Custom Field](add-or-update-lead.md#custom-field)
+{% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -92,6 +105,23 @@ The description for the lead
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Custom Field
+
+A lead custom field is an object with the following details.
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| fieldId | integer | required | The unique id of the lead custom field |
+| fieldValue | mixed | required | The value of the lead custom field. Depends on the type of custom field value. |
+
+## Special Considerations
+
+### Assigning a company/contact to the lead
+
+The _contact type_ of a lead is either a _company_ **or** a _contact_. When _companyId_ **or** _company_ is present in the request then the _contact type_ of the lead is set to _company_, and the _contactId_ **or** _contact_ must be a contact that belongs to that company. Otherwise the _contact type_ of the lead is set to _contact_ and contactId can be any valid contact in the account.
+
+If _contact_ and _company_ are present in request then it will link given contact to company.
 
 ## Returns
 
