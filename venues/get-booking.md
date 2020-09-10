@@ -940,6 +940,8 @@ One of the following values:
 | totalTaxAmount | double | The tax amount of the beverage package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | totalAttendees | integer | The minimum number of attendees for the beverage package |
+| smallDescription | double | The small description of the beverage package |
+| marketplaceName | double | The marketplace name of the beverage package |
 
 ## Resource
 
