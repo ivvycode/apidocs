@@ -259,6 +259,7 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 | notes | The notes of the payment |
 | chequeNumber | The chequeNumber of the payment |
 | paymentMethod | The payment method of the payment |
+| customPaymentMethodId | The id of the custom payment method of the payment |
 | paidDate | The paid timestamp of the payment |
 | feePercentage | The percentage fee included in amountPaid |
 | feeAmount | The fee amount included in amountPaid |
