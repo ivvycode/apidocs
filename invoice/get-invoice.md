@@ -59,6 +59,7 @@ The invoice identifier
             "notes": "",
             "chequeNumber": null,
             "paymentMethod": 1,
+            "customPaymentMethodId": null,
             "paidDate": "2018-06-11 06:06:42 UTC",
             "cardType": 3,
         }
