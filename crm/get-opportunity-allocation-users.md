@@ -6,7 +6,7 @@ Get Opportunity Allocation Users
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of ids and emails for users eligible for assigning to a Marketplace Lead based on the configured 
+Get a list of ids and emails for users eligible for assigning to a Marketplace Lead based on the configured
 Opportunity Allocation Rules. Results also include Notify Emails that are configured on the Opportunity Allocation Rule.
 {% endapi-method-description %}
 
@@ -36,12 +36,6 @@ The eventType of the opportunity to filter Opportunity Allocation Rules by.
 
 ```text
 {
-    "meta": {
-        "totalResults": 6,
-        "start": null,
-        "perPage": 100,
-        "count": 6
-    },
     "results": [
         {
             "id": 0,
@@ -75,7 +69,7 @@ The eventType of the opportunity to filter Opportunity Allocation Rules by.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all emails eligible for assigning to the opportunity, based on the Opportunity Allocation Rules that are configured for the opportunity's Venue. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all emails eligible for assigning to the opportunity, based on the Opportunity Allocation Rules that are configured for the opportunity's Venue. This call also accepts [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Example Request
 
@@ -83,8 +77,6 @@ The result from this call will be a [collection](../getting-started/interpreting
 
 ```javascript
 {
-    "perPage": 100,
-    "start": 0,
     "filter": {
         "eventType": 2,
         "estimatedValue": 50
