@@ -95,7 +95,8 @@ If _contact_ and _company_ are present in request then it will link given contac
   "contact" : {
       "firstName" : "First",
       "lastName" : "Last",
-      "email" : "email8@email.com"
+      "email" : "email8@email.com",
+      "updateIfExists" : true
   },
   "typeId": "18",
   "sourceId": "25",
