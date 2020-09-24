@@ -31,31 +31,30 @@ A json object that represents the opportunity to add or update. See below for th
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 ## Opportunity
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | id | integer | optional | The unique identifier of opportunity. A new opportunity will be created if this parameter is not present. |
 | venueId | integer | required | The unique id of the venue to which the opportunity belongs. |
-| name | string | optional | The name for the opportunity (Required when id is missing). |
+| name | string | optional | The name for the opportunity \(Required when id is missing\). |
 | description | string | optional | The description for the opportunity. |
-| companyId | integer | optional | The unique id of the company to assign to the opportunity. See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-booking). |
+| companyId | integer | optional | The unique id of the company to assign to the opportunity. See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-opportunity). |
 | company | object | optional | The data array of company. See addOrUpdateCompany API in contact namespace for parameters. |
-| companyLeadContactId | integer | optional | The unique id of the company contact to assign to the opportunity See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-booking). |
-| contactId | integer | optional | The unique id of the contact to assign to the opportunity See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-booking). |
+| companyLeadContactId | integer | optional | The unique id of the company contact to assign to the opportunity See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-opportunity). |
+| contactId | integer | optional | The unique id of the contact to assign to the opportunity See [assigning a company/contact to the opportunity](add-or-update-opportunity.md#assigning-a-company-contact-to-the-opportunity). |
 | contact | object | optional | The data array of contact. See addOrUpdateContact API in contact namespace for parameters. |
 | qualityId | integer | optional | The unique id of the quality. |
 | industryId | integer | optional | The unique id of industry. |
-| sourceId | integer | optional | The unique id of source (Required when the ID parameter is missing) |
+| sourceId | integer | optional | The unique id of source \(Required when the ID parameter is missing\) |
 | ownerUserId | integer | optional | The unique id of sales person to which the opportunity belongs. |
-| typeId | integer | optional | The unique id of type (Required when id is missing). |
+| typeId | integer | optional | The unique id of type \(Required when id is missing\). |
 | stageId | integer | optional | The unique id of stage. |
 | stageReasonId | integer | optional | The unique stage reason id of opportunity. |
 | channelId | integer | optional | The unique id of channel. |
-| referralContactId | integer | optional | The contact Id of referral for "Referral Program" source. (Required when the source is Referral Program and referralContact parameter is missing) |
+| referralContactId | integer | optional | The contact Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralContact parameter is missing\) |
 | referralContact | object | optional | The data array of contact. See addOrUpdateContact API in contact namespace for parameters. |
-| referralCompanyId | integer | optional | The company Id of referral for "Referral Program" source. (Required when the source is Referral Program and referralCompany parameter is missing) |
+| referralCompanyId | integer | optional | The company Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralCompany parameter is missing\) |
 | referralCompany | object | optional | The data array of company. See addOrUpdateCompany API in contact namespace for parameters. |
 | confirmedQuoteId | integer | optional | The unique if of confirmed quote to which the opportunity belongs. |
 | confirmedQuoteStatus | integer | optional | The status of the confirmed quote to which the opportunity belongs. |
@@ -91,12 +90,12 @@ If _contact_ and _company_ are present in request then it will link given contac
   "name": "Lead By API",
   "company" : {
         "businessName": "Business Name",
-  	"updateIfExists": true
+      "updateIfExists": true
   },
   "contact" : {
-  	"firstName" : "First",
-  	"lastName" : "Last",
-  	"email" : "email8@email.com"
+      "firstName" : "First",
+      "lastName" : "Last",
+      "email" : "email8@email.com"
   },
   "typeId": "18",
   "sourceId": "25",
