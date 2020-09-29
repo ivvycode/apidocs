@@ -219,6 +219,7 @@ A collection object with the following properties in the results
 
 | Property | Description |
 | :--- | :--- |
+| id | The identifier of the item |
 | description | The description of the item |
 | quantity | Quantity of the item |
 | unitCost | The unit cost of the item |
