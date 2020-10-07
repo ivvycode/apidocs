@@ -144,6 +144,7 @@ The following booking status options are supported when adding a new booking.
 | 1 | Prospective |
 | 2 | Tentative |
 | 3 | Confirmed |
+| 5 | Ordering |
 
 ## Accommodation Charging Methods
 
