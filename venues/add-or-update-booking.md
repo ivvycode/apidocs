@@ -124,6 +124,7 @@ Something unexpected occurred whilst processing the request. The booking should 
 | bookingRoleUserId4 | string | optional | The unique id of the account user assigned to the booking role label 4 |
 | bookingRoleUserId5 | string | optional | The unique id of the account user assigned to the booking role label 5 |
 | customFields | array of [Custom Field](add-or-update-booking.md#custom-field) | optional | The custom field values of the booking. A custom field value might be required depending on how it has been configured in the venue's account. |
+| discountCode | string | optional | The discount code applied to the booking |
 
 ## Booking Type
 
