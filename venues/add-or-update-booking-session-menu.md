@@ -24,8 +24,7 @@ A successful response to an add or update operation. NOTE: Additional warnings m
 ```javascript
 {
   "success": true,
-  "id": 1234,
-  "warnings": []
+  "id": 1234
 }
 ```
 {% endapi-method-response-example %}

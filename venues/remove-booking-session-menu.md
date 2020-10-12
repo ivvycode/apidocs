@@ -39,8 +39,7 @@ Successfully removing an blockout space from a function diary.
 ```javascript
 {
   "success": true,
-  "id": 1234,
-  "errorType": null
+  "id": 1234
 }
 ```
 {% endapi-method-response-example %}
