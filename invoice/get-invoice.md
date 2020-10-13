@@ -260,11 +260,11 @@ A collection object with the following properties in the results
 | Property | Description |
 | :--- | :--- |
 | taxId | The identifier of the tax |
-| amount | The tax amount for the tax id |
-| taxRateId | The override tax identifier if override rate was used to calculate the tax |
+| amount | The amount of tax |
+| taxRateId | The identifier of the rate that overrided the default tax rate. Zero (0) when the default tax rate is not overridden |
 | taxRateAmount | The rate at which the tax was calculated |
-| taxRateAmountType | The tax rate amount type. 1 = Percent Type.  2 = Amount Type |
-| costcenterId | The unique identifier of the cost center to which the tax belongs |
+| taxRateAmountType | The tax rate amount type: 1 = A percentage, 2 = An amount |
+| costcenterId | The identifier of the cost center to which the tax applies |
 
 ## Item Ref Type
 
