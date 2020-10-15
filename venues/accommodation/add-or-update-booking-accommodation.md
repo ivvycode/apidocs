@@ -117,7 +117,7 @@ Invalid request data that prevents the accommodation group from being added/upda
 | price | number | required | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured |
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from price |
 | costcenterId | integer | optional | The unique id of the cost center assigned to the additional option |
-| numPayableByGuest | integer | required | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| numPayableByGuest | integer | optional | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\). |
 
 ## Notes on updating an accommodation group
 
