@@ -64,6 +64,11 @@ The id of the booking
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
   "otaFolioRef": "ven1234",
+  "accommReservationMethod": [
+        1,
+        2,
+        3
+  ],
   "accommCutOffDate": "2019-12-04 00:00:00 UTC",
   "accommCancellationDate": "2019-01-11 00:00:00 UTC",
   "accommChargingMethod": 2,
@@ -754,6 +759,7 @@ The result from this call will be the details of a specific booking to which the
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | otaFolioRef | string | The recorded Folio ID of a booking. |
+| accommReservationMethod | [Reservation Method](add-or-update-booking.md#accommodation-reservation-methods) | optional | The method by which attendees will reserve rooms from the accommodation blocks on the booking. Only applies when the booking includes accommodation. |
 | accommCutOffDate | [timestamp](../development-reference/timestamp-format.md) | After this date no more reservations may be made against the Block for the entire date range. |
 | accommCancellationDate | [timestamp](../development-reference/timestamp-format.md) | The last date a customer can cancel their Group Accommodation without financial penalty. |
 | accommChargingMethod | enum \([Charging Method](get-booking.md#get-booking.md#charging-method)\) | A record of the Charging Method for Documents, Note that values will still need to be altered in the Block. |
