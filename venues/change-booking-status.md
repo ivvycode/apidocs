@@ -21,7 +21,7 @@ The unique id of the venue to which the booking belongs
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="accountId" type="integer" required=true %}
-The unique id of the booking to which the refund will be added
+The unique id of the booking to which the booking status will be added
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currentStatus" type="integer" required=true %}
