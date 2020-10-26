@@ -78,9 +78,9 @@ Something unexpected occurred whilst processing the request. The booking session
 | startTime | string | optional | The start time of the booking session beverage package. Format is HH:mm:ss |
 | endTime | string | optional | The end time of the booking session beverage package. Format is HH:mm:ss |
 | includeInPackage | boolean | optional | Whether or not the booking session beverage package is included in booking package. |
-| bookingPackageId | integer | optional | The unique id of the booking package to which the booking session booking package belongs. Required when includeInPackage is true. |
-| costcenterId | integer | optional | The unique id of the cost center to which the booking session booking package belongs. Required when adding new booking session booking package. |
-| cost | double | optional | The price of the booking session booking package. Required when includeInPackage is false. |
+| bookingPackageId | integer | optional | The unique id of the booking package to which the booking session beverage package belongs. Required when includeInPackage is true. |
+| costcenterId | integer | optional | The unique id of the cost center to which the booking session beverage package belongs. Required when adding new booking session beverage package. |
+| cost | double | optional | The price of the booking session beverage package. Required when includeInPackage is false. |
 | excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session beverage package. Required when includeInPackage is false. |
 | costPeriod | integer | optional | The period of the cost of the booking session beverage package. Required when the selected beverage package is hourly. 1 = Hourly, 2 = Daily |
 | numHours | float | optional | The number of hours of the booking session beverage needed. Required when the cost period is hourly. The value must match with one of the hours added in Venue Setup > Beverages > Packages > Hourly Prices. For example, for 3 hours and 45 minutes, pass 3.75. |
