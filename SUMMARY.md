@@ -91,6 +91,8 @@
   * [Get Beverage Packages](venues/get-beverage-package-list.md)
   * [Add or Update Guest Room](venues/add-or-update-guest-room.md)
   * [Add or Update Function Space Category](venues/add-or-update-function-space-category.md)
+  * [Add or Update Booking Session](venues/add-or-update-booking-session.md)
+  * [Remove Booking Session](venues/remove-booking-session.md)
   * [Add or Update Booking Session Menu](venues/add-or-update-booking-session-menu.md)
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
