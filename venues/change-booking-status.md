@@ -6,54 +6,54 @@ Change Booking Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Updates the current status of the booking
+Changes the current status of a venue booking.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=true %}
-The unique id of the booking to be updated
+The unique id of the booking whose status will be changed.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="venueId" type="integer" required=true %}
-The unique id of the venue to which the booking belongs
+The unique id of the venue to which the booking belongs.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currentStatus" type="integer" required=true %}
-The status to assign the booking. See [Current Status](change-booking-status.md#booking-status).
+The new status to assign the booking. See [Current Status](change-booking-status.md#booking-status).
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="changedByUserId" type="integer" required=true %}
-The unique id of the account user who is changing the status of the booking.
+{% api-method-parameter name="changedByUserId" type="integer" required=false %}
+The unique id of the user who changed the status of the booking.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelStageId" type="integer" required=false %}
-The id of the cancel stage. Required when booking is being cancelled and current status is prospective.
+The id of the stage to assign to the opportunity when cancelling a quote (i.e. changing from prospective to cancelled).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelReasonId" type="integer" required=false %}
-The id of the cancel reason. It should be one of the reason of cancelStageId. Required when booking is being cancelled.
+The id of the stage reason to assign to the opportunity/booking being cancelled. When cancelling a quote (i.e. changing from prospective to cancelled), the value must belong to the "cancelStageId" stage. When cancelling a booking, the value must belong to the "cancelled" stage.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelLostToCompetition" type="string" required=false %}
-The description for cancelling the booking
+A description of how the cancelled booking was lost to competition.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelClosedDate" type="Date" required=false %}
-The date when booking was cancelled. Required when booking is being cancelled
+The date when booking was cancelled. Required when the booking status is changing to cancelled.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="convertedStageId" type="integer" required=false %}
-The id of the stage. This stage will be assigned to associated opportunity. Required when booking is converted to Confirmed, Tentative or Prospective.
+The id of the stage to assign to the opportunity to which the booking belongs. Required when changing the status to anything but cancelled.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="convertedStageReasonId" type="integer" required=false %}
-The id of the stage reason. This stage reason will be assigned to associated opportunity.
+The id of the stage reason to assign to the opportunity to which the booking belongs. Can be set when changing the status to anything but cancelled.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="marketplaceStageReasonType" type="integer" required=false %}
-This is the official regretted reason that will be sent to the booker when the opportunity is regretted. Required when convertedStageId is regretted. See [Marketplace Stage Reason Type](change-booking-status.mb#marketplace-stage-reason-type).
+This is the official regretted reason that will be sent to the booker when the opportunity is regretted. Required when "convertedStageId" is the regretted stage. See [Marketplace Stage Reason Type](change-booking-status.mb#marketplace-stage-reason-type).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="convertedClosedDate" type="Date" required=false %}
