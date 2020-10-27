@@ -20,12 +20,12 @@ The unique id of the booking to be updated
 The unique id of the venue to which the booking belongs
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="accountId" type="integer" required=true %}
-The unique id of the booking to which the booking status will be added
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="currentStatus" type="integer" required=true %}
 The status to assign the booking. See [Current Status](change-booking-status.md#booking-status).
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="changedByUserId" type="integer" required=true %}
+The unique id of the account user who is changing the status of the booking.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelStageId" type="integer" required=false %}
@@ -56,15 +56,9 @@ The id of the stage reason. This stage reason will be assigned to associated opp
 This is the official regretted reason that will be sent to the booker when the opportunity is regretted. Required when convertedStageId is regretted. See [Marketplace Stage Reason Type](change-booking-status.mb#marketplace-stage-reason-type).
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="cancelClosedDate" type="Date" required=false %}
-The date when booking was closed. Required when booking is being closed (ie. Stage is either won or lost).
+{% api-method-parameter name="convertedClosedDate" type="Date" required=false %}
+The date when quote (ie. prospective) is being converted to booking (ie. Tentative or Confirmed). Required when booking is being closed (ie. Prospective to Tentative or Confirmed and lead stage is either won or lost).
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="paymentTermId" type="integer" required=false %}
-The id of the payment term to add payment term in booking. It will not change anything if booking already have a payment term.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
