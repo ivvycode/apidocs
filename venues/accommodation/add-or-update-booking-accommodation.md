@@ -76,7 +76,7 @@ Invalid request data that prevents the accommodation group from being added/upda
 | bookingDate | date | true | The actual date of the accommodation group to which the rate applies |
 | numRooms | integer | true | The actual number of rooms booked on bookingDate |
 | cost | number | true | The actual rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
-| numPayableByGuest | integer | true | The actual number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| numPayableByGuest | integer | false | The actual number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
 ## Booking Accommodation Day Rates Forecast
 
@@ -85,7 +85,7 @@ Invalid request data that prevents the accommodation group from being added/upda
 | bookingDate | date | true | The forecast date of the accommodation group to which the rate applies |
 | numRooms | integer | true | The forecast number of rooms booked on bookingDate |
 | cost | number | true | The forecast rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
-| numPayableByGuest | integer | true | The forecast number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| numPayableByGuest | integer | false | The forecast number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
 ## Booking Accommodation Day Rates Net
 
@@ -104,7 +104,7 @@ Invalid request data that prevents the accommodation group from being added/upda
 | bookingDate | date | true | The date of the accommodation group to which the rate applies |
 | numRooms | integer | true | The number of rooms booked on bookingDate |
 | cost | number | true | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
-| numPayableByGuest | integer | true | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| numPayableByGuest | integer | false | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 
 ## Booking Accommodation Room Option
 
@@ -117,68 +117,68 @@ Invalid request data that prevents the accommodation group from being added/upda
 | price | number | required | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured |
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from price |
 | costcenterId | integer | optional | The unique id of the cost center assigned to the additional option |
-| numPayableByGuest | integer | required | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| numPayableByGuest | integer | optional | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\). |
 
 ## Notes on updating an accommodation group
 
 Updating an existing accommodation group **overlays** the existing data. Optional request data that is excluded will not change existing data. This does not guarantee that the request data will validate if other data is changed. For example, if the end date of the accommodation is extended, rates for the **new** dates will be required.
 
-If the start and/or end dates of the accommodation group change:  
-\* Any existing rates on dates that no longer apply \(i.e. _bookingDate_ is outside the new group dates\) will be removed.  
-\* Any existing room options on dates that no longer apply \(i.e. _bookingDate_ is outside the new group dates\) will be removed.  
-\* Rates for any new dates are required.  
+If the start and/or end dates of the accommodation group change:
+\* Any existing rates on dates that no longer apply \(i.e. _bookingDate_ is outside the new group dates\) will be removed.
+\* Any existing room options on dates that no longer apply \(i.e. _bookingDate_ is outside the new group dates\) will be removed.
+\* Rates for any new dates are required.
 \* If the accommodation group dates extend beyond the accommodation dates of the booking \(to which the group belongs\) then the booking's accommodation dates will be adjusted to include the new date range.
 
-Day rates override existing data based on the _bookingDate_ value in the request. For example, to change the rate on 23/12/2019:  
-`{    
-"bookingDate": "2019-12-23",    
-"numRooms": 5,    
-"cost": 180,    
-"numPayableByGuest": 0    
+Day rates override existing data based on the _bookingDate_ value in the request. For example, to change the rate on 23/12/2019:
+`{
+"bookingDate": "2019-12-23",
+"numRooms": 5,
+"cost": 180,
+"numPayableByGuest": 0
 }`
 
 Room options override existing data based on the _roomOptionId_ and _bookingDate_ values in the request.
 
-The same room option can only be added to the accommodation group once \(this also applies when adding an accommodation group\). If a room option appears multiple times in the request for the same date, the last value is used. For example:  
-`"roomOptions": [    
-{    
-"bookingDate", "2019-01-01",    
-"roomOptionId": 124,    
-"numRooms": 4,    
-"numOptionsPerRoom": 1,    
-"price": 25,    
-"excludedTaxIds": [],    
-"numPayableByGuest": 0    
-},    
-{    
-"bookingDate", "2019-01-01",    
-"roomOptionId": 124,    
-"numRooms": 6,    
-"numOptionsPerRoom": 2,    
-"price": 30,    
-"excludedTaxIds": [],    
-"numPayableByGuest": 0    
-}    
-]`  
+The same room option can only be added to the accommodation group once \(this also applies when adding an accommodation group\). If a room option appears multiple times in the request for the same date, the last value is used. For example:
+`"roomOptions": [
+{
+"bookingDate", "2019-01-01",
+"roomOptionId": 124,
+"numRooms": 4,
+"numOptionsPerRoom": 1,
+"price": 25,
+"excludedTaxIds": [],
+"numPayableByGuest": 0
+},
+{
+"bookingDate", "2019-01-01",
+"roomOptionId": 124,
+"numRooms": 6,
+"numOptionsPerRoom": 2,
+"price": 30,
+"excludedTaxIds": [],
+"numPayableByGuest": 0
+}
+]`
 _roomOptionId_ 124 on 01/01/2019 will have: numRooms 6, numOptionsPerRoom 2, price 30 etc.
 
-To remove room options from an accommodation group, pass zero values as follows:  
-`{    
-"bookingDate": "2019-01-01",    
-"roomOptionId": 124,    
-"numRooms": 0,    
-"numOptionsPerRoom": 0,    
-"price": 0,    
-"excludedTaxIds": [],    
-"numPayableByGuest": 0    
+To remove room options from an accommodation group, pass zero values as follows:
+`{
+"bookingDate": "2019-01-01",
+"roomOptionId": 124,
+"numRooms": 0,
+"numOptionsPerRoom": 0,
+"price": 0,
+"excludedTaxIds": [],
+"numPayableByGuest": 0
 }`
 
-The _numRooms_ & _numPayableByGuest_ values of a room option cannot exceed the _numRooms_ value on the same _bookingDate_. For example, if the following day rate exists:  
-`{    
-"bookingDate": "2019-12-23",    
-"numRooms": 5,    
-"cost": 180,    
-"numPayableByGuest": 0    
-}`  
+The _numRooms_ & _numPayableByGuest_ values of a room option cannot exceed the _numRooms_ value on the same _bookingDate_. For example, if the following day rate exists:
+`{
+"bookingDate": "2019-12-23",
+"numRooms": 5,
+"cost": 180,
+"numPayableByGuest": 0
+}`
 Then the _numRooms_ & _numPayableByGuest_ values of any room option on 23/12/2019 cannot exceed 5. It is possible to update an existing accommodation group and either decrease or increase _numRooms_ of the day rate. If the day rate _numRooms_ is decreased, all existing room options that exceed the new value will also be decreased. If the day rate _numRooms_ is increased, no existing room options are modified \(unless the new values are passed in the request\).
 
