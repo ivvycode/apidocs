@@ -46,16 +46,16 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-	"venueId": 1,
-	"items": [
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-01",
-			"roomId": 2,
-			"barId": 1,
-			"cost": 100
-		}
-	]
+    "venueId": 1,
+    "items": [
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-01",
+            "roomId": 2,
+            "barId": 1,
+            "cost": 100
+        }
+    ]
 }
 ```
 
@@ -63,37 +63,37 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-	"venueId": 1,
-	"items": [
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 2,
-			"barId": 1,
-			"cost": 100
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 2,
-			"barId": 147,
-			"cost": 150
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 3,
-			"barId": 1,
-			"cost": 100
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 3,
-			"barId": 147,
-			"cost": 100
-		}
-	]
+    "venueId": 1,
+    "items": [
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 2,
+            "barId": 1,
+            "cost": 100
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 2,
+            "barId": 147,
+            "cost": 150
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 3,
+            "barId": 1,
+            "cost": 100
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 3,
+            "barId": 147,
+            "cost": 100
+        }
+    ]
 }
 ```
 
@@ -109,6 +109,7 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 | :--- | :--- | :--- | :--- |
 | barId | integer | required | The unique id of the rate plan to which the dynamic rate applies |
 | roomId | integer | required | The unique id of the room to which the rate applies |
-| startDate | date | required | The start date from which the dynamic rate will be set (Date Format) |
-| endDate | date | required | The end date from which the dynamic rate will be set (Date Format) |
+| startDate | date | required | The start date from which the dynamic rate will be set \(Date Format\) |
+| endDate | date | required | The end date from which the dynamic rate will be set \(Date Format\) |
 | cost | integer | required | The rate amount from startDate to endDate. The amount must either include or exclude tax depending on how the venue has been configured |
+

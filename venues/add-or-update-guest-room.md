@@ -12,7 +12,6 @@ Add or Update Guest Room
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-
 {% api-method-parameter name="id" type="integer" required=false %}
 The unique id of the guest room
 {% endapi-method-parameter %}
@@ -64,8 +63,7 @@ Whether or not venue room is active on marketplace.
 {% api-method-parameter name="marketplaceName" type="bool" required=true %}
 Whether or not venue room is active on marketplace.
 {% endapi-method-parameter %}
-
-{% endapi-method-path-parameters %} 
+{% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -131,3 +129,4 @@ Whether or not venue room is active on marketplace.
 | Specific Code: 24313 | An error has occurred |
 | Specific Code: 24314 | The request contains invalid data |
 | Specific Code: 24315 | An unknown error has occurred |
+

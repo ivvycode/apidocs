@@ -49,7 +49,7 @@ The company's email address
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="address" type="string" required=false %}
-The company's address. 
+The company's address.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="primaryAccountManagerId" type="integer" required=false %}

@@ -92,20 +92,20 @@ The company's identifier
 | email | The company's email address |
 | address | The company’s address. This is an an object with the [keys](get-company.md#keys) |
 | modifiedDate | The modified date of the company |
-| primaryAccountManager | The primary account manager of the company. This is an an object with the [keys](get-company.md#primaryaccountmanager)  |
-| secondaryAccountManager | The secondary account manager of the company. This is an an object with the [keys](get-company.md#secondaryaccountmanager)  |
-| industry | The industry of the company. This is an an object with the [keys](get-company.md#industry)  |
+| primaryAccountManager | The primary account manager of the company. This is an an object with the [keys](get-company.md#primaryaccountmanager) |
+| secondaryAccountManager | The secondary account manager of the company. This is an an object with the [keys](get-company.md#secondaryaccountmanager) |
+| industry | The industry of the company. This is an an object with the [keys](get-company.md#industry) |
 | primaryContact | The primary contact of the company. This is an an object with the [keys](get-company.md#primarycontact) |
-| commissionSpace | The commission amount of the company space.|
-| commissionSpaceType | The commission amount type of the company space.|
-| commissionFoodValue | The commission amount of the company food.|
-| commissionFoodType | The commission amount type of the company food.|
-| commissionBeverageValue | The commission amount of the company beverage.|
-| commissionBeverageType | The commission amount type of the company beverage.|
-| commissionAudioVisualValue | The commission amount of the company audio visual.|
-| commissionAudioVisualType | The commission amount type of the company audio visual.|
-| commissionAccommodationValue | The commission amount of the company accommodation.|
-| commissionAccommodationType | The commission amount type of the accommodation.|
+| commissionSpace | The commission amount of the company space. |
+| commissionSpaceType | The commission amount type of the company space. |
+| commissionFoodValue | The commission amount of the company food. |
+| commissionFoodType | The commission amount type of the company food. |
+| commissionBeverageValue | The commission amount of the company beverage. |
+| commissionBeverageType | The commission amount type of the company beverage. |
+| commissionAudioVisualValue | The commission amount of the company audio visual. |
+| commissionAudioVisualType | The commission amount type of the company audio visual. |
+| commissionAccommodationValue | The commission amount of the company accommodation. |
+| commissionAccommodationType | The commission amount type of the accommodation. |
 
 ## Keys
 

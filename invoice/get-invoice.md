@@ -257,11 +257,12 @@ A collection object with the following properties in the results
 | taxes | The taxes applied to the item. Some information in the tax item might be empty if information is not available. ie. for old invoices. See Item Taxes Details for the data in each tax item |
 
 ## Item Taxes Details
+
 | Property | Description |
 | :--- | :--- |
 | taxId | The identifier of the tax |
 | amount | The amount of tax |
-| taxRateId | The identifier of the rate that overrided the default tax rate. Zero (0) when the default tax rate is not overridden |
+| taxRateId | The identifier of the rate that overrided the default tax rate. Zero \(0\) when the default tax rate is not overridden |
 | taxRateAmount | The rate at which the tax was calculated |
 | taxRateAmountType | The tax rate amount type: 1 = A percentage, 2 = An amount |
 | costcenterId | The identifier of the cost center to which the tax applies |

@@ -1,4 +1,4 @@
-# Get Booking Note List
+# Get Booking Notes
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingNoteList" path="" %}
 {% api-method-summary %}
@@ -80,10 +80,11 @@ The result from this call will be a [collection](../getting-started/interpreting
 ```javascript
 {
   "venueId": "1",
-	"bookingId": "7192",
-	"perPage": "50",
+    "bookingId": "7192",
+    "perPage": "50",
 }
 ```
+
 ## Booking Notes
 
 | Property | Type | Description |
@@ -154,3 +155,4 @@ One of the following values:
 | description | Filter by description of notes type | string |
 | typeId | Filter by unique id of notes type | integer |
 | createdBy | Filter by user who created note | integer |
+

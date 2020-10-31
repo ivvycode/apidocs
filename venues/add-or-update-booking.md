@@ -6,8 +6,7 @@ Add or Update Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Adds or updates the details of a venue booking.
-NOTE: The venue must have access to _normal bookings_ in order to call this api action.
+Adds or updates the details of a venue booking. NOTE: The venue must have access to _normal bookings_ in order to call this api action.
 {% endapi-method-description %}
 
 {% api-method-spec %}

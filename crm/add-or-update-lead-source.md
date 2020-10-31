@@ -13,13 +13,11 @@ Add or Update Lead Source
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the lead source
-\(Leave empty if adding a new lead source\)
+The unique id of the lead source \(Leave empty if adding a new lead source\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
-The name of the crm lead source
-\(Required when the ID parameter is missing\)
+The name of the crm lead source \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cost" type="string" required=false %}

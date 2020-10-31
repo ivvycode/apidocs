@@ -13,18 +13,15 @@ Add or Update Activity Purpose
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the activity purpose
-\(Leave empty if adding a new activity purpose\)
+The unique id of the activity purpose \(Leave empty if adding a new activity purpose\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
-The name of the event activity purpose
-\(Required when the ID parameter is missing\)
+The name of the event activity purpose \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="integer" required=false %}
-The [type](add-or-update-activity-purpose.md#activity-purpose-type) of the event activity purpose
-\(Required when the ID parameter is missing\)
+The type of the event activity purpose \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}

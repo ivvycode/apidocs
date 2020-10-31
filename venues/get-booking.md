@@ -1125,3 +1125,4 @@ One of the following values:
 | 4 | Coffee Break |
 | 5 | Reception |
 | 6 | Outside Catering |
+

@@ -6,8 +6,7 @@ Add or Update Booking Session Beverage
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Adds or updates the details of a venue booking session beverages.
-NOTE: The venue must have access to add or update booking session beverage in order to call this api action.
+Adds or updates the details of a venue booking session beverages. NOTE: The venue must have access to add or update booking session beverage in order to call this api action.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -83,11 +82,10 @@ Something unexpected occurred whilst processing the request. The booking session
 | cost | double | optional | The price of the booking session beverage package. Required when includeInPackage is false. |
 | excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session beverage package. Required when includeInPackage is false. |
 | costPeriod | integer | optional | The period of the cost of the booking session beverage package. Required when the selected beverage package is hourly. 1 = Hourly, 2 = Daily |
-| numHours | float | optional | The number of hours of the booking session beverage needed. Required when the cost period is hourly. The value must match with one of the hours added in Venue Setup > Beverages > Packages > Hourly Prices. For example, for 3 hours and 45 minutes, pass 3.75. |
+| numHours | float | optional | The number of hours of the booking session beverage needed. Required when the cost period is hourly. The value must match with one of the hours added in Venue Setup &gt; Beverages &gt; Packages &gt; Hourly Prices. For example, for 3 hours and 45 minutes, pass 3.75. |
 | sortOrder | integer | optional | The sort order of the booking session beverage package. |
 | excludedFromCommissions | boolean | optional | Whether this booking session beverage excluded from commission. Only applicable when booking is commissionable. Default is true. |
-| items | array | optional | The array of beverage package items that shoud be added to beverage package. See [Beverage Item](add-or-update-booking-session-beverage.md#beverage-item) section for details of each item|
-
+| items | array | optional | The array of beverage package items that shoud be added to beverage package. See [Beverage Item](add-or-update-booking-session-beverage.md#beverage-item) section for details of each item |
 
 ## Beverage Item
 
@@ -98,14 +96,11 @@ A booking session beverage item is an object with the following details.
 | itemId | integer | required | The unique id of the beverage item |
 | name | string | optional | The name of the beverage item. Do not pass it to automatically set the name from setup |
 | quantity | integer | optional | The quantity of the beverage item. Do not pass it to automatically set the quantity from setup |
-| price | double | optional | The price of the *optional* beverage item. |
-
+| price | double | optional | The price of the _optional_ beverage item. |
 
 ### Adding/Updating items
 
 While adding you can skip the items parameter, this will add all the non-optional beverge items to the beverage package automatically. Passing items will only add those items to the beverage package including any required non-removable items.
 
 While updating you can skip the items parameter, this will not change any of the items. Passing items will replace the items with the given items. Required non-removable items cannot be removed from the beverage package.
-
-
 
