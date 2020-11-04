@@ -48,18 +48,16 @@ The company's identifier
   "secondaryAccountManager": "Test User",
   "industry": "Industry Name",
   "primaryContact": "Test User",
-  "agentcommission": {
-      "commissionRoomHireValue": 123,
-      "commissionRoomHireType": "CHF",
-      "commissionFoodValue": 222,
-      "commissionFoodType": "CHF",
-      "commissionBeverageValue": 333,
-      "commissionBeverageType": "CHF",
-      "commissionAudioVisualValue": 444,
-      "commissionAudioVisualType": "CHF",
-      "commissionAccommodationValue": 555,
-      "commissionAccommodationType": "CHF"
-  }
+  "commissionRoomHireValue": 123,
+  "commissionRoomHireType": "CHF",
+  "commissionFoodValue": 222,
+  "commissionFoodType": "CHF",
+  "commissionBeverageValue": 333,
+  "commissionBeverageType": "CHF",
+  "commissionAudioVisualValue": 444,
+  "commissionAudioVisualType": "CHF",
+  "commissionAccommodationValue": 555,
+  "commissionAccommodationType": "CHF"
 }
 ```
 {% endapi-method-response-example %}
