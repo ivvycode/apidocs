@@ -57,7 +57,8 @@ The company's identifier
   "commissionAudioVisualValue": 444,
   "commissionAudioVisualType": "CHF",
   "commissionAccommodationValue": 555,
-  "commissionAccommodationType": "CHF"
+  "commissionAccommodationType": "CHF",
+  "iataNumber": "123456789"
 }
 ```
 {% endapi-method-response-example %}
@@ -104,6 +105,7 @@ The company's identifier
 | commissionAudioVisualType | The commission amount type of the company audio visual. |
 | commissionAccommodationValue | The commission amount of the company accommodation. |
 | commissionAccommodationType | The commission amount type of the accommodation. |
+| iataNumber | The IATA number of commission payable to the agent. |
 
 ## Keys
 

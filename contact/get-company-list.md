@@ -74,6 +74,7 @@ The starting result of the page. Not this is zero based \(i.e. sending start = 0
 | commissionAudioVisualType | The commission amount type of the company audio visual. |
 | commissionAccommodationValue | The commission amount of the company accommodation. |
 | commissionAccommodationType | The commission amount type of the accommodation. |
+| iataNumber | The IATA number of commission payable to the agent. |
 
 ## Keys
 
