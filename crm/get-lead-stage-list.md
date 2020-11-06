@@ -29,8 +29,23 @@ Get a list of lead stages.
     "results": [
         {
             "id": 1,
-            "name": "Quoted"
-        }
+            "name": "Quoted",
+            "reasons": []
+        },
+        {
+            "id": 6,
+            "name": "Won",
+            "reasons": [
+                {
+                    "id": 11,
+                    "reason": "Price under budget"
+                },
+                {
+                    "id": 12,
+                    "reason": "Repeat client"
+                }
+            ]
+        },
     ]
 }
 ```
