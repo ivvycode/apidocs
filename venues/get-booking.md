@@ -123,7 +123,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -137,7 +140,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -151,7 +157,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -165,7 +174,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         }
@@ -173,7 +185,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 109.091
+          "tax": 109.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "smallDescription": "Package Small Description"
@@ -205,7 +220,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 4.545
+          "tax": 4.545,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "totalAttendees": 2000,
@@ -237,7 +255,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 27.273
+          "tax": 27.273,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "totalAttendees": 2000,
@@ -268,7 +289,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 190.909
+          "tax": 190.909,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "totalAttendees": 2000,
@@ -298,7 +322,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.455
+          "tax": 0.455,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0          ,
         }
       ]
     }
@@ -323,7 +350,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 9.091
+          "tax": 9.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     }
@@ -351,7 +381,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 9.091
+          "tax": 9.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "dayTaxDetails": []
@@ -376,7 +409,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 9.999
+          "tax": 9.999,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "dayTaxDetails": [
@@ -385,7 +421,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 3.333333
+              "tax": 3.333333,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -394,7 +433,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 3.333333
+              "tax": 3.333333,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -403,7 +445,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 3.333333
+              "tax": 3.333333,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         }
@@ -428,7 +473,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.333
+          "tax": 0.333,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -449,7 +497,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.333
+          "tax": 0.333,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -470,7 +521,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.333
+          "tax": 0.333,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -491,7 +545,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -512,7 +569,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -533,7 +593,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -554,7 +617,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -575,7 +641,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.455
+          "tax": 0.455,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -596,7 +665,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -617,7 +689,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 19.091
+          "tax": 19.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -638,7 +713,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.909
+          "tax": 0.909,
+          "rateId": 2,
+          "rateAmount": 6,
+          "rateAmountType": 2
         }
       ]
     },
@@ -659,7 +737,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.046
+          "tax": 0.046,
+          "rateId": 1,
+          "rateAmount": 5,
+          "rateAmountType": 1
         }
       ]
     },
@@ -1037,6 +1118,9 @@ One of the following values:
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of tax in venue |
 | tax | double | The amount of tax applied |
+| rateId | integer  | The identifier of the rate that overrided the default tax rate. Zero (0) when the default tax rate is not overridden |
+| rateAmount | double | The rate at which the tax was calculated |
+| rateAmountType | integer | The rate type of the tax.  1 = A percentage, 2 = An amount |
 
 ## Day Tax Detail
 
