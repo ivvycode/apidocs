@@ -36,7 +36,7 @@ The id of the venue
         {
             "id": 3,
             "venueId": 1,
-            "name": "External Resource (Daily)",
+            "name": "Resource 1",
             "code": "",
             "categoryId": 1,
             "shortDescription": "",
@@ -55,7 +55,7 @@ The id of the venue
         {
             "id": 24,
             "venueId": 1,
-            "name": "Inernal Resource",
+            "name": "Resource 2",
             "code": "",
             "categoryId": 1,
             "shortDescription": "",
