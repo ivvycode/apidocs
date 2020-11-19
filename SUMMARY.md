@@ -96,6 +96,8 @@
   * [Add or Update Booking Session Menu](venues/add-or-update-booking-session-menu.md)
   * [Add or Update Booking Session Beverage](venues/add-or-update-booking-session-beverage.md)
   * [Remove Booking Session Beverage](venues/remove-booking-session-beverage.md)
+  * [Get Resources](venues/get-resource-list.md)
+  * [Get Resource Availability](venues/get-resource-availability.md)
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
   * [Get Venue](partner/get-venue.md)
