@@ -27,7 +27,6 @@ The end date of the period from which to include the resource availability detai
 {% api-method-parameter name="resourceIds" type="array" required=true %}
 The end date of the period from which to include the resource availability details.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -88,3 +87,4 @@ The end date of the period from which to include the resource availability detai
 | :--- | :--- |
 | id | The unique resource identifier |
 | unAvailableTimes | The unavailable date time ranges |
+
