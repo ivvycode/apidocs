@@ -36,6 +36,10 @@ The company's registration number
 The company's phone number
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="otherPhone" type="string" required=false %}
+The company's other phone number
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="fax" type="string" required=false %}
 The company's fax number
 {% endapi-method-parameter %}

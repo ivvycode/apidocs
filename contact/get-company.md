@@ -32,6 +32,7 @@ The company's identifier
   "businessNumber": "1234586",
   "email": "company@test.com",
   "phone": "0455550000",
+  "otherPhone": "123456789",
   "fax": "0455550125",
   "website": "www.test.com",
   "address": {
@@ -71,7 +72,7 @@ The company's identifier
 `Get a specific company`
 
 ```javascript
-{ 
+{
   "id":6
 }
 ```
@@ -86,6 +87,7 @@ The company's identifier
 | tradingName | The company's trading name |
 | businessNumber | The company's registration number |
 | phone | The company's phone number |
+| otherPhone | The company's other phone number |
 | fax | The company's fax number |
 | website | The company's website |
 | email | The company's email address |
