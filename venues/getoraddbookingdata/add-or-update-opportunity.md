@@ -47,7 +47,7 @@ A json object that represents the opportunity to add or update. See below for th
 | qualityId | integer | optional | The unique id of the quality. |
 | industryId | integer | optional | The unique id of industry. |
 | sourceId | integer | optional | The unique id of source \(Required when the ID parameter is missing\) |
-| ownerUserId | integer | optional | The unique id of sales person to which the opportunity belongs. |
+| ownerUserId | integer | optional | The id of the sales person user assigned to the opportunity. The privileges of the user assigned to the api key may prevent this from being changed. |
 | typeId | integer | optional | The unique id of type \(Required when id is missing\). |
 | stageId | integer | optional | The unique id of stage. |
 | stageReasonId | integer | optional | The unique stage reason id of opportunity. |
