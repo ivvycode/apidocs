@@ -27,6 +27,7 @@ The end date of the period from which to include the function space availability
 {% api-method-parameter name="allowsLiveBook" type="boolean" required=false %}
 Use this to filter venues that do, or do not, allow live bookings
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -119,13 +120,17 @@ Use this to filter venues that do, or do not, allow live bookings
 
 ## Example Request
 
-Example: Fetch the 2nd batch of 100 venues visible in the marketplace. Include their availability from 1st July 2015 to 7th July 2015
+Example: Fetch the 2nd batch of 100 venues visible in the marketplace. Include their availability from 1st July 2015 to 7th July 2015, optionally filter by state code and city name.
 
 ```javascript
 {
   "start": 100,
   "availabilityStartDate": "2015-07-01",
-  "availabilityEndDate": "2015-07-07"
+  "availabilityEndDate": "2015-07-07",
+  "filter": {
+    	"addressStateCode":  "QLD",
+      "addressCity": "Varsity Lakes"
+   }
 }
 ```
 
