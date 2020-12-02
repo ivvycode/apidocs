@@ -128,7 +128,7 @@ Example: Fetch the 2nd batch of 100 venues visible in the marketplace. Include t
   "availabilityStartDate": "2015-07-01",
   "availabilityEndDate": "2015-07-07",
   "filter": {
-    	"addressStateCode":  "QLD",
+      "addressStateCode": "QLD",
       "addressCity": "Varsity Lakes"
    }
 }
