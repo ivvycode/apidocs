@@ -66,6 +66,7 @@
     * [Get Beverage Packages](venues/venuedata/get-beverage-package-list.md)
     * [Get Cost Center List](venues/venuedata/get-cost-center-list.md)
     * [Get Tax List](venues/venuedata/get-tax-list.md)
+    * [Get Event Type List](venues/venuedata/get-event-type-list.md)
     * [Add or Update Function Space Category](venues/venuedata/add-or-update-function-space-category.md)
     * [Add or Update Guest Room](venues/venuedata/add-or-update-guest-room.md)
   * [Booking Data](venues/getoraddbookingdata/README.md)
