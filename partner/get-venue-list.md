@@ -108,7 +108,9 @@ Use this to filter venues that do, or do not, allow live bookings
         "2015-05-26": {
           "isAvailable": true
         }
-      }
+      },
+      "mainImageUrl": "https://stagemarketplace.ivvy.com/conference-centre/venue-name.html",
+      "detailsPageUrl": "https://stagemarketplace.ivvy.com/g//venue/image/display/id/66968c1a68880070f4606194da6227f4"
     }
   ]
 }
