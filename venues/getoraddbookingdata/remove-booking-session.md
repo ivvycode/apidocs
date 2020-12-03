@@ -11,18 +11,6 @@ Remove booking session from booking session
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="integer" required=true %}
-The unique id of the booking session
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="venueId" type="integer" required=true %}
-The unique id of the venue to which the booking session belongs belongs
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="bookingId" type="integer" required=true %}
-The unique id of the booking to which the booking session belongs belongs
-{% endapi-method-parameter %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -40,7 +28,6 @@ Successfully removing a session from the booking.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
 
 ## Example Request
 
@@ -65,3 +52,4 @@ Successfully removing a session from the booking.
 | :--- | :--- |
 | Specific Code: 24365 | The booking does not exist |
 | Specific Code: 24366 | The session does not exist |
+
