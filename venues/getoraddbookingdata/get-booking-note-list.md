@@ -71,7 +71,7 @@ The number of booking notes to get in a single call
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Example Request
 
@@ -144,10 +144,10 @@ One of the following values:
 
 | Property | Description | Type |
 | :--- | :--- | :--- |
-| createdDate | Filter by Created Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-| modifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
+| createdDate | Filter by Created Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
+| modifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
 
-## Additional [Filter](../getting-started/interpreting-the-response/filtering.md) Properties
+## Additional [Filter](../../getting-started/interpreting-the-response/filtering.md) Properties
 
 | Property | Description | Type |
 | :--- | :--- | :--- |

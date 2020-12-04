@@ -1,21 +1,17 @@
-# Get Booking List
+# Get Booking List For Account
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingListForAccount" path="" %}
 {% api-method-summary %}
-Get Booking List
+Get Booking List for Account
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of bookings.
+A collection of bookings for the account that the user has access \(as opposed to bookings for a single venue in an account for get Bookings List\)
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
-The id of the venue
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="perPage" type="integer" required=true %}
 The number of bookings to get in a single call
 {% endapi-method-parameter %}
@@ -31,7 +27,7 @@ The number of bookings to get in a single call
 ```text
 {
   "meta": {
-    "totalResults": 256,
+    "totalResults": 325,
     "start": 0,
     "perPage": 1,
     "count": 1
@@ -53,7 +49,7 @@ The number of bookings to get in a single call
         "id": 3,
         "firstName": "Quamar",
         "lastName": "Boyer",
-        "email": "faly@gmail.com",
+        "email": "example@domain.com",
         "phone": "+247-92-9848064"
       },
       "isConfidential": false,
@@ -62,7 +58,7 @@ The number of bookings to get in a single call
       "totalTaxAmount": 5,
       "amountOutstanding": -425.3,
       "accountTimezone": null,
-      "venueTimezone": null,
+      "venueTimezone": "Australia/Brisbane",
       "createdDate": "2015-01-07 09:21:53 UTC",
       "modifiedDate": "2016-04-06 07:51:56 UTC",
       "dateEventStart": "2015-06-01 00:00:00 UTC",
@@ -93,7 +89,7 @@ The number of bookings to get in a single call
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties. The per page value is required, for example {"perPage":10}
 
 ## Example Request
 
@@ -101,7 +97,6 @@ The result from this call will be a [collection](../getting-started/interpreting
 
 ```javascript
 {
-  "venueId": "1",
   "perPage": 1
 }
 ```
@@ -117,17 +112,10 @@ One of the following values:
 * 5 = Ordering
 * 8 = Not Accepted
 
-## Additional Parameters
+## Additional [Filter ](../../getting-started/interpreting-the-response/filtering.md)Properties
 
 | Property | Description | Type |
 | :--- | :--- | :--- |
-| modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-| modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
-
-## Additional [Filter](../getting-started/interpreting-the-response/filtering.md) Properties
-
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| companyId | Filter by unique id of company | integer |
-| contactId | Filter by unique id of contact | integer |
+| modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
+| modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
 

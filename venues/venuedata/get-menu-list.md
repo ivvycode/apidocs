@@ -1,12 +1,12 @@
-# Get Beverage Packages
+# Get Menus List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBeveragePackageList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getMenuList" path="" %}
 {% api-method-summary %}
-Get Beverage Package List
+Get Menu List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of Beverage Packages.
+Get a list of menus.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -17,7 +17,7 @@ The id of the venue
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="perPage" type="integer" required=false %}
-The number of beverage package to get in a single call
+The number of menu to get in a single call
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -39,7 +39,7 @@ The number of beverage package to get in a single call
     "results": [
         {
             "id": 125,
-            "name": "Beverage Package 1",
+            "name": "Menu 1",
             "minimumPax": 20,
             "maximumPax": 30,
             "cost": 98,
@@ -50,7 +50,7 @@ The number of beverage package to get in a single call
         },
         {   
             "id": 125,
-            "name": "Beverage Package 2",
+            "name": "Menu 2",
             "minimumPax": 10,
             "maximumPax": 30,
             "cost": 198,
@@ -67,11 +67,11 @@ The number of beverage package to get in a single call
 {% endapi-method-spec %}
 {% endapi-method %}
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the beverages the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the menus the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Example Request
 
-`Get a specific Beverage Package List`
+`Get a specific menu List`
 
 ```javascript
 {
@@ -80,21 +80,21 @@ The result from this call will be a [collection](../getting-started/interpreting
 }
 ```
 
-## Beverage Package
+## Menu
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| id | integer | The unique id of the Beverage Package |
-| name | text | The name of the Beverage Package |
-| minimumPax | integer | The minimum number of people allowed within a single session to order this Beverage Package |
-| maximumPax | integer | The maximum number of people allowed within a single session to order this Beverage Package |
-| price | integer | The price of the Beverage Package |
-| priceType | integer [Price Type](get-beverage-package-list.md#price-type-beverage-package-pricing) | The price type of the Beverage Package |
-| smallDescription | text | The small description of the Beverage Package |
-| marketplaceName | text | The name of the Beverage Package displayed in marketplace booking engines |
-| marketplaceEventTypes | text | The event types of the Beverage Package displayed in marketplace booking engines |
+| id | integer | The unique id of the menu |
+| name | text | The name of the menu |
+| minimumPax | integer | The minimum number of people allowed within a single session to order this menu |
+| maximumPax | integer | The maximum number of people allowed within a single session to order this menu |
+| cost | integer | The price of the menu |
+| costType | integer [Cost Type](get-menu-list.md#cost-type-menu-pricing) | The price type of the menu |
+| smallDescription | text | The small description of the menu |
+| marketplaceName | text | The name of the menu displayed in marketplace booking engines |
+| marketplaceEventTypes | text | The event types of the menu displayed in marketplace booking engines |
 
-## Price Type \(Beverage Package pricing\)
+## Cost Type \(menu pricing\)
 
 One of the following values:
 
