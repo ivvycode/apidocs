@@ -63,6 +63,9 @@ Get a list of lead.
             "quality": "B-Grade",
             "stageId": 47,
             "stageName": "Interested",
+            "stageReasonId": 245,
+            "stageReasonName": "Price under budget",
+            "adminStatusChangedDate": "2019-04-12 11:11:00 UTC",
             "typeId": 3,
             "type": "Reseller",
             "sourceId": 13,
@@ -71,7 +74,7 @@ Get a list of lead.
             "channelName": "PCO",
             "leadEmailAddress": "lead-2-763-facdb9@ivvy.blueweb",
             "createdDate": "2019-04-12 09:00:35 UTC",
-            "modifiedDate": "2019-04-12 09:00:35 UTC"
+            "modifiedDate": "2019-04-12 11:11:00 UTC"
         }
     ]
 }
