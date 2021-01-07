@@ -151,5 +151,5 @@ Error Response
 | Specific Code: 24395 | The request contains invalid data |
 | Specific Code: 24396 | The task can only belongs to either contact, company or opportunity/lead |
 
-Task can only belongs to either company, contact or lead. When  companyId and contactId both provided the contactId will be added to company as company contact and task will be be associated with company. To assign task to lead (not opportunity) ven
+Task can only belongs to either company, contact or lead. When companyId and contactId both provided the contactId will be added to company as company contact and task will be be associated with company.
 
