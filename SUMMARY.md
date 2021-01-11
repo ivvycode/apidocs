@@ -76,6 +76,7 @@
     * [Get Booking List For Account](venues/getoraddbookingdata/get-booking-list-for-account.md)
     * [Get Booking Notes](venues/getoraddbookingdata/get-booking-note-list.md)
     * [Add or Update Booking](venues/getoraddbookingdata/add-or-update-booking.md)
+    * [Change Booking Status](venues/getoraddbookingdata/change-booking-status.md)
     * [Add Items To Booking](venues/getoraddbookingdata/add-items-to-booking.md)
     * [Add Payment To Booking](venues/getoraddbookingdata/add-payment-to-booking.md)
     * [Add Refund To Booking](venues/getoraddbookingdata/add-refund-to-booking.md)
