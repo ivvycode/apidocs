@@ -46,15 +46,15 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-	"venueId": 1,
-	"items": [
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-01",
-			"roomId": 2,
-			"roomCount": 11
-		}
-	]
+    "venueId": 1,
+    "items": [
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-01",
+            "roomId": 2,
+            "roomCount": 11
+        }
+    ]
 }
 ```
 
@@ -62,45 +62,45 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-	"venueId": 1,
-	"items": [
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 2,
-			"roomCount": 11
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 3,
-			"roomCount": 21
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 4,
-			"roomCount": 16
-		},
-		{
-			"startDate": "2020-05-11",
-			"endDate": "2020-05-20",
-			"roomId": 2,
-			"roomCount": 11
-		},
-		{
-			"startDate": "2020-05-11",
-			"endDate": "2020-05-20",
-			"roomId": 3,
-			"roomCount": 21
-		},
-		{
-			"startDate": "2020-05-11",
-			"endDate": "2020-05-20",
-			"roomId": 4,
-			"roomCount": 16
-		}
-	]
+    "venueId": 1,
+    "items": [
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 2,
+            "roomCount": 11
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 3,
+            "roomCount": 21
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 4,
+            "roomCount": 16
+        },
+        {
+            "startDate": "2020-05-11",
+            "endDate": "2020-05-20",
+            "roomId": 2,
+            "roomCount": 11
+        },
+        {
+            "startDate": "2020-05-11",
+            "endDate": "2020-05-20",
+            "roomId": 3,
+            "roomCount": 21
+        },
+        {
+            "startDate": "2020-05-11",
+            "endDate": "2020-05-20",
+            "roomId": 4,
+            "roomCount": 16
+        }
+    ]
 }
 ```
 
@@ -110,12 +110,12 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 | :--- | :--- | :--- |
 | success | Whether or not the room inventory counts were updated | boolean |
 
-
 ## Item Details
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | roomId | integer | required | The unique id of the room for which the inventory count will be set |
-| startDate | date | required | The start date from which the room inventory count will be set (Date Format) |
-| endDate | date | required | The end date from which the room inventory count will be set (Date Format) |
+| startDate | date | required | The start date from which the room inventory count will be set \(Date Format\) |
+| endDate | date | required | The end date from which the room inventory count will be set \(Date Format\) |
 | roomCount | integer | required | The inventory count of the room from startDate to endDate |
+

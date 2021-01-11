@@ -17,8 +17,7 @@ A json object that represents the room reservation to add or update. See below f
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A successful response to an add or update operation.
-NOTE: The "rooms" in the response are returned in the same order as the "rooms" in the request.
+A successful response to an add or update operation. NOTE: The "rooms" in the response are returned in the same order as the "rooms" in the request.
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -213,9 +212,7 @@ If the value is **not** present in the request, the existing list of additional 
 
 ## Notes on guest details in the request
 
-Guests are **uniquely** identified based on the following \(in order\):
-1\) The unique _id_ value of the guest.
-2\) The combination of the guest's _email_, _firstName_, and _lastName_ \(case insensitive\).
+Guests are **uniquely** identified based on the following \(in order\): 1\) The unique _id_ value of the guest. 2\) The combination of the guest's _email_, _firstName_, and _lastName_ \(case insensitive\).
 
 Consider the following [guest](add-or-update-booking-room-reservation.md#guest) objects:
 

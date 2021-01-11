@@ -46,29 +46,6 @@ Successfully changing a confirmed room reservation to checked-in
   "errorType": null
 }
 ```
-{% api-method-response-example-description %}
-Changing status of one or more rooms failed when roomIds were set in request
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-  "success": false,
-  "errorType": 5,
-  "failedRooms": [
-      {
-          "id": 123,
-          "errorCode": 2,
-          "errorMessage": "The current status cannot transition to the new status"
-      },
-      {
-          "id": 456,
-          "errorCode": 2,
-          "errorMessage": "The current status cannot transition to the new status"
-      }
-  ]
-}
-```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -80,10 +57,7 @@ The following describes how the [status](get-booking-room-reservation-list.md#ro
 
 ![](../../.gitbook/assets/booking-room-reservation-status-transitions.png)
 
-NOTES:
-To delete a booking room reservation, use the [Remove Booking Room Reservation](remove-booking-room-reservation.md) action.
-To confirm a booking room reservation, use the [Confirm Booking Room Reservation](confirm-booking-room-reservation.md) action.
-To cancel a booking room reservation, use the [Cancel Booking Room Reservation](cancel-booking-room-reservation.md) action.
+NOTES: To delete a booking room reservation, use the [Remove Booking Room Reservation](remove-booking-room-reservation.md) action. To confirm a booking room reservation, use the [Confirm Booking Room Reservation](confirm-booking-room-reservation.md) action. To cancel a booking room reservation, use the [Cancel Booking Room Reservation](cancel-booking-room-reservation.md) action.
 
 ## Response Error Types
 
@@ -104,3 +78,4 @@ To cancel a booking room reservation, use the [Cancel Booking Room Reservation](
 | 2 | The current status cannot transition to the new status |
 | 3 | The new status is not supported |
 | 4 | The reservation of room cannot be edited |
+

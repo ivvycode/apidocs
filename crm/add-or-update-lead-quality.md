@@ -13,13 +13,11 @@ Add or Update Lead Quality
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the lead quality
-\(Leave empty if adding a new lead quality\)
+The unique id of the lead quality \(Leave empty if adding a new lead quality\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="label" type="string" required=false %}
-The label of the crm lead quality
-\(Required when the ID parameter is missing\)
+The label of the crm lead quality \(Required when the ID parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="showOnDash" type="boolean" required=false %}

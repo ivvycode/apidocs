@@ -59,8 +59,14 @@ The id of the venue
 
 `A collection object with the following properties in the results`
 
-| Property | Description |
-| :--- | :--- |
-| id | The unique invoice identifier |
-| name | The name of Tax |
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique invoice identifier |
+| name | integer | The name of Tax |
+| type | string | The type of the tax. Whether Tax / Service Fee |
+| appliesTo | integer | Whether the tax only applies to accommodation |
+| amountType | integer | Tax or service fee amount / percent to apply on items. 1 = A percentage, 2 = An amount |
+| amount | double | Percentage / Amount of the tax |
+| taxIds | array | The taxes which are applied to the amount of the service fee |
+| costcenterIds | array | The cost centers to which the tax /service fee apply |
 

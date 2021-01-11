@@ -82,5 +82,5 @@ The result from this call will be a [collection](./#collections) of all the even
 | :--- | :--- |
 | 1 | In Progress |
 | 2 | Completed |
-| 4 | Payment Waiting  |
+| 4 | Payment Waiting |
 

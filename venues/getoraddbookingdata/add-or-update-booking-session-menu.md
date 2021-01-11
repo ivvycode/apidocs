@@ -6,8 +6,7 @@ Add or Update Booking Session Menu
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Adds or updates the details of a venue booking session menu.
-NOTE: The venue must have access to add or update booking session in order to call this api action.
+Adds or updates the details of a venue booking session menu. NOTE: The venue must have access to add or update booking session in order to call this api action.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -83,8 +82,7 @@ Something unexpected occurred whilst processing the request. The booking should 
 | cost | double | optional | The price of the booking session menu. Required when includeInPackage is false |
 | excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session menu. Required when includeInPackage is false |
 | sortOrder | integer | optional | The sort order of the booking session menu |
-| items | array | optional | The array of menu items that shoud be added to menu. See [Menu Item](add-or-update-booking-session-menu.md#menu-item) section for details of each item|
-
+| items | array | optional | The array of menu items that shoud be added to menu. See [Menu Item](add-or-update-booking-session-menu.md#menu-item) section for details of each item |
 
 ## Menu Item
 
@@ -95,15 +93,12 @@ A booking session menu item is an object with the following details.
 | itemId | integer | required | The unique id of the menu item |
 | name | string | optional | The name of the menu item. Do not pass it to automatically set the name from setup |
 | quantity | integer | optional | The quantity of the menu item. Do not pass it to automatically set the quantity from setup |
-| price | double | optional | The price of the *optional* menu item. |
+| price | double | optional | The price of the _optional_ menu item. |
 | servingTime | string | optional | The serving time of the menu item. Format is HH:mm:ss |
-
 
 ### Adding/Updating items
 
 While adding you can skip the items parameter, this will add all the non-optional menu items to the menu automatically. Passing items will only add those items to the menu including any required non-removable items.
 
 While updating you can skip the items parameter, this will not change any of the items. Passing items will replace the items with the given items. Required non-removable items can not be removed from the menu.
-
-
 

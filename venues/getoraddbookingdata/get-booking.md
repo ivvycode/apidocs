@@ -123,7 +123,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -137,7 +140,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -151,7 +157,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -165,7 +174,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 27.272727
+              "tax": 27.272727,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         }
@@ -173,7 +185,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 109.091
+          "tax": 109.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "smallDescription": "Package Small Description"
@@ -205,7 +220,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 4.545
+          "tax": 4.545,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "totalAttendees": 2000,
@@ -237,7 +255,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 27.273
+          "tax": 27.273,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "totalAttendees": 2000,
@@ -268,7 +289,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 190.909
+          "tax": 190.909,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "totalAttendees": 2000,
@@ -298,7 +322,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.455
+          "tax": 0.455,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0          ,
         }
       ]
     }
@@ -323,7 +350,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 9.091
+          "tax": 9.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     }
@@ -351,7 +381,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 9.091
+          "tax": 9.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "dayTaxDetails": []
@@ -376,7 +409,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 9.999
+          "tax": 9.999,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ],
       "dayTaxDetails": [
@@ -385,7 +421,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 3.333333
+              "tax": 3.333333,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -394,7 +433,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 3.333333
+              "tax": 3.333333,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         },
@@ -403,7 +445,10 @@ The id of the booking
           "taxDetails": [
             {
               "id": 1,
-              "tax": 3.333333
+              "tax": 3.333333,
+              "rateId": 0,
+              "rateAmount": 0,
+              "rateAmountType": 0
             }
           ]
         }
@@ -428,7 +473,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.333
+          "tax": 0.333,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -449,7 +497,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.333
+          "tax": 0.333,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -470,7 +521,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.333
+          "tax": 0.333,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -491,7 +545,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -512,7 +569,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -533,7 +593,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -554,7 +617,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -575,7 +641,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.455
+          "tax": 0.455,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -596,7 +665,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 2.727
+          "tax": 2.727,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -617,7 +689,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 19.091
+          "tax": 19.091,
+          "rateId": 0,
+          "rateAmount": 0,
+          "rateAmountType": 0
         }
       ]
     },
@@ -638,7 +713,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.909
+          "tax": 0.909,
+          "rateId": 2,
+          "rateAmount": 6,
+          "rateAmountType": 2
         }
       ]
     },
@@ -659,7 +737,10 @@ The id of the booking
       "taxDetails": [
         {
           "id": 1,
-          "tax": 0.046
+          "tax": 0.046,
+          "rateId": 1,
+          "rateAmount": 5,
+          "rateAmountType": 1
         }
       ]
     },
@@ -736,26 +817,26 @@ The result from this call will be the details of a specific booking to which the
 | totalAmount | double | The total amount of the booking, including tax |
 | totalTaxAmount | double | The total tax of the booking |
 | amountOutstanding | double | The amount outstanding of the booking, including tax |
-| accountTimezone | [timezone](../development-reference/timezone-list.md) | The timezone of the account |
-| venueTimezone | [timezone](../development-reference/timezone-list.md) | The timezone of the venue |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date & time the booking was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time the booking was last modified |
-| dateEventStart | [timestamp](../development-reference/timestamp-format.md) | The start event date of the booking |
-| dateEventEnd | [timestamp](../development-reference/timestamp-format.md) | The end event date of the booking |
+| accountTimezone | [timezone](../../development-reference/timezone-list.md) | The timezone of the account |
+| venueTimezone | [timezone](../../development-reference/timezone-list.md) | The timezone of the venue |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date & time the booking was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date & time the booking was last modified |
+| dateEventStart | [timestamp](../../development-reference/timestamp-format.md) | The start event date of the booking |
+| dateEventEnd | [timestamp](../../development-reference/timestamp-format.md) | The end event date of the booking |
 | isAccommIncluded | boolean | Whether or not the booking includes accommodation |
-| dateAccomStart | [timestamp](../development-reference/timestamp-format.md) | The start accommodation date of the booking |
-| dateAccomEnd | [timestamp](../development-reference/timestamp-format.md) | The end accommodation date of the booking |
+| dateAccomStart | [timestamp](../../development-reference/timestamp-format.md) | The start accommodation date of the booking |
+| dateAccomEnd | [timestamp](../../development-reference/timestamp-format.md) | The end accommodation date of the booking |
 | focRoomsDenominator | int | The number of accommodation rooms in which one room is complimentary. For example if the value is 5, then 1 in 5 accommodation rooms will be complimentary. |
 | maxNumFocRoomsPerDay | int | The maximum number of accommodation rooms per day that can be complimentary |
 | hasPackages | boolean | Whether or not the booking has packages |
-| decisionDate | [timestamp](../development-reference/timestamp-format.md) | The date before which the event/accommodation dates must be decided |
+| decisionDate | [timestamp](../../development-reference/timestamp-format.md) | The date before which the event/accommodation dates must be decided |
 | canBeMoved | boolean | Whether or not the event/accommodation dates of the booking are flexible |
 | bookedById | integer | The unique id of the event coordinator user assigned to the booking |
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
-| beoFinalisedDate | [timestamp](../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
+| beoFinalisedDate | [timestamp](../../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | otaFolioRef | string | The recorded Folio ID of a booking. |
-| accommCutOffDate | [timestamp](../development-reference/timestamp-format.md) | After this date no more reservations may be made against the Block for the entire date range. |
-| accommCancellationDate | [timestamp](../development-reference/timestamp-format.md) | The last date a customer can cancel their Group Accommodation without financial penalty. |
+| accommCutOffDate | [timestamp](../../development-reference/timestamp-format.md) | After this date no more reservations may be made against the Block for the entire date range. |
+| accommCancellationDate | [timestamp](../../development-reference/timestamp-format.md) | The last date a customer can cancel their Group Accommodation without financial penalty. |
 | accommChargingMethod | enum \([Charging Method](get-booking.md#get-booking.md#charging-method)\) | A record of the Charging Method for Documents, Note that values will still need to be altered in the Block. |
 | accommGuaranteeRequired | boolean | Indicates whether the customer is required to guarantee their reservation with a credit card. |
 | accommExternalBlockId | string | The Block ID from an external PMS. |
@@ -798,7 +879,7 @@ One of the following values:
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | costcenterId | integer | The unique identifier of the cost center to which the revenue applies |
-| revenueDate | [Date](../development-reference/date-format.md) | The date on which the revenue applies |
+| revenueDate | [Date](../../development-reference/date-format.md) | The date on which the revenue applies |
 | totalAmount | double | The total revenue amount, including tax |
 | totalDiscountAmount | number | The amount of total discount |
 | totalTaxAmount | double | The total tax amount that is included in the total revenue amount |
@@ -825,11 +906,11 @@ One of the following values:
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | id | integer | The unique identifier for the booking package |
-| bookingDate | [Date](../development-reference/date-format.md) | The date of the package |
+| bookingDate | [Date](../../development-reference/date-format.md) | The date of the package |
 | numberAttendees | integer | The number of attendees for the booking package |
 | price | double | The price of the booking package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the booking package was added to this booking |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the booking package was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the booking package was added to this booking |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the booking package was last modified |
 | totalAmount | double | The total amount of the booking package including tax amount |
 | totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the booking package |
@@ -864,8 +945,8 @@ One of the following values:
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of the session |
 | name | string | The name of the session |
-| startDate | [Date](../development-reference/date-format.md) | The start date of the session |
-| endDate | [Date](../development-reference/date-format.md) | The end date of the session |
+| startDate | [Date](../../development-reference/date-format.md) | The start date of the session |
+| endDate | [Date](../../development-reference/date-format.md) | The end date of the session |
 | startTime | Time | The start time of the session |
 | endTime | Time | The end time of the session |
 | spaceVenueId | integer | The id of the venue to which the space \(spaceId\) belongs \(it can be different to the booking's venueId\) |
@@ -881,8 +962,8 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the session's revenue applies |
 | includeInPackage | boolean | Whether or not the booking session is included in booking package |
 | bookingPackageId | integer | The booking package identifier if the booking session is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the session was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was last modified |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | totalAttendees | integer | The minimum number of attendees for the Booking session |
 
@@ -899,14 +980,14 @@ One of the following values:
 | cost | double | The cost of the menu |
 | discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
-| startDate | [Date](../development-reference/date-format.md) | The start date of the menu |
-| endDate | [Date](../development-reference/date-format.md) | The end date of the menu |
+| startDate | [Date](../../development-reference/date-format.md) | The start date of the menu |
+| endDate | [Date](../../development-reference/date-format.md) | The end date of the menu |
 | startTime | Time | The start time of the menu |
 | endTime | Time | The end time of the menu |
 | includeInPackage | boolean | Whether or not the menu is included in booking package |
 | bookingPackageId | integer | The booking package identifier if menu is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the menu was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the menu was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the menu was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the menu was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the menu including tax |
 | totalDiscount | double | The total amount of the discount |
@@ -926,14 +1007,14 @@ One of the following values:
 | cost | double | The cost of the beverage package |
 | discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
-| startDate | [Date](../development-reference/date-format.md) | The start date of the beverage package |
-| endDate | [Date](../development-reference/date-format.md) | The end date of the beverage package |
+| startDate | [Date](../../development-reference/date-format.md) | The start date of the beverage package |
+| endDate | [Date](../../development-reference/date-format.md) | The end date of the beverage package |
 | startTime | Time | The start time of the beverage package |
 | endTime | Time | The end time of the beverage package |
 | includeInPackage | boolean | Whether or not the beverage package is included in booking package |
 | bookingPackageId | integer | The booking package identifier if beverage package is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the beverage package was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the beverage package was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the beverage package was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the beverage package including tax |
 | totalDiscount | double | The total amount of the discount |
@@ -954,14 +1035,14 @@ One of the following values:
 | discount | double | The amount of the discount on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | quantity | integer | The quantity of the resource |
-| startDate | [Date](../development-reference/date-format.md) | The start date of the resource |
-| endDate | [Date](../development-reference/date-format.md) | The end date of the resource |
+| startDate | [Date](../../development-reference/date-format.md) | The start date of the resource |
+| endDate | [Date](../../development-reference/date-format.md) | The end date of the resource |
 | startTime | Time | The start time of the resource |
 | endTime | Time | The end time of the resource |
 | includeInPackage | boolean | Whether or not the resource is included in booking package |
 | bookingPackageId | integer | The booking package identifier if resource is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the resource was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the resource was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the resource was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the resource was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the resource including tax |
 | totalDiscount | double | The total amount of the discount |
@@ -981,8 +1062,8 @@ One of the following values:
 | quantity | integer | The quantity of the product |
 | includeInPackage | boolean | Whether or not the product is included in booking package |
 | bookingPackageId | integer | The booking package identifier if product is included in package |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the product was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the product was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the product was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the product was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the product including tax |
 | totalDiscount | double | The total amount of the discount |
@@ -1001,14 +1082,14 @@ One of the following values:
 | totalCostExcludedTaxIds | array | The sale price excluded tax identifiers |
 | actualCost | double | The cost of the item |
 | actualCostExcludedTaxIds | array | The cost excluded tax identifiers |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time when the item was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the item was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the item was last modified |
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the item including tax amount |
 | totalDiscount | double | The total amount of the discount |
 | totalTaxAmount | double | The tax amount of the item |
-| startDateTime | [timestamp](../development-reference/timestamp-format.md) | The start date and time of the item |
-| endDateTime | [timestamp](../development-reference/timestamp-format.md) | The end date and time of item |
+| startDateTime | [timestamp](../../development-reference/timestamp-format.md) | The start date and time of the item |
+| endDateTime | [timestamp](../../development-reference/timestamp-format.md) | The end date and time of item |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | dayTaxDetails | Array of [Day Tax Detail](get-booking.md#day-tax-detail) | The individual tax for each date. Empty when start date time is empty. |
 
@@ -1021,12 +1102,12 @@ One of the following values:
 | refId | integer | The first identifier for identifying reference item in the booking |
 | ref2Id | integer | The second identifier for identifying the reference item in the booking |
 | ref3Id | integer | The third identifier for identifying the reference item in the booking |
-| refDate | [Date](../development-reference/date-format.md) | The date on which the fee applies |
+| refDate | [Date](../../development-reference/date-format.md) | The date on which the fee applies |
 | refCostcenterId | integer | The reference cost centre identifier to which the fee applies |
 | amount | double | The amount of the service fee without tax |
 | excludedTaxIds | array | The list of excluded tax ids |
-| createdDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the product was created |
-| modifiedDate | [timestamp](../development-reference/timestamp-format.md) | The date and time the product was last modified |
+| createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the product was created |
+| modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the product was last modified |
 | totalAmount | double | The total amount of the service including tax |
 | totalTaxAmount | double | The tax amount of the service fee |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
@@ -1037,12 +1118,15 @@ One of the following values:
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of tax in venue |
 | tax | double | The amount of tax applied |
+| rateId | integer  | The identifier of the rate that overrided the default tax rate. Zero (0) when the default tax rate is not overridden |
+| rateAmount | double | The rate at which the tax was calculated |
+| rateAmountType | integer | The rate type of the tax.  1 = A percentage, 2 = An amount |
 
 ## Day Tax Detail
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| date | [Date](../development-reference/date-format.md) | The day to which taxes applies |
+| date | [Date](../../development-reference/date-format.md) | The day to which taxes applies |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details for the day |
 
 ## Service Fee Reference Types
@@ -1125,3 +1209,4 @@ One of the following values:
 | 4 | Coffee Break |
 | 5 | Reception |
 | 6 | Outside Catering |
+

@@ -127,6 +127,32 @@ The invoice identifier
                     "totalCost": 0.45,
                     "totalTaxCost": 0.01
                 },
+            ],
+            "taxes": [
+                {
+                    "taxId": 1,
+                    "amount": 427.3789,
+                    "taxRateId": 0,
+                    "taxRateAmount": 10,
+                    "taxRateAmountType": 1,
+                    "costcenterId": 1
+                },
+                {
+                    "taxId": 5455,
+                    "amount": 1.4514,
+                    "taxRateId": 2,
+                    "taxRateAmount": 10,
+                    "taxRateAmountType": 1,
+                    "costcenterId": 2
+                },
+                {
+                    "taxId": 5485,
+                    "amount": 104.0434,
+                    "taxRateId": 0,
+                    "taxRateAmount": 10,
+                    "taxRateAmountType": 1,
+                    "costcenterId": 3
+                }
             ]
         }
     ]
@@ -228,6 +254,18 @@ A collection object with the following properties in the results
 | amountPaid | The amount paid of the item' |
 | refType | The reference type of the item |
 | costCenters | The total cost and total tax cost by cost center |
+| taxes | The taxes applied to the item. Some information in the tax item might be empty if information is not available. ie. for old invoices. See Item Taxes Details for the data in each tax item |
+
+## Item Taxes Details
+
+| Property | Description |
+| :--- | :--- |
+| taxId | The identifier of the tax |
+| amount | The amount of tax |
+| taxRateId | The identifier of the rate that overrided the default tax rate. Zero \(0\) when the default tax rate is not overridden |
+| taxRateAmount | The rate at which the tax was calculated |
+| taxRateAmountType | The tax rate amount type: 1 = A percentage, 2 = An amount |
+| costcenterId | The identifier of the cost center to which the tax applies |
 
 ## Item Ref Type
 

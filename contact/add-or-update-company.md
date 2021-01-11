@@ -36,6 +36,10 @@ The company's registration number
 The company's phone number
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="otherPhone" type="string" required=false %}
+The company's other phone number
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="fax" type="string" required=false %}
 The company's fax number
 {% endapi-method-parameter %}
@@ -49,7 +53,7 @@ The company's email address
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="address" type="string" required=false %}
-The company's address. 
+The company's address.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="primaryAccountManagerId" type="integer" required=false %}
@@ -108,6 +112,10 @@ The commission amount of the company for accommodation.
 The commission amount type of the company for accommodation.
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="iataNumber" type="string" required=false %}
+The IATA number of commission payable to the agent.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="updateIfExists" type="boolean" required=false %}
 Whether or not to update the company by businessName when id parameter is missing.
 {% endapi-method-parameter %}
@@ -164,7 +172,8 @@ Updating a company
   "commissionAudioVisual": 50,
   "commissionAudioVisualType" : 2,
   "commissionAccommodation": 50,
-  "commissionAccommodationType": 1
+  "commissionAccommodationType": 1,
+  "iataNumber": "123456789"
 }
 ```
 
@@ -194,7 +203,8 @@ Updating a company
   "commissionAudioVisual": 50,
   "commissionAudioVisualType" : 2,
   "commissionAccommodation": 50,
-  "commissionAccommodationType": 1
+  "commissionAccommodationType": 1,
+  "iataNumber": "123456789"
 }
 ```
 
@@ -252,4 +262,5 @@ The properties of the company currently supported are:
 * commissionAudioVisualType
 * commissionAccommodation
 * commissionAccommodationType
+* iataNumber
 

@@ -6,8 +6,7 @@ Add or Update Booking
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Adds or updates the details of a venue booking.
-NOTE: The venue must have access to _normal bookings_ in order to call this api action.
+Adds or updates the details of a venue booking. NOTE: The venue must have access to _normal bookings_ in order to call this api action.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -124,6 +123,7 @@ Something unexpected occurred whilst processing the request. The booking should 
 | bookingRoleUserId4 | string | optional | The unique id of the account user assigned to the booking role label 4 |
 | bookingRoleUserId5 | string | optional | The unique id of the account user assigned to the booking role label 5 |
 | customFields | array of [Custom Field](add-or-update-booking.md#custom-field) | optional | The custom field values of the booking. A custom field value might be required depending on how it has been configured in the venue's account. |
+| discountCode | string | optional | The discount code applied to the booking |
 
 ## Booking Type
 
@@ -143,6 +143,7 @@ The following booking status options are supported when adding a new booking.
 | 1 | Prospective |
 | 2 | Tentative |
 | 3 | Confirmed |
+| 5 | Ordering |
 
 ## Accommodation Charging Methods
 

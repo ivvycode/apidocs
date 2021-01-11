@@ -48,16 +48,16 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-	"venueId": 1,
-	"items": [
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-01",
-			"roomId": 2,
-			"barId": 1,
-			"closeOutStatus": 1
-		}
-	]
+    "venueId": 1,
+    "items": [
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-01",
+            "roomId": 2,
+            "barId": 1,
+            "closeOutStatus": 1
+        }
+    ]
 }
 ```
 
@@ -67,37 +67,37 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ```javascript
 {
-	"venueId": 1,
-	"items": [
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 2,
-			"barId": 1,
-			"closeOutStatus": 1
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 2,
-			"barId": 147,
-			"closeOutStatus": 1
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 3,
-			"barId": 1,
-			"closeOutStatus": 1
-		},
-		{
-			"startDate": "2020-05-01",
-			"endDate": "2020-05-10",
-			"roomId": 3,
-			"barId": 147,
-			"closeOutStatus": 1
-		}
-	]
+    "venueId": 1,
+    "items": [
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 2,
+            "barId": 1,
+            "closeOutStatus": 1
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 2,
+            "barId": 147,
+            "closeOutStatus": 1
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 3,
+            "barId": 1,
+            "closeOutStatus": 1
+        },
+        {
+            "startDate": "2020-05-01",
+            "endDate": "2020-05-10",
+            "roomId": 3,
+            "barId": 147,
+            "closeOutStatus": 1
+        }
+    ]
 }
 ```
 
@@ -122,6 +122,7 @@ The following close out status values are supported by the current booking rules
 | :--- | :--- | :--- | :--- |
 | barId | integer | required | The unique id of the rate plan to which the booking rule applies |
 | roomId | integer | required | The unique id of the room to which the booking rule applies |
-| startDate | date | required | The start date from which the booking rule will apply (Date Format) |
-| endDate | date | required | The end date until which the booking rule will apply (Date Format) |
+| startDate | date | required | The start date from which the booking rule will apply \(Date Format\) |
+| endDate | date | required | The end date until which the booking rule will apply \(Date Format\) |
 | closeOutStatus | integer | required | The close out status of the booking rule from startDate to endDate. 1 = Open, 2 = Closed |
+

@@ -13,8 +13,7 @@ Add or update the details of a lead
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="integer" required=true %}
-The unique identifier of a lead
-\(Leave empty to add the lead to the system\)
+The unique identifier of a lead \(Leave empty to add the lead to the system\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="qualityId" type="integer" required=true %}
@@ -22,55 +21,47 @@ The quality of the lead
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="industryId" type="integer" required=false %}
-The unique industry of the lead.
-\(Required when lead belongs to contact and id parameter is missing\)
+The unique industry of the lead. \(Required when lead belongs to contact and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourceId" type="integer" required=false %}
-The unique source id of the lead.
-\(Required when the id parameter is missing. \)
+The unique source id of the lead. \(Required when the id parameter is missing. \)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companyId" type="integer" required=false %}
-The unique company id of lead.
-\(Required when lead belongs to company and id parameter is missing\)
+The unique company id of lead. \(Required when lead belongs to company and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="company" type="object" required=false %}
-The data array of company. See addOrUpdateCompany API in contact namespace for parameters. See [assigning a company/contact to the lead](add-or-update-lead.md#assigning-a-company-contact-to-the-lead).
+The data array of company. See addOrUpdateCompany API in contact namespace for parameters. See assigning a company/contact to the lead.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="companyLeadContactId" type="integer" required=false %}
-The unique company id of lead
-\(Required when lead belongs to company and id parameter is missing\)
+The unique company id of lead \(Required when lead belongs to company and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contactId" type="integer" required=false %}
-The unique contact id of lead
-\(Required when lead belongs to contact and id parameter is missing\)
+The unique contact id of lead \(Required when lead belongs to contact and id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="contact" type="object" required=false %}
-The data array of contact. See addOrUpdateContact API in contact namespace for parameters. See [assigning a company/contact to the lead](add-or-update-lead.md#assigning-a-company-contact-to-the-lead).
+The data array of contact. See addOrUpdateContact API in contact namespace for parameters. See assigning a company/contact to the lead.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
-The name for the lead
-\(Required when the id parameter is missing\)
+The name for the lead \(Required when the id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="ownerUserId" type="integer" required=false %}
-The sales person id of lead
+The id of the sales person user assigned to the lead. The privileges of the user assigned to the api key may prevent this from being changed.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="typeId" type="integer" required=false %}
-The type of lead
-\(Required when id parameter is missing\)
+The type of lead \(Required when id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="stageId" type="integer" required=false %}
-The stage of lead
-\(Required when id parameter is missing\)
+The stage of lead \(Required when id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="stageReasonId" type="integer" required=false %}
@@ -86,9 +77,8 @@ The description for the lead
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="customFields" type="array" required=false %}
-The custom field values of the lead. A custom field value might be required depending on how it has been configured in the account. See [Custom Field](add-or-update-lead.md#custom-field)
+The custom field values of the lead. A custom field value might be required depending on how it has been configured in the account. See Custom Field
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 

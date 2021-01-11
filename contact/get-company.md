@@ -32,6 +32,7 @@ The company's identifier
   "businessNumber": "1234586",
   "email": "company@test.com",
   "phone": "0455550000",
+  "otherPhone": "123456789",
   "fax": "0455550125",
   "website": "www.test.com",
   "address": {
@@ -48,18 +49,17 @@ The company's identifier
   "secondaryAccountManager": "Test User",
   "industry": "Industry Name",
   "primaryContact": "Test User",
-  "agentcommission": {
-      "commissionRoomHireValue": 123,
-      "commissionRoomHireType": "CHF",
-      "commissionFoodValue": 222,
-      "commissionFoodType": "CHF",
-      "commissionBeverageValue": 333,
-      "commissionBeverageType": "CHF",
-      "commissionAudioVisualValue": 444,
-      "commissionAudioVisualType": "CHF",
-      "commissionAccommodationValue": 555,
-      "commissionAccommodationType": "CHF"
-  }
+  "commissionRoomHireValue": 123,
+  "commissionRoomHireType": "CHF",
+  "commissionFoodValue": 222,
+  "commissionFoodType": "CHF",
+  "commissionBeverageValue": 333,
+  "commissionBeverageType": "CHF",
+  "commissionAudioVisualValue": 444,
+  "commissionAudioVisualType": "CHF",
+  "commissionAccommodationValue": 555,
+  "commissionAccommodationType": "CHF",
+  "iataNumber": "123456789"
 }
 ```
 {% endapi-method-response-example %}
@@ -72,7 +72,7 @@ The company's identifier
 `Get a specific company`
 
 ```javascript
-{ 
+{
   "id":6
 }
 ```
@@ -87,25 +87,27 @@ The company's identifier
 | tradingName | The company's trading name |
 | businessNumber | The company's registration number |
 | phone | The company's phone number |
+| otherPhone | The company's other phone number |
 | fax | The company's fax number |
 | website | The company's website |
 | email | The company's email address |
 | address | The company’s address. This is an an object with the [keys](get-company.md#keys) |
 | modifiedDate | The modified date of the company |
-| primaryAccountManager | The primary account manager of the company. This is an an object with the [keys](get-company.md#primaryaccountmanager)  |
-| secondaryAccountManager | The secondary account manager of the company. This is an an object with the [keys](get-company.md#secondaryaccountmanager)  |
-| industry | The industry of the company. This is an an object with the [keys](get-company.md#industry)  |
+| primaryAccountManager | The primary account manager of the company. This is an an object with the [keys](get-company.md#primaryaccountmanager) |
+| secondaryAccountManager | The secondary account manager of the company. This is an an object with the [keys](get-company.md#secondaryaccountmanager) |
+| industry | The industry of the company. This is an an object with the [keys](get-company.md#industry) |
 | primaryContact | The primary contact of the company. This is an an object with the [keys](get-company.md#primarycontact) |
-| commissionSpace | The commission amount of the company space.|
-| commissionSpaceType | The commission amount type of the company space.|
-| commissionFoodValue | The commission amount of the company food.|
-| commissionFoodType | The commission amount type of the company food.|
-| commissionBeverageValue | The commission amount of the company beverage.|
-| commissionBeverageType | The commission amount type of the company beverage.|
-| commissionAudioVisualValue | The commission amount of the company audio visual.|
-| commissionAudioVisualType | The commission amount type of the company audio visual.|
-| commissionAccommodationValue | The commission amount of the company accommodation.|
-| commissionAccommodationType | The commission amount type of the accommodation.|
+| commissionSpace | The commission amount of the company space. |
+| commissionSpaceType | The commission amount type of the company space. |
+| commissionFoodValue | The commission amount of the company food. |
+| commissionFoodType | The commission amount type of the company food. |
+| commissionBeverageValue | The commission amount of the company beverage. |
+| commissionBeverageType | The commission amount type of the company beverage. |
+| commissionAudioVisualValue | The commission amount of the company audio visual. |
+| commissionAudioVisualType | The commission amount type of the company audio visual. |
+| commissionAccommodationValue | The commission amount of the company accommodation. |
+| commissionAccommodationType | The commission amount type of the accommodation. |
+| iataNumber | The IATA number of commission payable to the agent. |
 
 ## Keys
 

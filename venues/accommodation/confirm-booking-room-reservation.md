@@ -42,29 +42,6 @@ Successfully confirming a room reservation from a booking
   "errorType": null
 }
 ```
-{% api-method-response-example-description %}
-Confirming one or more rooms failed when roomIds were set in request
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-  "success": false,
-  "errorType": 10,
-  "failedRooms": [
-      {
-          "id": 123,
-          "errorCode": 2,
-          "errorMessage": "The room has been cancelled"
-      },
-      {
-          "id": 456,
-          "errorCode": 2,
-          "errorMessage": "The room has been cancelled"
-      }
-  ]
-}
-```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}

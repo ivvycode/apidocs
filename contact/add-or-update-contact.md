@@ -59,7 +59,6 @@ The contact's sms subscription status.
 {% api-method-parameter name="updateIfExists" type="boolean" required=false %}
 Whether or not to update the contact by firstName, lastName and email when id parameter is missing.
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
