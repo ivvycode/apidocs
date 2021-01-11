@@ -11,54 +11,8 @@ Changes the current status of a venue booking.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=true %}
-The unique id of the booking whose status will be changed.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="venueId" type="integer" required=true %}
-The unique id of the venue to which the booking belongs.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="currentStatus" type="integer" required=true %}
-The new status to assign the booking. See [Current Status](change-booking-status.md#booking-status).
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="changedByUserId" type="integer" required=false %}
-The unique id of the user who changed the status of the booking. The user assigned to the api key will be used when this parameter is not set.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="cancelStageId" type="integer" required=false %}
-The id of the stage to assign to the opportunity when cancelling a quote (i.e. changing from prospective to cancelled).
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="cancelReasonId" type="integer" required=false %}
-The id of the stage reason to assign to the opportunity/booking being cancelled. When cancelling a quote (i.e. changing from prospective to cancelled), the value must belong to the "cancelStageId" stage. When cancelling a booking, the value must belong to the "cancelled" stage.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="cancelLostToCompetition" type="string" required=false %}
-A description of how the cancelled booking was lost to competition.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="cancelClosedDate" type="Date" required=false %}
-The date when booking was cancelled. Required when the booking status is changing to cancelled.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="convertedStageId" type="integer" required=false %}
-The id of the stage to assign to the opportunity to which the booking belongs. Required when changing the status to anything but cancelled.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="convertedStageReasonId" type="integer" required=false %}
-The id of the stage reason to assign to the opportunity to which the booking belongs. Can be set when changing the status to anything but cancelled.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="marketplaceStageReasonType" type="integer" required=false %}
-This is the official regretted reason that will be sent to the booker when the opportunity is regretted. Required when "convertedStageId" is the regretted stage. See [Marketplace Stage Reason Type](change-booking-status.mb#marketplace-stage-reason-type).
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="convertedClosedDate" type="Date" required=false %}
-The date when quote (ie. prospective) is being converted to booking (ie. Tentative or Confirmed). Required when booking is being closed (ie. Prospective to Tentative or Confirmed and lead stage is either won or lost).
-{% endapi-method-parameter %}
+A json object that represents how the status of a booking is being changed. See below for the data description.
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -108,6 +62,23 @@ Something unexpected occurred whilst processing the request. The booking status 
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Request Details
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| id | integer | required | The unique id of the booking whose status will be changed. |
+| venueId | integer | required | The unique id of the venue to which the booking belongs. |
+| currentStatus | [Current Status](change-booking-status.md#booking-status) | required | The new status to assign the booking. |
+| changedByUserId | integer | optional | The unique id of the user who changed the status of the booking. The user assigned to the api key will be used when this parameter is not set. |
+| cancelStageId | integer | optional | The id of the stage to assign to the opportunity when cancelling a quote (i.e. changing from prospective to cancelled). |
+| cancelReasonId | integer | optional | The id of the stage reason to assign to the opportunity/booking being cancelled. When cancelling a quote (i.e. changing from prospective to cancelled), the value must belong to the "cancelStageId" stage. When cancelling a booking, the value must belong to the "cancelled" stage. |
+| cancelLostToCompetition | string | optional | A description of how the cancelled booking was lost to competition. |
+| cancelClosedDate | date | optional | The date when booking was cancelled. Required when the booking status is changing to cancelled. |
+| convertedStageId | integer | optional | The id of the stage to assign to the opportunity to which the booking belongs. Required when changing the status to anything but cancelled. |
+| convertedStageReasonId | integer | optional | The id of the stage reason to assign to the opportunity to which the booking belongs. Can be set when changing the status to anything but cancelled. |
+| marketplaceStageReasonType | [Marketplace Stage Reason Type](change-booking-status.mb#marketplace-stage-reason-type) | optional | This is the official regretted reason that will be sent to the booker when the opportunity is regretted. Required when "convertedStageId" is the regretted stage. |
+| convertedClosedDate | date | optional | The date when quote (ie. prospective) is being converted to booking (ie. Tentative or Confirmed). Required when booking is being closed (ie. Prospective to Tentative or Confirmed and lead stage is either won or lost). |
 
 ## Booking Status
 
