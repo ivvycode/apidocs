@@ -25,7 +25,7 @@ The new status to assign the booking. See [Current Status](change-booking-status
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="changedByUserId" type="integer" required=false %}
-The unique id of the user who changed the status of the booking.
+The unique id of the user who changed the status of the booking. The user assigned to the api key will be used when this parameter is not set.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelStageId" type="integer" required=false %}
@@ -133,5 +133,3 @@ The following marketplace stage reason are supported
 | 5 | Conference/Event space capacity - too big |
 | 6 | Facilities not suitable |
 | 7 | No reason given |
-
-
