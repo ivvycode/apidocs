@@ -6,7 +6,7 @@ Get Venue Function Space Availability
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Return the venue function spaces availability for the venue.
+Returns the availability of function spaces in a specific venue.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -16,14 +16,14 @@ Return the venue function spaces availability for the venue.
 The id of the venue
 {% endapi-method-parameter %}
 {% api-method-parameter name="startDate" type="date" required=true %}
-The date from which availability date needed. Format YYY-MM-DD
+The date from which the availability data will be fetched. Format YYY-MM-DD
 {% endapi-method-parameter %}
 {% api-method-parameter name="endDate" type="date" required=true %}
-The date to which availability date needed. Format YYY-MM-DD
+The date to which the availability data will be fetched. Format YYY-MM-DD. The maximum number of days of available that can be fetched is 14.
 {% endapi-method-parameter %}
 {% endapi-method-parameter %}
-{% api-method-parameter name="spaceIds" type="array" required=true %}
-The space id array for which availability needed
+{% api-method-parameter name="spaceIds" type="array" required=false %}
+Optionally the list of space ids to which availability will be limited.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -36,10 +36,10 @@ The space id array for which availability needed
 
 ```text
 {
-    "availabilities": [
+    "availability": [
         {
             "spaceId": 1,
-            "timeslots": [
+            "timeSlots": [
                 {
                     "date": "2020-11-26",
                     "startTime": "00:00:00",
@@ -74,7 +74,7 @@ The space id array for which availability needed
         },
         {
             "spaceId": 2,
-            "timeslots": [
+            "timeSlots": [
                 {
                     "date": "2020-11-26",
                     "startTime": "00:00:00",
@@ -129,7 +129,7 @@ The space id array for which availability needed
 
 | Property | Data Type | Description |
 | :--- | :--- | :--- |
-| availabilities | array | Array of spaces with availabilities. See Space Availability for details |
+| availability | array | Array of spaces with availability data. See "Space Availability" for details. |
 
 ## Space Availability
 
@@ -137,8 +137,8 @@ The space id array for which availability needed
 
 | Property | Data Type | Description |
 | :--- | :--- | :--- |
-| spaceId | integer | The id of space to which the timeslots belongs |
-| timeslots | array | The array of time slots. see Space Time Slots for details |
+| spaceId | integer | The id of space to which the time slots belong. |
+| timeSlots | array | The array of time slots. See "Space Time Slots" for details. |
 
 ## Space Time Slots
 
@@ -146,6 +146,6 @@ The space id array for which availability needed
 
 | Property | Data Type | Description |
 | :--- | :--- | :--- |
-| date | date| The date the start and end time belongs. Format YYYY-MM-DD |
-| startTime | string | The start time of availability. Format H:i:s  |
-| endTime | string | The end time of availability. Format H:i:s  |
+| date | date| The date to which the time slot applies. Format YYYY-MM-DD |
+| startTime | string | The start time of the available time slot. Format H:i:s  |
+| endTime | string | The end time of the available time slot. Format H:i:s  |

@@ -117,43 +117,43 @@ The id of the venue
 
 | Property | Data Type | Description |
 | :--- | :--- | :--- |
-| id | integer | The unique function space identifier |
-| venueId | integer | The id of the venue to which the function space belongs |
-| name | string | The name of the function space |
-| description | string| The description of the function space |
-| categoryId | integer | The category of the space |
-| imageId | integer | The main image id of the space |
-| hasLayouts | boolean | Whether or not space have layouts |
+| id | integer | The unique id of the space. |
+| venueId | integer | The id of the venue to which the space belongs. |
+| name | string | The name of the space. |
+| description | string| The description of the space. |
+| categoryId | integer | The id of the category assigned to the space. |
+| imageId | integer | The id of the main image the space. |
+| hasLayouts | boolean | Whether or not the space has layouts. |
 | minPax | integer | The minimum pax of the space. |
 | maxPax | integer | The maximum pax of the space. |
-| maxNumBookings | integer | The maximum number of confirmed booking that can share this space at the same time. |
-| area | float | The area of the space |
-| length | float | The length of the space |
-| width | float | The width of the space |
-| heightMaximum | float | The maximum height of the space |
-| heightMinimum | float | The minimum height of the space |
-| floorPressureMaximum | float | The maximum floor pressure of the space |
-| partSpaceIds | array | The array of ids of space for smallest individual spaces |
-| includedInReportDashboard | boolean | Whether or not this space should be included in the reporting dashboard calculations (e.g. CI revenue per function space). |
-| threeDScanId | string | ID which will show 3D view of your space on iVvy |
-| useIntegrationPartner | boolean | Whether this function space is integrated with ResDiary |
-| isViewable | boolean | Whether or not the space is viewable on the marketplace. |
-| marketplaceName | string | The name of the function space shown on the Marketplace. |
-| eventTypes | array | The types of events that can be held in the function space. |
-| canBeLiveBooked | boolean | Whether or not the function space can be booked live on the Marketplace. |
-| canProvideFoodBeverage | boolean | Whether or not food and beverage can be added to the function space. |
-| menuTypeIds | array | If space can provide the food and beverage, this will be array of ids of menu types |
-| beverageCategoryIds | array | If space can provide the food and beverage, this will be array of ids of beverage types |
-| availableFromTime | string | Restrict the earliest start time available for this function space on the marketplace/booking engine. |
-| availableTillTime | string | Restrict the latest end time available for this function space on the marketplace/booking engine. |
-| minimumBookingTime | integer | This is the minimum number of continuous hours that this function space needs to be free for before it is considered to be available. |
-| restrictBookingTimeInterval | integer | Restrict the blocks of time when booking. If 15 mins is chosen then you could not book 9:00-9:20. You would need to book 9:00-9:15 or 9:00-9:30. |
-| availableDaysOfWeek | array | The days of the week that this space is bookable. |
-| displayAvailabilityTo | integer | Controls whether bookers can see the live availability of this space via a mini-calendar of the day. |
-| restrictVisibility | integer | Whether or not the space visibility restricted on marketplace |
-| userGroupIds | array | When Restrict Visibility is set to true, these are the groups of users that are allowed to select this space on your venue\'s marketplace booking page. The space will not be visible to anyone not in these groups. |
-| isViewableToAnonymousUsers | boolean | When Restrict Visibility is set to true, whether or not to allow make this space visible to anonymous users. The anonymous users are users who are not logged in on your marketplace page. |
-| sortOrder | integer | The sorting order number of the space when space is being listed in backend. The sort order used for displaying spaces in order on documents, etc |
-| marketplaceSortOrder | integer | The sorting order number of the space for marketplace. The sort order used for displaying space on markteplace/booking engines |
-| createdDate | timestamp | The date & time the space was created |
-| modifiedDate | timestamp | The date & time the space was last modified |
+| maxNumBookings | integer | The maximum number of confirmed bookings that can share this space at the same time. |
+| area | float | The area of the space. |
+| length | float | The length of the space. |
+| width | float | The width of the space. |
+| heightMaximum | float | The maximum height of the space. |
+| heightMinimum | float | The minimum height of the space. |
+| floorPressureMaximum | float | The maximum floor pressure of the space. |
+| partSpaceIds | array | The ids of the spaces that are the smallest spaces that divide this space. |
+| includedInReportDashboard | boolean | Whether or not this space should be included in the reporting dashboard calculations (e.g. CI revenue per space). |
+| threeDScanId | string | An ID which can be used to display a 3D view of the space. |
+| useIntegrationPartner | boolean | Whether or not the space is integrated with ResDiary. |
+| isViewable | boolean | Whether or not the space is viewable on the iVvy marketplace and booking engines. |
+| marketplaceName | string | The name of the space shown on the iVvy marketplace and booking engines. |
+| eventTypes | array | The types of events that can be held in the space. |
+| canBeLiveBooked | boolean | Whether or not the space can be booked live on the iVvy marketplace and booking engines. |
+| canProvideFoodBeverage | boolean | Whether or not food and beverage can be added to the space. |
+| menuTypeIds | array | The ids of the types of menus available if the space can provide food and beverage. |
+| beverageCategoryIds | array | The ids of the types of beverage packages available if the space can provide food and beverage. |
+| availableFromTime | string | The earliest time from which the space can be reserved on the iVvy marketplace and booking engines. |
+| availableTillTime | string | The latest time to which the space can be reserved on the iVvy marketplace and booking engines. |
+| minimumBookingTime | integer | The minimum number of continuous hours that must not be reserved for the space to be considered available for reservations. |
+| restrictBookingTimeInterval | integer | The smallest minute block interval for which the space can be reserved. For example, if 15 minutes then reservations from 0900 to 0920 are not allowed, but reservations from 0900 to 0915, 0900 to 0930, 0900 to 0945 etc. are allowed. |
+| availableDaysOfWeek | array | The days of the week that the space is available for reservations. |
+| displayAvailabilityTo | integer | Controls whether or not meeting bookers can see the live availability of the space via a mini-calendar of the day. |
+| restrictVisibility | integer | Whether or not the space visibility is restricted on the iVvy marketplace and booking engines. |
+| userGroupIds | array | The ids of the groups of users allowed to reserve the space on the venue's marketplace booking page when "restrictVisibility" is true. |
+| isViewableToAnonymousUsers | boolean | Whether or not annonymous users are allowed to reserve the space on the venue's marketplace booking page when "restrictVisibility" is true. |
+| sortOrder | integer | The sorting order of the space. Used to sort the list of spaces in documents etc. |
+| marketplaceSortOrder | integer | The sorting order of the space on the iVvy marketplace and booking engines. |
+| createdDate | timestamp | The date & time the space was created. |
+| modifiedDate | timestamp | The date & time the space was last modified. |
