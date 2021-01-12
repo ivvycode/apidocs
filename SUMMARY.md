@@ -119,6 +119,7 @@
   * [Get Cost Center List](account/get-cost-center-list.md)
   * [Get Email Log List](account/get-email-log-list.md)
   * [Add Error Report](account/add-error-report.md)
+  * [Get Account User List](account/get-user-list.md)
 * [CRM](crm/README.md)
   * [Get Lead List](crm/get-lead-list.md)
   * [Get Opportunity List](crm/get-opportunity-list.md)
