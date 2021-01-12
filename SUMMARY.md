@@ -64,6 +64,8 @@
     * [Get Resource Availability](venues/venuedata/get-resource-availability.md)
     * [Get Menus List](venues/venuedata/get-menu-list.md)
     * [Get Beverage Packages](venues/venuedata/get-beverage-package-list.md)
+    * [Get Function Space List](venues/venuedata/get-function-space-list.md)
+    * [Get Function Space Availability](venues/venuedata/get-function-space-availability.md)
     * [Get Cost Center List](venues/venuedata/get-cost-center-list.md)
     * [Get Tax List](venues/venuedata/get-tax-list.md)
     * [Add or Update Function Space Category](venues/venuedata/add-or-update-function-space-category.md)
