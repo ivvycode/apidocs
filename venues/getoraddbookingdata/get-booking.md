@@ -918,6 +918,8 @@ One of the following values:
 | costcenters | Array of [Package Cost Centre](get-booking.md#package-cost-center) | The list of costcenter and its individual value of the booking package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | smallDescription | string | The small description of the booking package |
+| packageId | string | The id of the venue package |
+| packageName | string | The name of the venue package |
 
 ## Package Price Method
 
