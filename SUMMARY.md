@@ -131,6 +131,7 @@
   * [Get Lead Type List](crm/get-lead-type-list.md)
   * [Get Lead Source List](crm/get-lead-source-list.md)
   * [Add or Update Activity Purpose](crm/add-or-update-activity-purpose.md)
+  * [Add or Update Task](crm/add-or-update-task.md)
   * [Add or Update Lead Quality](crm/add-or-update-lead-quality.md)
   * [Add or Update Lead Stage](crm/add-or-update-lead-stage.md)
   * [Add or Update Lead Channel](crm/add-or-update-lead-channel.md)
