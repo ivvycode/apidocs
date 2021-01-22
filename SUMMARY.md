@@ -129,6 +129,7 @@
   * [Get Activity List](crm/get-activity-list.md)
   * [Get Lead Stage List](crm/get-lead-stage-list.md)
   * [Get Lead Type List](crm/get-lead-type-list.md)
+  * [Get Lead Quality List](crm/get-lead-quality-list.md)
   * [Get Lead Source List](crm/get-lead-source-list.md)
   * [Get Lead Channel List](crm/get-lead-channel-list.md)
   * [Add or Update Activity Purpose](crm/add-or-update-activity-purpose.md)
