@@ -55,7 +55,6 @@ The status of the task
 {% api-method-parameter name="description" type="string" required=false %}
 The description of the task
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -65,28 +64,12 @@ The description of the task
 
 {% endapi-method-response-example-description %}
 
-Success Response
-
 ```text
 {
   "success": true,
   "id": 755
 }
 ```
-
-Error Response
-
-```text
-{
-  "errorCode": 400,
-    "message": "The request contains invalid data",
-    "specificCode": 24395,
-    "additionalMessages": [
-        "leadId: *Invalid item selected*"
-    ]
-}
-```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -104,7 +87,7 @@ Error Response
 
 ## Example Request
 
-### Add Activity Purpose
+### Add Task
 
 ```javascript
 {
@@ -116,13 +99,13 @@ Error Response
 }
 ```
 
-### Update Activity Purpose
+### Update Task
 
 ```javascript
 {
   "id": 3269,
   "venueId": 1,
-	"name": "Test Task API",
+    "name": "Test Task API",
   "endDatetime": "2021-11-01 17:00:00",
   "status": 1,
   "assignedUserId": 1,
