@@ -1,4 +1,4 @@
-# Add or Update Activity Purpose
+# Add or Update Task
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=addOrUpdateTask" path="" %}
 {% api-method-summary %}
