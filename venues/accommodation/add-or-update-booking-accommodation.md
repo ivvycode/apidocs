@@ -50,24 +50,28 @@ Invalid request data that prevents the accommodation group from being added/upda
 
 ## Booking Accommodation \(Group\)
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the booking accommodation to update - a new accommodation group will be created if this parameter is not present |
-| venueId | integer | required | The unique id of the venue to which the booking belongs |
-| bookingId | integer | required | The unique id of the booking to which the accommodation group belongs |
-| roomVenueId | integer | required | The unique id of the venue to which the rate plan \(barId\) and room type \(roomId\) belong \(can be different to venueId\) |
-| barId | integer | optional | The unique id of the rate plan assigned to the accommodation group |
-| roomId | integer | required | The unique id of the room type assigned to the accommodation group |
-| startDate | date | required | The arrival date of the accommodation group |
-| endDate | date | required | The departure date of the accommodation group |
-| overrideCapacity | boolean | optional | Whether or not the accommodation group can exceed the general room availability |
-| cutOffDate | date | optional | The date after which changes to the accommodation group are not allowed |
-| dayRatesActual | array of [Day Rates Actual](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-actual) | optional | The daily actual rates of the accommodation group |
-| dayRatesForecast | array of [Day Rates Forecast](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-forecast) | optional | The daily forecast rates of the accommodation group |
-| dayRatesNet | array of [Day Rates Net](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-net) | The daily net rates of the accommodation group |  |
-| dayRates | array of [Day Rates](add-or-update-booking-accommodation.md#booking-accommodation-day-rates) | required on add, optional on update | The daily rates of the accommodation group |
-| excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from the daily rates |
-| roomOptions | array of [Room Options](add-or-update-booking-accommodation.md#booking-accommodation-room-option) | optional | The additional room options of the accommodation group |
+| Property | Type | Required | Description |  |
+| :--- | :--- | :--- | :--- | :--- |
+| id | integer | optional | The unique id of the booking accommodation to update - a new accommodation group will be created if this parameter is not present |  |
+| venueId | integer | required | The unique id of the venue to which the booking belongs |  |
+| bookingId | integer | required | The unique id of the booking to which the accommodation group belongs |  |
+| roomVenueId | integer | required | The unique id of the venue to which the rate plan \(barId\) and room type \(roomId\) belong \(can be different to venueId\) |  |
+| barId | integer | optional | The unique id of the rate plan assigned to the accommodation group |  |
+| roomId | integer | required | The unique id of the room type assigned to the accommodation group |  |
+| startDate | date | required | The arrival date of the accommodation group |  |
+| endDate | date | required | The departure date of the accommodation group |  |
+| overrideCapacity | boolean | optional | Whether or not the accommodation group can exceed the general room availability |  |
+| cutOffDate | date | optional | The date after which changes to the accommodation group are not allowed |  |
+| dayRatesActual | array of [Day Rates Actual](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-actual) | optional | The daily actual rates of the accommodation group |  |
+| dayRatesForecast | array of [Day Rates Forecast](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-forecast) | optional | The daily forecast rates of the accommodation group |  |
+| dayRatesNet | array of [Day Rates Net](add-or-update-booking-accommodation.md#booking-accommodation-day-rates-net) | optional | The daily net rates of the accommodation group |  |
+| dayRates | array of [Day Rates](add-or-update-booking-accommodation.md#booking-accommodation-day-rates) | required on add, optional on update | The daily rates of the accommodation group |  |
+| dayRatesActualMultiOcc | array of [Day Rates Actual](get-booking-accommodation-list.md#booking-accommodation-day-rates-actual-multi-occupancy) | optional | The daily actual rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |  |
+| dayRatesForecastMultiOcc | array of [Day Rates Forecast](get-booking-accommodation-list.md#booking-accommodation-day-rates-forecast-multi-occupancy) | optional | The daily forecast rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |  |
+| dayRatesNetMultiOcc | array of [Day Rates Net](get-booking-accommodation-list.md#booking-accommodation-day-rates-net-multi-occupancy) | optional | The daily net rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |  |
+| dayRatesMultiOcc | array of [Day Rates](get-booking-accommodation-list.md#booking-accommodation-day-rates-multi-occupancy) | required on add, optional on update | The daily rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |  |
+| excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from the daily rates |  |
+| roomOptions | array of [Room Options](add-or-update-booking-accommodation.md#booking-accommodation-room-option) | optional | The additional room options of the accommodation group |  |
 
 ## Booking Accommodation Day Rates Actual
 
@@ -89,13 +93,13 @@ Invalid request data that prevents the accommodation group from being added/upda
 
 ## Booking Accommodation Day Rates Net
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| bookingDate | date | The date of the accommodation group to which the rate applies |
-| numRooms | integer | The number of rooms booked on bookingDate |
-| cost | number | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
-| discount | number | The amount of discount |
-| numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| Property | Type | Required | Description |  |
+| :--- | :--- | :--- | :--- | :--- |
+| bookingDate | date | true | The date of the accommodation group to which the rate applies |  |
+| numRooms | integer | true | The number of rooms booked on bookingDate |  |
+| cost | number | true | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |  |
+| discount | number |  | The amount of discount |  |
+| numPayableByGuest | integer | false | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |  |
 
 ## Booking Accommodation Day Rates
 
@@ -105,6 +109,47 @@ Invalid request data that prevents the accommodation group from being added/upda
 | numRooms | integer | true | The number of rooms booked on bookingDate |
 | cost | number | true | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
 | numPayableByGuest | integer | false | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+
+## Booking Accommodation Day Rates Actual Multi Occupancy
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| bookingDate | date | true | The actual date of the accommodation group to which the rate applies |
+| numRooms | integer | true | The actual number of rooms booked on bookingDate |
+| cost | number | true | The actual rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
+| numPayableByGuest | integer | false | The actual number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| occType | integer | true | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |
+
+## Booking Accommodation Day Rates Forecast Multi Occupancy
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| bookingDate | date | true | The forecast date of the accommodation group to which the rate applies |
+| numRooms | integer | true | The forecast number of rooms booked on bookingDate |
+| cost | number | true | The forecast rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
+| numPayableByGuest | integer | false | The forecast number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| occType | integer | true | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |
+
+## Booking Accommodation Day Rates Net Multi Occupancy
+
+| Property | Type | Required | Description |  |
+| :--- | :--- | :--- | :--- | :--- |
+| bookingDate | date | true | The date of the accommodation group to which the rate applies |  |
+| numRooms | integer | true | The number of rooms booked on bookingDate |  |
+| cost | number | true | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |  |
+| discount | number |  | The amount of discount |  |
+| numPayableByGuest | integer | false | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |  |
+| occType | integer | true | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |  |
+
+## Booking Accommodation Day Rates Multi Occupancy
+
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| bookingDate | date | true | The date of the accommodation group to which the rate applies |
+| numRooms | integer | true | The number of rooms booked on bookingDate |
+| cost | number | true | The rate amount for the room on bookingDate. The amount either includes or excludes tax depending on how the venue is configured |
+| numPayableByGuest | integer | false | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
+| occType | integer | true | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |
 
 ## Booking Accommodation Room Option
 
