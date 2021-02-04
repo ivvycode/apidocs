@@ -61,6 +61,7 @@ The id of the booking
   "decisionDate": "",
   "canBeMoved": false,
   "bookedById": 123,
+  "beoNumbers": ["18-1", "19-1", "20-1"],
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
   "otaFolioRef": "ven1234",
@@ -215,6 +216,7 @@ The id of the booking
       "costcenterId": 5,
       "includeInPackage": false,
       "bookingPackageId": 5082,
+      "beoNumbers": ["19-1"],
       "createdDate": "2018-11-07 03:56:35 UTC",
       "modifiedDate": "2018-11-07 03:57:36 UTC",
       "taxDetails": [
@@ -832,6 +834,7 @@ The result from this call will be the details of a specific booking to which the
 | decisionDate | [timestamp](../../development-reference/timestamp-format.md) | The date before which the event/accommodation dates must be decided |
 | canBeMoved | boolean | Whether or not the event/accommodation dates of the booking are flexible |
 | bookedById | integer | The unique id of the event coordinator user assigned to the booking |
+| beoNumbers | array | The id/numbers for the BEO documents assigned to the booking |
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | otaFolioRef | string | The recorded Folio ID of a booking. |
@@ -919,6 +922,8 @@ One of the following values:
 | costcenters | Array of [Package Cost Centre](get-booking.md#package-cost-center) | The list of costcenter and its individual value of the booking package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | smallDescription | string | The small description of the booking package |
+| packageId | string | The id of the venue package |
+| packageName | string | The name of the venue package |
 
 ## Package Price Method
 
@@ -967,6 +972,7 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the session's revenue applies |
 | includeInPackage | boolean | Whether or not the booking session is included in booking package |
 | bookingPackageId | integer | The booking package identifier if the booking session is included in package |
+| beoNumbers | array | The id/numbers of the BEO documents assigned to the booking session |
 | createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was created |
 | modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was last modified |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |

@@ -53,7 +53,7 @@ The name for the lead \(Required when the id parameter is missing\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="ownerUserId" type="integer" required=false %}
-The sales person id of lead
+The id of the sales person user assigned to the lead. The privileges of the user assigned to the api key may prevent this from being changed.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="typeId" type="integer" required=false %}
