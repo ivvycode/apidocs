@@ -69,6 +69,7 @@
     * [Get Function Space Availability](venues/venuedata/get-function-space-availability.md)
     * [Get Cost Center List](venues/venuedata/get-cost-center-list.md)
     * [Get Tax List](venues/venuedata/get-tax-list.md)
+    * [Add or Update Function Space](venues/venuedata/add-or-update-function-space.md)
     * [Get Event Type List](venues/venuedata/get-event-type-list.md)
     * [Add or Update Function Space Category](venues/venuedata/add-or-update-function-space-category.md)
     * [Add or Update Guest Room](venues/venuedata/add-or-update-guest-room.md)
