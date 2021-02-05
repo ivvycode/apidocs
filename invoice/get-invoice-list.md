@@ -170,6 +170,7 @@ A collection object with the following properties in the results
 | toContactId | Contact Id against which invoice is created |
 | toAddress | [The “to” Address of the invoice](get-invoice-list.md#address-details) |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
+| bookingId | The unique identifier of the booking if refType is 4 \(Venue Booking\) |
 | payments | List of payments of the invoice Payment Details |
 
 ## Current status

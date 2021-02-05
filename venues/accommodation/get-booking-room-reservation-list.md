@@ -265,6 +265,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | dayRates | array of [Day Rates](get-booking-room-reservation-list.md#reserved-room-day-rates) | The daily rates of the reserved room |
 | additionalGuests | array of [Additional Guests](get-booking-room-reservation-list.md#reserved-room-additional-guests) | The additional guests of the reserved room |
 | overrideBlockCapacity | boolean | Whether or not the number of reservations can exceed the block |
+| occType | integer | The occupancy type of the reserverd room See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type)|
 
 ## Reserved Room Status
 

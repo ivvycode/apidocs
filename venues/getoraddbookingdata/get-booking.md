@@ -61,6 +61,7 @@ The id of the booking
   "decisionDate": "",
   "canBeMoved": false,
   "bookedById": 123,
+  "beoNumbers": ["18-1", "19-1", "20-1"],
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
   "otaFolioRef": "ven1234",
@@ -215,6 +216,7 @@ The id of the booking
       "costcenterId": 5,
       "includeInPackage": false,
       "bookingPackageId": 5082,
+      "beoNumbers": ["19-1"],
       "createdDate": "2018-11-07 03:56:35 UTC",
       "modifiedDate": "2018-11-07 03:57:36 UTC",
       "taxDetails": [
@@ -832,6 +834,7 @@ The result from this call will be the details of a specific booking to which the
 | decisionDate | [timestamp](../../development-reference/timestamp-format.md) | The date before which the event/accommodation dates must be decided |
 | canBeMoved | boolean | Whether or not the event/accommodation dates of the booking are flexible |
 | bookedById | integer | The unique id of the event coordinator user assigned to the booking |
+| beoNumbers | array | The id/numbers for the BEO documents assigned to the booking |
 | isBeoFinalised | boolean | Whether or not the BEO of the booking has been finalised |
 | beoFinalisedDate | [timestamp](../../development-reference/timestamp-format.md) | The date & time on which the BEO of the booking was finalised |
 | otaFolioRef | string | The recorded Folio ID of a booking. |
@@ -913,11 +916,14 @@ One of the following values:
 | modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the booking package was last modified |
 | totalAmount | double | The total amount of the booking package including tax amount |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the booking package |
 | priceMethod | enum \([Package Price Method](get-booking.md#package-price-method)\) | The price method of the booking package |
 | costcenters | Array of [Package Cost Centre](get-booking.md#package-cost-center) | The list of costcenter and its individual value of the booking package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | smallDescription | string | The small description of the booking package |
+| packageId | string | The id of the venue package |
+| packageName | string | The name of the venue package |
 
 ## Package Price Method
 
@@ -933,9 +939,11 @@ One of the following values:
 | costcenterId | integer | The unique identifier of the cost center |
 | value | double | The amount of the cost center |
 | discount | double | The amount of the discount on value |
+| surcharge | double | The amount of the surcharge on value |
 | excludedTaxIds | array | The excluded tax identifiers |
 | totalAmount | double | The amount of the cost center |
 | totalDiscount | double | The amount of the total discount |
+| totalSurcharge | double | The amount of the total surcharge |
 | totalTaxAmount | double | The total tax amount of the cost center |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | The individual tax amount |
 
@@ -955,13 +963,16 @@ One of the following values:
 | customLayoutName | string | The space layout name when space layout is custom |
 | cost | double | The cost of the session |
 | discount | double | The amount of the discount on cost |
+| discount | double | The amount of the surcharge on cost |
 | totalAmount | double | The total amount of session including tax amount |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the session |
 | excludedTaxIds | array | The excluded tax identifiers of the session |
 | costcenterId | integer | The cost center identifier to which the session's revenue applies |
 | includeInPackage | boolean | Whether or not the booking session is included in booking package |
 | bookingPackageId | integer | The booking package identifier if the booking session is included in package |
+| beoNumbers | array | The id/numbers of the BEO documents assigned to the booking session |
 | createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was created |
 | modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was last modified |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
@@ -979,6 +990,7 @@ One of the following values:
 | sessionId | integer | The session identifier to which this menu belongs |
 | cost | double | The cost of the menu |
 | discount | double | The amount of the discount on cost |
+| surcharge | double | The amount of the surcharge on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the menu |
 | endDate | [Date](../../development-reference/date-format.md) | The end date of the menu |
@@ -991,6 +1003,7 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the menu including tax |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the menu |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | totalAttendees | integer | The minimum number of attendees for the menu |
@@ -1006,6 +1019,7 @@ One of the following values:
 | beverageId | integer | The reference beverage package identifier in venue beverage packages |
 | cost | double | The cost of the beverage package |
 | discount | double | The amount of the discount on cost |
+| surcharge | double | The amount of the surcharge on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the beverage package |
 | endDate | [Date](../../development-reference/date-format.md) | The end date of the beverage package |
@@ -1018,6 +1032,7 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the beverage package including tax |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the beverage package |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 | totalAttendees | integer | The minimum number of attendees for the beverage package |
@@ -1033,6 +1048,7 @@ One of the following values:
 | sessionId | integer | The session identifier to which this resource belongs |
 | cost | double | The cost of the resource |
 | discount | double | The amount of the discount on cost |
+| surcharge | double | The amount of the surcharge on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | quantity | integer | The quantity of the resource |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the resource |
@@ -1046,6 +1062,7 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the resource including tax |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the resource |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
@@ -1058,6 +1075,7 @@ One of the following values:
 | sessionId | integer | The session identifier to which this product belongs |
 | cost | double | The cost of the product |
 | discount | double | The amount of the discount on cost |
+| surcharge | double | The amount of the surcharge on cost |
 | excludedTaxIds | array | The excluded tax identifiers |
 | quantity | integer | The quantity of the product |
 | includeInPackage | boolean | Whether or not the product is included in booking package |
@@ -1067,6 +1085,7 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the product including tax |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the product |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | Individual tax details |
 
@@ -1079,6 +1098,7 @@ One of the following values:
 | quantity | double | The quantity of the item |
 | totalCost | double | The sale price of the item |
 | totalCostDiscount | double | The amount of the discount on totalCost |
+| totalCostSurcharge | double | The amount of the surcharge on totalCost |
 | totalCostExcludedTaxIds | array | The sale price excluded tax identifiers |
 | actualCost | double | The cost of the item |
 | actualCostExcludedTaxIds | array | The cost excluded tax identifiers |
@@ -1087,6 +1107,7 @@ One of the following values:
 | costcenterId | integer | The cost center identifier to which the revenue applies |
 | totalAmount | double | The total amount of the item including tax amount |
 | totalDiscount | double | The total amount of the discount |
+| totalSurcharge | double | The total amount of the surcharge |
 | totalTaxAmount | double | The tax amount of the item |
 | startDateTime | [timestamp](../../development-reference/timestamp-format.md) | The start date and time of the item |
 | endDateTime | [timestamp](../../development-reference/timestamp-format.md) | The end date and time of item |
