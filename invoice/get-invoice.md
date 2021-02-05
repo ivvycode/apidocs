@@ -202,6 +202,7 @@ A collection object with the following properties in the results
 | toContactId | Contact Id against which invoice is created |
 | toAddress | The “to” Address of the invoice |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
+| bookingId | The unique identifier of the booking if refType is 4 \(Venue Booking\) |
 | items | List of invoice items Item Details |
 | payments | List of payments of the invoice Payment Details |
 
