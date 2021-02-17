@@ -47,6 +47,7 @@ The unique id of the booking to which the accommodation belongs
         "endDate": "2018-08-31",
         "overrideCapacity": true,
         "costcenterId": 1376,
+        "includeInPackage": false,
         "cutOffDate": "2018-08-15",
         "dayRatesActual": [
             {
@@ -229,6 +230,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | endDate | date | The departure date of the accommodation group |
 | overrideCapacity | boolean | Whether or not the accommodation group can exceed the general room availability |
 | costcenterId | integer | The unique id of the cost center assigned to the accommodation group |
+| includeInPackage | boolean | Whether or not the accommodation is included in booking package |
 | cutOffDate | date | The date after which changes to the accommodation group are not allowed |
 | dayRatesActual | array of [Day Rates Actual](get-booking-accommodation-list.md#booking-accommodation-day-rates-actual) | The daily actual rates of the accommodation group |
 | dayRatesForecast | array of [Day Rates Forecast](get-booking-accommodation-list.md#booking-accommodation-day-rates-forecast) | The daily forecast rates of the accommodation group |
