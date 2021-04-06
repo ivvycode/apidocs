@@ -105,7 +105,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | additionalGuests | array of [Additional  Guests](add-or-update-booking-room-reservation.md#reserved-room-additional-guests) | optional | The additional guests of the reserved room |
 | overrideBlockCapacity | boolean | optional | Whether or not the reservations can exceed the block capacity |
 | externalReference | text | optional | External system identifier for this reserved room. eg. PMS ID. Allowed max length is 254 Characters. |
-| occType | integer | optional | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type)|
+| occType | integer | optional | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |
 
 ## Reserved Room Day Rates
 

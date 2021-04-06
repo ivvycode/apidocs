@@ -14,7 +14,6 @@ Add or Update Function Space
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-
 {% api-method-parameter name="id" type="integer" required=false %}
 The unique id of the function space to update \(Leave empty if adding a new space \)
 {% endapi-method-parameter %}
@@ -96,7 +95,7 @@ The smallest individual spaces that are available within this space. Also includ
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="includedInReportDashboard" type="boolean" required=false %}
-Whether or not this space should be included in the reporting dashboard calculations (e.g. CI revenue per function space)
+Whether or not this space should be included in the reporting dashboard calculations \(e.g. CI revenue per function space\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="threeDScanId" type="string" required=false %}
@@ -106,7 +105,6 @@ The 3D scan ID which will show 3D view of your space on iVvy
 {% api-method-parameter name="useIntegrationPartner" type="boolean" required=false %}
 Whether this function space is integrated with ResDiary
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -122,7 +120,6 @@ Whether this function space is integrated with ResDiary
   "id": 7
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -161,16 +158,17 @@ Whether this function space is integrated with ResDiary
 
 ### Returns
 
-| Property | Description                                                   |
-| :------- | :------------------------------------------------------------ |
-| success  | Whether or not the function space was added/updated |
-| id       | The unique id of the function space                 |
+| Property | Description |
+| :--- | :--- |
+| success | Whether or not the function space was added/updated |
+| id | The unique id of the function space |
 
 ### Throws
 
-| Code                 | Description                                 |
-| :------------------- | :------------------------------------------ |
-| Specific Code: 24385 | The function space does not exist           |
-| Specific Code: 24386 | An unknown error has occurred               |
-| Specific Code: 24387 | The request contains invalid data           |
-| Specific Code: 24388 | The request contains invalid data           |
+| Code | Description |
+| :--- | :--- |
+| Specific Code: 24385 | The function space does not exist |
+| Specific Code: 24386 | An unknown error has occurred |
+| Specific Code: 24387 | The request contains invalid data |
+| Specific Code: 24388 | The request contains invalid data |
+

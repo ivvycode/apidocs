@@ -234,10 +234,10 @@ The result from this call will be a [collection](../../getting-started/interpret
 | dayRatesForecast | array of [Day Rates Forecast](get-booking-accommodation-list.md#booking-accommodation-day-rates-forecast) | The daily forecast rates of the accommodation group |
 | dayRatesNet | array of [Day Rates Net](get-booking-accommodation-list.md#booking-accommodation-day-rates-net) | The daily net rates of the accommodation group |
 | dayRates | array of [Day Rates](get-booking-accommodation-list.md#booking-accommodation-day-rates) | The daily rates of the accommodation group |
-| dayRatesActualMultiOcc | array of [Day Rates Actual](get-booking-accommodation-list.md#booking-accommodation-day-rates-actual-multi-occupancy) | The daily actual rates for different occupancies of the accommodation group (Only available when feature enabled in venue) |
-| dayRatesForecastMultiOcc | array of [Day Rates Forecast](get-booking-accommodation-list.md#booking-accommodation-day-rates-forecast-multi-occupancy) | The daily forecast rates for different occupancies of the accommodation group (Only available when feature enabled in venue)|
-| dayRatesNetMultiOcc | array of [Day Rates Net](get-booking-accommodation-list.md#booking-accommodation-day-rates-net-multi-occupancy) | The daily net rates for different occupancies of the accommodation group (Only available when feature enabled in venue)|
-| dayRatesMultiOcc | array of [Day Rates](get-booking-accommodation-list.md#booking-accommodation-day-rates-multi-occupancy) | The daily rates for different occupancies of the accommodation group (Only available when feature enabled in venue)|
+| dayRatesActualMultiOcc | array of [Day Rates Actual](get-booking-accommodation-list.md#booking-accommodation-day-rates-actual-multi-occupancy) | The daily actual rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |
+| dayRatesForecastMultiOcc | array of [Day Rates Forecast](get-booking-accommodation-list.md#booking-accommodation-day-rates-forecast-multi-occupancy) | The daily forecast rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |
+| dayRatesNetMultiOcc | array of [Day Rates Net](get-booking-accommodation-list.md#booking-accommodation-day-rates-net-multi-occupancy) | The daily net rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |
+| dayRatesMultiOcc | array of [Day Rates](get-booking-accommodation-list.md#booking-accommodation-day-rates-multi-occupancy) | The daily rates for different occupancies of the accommodation group \(Only available when feature enabled in venue\) |
 | excludedTaxIds | array of integers | The unique ids of the taxes that are excluded from the daily rates |
 | roomOptions | array of [Room Options](get-booking-accommodation-list.md#booking-accommodation-room-option) | The additional room options of the accommodation group |
 | createdDate | datetime | The date & time the accommodation group was created |
@@ -327,7 +327,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | discount | number | The amount of discount |
 | numPayableByGuest | integer | The number of rooms on bookingDate that are payable by guests \(as opposed to the master account of the booking\) |
 | numFreeRooms | integer | The number of complimentary \(free\) rooms on bookingDate. This number is included in numRooms |
-| occType | integer | The occupancy type of daily rate. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type)|
+| occType | integer | The occupancy type of daily rate. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |
 
 ## Booking Accommodation Room Option
 

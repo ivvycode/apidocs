@@ -63,7 +63,7 @@ The cost of the booking session resource \(Required when includeInPackage=0\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="costType" type="integer" required=true %}
-The cost type of the booking session resource [Cost Type](add-or-update-booking-session-resource.md#cost-type) \(Required when includeInPackage=0\)
+The cost type of the booking session resource Cost Type \(Required when includeInPackage=0\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="excludedTaxIds" type="array" required=false %}
@@ -77,7 +77,6 @@ The booking session resource pay comissions to an agent
 {% api-method-parameter name="id" type="integer" required=false %}
 The unique id of the booking session resource \(Leave empty if adding a new booking session resource\)
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -93,7 +92,6 @@ The unique id of the booking session resource \(Leave empty if adding a new book
   "id": 7
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -103,8 +101,8 @@ The unique id of the booking session resource \(Leave empty if adding a new book
 
 One of the following values:
 
-- 1 = Hourly
-- 2 = Daily
+* 1 = Hourly
+* 2 = Daily
 
 ### Example Request
 
@@ -141,17 +139,18 @@ One of the following values:
 
 ### Returns
 
-| Property | Description                                                   |
-| :------- | :------------------------------------------------------------ |
-| success  | Whether or not the booking session resource was added/updated |
-| id       | The unique id of the booking session resource                 |
+| Property | Description |
+| :--- | :--- |
+| success | Whether or not the booking session resource was added/updated |
+| id | The unique id of the booking session resource |
 
 ### Throws
 
-| Code                 | Description                                 |
-| :------------------- | :------------------------------------------ |
-| Specific Code: 24338 | The booking session does not exist          |
+| Code | Description |
+| :--- | :--- |
+| Specific Code: 24338 | The booking session does not exist |
 | Specific Code: 24339 | The booking session resource does not exist |
-| Specific Code: 24340 | An unknown error has occurred               |
-| Specific Code: 24341 | The request contains invalid data           |
-| Specific Code: 24342 | The request contains invalid data           |
+| Specific Code: 24340 | An unknown error has occurred |
+| Specific Code: 24341 | The request contains invalid data |
+| Specific Code: 24342 | The request contains invalid data |
+

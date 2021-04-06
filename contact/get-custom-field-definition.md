@@ -1,4 +1,4 @@
-# Get Custom Field Definition
+# Get Contact Custom Field Definition
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getCustomFieldDefinition" path="" %}
 {% api-method-summary %}

@@ -27,7 +27,6 @@ The end date of the period from which to include the function space availability
 {% api-method-parameter name="allowsLiveBook" type="boolean" required=false %}
 Use this to filter venues that do, or do not, allow live bookings
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 

@@ -1139,7 +1139,7 @@ One of the following values:
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of tax in venue |
 | tax | double | The amount of tax applied |
-| rateId | integer  | The identifier of the rate that overrided the default tax rate. Zero (0) when the default tax rate is not overridden |
+| rateId | integer | The identifier of the rate that overrided the default tax rate. Zero \(0\) when the default tax rate is not overridden |
 | rateAmount | double | The rate at which the tax was calculated |
 | rateAmountType | integer | The rate type of the tax.  1 = A percentage, 2 = An amount |
 

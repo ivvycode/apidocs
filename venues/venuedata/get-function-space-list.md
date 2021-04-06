@@ -120,7 +120,7 @@ The id of the venue
 | id | integer | The unique id of the space. |
 | venueId | integer | The id of the venue to which the space belongs. |
 | name | string | The name of the space. |
-| description | string| The description of the space. |
+| description | string | The description of the space. |
 | categoryId | integer | The id of the category assigned to the space. |
 | imageId | integer | The id of the main image the space. |
 | hasLayouts | boolean | Whether or not the space has layouts. |
@@ -134,7 +134,7 @@ The id of the venue
 | heightMinimum | float | The minimum height of the space. |
 | floorPressureMaximum | float | The maximum floor pressure of the space. |
 | partSpaceIds | array | The ids of the spaces that are the smallest spaces that divide this space. |
-| includedInReportDashboard | boolean | Whether or not this space should be included in the reporting dashboard calculations (e.g. CI revenue per space). |
+| includedInReportDashboard | boolean | Whether or not this space should be included in the reporting dashboard calculations \(e.g. CI revenue per space\). |
 | threeDScanId | string | An ID which can be used to display a 3D view of the space. |
 | useIntegrationPartner | boolean | Whether or not the space is integrated with ResDiary. |
 | isViewable | boolean | Whether or not the space is viewable on the iVvy marketplace and booking engines. |
@@ -157,3 +157,4 @@ The id of the venue
 | marketplaceSortOrder | integer | The sorting order of the space on the iVvy marketplace and booking engines. |
 | createdDate | timestamp | The date & time the space was created. |
 | modifiedDate | timestamp | The date & time the space was last modified. |
+

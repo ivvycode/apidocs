@@ -67,7 +67,6 @@ The priority of the activity low, medium or high.
 {% api-method-parameter name="assignedUserId" type="integer" required=false %}
 The unique id of the user to which the activity will be assigned
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
@@ -77,28 +76,12 @@ The unique id of the user to which the activity will be assigned
 
 {% endapi-method-response-example-description %}
 
-Success Response
-
 ```text
 {
   "success": true,
   "id": 755
 }
 ```
-
-Error Response
-
-```text
-{
-  "errorCode": 400,
-    "message": "The request contains invalid data",
-    "specificCode": 24403,
-    "additionalMessages": [
-        "leadId: *Invalid item selected*"
-    ]
-}
-```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}

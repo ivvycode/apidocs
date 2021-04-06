@@ -1,4 +1,4 @@
-# Get User List
+# Get Account User List
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=getUserList" path="" %}
 {% api-method-summary %}

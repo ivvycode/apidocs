@@ -15,13 +15,15 @@ Returns the availability of function spaces in a specific venue.
 {% api-method-parameter name="venueId" type="integer" required=true %}
 The id of the venue
 {% endapi-method-parameter %}
+
 {% api-method-parameter name="startDate" type="date" required=true %}
 The date from which the availability data will be fetched. Format YYY-MM-DD
 {% endapi-method-parameter %}
+
 {% api-method-parameter name="endDate" type="date" required=true %}
 The date to which the availability data will be fetched. Format YYY-MM-DD. The maximum number of days of available that can be fetched is 14.
 {% endapi-method-parameter %}
-{% endapi-method-parameter %}
+
 {% api-method-parameter name="spaceIds" type="array" required=false %}
 Optionally the list of space ids to which availability will be limited.
 {% endapi-method-parameter %}
@@ -146,6 +148,7 @@ Optionally the list of space ids to which availability will be limited.
 
 | Property | Data Type | Description |
 | :--- | :--- | :--- |
-| date | date| The date to which the time slot applies. Format YYYY-MM-DD |
-| startTime | string | The start time of the available time slot. Format H:i:s  |
-| endTime | string | The end time of the available time slot. Format H:i:s  |
+| date | date | The date to which the time slot applies. Format YYYY-MM-DD |
+| startTime | string | The start time of the available time slot. Format H:i:s |
+| endTime | string | The end time of the available time slot. Format H:i:s |
+

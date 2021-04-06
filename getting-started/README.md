@@ -1,6 +1,6 @@
 # Getting Started
 
-The iVvy API allows apps to integrate directly with the iVvy product suite. Some typical use cases include:
+The iVvy API allows apps to integrate directly with the iVvy product suite. Some typical use cases include:.
 
 * Connecting a Customer Relationship Manager with iVvy
 * Connecting a Point of Sale System to iVvy Venues

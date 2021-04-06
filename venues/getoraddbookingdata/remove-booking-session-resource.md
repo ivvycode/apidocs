@@ -42,8 +42,8 @@ Successfully removing an booking session resource from the booking session
   "errorType": null
 }
 ```
-
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
