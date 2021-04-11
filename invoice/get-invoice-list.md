@@ -165,8 +165,8 @@ A collection object with the following properties in the results
 | taxRateUsed | The tax rate percent applied to invoice |
 | isTaxCharged | Whether tax charged on the invoice |
 | paymentDueDate | Payment due date of the invoice |
-| eventId | Event Identifier to which the invoice belongs |
-| venueId | Venue Identifier to which the invoice belongs |
+| eventId | Event Identifier to which invoice is belongs to |
+| venueId | Venue Identifier to which invoice is belongs to |
 | toContactId | Contact Id against which invoice is created |
 | toAddress | [The “to” Address of the invoice](get-invoice-list.md#address-details) |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
@@ -215,5 +215,5 @@ A collection object with the following properties in the results
 | feeAmount | The fee amount included in amountPaid |
 | invoiceId | The unique invoice identifier |
 
-The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the invoices the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
