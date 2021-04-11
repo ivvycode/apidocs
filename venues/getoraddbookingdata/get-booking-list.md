@@ -69,7 +69,7 @@ The number of bookings to get in a single call
       "dateEventEnd": "2015-06-04 00:00:00 UTC",
       "convertedToTentative": "2016-02-23 00:00:00 UTC",
       "convertedToConfirmed": "2016-03-05 12:49:31 UTC",
-      "convertedToCancelle": "2016-02-28 00:00:00 UTC",
+      "convertedToCancelled": "2016-02-28 00:00:00 UTC",
       "isAccommIncluded": true,
       "dateAccomStart": "2015-06-01 00:00:00 UTC",
       "dateAccomEnd": "2015-06-27 00:00:00 UTC",

@@ -54,7 +54,7 @@ The id of the booking
   "dateEventEnd": "2002-11-06 00:00:00 UTC",
   "convertedToTentative": "2016-02-23 00:00:00 UTC",
   "convertedToConfirmed": "2016-03-05 12:49:31 UTC",
-  "convertedToCancelle": "2016-02-28 00:00:00 UTC",
+  "convertedToCancelled": "2016-02-28 00:00:00 UTC",
   "isAccommIncluded": false,
   "dateAccomStart": "",
   "dateAccomEnd": "",
