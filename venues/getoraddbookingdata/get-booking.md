@@ -52,6 +52,9 @@ The id of the booking
   "modifiedDate": "2016-04-06 07:51:56 UTC",
   "dateEventStart": "1996-02-19 00:00:00 UTC",
   "dateEventEnd": "2002-11-06 00:00:00 UTC",
+  "convertedToTentative": "2016-02-23 00:00:00 UTC",
+  "convertedToConfirmed": "2016-03-05 12:49:31 UTC",
+  "convertedToCancelle": "2016-02-28 00:00:00 UTC",
   "isAccommIncluded": false,
   "dateAccomStart": "",
   "dateAccomEnd": "",
@@ -825,6 +828,9 @@ The result from this call will be the details of a specific booking to which the
 | modifiedDate | [timestamp](../../development-reference/timestamp-format.md) | The date & time the booking was last modified |
 | dateEventStart | [timestamp](../../development-reference/timestamp-format.md) | The start event date of the booking |
 | dateEventEnd | [timestamp](../../development-reference/timestamp-format.md) | The end event date of the booking |
+| convertedToTentative | [timestamp](../../development-reference/timestamp-format.md) | The date when booking converted to tentatvive |
+| convertedToConfirmed | [timestamp](../../development-reference/timestamp-format.md) | The date when booking converted to confirmed |
+| convertedToCancelled | [timestamp](../../development-reference/timestamp-format.md) | The date when booking converted to cancelled |
 | isAccommIncluded | boolean | Whether or not the booking includes accommodation |
 | dateAccomStart | [timestamp](../../development-reference/timestamp-format.md) | The start accommodation date of the booking |
 | dateAccomEnd | [timestamp](../../development-reference/timestamp-format.md) | The end accommodation date of the booking |
