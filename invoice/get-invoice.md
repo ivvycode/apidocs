@@ -84,7 +84,9 @@ The invoice identifier
             "totalCost": 230,
             "totalTaxCost": 20.91,
             "amountPaid": 230,
-            "refType": 500
+            "refType": 500,
+            "refId": 50,
+            "ref2Id": 500,
             "costCenters": [
                 {
                     "costcenterId": 1,
@@ -254,6 +256,8 @@ A collection object with the following properties in the results
 | totalTaxCost | The tax of the item |
 | amountPaid | The amount paid of the item' |
 | refType | The reference type of the item |
+| refId | The reference type of the item |
+| ref2Id | The reference type of the item |
 | costCenters | The total cost and total tax cost by cost center |
 | taxes | The taxes applied to the item. Some information in the tax item might be empty if information is not available. ie. for old invoices. See Item Taxes Details for the data in each tax item |
 
@@ -277,7 +281,7 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 | 0 | Unknown |
 | 100 | Fee \( \[102\] =&gt; Card Fee, \[103\] =&gt; Payment Fee\) |
 | 500 | Deposit |
-| 501 | Package |
+| 501 | Package (refId = Venue Package id, ref2Id = Booking Package Id) |
 | 502 | Invoice |
 | 503 | Payment |
 | 505 | Session |
