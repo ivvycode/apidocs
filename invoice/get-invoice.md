@@ -199,8 +199,8 @@ A collection object with the following properties in the results
 | taxRateUsed | The tax rate percent applied to invoice |
 | isTaxCharged | Whether tax charged on the invoice |
 | paymentDueDate | Payment due date of the invoice |
-| eventId | Event Identifier to which invoice is belongs to |
-| venueId | Venue Identifier to which invoice is belongs to |
+| eventId | Event Identifier to which the invoice belongs |
+| venueId | Venue Identifier to which the invoice belongs |
 | toContactId | Contact Id against which invoice is created |
 | toAddress | The “to” Address of the invoice |
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
