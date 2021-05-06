@@ -774,16 +774,16 @@ The id of the booking
         "email": "company@name.com",
         "phone": "+354-80-6090113"
     },
-    "commissionByCostCentres": [{
-        "2019-04-04": {
-            "costcenterId": 2,
-            "commission": 31.7
-        },
-        "2019-04-05": {
-            "costcenterId": 2,
-            "commission": 1.7
-        }
-    }],
+    "commissionByCostCentres": [
+      {
+        "costcenterId": 2,
+        "commission": 31.7
+      },
+      { 
+        "costcenterId": 2,
+        "commission": 1.7
+      }
+    ],
     "bookingType": 1,
     "opportunityId": 2,
   ]
