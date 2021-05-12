@@ -64,6 +64,20 @@ The invoice identifier
             "cardType": 3,
         }
     ],
+    "contact": {
+            "id": 580,
+            "firstName": "First",
+            "lastName": "last",
+            "email": "filrst.last@email.com",
+            "phone": 614535435
+        },
+    "company": {
+            "id": 214,
+            "businessName": "Company BusinessName",
+            "businessNumber": "BUS123",
+            "phone": null,
+            "email": company@owner.com
+        },
     "toAddress": {
         "line1": 1,
         "line2": "",

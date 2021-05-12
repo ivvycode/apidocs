@@ -73,7 +73,9 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
                 "countryName": null,
                 "postalCode": "90UX5DUX"
             },
-            "bookingCode": "WLBTCHTT39"
+            "bookingCode": "WLBTCHTT39",
+            "toCompanyId": 5,
+            "toCompanyName": "Test Business"
         },
         {
             "id": 409619,
@@ -111,7 +113,9 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
                 "countryName": null,
                 "postalCode": "8NSP0QE0"
             },
-            "bookingCode": "WLBTCHTT39"
+            "bookingCode": "WLBTCHTT39",
+            "toCompanyId": null,
+            "toCompanyName": null
         }
     ]
 }
