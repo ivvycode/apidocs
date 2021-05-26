@@ -203,6 +203,8 @@ A collection object with the following properties in the results
 | amountPaid | The amount paid against the invoice |
 | toContactEmail | The contact email of the invoice |
 | toContactName | The contact name of the invoice |
+| contact | The contact details of the invoice |
+| company | The company details of the invoice |
 | currentStatus | The status of the invoice |
 | createdDate | The created date of the invoice |
 | modifiedDate | The modified date of the invoice |

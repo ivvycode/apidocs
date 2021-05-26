@@ -74,8 +74,20 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
                 "postalCode": "90UX5DUX"
             },
             "bookingCode": "WLBTCHTT39",
-            "toCompanyId": 5,
-            "toCompanyName": "Test Business"
+            "contact": {
+                "id": 580,
+                "firstName": "First",
+                "lastName": "last",
+                "email": "filrst.last@email.com",
+                "phone": 614535435
+            },
+            "company": {
+                "id": 214,
+                "businessName": "Company BusinessName",
+                "businessNumber": "BUS123",
+                "phone": null,
+                "email": company@owner.com
+            },
         },
         {
             "id": 409619,
@@ -114,8 +126,14 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
                 "postalCode": "8NSP0QE0"
             },
             "bookingCode": "WLBTCHTT39",
-            "toCompanyId": null,
-            "toCompanyName": null
+            "contact": {
+                "id": 580,
+                "firstName": "First",
+                "lastName": "last",
+                "email": "filrst.last@email.com",
+                "phone": 614535435
+            },
+            "company": null,
         }
     ]
 }
@@ -161,6 +179,8 @@ A collection object with the following properties in the results
 | amountPaid | The amount paid against the invoice |
 | toContactEmail | The contact email of the invoice |
 | toContactName | The contact name of the invoice |
+| contact | The contact details of the invoice |
+| company | The company details of the invoice |
 | currentStatus | [The status of the invoice](get-invoice-list.md#current-status) |
 | createdDate | The created date of the invoice |
 | modifiedDate | The modified date of the invoice |
