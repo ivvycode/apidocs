@@ -121,17 +121,12 @@ One of the following values:
 * 5 = Ordering
 * 8 = Not Accepted
 
-## Additional Parameters
-
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
-| modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
-
 ## Additional [Filter](../../getting-started/interpreting-the-response/filtering.md) Properties
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| companyId | Filter by unique id of company | integer |
-| contactId | Filter by unique id of contact | integer |
+| Property | Description | Type |  |
+| :--- | :--- | :--- | :--- |
+| companyId | Filter by unique id of company | integer |  |
+| contactId | Filter by unique id of contact | integer |  |
+| modifiedDateBefore | Filter by Modifie | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |  |
+| modifiedDateAfter | Filter by Modified Date | Yams |  |
 
