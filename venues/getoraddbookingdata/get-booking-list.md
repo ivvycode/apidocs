@@ -128,5 +128,5 @@ One of the following values:
 | companyId | Filter by unique id of company | integer |  |
 | contactId | Filter by unique id of contact | integer |  |
 | modifiedDateBefore | Filter by Modifie | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |  |
-| modifiedDateAfter | Filter by Modified Date | Yams |  |
+| modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |  |
 
