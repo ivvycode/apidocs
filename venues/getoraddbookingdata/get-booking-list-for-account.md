@@ -115,6 +115,7 @@ One of the following values:
 * 4 = Cancelled
 * 5 = Ordering
 * 8 = Not Accepted
+* 9 = Prospective Hold
 
 ## Additional [Filter ](../../getting-started/interpreting-the-response/filtering.md)Properties
 
