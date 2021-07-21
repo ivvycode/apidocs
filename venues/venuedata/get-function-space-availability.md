@@ -1,6 +1,6 @@
 # Get Function Space Availability
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getFunctionSpaceList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getFunctionSpaceAvailability" path="" %}
 {% api-method-summary %}
 Get Venue Function Space Availability
 {% endapi-method-summary %}
