@@ -223,6 +223,7 @@ A collection object with the following properties in the results
 | bookingId | The unique identifier of the booking if refType is 4 \(Venue Booking\) |
 | items | List of invoice items Item Details |
 | payments | List of payments of the invoice Payment Details |
+| refunds | List of refunds of the invoice [Refund Details](get-invoice-list.md#refund-details) |
 
 ## Current status
 
