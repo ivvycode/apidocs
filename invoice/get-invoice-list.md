@@ -134,6 +134,7 @@ The starting result of the page. Note this is zero based \(i.e. sending start=0 
                 "phone": 614535435
             },
             "company": null,
+            "refunds": null,
         }
     ]
 }
@@ -196,6 +197,7 @@ A collection object with the following properties in the results
 | bookingCode | The unique reference code of the booking if refType is 4 \(Venue Booking\) |
 | bookingId | The unique identifier of the booking if refType is 4 \(Venue Booking\) |
 | payments | List of payments of the invoice Payment Details |
+| refunds | List of refunds of the invoice [Refund Details](get-invoice-list.md#refund-details) |
 
 ## Current status
 
@@ -238,6 +240,18 @@ A collection object with the following properties in the results
 | feePercentage | The percentage fee included in amountPaid |
 | feeAmount | The fee amount included in amountPaid |
 | invoiceId | The unique invoice identifier |
+
+## Refund Details
+
+| Property | Description |
+| :--- | :--- |
+| id | The unique identifier of the invoice refund |
+| invoiceId | The identifier of the invoice related to this invoice refund |
+| refundId | The identifier of the refund |
+| refundDate | The refund timestamp of the refund |
+| amountRefunded | The refund amount |
+| notes | The refund notes |
+| refundMethodId | The refund method(if any selected) |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the invoices the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
