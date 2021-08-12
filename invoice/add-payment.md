@@ -49,6 +49,10 @@ Required if paymentMethod = credit card
 The credit card fee percentage. 
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="feeAmount" type="number" required=false %}
+The credit card fee amount flat. If this is passed, feePercentage will be ignored.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="feeExcludedTaxIds" type="array" required=false %}
 An array of tax ids which will be excluded from the payment.
 {% endapi-method-parameter %}
