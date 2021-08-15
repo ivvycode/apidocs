@@ -962,15 +962,14 @@ One of the following values:
 | name | string | The name of the session |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the session |
 | endDate | [Date](../../development-reference/date-format.md) | The end date of the session |
-| startTime | Time | The start time of the session |
-| endTime | Time | The end time of the session |
+| startTime | [Time](../../development-reference/time-format.md) | The start time of the session |
+| endTime | [Time](../../development-reference/time-format.md) | The end time of the session |
 | spaceVenueId | integer | The id of the venue to which the space \(spaceId\) belongs \(it can be different to the booking's venueId\) |
 | spaceId | integer | The space identifier booked by the session |
 | spaceLayout | integer | The space layout identifier of the session |
 | customLayoutName | string | The space layout name when space layout is custom |
 | cost | double | The cost of the session |
 | discount | double | The amount of the discount on cost |
-| discount | double | The amount of the surcharge on cost |
 | totalAmount | double | The total amount of session including tax amount |
 | totalDiscount | double | The total amount of the discount |
 | totalSurcharge | double | The total amount of the surcharge |
@@ -1001,8 +1000,8 @@ One of the following values:
 | excludedTaxIds | array | The excluded tax identifiers |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the menu |
 | endDate | [Date](../../development-reference/date-format.md) | The end date of the menu |
-| startTime | Time | The start time of the menu |
-| endTime | Time | The end time of the menu |
+| startTime | [Time](../../development-reference/time-format.md) | The start time of the menu |
+| endTime | [Time](../../development-reference/time-format.md) | The end time of the menu |
 | includeInPackage | boolean | Whether or not the menu is included in booking package |
 | bookingPackageId | integer | The booking package identifier if menu is included in package |
 | createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the menu was created |
@@ -1030,8 +1029,8 @@ One of the following values:
 | excludedTaxIds | array | The excluded tax identifiers |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the beverage package |
 | endDate | [Date](../../development-reference/date-format.md) | The end date of the beverage package |
-| startTime | Time | The start time of the beverage package |
-| endTime | Time | The end time of the beverage package |
+| startTime | [Time](../../development-reference/time-format.md) | The start time of the beverage package |
+| endTime | [Time](../../development-reference/time-format.md) | The end time of the beverage package |
 | includeInPackage | boolean | Whether or not the beverage package is included in booking package |
 | bookingPackageId | integer | The booking package identifier if beverage package is included in package |
 | createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the beverage package was created |
@@ -1060,8 +1059,8 @@ One of the following values:
 | quantity | integer | The quantity of the resource |
 | startDate | [Date](../../development-reference/date-format.md) | The start date of the resource |
 | endDate | [Date](../../development-reference/date-format.md) | The end date of the resource |
-| startTime | Time | The start time of the resource |
-| endTime | Time | The end time of the resource |
+| startTime | [Time](../../development-reference/time-format.md) | The start time of the resource |
+| endTime | [Time](../../development-reference/time-format.md) | The end time of the resource |
 | includeInPackage | boolean | Whether or not the resource is included in booking package |
 | bookingPackageId | integer | The booking package identifier if resource is included in package |
 | createdDate | [timestamp](../../development-reference/timestamp-format.md) | The date and time the resource was created |
