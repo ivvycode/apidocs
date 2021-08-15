@@ -970,6 +970,7 @@ One of the following values:
 | customLayoutName | string | The space layout name when space layout is custom |
 | cost | double | The cost of the session |
 | discount | double | The amount of the discount on cost |
+| discount | double | The amount of the surcharge on cost |
 | totalAmount | double | The total amount of session including tax amount |
 | totalDiscount | double | The total amount of the discount |
 | totalSurcharge | double | The total amount of the surcharge |

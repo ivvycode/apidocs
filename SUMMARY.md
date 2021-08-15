@@ -148,6 +148,7 @@
   * [JSON Encoding](development-reference/json-encoding.md)
   * [Timestamp Format](development-reference/timestamp-format.md)
   * [Date Format](development-reference/date-format.md)
+  * [Time Format](development-reference/time-format.md)
   * [Address Format](development-reference/address-format.md)
   * [URLEncoding](development-reference/urlencoding.md)
   * [Timezone List](development-reference/timezone-list.md)
