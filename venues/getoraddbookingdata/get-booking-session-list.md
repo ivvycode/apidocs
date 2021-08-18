@@ -25,6 +25,18 @@ The id of the booking
 The number of bookings to get in a single call
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-parameter name="orderBy" type="string" required=false %}
+Order the reponse by column
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-parameter name="orderDir" type="string" required=false %}
+asc|desc
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
