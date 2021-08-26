@@ -36,8 +36,8 @@ The unique id of the company to which the new task belongs
 The name of the task. Required when id is missing.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="endDatetime" type="string" required=false %}
-The due date and time of the task. Format is Y-m-d H:i:s and must be in UTC timezone. Required when id is missing.
+{% api-method-parameter name="endDatetime" type="timestamp" required=false %}
+The due date and time of the task. Required when id is missing.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="priority" type="string" required=false %}
