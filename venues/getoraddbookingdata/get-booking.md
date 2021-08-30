@@ -949,7 +949,6 @@ One of the following values:
 | surcharge | double | The amount of the surcharge on value |
 | excludedTaxIds | array | The excluded tax identifiers |
 | totalAmount | double | The amount of the cost center |
-| totalDiscount | double | The amount of the total discount |
 | totalSurcharge | double | The amount of the total surcharge |
 | totalTaxAmount | double | The total tax amount of the cost center |
 | taxDetails | Array of [Tax Detail](get-booking.md#tax-detail) | The individual tax amount |
