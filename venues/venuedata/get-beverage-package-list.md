@@ -1,4 +1,4 @@
-# Get Beverage Package List
+# Get Beverage Packages
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBeveragePackageList" path="" %}
 {% api-method-summary %}
@@ -6,7 +6,7 @@ Get Beverage Package List
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of beverage packages.
+Get a list of Beverage Packages.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -40,24 +40,24 @@ The number of beverage package to get in a single call
         {
             "id": 125,
             "name": "Beverage Package 1",
-            "minPax": 20,
-            "maxPax": 30,
-            "price": 98,
-            "priceMethod": 100,
+            "minimumPax": 20,
+            "maximumPax": 30,
+            "cost": 98,
+            "costType": 1,
             "smallDescription": "small description",
             "marketplaceName": "Marketplace Name 1",
-            "marketplaceCategories": [3, 5]
+            "marketplaceEventTypes": null
         },
         {   
             "id": 125,
             "name": "Beverage Package 2",
-            "minPax": 10,
-            "maxPax": 30,
-            "price": 198,
-            "priceMethod": 102,
+            "minimumPax": 10,
+            "maximumPax": 30,
+            "cost": 198,
+            "costType": 2,
             "smallDescription": "small description",
             "marketplaceName": "Marketplace Name 2",
-            "marketplaceCategories": []
+            "marketplaceEventTypes": null
         }
     ]
 }
@@ -71,11 +71,12 @@ The result from this call will be a [collection](../../getting-started/interpret
 
 ## Example Request
 
+`Get a specific Beverage Package List`
+
 ```javascript
 {
-  "venueId": 1,
-  "perPage": 50,
-  "start": 40
+  "venueId": "1",
+  "perPage": "50",
 }
 ```
 
@@ -85,18 +86,18 @@ The result from this call will be a [collection](../../getting-started/interpret
 | :--- | :--- | :--- |
 | id | integer | The unique id of the Beverage Package |
 | name | text | The name of the Beverage Package |
-| minPax | integer | The minimum number of people allowed within a single session to order this Beverage Package |
-| maxPax | integer | The maximum number of people allowed within a single session to order this Beverage Package |
-| price | float | The price of the Beverage Package |
-| priceMethod | integer [Price Method](get-beverage-package-list.md#price-method-beverage-package-pricing) | The price type of the Beverage Package |
+| minimumPax | integer | The minimum number of people allowed within a single session to order this Beverage Package |
+| maximumPax | integer | The maximum number of people allowed within a single session to order this Beverage Package |
+| price | integer | The price of the Beverage Package |
+| priceType | integer [Price Type](get-beverage-package-list.md#price-type-beverage-package-pricing) | The price type of the Beverage Package |
 | smallDescription | text | The small description of the Beverage Package |
 | marketplaceName | text | The name of the Beverage Package displayed in marketplace booking engines |
-| marketplaceCategories | array of [Marketplace Categories](get-menu-list.md#marketplace-categories) | The categories in which the Beverage Package will be displayed in marketplace booking engines |
+| marketplaceEventTypes | text | The event types of the Beverage Package displayed in marketplace booking engines |
 
-## Price Method \(Beverage Package Pricing\)
+## Price Type \(Beverage Package pricing\)
 
-* 99 = Hourly rate
-* 100 = Per person
-* 102 = Fixed rate
-* 103 = Total of package items
+One of the following values:
+
+* 1 = Per person
+* 2 = Flat rate
 
