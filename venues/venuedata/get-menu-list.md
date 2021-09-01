@@ -113,6 +113,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 
 ## Menu Type Categories
 
+* 0 = Unassigned
 * 1 = Breakfast
 * 2 = Lunch
 * 3 = Dinner
