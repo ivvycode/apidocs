@@ -27,6 +27,7 @@ A successful response to an add or update operation. NOTE: Additional warnings m
   "warnings": null
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -44,6 +45,7 @@ Invalid request data that prevents the booking from being added/updated.
   ]
 }
 ```
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=500 %}
@@ -59,6 +61,7 @@ Something unexpected occurred whilst processing the request. The booking session
   "additionalMessages": []
 }
 ```
+
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -66,29 +69,29 @@ Something unexpected occurred whilst processing the request. The booking session
 
 ## Booking Session
 
-| Property | Type | Required | Description |  |
-| :--- | :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the booking session to update. A new booking session will be created if this parameter is not present. |  |
-| spaceVenueId | integer | required | The id of the venue to which the booking session belongs. |  |
-| bookingId | integer | required | The id of the booking to which the new booking session will be assigned. |  |
-| contactId | integer | required | The id of the booking to which the new booking session will be assigned. |  |
-| name | string | required | The booking session name. Required when adding a new booking session. |  |
-| minAttendeesGuaranteed | integer | optional | The total attendees of the booking session. Required when adding new booking session. |  |
-| spaceId | integer | optional | The id of the space to which the booking session belongs. |  |
-| spaceLayout | integer | optional | The id of the space layout to which the booking session belongs. |  |
-| customLayoutName | string | optional | The name of custom space layout. |  |
-| startDate | date | required | Start date of the sesion. |  |
-| startTime | string | optional | The start time of the booking session. Format is HH:mm:ss |  |
-| endTime | string | optional | The end time of the booking session. Format is HH:mm:ss |  |
-| setupTime | integer | optional | The setup time \(in mins\) of the booking session. |  |
-| setdownTime | integer | optional | The setdown time \(in mins\) of the booking session |  |
-| includeInPackage | boolean | optional | Whether or not the booking session is included in booking package. |  |
-| bookingPackageId | integer | optional | The id of the booking package to which the booking session belongs. Required when | includeInPackage is true |
-| tariffId | integer | optional | The tariff id to which the booking session belongs. Required when | includeInPackage is true |
-| roomHireType | integer | optional | The room hire type to which the booking session belongs. Required when | includeInPackage is true |
-| costcenterId | integer | optional | The id of the cost center to which the booking session belongs. Required when adding new booking session |  |
-| cost | double | optional | The price of the booking session. Required when includeInPackage is false |  |
-| excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session. Required when includeInPackage is false |  |
+| Property               | Type    | Required | Description                                                                                                             |
+| :--------------------- | :------ | :------- | :---------------------------------------------------------------------------------------------------------------------- |
+| id                     | integer | optional | The unique id of the booking session to update. A new booking session will be created if this parameter is not present. |
+| spaceVenueId           | integer | required | The id of the venue to which the booking session belongs.                                                               |
+| bookingId              | integer | required | The id of the booking to which the new booking session will be assigned.                                                |
+| contactId              | integer | required | The id of the booking to which the new booking session will be assigned.                                                |
+| name                   | string  | required | The booking session name. Required when adding a new booking session.                                                   |
+| minAttendeesGuaranteed | integer | optional | The total attendees of the booking session. Required when adding new booking session.                                   |
+| spaceId                | integer | optional | The id of the space to which the booking session belongs.                                                               |
+| spaceLayout            | integer | optional | The id of the space layout to which the booking session belongs.                                                        |
+| customLayoutName       | string  | optional | The name of custom space layout.                                                                                        |
+| startDate              | date    | required | Start date of the sesion.                                                                                               |
+| startTime              | string  | optional | The start time of the booking session. Format is HH:mm:ss                                                               |
+| endTime                | string  | optional | The end time of the booking session. Format is HH:mm:ss                                                                 |
+| setupTime              | integer | optional | The setup time \(in mins\) of the booking session.                                                                      |
+| setdownTime            | integer | optional | The setdown time \(in mins\) of the booking session                                                                     |
+| includeInPackage       | boolean | optional | Whether or not the booking session is included in booking package.                                                      |
+| bookingPackageId       | integer | optional | The id of the booking package to which the booking session belongs. Required when includeInPackage is true              |
+| tariffId               | integer | optional | The tariff id to which the booking session belongs. Required when includeInPackage is true                              |
+| roomHireType           | integer | optional | The room hire type to which the booking session belongs. Required when includeInPackage is true                         |
+| costcenterId           | integer | optional | The id of the cost center to which the booking session belongs. Required when adding new booking session                |
+| cost                   | double  | optional | The price of the booking session. Required when includeInPackage is false                                               |
+| excludedTaxIds         | array   | optional | The array of tax Ids which are excluded to apply on the booking session. Required when includeInPackage is false        |
 
 ## Example Request
 
@@ -120,18 +123,17 @@ Something unexpected occurred whilst processing the request. The booking session
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the session is added/updated to the booking |
-| id | The unique id of the Booking Session |
+| Property | Description                                                |
+| :------- | :--------------------------------------------------------- |
+| success  | Whether or not the session is added/updated to the booking |
+| id       | The unique id of the Booking Session                       |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
-| Specific Code: 24360 | The booking does not exist |
-| Specific Code: 24361 | The session does not exist |
-| Specific Code: 24362 | An error has occurred |
+| Code                 | Description                       |
+| :------------------- | :-------------------------------- |
+| Specific Code: 24360 | The booking does not exist        |
+| Specific Code: 24361 | The session does not exist        |
+| Specific Code: 24362 | An error has occurred             |
 | Specific Code: 24363 | The request contains invalid data |
 | Specific Code: 24364 | The request contains invalid data |
-
