@@ -810,7 +810,7 @@ The result from this call will be the details of a specific booking to which the
 | :--- | :--- | :--- |
 | id | integer | The unique identifier of the booking |
 | venueId | integer | The venue identifier of the booking |
-| code | string | A reference assigned to the booking by the venue \(not unique\) |
+| code | string | A reference assigned to the booking by the venue \(only unique within a single venue\) |
 | name | string | The name of the booking |
 | eventType | string | The event type of the booking |
 | companyId | integer | The unique id of the company assigned to the booking |
