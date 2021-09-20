@@ -89,6 +89,9 @@ The result from this call will be a [collection](../../getting-started/interpret
 | minimumPax | integer | The minimum number of people allowed within a single session to order this Beverage Package |
 | maximumPax | integer | The maximum number of people allowed within a single session to order this Beverage Package |
 | price | integer | The price of the Beverage Package |
+| cost | double | The price of the Beverage Package |
+| costs | array [Hourly Cost](get-beverage-package-list.md#hourly-cost)  | The hourly cost details of the beverage package |
+| actualCost | double | The price of the Beverage Package |
 | priceType | integer [Price Type](get-beverage-package-list.md#price-type-beverage-package-pricing) | The price type of the Beverage Package |
 | smallDescription | text | The small description of the Beverage Package |
 | marketplaceName | text | The name of the Beverage Package displayed in marketplace booking engines |
@@ -101,3 +104,15 @@ One of the following values:
 * 1 = Per person
 * 2 = Flat rate
 
+## Hourly Cost \(Hourly Cost\)
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique id of the Beverage Package Hourly Cost|
+| beveragePackageId | integer | The unique id of the Beverage Package Hourly Cost|
+| id | integer | The unique id of the Beverage Package Hourly Cost|
+| beveragePackageId | integer | The unique identifier of the Beverage Package|
+| numHours | integer | The number of hours for which the cost apply|
+| cost | double | The hourly cost of the Beverage Package for this setup|
+| costExcludedTaxIds | double | The cost excluded tax identifiers|
+| actualCost | double | The actual hourly cost of the Beverage Package for this setup|
+| actualCostExcludedTaxIds | double | The actual cost excluded tax identifiers|
