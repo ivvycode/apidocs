@@ -167,5 +167,5 @@ The id of the venue
 | marketplaceSortOrder | integer | The sorting order of the space on the iVvy marketplace and booking engines. |
 | createdDate | timestamp | The date & time the space was created. |
 | modifiedDate | timestamp | The date & time the space was last modified. |
-| layouts | array | Collection of layouts tied to the requested space |
+| layouts | array | List of layouts associated to the requested space |
 
