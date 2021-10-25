@@ -89,6 +89,12 @@ Something unexpected occurred whilst processing the request. The booking session
 | costcenterId | integer | optional | The id of the cost center to which the booking session belongs. Required when adding new booking session |  |
 | cost | double | optional | The price of the booking session. Required when includeInPackage is false |  |
 | excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session. Required when includeInPackage is false |  |
+| sessionTypeId | integer | optional | The session type id to which the session belogns |  |
+| overridePax | bool | optional | Whether or not to over ride max pax of the space |  |
+| isSignageVisible | bool | optional | isSignageVisible|  |
+| signage | string | optional | Signage of the booking session |  |
+
+
 
 ## Example Request
 
