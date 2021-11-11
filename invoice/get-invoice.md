@@ -90,6 +90,24 @@ The invoice identifier
         "countryName": null,
         "postalCode": 2222
     },
+    "venueExTaxes": [
+        {
+            "taxId": 6064,
+            "amount": 15,
+            "taxRateId": 0,
+            "taxRateAmount": 15,
+            "taxRateAmountType": 2,
+            "costcenterId": 4
+        },
+        {
+            "taxId": 6221,
+            "amount": 5,
+            "taxRateId": 0,
+            "taxRateAmount": 5,
+            "taxRateAmountType": 2,
+            "costcenterId": 4
+        }
+    ],
     "items": [
         {
             "description": "Deposit payment for Christmas Party",
@@ -224,6 +242,7 @@ A collection object with the following properties in the results
 | items | List of invoice items Item Details |
 | payments | List of payments of the invoice Payment Details |
 | refunds | List of refunds of the invoice [Refund Details](get-invoice.md#refund-details) |
+| venueExTaxes | List of [taxes](get-invoice.md#item-taxes-details) which are not included in item's total. These taxes are included in the total cost of the invoice. |
 
 ## Current status
 
