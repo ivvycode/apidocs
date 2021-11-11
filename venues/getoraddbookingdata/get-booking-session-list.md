@@ -24,16 +24,19 @@ The id of the booking
 {% api-method-parameter name="perPage" type="integer" required=true %}
 The number of bookings to get in a single call
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
 
 {% api-method-parameter name="orderBy" type="string" required=false %}
 Order the reponse by column
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
 
 {% api-method-parameter name="orderDir" type="string" required=false %}
 asc|desc
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="includeBookingDetails" type="boolean" required=false %}
+Whether or not to include booking details belongs to the session
+{% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 
 
@@ -96,7 +99,18 @@ asc|desc
             "costcenterId": 4,
             "overridePax": 1,
             "sessionTypeId": 0,
-            "beoNumbers": null
+            "beoNumbers": null,
+            "booking": {
+                "name": "8KC8BZNQ7C",
+                "code": "8KC8BZNQ7C",
+                "contact": {
+                    "id": 21,
+                    "firstName": "Dina",
+                    "lastName": "Antonopoulos",
+                    "email": "email18@email.com",
+                    "phone": 1233455
+                }
+            }
         }
     ]
 }
