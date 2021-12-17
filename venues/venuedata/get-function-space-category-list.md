@@ -87,3 +87,10 @@ The number of menu to get in a single call
 | id | integer | The unique id of the space category. |
 | name | string | The name of the space category. |
 
+### Throws
+
+| Code | Description |
+| :--- | :--- |
+| Specific Code: 24150 | Account does not exist |
+| Specific Code: 24102 | Venue does not exist |
+| Specific Code: 24408 | Feature not allowed |
