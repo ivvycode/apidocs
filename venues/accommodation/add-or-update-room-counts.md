@@ -1,42 +1,26 @@
 # Add or Update Room Counts
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateRoomCountsCollection" path="" %}
-{% api-method-summary %}
-Add or Update Room Counts
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateRoomCountsCollection" method="post" summary="Add or Update Room Counts" %}
+{% swagger-description %}
 Add or update the dynamic inventory counts of venue rooms
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique id of the venue to which the room belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="items" type="array" required=true %}
+{% swagger-parameter name="items" type="array" in="path" %}
 The array of items. See Item table below for individual item data.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "success": true
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 NOTE: The dynamic data is only available to venues that integrate with a distribution channel.
 
@@ -106,16 +90,15 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ## Returns
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| success | Whether or not the room inventory counts were updated | boolean |
+| Property | Description                                           | Type    |
+| -------- | ----------------------------------------------------- | ------- |
+| success  | Whether or not the room inventory counts were updated | boolean |
 
 ## Item Details
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| roomId | integer | required | The unique id of the room for which the inventory count will be set |
-| startDate | date | required | The start date from which the room inventory count will be set \(Date Format\) |
-| endDate | date | required | The end date from which the room inventory count will be set \(Date Format\) |
-| roomCount | integer | required | The inventory count of the room from startDate to endDate |
-
+| Property  | Type    | Required | Description                                                                  |
+| --------- | ------- | -------- | ---------------------------------------------------------------------------- |
+| roomId    | integer | required | The unique id of the room for which the inventory count will be set          |
+| startDate | date    | required | The start date from which the room inventory count will be set (Date Format) |
+| endDate   | date    | required | The end date from which the room inventory count will be set (Date Format)   |
+| roomCount | integer | required | The inventory count of the room from startDate to endDate                    |

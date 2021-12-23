@@ -1,51 +1,32 @@
-# Get Booking List
+# Get Booking Session List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingSessionList" path="" %}
-{% api-method-summary %}
-Get Booking Session List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingSessionList" method="post" summary="Get Booking Session List" %}
+{% swagger-description %}
 Get a list of booking sessions.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="bookingId" type="integer" required=false %}
+{% swagger-parameter name="bookingId" type="integer" in="path" %}
 The id of the booking
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="perPage" type="integer" required=true %}
+{% swagger-parameter name="perPage" type="integer" in="path" %}
 The number of bookings to get in a single call
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="orderBy" type="string" required=false %}
+{% swagger-parameter name="orderBy" type="string" in="request" %}
 Order the reponse by column
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="orderDir" type="string" required=false %}
+{% swagger-parameter name="orderDir" type="string" in="spec" %}
 asc|desc
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
+{% endswagger %}
 
-
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+```
 {
     "meta": {
         "totalResults": 1550,
@@ -101,10 +82,6 @@ asc|desc
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
