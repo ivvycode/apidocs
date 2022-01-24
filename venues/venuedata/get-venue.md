@@ -1,30 +1,16 @@
 # Get Venue
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenue" path="" %}
-{% api-method-summary %}
-Get Venue
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenue" method="post" summary="Get Venue" %}
+{% swagger-description %}
 Get the details to a specific venue to which the user has access
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=true %}
+{% swagger-parameter name="id" type="integer" in="path" %}
 The venue Id
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "id": 21,
   "hashId": "1efda3e35a75aabd13e8996037d35a79",
@@ -274,10 +260,8 @@ The venue Id
   ],
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -339,14 +323,14 @@ An array of the following values:
 * 37 = Outside Catering Allowed
 * 38 = BYO Allowed
 
-## priceMethod \(package pricing\)
+## priceMethod (package pricing)
 
 One of the following values:
 
 * 1 = Per person
 * 2 = Flat rate
 
-## type \(function space layout\)
+## type (function space layout)
 
 One of the following values:
 
@@ -370,4 +354,3 @@ An array of the following values:
 * 21 = Wedding
 * 31 = Conference
 * 41 = Meeting
-
