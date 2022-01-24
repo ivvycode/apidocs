@@ -1,30 +1,16 @@
 # Get Opportunity List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getOpportunityList" path="" %}
-{% api-method-summary %}
-Get Opportunity List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getOpportunityList" method="post" summary="Get Opportunity List" %}
+{% swagger-description %}
 Get a list of opportunity.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueIds" type="integer" required=false %}
+{% swagger-parameter name="venueIds" type="integer" in="path" %}
 The array of venue ids to which the opportunity belongs
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 1,
@@ -80,10 +66,8 @@ The array of venue ids to which the opportunity belongs
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the opportunities the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
@@ -96,4 +80,3 @@ The result from this call will be a [collection](../getting-started/interpreting
   "venueId": [1,2],
 }
 ```
-

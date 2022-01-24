@@ -1,52 +1,40 @@
 # Add or Update Cost Center
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=addOrUpdateCostCenter" path="" %}
-{% api-method-summary %}
-Add or Update Cost Center
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/account?action=addOrUpdateCostCenter" method="post" summary="Add or Update Cost Center" %}
+{% swagger-description %}
 Add or update cost center details to the account.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=true %}
-The unique identifier of the cost centre  
-\(Leave empty to add the cost centre to the account\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="id" type="integer" in="path" %}
+The unique identifier of the cost centre
 
-{% api-method-parameter name="name" type="string" required=true %}
+\
+
+
+(Leave empty to add the cost centre to the account)
+{% endswagger-parameter %}
+
+{% swagger-parameter name="name" type="string" in="path" %}
 The name of the cost centre
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="code" type="string" required=true %}
+{% swagger-parameter name="code" type="string" in="path" %}
 The code of the cost centre
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="description" type="string" required=false %}
+{% swagger-parameter name="description" type="string" in="path" %}
 The complete description of the coast centre
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "Success": true,
   "Id": 5452
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -62,15 +50,14 @@ The complete description of the coast centre
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the cost center was added to the account |
-| id | The unique identifier of the cost center |
+| Property | Description                                             |
+| -------- | ------------------------------------------------------- |
+| success  | Whether or not the cost center was added to the account |
+| id       | The unique identifier of the cost center                |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
-| Specific Code: 24150 | Account does not exist |
+| Code                 | Description                          |
+| -------------------- | ------------------------------------ |
+| Specific Code: 24150 | Account does not exist               |
 | Specific Code: 24150 | The cost centers details are invalid |
-

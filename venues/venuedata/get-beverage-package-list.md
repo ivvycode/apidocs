@@ -1,34 +1,20 @@
-# Get Beverage Packages
+# Get Beverage Package List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBeveragePackageList" path="" %}
-{% api-method-summary %}
-Get Beverage Package List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBeveragePackageList" method="post" summary="Get Beverage Package List" %}
+{% swagger-description %}
 Get a list of Beverage Packages.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="perPage" type="integer" required=false %}
+{% swagger-parameter name="perPage" type="integer" in="path" %}
 The number of beverage package to get in a single call
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 5,
@@ -48,7 +34,7 @@ The number of beverage package to get in a single call
             "marketplaceName": "Marketplace Name 1",
             "marketplaceEventTypes": null
         },
-        {   
+        {
             "id": 125,
             "name": "Beverage Package 2",
             "minimumPax": 10,
@@ -62,10 +48,8 @@ The number of beverage package to get in a single call
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the beverages the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
@@ -82,22 +66,22 @@ The result from this call will be a [collection](../../getting-started/interpret
 
 ## Beverage Package
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| id | integer | The unique id of the Beverage Package |
-| name | text | The name of the Beverage Package |
-| minimumPax | integer | The minimum number of people allowed within a single session to order this Beverage Package |
-| maximumPax | integer | The maximum number of people allowed within a single session to order this Beverage Package |
-| price | integer | The price of the Beverage Package |
+| Property              | Type                                                                                   | Description                                                                                 |
+| --------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| id                    | integer                                                                                | The unique id of the Beverage Package                                                       |
+| name                  | text                                                                                   | The name of the Beverage Package                                                            |
+| minimumPax            | integer                                                                                | The minimum number of people allowed within a single session to order this Beverage Package |
+| maximumPax            | integer                                                                                | The maximum number of people allowed within a single session to order this Beverage Package |
+| price                 | integer                                                                                | The price of the Beverage Package                                                           |
 | cost | double | The price of the Beverage Package |
 | costs | array [Hourly Cost](get-beverage-package-list.md#hourly-cost)  | The hourly cost details of the beverage package |
 | actualCost | double | The price of the Beverage Package |
-| priceType | integer [Price Type](get-beverage-package-list.md#price-type-beverage-package-pricing) | The price type of the Beverage Package |
-| smallDescription | text | The small description of the Beverage Package |
-| marketplaceName | text | The name of the Beverage Package displayed in marketplace booking engines |
-| marketplaceEventTypes | text | The event types of the Beverage Package displayed in marketplace booking engines |
+| priceType             | integer [Price Type](get-beverage-package-list.md#price-type-beverage-package-pricing) | The price type of the Beverage Package                                                      |
+| smallDescription      | text                                                                                   | The small description of the Beverage Package                                               |
+| marketplaceName       | text                                                                                   | The name of the Beverage Package displayed in marketplace booking engines                   |
+| marketplaceEventTypes | text                                                                                   | The event types of the Beverage Package displayed in marketplace booking engines            |
 
-## Price Type \(Beverage Package pricing\)
+## Price Type (Beverage Package pricing)
 
 One of the following values:
 

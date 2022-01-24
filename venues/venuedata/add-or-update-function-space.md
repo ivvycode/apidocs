@@ -2,128 +2,112 @@
 
 ## Add or Update Function Space
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateFunctionSpace" path="" %}
-{% api-method-summary %}
-Add or Update Function Space
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateFunctionSpace" method="post" summary="Add or Update Function Space" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter name="id" type="integer" in="path" %}
+The unique id of the function space to update (Leave empty if adding a new space )
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the function space to update \(Leave empty if adding a new space \)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique id of the venue to which the function space belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="name" type="string" required=true %}
-The name of the function space \(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="name" type="string" in="path" %}
+The name of the function space (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="description" type="string" required=false %}
+{% swagger-parameter name="description" type="string" in="path" %}
 The description of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="categoryId" type="integer" required=false %}
+{% swagger-parameter name="categoryId" type="integer" in="path" %}
 The categoryId id of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="hasLayouts" type="boolean" required=false %}
+{% swagger-parameter name="hasLayouts" type="boolean" in="path" %}
 Whether or not the function space has layout
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="minPax" type="integer" required=true %}
-The minimum pax of the function space \(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="minPax" type="integer" in="path" %}
+The minimum pax of the function space (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="maxPax" type="integer" required=true %}
-The maximum pax of the function space \(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="maxPax" type="integer" in="path" %}
+The maximum pax of the function space (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="maxNumBookings" type="integer" required=true %}
-The maximum number bookings of the function space \(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="maxNumBookings" type="integer" in="path" %}
+The maximum number bookings of the function space (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="area" type="integer" required=false %}
+{% swagger-parameter name="area" type="integer" in="path" %}
 The usable floor area of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="length" type="integer" required=false %}
+{% swagger-parameter name="length" type="integer" in="path" %}
 The usable length of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="width" type="integer" required=false %}
+{% swagger-parameter name="width" type="integer" in="path" %}
 The usable width of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="heightMaximum" type="integer" required=false %}
+{% swagger-parameter name="heightMaximum" type="integer" in="path" %}
 The usable width of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="heightMinimum" type="integer" required=false %}
+{% swagger-parameter name="heightMinimum" type="integer" in="path" %}
 The mminimum height of the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="floorPressureMaximum" type="integer" required=false %}
+{% swagger-parameter name="floorPressureMaximum" type="integer" in="path" %}
 The maximum floor pressure allowed for the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="isViewable" type="boolean" required=true %}
-Whether or not the function space is viewable on marketplace \(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="isViewable" type="boolean" in="path" %}
+Whether or not the function space is viewable on marketplace (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="eventTypes" type="array" required=false %}
+{% swagger-parameter name="eventTypes" type="array" in="path" %}
 The event type ids applied to the function space
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="marketplaceName" type="string" required=false %}
+{% swagger-parameter name="marketplaceName" type="string" in="path" %}
 The name of the space displayed in marketplace and booking engines
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="hasSmallerSpaces" type="boolean" required=true %}
-Whether or not this space can be divided into smaller, individual spaces \(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="hasSmallerSpaces" type="boolean" in="path" %}
+Whether or not this space can be divided into smaller, individual spaces (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="partSpaceIds" type="array" required=true %}
-The smallest individual spaces that are available within this space. Also include the smallest spaces that overlap other spaces \(Only used when hasSmallerSpaces=true\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="partSpaceIds" type="array" in="path" %}
+The smallest individual spaces that are available within this space. Also include the smallest spaces that overlap other spaces (Only used when hasSmallerSpaces=true)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="includedInReportDashboard" type="boolean" required=false %}
-Whether or not this space should be included in the reporting dashboard calculations \(e.g. CI revenue per function space\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="includedInReportDashboard" type="boolean" in="path" %}
+Whether or not this space should be included in the reporting dashboard calculations (e.g. CI revenue per function space)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="threeDScanId" type="string" required=false %}
+{% swagger-parameter name="threeDScanId" type="string" in="path" %}
 The 3D scan ID which will show 3D view of your space on iVvy
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="useIntegrationPartner" type="boolean" required=false %}
+{% swagger-parameter name="useIntegrationPartner" type="boolean" in="path" %}
 Whether this function space is integrated with ResDiary
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "success": true,
   "id": 7
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Example Request
 
@@ -158,17 +142,16 @@ Whether this function space is integrated with ResDiary
 
 ### Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the function space was added/updated |
-| id | The unique id of the function space |
+| Property | Description                                         |
+| -------- | --------------------------------------------------- |
+| success  | Whether or not the function space was added/updated |
+| id       | The unique id of the function space                 |
 
 ### Throws
 
-| Code | Description |
-| :--- | :--- |
+| Code                 | Description                       |
+| -------------------- | --------------------------------- |
 | Specific Code: 24385 | The function space does not exist |
-| Specific Code: 24386 | An unknown error has occurred |
+| Specific Code: 24386 | An unknown error has occurred     |
 | Specific Code: 24387 | The request contains invalid data |
 | Specific Code: 24388 | The request contains invalid data |
-

@@ -1,42 +1,26 @@
 # Run
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/batch?action=run" path="" %}
-{% api-method-summary %}
-Run
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=run" method="post" summary="Run" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="jobs" type="string" required=true %}
+{% swagger-parameter name="jobs" type="string" in="path" %}
 Array of api jobs to be run on the api. Each job needs to have keys
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="callbackUrl" type="string" required=true %}
+{% swagger-parameter name="callbackUrl" type="string" in="path" %}
 The URL to hit with a POST request after the batch has been run, with a JSON object of the responses
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "asyncId":"e35e06ee592d17a42dc9e6252a058617"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -50,22 +34,22 @@ The URL to hit with a POST request after the batch has been run, with a JSON obj
 ## Keys
 
 | namespace |
-| :--- |
-| action |
-| params |
+| --------- |
+| action    |
+| params    |
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| asyncId | Identifier for the batch request |
+| Property | Description                      |
+| -------- | -------------------------------- |
+| asyncId  | Identifier for the batch request |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
-| Specific Code: 24092 | Incorrect Job Format |
-| Specific Code: 24093 | Empty job parameter found |
+| Code                 | Description                   |
+| -------------------- | ----------------------------- |
+| Specific Code: 24092 | Incorrect Job Format          |
+| Specific Code: 24093 | Empty job parameter found     |
 | Specific Code: 24091 | The information was not saved |
 
 The run action takes an array of api calls and returns an identifier that can be used to identify the batch. Keep this identifier as it can be used to identify the response of the batch request, as well as being used to fetch the progress and results of the request.
@@ -85,4 +69,3 @@ To run a batch job, an JSON object must be provided with the following keys:
       * action: The action of of the call for the response
       * request: The original request parameters used
       * response: The response of the api call
-

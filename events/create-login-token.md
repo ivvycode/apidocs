@@ -1,47 +1,31 @@
 # Create Login Token
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=createLoginToken" path="" %}
-{% api-method-summary %}
-Create Login Token
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=createLoginToken" method="post" summary="Create Login Token" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="event" type="integer" required=true %}
+{% swagger-parameter name="event" type="integer" in="path" %}
 The event identifier for the contact to be logged in to
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="contact" type="integer" required=true %}
+{% swagger-parameter name="contact" type="integer" in="path" %}
 The contact identifier to allow the login
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="referrer" type="string" required=false %}
+{% swagger-parameter name="referrer" type="string" in="path" %}
 Referrer of the request which will be used in validating the token later
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "token":"fc877d1bae56ebc5a8e19b29a3df67de",
   "loginUrl":"http://wired.ivvy.com/event/SQ6EXR/registration/login/token?t=fc877d1bae56ebc5a8e19b29a3df67de&contact=297466"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -64,15 +48,14 @@ If the referrer is provided when creating the token, the browser’s referrer he
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| token | Single use, time restricted token for the contact to login to the iVvy Event Website |
-| loginUrl | The URL that must be used to authenticate the user with the token |
+| Property | Description                                                                          |
+| -------- | ------------------------------------------------------------------------------------ |
+| token    | Single use, time restricted token for the contact to login to the iVvy Event Website |
+| loginUrl | The URL that must be used to authenticate the user with the token                    |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
+| Code                 | Description              |
+| -------------------- | ------------------------ |
 | Specific Code: 24099 | Unable to generate token |
-| Specific Code: 24098 | Unable to find event |
-
+| Specific Code: 24098 | Unable to find event     |
