@@ -1,30 +1,16 @@
 # Get Venue Room List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomList" path="" %}
-{% api-method-summary %}
-Get Venue Room List
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenueRoomList" method="post" summary="Get Venue Room List" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "meta": {
     "totalResults": 1,
@@ -48,10 +34,8 @@ The id of the venue
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties. The venueId is required, for example {"venuId":10}
 
@@ -64,4 +48,3 @@ The result from this call will be a [collection](../../getting-started/interpret
   "venueId": 1
 }
 ```
-

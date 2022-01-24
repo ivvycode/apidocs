@@ -1,55 +1,37 @@
 # Convert Lead To Opportunity
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=convertLeadToOpportunity" path="" %}
-{% api-method-summary %}
-Convert Lead to Opportunity
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=convertLeadToOpportunity" method="post" summary="Convert Lead to Opportunity" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="leadId" type="integer" required=true %}
+{% swagger-parameter name="leadId" type="integer" in="path" %}
 The unique identifier of lead
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique venue id of opportunity
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="stageId" type="integer" required=true %}
+{% swagger-parameter name="stageId" type="integer" in="path" %}
 The stage of opportunity
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
-
+{% swagger-response status="200" description="" %}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+```
+{% endswagger-response %}
+{% endswagger %}
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the lead was converted to opportunity or not |
+| Property | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| success  | Whether or not the lead was converted to opportunity or not |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
-| Specific Code: 24227 | The request is empty |
+| Code                 | Description             |
+| -------------------- | ----------------------- |
+| Specific Code: 24227 | The request is empty    |
 | Specific Code: 24228 | The lead does not exist |
-
