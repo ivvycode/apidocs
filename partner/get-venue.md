@@ -4,38 +4,24 @@ description: 'NOTE: This action has not been published yet.'
 
 # Get Venue
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/partner?action=getVenue" %}
-{% api-method-summary %}
-Get Venue
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/partner?action=getVenue" method="post" summary="Get Venue" %}
+{% swagger-description %}
 This endpoint fetches the public details of a specific venue in the iVvy marketplace. The unique id of the venue is required.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="id" type="integer" required=true %}
+{% swagger-parameter name="id" type="integer" in="body" %}
 The unique identifier of the venue
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="availabilityStartDate" type="date" required=false %}
+{% swagger-parameter name="availabilityStartDate" type="date" in="body" %}
 The start date of the period from which to include the function space availability details of the venues
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="availabilityEndDate" type="date" required=false %}
+{% swagger-parameter name="availabilityEndDate" type="date" in="body" %}
 The end date of the period from which to include the function space availability details of the venues
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "id": 21,
@@ -311,10 +297,8 @@ The end date of the period from which to include the function space availability
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The following are properties in the example json response above that have special values.
 
@@ -368,14 +352,14 @@ An array of the following values:
 * 37 = Outside Catering Allowed
 * 38 = BYO Allowed
 
-## priceMethod \(package pricing\)
+## priceMethod (package pricing)
 
 One of the following values:
 
 * 1 = Per person
 * 2 = Flat rate
 
-## type \(function space layout\)
+## type (function space layout)
 
 One of the following values:
 
@@ -389,7 +373,7 @@ One of the following values:
 * 7 = Cocktail
 * 8 = Hollow Square
 
-## marketplaceEventTypes \(packages, function spaces and image library files\)
+## marketplaceEventTypes (packages, function spaces and image library files)
 
 An array of the following values:
 
@@ -398,7 +382,7 @@ An array of the following values:
 * 31 = Conference
 * 41 = Meeting
 
-## marketplaceCategories \(menus, beverage packages\)
+## marketplaceCategories (menus, beverage packages)
 
 An array of the following values:
 
@@ -409,7 +393,7 @@ An array of the following values:
 * 5 = Dinner
 * 6 = Cocktail
 
-## ratingType \(ratings\)
+## ratingType (ratings)
 
 One of the following values:
 
@@ -417,4 +401,3 @@ One of the following values:
 * 2 = Catering
 * 3 = Hotel Personnel
 * 4 = Accommodation
-

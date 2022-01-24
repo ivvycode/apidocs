@@ -2,39 +2,25 @@
 
 ## Get Invited Contact List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=getInvitedContactList" path="" %}
-{% api-method-summary %}
-Get Invited Contact List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getInvitedContactList" method="post" summary="Get Invited Contact List" %}
+{% swagger-description %}
 Get a list of invited contact for event.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="eventId" type="integer" required=true %}
+{% swagger-parameter name="eventId" type="integer" in="body" %}
 The unique id of the event to which the invitation belong
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="start" type="integer" required=false %}
-The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="start" type="integer" in="body" %}
+The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="perPage" type="integer" required=false %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of invited contacts to fetch
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 345,
@@ -68,32 +54,29 @@ The number of invited contacts to fetch
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of invited contact records the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
 ### Returns
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| eventId | The unique id of the event for invited contact | integer |
-| contactId | The unique contact id of the invited contact | integer |
-| firstName | The first name of the invited contact | integer |
-| lastName | The last name of the invited contact | integer |
-| email | The email of the invited contact | string |
-| phone | The phone number of the invited contact | string |
-| response | The [response](get-invited-contact-list.md#response) from the invited contact | string |
-| registrationId | The registration id of the invited contact | integer |
-| modifiedDate | The date & time the invited contact was last modified | datetime |
+| Property       | Description                                                                   | Type     |
+| -------------- | ----------------------------------------------------------------------------- | -------- |
+| eventId        | The unique id of the event for invited contact                                | integer  |
+| contactId      | The unique contact id of the invited contact                                  | integer  |
+| firstName      | The first name of the invited contact                                         | integer  |
+| lastName       | The last name of the invited contact                                          | integer  |
+| email          | The email of the invited contact                                              | string   |
+| phone          | The phone number of the invited contact                                       | string   |
+| response       | The [response](get-invited-contact-list.md#response) from the invited contact | string   |
+| registrationId | The registration id of the invited contact                                    | integer  |
+| modifiedDate   | The date & time the invited contact was last modified                         | datetime |
 
 ### Response
 
 | Status | Description |
-| :--- | :--- |
-| U | Undecided |
-| Y | Yes |
-| N | No |
-
+| ------ | ----------- |
+| U      | Undecided   |
+| Y      | Yes         |
+| N      | No          |

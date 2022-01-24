@@ -1,42 +1,28 @@
 # Get Function Space Availability
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getFunctionSpaceAvailability" path="" %}
-{% api-method-summary %}
-Get Venue Function Space Availability
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getFunctionSpaceAvailability" method="post" summary="Get Venue Function Space Availability" %}
+{% swagger-description %}
 Returns the availability of function spaces in a specific venue.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="startDate" type="date" required=true %}
+{% swagger-parameter name="startDate" type="date" in="path" %}
 The date from which the availability data will be fetched. Format YYY-MM-DD
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="endDate" type="date" required=true %}
+{% swagger-parameter name="endDate" type="date" in="path" %}
 The date to which the availability data will be fetched. Format YYY-MM-DD. The maximum number of days of available that can be fetched is 14.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="spaceIds" type="array" required=false %}
+{% swagger-parameter name="spaceIds" type="array" in="path" %}
 Optionally the list of space ids to which availability will be limited.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "availability": [
         {
@@ -107,10 +93,8 @@ Optionally the list of space ids to which availability will be limited.
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -129,26 +113,25 @@ Optionally the list of space ids to which availability will be limited.
 
 `A collection object with the following properties in the results`
 
-| Property | Data Type | Description |
-| :--- | :--- | :--- |
-| availability | array | Array of spaces with availability data. See "Space Availability" for details. |
+| Property     | Data Type | Description                                                                   |
+| ------------ | --------- | ----------------------------------------------------------------------------- |
+| availability | array     | Array of spaces with availability data. See "Space Availability" for details. |
 
 ## Space Availability
 
 `A collection object with the following properties in the results`
 
-| Property | Data Type | Description |
-| :--- | :--- | :--- |
-| spaceId | integer | The id of space to which the time slots belong. |
-| timeSlots | array | The array of time slots. See "Space Time Slots" for details. |
+| Property  | Data Type | Description                                                  |
+| --------- | --------- | ------------------------------------------------------------ |
+| spaceId   | integer   | The id of space to which the time slots belong.              |
+| timeSlots | array     | The array of time slots. See "Space Time Slots" for details. |
 
 ## Space Time Slots
 
 `A collection object with the following properties in the results`
 
-| Property | Data Type | Description |
-| :--- | :--- | :--- |
-| date | date | The date to which the time slot applies. Format YYYY-MM-DD |
-| startTime | string | The start time of the available time slot. Format H:i:s |
-| endTime | string | The end time of the available time slot. Format H:i:s |
-
+| Property  | Data Type | Description                                                |
+| --------- | --------- | ---------------------------------------------------------- |
+| date      | date      | The date to which the time slot applies. Format YYYY-MM-DD |
+| startTime | string    | The start time of the available time slot. Format H:i:s    |
+| endTime   | string    | The end time of the available time slot. Format H:i:s      |
