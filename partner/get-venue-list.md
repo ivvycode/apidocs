@@ -4,38 +4,24 @@ description: 'NOTE: This action has not been published yet.'
 
 # Get Venue List
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/partner?action=getVenueList" %}
-{% api-method-summary %}
-Get Venue List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/partner?action=getVenueList" method="post" summary="Get Venue List" %}
+{% swagger-description %}
 Fetch a list of venues that are visible in the marketplace.The result from this call will be a collection of all the venues visible in the marketplace matching the request criteria below. This call also accepts the pagination properties.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="availabilityStartDate" type="date" required=false %}
+{% swagger-parameter name="availabilityStartDate" type="date" in="path" %}
 The start date of the period from which to include the function space availability details of the venues
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="availabilityEndDate" type="date" required=false %}
+{% swagger-parameter name="availabilityEndDate" type="date" in="path" %}
 The end date of the period from which to include the function space availability details of the venues
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="allowsLiveBook" type="boolean" required=false %}
+{% swagger-parameter name="allowsLiveBook" type="boolean" in="path" %}
 Use this to filter venues that do, or do not, allow live bookings
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "meta": {
@@ -114,10 +100,8 @@ Use this to filter venues that do, or do not, allow live bookings
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -134,4 +118,3 @@ Example: Fetch the 2nd batch of 100 venues visible in the marketplace. Include t
    }
 }
 ```
-

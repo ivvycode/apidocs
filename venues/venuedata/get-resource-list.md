@@ -1,30 +1,16 @@
 # Get Resource List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getResourceList" path="" %}
-{% api-method-summary %}
-Get Venue Resources List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getResourceList" method="post" summary="Get Venue Resources List" %}
+{% swagger-description %}
 Return the venue resource list for the venue.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 2,
@@ -74,10 +60,8 @@ The id of the venue
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -93,26 +77,25 @@ The id of the venue
 
 `A collection object with the following properties in the results`
 
-| Property | Description |
-| :--- | :--- |
-| id | The unique invoice identifier |
-| venueId | The id of the venue to which the resource belongs |
-| name | The name of the resource |
-| code | The code of the resource |
-| categoryId | The category of the resource |
-| shortDescription | The short description of the resource |
-| longDescription | The long description of the resource |
-| quantity | The quantity of the resource |
-| canBookByHour | Whether or not the resource can be booked by hour |
-| hourlyCost | Hourly cost of the resource |
-| hourlyCostExcludedTaxIds | Details of taxes |
-| dailyCost | Daily cost of the resource |
-| dailyCostExcludedTaxIds | Details of taxes |
-| isRestrictedToSpaces | Whether or not this resource is restricted to spaces |
-| hasSubResources | Whether or not this resource has sub resources |
-| subResourceIds | ids of sub resources |
-| costcenterId | The costcenter id of the resource |
-| isViewable | Whether or not the resource is viewable on marketplace |
-| createdDate | The date & time the resource was created |
-| modifiedDate | The date & time the resource was last modified |
-
+| Property                 | Description                                            |
+| ------------------------ | ------------------------------------------------------ |
+| id                       | The unique invoice identifier                          |
+| venueId                  | The id of the venue to which the resource belongs      |
+| name                     | The name of the resource                               |
+| code                     | The code of the resource                               |
+| categoryId               | The category of the resource                           |
+| shortDescription         | The short description of the resource                  |
+| longDescription          | The long description of the resource                   |
+| quantity                 | The quantity of the resource                           |
+| canBookByHour            | Whether or not the resource can be booked by hour      |
+| hourlyCost               | Hourly cost of the resource                            |
+| hourlyCostExcludedTaxIds | Details of taxes                                       |
+| dailyCost                | Daily cost of the resource                             |
+| dailyCostExcludedTaxIds  | Details of taxes                                       |
+| isRestrictedToSpaces     | Whether or not this resource is restricted to spaces   |
+| hasSubResources          | Whether or not this resource has sub resources         |
+| subResourceIds           | ids of sub resources                                   |
+| costcenterId             | The costcenter id of the resource                      |
+| isViewable               | Whether or not the resource is viewable on marketplace |
+| createdDate              | The date & time the resource was created               |
+| modifiedDate             | The date & time the resource was last modified         |
