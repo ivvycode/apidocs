@@ -1,87 +1,71 @@
 # Add or Update Guest Room
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addOrUpdateGuestRoom" path="" %}
-{% api-method-summary %}
-Add or Update Guest Room
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateGuestRoom" method="post" summary="Add or Update Guest Room" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=false %}
+{% swagger-parameter name="id" type="integer" in="path" %}
 The unique id of the guest room
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique id of the venue to which the rate plan belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="name" type="string" required=true %}
+{% swagger-parameter name="name" type="string" in="path" %}
 The name of the venue room
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="code" type="string" required=true %}
+{% swagger-parameter name="code" type="string" in="path" %}
 The unique code assigned to the room
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="categoryIds" type="array" required=false %}
+{% swagger-parameter name="categoryIds" type="array" in="path" %}
 An array of category ids to which the room belongs.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="capacity" type="integer" required=true %}
+{% swagger-parameter name="capacity" type="integer" in="path" %}
 The total number of this room type at the venue.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="description" type="string" required=true %}
+{% swagger-parameter name="description" type="string" in="path" %}
 A html formatted description of the room.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="numStandardAdults" type="integer" required=true %}
+{% swagger-parameter name="numStandardAdults" type="integer" in="path" %}
 The number of standard adults allowed in the room.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="numExtraAdults" type="integer" required=true %}
+{% swagger-parameter name="numExtraAdults" type="integer" in="path" %}
 The number of standard adults allowed in the room.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="extraAdultCost" type="number" required=true %}
+{% swagger-parameter name="extraAdultCost" type="number" in="path" %}
 The price of adding an extra adult to the room.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="canSmoke" type="bool" required=true %}
+{% swagger-parameter name="canSmoke" type="bool" in="path" %}
 Whether or not smoking is allowed in the room.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="active" type="bool" required=true %}
+{% swagger-parameter name="active" type="bool" in="path" %}
 Whether or not venue room is active on marketplace.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="marketplaceName" type="bool" required=true %}
+{% swagger-parameter name="marketplaceName" type="bool" in="path" %}
 Whether or not venue room is active on marketplace.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "success": true,
   "id": 10
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -116,17 +100,16 @@ Whether or not venue room is active on marketplace.
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the Space Blockout was added to the venue |
-| id | The unique id of the Space Blockout |
+| Property | Description                                              |
+| -------- | -------------------------------------------------------- |
+| success  | Whether or not the Space Blockout was added to the venue |
+| id       | The unique id of the Space Blockout                      |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
-| Specific Code: 24312 | The room does not exist |
-| Specific Code: 24313 | An error has occurred |
+| Code                 | Description                       |
+| -------------------- | --------------------------------- |
+| Specific Code: 24312 | The room does not exist           |
+| Specific Code: 24313 | An error has occurred             |
 | Specific Code: 24314 | The request contains invalid data |
-| Specific Code: 24315 | An unknown error has occurred |
-
+| Specific Code: 24315 | An unknown error has occurred     |

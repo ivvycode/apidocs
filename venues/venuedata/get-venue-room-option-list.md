@@ -1,38 +1,24 @@
 # Get Venue Room Option List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueRoomOptionList" path="" %}
-{% api-method-summary %}
-Get Venue Room Option List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenueRoomOptionList" method="post" summary="Get Venue Room Option List" %}
+{% swagger-description %}
 Get a list of room options for a venue.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the room options belong
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="start" type="integer" required=false %}
-The starting result of the page. Note this is zero based \(i.e. sending start=0 will start from the first result.\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="start" type="integer" in="body" %}
+The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="perPage" type="integer" required=true %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of booking accomodation groups to fetch
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 2,
@@ -70,26 +56,23 @@ The number of booking accomodation groups to fetch
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of room options the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Venue Room Option
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| id | integer | The unique id of the room option |
-| venueId | integer | The unique id of the venue to which the room option belongs |
-| name | string | The name of the room option \(e.g. "Breakfast"\) |
-| description | string | The description of the room option. This can be html formatted text |
-| price | number | The sale price of the room option. The amount either includes or excludes tax depending on how the venue is configured |
-| priceExcludedTaxIds | array of integers | The unique ids of the taxes that are excluded from price |
-| cost | number | The cost of the room option. The amount either includes or excludes tax depending on how the venue is configured |
-| costExcludedTaxIds | array of integers | The unique ids of the taxes that are excluded from cost |
-| costcenterId | integer | The unique id of the cost center assigned to the room option |
-| createdDate | datetime | The date & time the room option was created |
-| modifiedDate | datetime | The date & time the room option was last modified |
-
+| Property            | Type              | Description                                                                                                            |
+| ------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| id                  | integer           | The unique id of the room option                                                                                       |
+| venueId             | integer           | The unique id of the venue to which the room option belongs                                                            |
+| name                | string            | The name of the room option (e.g. "Breakfast")                                                                         |
+| description         | string            | The description of the room option. This can be html formatted text                                                    |
+| price               | number            | The sale price of the room option. The amount either includes or excludes tax depending on how the venue is configured |
+| priceExcludedTaxIds | array of integers | The unique ids of the taxes that are excluded from price                                                               |
+| cost                | number            | The cost of the room option. The amount either includes or excludes tax depending on how the venue is configured       |
+| costExcludedTaxIds  | array of integers | The unique ids of the taxes that are excluded from cost                                                                |
+| costcenterId        | integer           | The unique id of the cost center assigned to the room option                                                           |
+| createdDate         | datetime          | The date & time the room option was created                                                                            |
+| modifiedDate        | datetime          | The date & time the room option was last modified                                                                      |

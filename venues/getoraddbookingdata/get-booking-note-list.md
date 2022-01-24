@@ -1,38 +1,24 @@
 # Get Booking Notes
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingNoteList" path="" %}
-{% api-method-summary %}
-Get Booking Note List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingNoteList" method="post" summary="Get Booking Note List" %}
+{% swagger-description %}
 Get a list of booking notes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="bookingId" type="integer" required=true %}
+{% swagger-parameter name="bookingId" type="integer" in="path" %}
 The id of the bookng
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="perPage" type="integer" required=true %}
+{% swagger-parameter name="perPage" type="integer" in="path" %}
 The number of booking notes to get in a single call
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 5,
@@ -66,10 +52,8 @@ The number of booking notes to get in a single call
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
@@ -87,17 +71,17 @@ The result from this call will be a [collection](../../getting-started/interpret
 
 ## Booking Notes
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| id | integer | The unique id of the booking note |
-| venueId | integer | The unique id of the venue to which the note belongs |
-| bookingId | integer | The unique id of the booking to which the note belongs |
-| isPrivate | boolean | Whether or not the booking note is private |
-| description | text | The description of the booking note |
-| typeId | integer | The type of the booking note |
-| createdBy | integer | The unique id of user who created the booking note |
-| createdDate | datetime | The date & time the booking note was created |
-| modifiedDate | datetime | The date & time the booking note was last modified |
+| Property     | Type     | Description                                            |
+| ------------ | -------- | ------------------------------------------------------ |
+| id           | integer  | The unique id of the booking note                      |
+| venueId      | integer  | The unique id of the venue to which the note belongs   |
+| bookingId    | integer  | The unique id of the booking to which the note belongs |
+| isPrivate    | boolean  | Whether or not the booking note is private             |
+| description  | text     | The description of the booking note                    |
+| typeId       | integer  | The type of the booking note                           |
+| createdBy    | integer  | The unique id of user who created the booking note     |
+| createdDate  | datetime | The date & time the booking note was created           |
+| modifiedDate | datetime | The date & time the booking note was last modified     |
 
 ## typeId:
 
@@ -142,17 +126,16 @@ One of the following values:
 
 ## Additional Parameters
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| createdDate | Filter by Created Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
+| Property     | Description             | Type                                                                     |
+| ------------ | ----------------------- | ------------------------------------------------------------------------ |
+| createdDate  | Filter by Created Date  | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
 | modifiedDate | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
 
 ## Additional [Filter](../../getting-started/interpreting-the-response/filtering.md) Properties
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| isPrivate | Filter notes whether it is private or not | boolean |
-| description | Filter by description of notes type | string |
-| typeId | Filter by unique id of notes type | integer |
-| createdBy | Filter by user who created note | integer |
-
+| Property    | Description                               | Type    |
+| ----------- | ----------------------------------------- | ------- |
+| isPrivate   | Filter notes whether it is private or not | boolean |
+| description | Filter by description of notes type       | string  |
+| typeId      | Filter by unique id of notes type         | integer |
+| createdBy   | Filter by user who created note           | integer |

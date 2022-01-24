@@ -1,30 +1,16 @@
 # Get Cost Center List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getCostCenterList" path="" %}
-{% api-method-summary %}
-Venue Cost Center List
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getCostCenterList" method="post" summary="Venue Cost Center List" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 1,
@@ -43,27 +29,24 @@ The id of the venue
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties. The venueId is required, for example {"venuId":10}
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| id | The unique identifier of the cost center |
-| name | The name of the cost center |
-| code | The code of the cost center |
-| description | The complete description of the cost center |
-| parentId | The unique identifier of the parent account cost center |
+| Property    | Description                                             |
+| ----------- | ------------------------------------------------------- |
+| id          | The unique identifier of the cost center                |
+| name        | The name of the cost center                             |
+| code        | The code of the cost center                             |
+| description | The complete description of the cost center             |
+| parentId    | The unique identifier of the parent account cost center |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
+| Code                 | Description            |
+| -------------------- | ---------------------- |
 | Specific Code: 24270 | Account does not exist |
-| Specific Code: 24271 | Venue does not exist |
-
+| Specific Code: 24271 | Venue does not exist   |

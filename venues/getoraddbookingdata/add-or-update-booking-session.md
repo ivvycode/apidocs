@@ -77,6 +77,11 @@ Something unexpected occurred whilst processing the request. The booking session
 | contactId              | integer | required | The id of the booking to which the new booking session will be assigned.                                                |
 | name                   | string  | required | The booking session name. Required when adding a new booking session.                                                   |
 | minAttendeesGuaranteed | integer | optional | The total attendees of the booking session. Required when adding new booking session.                                   |
+| agreedAttendees        | integer | optional | The agreed attendees of the booking session.                                                                            |
+| expectedAttendees      | integer | optional | The expected attendees of the booking session.                                                                          |
+| guaranteedAttendees    | integer | optional | The guaranteed attendees of the booking session.                                                                        |
+| setAttendees           | integer | optional | The set attendees of the booking session.                                                                               |
+| actualAttendees        | integer | optional | The actual attendees of the booking session.                                                                            |
 | spaceId                | integer | optional | The id of the space to which the booking session belongs.                                                               |
 | spaceLayout            | integer | optional | The id of the space layout to which the booking session belongs.                                                        |
 | customLayoutName       | string  | optional | The name of custom space layout.                                                                                        |
@@ -92,6 +97,10 @@ Something unexpected occurred whilst processing the request. The booking session
 | costcenterId           | integer | optional | The id of the cost center to which the booking session belongs. Required when adding new booking session                |
 | cost                   | double  | optional | The price of the booking session. Required when includeInPackage is false                                               |
 | excludedTaxIds         | array   | optional | The array of tax Ids which are excluded to apply on the booking session. Required when includeInPackage is false        |
+| sessionTypeId          | integer | optional | The session type id to which the session belogns                                                                        |
+| overridePax            | bool    | optional | Whether or not to over ride max pax of the space                                                                        |
+| isSignageVisible       | bool    | optional | isSignageVisible                                                                                                        |
+| signage                | string  | optional | Signage of the booking session                                                                                          |
 
 ## Example Request
 
