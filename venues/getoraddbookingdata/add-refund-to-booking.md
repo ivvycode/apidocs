@@ -1,38 +1,24 @@
 # Add Refund To Booking
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=addRefundToBooking" path="" %}
-{% api-method-summary %}
-Add Refund to Booking
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addRefundToBooking" method="post" summary="Add Refund to Booking" %}
+{% swagger-description %}
 Add a refund to a booking using this api.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique id of the venue to which the booking belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="bookingId" type="integer" required=true %}
+{% swagger-parameter name="bookingId" type="integer" in="path" %}
 The unique id of the booking to which the refund will be added
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refund" type="object" required=false %}
+{% swagger-parameter name="refund" type="object" in="path" %}
 The payment details to add to the booking
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "Success": true,
   "refundDetails": [
@@ -43,10 +29,8 @@ The payment details to add to the booking
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 All invoices of the booking will be checked for the refunded amount and if the amount is refundable then only the refund amount will be added to invoice.
 
@@ -68,33 +52,32 @@ All invoices of the booking will be checked for the refunded amount and if the a
 
 ## Payment Details
 
-| Property | Description | Required |
-| :--- | :--- | :--- |
-| refundDate | The date & time of the refund | timestamp in UTC |
-| amount | The refund amount | number |
-| notes | Additional notes about the refund | string |
+| Property   | Description                       | Required         |
+| ---------- | --------------------------------- | ---------------- |
+| refundDate | The date & time of the refund     | timestamp in UTC |
+| amount     | The refund amount                 | number           |
+| notes      | Additional notes about the refund | string           |
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the refund was added to the booking |
-| refundDetails | A collection of invoiceId and refundId values |
+| Property      | Description                                        |
+| ------------- | -------------------------------------------------- |
+| success       | Whether or not the refund was added to the booking |
+| refundDetails | A collection of invoiceId and refundId values      |
 
 ## Refund Details
 
-| Property | Description |
-| :--- | :--- |
+| Property  | Description                  |
+| --------- | ---------------------------- |
 | invoiceId | The unique id of the invoice |
-| refundId | The id of the invoice refund |
+| refundId  | The id of the invoice refund |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
-| Specific Code: 24149 | The refund details are invalid |
-| Specific Code: 24145 | The booking does not have an amount that can be refunded |
+| Code                 | Description                                                   |
+| -------------------- | ------------------------------------------------------------- |
+| Specific Code: 24149 | The refund details are invalid                                |
+| Specific Code: 24145 | The booking does not have an amount that can be refunded      |
 | Specific Code: 24146 | Cannot refund more than the total amount payable on a booking |
-| Specific Code: 24147 | The refund amount must be greater than zero |
-| Specific Code: 24148 | The full refund amount could not be applied to the booking |
-
+| Specific Code: 24147 | The refund amount must be greater than zero                   |
+| Specific Code: 24148 | The full refund amount could not be applied to the booking    |

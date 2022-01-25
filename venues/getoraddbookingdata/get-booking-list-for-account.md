@@ -1,30 +1,16 @@
 # Get Booking List For Account
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getBookingListForAccount" path="" %}
-{% api-method-summary %}
-Get Booking List for Account
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingListForAccount" method="post" summary="Get Booking List for Account" %}
+{% swagger-description %}
+A collection of bookings for the account that the user has access (as opposed to bookings for a single venue in an account for get Bookings List)
+{% endswagger-description %}
 
-{% api-method-description %}
-A collection of bookings for the account that the user has access \(as opposed to bookings for a single venue in an account for get Bookings List\)
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="perPage" type="integer" required=true %}
+{% swagger-parameter name="perPage" type="integer" in="path" %}
 The number of bookings to get in a single call
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "meta": {
     "totalResults": 325,
@@ -88,10 +74,8 @@ The number of bookings to get in a single call
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties. The per page value is required, for example {"perPage":10}
 
@@ -115,11 +99,11 @@ One of the following values:
 * 4 = Cancelled
 * 5 = Ordering
 * 8 = Not Accepted
+* 9 = Prospective Hold
 
 ## Additional [Filter ](../../getting-started/interpreting-the-response/filtering.md)Properties
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
+| Property           | Description             | Type                                                                     |
+| ------------------ | ----------------------- | ------------------------------------------------------------------------ |
 | modifiedDateBefore | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
-| modifiedDateAfter | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |
-
+| modifiedDateAfter  | Filter by Modified Date | [iVvy Timestamp Format](../../development-reference/timestamp-format.md) |

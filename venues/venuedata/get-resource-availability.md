@@ -1,42 +1,28 @@
 # Get Resource Availability
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getResourceAvailability" path="" %}
-{% api-method-summary %}
-Get Resource Availability
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getResourceAvailability" method="post" summary="Get Resource Availability" %}
+{% swagger-description %}
 Return the availability for resources.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The id of the venue
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="startDate" type="date" required=true %}
+{% swagger-parameter name="startDate" type="date" in="path" %}
 The start date of the period from which to include the resource availability details.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="endDate" type="date" required=true %}
+{% swagger-parameter name="endDate" type="date" in="path" %}
 The end date of the period from which to include the resource availability details.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="resourceIds" type="array" required=true %}
+{% swagger-parameter name="resourceIds" type="array" in="path" %}
 The end date of the period from which to include the resource availability details.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 2,
@@ -61,10 +47,8 @@ The end date of the period from which to include the resource availability detai
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -83,8 +67,7 @@ The end date of the period from which to include the resource availability detai
 
 `A collection object with the following properties in the results`
 
-| Property | Description |
-| :--- | :--- |
-| id | The unique resource identifier |
+| Property         | Description                      |
+| ---------------- | -------------------------------- |
+| id               | The unique resource identifier   |
 | unAvailableTimes | The unavailable date time ranges |
-
