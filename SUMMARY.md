@@ -88,6 +88,7 @@
     * [Add Items To Booking](venues/getoraddbookingdata/add-items-to-booking.md)
     * [Add Payment To Booking](venues/getoraddbookingdata/add-payment-to-booking.md)
     * [Add Refund To Booking](venues/getoraddbookingdata/add-refund-to-booking.md)
+    * [Add or Update Booking Attendee](venues/getoraddbookingdata/add-or-update-booking-attendee.md)
     * [Add or Update Booking Session](venues/getoraddbookingdata/add-or-update-booking-session.md)
     * [Add or Update Booking Session Beverage](venues/getoraddbookingdata/add-or-update-booking-session-beverage.md)
     * [Add or Update Booking Session Menu](venues/getoraddbookingdata/add-or-update-booking-session-menu.md)
