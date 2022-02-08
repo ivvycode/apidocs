@@ -76,6 +76,24 @@ The invoice identifier
         "countryName": null,
         "postalCode": 2222
     },
+    "venueExTaxes": [
+        {
+            "taxId": 6064,
+            "amount": 15,
+            "taxRateId": 0,
+            "taxRateAmount": 15,
+            "taxRateAmountType": 2,
+            "costcenterId": 4
+        },
+        {
+            "taxId": 6221,
+            "amount": 5,
+            "taxRateId": 0,
+            "taxRateAmount": 5,
+            "taxRateAmountType": 2,
+            "costcenterId": 4
+        }
+    ],
     "items": [
         {
             "description": "Deposit payment for Christmas Party",
@@ -177,37 +195,38 @@ The invoice identifier
 
 A collection object with the following properties in the results
 
-| Property       | Description                                                                    |
-| -------------- | ------------------------------------------------------------------------------ |
-| id             | The unique invoice identifier                                                  |
-| reference      | The unique reference number of the invoice                                     |
-| title          | The title of the invoice                                                       |
-| description    | The description of the invoice                                                 |
-| currency       | The currency of the invoice                                                    |
-| totalCost      | The total of the invoice                                                       |
-| totalTaxCost   | The tax of the invoice                                                         |
-| amountPaid     | The amount paid against the invoice                                            |
-| toContactEmail | The contact email of the invoice                                               |
-| toContactName  | The contact name of the invoice                                                |
-| contact        | The contact details of the invoice                                             |
-| company        | The company details of the invoice                                             |
-| currentStatus  | The status of the invoice                                                      |
-| createdDate    | The created date of the invoice                                                |
-| modifiedDate   | The modified date of the invoice                                               |
-| refType        | The reference type of the invoice                                              |
-| refId          | The reference Id of the invoice                                                |
-| taxRateUsed    | The tax rate percent applied to invoice                                        |
-| isTaxCharged   | Whether tax charged on the invoice                                             |
-| paymentDueDate | Payment due date of the invoice                                                |
-| eventId        | Event Identifier to which the invoice belongs                                  |
-| venueId        | Venue Identifier to which the invoice belongs                                  |
-| toContactId    | Contact Id against which invoice is created                                    |
-| toAddress      | The “to” Address of the invoice                                                |
-| bookingCode    | The unique reference code of the booking if refType is 4 (Venue Booking)       |
-| bookingId      | The unique identifier of the booking if refType is 4 (Venue Booking)           |
-| items          | List of invoice items Item Details                                             |
-| payments       | List of payments of the invoice Payment Details                                |
-| refunds        | List of refunds of the invoice [Refund Details](get-invoice.md#refund-details) |
+| Property       | Description                                                                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id             | The unique invoice identifier                                                                                                                         |
+| reference      | The unique reference number of the invoice                                                                                                            |
+| title          | The title of the invoice                                                                                                                              |
+| description    | The description of the invoice                                                                                                                        |
+| currency       | The currency of the invoice                                                                                                                           |
+| totalCost      | The total of the invoice                                                                                                                              |
+| totalTaxCost   | The tax of the invoice                                                                                                                                |
+| amountPaid     | The amount paid against the invoice                                                                                                                   |
+| toContactEmail | The contact email of the invoice                                                                                                                      |
+| toContactName  | The contact name of the invoice                                                                                                                       |
+| contact        | The contact details of the invoice                                                                                                                    |
+| company        | The company details of the invoice                                                                                                                    |
+| currentStatus  | The status of the invoice                                                                                                                             |
+| createdDate    | The created date of the invoice                                                                                                                       |
+| modifiedDate   | The modified date of the invoice                                                                                                                      |
+| refType        | The reference type of the invoice                                                                                                                     |
+| refId          | The reference Id of the invoice                                                                                                                       |
+| taxRateUsed    | The tax rate percent applied to invoice                                                                                                               |
+| isTaxCharged   | Whether tax charged on the invoice                                                                                                                    |
+| paymentDueDate | Payment due date of the invoice                                                                                                                       |
+| eventId        | Event Identifier to which the invoice belongs                                                                                                         |
+| venueId        | Venue Identifier to which the invoice belongs                                                                                                         |
+| toContactId    | Contact Id against which invoice is created                                                                                                           |
+| toAddress      | The “to” Address of the invoice                                                                                                                       |
+| bookingCode    | The unique reference code of the booking if refType is 4 (Venue Booking)                                                                              |
+| bookingId      | The unique identifier of the booking if refType is 4 (Venue Booking)                                                                                  |
+| items          | List of invoice items Item Details                                                                                                                    |
+| payments       | List of payments of the invoice Payment Details                                                                                                       |
+| refunds        | List of refunds of the invoice [Refund Details](get-invoice.md#refund-details)                                                                        |
+| venueExTaxes   | List of [taxes](get-invoice.md#item-taxes-details) which are not included in item's total. These taxes are included in the total cost of the invoice. |
 
 ## Current status
 

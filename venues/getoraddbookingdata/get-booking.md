@@ -23,6 +23,7 @@ The id of the booking
   "code": "123a",
   "name": "Ava Donovan",
   "eventType": "Holiday",
+  "eventTypeId": 2,
   "companyId": null,
   "company": null,
   "contactId": null,
@@ -765,7 +766,7 @@ The id of the booking
         "costcenterId": 2,
         "commission": 31.7
       },
-      { 
+      {
         "costcenterId": 2,
         "commission": 1.7
       }
@@ -797,6 +798,7 @@ The result from this call will be the details of a specific booking to which the
 | code                    | string                                                                           | A reference assigned to the booking by the venue (only unique within a single venue)                                                                        |
 | name                    | string                                                                           | The name of the booking                                                                                                                                     |
 | eventType               | string                                                                           | The event type of the booking                                                                                                                               |
+| eventTypeId             | integer                                                                          | The event type id of the booking                                                                                                                            |
 | companyId               | integer                                                                          | The unique id of the company assigned to the booking                                                                                                        |
 | company                 | [Company](get-booking.md#company)                                                | The details of the company assigned to the booking                                                                                                          |
 | contactId               | integer                                                                          | The unique id of the contact assigned to the booking                                                                                                        |
