@@ -240,6 +240,25 @@ The venue Id
       }
     }
   ],
+  "cateringWebsitePrimaryColour": "#591c1c",
+  "cateringWebsiteLogoId": "18",
+  "cateringWebsiteLogo": {
+      "id": "18",
+      "accountId": "2",
+      "originalFileName": "image.png",
+      "size": 35478,
+      "contentType": "image/png",
+      "url": "https://localstack:4566/development.accounts.ivvy.com/account2/venues/1/620469e466ea3.png"
+  },
+  "cateringWebsiteBannerId": "19",
+  "cateringWebsiteBanner": {
+      "id": "19",
+      "accountId": "2",
+      "originalFileName": "image.png",
+      "size": 35478,
+      "contentType": "image/png",
+      "url": "https://localstack:4566/development.accounts.ivvy.com/account2/venues/1/620469e48375d.png"
+  }
   "menus": [
     {
         "id": 1,

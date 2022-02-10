@@ -761,6 +761,27 @@ The id of the booking
         "email": "company@name.com",
         "phone": "+354-80-6090113"
     },
+    "hasCateringWebsite": true,
+    "cateringWebsiteLogoId": 16,
+    "cateringWebsiteLogo": {
+        "id": "16",
+        "accountId": "2",
+        "originalFileName": "image.png",
+        "size": 35478,
+        "contentType": "image/png",
+        "url": "https://localstack:4566/development.accounts.ivvy.com/account2/venues/1/bookings/62046310f2c9c.png"
+    },
+    "cateringWebsiteBannerId": 17,
+    "cateringWebsiteBanner": {
+        "id": "17",
+        "accountId": "2",
+        "originalFileName": "image.png",
+        "size": 35478,
+        "contentType": "image/png",
+        "url": "https://localstack:4566/development.accounts.ivvy.com/account2/venues/1/bookings/6204631122147.png"
+    },
+    "cateringWebsiteEventDesc": "<p>adsads</p>\n",
+    "cateringWebsiteEndNumDays": 10,
     "commissionByCostCentres": [
       {
         "costcenterId": 2,
@@ -855,6 +876,12 @@ The result from this call will be the details of a specific booking to which the
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking                                                                                                        |
 | bookingType             | enum ([Booking Types](get-booking.md#get-booking.md#booking-types))              | The type of Booking selected for the Booking                                                                                                                |
 | opportunityId           | integer                                                                          | The id of the Opportunity for the Booking                                                                                                                   |
+| cateringWebsiteLogoId   | integer | The file id of a ccatring website logo |
+| cateringWebsiteLogo   | [File](get-booking.md#file) | The file object of a ccatring website logo |
+| cateringWebsiteBannerId   | integer | The file id of a ccatring website Banner |
+| cateringWebsiteBanner   | [File](get-booking.md#file) | The file object of a ccatring website Banner |
+| cateringWebsiteEventDesc   | string | The catering website event description for the booking |
+| cateringWebsiteEndNumDays   | integer | The catering website end num days from event start for the booking |
 
 ## Status
 
@@ -896,6 +923,18 @@ One of the following values:
 | lastName  | string  | The last name of the contact         |
 | email     | string  | The email address of the contact     |
 | phone     | string  | The phone number of the contact      |
+
+## File
+
+| Property  | Type    | Description                          |
+| --------- | ------- | ------------------------------------ |
+| id        | integer | The file identifier |
+| accountId | integer  | The account id of a file        |
+| originalFileName  | string  | The original file name         |
+| size     | integer  | Tags related to the file     |
+| tags     | array  | The phone number of the contact      |
+| contentType     | string  | Content type of the file      |
+| url     | string  | Url of the file      |
 
 ## Package
 
