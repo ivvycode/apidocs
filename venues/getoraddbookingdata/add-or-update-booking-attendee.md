@@ -67,7 +67,8 @@ Something unexpected occurred whilst processing the request. The booking attende
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the booking attendee to update. A new booking attendee will be created if this parameter is not present. |
+| id | integer | optional | The unique id of the booking attendee to update. |
+| hash | string | optional | The unique hash of the booking attendee to update. |
 | venueId | integer | required | The id of the venue to which the booking attendee belongs |
 | bookingId | integer | required | The id of the booking to which the new booking attendee will be assigned. |
 | firstName | string | required | The first name of the booking attendee. |
@@ -76,6 +77,10 @@ Something unexpected occurred whilst processing the request. The booking attende
 | email | string | required | The email address of the booking attendee. |
 | dietaryRequirement | string | optional | The dietary requirements of the booking attendee. |
 | menuItems | array | optional | The list of menu items that is included in the booking attendee menu. See [Menu Item](add-or-update-booking-attendee.md#menu-item) section for details of each item  |
+
+## Add Or Update
+When id or hash are not provided, it will create new booking attendee. Other wise it will update booking attendee based on hash/id.
+When id and hash both are present in the request, hash will be ignored.
 
 ## Menu Item
 
