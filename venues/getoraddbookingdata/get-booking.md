@@ -855,6 +855,27 @@ The result from this call will be the details of a specific booking to which the
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking                                                                                                        |
 | bookingType             | enum ([Booking Types](get-booking.md#get-booking.md#booking-types))              | The type of Booking selected for the Booking                                                                                                                |
 | opportunityId           | integer                                                                          | The id of the Opportunity for the Booking                                                                                                                   |
+| hasCateringWebsite | boolean | Whether or not the catering website is enabled for the booking |
+| cateringWebsiteLogoId | string | The catering website logo for the booking |
+| cateringWebsiteLogo | [File](get-booking.md#file) | The catering website logo for the booking |
+| cateringWebsiteBannerId | string | The catering website banner for the booking |
+| cateringWebsiteBanner | [File](get-booking.md#file) | The catering website banner for the booking |
+| cateringWebsiteEventDesc | string | The catering website event description for the booking |
+| cateringWebsiteEndNumDays | integer | The catering website end num days from event start for the booking |
+
+
+## File
+
+| Property            | Type | Description |
+| ------------------- | ---- | ----------- |
+| id | integer  | The file identifier |
+| accountId | integer  | The account id of a file |
+| originalFileName | string  | The original file name |
+| size | integer  | Size of the file |
+| tags | array  | Tags related to the file |
+| contentType | string  | Content type of the file |
+| url | string  | Url of the file |
+
 
 ## Status
 
