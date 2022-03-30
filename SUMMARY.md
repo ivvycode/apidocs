@@ -83,6 +83,7 @@
     * [Get Booking List For Account](venues/getoraddbookingdata/get-booking-list-for-account.md)
     * [Get Booking Notes](venues/getoraddbookingdata/get-booking-note-list.md)
     * [Get Booking Session List](venues/getoraddbookingdata/get-booking-session-list.md)
+    * [Get Booking Session Menu List](venues/getoraddbookingdata/get-booking-session-menu-list.md)
     * [Get Booking Attendee (By Hash)](venues/getoraddbookingdata/get-booking-attendee-by-hash.md)
     * [Get Booking Attendee List](venues/getoraddbookingdata/get-booking-attendee-list.md)
     * [Add or Update Booking](venues/getoraddbookingdata/add-or-update-booking.md)
