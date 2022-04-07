@@ -258,6 +258,25 @@ The venue Id
         "activePeriodEnd": null
     }
   ],
+  "cateringWebsitePrimaryColour": "#ae1e1e",
+  "cateringWebsiteLogoId": "1819",
+  "cateringWebsiteLogo": {
+      "id": 1819,
+      "accountId": 2,
+      "originalFileName": "standard_hour.png",
+      "size": 5929,
+      "contentType": "image/png",
+      "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/6180b0108fe0f.png"
+  },
+  "cateringWebsiteBannerId": "1820",
+  "cateringWebsiteBanner": {
+      "id": 1820,
+      "accountId": 2,
+      "originalFileName": "standard_day_meridian.png",
+      "size": 7204,
+      "contentType": "image/png",
+      "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/6180b017aea26.png"
+  }
 }
 ```
 {% endswagger-response %}
