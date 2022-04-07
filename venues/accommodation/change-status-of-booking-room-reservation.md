@@ -2,7 +2,7 @@
 
 {% swagger baseUrl="[PlatformAddress]" path="/api/1.0/venue?action=changeStatusOfBookingRoomReservation" method="post" summary="Change Status of Booking Room Reservation" %}
 {% swagger-description %}
-Change the status of a specific room reservation on a venue booking. 
+Change the status of a specific room reservation on a venue booking.
 
 **NOTE:**
 
@@ -43,7 +43,7 @@ Optionally, the array of ids of the individual rooms on the reservation to chang
 
 The following describes how the [status](get-booking-room-reservation-list.md#room-reservation-status) of a booking room reservation can transition from one status to another.
 
-![](<../../.gitbook/assets/booking-room-reservation-status-transitions (1).png>)
+![](<../../.gitbook/assets/booking-room-reservation-status-transitions_new.png>)
 
 NOTES: To delete a booking room reservation, use the [Remove Booking Room Reservation](remove-booking-room-reservation.md) action. To confirm a booking room reservation, use the [Confirm Booking Room Reservation](confirm-booking-room-reservation.md) action. To cancel a booking room reservation, use the [Cancel Booking Room Reservation](cancel-booking-room-reservation.md) action.
 
