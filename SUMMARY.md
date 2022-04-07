@@ -102,6 +102,7 @@
     * [Remove Booking Session Resource](venues/getoraddbookingdata/remove-booking-session-resource.md)
     * [Add or Update Blockout Space](venues/getoraddbookingdata/add-or-update-blockoutspace.md)
     * [Remove Blockout Space](venues/getoraddbookingdata/remove-blockoutspace.md)
+    * [Get Booking Tax List](venues/getoraddbookingdata/get-booking-tax-list.md)
   * [Booking Accommodation Data](venues/accommodation/README.md)
     * [Get Booking Accommodation List](venues/accommodation/get-booking-accommodation-list.md)
     * [Get Booking Room Reservation List](venues/accommodation/get-booking-room-reservation-list.md)
