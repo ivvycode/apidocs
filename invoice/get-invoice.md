@@ -260,6 +260,8 @@ A collection object with the following properties in the results
 | amountRefunded | The refund amount                                            |
 | notes          | The refund notes                                             |
 | refundMethodId | The refund method(if any selected)                           |
+| createdDate    | The created date of the refund                               |
+| modifiedDate   | The modified date of the refund                              |
 
 ## Address Details
 
