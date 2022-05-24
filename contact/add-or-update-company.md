@@ -113,6 +113,10 @@ The IATA number of commission payable to the agent.
 Whether or not to update the company by businessName when id parameter is missing.
 {% endswagger-parameter %}
 
+{% swagger-parameter name="customFields" type="array" in="path" %}
+The Company Custom fields
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="" %}
 ```
 Adding a company
@@ -157,7 +161,17 @@ Updating a company
   "commissionAudioVisualType" : 2,
   "commissionAccommodation": 50,
   "commissionAccommodationType": 1,
-  "iataNumber": "123456789"
+  "iataNumber": "123456789",
+  "customFields": [
+        {
+            "fieldId": 6,
+            "value": "2022-08-30 10:00:00 UTC"
+        },
+        {
+            "fieldId": 7,
+            "value": "string"
+        }
+  ]
 }
 ```
 
@@ -188,7 +202,17 @@ Updating a company
   "commissionAudioVisualType" : 2,
   "commissionAccommodation": 50,
   "commissionAccommodationType": 1,
-  "iataNumber": "123456789"
+  "iataNumber": "123456789",
+  "customFields": [
+        {
+            "fieldId": 6,
+            "value": "2022-08-30 10:00:00 UTC"
+        },
+        {
+            "fieldId": 7,
+            "value": "string"
+        }
+  ]
 }
 ```
 
@@ -247,3 +271,4 @@ The properties of the company currently supported are:
 * commissionAccommodation
 * commissionAccommodationType
 * iataNumber
+* customFields
