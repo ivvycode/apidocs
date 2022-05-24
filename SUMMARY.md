@@ -76,6 +76,7 @@
     * [Get Event Type List](venues/venuedata/get-event-type-list.md)
     * [Add or Update Function Space Category](venues/venuedata/add-or-update-function-space-category.md)
     * [Add or Update Guest Room](venues/venuedata/add-or-update-guest-room.md)
+    * [Get Booking Custom Field List](venues/venuedata/get-booking-custom-field-list.md)
   * [Booking Data](venues/getoraddbookingdata/README.md)
     * [Convert Lead To Opportunity](venues/getoraddbookingdata/convert-lead-to-opportunity.md)
     * [Add or Update Opportunity](venues/getoraddbookingdata/add-or-update-opportunity.md)
