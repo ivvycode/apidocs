@@ -75,11 +75,11 @@ The result from this call will be a [collection](../getting-started/interpreting
 ```
 ## Contact Note
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the contact note |
-| contactId | required  | integer | The id of the contact to which the contact note belongs |
-| noteText | required  | string | The contact note |
-| createdByUserId | optional  | integer | The details of person who created the contact note |
-| createdDate | optional  | string | The date & time the contact note was created |
-| modifiedDate | optional  | string | The date & time the contact note was last modified |
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique id of the contact note |
+| contactId | integer | The id of the contact to which the contact note belongs |
+| noteText | string | The contact note |
+| createdByUserId | integer |  The details of person who created the contact note |
+| createdDate | timestamp |  The date & time the contact note was created |
+| modifiedDate |timestamp | The date & time the contact note was last modified |

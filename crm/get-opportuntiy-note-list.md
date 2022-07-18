@@ -80,12 +80,12 @@ The result from this call will be a [collection](../getting-started/interpreting
 ```
 ## Opportunity Note
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the opportunity note |
-| accountId | integer | optional | The unique account id of the opportunity note |
-| leadId | required  | integer | The opportunity to which the opportunity note belongs |
-| note | required  | string | The opportunity note |
-| createdByUserId | optional  | integer | The details of person who created the opportunity note |
-| createdDate | optional  | string | The date & time the opportunity note was created |
-| modifiedDate | optional  | string | The date & time the opportunity note was last modified |
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique id of the opportunity note |
+| accountId | integer | The unique account id of the opportunity note |
+| leadId | integer  | The opportunity to which the opportunity note belongs |
+| note | string  | The opportunity note |
+| createdByUserId | integer  | The details of person who created the opportunity note |
+| createdDate | timestamp | The date & time the opportunity note was created |
+| modifiedDate | timestamp | The date & time the opportunity note was last modified |

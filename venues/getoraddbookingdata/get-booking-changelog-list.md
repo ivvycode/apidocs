@@ -77,19 +77,19 @@ The result from this call will be the list of booking changelogs.
 
 ## Booking Changelog
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the booking changelog |
-| venueId | integer | required | The id of the venue to which the bookign changelog belongs |
-| bookingId | integer | required | The id of the booking to which the booking changelog belongs |
-| beoId | integer | required | The id of the beo to which the booking changelog belongs |
-| sessionId | integer | optional | The id of the session to which the booking changelog belongs |
-| recordedByUserId | integer | required | The id of the user who recorded the booking changelog |
-| refType | enum ([Booking Changelog Reference Type](get-booking-changelog-list.md#booking-changelog-reference-type)) | required | The reference type to which the booking changelog belongs |
-| refId | integer | required | The reference Id of the booking changelog |
-| noteText | string | required | The note text of the booking changelog |
-| createdDate | timestamp | required | The date & time the booking changelog was created |
-| modifiedDate | timestamp | required | The date & time the booking changelog was last modified |
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| id | integer | The unique id of the booking changelog |
+| venueId | integer | The id of the venue to which the booking changelog belongs |
+| bookingId | integer | The id of the booking to which the booking changelog belongs |
+| beoId | integer | The id of the beo to which the booking changelog belongs |
+| sessionId | integer | The id of the session to which the booking changelog belongs |
+| recordedByUserId | integer | The id of the user who recorded the booking changelog |
+| refType | enum ([Booking Changelog Reference Type](get-booking-changelog-list.md#booking-changelog-reference-type)) | The reference type to which the booking changelog belongs |
+| refId | integer | The reference Id of the booking changelog |
+| noteText | string | The note text of the booking changelog |
+| createdDate | timestamp | The date & time the booking changelog was created |
+| modifiedDate | timestamp | The date & time the booking changelog was last modified |
 
 
 ## Booking Changelog Reference Type

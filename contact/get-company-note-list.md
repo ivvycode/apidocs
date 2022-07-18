@@ -75,11 +75,11 @@ The result from this call will be a [collection](../getting-started/interpreting
 ```
 ## Company Note
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the company note |
-| companyId | required  | integer | The id of the company to which the company note belongs |
-| noteText | required  | string | The company note |
-| createdByUserId | optional  | integer | The details of person who created the company note |
-| createdDate | optional  | string | The date & time the company note was created |
-| modifiedDate | optional  | string | The date & time the company note was last modified |
+| Property | Type |  Description |
+| :--- | :--- | :--- |
+| id | integer | The unique id of the company note |
+| companyId | integer | The id of the company to which the company note belongs |
+| noteText | string | The company note |
+| createdByUserId | integer | The details of person who created the company note |
+| createdDate | timestamp | The date & time the company note was created |
+| modifiedDate | timestamp | The date & time the company note was last modified |

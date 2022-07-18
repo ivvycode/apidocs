@@ -75,12 +75,12 @@ The result from this call will be a [collection](../getting-started/interpreting
 ```
 ## Lead Note
 
-| Property | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the lead note |
-| accountId | integer | optional | The unique account id of the lead note |
-| leadId | required  | integer | The leads to which the lead note belongs |
-| note | required  | string | The lead note |
-| createdByUserId | optional  | integer | The details of person who created the lead note |
-| createdDate | optional  | string | The date & time the lead note was created |
-| modifiedDate | optional  | string | The date & time the lead note was last modified |
+| Property | Type | Description |
+| :--- | :--- | :---
+| id | integer | The unique id of the lead note |
+| accountId | integer | The unique account id of the lead note |
+| leadId |  integer |  The leads to which the lead note belongs |
+| note | string |  The lead note |
+| createdByUserId | integer | The details of person who created the lead note |
+| createdDate | timestamp | The date & time the lead note was created |
+| modifiedDate | timestamp | The date & time the lead note was last modified |
