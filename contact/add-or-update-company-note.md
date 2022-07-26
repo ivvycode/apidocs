@@ -1,16 +1,16 @@
-# Add or Update Contact Note
+# Add or Update Company Note
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addOrUpdateContactNote" method="post" summary="Add or Update Contact Note" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addOrUpdateCompanyNote" method="post" summary="Add or Update Company Note" %}
 {% swagger-description %}
-Add or update contact note details
+Add or update company note details
 {% endswagger-description %}
 
 {% swagger-parameter name="id" type="integer" in="body" %}
-The contact note's identifier. (Leave empty to add new)
+The company note's identifier. (Leave empty to add new)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="contactId" type="integer" in="body" %}
-The contact in which the note is being added/updated
+{% swagger-parameter name="companyId" type="integer" in="body" %}
+The company in which the note is being added/updated
 {% endswagger-parameter %}
 
 {% swagger-parameter name="noteText" type="string" in="body" %}
@@ -28,11 +28,11 @@ The note text
 {% endswagger-response %}
 {% endswagger %}
 
-## Example Request: Adding a contact note
+## Example Request: Adding a company note
 
 ```javascript
 {
-    "contactId": 2,
+    "companyId": 2,
     "noteText": "test note",
 }
 ```
@@ -41,5 +41,5 @@ The note text
 
 | Property | Description                                      |
 | -------- | ------------------------------------------------ |
-| success  | If the contact note was successfully added or updated |
-| id       | The unique identifier for the contact note           |
+| success  | If the company note was successfully added or updated |
+| id       | The unique identifier for the company note           |
