@@ -41,6 +41,7 @@
   * [Get Company](contact/get-company.md)
   * [Add or Update Company](contact/add-or-update-company.md)
   * [Add or Update Lead](contact/add-or-update-lead.md)
+  * [Add or Update Contact Note](contact/add-or-update-contact-note.md)
 * [Event](events/README.md)
   * [Add or Update Event](events/add-or-update-event.md)
   * [Get Event List](events/get-event-list.md)
