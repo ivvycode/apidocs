@@ -21,7 +21,7 @@ A json object that represents the booking note to add or update. See below for t
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| id | integer | optional | The unique id of the booking note to update. |
+| id | integer | optional | The unique id of the booking note to update. If property is omitted, it will create a new note |
 | venueId | integer | required | The id of the venue to which the booking note belongs |
 | bookingId | integer | required | The id of the booking to which the booking note will be assigned. |
 | description | string | required | The description of the booking note. |
@@ -33,7 +33,7 @@ A json object that represents the booking note to add or update. See below for t
 | menuIds | array | optional | The array of an ids of the booking session menu. Required when typeId = TYPE_SESSION_MENU |
 | beverageIds | array | optional | The array of an ids of the booking beverage. Required when typeId = TYPE_SESSION_BEVERAGE|
 | resourceIds | array | optional | The array of an ids of the booking resource. Required when typeId = TYPE_SESSION_RESOURCE |
-| productIds | array | optional | The array of an ids of the booking product. Required when typeId = TYPE_SESSION_PRODUCT||
+| productIds | array | optional | The array of an ids of the booking product. Required when typeId = TYPE_SESSION_PRODUCT|
 | applyToTemplates | array | optional | The 'Template Applies To' in booking notes. |
 
 

@@ -10,11 +10,11 @@ The contact note's identifier. (Leave empty to add new)
 {% endswagger-parameter %}
 
 {% swagger-parameter name="contactId" type="integer" in="body" %}
-The contact in which the note is being added/updated
+The unique identifier of the contact to which note belongs
 {% endswagger-parameter %}
 
 {% swagger-parameter name="noteText" type="string" in="body" %}
-The note text
+The discription of the note
 {% endswagger-parameter %}
 
 

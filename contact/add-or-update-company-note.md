@@ -10,11 +10,11 @@ The company note's identifier. (Leave empty to add new)
 {% endswagger-parameter %}
 
 {% swagger-parameter name="companyId" type="integer" in="body" %}
-The company in which the note is being added/updated
+The unique identifier of the company to which note being added/updated
 {% endswagger-parameter %}
 
 {% swagger-parameter name="noteText" type="string" in="body" %}
-The note text
+The description of the note
 {% endswagger-parameter %}
 
 
