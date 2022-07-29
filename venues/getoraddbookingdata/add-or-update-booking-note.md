@@ -27,14 +27,14 @@ A json object that represents the booking note to add or update. See below for t
 | description | string | required | The description of the booking note. |
 | isPrivate | bool | optional | Whether or not the booking note is accessible to all. |
 | typeId | integer | optional | The [type](add-or-update-booking-note.md#booking-note-type) of the booking note. |
-| bookingDays | array | optional | The days of the booking. Required when typeId is one of [type](add-or-update-booking-note.md#booking-note-type-for-bookingdays) |
+| bookingDays | array | optional | The days of the booking. Required when typeId is one of 3 11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37 |
 | accommodationIds | array | optional | The array of an ids of the booking accommodation. Required when typeId = TYPE_BOOKING_ACCOMMODATION |
 | sessionIds | array | optional | The array of an ids of the booking session. Required when typeId = TYPE_SESSION|
 | menuIds | array | optional | The array of an ids of the booking session menu. Required when typeId = TYPE_SESSION_MENU |
 | beverageIds | array | optional | The array of an ids of the booking beverage. Required when typeId = TYPE_SESSION_BEVERAGE|
 | resourceIds | array | optional | The array of an ids of the booking resource. Required when typeId = TYPE_SESSION_RESOURCE |
 | productIds | array | optional | The array of an ids of the booking product. Required when typeId = TYPE_SESSION_PRODUCT|
-| applyToTemplates | array | optional | The 'Template Applies To' in booking notes. |
+| applyToTemplates | array | optional | The ['Template Applies To'](add-or-update-booking-note.md#template-applies-to) in booking notes. |
 
 
 ## Example Request
@@ -70,67 +70,43 @@ A json object that represents the booking note to add or update. See below for t
 ## Booking Note Type
 | Type | Description |
 | :--- | :--- |
-| 3 | TYPE_BILLING |
-| 8 | TYPE_BOOKING_ACCOMMODATION |
-| 11 | TYPE_COURIERS |
-| 12 | TYPE_VIP_GUESTS |
-| 13 | TYPE_SECURITY |
-| 14 | TYPE_ONSITE_CONTRACTORS |
-| 15 | TYPE_SIGNATORIES |
-| 16 | TYPE_FRONT_OFFICES |
-| 17 | TYPE_TRANSFERS |
-| 18 | TYPE_ROOM_DROPS |
-| 19 | TYPE_LUGGAGE_SERVICES |
-| 20 | TYPE_GROUP_PROFILE |
-| 21 | TYPE_LEAD |
-| 2 | TYPE_SESSION |
-| 4 | TYPE_SESSION_MENU |
-| 5 | TYPE_SESSION_BEVERAGE |
-| 7 | TYPE_SESSION_PRODUCTS |
-| 6 | TYPE_SESSION_RESOURCES |
-| 22 | TYPE_DIETARY_REQUIREMENTS |
-| 23 | TYPE_ALL_DEPARTMENTS |
-| 24 | TYPE_FOOD_AND_BEVERAGE |
-| 25 | TYPE_CAR_PARKING |
-| 26 | TYPE_SUPPLIERS |
-| 27 | TYPE_INTERNET |
-| 29 | TYPE_SIGNAGE |
-| 30 | TYPE_SALES_OFFICE |
-| 31 | TYPE_BELLMAN_VAN_SERVICE |
-| 32 | TYPE_RESERVATION |
-| 33 | TYPE_HOUSEKEEPING |
-| 34 | TYPE_ENGINEERING |
-| 35 | TYPE_AUDIO_VISUAL |
-| 36 | TYPE_SETUP |
-| 37 | TYPE_ONSITE_CONTACT |
+| 3 | Billing Instructions |
+| 8 | Accommodation |
+| 11 | Couriers |
+| 12 | VIP Guests |
+| 13 | Security |
+| 14 | Onsite Contractors |
+| 15 | Signatories |
+| 16 | Front Office |
+| 17 | Transfers |
+| 18 | Room Drops |
+| 19 | Laguage Services |
+| 20 | Group Profile |
+| 21 | Lead |
+| 2 | Session |
+| 4 | Menu |
+| 5 | Beverage |
+| 7 | Products |
+| 6 | Resources |
+| 22 | Dietary Requirements |
+| 23 | All Departments |
+| 24 | Food & Beverages |
+| 25 | Car Parking |
+| 26 | Suppliers |
+| 27 | Internet |
+| 29 | Signage |
+| 30 | Sales office |
+| 31 | Bellman / Van Service |
+| 32 | Reservations |
+| 33 | Housekeeping |
+| 34 | Engineering |
+| 35 | Audio Visual |
+| 36 | Set-up |
+| 37 | Onsite Contat |
 
-## Booking Note Type for bookingDays
+## Template Applies To
 | Type | Description |
 | :--- | :--- |
-| 3 | TYPE_BILLING |
-| 11 | TYPE_COURIERS |
-| 12 | TYPE_VIP_GUESTS |
-| 13 | TYPE_SECURITY |
-| 14 | TYPE_ONSITE_CONTRACTORS |
-| 15 | TYPE_SIGNATORIES |
-| 16 | TYPE_FRONT_OFFICES |
-| 17 | TYPE_TRANSFERS |
-| 18 | TYPE_ROOM_DROPS |
-| 19 | TYPE_LUGGAGE_SERVICES |
-| 20 | TYPE_GROUP_PROFILE |
-| 21 | TYPE_LEAD |
-| 22 | TYPE_DIETARY_REQUIREMENTS |
-| 23 | TYPE_ALL_DEPARTMENTS |
-| 24 | TYPE_FOOD_AND_BEVERAGE |
-| 25 | TYPE_CAR_PARKING |
-| 26 | TYPE_SUPPLIERS |
-| 27 | TYPE_INTERNET |
-| 29 | TYPE_SIGNAGE |
-| 30 | TYPE_SALES_OFFICE |
-| 31 | TYPE_BELLMAN_VAN_SERVICE |
-| 32 | TYPE_RESERVATION |
-| 33 | TYPE_HOUSEKEEPING |
-| 34 | TYPE_ENGINEERING |
-| 35 | TYPE_AUDIO_VISUAL |
-| 36 | TYPE_SETUP |
-| 37 | TYPE_ONSITE_CONTACT |
+| 1 | Beo |
+| 2 | Quotes & Contracts |
+| 3 | Resume |
