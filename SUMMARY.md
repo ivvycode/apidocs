@@ -112,7 +112,7 @@
     * [Remove Booking Accommodation](venues/accommodation/remove-booking-accommodation.md)
     * [Get Booking Room Reservation List](venues/accommodation/get-booking-room-reservation-list.md)
     * [Add or Update Booking Room Reservation](venues/accommodation/add-or-update-booking-room-reservation.md)
-    * [Update Room Reservation Guest Contact Details](venues/accommodation/update-booking-room-reservation-guest-contact.md)
+    * [Update Room Reservation Guest Contact](venues/accommodation/update-booking-room-reservation-guest-contact.md)
     * [Remove Booking Room Reservation](venues/accommodation/remove-booking-room-reservation.md)
     * [Confirm Booking Room Reservation](venues/accommodation/confirm-booking-room-reservation.md)
     * [Cancel Booking Room Reservation](venues/accommodation/cancel-booking-room-reservation.md)
