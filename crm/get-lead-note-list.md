@@ -29,7 +29,6 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
     "results": [
         {
             "id": 2,
-            "accountId": 0,
             "leadId": 4,
             "note": "<p>Lead Note 1</p>\n",
             "createdByUserId": 1,
@@ -38,7 +37,6 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
         },
         {
             "id": 4,
-            "accountId": 0,
             "leadId": 4,
             "note": "Lead Note 2",
             "createdByUserId": 1,
@@ -47,7 +45,6 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
         },
         {
             "id": 5,
-            "accountId": 0,
             "leadId": 4,
             "note": "Lead Note 3",
             "createdByUserId": 1,
@@ -78,7 +75,6 @@ The result from this call will be a [collection](../getting-started/interpreting
 | Property | Type | Description |
 | :--- | :--- | :---
 | id | integer | The unique id of the lead note |
-| accountId | integer | The unique account id of the lead note |
 | leadId |  integer |  The leads to which the lead note belongs |
 | note | string |  The lead note |
 | createdByUserId | integer | The details of person who created the lead note |
