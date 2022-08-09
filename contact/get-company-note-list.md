@@ -29,7 +29,6 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
     "results": [
         {
             "id": 2,
-            "accountId": 0,
             "companyId": 4,
             "noteText": "<p>Company Note 1</p>\n",
             "createdByUserId": 1,
@@ -38,7 +37,6 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
         },
         {
             "id": 4,
-            "accountId": 0,
             "companyId": 4,
             "noteText": "<p>Company Note 2</p>\n",
             "createdByUserId": 1,
@@ -47,7 +45,6 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
         },
         {
             "id": 5,
-            "accountId": 0,
             "companyId": 4,
             "noteText": "<p>Company Note 3</p>\n",
             "createdByUserId": 1,
