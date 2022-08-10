@@ -27,6 +27,7 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   "reference": "45",
   "mainGuest": {
     "id": 101,
+    "guestContactId": 43213,
     "contactId": 43213
   },
   "rooms": [
@@ -34,6 +35,7 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
       "id": 4001,
       "guest": {
         "id": 101,
+        "guestContactId": 43213,
         "contactId": 43213
       },
       "additionalGuests": []
@@ -42,11 +44,13 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
       "id": 4002,
       "guest": {
         "id": 102,
+        "guestContactId": 44321,
         "contactId": 44321
       },
       "additionalGuests": [
         {
           "guestId": 103,
+          "guestContactId": 43277,
           "contactId": 43277,
           "guestType": 2
         }
@@ -55,6 +59,8 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   ]
 }
 ```
+NOTE: *contactId* property is deprecated and will removed. see [Room Reservation Contact Changes](room-reservation-contact-update.md)
+
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -129,7 +135,8 @@ Invalid request data that prevents the room reservation from being added/updated
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | id | integer | optional | The unique id of the venue guest to update |
-| contact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest |
+| contact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest. **This property is deprecated and will be removed**. Use *guestContact* instead. See [Room Reservation Contact Changes](room-reservation-contact-update.md)  |
+| guestContact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest |
 | primaryPhone | string | optional | The primary phone number of the guest |
 | address | [Address](../../development-reference/address-format.md) | optional | The address of the guest |
 
@@ -141,7 +148,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | lastName | string | required | The last name of the contact |
 | email | string | required | The email address of the contact |
 | phone | string | optional | The mobile phone number of the contact |
-| groups | array | optional | This is an array of group objects with the ‘groupId’ key. |
+| groups | array | optional | This is an array of group objects with the ‘groupId’ key. **This property is deprecated and will be removed** |
 
 ## Additional Guest Type
 
@@ -235,11 +242,10 @@ Consider the following [guest](add-or-update-booking-room-reservation.md#guest) 
 }
 
 {
-  "contact": {
+  "guestContact": {
     "firstName": "John",
     "lastName": "Doe",
     "email": "john.doe@somewhere.com",
-    "groups": [{"groupId": 10}],
   },
   "primaryPhone": "0419111222"
 }
@@ -256,24 +262,22 @@ If the same guest details appear multiple times in the request, only the details
   "venueId": 13,
   "bookingId": 1413,
   "mainGuest": {
-    "contact": {
+    "guestContact": {
       "firstName": "John",
       "lastName": "Doe",
       "email": "John.Doe@somewhere.com",
       "phone": "12345678",
-      "groups": [{"groupId": 10}],
     },
     "primaryPhone": "12345678"
   },
   "rooms": [
     {
       "guest": {
-        "contact": {
+        "guestContact": {
           "firstName": "John",
           "lastName": "Doe",
           "email": "John.Doe@somewhere.com",
           "phone": "87654321",
-          "groups": [{"groupId": 10}],
         },
         "primaryPhone": "87654321"
       },
@@ -283,12 +287,11 @@ If the same guest details appear multiple times in the request, only the details
     },
     {
       "guest": {
-        "contact": {
+        "guestContact": {
           "firstName": "Jane",
           "lastName": "Doe",
           "email": "Jane.Doe@somewhere.com",
           "phone": "123123123",
-          "groups": [{"groupId": 10}],
         },
         "primaryPhone": "123123123"
       },
