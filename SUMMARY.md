@@ -163,4 +163,7 @@
   * [Address Format](development-reference/address-format.md)
   * [URLEncoding](development-reference/urlencoding.md)
   * [Timezone List](development-reference/timezone-list.md)
+* [Announcements](announcements/README.md)
+  * [Room Reservation Contact Changes](announcements/venue/room-reservation-contact-update.md)
+
 

@@ -320,7 +320,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | Property     | Type                                                                  | Description                                       |
 | ------------ | --------------------------------------------------------------------- | ------------------------------------------------- |
 | id           | integer                                                               | The unique id of the venue guest                  |
-| contact      | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest. **This property is deprecated and will be removed**. Use *guestContact* instead. See [Room Reservation Contact Changes](room-reservation-contact-update.md)
+| contact      | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest. **This property is deprecated and will be removed**. Use *guestContact* instead. See [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)
 | guestContact      | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest |
 | primaryPhone | string                                                                | The primary phone number of the guest             |
 | address      | [Address](../../development-reference/address-format.md)              | The address of the guest                          |

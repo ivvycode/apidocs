@@ -59,7 +59,7 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   ]
 }
 ```
-NOTE: *contactId* property is deprecated and will removed. see [Room Reservation Contact Changes](room-reservation-contact-update.md)
+NOTE: *contactId* property is deprecated and will removed. see [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)
 
 {% endapi-method-response-example %}
 
@@ -135,7 +135,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | id | integer | optional | The unique id of the venue guest to update |
-| contact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest. **This property is deprecated and will be removed**. Use *guestContact* instead. See [Room Reservation Contact Changes](room-reservation-contact-update.md)  |
+| contact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest. **This property is deprecated and will be removed**. Use *guestContact* instead. See [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)  |
 | guestContact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest |
 | primaryPhone | string | optional | The primary phone number of the guest |
 | address | [Address](../../development-reference/address-format.md) | optional | The address of the guest |
