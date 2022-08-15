@@ -59,7 +59,8 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   ]
 }
 ```
-NOTE: *contactId* property is deprecated and will removed. see [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)
+
+NOTE: *contactId* property is deprecated and will be removed. see [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)
 
 {% endapi-method-response-example %}
 
