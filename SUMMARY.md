@@ -152,6 +152,7 @@
   * [Add or Update Lead Channel](crm/add-or-update-lead-channel.md)
   * [Add or Update Lead Type](crm/add-or-update-lead-type.md)
   * [Add or Update Lead Source](crm/add-or-update-lead-source.md)
+* [Notifications](notifications/README.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
