@@ -1,4 +1,4 @@
-# API Webhooks
+# Notifications
 
 This documentation will explain iVvy API webhooks. In our system, it is referred to as a subscription and each event type is a notification.
 
@@ -26,7 +26,7 @@ iVvy offers notifications that will send you details of a specific object that y
 
 You can test using the fantastic website:
 
-https://webhook.site/
+[https://webhook.site/](https://webhook.site/)
 
 This website will assist you in receiving webhook information during your testing.
 
@@ -34,7 +34,7 @@ This website will assist you in receiving webhook information during your testin
 
 Following on the instructions we have available on our website:
 
-https://developer.ivvy.com/getting-started
+[https://developer.ivvy.com/getting-started](https://developer.ivvy.com/getting-started)
 
 You can use the following subscription endpoints:
 
