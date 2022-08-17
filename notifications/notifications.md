@@ -11,12 +11,12 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
   * [Subscribing To A Notification](#subscribing-to-a-notification)
     * [Subscribe](#subscribe)
     * [Unsubscribe](#unsubscribe)
-* [Notifications](#notifications)
-  * [Companies Notification](#companies-notification)
-  * [Contacts Notification](#contacts-notification)
-  * [Opportunity Notifications](#opportunity-notifications)
-  * [Invoice Notifications](#invoice-notifications)
-  * [Booking Notifications](#booking-notifications)
+* [Endpoints](#endpoints)
+  * [Company Endpoint](#company-endpoint)
+  * [Contact Endpoint](#contact-endpoint)
+  * [Opportunity Endpoint](#opportunity-endpoint)
+  * [Invoice Endpoint](#invoice-endpoint)
+  * [Booking Endpoint](#booking-endpoint)
 
 ## Subscriptions
 
@@ -147,7 +147,7 @@ The response example above shows the result of unsubscribing each endpoint. The 
 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
-| crmEndpoint       | This notification will send when either an opportunity or a booking has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul> |
+| crmEndpoint       | This notification will send when an opportunity has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul> |
 
 ### Invoice Endpoint
 
