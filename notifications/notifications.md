@@ -1,8 +1,8 @@
 # Notifications
 
-This documentation will explain iVvy API webhooks. In our system, it is referred to as a subscription and each event type is a notification.
+This documentation will explain iVvy notifications. In our system, it is referred to as a subscription and each event type is a notification.
 
-For terminology, you subscribe to a notification. There are several notification types available and will provide details of the specific item that has been modified when data is pushed to your endpoint.
+For terminology, you subscribe to an endpoint. There are several endpoints available and will provide the changes related to that specific endpoint.
 
 ## Table Of Contents
 
@@ -24,7 +24,7 @@ iVvy offers notifications that will send you details of a specific object that y
 
 ### Testing
 
-You can test using the fantastic website:
+You can test using this fantastic website:
 
 [https://webhook.site/](https://webhook.site/)
 
@@ -81,9 +81,9 @@ When you have subscribed to a notification, the endpoint you have provided will 
   "Type": "SubscriptionConfirmation",
   "MessageId": "9a55edb6-b3e8-4cef-9eee-6d302d24c5ac",
   "Token": "2336412f37fb687f5d51e6e2425f004ae03ffa22ff5caccf7d0",
-  "TopicArn": "arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_41095_d7336c818a0bf60d087_NotifCompanies",
-  "Message": "You have chosen to subscribe to the topic arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_41095_d7336c818a0bf60d087_NotifCompanies.\nTo confirm the subscription, visit the SubscribeURL included in this message.",
-  "SubscribeURL": "https://sns.ap-southeast-2.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_41095_d7336c818a0bf60d087_NotifCompanies&Token=2336412f37fb687f5d51e6e2425f004ae03ffa22ff5caccf7d09d4936ab339b5213eea8a8b0765120dfb1d4d2537168",
+  "TopicArn": "arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account5_d7336c818a0bf60d087_NotifCompanies",
+  "Message": "You have chosen to subscribe to the topic arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account5_d7336c818a0bf60d087_NotifCompanies.\nTo confirm the subscription, visit the SubscribeURL included in this message.",
+  "SubscribeURL": "https://sns.ap-southeast-2.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_818a0bf60d087_NotifCompanies&Token=2336412",
   "Timestamp": "2020-09-14T00:10:13.086Z",
   "SignatureVersion": "1",
   "Signature": "bvcrDYRbbqYK6aXAOAIK0e+W/Bs0kr6VQMyoNQ==",
@@ -95,7 +95,7 @@ In the JSON object above, you’ll notice that there is a message and it will sa
 
 _To confirm the subscription, visit the SubscribeURL included in this message_
 
-There is a **SubscribeURL** key and a URL value. You will need to contact this endpoint which will complete the registration of the subscription for that URL. You will not receive any notifications until you have contacted this endpoint.
+There is a **SubscribeURL** attribute. You will need to contact this endpoint which will complete the registration of the subscription for that URL. You will not receive any notifications until you have contacted this endpoint.
 
 ### Unsubscribe
 
@@ -129,33 +129,33 @@ The response example above shows the result of unsubscribing each endpoint. The 
 | 5     | Incorrect Source      | You must unsubscribe with the API key that was used to subscribe the notification endpoint    |
 | 6     | Status Not Confirmed  | The notification endpoint cannot be unsubscribed until it has been confirmed                  |
 
-## Notifications
+## Endpoints
 
-### Companies Notification
+### Company Endpoint
 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
 | companiesEndpoint | This notification will be sent when a company has been modified or created. <ul><li>Company has been updated.</li><li>Company has been created.</li><li>Company has been deleted.</li></ul> |
 
-### Contacts Notification
+### Contact Endpoint
 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
 | contactsEndpoint  | This notification will be sent when a contact has been modified or created. <ul><li>Contact has been updated</li><li>Contact has been created</li><li>Contact has been deleted</li></ul> |
 
-### Opportunity Notifications
+### Opportunity Endpoint
 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
 | crmEndpoint       | This notification will send when either an opportunity or a booking has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul> |
 
-### Invoice Notifications
+### Invoice Endpoint
 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
 | paymentsEndpoint  | This notification will occur when a modification to an invoice occurs. This includes when payments are applied against an invoice. <ul><li>Invoice is created</li><li>Invoice is updated</li><li>Payment is applied to invoice</li></ul> |
 
-### Booking Notifications
+### Booking Endpoint
 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
