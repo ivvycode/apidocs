@@ -112,6 +112,7 @@
     * [Remove Booking Accommodation](venues/accommodation/remove-booking-accommodation.md)
     * [Get Booking Room Reservation List](venues/accommodation/get-booking-room-reservation-list.md)
     * [Add or Update Booking Room Reservation](venues/accommodation/add-or-update-booking-room-reservation.md)
+    * [Update Room Reservation Guest Contact](venues/accommodation/update-booking-room-reservation-guest-contact.md)
     * [Remove Booking Room Reservation](venues/accommodation/remove-booking-room-reservation.md)
     * [Confirm Booking Room Reservation](venues/accommodation/confirm-booking-room-reservation.md)
     * [Cancel Booking Room Reservation](venues/accommodation/cancel-booking-room-reservation.md)
@@ -152,6 +153,7 @@
   * [Add or Update Lead Channel](crm/add-or-update-lead-channel.md)
   * [Add or Update Lead Type](crm/add-or-update-lead-type.md)
   * [Add or Update Lead Source](crm/add-or-update-lead-source.md)
+* [Notifications](notifications/notifications.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
@@ -162,4 +164,7 @@
   * [Address Format](development-reference/address-format.md)
   * [URLEncoding](development-reference/urlencoding.md)
   * [Timezone List](development-reference/timezone-list.md)
+* [Announcements](announcements/README.md)
+  * [Room Reservation Contact Changes](announcements/venue/room-reservation-contact-update.md)
+
 
