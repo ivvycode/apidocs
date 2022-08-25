@@ -26,7 +26,10 @@ The URL to hit with a POST request after the batch has been run, with a JSON obj
 
 ```javascript
 { 
-  "jobs":[{"namespace":"event",”action:"inviteContacts","params":{"event":1,"contacts":[1,2,3]}},     {"namespace":"event",”action:"inviteContacts","params":{"event":2,"contacts":[1,2,4]}},],
+  "jobs": [
+	{"namespace":"event","action":"inviteContacts","params":{"event":1,"contacts":[1,2,3]}},
+	{"namespace":"event",”action:"inviteContacts","params":{"event":2,"contacts":[1,2,4]}},
+  ],
   "callbackUrl":"http://example.callback.url.com"
 }
 ```
