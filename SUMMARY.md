@@ -103,6 +103,7 @@
     * [Remove Booking Session Beverage](venues/getoraddbookingdata/remove-booking-session-beverage.md)
     * [Remove Booking Session Menu](venues/getoraddbookingdata/remove-booking-session-menu.md)
     * [Remove Booking Session Resource](venues/getoraddbookingdata/remove-booking-session-resource.md)
+    * [Get Space Blockout List](venues/venuedata//get-space-blockout-list.md)
     * [Add or Update Blockout Space](venues/getoraddbookingdata/add-or-update-blockoutspace.md)
     * [Remove Blockout Space](venues/getoraddbookingdata/remove-blockoutspace.md)
     * [Get Booking Tax List](venues/getoraddbookingdata/get-booking-tax-list.md)
