@@ -1,6 +1,6 @@
 # Add or Update Note
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateLeadNote" method="post" summary="Add or Update Note which belongs contact, company, opportunity and lead" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateOpportunityNote" method="post" summary="Add or Update Note which belongs opportunity" %}
 {% swagger-description %}
 
 {% endswagger-description %}
