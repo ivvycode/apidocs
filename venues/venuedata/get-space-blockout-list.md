@@ -61,14 +61,14 @@ The id of the venue
 
 `A collection object with the following properties in the results`
 
-| Property                    | Data Type | Description                                                                                                                                                                                                                              |
-| --------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                          | integer   | The unique identifier of the space blockout.                                                                                                                                                                                                              |
-| venueId                     | integer   |The unique id of the venue to which the space blockout belongs.                                                                                                                                                                                          |
-| spaceId                     | integer   |he unique id of the function space to which the space blockout belongs.                                                                                                                                                                                          |
-| name                        | string    | The name of the space blockout.                                                                                                                                                                                                                   |
-| startDate                 | date    | The start date of the space blockout.                                                                                                                                                                                                            |
-| startTime                  | time   | The start time of the space blockout.                                                                                                                                                                                            |
-| endDate                     | date   | The end date of the space blockout.                                                                                                                                                                                                      |
-| endTime                  | time   | The end time of the space blockout.                                                                                                                                                                                                    |
-| bookedById                      | integer   | 'The coordinator user who created the space blockout.
+| Property   | Data Type | Description                                                              |
+|------------|-----------|--------------------------------------------------------------------------|
+| id         | integer   | The unique identifier of the space blockout.                             |
+| venueId    | integer   | The unique id of the venue to which the space blockout belongs.          |
+| spaceId    | integer   | The unique id of the function space to which the space blockout belongs. |
+| name       | string    | The name of the space blockout.                                          |
+| startDate  | date      | The start date of the space blockout.                                    |
+| startTime  | time      | The start time of the space blockout.                                    |
+| endDate    | date      | The end date of the space blockout.                                      |
+| endTime    | time      | The end time of the space blockout.                                      |
+| bookedById | integer   | 'The coordinator user who created the space blockout.                    |
