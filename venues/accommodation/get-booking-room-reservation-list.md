@@ -47,6 +47,15 @@ The number of booking room reservations to fetch
                 "createdDate": "2018-08-17 14:51:35 UTC",
                 "modifiedDate": "2018-08-17 14:51:35 UTC"
             },
+            "guestContact": {
+                "id": 431,
+                "firstName": "Test1",
+                "lastName": "Com1",
+                "email": "test1.com1@somewhere.com",
+                "phone": "071234567890",
+                "createdDate": "2018-08-17 14:51:35 UTC",
+                "modifiedDate": "2018-08-17 14:51:35 UTC"
+            },
             "primaryPhone": "071234567890",
             "address": null,
             "createdDate": "2018-08-17 14:51:35 UTC",
@@ -62,6 +71,15 @@ The number of booking room reservations to fetch
                 "guest": {
                     "id": 542,
                     "contact": {
+                        "id": 431,
+                        "firstName": "Test1",
+                        "lastName": "Com1",
+                        "email": "test1.com1@somewhere.com",
+                        "phone": "071234567890",
+                        "createdDate": "2018-08-17 14:51:35 UTC",
+                        "modifiedDate": "2018-08-17 14:51:35 UTC"
+                    },
+                    "guestContact": {
                         "id": 431,
                         "firstName": "Test1",
                         "lastName": "Com1",
@@ -123,6 +141,15 @@ The number of booking room reservations to fetch
                         "createdDate": "2018-08-17 14:52:21 UTC",
                         "modifiedDate": "2018-08-17 14:52:21 UTC"
                     },
+                    "guestContact": {
+                        "id": 432,
+                        "firstName": "Test2",
+                        "lastName": "Com2",
+                        "email": "test2.com2@somewhere.com",
+                        "phone": "",
+                        "createdDate": "2018-08-17 14:52:21 UTC",
+                        "modifiedDate": "2018-08-17 14:52:21 UTC"
+                    },
                     "primaryPhone": "070987654321",
                     "address": {
                         "line1": "123 Some Street",
@@ -166,6 +193,15 @@ The number of booking room reservations to fetch
                         "guest": {
                             "id": 601,
                             "contact": {
+                                "id": 800,
+                                "firstName": "Jane",
+                                "lastName": "Doe",
+                                "email": "Jane.Doe@test.com",
+                                "phone": "123654789",
+                                "createdDate": "2018-08-17 18:43:33 UTC",
+                                "modifiedDate": "2018-08-17 18:43:33 UTC"
+                            },
+                            "guestContact": {
                                 "id": 800,
                                 "firstName": "Jane",
                                 "lastName": "Doe",
@@ -284,9 +320,11 @@ The result from this call will be a [collection](../../getting-started/interpret
 | Property     | Type                                                                  | Description                                       |
 | ------------ | --------------------------------------------------------------------- | ------------------------------------------------- |
 | id           | integer                                                               | The unique id of the venue guest                  |
-| contact      | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest                  |
+| contact      | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest. **This property is deprecated and will be removed**. Use *guestContact* instead. See [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)
+| guestContact      | [Contact](get-booking-room-reservation-list.md#guest-contact-details) | The contact details of the guest |
 | primaryPhone | string                                                                | The primary phone number of the guest             |
 | address      | [Address](../../development-reference/address-format.md)              | The address of the guest                          |
+| isAnonymised  | boolean                                                              | Whether or not the guest details have been anonymised      |
 | createdDate  | datetime                                                              | The date & time the venue guest was created       |
 | modifiedDate | datetime                                                              | The date & time the venue guest was last modified |
 
