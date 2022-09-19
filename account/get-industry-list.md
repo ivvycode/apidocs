@@ -26,6 +26,6 @@ The starting result of the page. Note this is zero based (i.e. sending start = 0
 | id            | The unique identifier for the industry                                                     |
 | name          | The name of the industry                                                                   |
 | createdDate   | The date & time the industry was created                                                   |
-| modifiedDate  | 'The date & time the industry was last modified                                            |
+| modifiedDate  | The date & time the industry was last modified                                            |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the users. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
