@@ -148,7 +148,6 @@ The status is the record of whether the contact has opted in to email communicat
 | 1     | Subscribed      |
 | 2     | Unsubscribed    |
 | 3     | Bounced         |
-| 4     | Registering     |
 | 5     | No Marketing    |
 
 ### Sms status
