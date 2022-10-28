@@ -113,6 +113,7 @@ The id of the space hire plan rate
 | colour |  string |  The colour to identify the tariff rate |
 | startDate | sqldate |The start date of tariff rate |
 | endDate | sqldate | The end date of tariff rate |
+// IVVY-TODO: SW-3047: can we add table for this?
 | spaceRates | array | The detailed rates for each spaces for the tariff rate |
 | daysOfWeek |  array | The days of the week to which the tariff rate applies |
 | createdDate | timestamp | The date & time the tariff rate was created |
