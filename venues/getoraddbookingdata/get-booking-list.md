@@ -74,6 +74,7 @@ The number of bookings to get in a single call
       "accommChargingMethod": 2,
       "accommGuaranteeRequired": false,
       "accommExternalBlockId": "test 123",
+      "revenueTemplateId": 12
     }
   ]
 }

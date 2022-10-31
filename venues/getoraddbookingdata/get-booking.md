@@ -60,6 +60,7 @@ The id of the booking
   "accommChargingMethod": 2,
   "accommGuaranteeRequired": false,
   "accommExternalBlockId": "test 123",
+  "revenueTemplateId": 12,
   "dailyRevenue": [
     {
       "costcenterId": 1276,
@@ -835,6 +836,7 @@ The result from this call will be the details of a specific booking to which the
 | accommChargingMethod    | enum ([Charging Method](get-booking.md#get-booking.md#charging-method))          | A record of the Charging Method for Documents, Note that values will still need to be altered in the Block.                                                 |
 | accommGuaranteeRequired | boolean                                                                          | Indicates whether the customer is required to guarantee their reservation with a credit card.                                                               |
 | accommExternalBlockId   | string                                                                           | The Block ID from an external PMS.                                                                                                                          |
+| revenueTemplateId       | integer                                                                          | The id of the revenue template applied to the booking                                                                                                       |
 | dailyRevenue            | Array of [DailyRevenue](get-booking.md#daily-revenue)                            | The daily revenue data of booking                                                                                                                           |
 | packages                | Array of [Package](get-booking.md#package)                                       | The list of packages of the booking                                                                                                                         |
 | sessions                | Array of [Session](get-booking.md#session)                                       | The list of sessions of booking                                                                                                                             |
