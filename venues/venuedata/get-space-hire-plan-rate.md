@@ -113,8 +113,7 @@ The id of the space hire plan rate
 | colour |  string |  The colour to identify the tariff rate |
 | startDate | sqldate |The start date of tariff rate |
 | endDate | sqldate | The end date of tariff rate |
-// IVVY-TODO: SW-3047: can we add table for this?
-| spaceRates | array | The detailed rates for each spaces for the tariff rate |
+| spaceRates | array | The detailed rates for each spaces for the tariff rate. See [Space Rate](get-space-hire-plan-rate.md#space-rate)|
 | daysOfWeek |  array | The days of the week to which the tariff rate applies |
 | createdDate | timestamp | The date & time the tariff rate was created |
 | modifiedDate | timestamp | The date & time the tariff rate was last modified |
@@ -130,3 +129,38 @@ following values:
 * 4 = Thursday
 * 5 = Friday
 * 6 = Saturday
+
+
+## Space Rate
+
+| Property                    | Data Type | Description  |
+| --------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id | string | The uniqie identifier of the tariff space rate |
+| spaceId | int | The space id of the tariff space rate |
+| spaceName | string | The space name of the tariff space rate |
+| minSpendCost | number | The minimum Sale Price of the tariff space rate |
+| minSpendCostExcludedTaxIds | array | The minimum Sale Price ExcludedTaxIds of the tariff space rate |
+| hourlyCost | number | The hourly sale Price of the tariff space rate |
+| hourlyCostExcludedTaxIds | array | The hourly sale Price ExcludedTaxIds of the tariff space rate |
+| halfDayCost | number | The Half Day Sale Price of the tariff space rate |
+| halfDayCostExcludedTaxIds | array | The Half Day Sale Price ExcludedTaxIds of the tariff space rate |
+| halfDayCostMinMins | int | The Half Day minimum minutes of the tariff space rate |
+| halfDayCostMaxMins | int | The Half Day maximum minutes of the tariff space rate |
+| halfDayCostAvailFrom | string | The Half Day Available From of the tariff space rate |
+| halfDayCostAvailTo | string | The Half Day Available To of the tariff space rate |
+| fullDayCost | number | The fullDayCost of the tariff space rate |
+| fullDayCostExcludedTaxIds | array | The fullDayCostExcludedTaxIds of the tariff space rate |
+| fullDayCostMinMins | int | The full day minimum minutes of the tariff space rate |
+| fullDayCostMaxMins | int | The full day maximum minutes of the tariff space rate |
+| fullDayCostAvailFrom | string | The full day  Available From of the tariff space rate |
+| fullDayCostAvailTo | string | The full day Available To of the tariff space rate |
+| nightCost | number | The night sale price of the tariff space rate |
+| nightCostExcludedTaxIds | array | The night sale price ExcludedTaxIds of the tariff space rate |
+| nightCostMinMins | int | The n minimum minutes of the tariff space rate |
+| nightCostMaxMins | int | The night maximum minutes of the tariff space rate |
+| nightCostAvailFrom | string | The night Available From of the tariff space rate |
+| nightCostAvailTo | string | The night Available To of the tariff space rate |
+| areCostsPerPerson | boolean | Whether costs are per person for the tariff space rate |
+| hasLayoutRates | boolean | Whether or not layout has rates for the tariff space rate |
+| createdDate | timestamp | The createdDate of the tariff space rate |
+| modifiedDate | timestamp | The modifiedDate of the tariff space rate |
