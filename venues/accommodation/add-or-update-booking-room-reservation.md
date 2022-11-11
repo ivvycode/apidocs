@@ -27,16 +27,14 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   "reference": "45",
   "mainGuest": {
     "id": 101,
-    "guestContactId": 43213,
-    "contactId": 43213
+    "guestContactId": 43213
   },
   "rooms": [
     {
       "id": 4001,
       "guest": {
         "id": 101,
-        "guestContactId": 43213,
-        "contactId": 43213
+        "guestContactId": 43213
       },
       "additionalGuests": []
     },
@@ -44,14 +42,12 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
       "id": 4002,
       "guest": {
         "id": 102,
-        "guestContactId": 44321,
-        "contactId": 44321
+        "guestContactId": 44321
       },
       "additionalGuests": [
         {
           "guestId": 103,
-          "guestContactId": 43277,
-          "contactId": 43277,
+          "guestContactId": 43277
           "guestType": 2
         }
       ]
@@ -59,9 +55,6 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   ]
 }
 ```
-
-NOTE: *contactId* property is deprecated and will be removed. see [Room Reservation Contact Changes](../../announcements/venue/room-reservation-contact-update.md)
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -149,7 +142,6 @@ Invalid request data that prevents the room reservation from being added/updated
 | lastName | string | required | The last name of the contact |
 | email | string | required | The email address of the contact |
 | phone | string | optional | The mobile phone number of the contact |
-| groups | array | optional | This is an array of group objects with the ‘groupId’ key. **This property is deprecated and will be removed** |
 
 ## Additional Guest Type
 
