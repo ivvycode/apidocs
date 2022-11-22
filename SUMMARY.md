@@ -72,6 +72,8 @@
     * [Get Function Space List](venues/venuedata/get-function-space-list.md)
     * [Get Function Space Category List](venues/venuedata/get-function-space-category-list.md)
     * [Get Function Space Availability](venues/venuedata/get-function-space-availability.md)
+    * [Get Function Space Hire Plan Rate List](venues/venuedata/get-space-hire-plan-rate-list%20copy.md)
+    * [Get Function Space Hire Plan Rate](venues/venuedata/get-space-hire-plan-rate.md)
     * [Get Cost Center List](venues/venuedata/get-cost-center-list.md)
     * [Get Session Type List](venues/venuedata/get-session-type-list.md)
     * [Get Revenue Template List](venues/venuedata/get-revenue-template-list.md)
