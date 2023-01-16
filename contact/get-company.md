@@ -81,6 +81,12 @@ The company's identifier
 | secondaryAccountManager      | The secondary account manager of the company. This is an an object with the [keys](get-company.md#secondaryaccountmanager) |
 | industry                     | The industry of the company. This is an an object with the [keys](get-company.md#industry)                                 |
 | primaryContact               | The primary contact of the company. This is an an object with the [keys](get-company.md#primarycontact)                    |
+| isAgent                      | Whether the company is an agent or not. |
+| parentCompanyId              | The parent company id of the company |
+| leftValue                    | The left value of the node in the tree structure.                    |
+| rightValue                   | The right value of the node in the tree structure. |
+| depth                        | The depth of this company in the tree structure. |
+| rootId                       | The root company id. |
 | commissionSpace              | The commission amount of the company space.                                                                                |
 | commissionSpaceType          | The commission amount type of the company space.                                                                           |
 | commissionFoodValue          | The commission amount of the company food.                                                                                 |
