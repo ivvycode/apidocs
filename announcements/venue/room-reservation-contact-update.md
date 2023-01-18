@@ -44,6 +44,10 @@ The following changes are being made to the Guest object described here: [addOrU
 
 If a guest has been *anonymised* in iVvy, and you pass the contact details of that guest then a new guest contact will be created with a new unique id.
 
+**Response Object**
+
+The *contactId* property of the *guest* objects (mainGuest, guest, additionalGuests) will be removed. Use *guestContactId* instead.
+
 ### updateBookingRoomReservationGuestContact
 
 *Anonymised* guests cannot be updated. An error response will be returned when attempting to update an *anonymised* guest contact.
