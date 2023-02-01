@@ -27,8 +27,8 @@ The starting result of the page. Note this is zero based (i.e. sending start = 0
 | toModifiedDate   | Filter by Modified Date        | [iVvy Timestamp Format](../development-reference/timestamp-format.md) |
 | externalId       | Filter by external unique id   | Unique external Id in string                                          |
 | venueId          | Filter by specific Venue       | integer                                                               |
-| venueGroupId     | Filter by SPecific Venue Group | integer                                                               |
-| companyId        | Filter by Specific Company Id  | integer                                                               |
+| venueGroupId     | Filter by specific Venue Group | integer                                                               |
+| companyId        | Filter by specific Company Id  | integer                                                               |
 
 ## Returns
 
