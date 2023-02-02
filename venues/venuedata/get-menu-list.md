@@ -35,7 +35,7 @@ The number of menu to get in a single call
             "marketplaceName": "Marketplace Name 1",
             "marketplaceCategories": []
         },
-        {   
+        {
             "id": 125,
             "menuTypeCategory": 1,
             "name": "Menu 2",
@@ -76,6 +76,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | maximumPax            | integer                                                                    | The maximum number of people allowed within a single session to order this menu   |
 | cost                  | float                                                                      | The price of the menu                                                             |
 | costType              | integer [Cost Type](get-menu-list.md#cost-type-menu-pricing)               | The price type of the menu                                                        |
+| costPerPerson | float | The per person price of the menu |
 | smallDescription      | text                                                                       | The small description of the menu                                                 |
 | marketplaceName       | text                                                                       | The name of the menu displayed in marketplace booking engines                     |
 | marketplaceCategories | array of [Marketplace Categories](get-menu-list.md#marketplace-categories) | The categories in which the menu will be displayed in marketplace booking engines |
