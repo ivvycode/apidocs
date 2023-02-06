@@ -37,6 +37,7 @@ The id of the booking
   "venueTimezone": "Australia/Brisbane",
   "createdDate": "2015-01-21 09:50:49 UTC",
   "modifiedDate": "2016-04-06 07:51:56 UTC",
+  "lastModifiedDate": "2016-04-09 07:50:51 UTC",
   "dateEventStart": "1996-02-19 00:00:00 UTC",
   "dateEventEnd": "2002-11-06 00:00:00 UTC",
   "convertedToTentative": "2016-02-23 00:00:00 UTC",
@@ -812,6 +813,7 @@ The result from this call will be the details of a specific booking to which the
 | venueTimezone           | [timezone](../../development-reference/timezone-list.md)                         | The timezone of the venue                                                                                                                                   |
 | createdDate             | [timestamp](../../development-reference/timestamp-format.md)                     | The date & time the booking was created                                                                                                                     |
 | modifiedDate            | [timestamp](../../development-reference/timestamp-format.md)                     | The date & time the booking was last modified                                                                                                               |
+| lastModifiedDate        | [timestamp](../../development-reference/timestamp-format.md)                     | The date & time the booking or its child entities last modified. It inclides sub entotoes e..g Menu, Beverage, Package,Session..                            |
 | dateEventStart          | [timestamp](../../development-reference/timestamp-format.md)                     | The start event date of the booking                                                                                                                         |
 | dateEventEnd            | [timestamp](../../development-reference/timestamp-format.md)                     | The end event date of the booking                                                                                                                           |
 | convertedToTentative    | [timestamp](../../development-reference/timestamp-format.md)                     | The date when booking converted to tentatvive                                                                                                               |
