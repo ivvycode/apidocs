@@ -51,6 +51,7 @@ The number of bookings to get in a single call
       "venueTimezone": null,
       "createdDate": "2015-01-07 09:21:53 UTC",
       "modifiedDate": "2016-04-06 07:51:56 UTC",
+      "lastModifiedDate": "2016-04-08 07:50:00 UTC",
       "dateEventStart": "2015-06-01 00:00:00 UTC",
       "dateEventEnd": "2015-06-04 00:00:00 UTC",
       "convertedToTentative": "2016-02-23 00:00:00 UTC",
