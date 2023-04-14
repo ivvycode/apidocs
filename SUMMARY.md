@@ -66,6 +66,7 @@
     * [Get Venue Room Option List](venues/venuedata/get-venue-room-option-list.md)
     * [Get Venue Rate Plan List](venues/venuedata/get-venue-rate-plan-list.md)
     * [Get Venue Rate Plan Rate List](venues/venuedata/get-rate-plan-rate-list.md)
+    * [Get Venue Rate Plan Room Rate List](venues/venuedata/get-room-rate-list.md)
     * [Get Resource List](venues/venuedata/get-resource-list.md)
     * [Get Resource Availability](venues/venuedata/get-resource-availability.md)
     * [Get Menu List](venues/venuedata/get-menu-list.md)
