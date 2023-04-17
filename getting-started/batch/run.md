@@ -54,6 +54,7 @@ The URL to hit with a POST request after the batch has been run, with a JSON obj
 | Specific Code: 24092 | Incorrect Job Format          |
 | Specific Code: 24093 | Empty job parameter found     |
 | Specific Code: 24091 | The information was not saved |
+| Specific Code: 24448 | The maximum number of jobs can be put on a single request is 200 |
 
 The run action takes an array of api calls and returns an identifier that can be used to identify the batch. Keep this identifier as it can be used to identify the response of the batch request, as well as being used to fetch the progress and results of the request.
 
