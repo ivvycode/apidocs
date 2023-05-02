@@ -71,7 +71,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 }
 ```
 
-## Menu
+## Rate Plan Rate
 
 | Property              | Type                                                                       | Description                                                                       |
 | --------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
