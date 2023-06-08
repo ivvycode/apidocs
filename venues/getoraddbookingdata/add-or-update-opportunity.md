@@ -52,10 +52,10 @@ A json object that represents the opportunity to add or update. See below for th
 | stageId | integer | optional | The unique id of stage. |
 | stageReasonId | integer | optional | The unique stage reason id of opportunity. |
 | channelId | integer | optional | The unique id of channel. |
-| utmSource | string | optional | The source of the campaign. |
-| utmMedium | string | optional | What medium the campaign used/uses. |
-| utmCampaign | string | optional | The name of the campaign. |
-| utmTerm | string | optional | The Term of the campaign. |
+| utmSource | string | optional | The source of the campaign. (only when adding) |
+| utmMedium | string | optional | What medium the campaign used/uses. (only when adding)|
+| utmCampaign | string | optional | The name of the campaign. (only when adding)|
+| utmTerm | string | optional | The Term of the campaign. (only when adding)|
 | utmContent | string | optional | Any content about the campaign. |
 | referralContactId | integer | optional | The contact Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralContact parameter is missing\) |
 | referralContact | object | optional | The data array of contact. See addOrUpdateContact API in contact namespace for parameters. |

@@ -44,6 +44,10 @@ The following changes are being made to the Guest object described here: [addOrU
 
 If a guest has been *anonymised* in iVvy, and you pass the contact details of that guest then a new guest contact will be created with a new unique id.
 
+**Response Object**
+
+The *contactId* property of the *guest* objects (mainGuest, guest, additionalGuests) will be removed. Use *guestContactId* instead.
+
 ### updateBookingRoomReservationGuestContact
 
 *Anonymised* guests cannot be updated. An error response will be returned when attempting to update an *anonymised* guest contact.
@@ -65,3 +69,4 @@ These api actions will no longer return guests. There is no alternative to fetch
 4.  Decide how an anonymised guest impacts your system(s). *isAnonymised* is a *readonly* property. Once the guest is anonymised in iVvy, the original personal identifiable information cannot be retrieved.
 5.  Stop using guest *ids* to add guests to a reservation (including when adding a new reservation). Instead, always pass the contact details.
 6.  Check the permissions assigned to your api key in case you intend to use the new updateBookingRoomReservationGuestContact api.
+7.  Stop using contactId property from addOrUpdateBookingRoomReservation api response, instead use guestContactId.
