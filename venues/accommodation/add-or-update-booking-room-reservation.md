@@ -55,7 +55,6 @@ A successful response to an add or update operation. NOTE: The "rooms" in the re
   ]
 }
 ```
-
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=400 %}
@@ -213,7 +212,6 @@ The following is an example of an update request that updates an existing room \
     ]
 ]
 ```
-
 Existing rooms can be **removed** from a reservation by passing their unique identifier in the _removeRooms_ of the request. Rooms are removed before other rooms in the request are added/updated.
 
 ### Updating additional guests on a reserved room
