@@ -1,8 +1,8 @@
 # Remove Blockout Space
 
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/venue?action=removeBlockoutSpace" method="post" summary="Remove Blockout Space" %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/venue?action=removeSpaceBlockout" method="post" summary="Remove Blockout Space" %}
 {% swagger-description %}
-Remove blockout space from a function diary
+Remove a blockout space from a function diary
 {% endswagger-description %}
 
 {% swagger-parameter name="venueId" type="integer" in="body" %}
