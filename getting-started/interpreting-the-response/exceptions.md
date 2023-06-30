@@ -22,6 +22,24 @@ Current exception codes and meanings are:
 
 Some exceptions will have an additional piece of information associated with the exception, which will contain more specific message about the exception.
 
+**Exception: Specific Code 23005**
+
+The required Date or iVvyDate parameter does not fall within 5 minutes of UTC time, invalidating the request. Refer [here ](../creating-the-request/request-headers/standard-headers.md#date-required-unless-using-ivvy-date-header)for more information on this.
+
+**Example: Date outside of accepted time range**
+
+```javascript
+Request (venue?action=getVenueList)
+{
+	   "ivvydate":"2000-06-01 00:00:00"
+}
+{
+     "errorCode": 401,
+     "message": "Request is stale",
+     "specificCode": 23005
+}
+```
+
 **Exception: Specific Code 23016**
 
 A parameter provided in the request did not validate correctly. For example, the API might have been expecting a number, but a string was provided instead. This exception gets thrown when the first invalid parameter is found.

@@ -1,79 +1,63 @@
 # Add Error Report
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=addErrorReport" path="" %}
-{% api-method-summary %}
-Add Error Report
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/account?action=addErrorReport" method="post" summary="Add Error Report" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="code" type="string" required=true %}
+{% swagger-parameter name="code" type="string" in="path" %}
 The distinguish code of error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="message" type="string" required=true %}
+{% swagger-parameter name="message" type="string" in="path" %}
 Th message description of an error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="level" type="integer" required=true %}
+{% swagger-parameter name="level" type="integer" in="path" %}
 The severity level of an error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refType" type="integer" required=true %}
+{% swagger-parameter name="refType" type="integer" in="path" %}
 The type of the error report e.g. booking, accommodation group..
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refId1" type="integer" required=false %}
+{% swagger-parameter name="refId1" type="integer" in="path" %}
 The reference identifier 1 of the error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refId2" type="integer" required=false %}
+{% swagger-parameter name="refId2" type="integer" in="path" %}
 The reference identifier 2 of the error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refId3" type="integer" required=false %}
+{% swagger-parameter name="refId3" type="integer" in="path" %}
 The reference identifier 3 of the error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refId4" type="integer" required=false %}
+{% swagger-parameter name="refId4" type="integer" in="path" %}
 The reference identifier 4 of the error report
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refId5" type="integer" required=false %}
+{% swagger-parameter name="refId5" type="integer" in="path" %}
 The reference identifier 5 of the error report
-{% endapi-method-parameter %}
 
-{% api-method-parameter name="debugData" type="string" required=false %}
+{% swagger-parameter name="debugData" type="string" in="path" %}
 The information for debugging this error. Maximum 1000 characters allowed.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+{% endswagger-parameter %}
 
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "success": true,
   "id": 755
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
-### Add Error Report _\(Related to Venue Booking\)_
+### Add Error Report _(Related to Venue Booking)_
 
 ```javascript
 {
@@ -97,12 +81,12 @@ The information for debugging this error. Maximum 1000 characters allowed.
 
 One of the following value:
 
-| Type | refType |
-| :--- | :--- |
-| Custom | 1 |
-| Venue Booking | 2 |
-| Accommodation Group | 3 |
-| Room Reservation | 4 |
+| Type                | refType |
+| ------------------- | ------- |
+| Custom              | 1       |
+| Venue Booking       | 2       |
+| Accommodation Group | 3       |
+| Room Reservation    | 4       |
 
 Pass refIds as per below mapping. All below mentioned refIds are mandatory to pass in order to save an error report against specific model.
 
@@ -110,30 +94,29 @@ Pass refIds as per below mapping. All below mentioned refIds are mandatory to pa
 
 #### Venue Booking
 
-| RefId | Related identifier |
-| :--- | :--- |
-| refId1 | The identifier of venue |
+| RefId  | Related identifier              |
+| ------ | ------------------------------- |
+| refId1 | The identifier of venue         |
 | refId2 | The identifier of venue booking |
 
 #### Accommodation Group
 
-| RefId | Related identifier |
-| :--- | :--- |
-| refId1 | The identifier of venue |
-| refId2 | The identifier of venue booking |
+| RefId  | Related identifier                            |
+| ------ | --------------------------------------------- |
+| refId1 | The identifier of venue                       |
+| refId2 | The identifier of venue booking               |
 | refId3 | The identifier of booking accommodation group |
 
 #### Room Reservation
 
-| RefId | Related identifier |
-| :--- | :--- |
-| refId1 | The identifier of venue |
-| refId2 | The identifier of venue booking |
+| RefId  | Related identifier                 |
+| ------ | ---------------------------------- |
+| refId1 | The identifier of venue            |
+| refId2 | The identifier of venue booking    |
 | refId3 | The identifier of room reservation |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
+| Code                 | Description                           |
+| -------------------- | ------------------------------------- |
 | Specific Code: 24262 | The error report details are invalid. |
-

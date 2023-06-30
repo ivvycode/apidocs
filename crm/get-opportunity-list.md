@@ -1,30 +1,16 @@
 # Get Opportunity List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getOpportunityList" path="" %}
-{% api-method-summary %}
-Get Opportunity List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getOpportunityList" method="post" summary="Get Opportunity List" %}
+{% swagger-description %}
 Get a list of opportunity.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueIds" type="integer" required=false %}
+{% swagger-parameter name="venueIds" type="integer" in="path" %}
 The array of venue ids to which the opportunity belongs
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 1,
@@ -34,30 +20,30 @@ The array of venue ids to which the opportunity belongs
     },
     "results": [
         {
-        "id": 763,
+            "id": 763,
             "venueId": 1,
             "name": "Opprotunity Name",
             "description": "This is test description",
-        "ownerUser": {
-                "id": 549,
-                "firstName": "First",
-                "lastName": "Last",
-                "email": "first@last.com",
-                "phone": ""
+            "ownerUser": {
+                    "id": 549,
+                    "firstName": "First",
+                    "lastName": "Last",
+                    "email": "first@last.com",
+                    "phone": ""
             },
-        "contact": {
-                "id": 580,
-                "firstName": "First",
-                "lastName": "last",
-                "email": "filrst.last@email.com",
-                "phone": 614535435
+            "contact": {
+                    "id": 580,
+                    "firstName": "First",
+                    "lastName": "last",
+                    "email": "filrst.last@email.com",
+                    "phone": 614535435
             },
-        "company": {
-                "id": 214,
-                "businessName": "Company BusinessName",
-                "businessNumber": "BUS123",
-                "phone": null,
-                "email": company@owner.com
+            "company": {
+                    "id": 214,
+                    "businessName": "Company BusinessName",
+                    "businessNumber": "BUS123",
+                    "phone": null,
+                    "email": company@owner.com
             },
             "currentBookingId": 5,
             "qualityId": 2,
@@ -66,23 +52,24 @@ The array of venue ids to which the opportunity belongs
             "stageName": "Interested",
             "stageReasonId": 245,
             "stageReasonName": "Price under budget",
+            "adminStatusChangedDate": "2019-04-12 11:11:00 UTC",
             "typeId": 3,
             "type": "Reseller",
             "sourceId": 13,
             "sourceName": "Newspaper",
             "channelId": 8,
             "channelName": "PCO",
-            "leadEmailAddress": "lead-2-763-facdb9@ivvy.blueweb",
+            "leadBccEmail": "lead-2-763-facdb9@ivvy.blueweb",
+            "closedDate": "2019-04-19 09:00:00 UTC",
+            "lostToCompetition": "More capacity available",
             "createdDate": "2019-04-12 09:00:35 UTC",
-            "modifiedDate": "2019-04-12 09:00:35 UTC"
+            "modifiedDate": "2019-04-12 11:11:00 UTC"
         }
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the opportunities the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
@@ -95,4 +82,3 @@ The result from this call will be a [collection](../getting-started/interpreting
   "venueId": [1,2],
 }
 ```
-
