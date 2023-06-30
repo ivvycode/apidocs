@@ -39,6 +39,10 @@ The reference identifier 4 of the error report
 
 {% swagger-parameter name="refId5" type="integer" in="path" %}
 The reference identifier 5 of the error report
+
+{% swagger-parameter name="debugData" type="string" in="path" %}
+The information for debugging this error. Maximum 1000 characters allowed.
+
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
@@ -68,10 +72,10 @@ The reference identifier 5 of the error report
 
 ## Returns
 
-| Property | Description                                              |
-| -------- | -------------------------------------------------------- |
-| success  | Whether or not the error report was added to the account |
-| id       | The unique id of the error report                        |
+| Property | Description |
+| :--- | :--- |
+| success | Whether or not the error report was added to the account |
+| id | The unique id of the error report. This will be the same id if similar error already exist in database |
 
 ## RefType
 
