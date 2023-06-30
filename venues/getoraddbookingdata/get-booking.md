@@ -56,6 +56,11 @@ The id of the booking
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
   "otaFolioRef": "ven1234",
+  "accommReservationMethod": [
+        1,
+        2,
+        3
+  ],
   "accommCutOffDate": "2019-12-04 00:00:00 UTC",
   "accommCancellationDate": "2019-01-11 00:00:00 UTC",
   "accommChargingMethod": 2,
@@ -831,6 +836,7 @@ The result from this call will be the details of a specific booking to which the
 | beoNumbers              | array                                                                            | The id/numbers for the BEO documents assigned to the booking                                                                                                |
 | isBeoFinalised          | boolean                                                                          | Whether or not the BEO of the booking has been finalised                                                                                                    |
 | beoFinalisedDate        | [timestamp](../../development-reference/timestamp-format.md)                     | The date & time on which the BEO of the booking was finalised                                                                                               |
+| accommReservationMethod | [Reservation Method](add-or-update-booking.md#accommodation-reservation-methods) | optional | The method by which attendees will reserve rooms from the accommodation blocks on the booking. Only applies when the booking includes accommodation. |
 | otaFolioRef             | string                                                                           | The recorded Folio ID of a booking.                                                                                                                         |
 | accommCutOffDate        | [timestamp](../../development-reference/timestamp-format.md)                     | After this date no more reservations may be made against the Block for the entire date range.                                                               |
 | accommCancellationDate  | [timestamp](../../development-reference/timestamp-format.md)                     | The last date a customer can cancel their Group Accommodation without financial penalty.                                                                    |
