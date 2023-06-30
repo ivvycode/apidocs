@@ -14,3 +14,5 @@ The iVvy API represents address objects as follows:
 | stateCode | string | The state code of the address |
 | stateName | string | Alternatively the state name of the address \(usually when there is no stateCode\) |
 
+The list of country codes & country division codes that iVvy recognises can be found [here](https://github.com/ivvycode/countries).
+

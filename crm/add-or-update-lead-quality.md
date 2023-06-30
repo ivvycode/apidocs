@@ -1,49 +1,31 @@
 # Add or Update Lead Quality
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=addOrUpdateLeadQuality" path="" %}
-{% api-method-summary %}
-Add or Update Lead Quality
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateLeadQuality" method="post" summary="Add or Update Lead Quality" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter name="id" type="integer" in="path" %}
+The unique id of the lead quality (Leave empty if adding a new lead quality)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=false %}
-The unique id of the lead quality
-\(Leave empty if adding a new lead quality\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="label" type="string" in="path" %}
+The label of the crm lead quality (Required when the ID parameter is missing)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="label" type="string" required=false %}
-The label of the crm lead quality
-\(Required when the ID parameter is missing\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="showOnDash" type="boolean" required=false %}
+{% swagger-parameter name="showOnDash" type="boolean" in="path" %}
 Whether or not to include leads/opportunities assigned this quality on the venue reporting dashboard
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "success": true,
   "id": 755
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -67,26 +49,25 @@ Whether or not to include leads/opportunities assigned this quality on the venue
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| success | Whether or not the lead quality was added |
-| id | The unique id of the lead quality |
+| Property | Description                               |
+| -------- | ----------------------------------------- |
+| success  | Whether or not the lead quality was added |
+| id       | The unique id of the lead quality         |
 
 ## Throws
 
-| Code | Description |
-| :--- | :--- |
+| Code                 | Description                         |
+| -------------------- | ----------------------------------- |
 | Specific Code: 24304 | The crm lead quality does not exist |
-| Specific Code: 24305 | An error has occurred |
-| Specific Code: 24306 | The request contains invalid data |
-| Specific Code: 24307 | The request contains invalid data |
+| Specific Code: 24305 | An error has occurred               |
+| Specific Code: 24306 | The request contains invalid data   |
+| Specific Code: 24307 | The request contains invalid data   |
 
 This call takes values for a lead quality, and either
 
-1. Updates the values for that lead quality \(after  you have provided an id in the parameters\), or
-2. Adds the lead quality to the system \(if the id parameter is missing\) 1. The result of this call will contain the status of the result \(either
+1. Updates the values for that lead quality (after you have provided an id in the parameters), or
+2.  Adds the lead quality to the system (if the id parameter is missing) 1. The result of this call will contain the status of the result (either
 
-   true or false\) and the lead quality identifier of the updated or newly
+    true or false) and the lead quality identifier of the updated or newly
 
-   created lead quality.
-
+    created lead quality.
