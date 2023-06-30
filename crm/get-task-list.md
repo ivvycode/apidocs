@@ -1,30 +1,16 @@
 # Get Task List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getTaskList" path="" %}
-{% api-method-summary %}
-Get Task List
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getTaskList" method="post" summary="Get Task List" %}
+{% swagger-description %}
 Get a list of tasks.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=false %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique id of the venue to which the task belongs
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "meta": {
         "totalResults": 1,
@@ -55,10 +41,8 @@ The unique id of the venue to which the task belongs
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the tasks the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
 
@@ -81,4 +65,3 @@ One of the following values:
 * 2 = On Hold
 * 3 = Cancelled
 * 4 = Completed
-
