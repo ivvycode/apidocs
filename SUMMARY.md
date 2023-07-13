@@ -133,7 +133,6 @@
     * [Add or Update Room Dynamic Rates](venues/accommodation/add-or-update-room-dynamic-rates.md)
     * [Remove Room Dynamic Rates](venues/accommodation/remove-room-dynamic-rates.md)
     * [Add or Update Rate Plan Booking Rules](venues/accommodation/add-or-update-rateplan-bookingrules.md)
-<<<<<<< HEAD
   * [Get Venue](venues/get-venue.md)
   * [Get Venue List](venues/get-venue-list.md)
   * [Get Booking List](venues/get-booking-list.md)
@@ -155,8 +154,6 @@
   * [Get Menus](venues/get-menu-list.md)
   * [Get Beverage Packages](venues/get-beverage-package-list.md)
   * [Get Space Hire Plans](venues/get-space-hire-plan-list.md)
-=======
->>>>>>> master
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
   * [Get Venue](partner/get-venue.md)
