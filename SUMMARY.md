@@ -99,6 +99,7 @@
     * [Get Booking Changelog List](venues/getoraddbookingdata/get-booking-changelog-list.md)
     * [Get Booking Attendee (By Hash)](venues/getoraddbookingdata/get-booking-attendee-by-hash.md)
     * [Get Booking Attendee List](venues/getoraddbookingdata/get-booking-attendee-list.md)
+    * [Get Booking Release Schedule](venues/get-booking-release-schedule.md)
     * [Add or Update Booking](venues/getoraddbookingdata/add-or-update-booking.md)
     * [Change Booking Status](venues/getoraddbookingdata/change-booking-status.md)
     * [Add Items To Booking](venues/getoraddbookingdata/add-items-to-booking.md)
