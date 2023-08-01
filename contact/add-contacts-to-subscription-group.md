@@ -1,33 +1,19 @@
 # Add Contacts To Subscription Group
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=addContactsToSubscriptionGroup" path="" %}
-{% api-method-summary %}
-Add Contacts To Subscription Group
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addContactsToSubscriptionGroup" method="post" summary="Add Contacts To Subscription Group" %}
+{% swagger-description %}
 Add contact details to subscription group
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="contacts" type="integer" required=true %}
+{% swagger-parameter name="contacts" type="integer" in="path" %}
 The contact identifiers to subscribe to the group. This is an array of contact identifiers
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="group" type="integer" required=true %}
+{% swagger-parameter name="group" type="integer" in="path" %}
 The subscription group identifier to add the contacts to
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 [
   {
@@ -48,10 +34,8 @@ The subscription group identifier to add the contacts to
   }
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -71,8 +55,7 @@ The subscription group identifier to add the contacts to
 
 An array of objects with the following properties
 
-| Property | Description |
-| :--- | :--- |
-| contactId | The contact this result is for |
-| status | If the contact was added to the group or not |
-
+| Property  | Description                                  |
+| --------- | -------------------------------------------- |
+| contactId | The contact this result is for               |
+| status    | If the contact was added to the group or not |

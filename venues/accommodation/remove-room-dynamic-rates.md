@@ -1,54 +1,38 @@
 # Remove Room Dynamic Rates
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=removeRoomDynamicRates" path="" %}
-{% api-method-summary %}
-Remove Room Dynamic Rates
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=removeRoomDynamicRates" method="post" summary="Remove Room Dynamic Rates" %}
+{% swagger-description %}
 Remove one or more dynamic rates from venue rooms.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="path" %}
 The unique id of the venue to which the rate plan belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="barId" type="integer" required=true %}
+{% swagger-parameter name="barId" type="integer" in="path" %}
 The unique id of the rate plan to which the dynamic rate applies
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="roomId" type="integer" required=true %}
+{% swagger-parameter name="roomId" type="integer" in="path" %}
 The unique id of the room to which the rate applies
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="startDate" type="string" required=true %}
-The start date from which the dynamic rate will be removed \(Date Format\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="startDate" type="string" in="path" %}
+The start date from which the dynamic rate will be removed (Date Format)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="endDate" type="string" required=true %}
-The end date until which the dynamic rate will be removed \(Date Format\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter name="endDate" type="string" in="path" %}
+The end date until which the dynamic rate will be removed (Date Format)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "success": true
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 NOTE: The dynamic data is only available to venues that integrate with a distribution channel.
 
@@ -80,7 +64,6 @@ NOTE: The dynamic data is only available to venues that integrate with a distrib
 
 ## Returns
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| success | Whether or not the room dynamic rates were removed | boolean |
-
+| Property | Description                                        | Type    |
+| -------- | -------------------------------------------------- | ------- |
+| success  | Whether or not the room dynamic rates were removed | boolean |

@@ -18,7 +18,7 @@ Get Options
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -37,4 +37,5 @@ The invoice and item response contains a field called "refType". These are const
 | invoiceRefTypes | The refType identifier and description of refTypes found in the invoice response. |
 | invoiceLineRefTypes | The refType identifier and description of refTypes found in the items of the invoice response. |
 | paymentMethods | The complete list of payment methods that might appear against a payment made on an invoice |
+| customPaymentMethods | The complete list of custom payment methods that might appear against a payment made on an invoice |
 

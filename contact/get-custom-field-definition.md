@@ -1,4 +1,4 @@
-# Get Custom Field Definition
+# Get Contact Custom Field Definition
 
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getCustomFieldDefinition" path="" %}
 {% api-method-summary %}
@@ -18,7 +18,7 @@ Get the definition of custom field
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -36,6 +36,7 @@ An array of objects with the following properties
 | fieldType | [The type of this field](get-custom-field-definition.md#types-of-field) |
 | displayName | The name of this field |
 | isRequired | If this field is required or not |
+| isActive | If this field is active or not |
 | sortOrder | Order to display this field |
 | selectValues | Values that can be selected with select fields |
 | fileTypes | Types of files that can be uploaded with the file custom field |

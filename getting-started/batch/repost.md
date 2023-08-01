@@ -1,38 +1,22 @@
 # Repost
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/batch?action=repost" path="" %}
-{% api-method-summary %}
-Repost
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=repost" method="post" summary="Repost" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter name="async" type="string" in="path" %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="async" type="string" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "reposted":true
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 The repost action takes the asyncId as a parameter and returns the success of the call.
 
@@ -49,4 +33,3 @@ Note a success of true does not mean the callback will be hit immediately.
   "async":"a7ec88af7d710bf51b188004bb532d77"
 }
 ```
-

@@ -1,61 +1,51 @@
 # Add or Update Event
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/event?action=addOrUpdateEvent" %}
-{% api-method-summary %}
-addOrUpdateEvent
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/event?action=addOrUpdateEvent" method="post" summary="addOrUpdateEvent" %}
+{% swagger-description %}
 Add or update event details.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="eventType" type="string" required=true %}
-Required when adding an event. Value must be 12. The value cannot be changed for an existing event. 
-{% endapi-method-parameter %}
+{% swagger-parameter name="businessUnitId" type="integer" in="body" %}
+Required when business unit defined in event's account
+{% endswagger-parameter %}
 
-{% api-method-parameter name="title" type="string" required=true %}
+{% swagger-parameter name="eventType" type="string" in="body" %}
+Required when adding an event. Value must be 12. The value cannot be changed for an existing event.
+{% endswagger-parameter %}
+
+{% swagger-parameter name="title" type="string" in="body" %}
 Required when adding an event. The title of the event. Max Length: 140
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="timezone" type="string" required=true %}
-Required when adding an event. The timezone of the event. \(Datatype = timestamp\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="timezone" type="string" in="body" %}
+Required when adding an event. The timezone of the event. (Datatype = timestamp)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="startDateTime" type="string" required=true %}
+{% swagger-parameter name="startDateTime" type="string" in="body" %}
 When adding an event. The start date & time of the event.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="endDateTime" type="string" required=true %}
-When adding an event. The end date & time of the event. The value must be on or after startDateTime. \(Datatype = timestamp\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="endDateTime" type="string" in="body" %}
+When adding an event. The end date & time of the event. The value must be on or after startDateTime. (Datatype = timestamp)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="capacity" type="integer" required=false %}
-The maximum number of attendees who can register for the event. A value of 0 \(zero\) represents no limit.
-{% endapi-method-parameter %}
+{% swagger-parameter name="capacity" type="integer" in="body" %}
+The maximum number of attendees who can register for the event. A value of 0 (zero) represents no limit.
+{% endswagger-parameter %}
 
-{% api-method-parameter name="budget" type="number" required=false %}
-A budget amount assigned to the event. \(Datatype = float\)
-{% endapi-method-parameter %}
+{% swagger-parameter name="budget" type="number" in="body" %}
+A budget amount assigned to the event. (Datatype = float)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="costCenterId" type="integer" required=false %}
+{% swagger-parameter name="costCenterId" type="integer" in="body" %}
 A cost center assigned to the event. The value is an identifier of a cost center in the account, which must be assignable to events.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="primaryContactUserId" type="integer" required=false %}
+{% swagger-parameter name="primaryContactUserId" type="integer" in="body" %}
 The primary contact user of the event. The value is an identifier of a user in the account.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "success": true,
@@ -63,10 +53,8 @@ The primary contact user of the event. The value is an identifier of a user in t
   "code": "BAS4G248"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -92,13 +80,12 @@ This action call accepts the parameters of an event and will;
 
 2\) Update an existing event in the account when the id parameter is provided.
 
-NOTE: This action call only supports “Record Event Details” type events \(i.e. eventType value of 12\).
+NOTE: This action call only supports “Record Event Details” type events (i.e. eventType value of 12).
 
 ## Returns
 
-| Property | Description | Type |
-| :--- | :--- | :--- |
-| success | Whether or not the action succeeded \(i.e. the event as added or updated\). | boolean |
-| id | The event’s unique identifier. The value will be null on failure. | integer |
-| code | The event’s unique code. The value will be null on failure. | string |
-
+| Property | Description                                                               | Type    |
+| -------- | ------------------------------------------------------------------------- | ------- |
+| success  | Whether or not the action succeeded (i.e. the event as added or updated). | boolean |
+| id       | The event’s unique identifier. The value will be null on failure.         | integer |
+| code     | The event’s unique code. The value will be null on failure.               | string  |

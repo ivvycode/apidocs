@@ -1,17 +1,6 @@
 # Property Management Systems
 
-## Invoices and Payments
-
-Invoices and Payments will be synced from iVvy into the PMS system automatically to reflect the financial history of the contact and their bookings.
-
-Incrementally: When an invoice is raised within a booking in the iVvy System
-
-1. A contact or company will be generated within the PMS system
-2. An invoice will be created and assigned to the aforementioned contact, and its line items will mirror that of the invoice in iVvy. 
-3. If a payment is raised against the invoice in iVvy, then the payment will also be copied into the PMS system against the invoice created. 
-4. Or alternatively, if a payment is taken in the PMS it will be sent to iVvy against the original invoice. 
-
-![](../../.gitbook/assets/invoices-and-payments-v2-2.jpg)
+PMS Integrations are designed to allow the user to keep accommodation up to date between iVvy and their PMS System. They provide live availability and rates from the PMS to iVvy so that accommodation can be booked real time with the correct pricing. 
 
 ## Group Accommodation Blocks
 
@@ -37,10 +26,10 @@ Availability, rates and inventory will be sourced from the PMS to appear in iVvy
 * dynamic inventory and 
 * room data. 
 
-The accommodation Namespace on the iVvy API allows users to; 
+The accommodation Namespace on the iVvy API allows users to;
 
 * [Add or Update Room Counts](../../venues/accommodation/add-or-update-room-counts.md),  
 * [Add or Update Room Dynamic Rates](../../venues/accommodation/add-or-update-room-dynamic-rates.md), 
 * [Remove Room Dynamics Rates](../../venues/accommodation/remove-room-dynamic-rates.md), and
-* [Add or Update Rate Plan Booking Rules]() 
+* [Add or Update Rate Plan Booking Rules](property-management-systems.md) 
 

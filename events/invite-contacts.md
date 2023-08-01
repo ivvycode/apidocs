@@ -1,33 +1,19 @@
 # Invite Contacts
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/event?action=inviteContacts" path="" %}
-{% api-method-summary %}
-Invite Contacts
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=inviteContacts" method="post" summary="Invite Contacts" %}
+{% swagger-description %}
+Invite contact(s) to event.
+{% endswagger-description %}
 
-{% api-method-description %}
-Invite contact\(s\) to event. 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="event" type="integer" required=true %}
+{% swagger-parameter name="event" type="integer" in="path" %}
 The event identifier to invite the contact to
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="contacts" type="integer" required=true %}
-An array of contact identifiers to invite to the event 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter name="contacts" type="integer" in="path" %}
+An array of contact identifiers to invite to the event
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     "results":[
@@ -48,10 +34,8 @@ An array of contact identifiers to invite to the event
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -66,13 +50,12 @@ An array of contact identifiers to invite to the event
 
 ## Returns
 
-| Property | Description |
-| :--- | :--- |
-| results | An array of objects with the following properties |
-| contact | The contact identifier |
-| status | The status of the request |
-| inviteLinkYes | Invitation link for the YES responses |
-| inviteLinkNo | Invitation link fo the NO responses |
+| Property      | Description                                       |
+| ------------- | ------------------------------------------------- |
+| results       | An array of objects with the following properties |
+| contact       | The contact identifier                            |
+| status        | The status of the request                         |
+| inviteLinkYes | Invitation link for the YES responses             |
+| inviteLinkNo  | Invitation link fo the NO responses               |
 
 To invite a contact to the event, pass through the event identifier and an array of contact identifiers through to this call. The result will be a an array indicating if each of the contacts invitation was successful or not, and if so the links for responding to the invitations for both yes and no.
-

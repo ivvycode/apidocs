@@ -16,13 +16,11 @@ iVvy takes security very seriously and the API described in this document has be
 * All requests must be signed using the key/secret pair to prove the request was made by a valid key
 * All requests have a time limit to avoid future replay attacks
 
-To help you get started we offer sdk libraries in [C\#](https://github.com/ivvycode/ivvy-sdk-net),  and [Javascript](https://github.com/ivvycode/ivvy-sdk-js).
+To help you get started we offer sdk libraries in [C\#](https://github.com/ivvycode/ivvy-sdk-net), and [Javascript](https://github.com/ivvycode/ivvy-sdk-js).
 
 **Next Steps:**
 
 * Download an [example extension](https://github.com/ivvycode/example-extension) designed to work on the AWS infrastructure 
-* Try making an [API call](https://developer.ivvy.com/getting-started/test/ping)
+* Try making an [API call](https://developer.ivvy.com/getting-started/test)
 * [Contact the iVvy Integration Team](https://www.ivvy.com.au/events/contact.html) for additional support
-
-
 

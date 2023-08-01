@@ -18,7 +18,7 @@ Get Email Log List
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "meta": {
     "totalResults": 1,
