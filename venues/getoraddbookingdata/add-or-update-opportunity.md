@@ -94,14 +94,14 @@ If _contact_ and _company_ are present in request then it will link given contac
   "venueId": "107",
   "name": "Lead By API",
   "company" : {
-        "businessName": "Business Name",
-      "updateIfExists": true
+    "businessName": "Business Name",
+    "updateIfExists": true
   },
   "contact" : {
-      "firstName" : "First",
-      "lastName" : "Last",
-      "email" : "email8@email.com",
-      "updateIfExists" : true
+    "firstName" : "First",
+    "lastName" : "Last",
+    "email" : "email8@email.com",
+    "updateIfExists" : true
   },
   "typeId": "18",
   "sourceId": "25",
@@ -110,18 +110,18 @@ If _contact_ and _company_ are present in request then it will link given contac
   "stageReasonId": "127",
   "closedDate": "2017-05-05",
   "referralCompany": {
-        "businessName": "Business",
-        "primaryContact": {
-            "firstName": "Test",
-            "lastName": "Test",
-            "email": "Test@gmail.com"
-        }
-    },
-    "referralContact": {
-        "firstName": "Test",
-        "lastName": "Test",
-        "email": "Test@gmail.com"
+    "businessName": "Business",
+    "primaryContact": {
+      "firstName": "Test",
+      "lastName": "Test",
+      "email": "Test@gmail.com"
     }
+  },
+  "referralContact": {
+    "firstName": "Test",
+    "lastName": "Test",
+    "email": "Test@gmail.com"
+  }
 }
 ```
 
