@@ -182,5 +182,6 @@
   * [Timezone List](development-reference/timezone-list.md)
 * [Announcements](announcements/README.md)
   * [Room Reservation Contact Changes](announcements/venue/room-reservation-contact-update.md)
+  * [Contact Customfield Changes](announcements/contact/contact-customfield-update.md)
 
 
