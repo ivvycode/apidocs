@@ -64,6 +64,7 @@ The starting result of the page. Not this is zero based (i.e. sending start = 0 
 | commissionAccommodationValue | The commission amount of the company accommodation.                                                                             |
 | commissionAccommodationType  | The commission amount type of the accommodation.                                                                                |
 | iataNumber                   | The IATA number of commission payable to the agent.                                                                             |
+| customFields | The custom field information for the company. This is an array of fields, each an object with the [keys](get-company-list.md#custom-fields-keys). | array |
 
 ## Keys
 
@@ -112,5 +113,11 @@ The starting result of the page. Not this is zero based (i.e. sending start = 0 
 | -------- | ------- | ------------------------------------- |
 | id       | integer | The unique identifier of the industry |
 | name     | string  | The name of the industry              |
+
+### Custom Fields Keys
+
+| fieldId |
+| displayName |
+| value |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.

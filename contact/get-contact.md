@@ -68,7 +68,7 @@ This example request will obtain the details of the contact with the id "6"
 | phone              | The contact’s phone number                                                                                                                                                  | integer  |
 | status             | The contact's [email status](get-contact.md#email-status)                                                                                                                   | enum     |
 | smsStatus          | The contact’s [sms status](get-contact.md#sms-status)                                                                                                                       | enum     |
-| customFields       | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact.md#keys).                                              | array    |
+| customFields       | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact.md#custom-fields-keys).                                              | array    |
 | groups             | The subscription group information for the contact.                                                                                                                         | array    |
 | companies          | This will an array company ids to which the contact belongs.                                                                                                                | array    |
 | companiesData      | This will an array company containing id and businessName for each company to which the contact belongs.                                                                    | array    |

@@ -30,7 +30,14 @@ The company's identifier
     "stateCode": "QLD",
     "countryCode": "AU",
     "postalCode": "4227"
-  }
+  },
+  "customFields": [
+      {
+          "fieldId": 5,
+          "displayName": "Birth Date",
+          "value": "1985-03-17 23:00:00 UTC"
+      }
+  ],
   "primaryAccountManager": "Test User",
   "secondaryAccountManager": "Test User",
   "industry": "Industry Name",
@@ -98,6 +105,7 @@ The company's identifier
 | commissionAccommodationValue | The commission amount of the company accommodation.                                                                        |
 | commissionAccommodationType  | The commission amount type of the accommodation.                                                                           |
 | iataNumber                   | The IATA number of commission payable to the agent.                                                                        |
+| customFields | The custom field information for the company. This is an array of fields, each an object with the [keys](get-company.md#custom-fields-keys). | array |
 
 ## Keys
 
@@ -147,6 +155,12 @@ The company's identifier
 | -------- | ------- | ------------------------------------- |
 | id       | integer | The unique identifier of the industry |
 | name     | string  | The name of the industry              |
+
+### Custom Fields Keys
+
+| fieldId |
+| displayName |
+| value |
 
 ## Throws
 
