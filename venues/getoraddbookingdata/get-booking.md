@@ -68,6 +68,7 @@ The id of the booking
   "accommExternalBlockId": "test 123",
   "dailyRevenue": [
     {
+      "venueId": 1,
       "costcenterId": 1276,
       "revenueDate": "2015-09-04",
       "totalAmount": 900,
@@ -75,6 +76,7 @@ The id of the booking
       "totalTaxAmount": 81.818
     },
     {
+      "venueId": 1,
       "costcenterId": 1277,
       "revenueDate": "2015-09-04",
       "totalAmount": 900,
@@ -82,6 +84,7 @@ The id of the booking
       "totalTaxAmount": 81.818
     },
     {
+      "venueId": 1,
       "costcenterId": 1278,
       "revenueDate": "2015-09-04",
       "totalAmount": 900,
@@ -89,6 +92,7 @@ The id of the booking
       "totalTaxAmount": 81.818
     },
     {
+      "venueId": 1,
       "costcenterId": 1279,
       "revenueDate": "2015-09-04",
       "totalAmount": 900,
@@ -904,6 +908,7 @@ One of the following values:
 
 | Property            | Type                                               | Description                                                           |
 | ------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+| venueId             | integer                                            | The unique identifier of the venue to which the cost center belongs   |
 | costcenterId        | integer                                            | The unique identifier of the cost center to which the revenue applies |
 | revenueDate         | [Date](../../development-reference/date-format.md) | The date on which the revenue applies                                 |
 | totalAmount         | double                                             | The total revenue amount, including tax                               |
