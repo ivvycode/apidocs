@@ -6,24 +6,24 @@ Add or update cost center details to the account.
 {% endswagger-description %}
 
 {% swagger-parameter name="id" type="integer" in="path" %}
-The unique identifier of the cost centre
+The unique identifier of the cost center
 
 \
 
 
-(Leave empty to add the cost centre to the account)
+(Leave empty to add the cost center to the account)
 {% endswagger-parameter %}
 
 {% swagger-parameter name="name" type="string" in="path" %}
-The name of the cost centre
+The name of the cost center. Required when adding a new cost center.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="code" type="string" in="path" %}
-The code of the cost centre
+The code of the cost center. Required when adding a new cost center.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="description" type="string" in="path" %}
-The complete description of the coast centre
+The complete description of the cost center
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
