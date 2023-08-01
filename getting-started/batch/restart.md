@@ -1,38 +1,22 @@
 # Restart
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/batch?action=restart" path="" %}
-{% api-method-summary %}
-Restart
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=restart" method="post" summary="Restart" %}
+{% swagger-description %}
 The restart action takes the asyncId as a parameter and returns the success of the call. Note a success of true does not mean the job will restart immediately
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% swagger-parameter name="" type="string" in="path" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
   "restarted":true
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example Request
 
@@ -41,4 +25,3 @@ The restart action takes the asyncId as a parameter and returns the success of t
   "async":"a7ec88af7d710bf51b188004bb532d77"
 }
 ```
-

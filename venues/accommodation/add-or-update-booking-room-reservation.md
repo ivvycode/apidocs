@@ -17,8 +17,7 @@ A json object that represents the room reservation to add or update. See below f
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-A successful response to an add or update operation.  
-NOTE: The "rooms" in the response are returned in the same order as the "rooms" in the request.
+A successful response to an add or update operation. NOTE: The "rooms" in the response are returned in the same order as the "rooms" in the request.
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -28,14 +27,14 @@ NOTE: The "rooms" in the response are returned in the same order as the "rooms" 
   "reference": "45",
   "mainGuest": {
     "id": 101,
-    "contactId": 43213
+    "guestContactId": 43213
   },
   "rooms": [
     {
       "id": 4001,
       "guest": {
         "id": 101,
-        "contactId": 43213
+        "guestContactId": 43213
       },
       "additionalGuests": []
     },
@@ -43,12 +42,12 @@ NOTE: The "rooms" in the response are returned in the same order as the "rooms" 
       "id": 4002,
       "guest": {
         "id": 102,
-        "contactId": 44321
+        "guestContactId": 44321
       },
       "additionalGuests": [
         {
           "guestId": 103,
-          "contactId": 43277,
+          "guestContactId": 43277,
           "guestType": 2
         }
       ]
@@ -104,6 +103,9 @@ Invalid request data that prevents the room reservation from being added/updated
 | numChildGuests | integer | required on add, optional on update | The number of children on the reserved room. The value cannot exceed 10 |
 | dayRates | array of [Day Rates](add-or-update-booking-room-reservation.md#reserved-room-day-rates) | required on add, optional on update | The daily rates of the reserved room |
 | additionalGuests | array of [Additional  Guests](add-or-update-booking-room-reservation.md#reserved-room-additional-guests) | optional | The additional guests of the reserved room |
+| overrideBlockCapacity | boolean | optional | Whether or not the reservations can exceed the block capacity |
+| externalReference | text | optional | External system identifier for this reserved room. eg. PMS ID. Allowed max length is 254 Characters. |
+| occType | integer | optional | The occupancy type of the reserverd room. See [Occupancy Type](add-or-update-booking-room-reservation.md#occupancy-type) |
 
 ## Reserved Room Day Rates
 
@@ -127,7 +129,7 @@ Invalid request data that prevents the room reservation from being added/updated
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | id | integer | optional | The unique id of the venue guest to update |
-| contact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest |
+| guestContact | [Contact](add-or-update-booking-room-reservation.md#guest-contact-details) | required on add, optional on update | The contact details of the guest |
 | primaryPhone | string | optional | The primary phone number of the guest |
 | address | [Address](../../development-reference/address-format.md) | optional | The address of the guest |
 
@@ -139,7 +141,6 @@ Invalid request data that prevents the room reservation from being added/updated
 | lastName | string | required | The last name of the contact |
 | email | string | required | The email address of the contact |
 | phone | string | optional | The mobile phone number of the contact |
-| groups | array | optional | This is an array of group objects with the ‘groupId’ key. |
 
 ## Additional Guest Type
 
@@ -149,6 +150,17 @@ One of the following values
 | :--- | :--- |
 | 1 | Sharer |
 | 2 | Accompanying |
+
+## Occupancy Type
+
+One of the following values
+
+| \# | Description |
+| :--- | :--- |
+| 1 | Single |
+| 2 | Double |
+| 3 | Triple |
+| 4 | Quad |
 
 ## Notes on adding a room reservation
 
@@ -200,7 +212,6 @@ The following is an example of an update request that updates an existing room \
     ]
 ]
 ```
-
 Existing rooms can be **removed** from a reservation by passing their unique identifier in the _removeRooms_ of the request. Rooms are removed before other rooms in the request are added/updated.
 
 ### Updating additional guests on a reserved room
@@ -211,9 +222,7 @@ If the value is **not** present in the request, the existing list of additional 
 
 ## Notes on guest details in the request
 
-Guests are **uniquely** identified based on the following \(in order\):  
-1\) The unique _id_ value of the guest.  
-2\) The combination of the guest's _email_, _firstName_, and _lastName_ \(case insensitive\).
+Guests are **uniquely** identified based on the following \(in order\): 1\) The unique _id_ value of the guest. 2\) The combination of the guest's _email_, _firstName_, and _lastName_ \(case insensitive\).
 
 Consider the following [guest](add-or-update-booking-room-reservation.md#guest) objects:
 
@@ -224,11 +233,10 @@ Consider the following [guest](add-or-update-booking-room-reservation.md#guest) 
 }
 
 {
-  "contact": {
+  "guestContact": {
     "firstName": "John",
     "lastName": "Doe",
     "email": "john.doe@somewhere.com",
-    "groups": [{"groupId": 10}],
   },
   "primaryPhone": "0419111222"
 }
@@ -245,24 +253,22 @@ If the same guest details appear multiple times in the request, only the details
   "venueId": 13,
   "bookingId": 1413,
   "mainGuest": {
-    "contact": {
+    "guestContact": {
       "firstName": "John",
       "lastName": "Doe",
       "email": "John.Doe@somewhere.com",
       "phone": "12345678",
-      "groups": [{"groupId": 10}],
     },
     "primaryPhone": "12345678"
   },
   "rooms": [
     {
       "guest": {
-        "contact": {
+        "guestContact": {
           "firstName": "John",
           "lastName": "Doe",
           "email": "John.Doe@somewhere.com",
           "phone": "87654321",
-          "groups": [{"groupId": 10}],
         },
         "primaryPhone": "87654321"
       },
@@ -272,12 +278,11 @@ If the same guest details appear multiple times in the request, only the details
     },
     {
       "guest": {
-        "contact": {
+        "guestContact": {
           "firstName": "Jane",
           "lastName": "Doe",
           "email": "Jane.Doe@somewhere.com",
           "phone": "123123123",
-          "groups": [{"groupId": 10}],
         },
         "primaryPhone": "123123123"
       },
