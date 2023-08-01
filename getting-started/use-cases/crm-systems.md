@@ -104,7 +104,7 @@ iVvy does not allow for quotes/bookings to be pushed back into the system, and t
 
 Typical Endpoints used when doing a Quotes / Bookings Sync
 
-* [getBookingListForAccount](../../venues/get-booking-list-for-account.md) \(this returns bookings for all venues\) [getBookingList](../../venues/get-booking-list.md) \(returns all bookings for a single venue\) or [getBooking](../../venues/get-booking.md) \(returns a single booking\) can be used to source a list of quotes and bookings out of a venue.  To differentiate between a quote and a booking the current status will identify if its Prospective \(quote\) or Tentative / Confirmed \(Booking\). 
+* [getBookingListForAccount](../../venues/getoraddbookingdata/get-booking-list-for-account.md) \(this returns bookings for all venues\) [getBookingList](../../venues/getoraddbookingdata/get-booking-list.md) \(returns all bookings for a single venue\) or [getBooking](../../venues/getoraddbookingdata/get-booking.md) \(returns a single booking\) can be used to source a list of quotes and bookings out of a venue.  To differentiate between a quote and a booking the current status will identify if its Prospective \(quote\) or Tentative / Confirmed \(Booking\). 
 
 To get the latest bookings that have been created or modified, the result can be filtered by a modifiedDateAfter parameter.
 
