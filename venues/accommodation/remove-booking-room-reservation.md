@@ -1,52 +1,43 @@
 # Remove Booking Room Reservation
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=removeBookingRoomReservation" %}
-{% api-method-summary %}
-Remove Booking Room Reservation
-{% endapi-method-summary %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/venue?action=removeBookingRoomReservation" method="post" summary="Remove Booking Room Reservation" %}
+{% swagger-description %}
+Remove a room reservation from a specific booking. The booking must satisfy the following:
 
-{% api-method-description %}
-Remove a room reservation from a specific booking. The booking must satisfy the following:  
-\* Accommodation is included.  
+\
+
+
+\* Accommodation is included.
+
+\
+
+
 \* The status must be "confirmed".
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="venueId" type="integer" required=true %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the booking belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="bookingId" type="integer" required=true %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The unique id of the booking to which the room reservation belongs
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="id" type="integer" required=true %}
+{% swagger-parameter name="id" type="integer" in="body" %}
 The unique id of the room reservation to remove
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successfully removing a room reservation from a booking
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "success": true,
   "errorType": null
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-| Error Type | Reason |
-| :--- | :--- |
-| 1 | Unknown error |
-| 2 | Only "not confirmed" room reservations can be deleted |
-
+| Error Type | Reason                                                |
+| ---------- | ----------------------------------------------------- |
+| 1          | Unknown error                                         |
+| 2          | Only "not confirmed" room reservations can be deleted |
