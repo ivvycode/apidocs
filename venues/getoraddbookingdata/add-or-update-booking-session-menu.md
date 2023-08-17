@@ -79,8 +79,9 @@ Something unexpected occurred whilst processing the request. The booking should 
 | includeInPackage | boolean | optional | Whether or not the booking session is included in booking package. |
 | bookingPackageId | integer | optional | The unique id of the booking package to which the booking session menu belongs. Required when includeInPackage is true |
 | costcenterId | integer | optional | The unique id of the cost center to which the booking session menu belongs. Required when adding new booking session menu |
-| cost | double | optional | The price of the booking session menu. Required when includeInPackage is false |
-| excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session menu. Required when includeInPackage is false |
+| cost | double | optional | The price of the booking session menu. Required when includeInPackage is false. Ignored when selected menu type is multi cost per person |
+| excludedTaxIds | array | optional | The array of tax Ids which are excluded to apply on the booking session menu. Required when includeInPackage is false. Ignored when selected menu type is multi cost per person |
+| costcenters | array of [Costcenter](get-booking-session-menu-list.md#costcenter) | optional | Cost breakdown of a menu when selected menu type is multi cost per person|
 | sortOrder | integer | optional | The sort order of the booking session menu |
 | items | array | optional | The array of menu items that shoud be added to menu. See [Menu Item](add-or-update-booking-session-menu.md#menu-item) section for details of each item |
 

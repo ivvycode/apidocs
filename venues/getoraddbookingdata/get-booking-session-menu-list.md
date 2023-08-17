@@ -156,7 +156,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 | id | string | optional | The unique id of the booking session menu to update |
 | venueId | string | required | The unique id of the venue to which the booking session menu belongs  |
 | bookingId | string | required | The unique id of the booking to which the booking session menu belongs  |
-| sessionId | string | optional | The unique id of the session to which the booking session menu belongs  | 
+| sessionId | string | optional | The unique id of the session to which the booking session menu belongs  |
 | menuId | string | optional | The menu id from venue setup  |
 | menuVenueId | string | optional | The unique id of venue to which menu belongs |
 | name | mixed | optional | The name of the booking session menu |
@@ -168,7 +168,8 @@ The result from this call will be a [collection](../getting-started/interpreting
 | bookingPackageId | integer | optional | The booking package id in which the booking session menu is included. Required when includeInPackage is true |
 | costcenterId | integer | optional | The cost center id to which the booking session menu belongs |
 | cost | number | optional | The cost of the booking session menu |
-| excludedTaxIds | array of integers | optional | The excluded cost tax ids applied to the price of the booking session menu |
+| excludedTaxIds | array of integers | optional | The excluded cost tax ids applied to the price of the booking session menu. Ignored when selected menu type is multi cost per person. Use costPerPersonExcludedTaxIds of [Costcenter](get-booking-session-menu-list.md#costcenter) instead |
+| costcenters | array of [Costcenter](get-booking-session-menu-list.md#costcenter) | optional | Cost breakdown of a menu when selected menu type is multi cost per person|
 | items | array | optional | The items data of the session menu. See [Menu Item](get-booking-session-menu-list.md#group-menu-item) or [Group Menu  Items](get-booking-session-menu-list.md#group-menu-item) section for details of each item |
 | sortOrder | integer | optional | The sort order of the booking session menu |
 | createdDate | string | optional | The date and time when the session menu was created |
@@ -181,25 +182,32 @@ A menu item is an object with the following details.
 
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| _type | string | optional |  The type of an session menu item | 
-| id | integer | required | The unique id of the booking session menu item | 
-| name | string | optional | The name of the booking session menu item | 
-| description | string | optional |  The description of the booking session menu item | 
-| quantity | integer | optional | The quantity of the booking session menu item | 
-| price | double | optional | The price of the booking session menu item | 
-| itemCost | double | optional |The cost of the booking session menu item | 
-| isOptional | boolean | optional |  Whether or not booking session menu item | 
-| servingTime | string | optional | The serving time of the booking session menu item | 
+| _type | string | optional |  The type of an session menu item |
+| id | integer | required | The unique id of the booking session menu item |
+| name | string | optional | The name of the booking session menu item |
+| description | string | optional |  The description of the booking session menu item |
+| quantity | integer | optional | The quantity of the booking session menu item |
+| price | double | optional | The price of the booking session menu item |
+| itemCost | double | optional |The cost of the booking session menu item |
+| isOptional | boolean | optional |  Whether or not booking session menu item |
+| servingTime | string | optional | The serving time of the booking session menu item |
 
 
 ## Group Menu Item
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| _type | string | optional | The type of an session menu item group | 
-| id | string | optional | The unique id of the booking session menu item group | 
-| name | string | optional | The name of the booking session menu item group | 
-| marketplaceName | string | | optional |The name of the booking session menu item group | 
-| minSelection | integer | | optional | The max selection of the booking session menu item group | 
-| maxSelection | integer | optional | The min selection of the booking session menu item group | 
-| servingTime | string | optional | The serving time of the booking session menu item | 
-| items | array | optional | The items data of the session menu group. See [Menu Item](get-booking-session-menu-list.md#group-menu-item) section for details of each item |  
+| _type | string | optional | The type of an session menu item group |
+| id | string | optional | The unique id of the booking session menu item group |
+| name | string | optional | The name of the booking session menu item group |
+| marketplaceName | string | | optional |The name of the booking session menu item group |
+| minSelection | integer | | optional | The max selection of the booking session menu item group |
+| maxSelection | integer | optional | The min selection of the booking session menu item group |
+| servingTime | string | optional | The serving time of the booking session menu item |
+| items | array | optional | The items data of the session menu group. See [Menu Item](get-booking-session-menu-list.md#group-menu-item) section for details of each item |
+
+## Costcenter
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| costcenterId | integer | required | The id of costcenter |
+| costPerPerson | double | required | The cost per person value of a costcenter |
+| costPerPersonExcludedTaxIds | optional | array of integers | TThe excluded cost tax ids applied to the price of this costcenter |
