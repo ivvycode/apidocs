@@ -80,6 +80,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | smallDescription      | text                                                                       | The small description of the menu                                                 |
 | marketplaceName       | text                                                                       | The name of the menu displayed in marketplace booking engines                     |
 | marketplaceCategories | array of [Marketplace Categories](get-menu-list.md#marketplace-categories) | The categories in which the menu will be displayed in marketplace booking engines |
+| costcenters | array of [Costcenter](get-menu-list.md#costcenter) | Cost breakdown of a menu when selected menu type is multi cost per person|
 
 ## Cost Type (Menu Pricing)
 
@@ -105,3 +106,9 @@ The result from this call will be a [collection](../../getting-started/interpret
 * 4 = Coffee Break
 * 5 = Reception
 * 6 = Outside Catering
+## Costcenter
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| costcenterId | integer | required | The id of costcenter |
+| costPerPerson | double | required | The cost per person value of a costcenter |
+| costPerPersonExcludedTaxIds | optional | array of integers | The excluded cost tax ids applied to the price of this costcenter |

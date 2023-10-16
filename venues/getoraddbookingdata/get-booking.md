@@ -1033,6 +1033,7 @@ One of the following values:
 | totalTaxAmount   | double                                                       | The tax amount of the menu                                                                            |
 | taxDetails       | Array of [Tax Detail](get-booking.md#tax-detail)             | Individual tax details                                                                                |
 | totalAttendees   | integer                                                      | The minimum number of attendees for the menu                                                          |
+| costcenters | array of [Costcenter](get-booking.md#costcenter) | optional | Cost breakdown of a menu when selected menu type is multi cost per person|
 
 ## Beverage Package
 
@@ -1256,3 +1257,10 @@ One of the following values:
 | 4  | Coffee Break     |
 | 5  | Reception        |
 | 6  | Outside Catering |
+
+## Costcenter
+| Property | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| costcenterId | integer | required | The id of costcenter |
+| costPerPerson | double | required | The cost per person value of a costcenter |
+| costPerPersonExcludedTaxIds | optional | array of integers | The excluded cost tax ids applied to the price of this costcenter |
