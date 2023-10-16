@@ -210,4 +210,4 @@ A menu item is an object with the following details.
 | :--- | :--- | :--- | :--- |
 | costcenterId | integer | required | The id of costcenter |
 | costPerPerson | double | required | The cost per person value of a costcenter |
-| costPerPersonExcludedTaxIds | optional | array of integers | TThe excluded cost tax ids applied to the price of this costcenter |
+| costPerPersonExcludedTaxIds | optional | array of integers | The excluded cost tax ids applied to the price of this costcenter |
