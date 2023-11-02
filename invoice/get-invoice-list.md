@@ -25,7 +25,7 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
     "results": [
         {
             "id": 409615,
-            "reference": 1007127,
+            "reference": "1007127",
             "title": "Tax Invoice",
             "description": "Final Invoice",
             "currency": "AUD",
@@ -77,7 +77,7 @@ The starting result of the page. Note this is zero based (i.e. sending start=0 w
         },
         {
             "id": 409619,
-            "reference": 1007128,
+            "reference": "1007128",
             "title": "Deposit Invoice",
             "description": "Deposit Invoice",
             "currency": "AUD",

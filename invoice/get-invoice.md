@@ -13,7 +13,7 @@ The invoice identifier
 ```
 {
     "id": 957114,
-    "reference": 1007458,
+    "reference": "1007458",
     "title": "Deposit Invoice",
     "description": "Example Invoice Description",
     "currency": "AUD",
