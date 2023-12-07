@@ -88,7 +88,7 @@ The unique id of the user to which the activity will be assigned
   "name": "Test Activity API",
   "venueId": 1,
   "subType": 2,
-  "purposerId": 1,
+  "purposeId": 1,
   "startDateTime": "2020-02-02 01:00:00 UTC",
   "endDateTime": "2020-02-02 02:00:00 UTC",
   "assignedUserId": 1,
