@@ -45,7 +45,7 @@ Equal to one of the following values
 ```javascript
 {
   "name": "Referal Lead",
-  "appliesTo": 1,
+  "applyTo": 1,
 }
 ```
 

@@ -27,10 +27,6 @@ The unique id of the session resource to which the booking session resource belo
 The quantity of the session resource (Required when the ID parameter is missing)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="quantity" type="integer" in="path" %}
-The quantity of the session resource (Required when the ID parameter is missing)
-{% endswagger-parameter %}
-
 {% swagger-parameter name="startTime" type="time" in="path" %}
 The startTime of the session resource (Required when the ID parameter is missing)
 {% endswagger-parameter %}
