@@ -19,6 +19,9 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
     - [Opportunity Endpoint](#opportunity-endpoint)
     - [Invoice Endpoint](#invoice-endpoint)
     - [Booking Endpoint](#booking-endpoint)
+  - [Example](#example)
+  - [Message Details](#message-details)
+  - [Source Type](#source-type)
 
 ## Subscriptions
 
@@ -162,3 +165,44 @@ The response example above shows the result of unsubscribing each endpoint. The 
 | Endpoint          | Notification Sends    |
 | ----------------- | --------------------- |
 | venuesEndpoint    | This endpoint will trigger when booking, accommodation or reservations have been created / modified. <ul><li>Booking is Added</li><li>Booking is Updated</li><li>Booking is Deleted</li><li>Booking Accommodation is Added</li><li>Booking Accommodation is Updated</li><li>Booking Accommodation is Deleted</li><li>Booking Room Reservation is Added</li><li>Booking Room Reservation is Updated</li><li>Booking Room Reservation is Deleted</li><li>Booking Moved <i>- A special notification to handle when a booking in iVvy has been moved.</i></li></ul> |
+
+
+## Example
+
+Generally, a notification message looks like below. "Body" within **Message** are different for different type of Notifications.
+
+```json
+{
+  "Type": "Notification",
+  "MessageId": "1bca0cbf-8790-506f-a983-52d7cc7d32d9",
+  "TopicArn": "arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_14_d4959ffe27f4a760733babdf1fa7fbbd354d4f62_NotifCompanies",
+  "Message": "{\"TxnId\":\"b898c04362bcbfe984f1867ce7db5599\",\"Region\":\"stage\",\"Timestamp\":1710115244,\"AccountId\":\"14\",\"Subject\":\"CompanyAdded\",\"Body\":\"{\\\"data\\\":{\\\"id\\\":60825,\\\"externalId\\\":null,\\\"businessName\\\":\\\"Test Company 123\\\",\\\"tradingName\\\":\\\"Trading Name\\\",\\\"businessNumber\\\":\\\"ABN123\\\",\\\"phone\\\":\\\"\\\",\\\"otherPhone\\\":\\\"\\\",\\\"fax\\\":\\\"\\\",\\\"website\\\":\\\"\\\",\\\"email\\\":\\\"\\\",\\\"address\\\":{\\\"line1\\\":\\\"\\\",\\\"line2\\\":\\\"\\\",\\\"line3\\\":\\\"\\\",\\\"line4\\\":\\\"\\\",\\\"city\\\":\\\"\\\",\\\"stateCode\\\":\\\"\\\",\\\"countryCode\\\":\\\"AU\\\",\\\"postalCode\\\":\\\"\\\"},\\\"modifiedDate\\\":\\\"2024-03-11 00:00:44 UTC\\\",\\\"primaryAccountManager\\\":{\\\"id\\\":50476,\\\"firstName\\\":\\\"API\\\",\\\"lastName\\\":\\\"Test\\\",\\\"email\\\":\\\"david.tannock@ivvy.com\\\"},\\\"secondaryAccountManager\\\":null,\\\"industry\\\":{\\\"id\\\":369,\\\"name\\\":\\\"Banking\\\"},\\\"primaryContact\\\":{\\\"id\\\":7474181,\\\"firstName\\\":\\\"test\\\",\\\"lastName\\\":\\\"test\\\",\\\"email\\\":\\\"test01@ivvy.com\\\",\\\"phone\\\":\\\"078 0895 8308\\\"},\\\"isAgent\\\":0,\\\"parentCompanyId\\\":0,\\\"leftValue\\\":1,\\\"rightValue\\\":2,\\\"depth\\\":0,\\\"rootId\\\":60825,\\\"commissionSpace\\\":null,\\\"commissionSpaceType\\\":null,\\\"commissionFood\\\":null,\\\"commissionFoodType\\\":null,\\\"commissionBeverage\\\":null,\\\"commissionBeverageType\\\":null,\\\"commissionAudioVisual\\\":null,\\\"commissionAudioVisualType\\\":null,\\\"commissionAccommodation\\\":null,\\\"commissionAccommodationType\\\":null,\\\"iataNumber\\\":null,\\\"customFields\\\":[{\\\"fieldId\\\":64,\\\"displayName\\\":\\\"t\\\",\\\"value\\\":\\\"\\\"},{\\\"fieldId\\\":67,\\\"displayName\\\":\\\"RB-1952 test 1\\\",\\\"value\\\":\\\"\\\"},{\\\"fieldId\\\":68,\\\"displayName\\\":\\\"RB-1952 test 2\\\",\\\"value\\\":[\\\"\\\"]},{\\\"fieldId\\\":76,\\\"displayName\\\":\\\"Upload file\\\",\\\"value\\\":null},{\\\"fieldId\\\":169753,\\\"displayName\\\":\\\"RB-3526 test\\\",\\\"value\\\":\\\"2024-03-11 14:00:00 UTC\\\"}]}}\",\"SourceType\":0,\"SourceInfo\":null,\"Signature\":\"jbOmjGh1CmyA\\/Z1vS+gnTidrTD\\/vxX7wZtmRmb8N1M7NxTqgpiGOErR8zAvTtfQqVH0sU6yCQkXykEOrmCIT1u3pC9j34IZQKgAMv859xXBSCpx0SXBNqo7dyXT8zAq5p6vW\\/1BGuIWbooaNFB3KNmWmc8y9fMs0akFINuF2kSS6AndnD2zwtIVxZ3jIs8eFSBroEVNOX1YaaGKOulIjQvdMsk7Ge0UGCAba36izHf65Q5riEjrqz0W62OseHJseLZIVRRjlW+4VsYdx2sq1cCXYz1M3Muw0iTNUvHcqAIEG18cF6+tNuqPX4ilDzYzc4udEOv1z8X8+Un5kmqO9Uw==\",\"SigningPublicKeyPath\":\"\\/accounts\\/14\\/1537854341\\/notifcert.txt\"}",
+  "Timestamp": "2024-03-11T00:00:45.569Z",
+  "SignatureVersion": "1",
+  "Signature": "k1fv23ZAC0tYVn8UaFZHcwJQCH0LaubIz5219ziK/tn4uR7GlSi/h0A7XL3aibrVn5aU6LF3scYzXezw0N21EOD2VZohAY/oSgbqzwp+RECvbGs4kZuz8x+6lKYeem2TPEjsaPaFF+JuW7sSvTqZ8L2MZuxbCBXOuiuBl5hKF2va2Tkaiho0A+753AbQWL4hQjqxCCLb1UrglvgKTPfrg9Ew4x9FFe9tNjkh7utYYKI9fltcqp5Hk66E6ftsxsixBsa44t2cUCCOKFnleTH90sPgtWwBYazee4wdL/s+rsBLMxKPYTUcwTLc6TAqtE4N1V2xBILksFEBlG9nNGBLpg==",
+  "SigningCertURL": "https://sns.ap-southeast-2.amazonaws.com/SimpleNotificationService-60eadc530605d63b8e62a523676ef735.pem",
+  "UnsubscribeURL": "https://sns.ap-southeast-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_14_d4959ffe27f4a760733babdf1fa7fbbd354d4f62_NotifCompanies:a97813c2-7724-4f18-97a5-afd41258bd44"
+}
+```
+
+## Message Details
+
+| Property |  Description | Type |
+| ----------------------- | ----------------------------------- | --------- |
+| AccountId | The Account Id from where notification has been published | string |
+| Body | The body of the notification. | string |
+| Region | The region of the notification from where notification has been published | string |
+| Signature | The cryptographic signature of the message | string |
+| SigningPublicKeyPath | The path of the public certificate paired with the private key used to generate the signature.  | string |
+| SourceInfo | Optionally the source of the message in JSON. E.g. API key for API source | string |
+| SourceType | The source of the message | int |
+| Timestamp | The timestamp of the notification  | string |
+| TxnId | The Transaction id of the notification  | string |
+
+
+## Source Type
+
+| Value | Description |
+| ----- | ------------ |
+| 0 | Unknown |
+| 1 | API |
