@@ -13,15 +13,10 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
     - [Subscribing To A Notification](#subscribing-to-a-notification)
     - [Subscribe](#subscribe)
     - [Unsubscribe](#unsubscribe)
-  - [Endpoints](#endpoints)
-    - [Company Endpoint](#company-endpoint)
-    - [Contact Endpoint](#contact-endpoint)
-    - [Opportunity Endpoint](#opportunity-endpoint)
-    - [Invoice Endpoint](#invoice-endpoint)
-    - [Booking Endpoint](#booking-endpoint)
-  - [Example](#example)
+  - [Notification Payload](#notification-payload)
   - [Message Details](#message-details)
   - [Source Type](#source-type)
+  - [Endpoints](#endpoints)
 
 ## Subscriptions
 
@@ -136,7 +131,7 @@ The response example above shows the result of unsubscribing each endpoint. The 
 
 ## Notification Payload
 
-The notification payload looks as follow. 
+The notification payload looks as follow.
 
 ```json
 {
@@ -178,10 +173,9 @@ Here is the explanation of each key in the "Message". Using the "Subject" you ca
 | 0 | Unknown |
 | 1 | API |
 
-
 ## Endpoints
 
-The notification can have message for different entities. For example, contactsEndpoint has a message for contact's note added or updated. 
+The notification can have message for different entities. For example, contactsEndpoint has a message for contact's note added or updated.
 
 Here is the list of endpoints
 

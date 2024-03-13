@@ -42,5 +42,3 @@ ContactDeleted
     "contactId": 123
 }
 ```
-
-

@@ -4,25 +4,37 @@ This notification will be sent when an opportunity has been modified. <ul><li>Op
 
 ## Opportunity is created.
 
+### Subject
+OpportunityAdded
+
+### Body
+
 ```json
 {
     "data": {... JSON Response from getOpportunityList API }
 }
 ```
-Subject: **OpportunityAdded**
-
 
 ## Opportunity is updated.
+
+### Subject
+OpportunityUpdated
+
+### Body
+
 ```json
 {
     "data": {... JSON Response from getOpportunityList API },
     "previousData": {... Previous Data in JSON which has been just updated }
 }
 ```
-Subject: **OpportunityUpdated**
-
 
 ## Opportunity is deleted.
+
+### Subject
+OpportunityDeleted
+
+### Body
 
 ```json
 {
@@ -30,19 +42,26 @@ Subject: **OpportunityUpdated**
     "opportunityId": 234
 }
 ```
-Subject: **OpportunityDeleted**
-
 
 ## Task is created
+
+### Subject
+CrmEventTaskAdded
+
+### Body
+
 ```json
 {
     "data": {... JSON Response from getTaskList API }
 }
 ```
-Subject: **CrmEventTaskAdded**
-
 
 ## Task is updated
+
+### Subject
+CrmEventTaskUpdated
+
+### Body
 
 ```json
 {
@@ -50,26 +69,38 @@ Subject: **CrmEventTaskAdded**
     "previousData": {... Previous Data in JSON which has been just updated }
 }
 ```
-Subject: **CrmEventTaskUpdated**
 
 ## Task is deleted
+
+### Subject
+CrmEventTaskDeleted
+
+### Body
 
 ```json
 {
     "taskId": 123,
 }
 ```
-Subject: **CrmEventTaskDeleted**
 
 ## Activity is created
+
+### Subject
+CrmEventActivityAdded
+
+### Body
 ```json
 {
     "data": {... JSON Response from getActivityList API }
 }
 ```
-Subject: **CrmEventActivityAdded**
 
 ## Activity is updated
+
+### Subject
+CrmEventActivityUpdated
+
+### Body
 
 ```json
 {
@@ -77,13 +108,16 @@ Subject: **CrmEventActivityAdded**
     "previousData": {... Previous Data in JSON which has been just updated }
 }
 ```
-Subject: **CrmEventActivityUpdated**
 
 ## Activity is deleted
+
+### Subject
+CrmEventActivityDeleted
+
+### Body
 
 ```json
 {
     "activityId": 123,
 }
 ```
-Subject: **CrmEventActivityDeleted**
