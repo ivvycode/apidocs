@@ -1,8 +1,6 @@
 # Invoice Endpoint
 
-This endpoint will trigger when booking, accommodation or reservations have been created / modified.
-
-Here are the `Body` of the example notification messages after parse.
+This endpoint will trigger when booking, accommodation or reservations have been created / modified. <ul><li>Booking is Added</li><li>Booking is Updated</li><li>Booking is Deleted</li><li>Booking Accommodation is Added</li><li>Booking Accommodation is Updated</li><li>Booking Accommodation is Deleted</li><li>Booking Room Reservation is Added</li><li>Booking Room Reservation is Updated</li><li>Booking Room Reservation is Deleted</li><li>Booking Moved <i>- A special notification to handle when a booking in iVvy has been moved.</i></li></ul>
 
 ## Booking is Added
 ```json

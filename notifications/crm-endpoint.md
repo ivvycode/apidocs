@@ -1,8 +1,6 @@
 # CRM Endpoint
 
-This notification will be sent when a opportunity is modified or created.
-
-Here are the `Body` of the example notification messages after parse.
+This notification will be sent when an opportunity has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul>
 
 ## Opportunity is created.
 

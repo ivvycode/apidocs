@@ -134,42 +134,9 @@ The response example above shows the result of unsubscribing each endpoint. The 
 | 5     | Incorrect Source      | You must unsubscribe with the API key that was used to subscribe the notification endpoint    |
 | 6     | Status Not Confirmed  | The notification endpoint cannot be unsubscribed until it has been confirmed                  |
 
-## Endpoints
+## Notification Payload
 
-### Company Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| companiesEndpoint | This notification will be sent when a company has been modified or created. <ul><li>Company has been updated.</li><li>Company has been created.</li><li>Company has been deleted.</li></ul> |
-
-### Contact Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| contactsEndpoint  | This notification will be sent when a contact has been modified or created. <ul><li>Contact has been updated</li><li>Contact has been created</li><li>Contact has been deleted</li></ul> |
-
-### Opportunity Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| crmEndpoint       | This notification will be sent when an opportunity has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul> |
-
-### Invoice Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| paymentsEndpoint  | This notification will occur when a modification to an invoice occurs. This includes when payments are applied against an invoice. <ul><li>Invoice is created</li><li>Invoice is updated</li><li>Payment is applied to invoice</li></ul> |
-
-### Booking Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| venuesEndpoint    | This endpoint will trigger when booking, accommodation or reservations have been created / modified. <ul><li>Booking is Added</li><li>Booking is Updated</li><li>Booking is Deleted</li><li>Booking Accommodation is Added</li><li>Booking Accommodation is Updated</li><li>Booking Accommodation is Deleted</li><li>Booking Room Reservation is Added</li><li>Booking Room Reservation is Updated</li><li>Booking Room Reservation is Deleted</li><li>Booking Moved <i>- A special notification to handle when a booking in iVvy has been moved.</i></li></ul> |
-
-
-## Example
-
-Generally, a notification message looks like below. "Body" within **Message** are different for different type of Notifications.
+The notification payload looks as follow. 
 
 ```json
 {
@@ -184,12 +151,16 @@ Generally, a notification message looks like below. "Body" within **Message** ar
   "UnsubscribeURL": "https://sns.ap-southeast-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_14_d4959ffe27f4a760733babdf1fa7fbbd354d4f62_NotifCompanies:a97813c2-7724-4f18-97a5-afd41258bd44"
 }
 ```
+We are using AWS SNS so about notification is from SNS. You should validate the message before processing it further.
 
 ## Message Details
+
+Here is the explanation of each key in the "Message". Using the "Subject" you can identify the what type of the message. The "Body" schema depends on the Subject.
 
 | Property |  Description | Type |
 | ----------------------- | ----------------------------------- | --------- |
 | AccountId | The Account Id from where notification has been published | string |
+| Subject | The subject of the message. This is predefined | string |
 | Body | The body of the notification. | string |
 | Region | The region of the notification from where notification has been published | string |
 | Signature | The cryptographic signature of the message | string |
@@ -206,3 +177,19 @@ Generally, a notification message looks like below. "Body" within **Message** ar
 | ----- | ------------ |
 | 0 | Unknown |
 | 1 | API |
+
+
+## Endpoints
+
+The notification can have message for different entities. For example, contactsEndpoint has a message for contact's note added or updated. 
+
+Here is the list of endpoints
+
+| Endpoint Key | Details |
+| -------- | -------- |
+| companiesEndpoint | [Click Here](companies-endpoint.md) |
+| contactsEndpoint | [Click Here](contacts-endpoint.md) |
+| crmEndpoint | [Click Here](crm-endpoint.md) |
+| paymentsEndpoint | [Click Here](payments-endpoint.md) |
+| venuesEndpoint | [Click Here](venues-endpoint.md) |
+| eventsEndpoint | [Click Here](events-endpoint.md) |
