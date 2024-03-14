@@ -1,6 +1,6 @@
 # Get Space Hire Plans
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getSpaceHirePlanList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getSpaceHirePlanList" %}
 {% api-method-summary %}
 Get Space Hire Plan List
 {% endapi-method-summary %}
