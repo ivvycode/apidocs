@@ -1,6 +1,6 @@
 # CRM Endpoint
 
-This notification will be sent when an opportunity has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul>
+This notification will be sent when an opportunity has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li><li>Lead Note is updated</li><li>Lead Note is created</li><li>Lead Note is deleted</li></ul>
 
 ## Opportunity is created.
 
@@ -119,5 +119,44 @@ CrmEventActivityDeleted
 ```json
 {
     "activityId": 123,
+}
+```
+
+## Lead Note is created
+
+### Subject
+CrmLeadNoteAdded
+
+### Body
+```json
+{
+    "data": {... JSON Response from getLeadNoteList API }
+}
+```
+
+## Lead Note is updated
+
+### Subject
+CrmLeadNoteUpdated
+
+### Body
+
+```json
+{
+    "data": {... JSON Response from getLeadNoteList API },
+    "previousData": {... Previous Data in JSON which has been just updated }
+}
+```
+
+## Lead Note is deleted
+
+### Subject
+CrmLeadNoteDeleted
+
+### Body
+
+```json
+{
+    "noteId": 123,
 }
 ```
