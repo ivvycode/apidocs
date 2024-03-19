@@ -13,12 +13,10 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
     - [Subscribing To A Notification](#subscribing-to-a-notification)
     - [Subscribe](#subscribe)
     - [Unsubscribe](#unsubscribe)
+  - [Notification Payload](#notification-payload)
+  - [Message Details](#message-details)
+  - [Source Type](#source-type)
   - [Endpoints](#endpoints)
-    - [Company Endpoint](#company-endpoint)
-    - [Contact Endpoint](#contact-endpoint)
-    - [Opportunity Endpoint](#opportunity-endpoint)
-    - [Invoice Endpoint](#invoice-endpoint)
-    - [Booking Endpoint](#booking-endpoint)
 
 ## Subscriptions
 
@@ -131,34 +129,61 @@ The response example above shows the result of unsubscribing each endpoint. The 
 | 5     | Incorrect Source      | You must unsubscribe with the API key that was used to subscribe the notification endpoint    |
 | 6     | Status Not Confirmed  | The notification endpoint cannot be unsubscribed until it has been confirmed                  |
 
+## Notification Payload
+
+The notification payload looks as follow.
+
+```json
+{
+  "Type": "Notification",
+  "MessageId": "1bca0cbf-8790-506f-a983-52d7cc7d32d9",
+  "TopicArn": "arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_14_d4959ffe27f4a760733babdf1fa7fbbd354d4f62_NotifCompanies",
+  "Message": "{\"TxnId\":\"b898c04362bcbfe984f1867ce7db5599\",\"Region\":\"stage\",\"Timestamp\":1710115244,\"AccountId\":\"14\",\"Subject\":\"CompanyAdded\",\"Body\":\"{\\\"data\\\":{\\\"id\\\":60825,\\\"externalId\\\":null,\\\"businessName\\\":\\\"Test Company 123\\\",\\\"tradingName\\\":\\\"Trading Name\\\",\\\"businessNumber\\\":\\\"ABN123\\\",\\\"phone\\\":\\\"\\\",\\\"otherPhone\\\":\\\"\\\",\\\"fax\\\":\\\"\\\",\\\"website\\\":\\\"\\\",\\\"email\\\":\\\"\\\",\\\"address\\\":{\\\"line1\\\":\\\"\\\",\\\"line2\\\":\\\"\\\",\\\"line3\\\":\\\"\\\",\\\"line4\\\":\\\"\\\",\\\"city\\\":\\\"\\\",\\\"stateCode\\\":\\\"\\\",\\\"countryCode\\\":\\\"AU\\\",\\\"postalCode\\\":\\\"\\\"},\\\"modifiedDate\\\":\\\"2024-03-11 00:00:44 UTC\\\",\\\"primaryAccountManager\\\":{\\\"id\\\":50476,\\\"firstName\\\":\\\"API\\\",\\\"lastName\\\":\\\"Test\\\",\\\"email\\\":\\\"david.tannock@ivvy.com\\\"},\\\"secondaryAccountManager\\\":null,\\\"industry\\\":{\\\"id\\\":369,\\\"name\\\":\\\"Banking\\\"},\\\"primaryContact\\\":{\\\"id\\\":7474181,\\\"firstName\\\":\\\"test\\\",\\\"lastName\\\":\\\"test\\\",\\\"email\\\":\\\"test01@ivvy.com\\\",\\\"phone\\\":\\\"078 0895 8308\\\"},\\\"isAgent\\\":0,\\\"parentCompanyId\\\":0,\\\"leftValue\\\":1,\\\"rightValue\\\":2,\\\"depth\\\":0,\\\"rootId\\\":60825,\\\"commissionSpace\\\":null,\\\"commissionSpaceType\\\":null,\\\"commissionFood\\\":null,\\\"commissionFoodType\\\":null,\\\"commissionBeverage\\\":null,\\\"commissionBeverageType\\\":null,\\\"commissionAudioVisual\\\":null,\\\"commissionAudioVisualType\\\":null,\\\"commissionAccommodation\\\":null,\\\"commissionAccommodationType\\\":null,\\\"iataNumber\\\":null,\\\"customFields\\\":[{\\\"fieldId\\\":64,\\\"displayName\\\":\\\"t\\\",\\\"value\\\":\\\"\\\"},{\\\"fieldId\\\":67,\\\"displayName\\\":\\\"RB-1952 test 1\\\",\\\"value\\\":\\\"\\\"},{\\\"fieldId\\\":68,\\\"displayName\\\":\\\"RB-1952 test 2\\\",\\\"value\\\":[\\\"\\\"]},{\\\"fieldId\\\":76,\\\"displayName\\\":\\\"Upload file\\\",\\\"value\\\":null},{\\\"fieldId\\\":169753,\\\"displayName\\\":\\\"RB-3526 test\\\",\\\"value\\\":\\\"2024-03-11 14:00:00 UTC\\\"}]}}\",\"SourceType\":0,\"SourceInfo\":null,\"Signature\":\"jbOmjGh1CmyA\\/Z1vS+gnTidrTD\\/vxX7wZtmRmb8N1M7NxTqgpiGOErR8zAvTtfQqVH0sU6yCQkXykEOrmCIT1u3pC9j34IZQKgAMv859xXBSCpx0SXBNqo7dyXT8zAq5p6vW\\/1BGuIWbooaNFB3KNmWmc8y9fMs0akFINuF2kSS6AndnD2zwtIVxZ3jIs8eFSBroEVNOX1YaaGKOulIjQvdMsk7Ge0UGCAba36izHf65Q5riEjrqz0W62OseHJseLZIVRRjlW+4VsYdx2sq1cCXYz1M3Muw0iTNUvHcqAIEG18cF6+tNuqPX4ilDzYzc4udEOv1z8X8+Un5kmqO9Uw==\",\"SigningPublicKeyPath\":\"\\/accounts\\/14\\/1537854341\\/notifcert.txt\"}",
+  "Timestamp": "2024-03-11T00:00:45.569Z",
+  "SignatureVersion": "1",
+  "Signature": "k1fv23ZAC0tYVn8UaFZHcwJQCH0LaubIz5219ziK/tn4uR7GlSi/h0A7XL3aibrVn5aU6LF3scYzXezw0N21EOD2VZohAY/oSgbqzwp+RECvbGs4kZuz8x+6lKYeem2TPEjsaPaFF+JuW7sSvTqZ8L2MZuxbCBXOuiuBl5hKF2va2Tkaiho0A+753AbQWL4hQjqxCCLb1UrglvgKTPfrg9Ew4x9FFe9tNjkh7utYYKI9fltcqp5Hk66E6ftsxsixBsa44t2cUCCOKFnleTH90sPgtWwBYazee4wdL/s+rsBLMxKPYTUcwTLc6TAqtE4N1V2xBILksFEBlG9nNGBLpg==",
+  "SigningCertURL": "https://sns.ap-southeast-2.amazonaws.com/SimpleNotificationService-60eadc530605d63b8e62a523676ef735.pem",
+  "UnsubscribeURL": "https://sns.ap-southeast-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:ap-southeast-2:232528047142:iVvy_Account_14_d4959ffe27f4a760733babdf1fa7fbbd354d4f62_NotifCompanies:a97813c2-7724-4f18-97a5-afd41258bd44"
+}
+```
+We are using AWS SNS so about notification is from SNS. You should validate the message before processing it further.
+
+## Message Details
+
+Here is the explanation of each key in the "Message". Using the "Subject" you can identify the what type of the message. The "Body" schema depends on the Subject.
+
+| Property |  Description | Type |
+| ----------------------- | ----------------------------------- | --------- |
+| AccountId | The Account Id from where notification has been published | string |
+| Subject | The subject of the message. This is predefined | string |
+| Body | The body of the notification. | string |
+| Region | The region of the notification from where notification has been published | string |
+| Signature | The cryptographic signature of the message | string |
+| SigningPublicKeyPath | The path of the public certificate paired with the private key used to generate the signature.  | string |
+| SourceInfo | Optionally the source of the message in JSON. E.g. API key for API source | string |
+| SourceType | The source of the message | int |
+| Timestamp | The timestamp of the notification  | string |
+| TxnId | The Transaction id of the notification  | string |
+
+
+## Source Type
+
+| Value | Description |
+| ----- | ------------ |
+| 0 | Unknown |
+| 1 | API |
+
 ## Endpoints
 
-### Company Endpoint
+The notification can have message for different entities. For example, contactsEndpoint has a message for contact's note added or updated.
 
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| companiesEndpoint | This notification will be sent when a company has been modified or created. <ul><li>Company has been updated.</li><li>Company has been created.</li><li>Company has been deleted.</li></ul> |
+Here is the list of endpoints
 
-### Contact Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| contactsEndpoint  | This notification will be sent when a contact has been modified or created. <ul><li>Contact has been updated</li><li>Contact has been created</li><li>Contact has been deleted</li></ul> |
-
-### Opportunity Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| crmEndpoint       | This notification will be sent when an opportunity has been modified. <ul><li>Opportunity is updated</li><li>Opportunity is added</li><li>Opportunity is deleted</li><li>Tasks is updated</li><li>Task is created</li><li>Task is deleted</li><li>Activity is updated</li><li>Activity is created</li><li>Activity is deleted</li></ul> |
-
-### Invoice Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| paymentsEndpoint  | This notification will occur when a modification to an invoice occurs. This includes when payments are applied against an invoice. <ul><li>Invoice is created</li><li>Invoice is updated</li><li>Payment is applied to invoice</li></ul> |
-
-### Booking Endpoint
-
-| Endpoint          | Notification Sends    |
-| ----------------- | --------------------- |
-| venuesEndpoint    | This endpoint will trigger when booking, accommodation or reservations have been created / modified. <ul><li>Booking is Added</li><li>Booking is Updated</li><li>Booking is Deleted</li><li>Booking Accommodation is Added</li><li>Booking Accommodation is Updated</li><li>Booking Accommodation is Deleted</li><li>Booking Room Reservation is Added</li><li>Booking Room Reservation is Updated</li><li>Booking Room Reservation is Deleted</li><li>Booking Moved <i>- A special notification to handle when a booking in iVvy has been moved.</i></li></ul> |
+| Endpoint Key | Details |
+| -------- | -------- |
+| companiesEndpoint | [Click Here](companies-endpoint.md) |
+| contactsEndpoint | [Click Here](contacts-endpoint.md) |
+| crmEndpoint | [Click Here](crm-endpoint.md) |
+| paymentsEndpoint | [Click Here](payments-endpoint.md) |
+| venuesEndpoint | [Click Here](venues-endpoint.md) |
+| eventsEndpoint | [Click Here](events-endpoint.md) |
