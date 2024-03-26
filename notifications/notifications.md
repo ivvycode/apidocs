@@ -25,7 +25,7 @@ iVvy offers notifications that will send you details of a specific object that y
 
 ### Access
 The notification endpoints are currently only available to the “Primary” user of the account or API keys created without user.
-API Keys created with a user selected that is not a “primary” user, with result in a 403 - Not Allowed error
+API Keys created with a user selected that is not a “primary” user, will result in a 403 - Not Allowed error
 
 ### Testing
 
