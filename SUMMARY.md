@@ -21,6 +21,7 @@
   * [Batch](getting-started/batch/README.md)
     * [Run](getting-started/batch/run.md)
     * [Progress](getting-started/batch/progress.md)
+    * [Result](getting-started/batch/results.md)
     * [Restart](getting-started/batch/restart.md)
     * [Repost](getting-started/batch/repost.md)
   * [Use Cases](getting-started/use-cases/README.md)
