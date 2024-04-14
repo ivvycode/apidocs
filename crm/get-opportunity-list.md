@@ -9,6 +9,14 @@ Get a list of opportunity.
 The array of venue ids to which the opportunity belongs
 {% endswagger-parameter %}
 
+{% swagger-parameter name="orderBy" type="string" in="body" %}
+Sort Results: Support Parameter 'id', 'modifiedDate'
+{% endswagger-parameter %}
+
+{% swagger-parameter name="orderDir" type="string" in="body" %}
+Sort Direction: Support Parameter 'asc' or 'desc'
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="" %}
 ```
 {
