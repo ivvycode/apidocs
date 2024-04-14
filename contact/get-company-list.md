@@ -13,6 +13,14 @@ The number of companies to get in a single call
 The starting result of the page. Not this is zero based (i.e. sending start = 0 will start from the first result.)
 {% endswagger-parameter %}
 
+{% swagger-parameter name="orderBy" type="string" in="body" %}
+Sort Results: Support Parameter 'id', 'modifiedDate'
+{% endswagger-parameter %}
+
+{% swagger-parameter name="orderDir" type="string" in="body" %}
+Sort Direction: Support Parameter 'asc' or 'desc'
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="" %}
 ```
 ```
