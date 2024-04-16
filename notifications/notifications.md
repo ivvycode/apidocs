@@ -9,7 +9,6 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
 - [Notifications](#notifications)
   - [Table Of Contents](#table-of-contents)
   - [Subscriptions](#subscriptions)
-    - [Response](#response)
     - [Access](#access)
     - [Testing](#testing)
     - [Subscribing To A Notification](#subscribing-to-a-notification)
@@ -23,9 +22,6 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
 ## Subscriptions
 
 iVvy offers notifications that will send you details of a specific object that you wish to subscribe to. There are several notifications available and you may subscribe and unsubscribe to whichever notification is necessary for your development.
-
-### Response
-All notification responses will be in JSON format, with the "Content-Type" header set to "**application/json; charset=UTF-8**", indicating UTF-8 character encoding.
 
 ### Access
 The notification endpoints are currently only available to the “Primary” user of the account or API keys created without user.
