@@ -269,3 +269,16 @@ SpaceBlockoutDeleted
     "spaceBlockoutId": 234,
 }
 ```
+
+## Venue Guest is Anonymised
+
+### Subject
+VenueGuestAnonymised
+
+### Body
+
+```json
+{
+    "guestContactId":"3"
+}
+```
