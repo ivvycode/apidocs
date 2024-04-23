@@ -270,7 +270,7 @@ SpaceBlockoutDeleted
 }
 ```
 
-## Venue Guest is Anonymised
+## Venue Guest Contact is Anonymised
 
 ### Subject
 VenueGuestAnonymised
