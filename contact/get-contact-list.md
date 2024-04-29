@@ -45,6 +45,7 @@ The starting result of the page. Note this is zero based (i.e. sending start = 0
 | companiesData | This will an array company containing id and businessName for each company to which the contact belongs.                            |
 | externalId    | This will be external id of the contact                                                                                             |
 | modifiedDate  | The modified date of the contact                                                                                                    |
+| isAnonymised  | Whether or not contact data is annonymised                                                                                          |
 
 ## keys
 
