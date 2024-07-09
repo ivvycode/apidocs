@@ -165,6 +165,8 @@ The unique id of the booking to which the accommodation belongs
                 "bookingDate": "2018-08-27",
                 "roomOptionId": 35,
                 "numRooms": 11,
+                "priceType": 1,
+                "numOptions": 1,
                 "numOptionsPerRoom": 1,
                 "price": 65,
                 "discount": 10,
@@ -179,6 +181,8 @@ The unique id of the booking to which the accommodation belongs
                 "bookingDate": "2018-08-30",
                 "roomOptionId": 36,
                 "numRooms": 10,
+                "priceType": 1,
+                "numOptions": 1,
                 "numOptionsPerRoom": 1,
                 "price": 80,
                 "discount": 10,
@@ -322,6 +326,8 @@ The result from this call will be a [collection](../../getting-started/interpret
 | bookingDate       | date              | The date of the accommodation group to which the additional option applies                                                   |
 | roomOptionId      | integer           | The unique id of the room option added on bookingDate                                                                        |
 | numRooms          | integer           | The number of rooms on bookingDate to which the room option applies                                                          |
+| priceType         | integer           | The price type of the room option. See [Room Option](add-or-update-booking-accommodation.md#price-type)                      |
+| numOptions        | integer           | The number options added to each room / guest on bookingDate                                                                 |
 | numOptionsPerRoom | integer           | The number options added to each room (numRooms) on bookingDate                                                              |
 | price             | number            | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured      |
 | discount          | number            | The amount of discount on price                                                                                              |
