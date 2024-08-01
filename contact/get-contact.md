@@ -39,6 +39,7 @@ If true, the eventInvitations and eventRegistrations will be returned ordered by
     ],
     "externalId": null,
     "modifiedDate": "2018-09-07 02:11:47 UTC",
+    "isAnonymised": false,
     "eventInvitations": [],
     "eventRegistrations": []
 }
@@ -74,6 +75,7 @@ This example request will obtain the details of the contact with the id "6"
 | companiesData      | This will an array company containing id and businessName for each company to which the contact belongs.                                                                    | array    |
 | externalId         | This will be an external id of the contact                                                                                                                                  | integer  |
 | modifiedDate       | The modified date of the contact                                                                                                                                            | date     |
+| isAnonymised       | Whether or not contact data is annonymised                                                                                                                                  | boolean  |
 | eventInvitations   | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations)            | array    |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array    |
 
