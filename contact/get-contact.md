@@ -78,6 +78,7 @@ This example request will obtain the details of the contact with the id "6"
 | isAnonymised       | Whether or not contact data is annonymised                                                                                                                                  | boolean  |
 | eventInvitations   | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations)            | array    |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array    |
+| externalUrls | This is an array of [ExternalUrl](get-contact.md#external-url-field) field objects of the contact. | array    |
 
 ### Status Options - Email Registration Status
 
@@ -203,6 +204,16 @@ The sms status is the record of whether the contact has opted in to sms communic
 | 5     | Refunded         |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+
+## External URL Field
+
+An External URL field is an object with the following details.
+
+| Property | Type   | Description                                                                                                                                              |
+| -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ref      | string | The unique reference key of the external URL                                                                                                             |
+| url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
+| label    | string | The label of the URL to display.                                                                                                                         |
 
 ## Throws
 
