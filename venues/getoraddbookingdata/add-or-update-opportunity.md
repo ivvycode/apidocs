@@ -67,7 +67,7 @@ A json object that represents the opportunity to add or update. See below for th
 | lostToCompetition | integer | optional | The unique id of lost reason. |
 | closedDate | date | optional | The close date of the opportunity. |
 | customFields | array | optional | The custom field values of the opportunity. A custom field value might be required depending on how it has been configured in the venue's account. See [Custom Field](add-or-update-opportunity.md#custom-field) |
-| externalUrls | array | optional | This is an array of External URL field objects of the opportunity (a maximum of 3 objects allowed). When set to null, it will remove all externalUrls from the opportunity. See [External Url](add-or-update-opportunity.md#external-url-field)|
+
 ## Custom Field
 
 A opportunity custom field is an object with the following details.
@@ -76,16 +76,6 @@ A opportunity custom field is an object with the following details.
 | :--- | :--- | :--- | :--- |
 | fieldId | integer | required | The unique id of the opportunity custom field |
 | fieldValue | mixed | required | The value of the opportunity custom field. Depends on the type of custom field value. |
-
-## External URL Field
-
-An External URL field is an object with the following details.
-
-| Property | Type   | Required | Description                                                                                                                                              |
-| -------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ref      | string | required | The unique reference key of the external URL                                                                                                             |
-| url      | string | optional | The url link (https) scheme eg. https://example.com When the value is null, the external url record will be removed based on the provided reference key. |
-| label    | string | optional | The label of the URL to display.                
 
 ## Special Considerations
 

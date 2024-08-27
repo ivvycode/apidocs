@@ -53,10 +53,6 @@ The contact's sms subscription status.
 Whether or not to update the contact by firstName, lastName and email when id parameter is missing.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="externalUrls" type="array" in="body" %}
-This is an array of External URL field objects of the contact (a maximum of 3 objects allowed). When set to null, it will remove all externalUrls from the contact.
-{% endswagger-parameter %}
-
 {% swagger-response status="200" description="" %}
 ```
 {
@@ -90,24 +86,7 @@ This is an array of External URL field objects of the contact (a maximum of 3 ob
   ],
   "status": 2,
   "smsStatus": 2,
-  "externalId" : "12345",
-  "externalUrls" : [
-        {
-            "ref": "example1",
-            "label": "Example One",
-            "url": "https://example1.com"
-        },
-        {
-            "ref": "example2",
-            "label": "Example Two",
-            "url": "https://example2.com"
-        },
-        {
-            "ref": "example3",
-            "label": "Example Three",
-            "url": "https://example3.com"
-        }
-    ]
+  "externalId" : "12345"
 }
 ```
 
@@ -150,8 +129,6 @@ The properties of the contact currently supported are:
   * The current status of the email susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#email-status)
 * smsStatus
   * The current status of the sms susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
-* externalUrls
-  * This is an array of External URL field objects of the contact (a maximum of 3 objects allowed). When set to null, it will remove all externalUrls from the contact. [ExternalUrl field](add-or-update-contact.md#external-url-field)
 
 ## Returns
 
@@ -184,13 +161,3 @@ The sms status is the record of whether the contact has opted in to sms communic
 | 2     | Unsubscribed    |
 | 3     | Failed          |
 | 4     | No Marketing    |
-
-## External URL Field
-
-An External URL field is an object with the following details.
-
-| Property | Type   | Required | Description                                                                                                                                              |
-| -------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ref      | string | required | The unique reference key of the external URL                                                                                                             |
-| url      | string | optional | The url link (https) scheme eg. https://example.com When the value is null, the external url record will be removed based on the provided reference key. |
-| label    | string | optional | The label of the URL to display.                                                                                                                         |
