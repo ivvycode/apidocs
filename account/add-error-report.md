@@ -1,6 +1,6 @@
 # Add Error Report
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/account?action=addErrorReport" method="post" summary="Add Error Report" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/account?action=addErrorReport" method="post" summary="Add Error Report" path="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
