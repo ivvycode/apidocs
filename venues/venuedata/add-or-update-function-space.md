@@ -2,7 +2,7 @@
 
 ## Add or Update Function Space
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateFunctionSpace" method="post" summary="Add or Update Function Space" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateFunctionSpace" method="post" summary="Add or Update Function Space" %}
 {% swagger-description %}
 
 {% endswagger-description %}

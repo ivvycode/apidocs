@@ -1,6 +1,6 @@
 # Get Booking Room Reservation List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingRoomReservationList" method="post" summary="Get Booking Room Reservation List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingRoomReservationList" method="post" summary="Get Booking Room Reservation List" %}
 {% swagger-description %}
 Get a list of booking room reservations for venue.
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Add Payment
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0" path="/invoice?action=AddPayment" method="post" summary="Add Payment" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="invoice?action=AddPayment" method="post" summary="Add Payment" %}
 {% swagger-description %}
 Add a payment against a specific invoice within iVvy.Payments will only be accepted if that amount is outstanding on the invoice. Over pays will not be accepted.
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Add or Update Contact
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addOrUpdateContact" method="post" summary="Add or Update Contact" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=addOrUpdateContact" method="post" summary="Add or Update Contact" %}
 {% swagger-description %}
 Add or update contact details
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Get Venue List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getVenueList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getVenueList" %}
 {% api-method-summary %}
 Get Venue List
 {% endapi-method-summary %}

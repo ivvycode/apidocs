@@ -1,6 +1,6 @@
 # Get Options
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/invoice?action=getOptions" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="invoice?action=getOptions" %}
 {% api-method-summary %}
 Get Options
 {% endapi-method-summary %}

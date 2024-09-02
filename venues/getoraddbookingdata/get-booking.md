@@ -6,7 +6,7 @@ description: >-
 
 # Get Booking
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBooking" method="post" summary="Get Booking" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBooking" method="post" summary="Get Booking" %}
 {% swagger-description %}
 Get the details of a specific booking to which the user has access.
 {% endswagger-description %}

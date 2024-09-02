@@ -1,6 +1,6 @@
 # Repost
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=repost" method="post" summary="Repost" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="batch?action=repost" method="post" summary="Repost" %}
 {% swagger-description %}
 
 {% endswagger-description %}

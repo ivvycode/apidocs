@@ -1,6 +1,6 @@
 # Add or Update Booking Session Beverage
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=addOrUpdateBookingSessionBeverage" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateBookingSessionBeverage" %}
 {% api-method-summary %}
 Add or Update Booking Session Beverage
 {% endapi-method-summary %}

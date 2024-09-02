@@ -1,6 +1,6 @@
 # Get Email Log List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=getEmailLogList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="account?action=getEmailLogList" %}
 {% api-method-summary %}
 Get Email Log List
 {% endapi-method-summary %}

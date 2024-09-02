@@ -1,6 +1,6 @@
 # Get Booking Attendee List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingAttendeeList" method="post" summary="Get Booking ATttendee List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingAttendeeList" method="post" summary="Get Booking Atttendee List" %}
 {% swagger-description %}
 Get the list of a booking attendees to which the user has access.
 {% endswagger-description %}
@@ -83,7 +83,7 @@ The number of attendees to get in a single call
 {% endswagger-response %}
 {% endswagger %}
 
-The result from this call will be the list of booking attendees to which the user has access. 
+The result from this call will be the list of booking attendees to which the user has access.
 
 ## Example Request
 

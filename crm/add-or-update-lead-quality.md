@@ -1,6 +1,6 @@
 # Add or Update Lead Quality
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateLeadQuality" method="post" summary="Add or Update Lead Quality" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=addOrUpdateLeadQuality" method="post" summary="Add or Update Lead Quality" %}
 {% swagger-description %}
 
 {% endswagger-description %}

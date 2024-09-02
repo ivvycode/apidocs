@@ -1,6 +1,6 @@
 # Get Subscription Group List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getSubscriptionGroupList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="contact?action=getSubscriptionGroupList" %}
 {% api-method-summary %}
 Get Subscription Group List
 {% endapi-method-summary %}

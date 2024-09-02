@@ -1,6 +1,6 @@
 # Get Invoice List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/invoice?action=getInvoiceList" method="post" summary="Get Invoice List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="invoice?action=getInvoiceList" method="post" summary="Get Invoice List" %}
 {% swagger-description %}
 Get a list of invoices
 {% endswagger-description %}

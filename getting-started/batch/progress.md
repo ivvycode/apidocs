@@ -1,6 +1,6 @@
 # Progress
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=progress" method="post" summary="Progress" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="batch?action=progress" method="post" summary="Progress" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -11,7 +11,7 @@ The asyncId for the batch job to check progress for
 
 {% swagger-response status="200" description="" %}
 ```
-{ 
+{
   "progress":33
 }
 ```

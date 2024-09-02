@@ -1,6 +1,6 @@
 # Add or Update Event
 
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/event?action=addOrUpdateEvent" method="post" summary="addOrUpdateEvent" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=addOrUpdateEvent" method="post" summary="addOrUpdateEvent" %}
 {% swagger-description %}
 Add or update event details.
 {% endswagger-description %}

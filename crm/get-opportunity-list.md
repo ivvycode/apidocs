@@ -1,6 +1,6 @@
 # Get Opportunity List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getOpportunityList" method="post" summary="Get Opportunity List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getOpportunityList" method="post" summary="Get Opportunity List" %}
 {% swagger-description %}
 Get a list of opportunity.
 {% endswagger-description %}

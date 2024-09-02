@@ -1,6 +1,6 @@
 # Get Lead Source List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getLeadSourceList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="crm?action=getLeadSourceList" %}
 {% api-method-summary %}
 Get Lead Source List
 {% endapi-method-summary %}

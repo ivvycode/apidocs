@@ -2,7 +2,7 @@
 
 ## Add or Update Booking Session Resource
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateBookingSessionResource" method="post" summary="Add or Update Booking Session Resource" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateBookingSessionResource" method="post" summary="Add or Update Booking Session Resource" %}
 {% swagger-description %}
 
 {% endswagger-description %}

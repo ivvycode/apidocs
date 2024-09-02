@@ -1,6 +1,6 @@
 # Get Company Custom Field Definition
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/contact?action=getCompanyCustomFieldDefinition" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="contact?action=getCompanyCustomFieldDefinition" %}
 {% api-method-summary %}
 Get Company Custom Field Definition
 {% endapi-method-summary %}

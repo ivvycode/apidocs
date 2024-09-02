@@ -1,6 +1,6 @@
 # Add or Update Lead Stage
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateLeadStage" method="post" summary="Add or Update Lead Stage" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=addOrUpdateLeadStage" method="post" summary="Add or Update Lead Stage" %}
 {% swagger-description %}
 
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Get Cost Center List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getCostCenterList" method="post" summary="Venue Cost Center List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getCostCenterList" method="post" summary="Venue Cost Center List" %}
 {% swagger-description %}
 
 {% endswagger-description %}

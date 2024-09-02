@@ -1,6 +1,6 @@
 # addOrUpdateEvent
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="" %}
 {% api-method-summary %}
 
 {% endapi-method-summary %}
