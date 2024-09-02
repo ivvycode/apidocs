@@ -1,6 +1,6 @@
 # Get Attendee List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getAttendeeList" method="post" summary="Get Attendee List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getAttendeeList" method="post" summary="Get Attendee List" %}
 {% swagger-description %}
 
 {% endswagger-description %}

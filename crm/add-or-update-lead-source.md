@@ -1,6 +1,6 @@
 # Add or Update Lead Source
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateLeadSource" method="post" summary="Add or Update Lead Source" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=addOrUpdateLeadSource" method="post" summary="Add or Update Lead Source" %}
 {% swagger-description %}
 
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Get Cost Center List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/account?action=getCostCenterList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="account?action=getCostCenterList" %}
 {% api-method-summary %}
 
 {% endapi-method-summary %}

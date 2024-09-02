@@ -1,6 +1,6 @@
 # Get Registration List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getRegistrationList" method="post" summary="Get Registration List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getRegistrationList" method="post" summary="Get Registration List" %}
 {% swagger-description %}
 Get a list of registrations
 {% endswagger-description %}

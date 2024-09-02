@@ -1,6 +1,6 @@
 # Get Contact List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getContactList" method="post" summary="Get Contact List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getContactList" method="post" summary="Get Contact List" %}
 {% swagger-description %}
 Get Contact List will respond with a list of contacts based on the filter parameters
 {% endswagger-description %}

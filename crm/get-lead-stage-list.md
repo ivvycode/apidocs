@@ -1,6 +1,6 @@
 # Get Lead Stage List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getLeadStageList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="crm?action=getLeadStageList" %}
 {% api-method-summary %}
 Get Lead Stage List
 {% endapi-method-summary %}

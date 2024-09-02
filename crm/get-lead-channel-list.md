@@ -1,6 +1,6 @@
 # Get Lead Channel List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getLeadChannelList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="crm?action=getLeadChannelList" %}
 {% api-method-summary %}
 Get Lead Channel List
 {% endapi-method-summary %}

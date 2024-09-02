@@ -1,6 +1,6 @@
 # Get Function Space Category List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/venue?action=getFunctionSpaceCategoryList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getFunctionSpaceCategoryList" %}
 {% api-method-summary %}
 Get Venue Function Space Category List
 {% endapi-method-summary %}

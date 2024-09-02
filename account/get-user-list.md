@@ -1,6 +1,6 @@
 # Get Account User List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/account?action=getUserList" method="post" summary="Get User List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="account?action=getUserList" method="post" summary="Get User List" %}
 {% swagger-description %}
 Get User List will respond with a list of users based on the filter parameters
 {% endswagger-description %}

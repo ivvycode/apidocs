@@ -1,6 +1,6 @@
 # Create Login Token
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=createLoginToken" method="post" summary="Create Login Token" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=createLoginToken" method="post" summary="Create Login Token" %}
 {% swagger-description %}
 
 {% endswagger-description %}

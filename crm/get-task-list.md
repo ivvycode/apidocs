@@ -1,6 +1,6 @@
 # Get Task List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getTaskList" method="post" summary="Get Task List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getTaskList" method="post" summary="Get Task List" %}
 {% swagger-description %}
 Get a list of tasks.
 {% endswagger-description %}

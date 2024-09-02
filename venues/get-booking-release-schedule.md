@@ -1,6 +1,6 @@
 # Get Booking Release Schedule
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0" path="/venue?action=getBookingReleaseSchedule" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getBookingReleaseSchedule" %}
 {% api-method-summary %}
 Get Booking Release Schedule
 {% endapi-method-summary %}

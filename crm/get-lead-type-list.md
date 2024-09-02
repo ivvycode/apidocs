@@ -1,6 +1,6 @@
 # Get Lead Type List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getLeadTypeList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="crm?action=getLeadTypeList" %}
 {% api-method-summary %}
 Get Lead Type List
 {% endapi-method-summary %}

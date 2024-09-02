@@ -1,6 +1,6 @@
 # Add or Update Cost Center
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/account?action=addOrUpdateCostCenter" method="post" summary="Add or Update Cost Center" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="account?action=addOrUpdateCostCenter" method="post" summary="Add or Update Cost Center" %}
 {% swagger-description %}
 Add or update cost center details to the account.
 {% endswagger-description %}

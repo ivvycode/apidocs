@@ -1,6 +1,6 @@
 # Add Contacts To Subscription Group
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addContactsToSubscriptionGroup" method="post" summary="Add Contacts To Subscription Group" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=addContactsToSubscriptionGroup" method="post" summary="Add Contacts To Subscription Group" %}
 {% swagger-description %}
 Add contact details to subscription group
 {% endswagger-description %}

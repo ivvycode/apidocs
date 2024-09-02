@@ -1,6 +1,6 @@
 # Get Tax List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getTaxList" method="post" summary="Get Tax List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getTaxList" method="post" summary="Get Tax List" %}
 {% swagger-description %}
 Return the tax list for the venue.
 {% endswagger-description %}

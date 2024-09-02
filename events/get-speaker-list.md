@@ -1,6 +1,6 @@
 # Get Speaker List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getSpeakerList" method="post" summary="Get Speaker List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getSpeakerList" method="post" summary="Get Speaker List" %}
 {% swagger-description %}
 Get the list of speakers at an event
 {% endswagger-description %}
@@ -39,7 +39,7 @@ The event identifier
 `Example: Fetch the list of speakers at an event`
 
 ```javascript
-{ 
+{
   "event":15593
 }
 ```

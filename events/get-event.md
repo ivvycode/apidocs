@@ -1,6 +1,6 @@
 # Get Event
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getEvent" method="post" summary="" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getEvent" method="post" summary="" %}
 {% swagger-description %}
 Add or update event details
 {% endswagger-description %}

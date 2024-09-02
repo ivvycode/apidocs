@@ -4,7 +4,7 @@ description: 'NOTE: This action has not been published yet.'
 
 # Get Venue
 
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/partner?action=getVenue" method="post" summary="Get Venue" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="partner?action=getVenue" method="post" summary="Get Venue" %}
 {% swagger-description %}
 This endpoint fetches the public details of a specific venue in the iVvy marketplace. The unique id of the venue is required.
 {% endswagger-description %}

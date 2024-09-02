@@ -1,6 +1,6 @@
 # Get Company Note List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getCompanyNoteList" method="post" summary="Get Company Note List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getCompanyNoteList" method="post" summary="Get Company Note List" %}
 {% swagger-description %}
 Fetches a list of notes for a specific company.
 {% endswagger-description %}

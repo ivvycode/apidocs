@@ -1,6 +1,6 @@
 # Get Activity List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getActivityList" method="post" summary="Get Activity List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getActivityList" method="post" summary="Get Activity List" %}
 {% swagger-description %}
 Get a list of activities.
 {% endswagger-description %}

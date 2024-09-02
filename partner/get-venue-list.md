@@ -4,7 +4,7 @@ description: 'NOTE: This action has not been published yet.'
 
 # Get Venue List
 
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/partner?action=getVenueList" method="post" summary="Get Venue List" %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="partner?action=getVenueList" method="post" summary="Get Venue List" %}
 {% swagger-description %}
 Fetch a list of venues that are visible in the marketplace.The result from this call will be a collection of all the venues visible in the marketplace matching the request criteria below. This call also accepts the pagination properties.
 {% endswagger-description %}

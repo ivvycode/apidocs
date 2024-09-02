@@ -1,6 +1,6 @@
 # Result
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=results" method="post" summary="Results" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="batch?action=results" method="post" summary="Results" %}
 {% swagger-description %}
 The results action takes the asyncId as a parameter and fetch the results of a batch request after it has been executed.
 {% endswagger-description %}

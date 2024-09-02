@@ -1,6 +1,6 @@
 # Add or Update Lead
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addOrUpdateLead" method="post" summary="Add or Update Lead" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=addOrUpdateLead" method="post" summary="Add or Update Lead" %}
 {% swagger-description %}
 Add or update the details of a lead
 {% endswagger-description %}

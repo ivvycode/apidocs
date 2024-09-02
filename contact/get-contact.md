@@ -1,6 +1,6 @@
 # Get Contact
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getContact" method="post" summary="Get Contact" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getContact" method="post" summary="Get Contact" %}
 {% swagger-description %}
 Get the contact details
 {% endswagger-description %}
