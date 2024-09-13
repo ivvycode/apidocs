@@ -875,6 +875,7 @@ The result from this call will be the details of a specific booking to which the
 | cateringWebsiteBanner | [File](get-booking.md#file) | The catering website banner for the booking |
 | cateringWebsiteEventDesc | string | The catering website event description for the booking |
 | cateringWebsiteEndNumDays | integer | The catering website end num days from event start for the booking |
+| externalUrls | Array of [ExternalUrl](get-booking.md#external-url-field) | This is an array of External URL field objects of the booking. |
 
 
 ## File
@@ -1264,3 +1265,13 @@ One of the following values:
 | costcenterId | integer | required | The id of costcenter |
 | costPerPerson | double | required | The cost per person value of a costcenter |
 | costPerPersonExcludedTaxIds | optional | array of integers | The excluded cost tax ids applied to the price of this costcenter |
+
+## External URL Field
+
+An External URL field is an object with the following details.
+
+| Property | Type   | Description                                                                                                                                              |
+| -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ref      | string | The unique reference key of the external URL                                                                                                             |
+| url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
+| label    | string | The label of the URL to display.                                                                                                                         |

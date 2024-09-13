@@ -63,7 +63,8 @@ The array of venue ids to which the opportunity belongs
             "closedDate": "2019-04-19 09:00:00 UTC",
             "lostToCompetition": "More capacity available",
             "createdDate": "2019-04-12 09:00:35 UTC",
-            "modifiedDate": "2019-04-12 11:11:00 UTC"
+            "modifiedDate": "2019-04-12 11:11:00 UTC",
+            "externalUrls": []
         }
     ]
 }

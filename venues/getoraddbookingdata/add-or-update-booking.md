@@ -100,6 +100,7 @@ _normal bookings_
 | bookingRoleUserId5                | string                                                                           | optional | The unique id of the account user assigned to the booking role label 5                                                                                                                                                                                                                                                                                                 |
 | customFields                      | array of [Custom Field](add-or-update-booking.md#custom-field)                   | optional | The custom field values of the booking. A custom field value might be required depending on how it has been configured in the venue's account.                                                                                                                                                                                                                         |
 | discountCode                      | string                                                                           | optional | The discount code applied to the booking                                                                                                                                                                                                                                                                                                                               |
+| externalUrls                      | array of [ExternalUrl](add-or-update-booking.md#external-url-field) Field        | optional | This is an array of External URL field objects of the booking (a maximum of 3 objects allowed). When set to null, it will remove all externalUrls from the booking.                                                                                                                                                                                                    |
 
 ## Booking Type
 
@@ -162,6 +163,16 @@ A booking custom field is an object with the following details.
 | ---------- | ------- | -------- | --------------------------------------------------------------------------------- |
 | fieldId    | integer | required | The unique id of the booking custom field                                         |
 | fieldValue | mixed   | required | The value of the booking custom field. Depends on the type of custom field value. |
+
+## External URL Field
+
+An External URL field is an object with the following details.
+
+| Property | Type   | Required | Description                                                                                                                                              |
+| -------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ref      | string | required | The unique reference key of the external URL                                                                                                             |
+| url      | string | optional | The url link (https) scheme eg. https://example.com When the value is null, the external url record will be removed based on the provided reference key. |
+| label    | string | optional | The label of the URL to display.                                                                                                                         |
 
 ## Special Considerations
 
