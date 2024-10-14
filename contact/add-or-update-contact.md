@@ -107,7 +107,8 @@ This is an array of External URL field objects of the contact (a maximum of 3 ob
             "label": "Example Three",
             "url": "https://example3.com"
         }
-    ]
+    ],
+    "privacyConsent": true
 }
 ```
 
@@ -152,6 +153,8 @@ The properties of the contact currently supported are:
   * The current status of the sms susbcription in contact. The value of this field will be [one of the following current status](add-or-update-contact.md#sms-status)
 * externalUrls
   * This is an array of External URL field objects of the contact (a maximum of 3 objects allowed). When set to null, it will remove all externalUrls from the contact. [ExternalUrl field](add-or-update-contact.md#external-url-field)
+* privacyConsent
+  * Whether or not giving privacy consent for this contact.
 
 ## Returns
 
