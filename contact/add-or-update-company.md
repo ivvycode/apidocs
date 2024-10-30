@@ -49,6 +49,14 @@ The company's email address
 The company's address.
 {% endswagger-parameter %}
 
+{% swagger-parameter name="primaryContactId" type="integer" in="path" %}
+The unique id of the contact to assign as primary contact to the company
+{% endswagger-parameter %}
+
+{% swagger-parameter name="primaryContact" type="object" in="path" %}
+The data array of contact to assign as primary contact. See addOrUpdateContact API in contact namespace for parameters.
+{% endswagger-parameter %}
+
 {% swagger-parameter name="primaryAccountManagerId" type="integer" in="path" %}
 The id of primary account manager of the company
 {% endswagger-parameter %}
