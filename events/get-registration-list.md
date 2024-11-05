@@ -44,6 +44,7 @@ A collection object with the following properties in the results
 | firstName        | The first name of the event registration           |
 | lastName         | The last name of the event registration            |
 | phone            | The phone number of event registration             |
+| privacyConsentData | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the event registration. |
 | invoiceTotalCost | The total cost of event registration               |
 | invoiceTotalPaid | The total amount paid of event registration        |
 | createdDate      | The date & time the registration was created       |

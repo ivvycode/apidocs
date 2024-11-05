@@ -31,6 +31,7 @@ The event identifier to which attendee belongs
 | firstName                | The first name of the event attendee                                 |
 | lastName                 | The last name of the event attendee                                  |
 | email                    | The email address of the event attendee                              |
+| privacyConsentData       | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the event attendee. |
 | hasAttended              | Whether attendee has attended event or not                           |
 | sessionHasAttended       | Whether attendee has attended session or not                         |
 | isPublic                 | Whether event attendee is public or not                              |

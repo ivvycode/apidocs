@@ -79,7 +79,7 @@ This example request will obtain the details of the contact with the id "6"
 | eventInvitations   | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations)            | array    |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array    |
 | externalUrls | This is an array of [ExternalUrl](get-contact.md#external-url-field) field objects of the contact. | array    |
-| privacyConsentData | The object of [Privacy Consent](get-contact.md#privacy-consent-data) field objects of the contact. | array    |
+| privacyConsentData | The object of [Privacy Consent](get-contact.md#privacy-consent-data) field objects of the contact. | object    |
 
 ### Status Options - Email Registration Status
 
@@ -221,10 +221,10 @@ An External URL field is an object with the following details.
 
 | Property | Description |
 | -------- | ------------ |
-| source | The [source](get-contact.md#source) of the consent  |
+| source | The [source](get-contact.md#privacy-consent-source) of the consent  |
 | dateTime | The date time when the consent given |
 
-## Source
+## Privacy Consent Source
 
 | Source | Description |
 | -------- | ------------ |
