@@ -42,6 +42,7 @@ The event identifier to which attendee belongs
 | sessionAttendedTimestamp | The session attended date time of event attendee                     |
 | cost                     | The cost of ticket of event attendee                                 |
 | customFields             | The array of custom fields data of event attendee with below details |
+| sessions                 | array of [Sessions](get-attendee.md#session-details) which attendee registered or attended                         |
 
 ## Custom field details
 
@@ -49,6 +50,19 @@ The event identifier to which attendee belongs
 | -------- | ------------------------------------------ |
 | name     | The name of the custom field               |
 | value    | The value of the custom field for attendee |
+
+## Session details
+
+| Property            | Description                                      |
+| ------------------- | ------------------------------------------------ |
+| sessionId           | The unique id of the session                     |
+| sessionName         | The name of the session                          |
+| isOptional          | Whether the session is optional or not           |
+| hasAttended         | Whether the session has been attended or not     |
+| attendedDatetime    | The date & time the session was attended         |
+| isSessionReserved   | Whether the session is reserved or not           |
+
+
 
 ## Throws
 
