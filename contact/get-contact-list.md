@@ -39,6 +39,7 @@ The starting result of the page. Note this is zero based (i.e. sending start = 0
 | lastName      | The contact’s last name                                                                                                             |
 | email         | The contact’s email address                                                                                                         |
 | phone         | The contact’s phone number                                                                                                          |
+| privacyConsentData | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the contact.                  |
 | customFields  | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact-list.md#keys). |
 | groups        | The subscription group information for the contact.                                                                                 |
 | companies     | This will an array company ids to which the contact belongs.                                                                        |
