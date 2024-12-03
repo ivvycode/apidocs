@@ -230,6 +230,20 @@ The id of the booking
         }
       ],
       "totalAttendees": 2000,
+      "projectedSpend": [
+        {
+            "priceMethod": 1,
+            "costcenterId": 1,
+            "total": 5000,
+            "amount": 100
+        },
+        {
+            "priceMethod": 2,
+            "costcenterId": 3,
+            "total": 50,
+            "amount": 50
+        }
+      ]
     }
   ],
   "menus": [
@@ -1004,6 +1018,7 @@ One of the following values:
 | modifiedDate     | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was last modified                                                    |
 | taxDetails       | Array of [Tax Detail](get-booking.md#tax-detail)             | Individual tax details                                                                                  |
 | totalAttendees   | integer                                                      | The minimum number of attendees for the Booking session                                                 |
+| projectedSpend   | object                                                       | The [projected spend](get-booking-session-list.md#projected-spend) of the session                       |
 
 ## Menu
 
