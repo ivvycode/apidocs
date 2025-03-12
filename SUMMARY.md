@@ -58,6 +58,7 @@
   * [Invite Contacts](events/invite-contacts.md)
   * [Get Sponsorship List](events/get-sponsorship-list.md)
   * [Get Speaker List](events/get-speaker-list.md)
+  * [Get Session List](events/get-session-list.md)
   * [Create Login Token](events/create-login-token.md)
 * [Venue](venues/README.md)
   * [Venue Setup Data](venues/venuedata/README.md)
