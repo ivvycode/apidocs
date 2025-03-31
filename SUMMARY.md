@@ -122,6 +122,7 @@
     * [Remove Blockout Space](venues/getoraddbookingdata/remove-blockoutspace.md)
     * [Get Booking Tax List](venues/getoraddbookingdata/get-booking-tax-list.md)
     * [Add or Update Opportunity Note](venues/getoraddbookingdata/add-or-update-opp-note.md)
+    * [Add or Update Booking Package](venues/getoraddbookingdata/add-or-update-booking-package.md)
   * [Booking Accommodation Data](venues/accommodation/README.md)
     * [Get Booking Accommodation List](venues/accommodation/get-booking-accommodation-list.md)
     * [Add or Update Booking Accommodation](venues/accommodation/add-or-update-booking-accommodation.md)
