@@ -95,16 +95,23 @@ The number of booking room reservations to fetch
                         "dayDate": "2018-09-01",
                         "barId": 57,
                         "cost": 180.00
+                        "totalAmount": 180.00
+                        "totalTaxAmount": 18.00
                     },
                     {
                         "dayDate": "2018-09-02",
                         "barId": 57,
                         "cost": 190.00
+                        "totalAmount": 190.00
+                        "totalTaxAmount": 19.00
+
                     },
                     {
                         "dayDate": "2018-09-03",
                         "barId": 57,
                         "cost": 175.00
+                        "totalAmount": 175.00
+                        "totalTaxAmount": 17.00
                     }
                 ],
                 "additionalGuests": []
@@ -158,6 +165,8 @@ The number of booking room reservations to fetch
                         "date": "2018-09-02",
                         "barId": 57,
                         "cost": 200.00
+                        "totalAmount": 200.00
+                        "totalTaxAmount": 20.00
                     }
                 ],
                 "additionalGuests": [
@@ -268,6 +277,8 @@ The result from this call will be a [collection](../../getting-started/interpret
 | dayDate  | date    | The date of the reserved room to which the rate applies                                                                                                                                                                                           |
 | barId    | integer | The unique id of the rate plan assigned to the dayDate of the reserved room. If the reserved room applies to an accommodation group (see property _isFromGroup_ above) then this will always be the room type assigned to the accommodation group |
 | cost     | number  | The rate amount for the reserved room on dayDate. The amount either includes or excludes tax depending on how the venue is configured                                                                                                             |
+| totalAmount | number | The rate amount(incl tax) for reserved room on dayRate. The amount is always tax inclusive regardless on how venue is configured |
+| totalTaxAmount | number | The total tax amount included in totalAmount |
 
 ## Reserved Room Additional Guests
 
