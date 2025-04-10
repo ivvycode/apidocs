@@ -57,10 +57,10 @@ Invalid request data that prevents the booking from being added/updated.
 | id                     | integer | optional | The unique id of the booking package to update. A new booking package will be created if this parameter is not present. |
 | venueId                | integer | required | The id of the venue to which the booking package belongs.                                                               |
 | bookingId              | integer | required | The id of the booking to which the booking package belongs.                                                             |
-| packageId              | integer | required | The id of the package to which the booking package belongs. Ignored if `id` is set.                                     |
+| packageId              | integer | required | The id of the package to which the booking package belongs.                                                             |
 | bookingDate            | date    | optional | Start date of the package. Ignored if `id` is set.                                                                      |
 | price                  | double  | optional | The price of the booking package.                                                                                       |
-| costcenters            | array of [Costcenter](add-or-update-booking-package.md#costcenter) | optional | The cost centers of the booking package. If "price" not passed this will use setup package allocation |
+| costcenters            | array of [Costcenter](add-or-update-booking-package.md#costcenter) | optional | The cost centers of the booking package. If "price" not passed this will use calculate the allocation based on setup venue package |
 | mainSpaceVenueId       | integer | optional | The id of the main space venue of a booking package default session.                                                    |
 | mainSpaceId            | integer | optional | The main space of the booking package default session.                                                                  |
 | spaceLayoutId          | integer | optional | The space layout of the booking package default session.                                                                |
