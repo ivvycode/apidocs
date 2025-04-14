@@ -75,7 +75,7 @@ Return the event type list for the account.
 | id | The unique invoice identifier |
 | name | The name of the event type |
 | description | The description of the event type |
-| marketplaceEventType | The Venue Marketplace event type to associate with the event type. See [Marketplace Event Types](https://github.com/ivvycode/apidocs/tree/14d26d0c05d6e1c7915c2f1fdf2dfdb0efba6775/venues/venuedata/get-event-type-list.md.md#marketplace-event-types) |
+| marketplaceEventType | The Venue Marketplace event type to associate with the event type. See [Marketplace Event Types](get-event-type-list.md.md#marketplace-event-types) |
 | contactType | The type of contact that can be assigned to a opportunity/booking of the event type. 0 = Company & Contact, 1 = Company, 2 = Contact |
 | isViewable | Whether or not the event type  is viewable on marketplace |
 | createdDate | The date & time the event type  was created |
