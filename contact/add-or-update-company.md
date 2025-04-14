@@ -1,6 +1,6 @@
 # Add or Update Company
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=addOrUpdateCompany" method="post" summary="Add or Update Company" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=addOrUpdateCompany" method="post" summary="Add or Update Company" %}
 {% swagger-description %}
 Add or update company details
 {% endswagger-description %}
@@ -47,6 +47,14 @@ The company's email address
 
 {% swagger-parameter name="address" type="string" in="path" %}
 The company's address.
+{% endswagger-parameter %}
+
+{% swagger-parameter name="primaryContactId" type="integer" in="path" %}
+The unique id of the contact to assign as primary contact to the company
+{% endswagger-parameter %}
+
+{% swagger-parameter name="primaryContact" type="object" in="path" %}
+The data array of contact to assign as primary contact. See addOrUpdateContact API in contact namespace for parameters.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="primaryAccountManagerId" type="integer" in="path" %}
@@ -117,6 +125,10 @@ Whether or not to update the company by businessName when id parameter is missin
 The Company Custom fields
 {% endswagger-parameter %}
 
+{% swagger-parameter name="externalUrls" type="array" in="path" %}
+The Company External URLs
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="" %}
 ```
 Adding a company
@@ -171,7 +183,24 @@ Updating a company
             "fieldId": 7,
             "value": "string"
         }
-  ]
+  ],
+  "externalUrls" : [
+        {
+            "ref": "example1",
+            "label": "Example One",
+            "url": "https://example1.com"
+        },
+        {
+            "ref": "example2",
+            "label": "Example Two",
+            "url": "https://example2.com"
+        },
+        {
+            "ref": "example3",
+            "label": "Example Three",
+            "url": "https://example3.com"
+        }
+    ]
 }
 ```
 

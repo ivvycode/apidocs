@@ -1,6 +1,6 @@
 # Remove Booking Accommodation
 
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/venue?action=removeBookingAccommodation" method="post" summary="Remove Booking Accommodation" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeBookingAccommodation" method="post" summary="Remove Booking Accommodation" %}
 {% swagger-description %}
 Remove an accommodation group from a specific booking
 {% endswagger-description %}

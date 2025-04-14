@@ -1,6 +1,6 @@
 # Get Company
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getCompany" method="post" summary="Get Company" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getCompany" method="post" summary="Get Company" %}
 {% swagger-description %}
 Get a single company's detail
 {% endswagger-description %}
@@ -105,8 +105,8 @@ The company's identifier
 | commissionAccommodationValue | The commission amount of the company accommodation.                                                                        |
 | commissionAccommodationType  | The commission amount type of the accommodation.                                                                           |
 | iataNumber                   | The IATA number of commission payable to the agent.                                                                        |
-| customFields | The custom field information for the company. This is an array of fields, each an object with the [keys](get-company.md#custom-fields-keys). | array |
-
+| customFields | The custom field information for the company. This is an array of fields, each an object with the [keys](get-company.md#custom-fields-keys). |
+| externalUrls | This is an array of [ExternalUrl](get-company.md#external-url-field) field objects of the company. |
 ## Keys
 
 |                       |
@@ -161,6 +161,16 @@ The company's identifier
 | fieldId |
 | displayName |
 | value |
+
+## External URL Field
+
+An External URL field is an object with the following details.
+
+| Property | Type   | Description                                                                                                                                              |
+| -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ref      | string | The unique reference key of the external URL                                                                                                             |
+| url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
+| label    | string | The label of the URL to display.                                                                                                                         |
 
 ## Throws
 

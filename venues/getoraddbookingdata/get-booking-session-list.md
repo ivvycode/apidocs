@@ -1,6 +1,6 @@
 # Get Booking Session List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingSessionList" method="post" summary="Get Booking Session List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" summary="Get Booking Session List" %}
 {% swagger-description %}
 Get a list of booking sessions.
 {% endswagger-description %}
@@ -97,7 +97,21 @@ Whether or not to include booking details belongs to the session
                     "email": "email18@email.com",
                     "phone": 1233455
                 }
-            }
+            },
+            "projectedSpend": [
+                {
+                    "priceMethod": 1,
+                    "costcenterId": 1,
+                    "total": 5000,
+                    "amount": 100
+                },
+                {
+                    "priceMethod": 2,
+                    "costcenterId": 3,
+                    "total": 50,
+                    "amount": 50
+                }
+            ]
         }
     ]
 }
@@ -115,3 +129,12 @@ The result from this call will be a [collection](../../getting-started/interpret
   "perPage": 1
 }
 ```
+
+## Projected Spend
+
+| Property           | Description                                                                    | Type     |
+| ------------------ | ------------------------------------------------------------------------------ | -------- |
+| priceMethod        | The price method of the projected spend revenue. 1 = Per Person, 2 = Flat rate | integer  |
+| costcenterId       | Filter by unique id of contact                                                 | integer  |
+| total              | The total amount of the projected spend revenue for the cost center| double    | double   |
+| amount             | The amount of the projected spend revenue for the cost center                  | double   |

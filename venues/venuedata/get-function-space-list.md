@@ -1,6 +1,6 @@
 # Get Function Space List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getFunctionSpaceList" method="post" summary="Get Venue Function Space List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getFunctionSpaceList" method="post" summary="Get Venue Function Space List" %}
 {% swagger-description %}
 Return the venue function spaces list for the venue.
 {% endswagger-description %}
@@ -81,11 +81,13 @@ The id of the venue
             "layouts": [
                 {
                     "id": 1,
-                    "layoutName": "Theatre"
+                    "layoutName": "Theatre",
+                    "layoutType": 1
                 },
                 {
                     "id": 2,
-                    "layoutName": "Cabaret"
+                    "layoutName": "Cabaret",
+                    "layoutType": 4
                 }
             ]
         }
@@ -152,3 +154,17 @@ The id of the venue
 | createdDate                 | timestamp | The date & time the space was created.                                                                                                                                                                                                   |
 | modifiedDate                | timestamp | The date & time the space was last modified.                                                                                                                                                                                             |
 | layouts                     | array     | List of layouts associated to the requested space                                                                                                                                                                                        |
+
+## Layout Types
+
+| \# | Type |
+| :--- | :--- |
+| 1 | Theatre |
+| 2 | Classroom |
+| 3 | U-Shape |
+| 4 | Cabaret |
+| 5 | Boardroom |
+| 6 | Banquet |
+| 7 | Cocktail |
+| 8 | Hollow Square |
+| 9 | Exhibition |

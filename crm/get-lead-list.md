@@ -1,6 +1,6 @@
 # Get Lead List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getLeadList" method="post" summary="Get Lead List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getLeadList" method="post" summary="Get Lead List" %}
 {% swagger-description %}
 Get a list of lead.
 {% endswagger-description %}

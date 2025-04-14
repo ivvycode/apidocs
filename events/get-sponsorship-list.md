@@ -1,6 +1,6 @@
 # Get Sponsorship List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getSponsorshipList" method="post" summary="Get Sponsorship List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getSponsorshipList" method="post" summary="Get Sponsorship List" %}
 {% swagger-description %}
 Lists the sponsors that are sponsoring the event.
 {% endswagger-description %}

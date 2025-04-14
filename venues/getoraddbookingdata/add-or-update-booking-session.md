@@ -1,6 +1,6 @@
 # Add or Update Booking Session
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=addOrUpdateBookingSession" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateBookingSession" %}
 {% api-method-summary %}
 Add or Update Booking Session
 {% endapi-method-summary %}
@@ -84,6 +84,7 @@ Something unexpected occurred whilst processing the request. The booking session
 | actualAttendees        | integer | optional | The actual attendees of the booking session.                                                                            |
 | spaceId                | integer | optional | The id of the space to which the booking session belongs.                                                               |
 | spaceLayout            | integer | optional | The id of the space layout to which the booking session belongs.                                                        |
+| layoutType             | integer | optional | The [type](../venuedata/get-function-space-list.md#layout-types) of the space layout to which the booking session belongs. (This key will only consider when you don't pass spaceLayout key in request data)                                                      |
 | customLayoutName       | string  | optional | The name of custom space layout.                                                                                        |
 | startDate              | date    | required | Start date of the sesion.                                                                                               |
 | startTime              | string  | optional | The start time of the booking session. Format is HH:mm:ss                                                               |

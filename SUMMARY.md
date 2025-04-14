@@ -21,6 +21,7 @@
   * [Batch](getting-started/batch/README.md)
     * [Run](getting-started/batch/run.md)
     * [Progress](getting-started/batch/progress.md)
+    * [Result](getting-started/batch/results.md)
     * [Restart](getting-started/batch/restart.md)
     * [Repost](getting-started/batch/repost.md)
   * [Use Cases](getting-started/use-cases/README.md)
@@ -57,6 +58,7 @@
   * [Invite Contacts](events/invite-contacts.md)
   * [Get Sponsorship List](events/get-sponsorship-list.md)
   * [Get Speaker List](events/get-speaker-list.md)
+  * [Get Session List](events/get-session-list.md)
   * [Create Login Token](events/create-login-token.md)
 * [Venue](venues/README.md)
   * [Venue Setup Data](venues/venuedata/README.md)
@@ -192,5 +194,6 @@
 * [Announcements](announcements/README.md)
   * [Room Reservation Contact Changes](announcements/venue/room-reservation-contact-update.md)
   * [Contact Customfield Changes](announcements/contact/contact-customfield-update.md)
+  * [Booking Accommodation API Changes](announcements/venue/booking-accommodation-room-options-update.md)
 
 

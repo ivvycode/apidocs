@@ -1,6 +1,6 @@
 # Get Lead Quality List
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/crm?action=getLeadQualityList" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="crm?action=getLeadQualityList" %}
 {% api-method-summary %}
 Get Lead Quality List
 {% endapi-method-summary %}

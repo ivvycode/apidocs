@@ -1,6 +1,6 @@
 # Get Credit Note
 
-{% api-method method="post" host="\[PlatformAddress\]/api/1.0/invoice?action=getCreditNote" path="" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="invoice?action=getCreditNote" %}
 {% api-method-summary %}
 Get Credit Note
 {% endapi-method-summary %}

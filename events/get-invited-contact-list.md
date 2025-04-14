@@ -2,7 +2,7 @@
 
 ## Get Invited Contact List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getInvitedContactList" method="post" summary="Get Invited Contact List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getInvitedContactList" method="post" summary="Get Invited Contact List" %}
 {% swagger-description %}
 Get a list of invited contact for event.
 {% endswagger-description %}

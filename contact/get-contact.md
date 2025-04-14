@@ -1,6 +1,6 @@
 # Get Contact
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getContact" method="post" summary="Get Contact" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getContact" method="post" summary="Get Contact" %}
 {% swagger-description %}
 Get the contact details
 {% endswagger-description %}
@@ -39,6 +39,7 @@ If true, the eventInvitations and eventRegistrations will be returned ordered by
     ],
     "externalId": null,
     "modifiedDate": "2018-09-07 02:11:47 UTC",
+    "isAnonymised": false,
     "eventInvitations": [],
     "eventRegistrations": []
 }
@@ -74,8 +75,11 @@ This example request will obtain the details of the contact with the id "6"
 | companiesData      | This will an array company containing id and businessName for each company to which the contact belongs.                                                                    | array    |
 | externalId         | This will be an external id of the contact                                                                                                                                  | integer  |
 | modifiedDate       | The modified date of the contact                                                                                                                                            | date     |
+| isAnonymised       | Whether or not contact data is annonymised                                                                                                                                  | boolean  |
 | eventInvitations   | An array of events the contact has been invited to. Each element of the array is an object with [the event invitations fields](get-contact.md#event-invitations)            | array    |
 | eventRegistrations | An array of events the contact has registered for. Each element of the array is an object with [the event registration fields](get-contact.md#event-registrations-details). | array    |
+| externalUrls | This is an array of [ExternalUrl](get-contact.md#external-url-field) field objects of the contact. | array    |
+| privacyConsentData | The object of [Privacy Consent](get-contact.md#privacy-consent-data) field objects of the contact. | object    |
 
 ### Status Options - Email Registration Status
 
@@ -201,6 +205,35 @@ The sms status is the record of whether the contact has opted in to sms communic
 | 5     | Refunded         |
 
 The result from this call will be a [collection](../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../getting-started/interpreting-the-response/pagination.md) and [filter](../getting-started/interpreting-the-response/filtering.md) properties.
+
+## External URL Field
+
+An External URL field is an object with the following details.
+
+| Property | Type   | Description                                                                                                                                              |
+| -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ref      | string | The unique reference key of the external URL                                                                                                             |
+| url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
+| label    | string | The label of the URL to display.                                                                                                                         |
+
+## Privacy Consent Data
+
+
+| Property | Description |
+| -------- | ------------ |
+| source | The [source](get-contact.md#privacy-consent-source) of the consent  |
+| dateTime | The date time when the consent given |
+
+## Privacy Consent Source
+
+| Source | Description |
+| -------- | ------------ |
+| 1 | User Initiated Entry  |
+| 2 | Marketplace |
+| 3 | Website Booking Engine |
+| 4 | Event Website |
+| 5 | API |
+
 
 ## Throws
 

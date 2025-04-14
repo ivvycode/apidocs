@@ -1,6 +1,6 @@
 # Add or Update Booking Accommodation
 
-{% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=addOrUpdateBookingAccommodation" %}
+{% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateBookingAccommodation" %}
 {% api-method-summary %}
 Add or Update Booking Accommodation
 {% endapi-method-summary %}
@@ -158,11 +158,22 @@ Invalid request data that prevents the accommodation group from being added/upda
 | bookingDate | date | required | The date of the accommodation group to which the additional option applies |
 | roomOptionId | integer | required | The unique id of the room option added on bookingDate |
 | numRooms | integer | required | The number of rooms on bookingDate to which the room option applies |
+| priceType | integer | Optional | The price type of the room option. See [Room Option](add-or-update-booking-accommodation.md#price-type)                      |
+| numOptions | integer | Optional | The number options added to each room / guest on bookingDate                                                                 |
 | numOptionsPerRoom | integer | required | The number options added to each room \(numRooms\) on bookingDate |
 | price | number | required | The price of the additional option. The amount either includes or excludes tax depending on how the venue is configured |
 | excludedTaxIds | array of integers | optional | The unique ids of the taxes that are excluded from price |
 | costcenterId | integer | optional | The unique id of the cost center assigned to the additional option |
 | numPayableByGuest | integer | optional | The number of additional options on bookingDate that are payable by guests \(as opposed to the master account of the booking\). |
+
+## Price Type
+
+One of the following values
+
+| \# | Description |
+| :--- | :--- |
+| 1 | Per Room |
+| 2 | Per Guest |
 
 ## Notes on updating an accommodation group
 

@@ -1,6 +1,6 @@
 # Add or Update Lead Channel
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateLeadChannel" method="post" summary="Add or Update Lead Channel" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=addOrUpdateLeadChannel" method="post" summary="Add or Update Lead Channel" %}
 {% swagger-description %}
 
 {% endswagger-description %}

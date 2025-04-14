@@ -1,6 +1,6 @@
 # Run
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/batch?action=run" method="post" summary="Run" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="batch?action=run" method="post" summary="Run" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -25,7 +25,7 @@ The URL to hit with a POST request after the batch has been run, with a JSON obj
 ## Example Request
 
 ```javascript
-{ 
+{
   "jobs": [
 	{"namespace":"event","action":"inviteContacts","params":{"event":1,"contacts":[1,2,3]}},
 	{"namespace":"event","action":"inviteContacts","params":{"event":2,"contacts":[1,2,4]}},

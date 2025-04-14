@@ -6,7 +6,7 @@ description: >-
 
 # Get Booking
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBooking" method="post" summary="Get Booking" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBooking" method="post" summary="Get Booking" %}
 {% swagger-description %}
 Get the details of a specific booking to which the user has access.
 {% endswagger-description %}
@@ -230,6 +230,20 @@ The id of the booking
         }
       ],
       "totalAttendees": 2000,
+      "projectedSpend": [
+        {
+            "priceMethod": 1,
+            "costcenterId": 1,
+            "total": 5000,
+            "amount": 100
+        },
+        {
+            "priceMethod": 2,
+            "costcenterId": 3,
+            "total": 50,
+            "amount": 50
+        }
+      ]
     }
   ],
   "menus": [
@@ -875,6 +889,7 @@ The result from this call will be the details of a specific booking to which the
 | cateringWebsiteBanner | [File](get-booking.md#file) | The catering website banner for the booking |
 | cateringWebsiteEventDesc | string | The catering website event description for the booking |
 | cateringWebsiteEndNumDays | integer | The catering website end num days from event start for the booking |
+| externalUrls | Array of [ExternalUrl](get-booking.md#external-url-field) | This is an array of External URL field objects of the booking. |
 
 
 ## File
@@ -1003,6 +1018,7 @@ One of the following values:
 | modifiedDate     | [timestamp](../../development-reference/timestamp-format.md) | The date and time when the session was last modified                                                    |
 | taxDetails       | Array of [Tax Detail](get-booking.md#tax-detail)             | Individual tax details                                                                                  |
 | totalAttendees   | integer                                                      | The minimum number of attendees for the Booking session                                                 |
+| projectedSpend   | object                                                       | The [projected spend](get-booking-session-list.md#projected-spend) of the session                       |
 
 ## Menu
 
@@ -1264,3 +1280,13 @@ One of the following values:
 | costcenterId | integer | required | The id of costcenter |
 | costPerPerson | double | required | The cost per person value of a costcenter |
 | costPerPersonExcludedTaxIds | optional | array of integers | The excluded cost tax ids applied to the price of this costcenter |
+
+## External URL Field
+
+An External URL field is an object with the following details.
+
+| Property | Type   | Description                                                                                                                                              |
+| -------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ref      | string | The unique reference key of the external URL                                                                                                             |
+| url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
+| label    | string | The label of the URL to display.                                                                                                                         |

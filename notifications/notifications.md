@@ -9,6 +9,7 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
 - [Notifications](#notifications)
   - [Table Of Contents](#table-of-contents)
   - [Subscriptions](#subscriptions)
+    - [Access](#access)
     - [Testing](#testing)
     - [Subscribing To A Notification](#subscribing-to-a-notification)
     - [Subscribe](#subscribe)
@@ -21,6 +22,10 @@ For terminology, you subscribe to an endpoint. There are several endpoints avail
 ## Subscriptions
 
 iVvy offers notifications that will send you details of a specific object that you wish to subscribe to. There are several notifications available and you may subscribe and unsubscribe to whichever notification is necessary for your development.
+
+### Access
+The notification endpoints are currently only available to the “Primary” user of the account or API keys created without user.
+API Keys created with a user selected that is not a “primary” user, will result in a 403 - Not Allowed error
 
 ### Testing
 

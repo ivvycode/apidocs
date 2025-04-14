@@ -1,6 +1,6 @@
 # Add or Update Activity
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateActivity" method="post" summary="Add or Update Activity which belongs contact, company, opportunity and lead" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=addOrUpdateActivity" method="post" summary="Add or Update Activity which belongs contact, company, opportunity and lead" %}
 {% swagger-description %}
 
 {% endswagger-description %}

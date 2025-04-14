@@ -2,5 +2,5 @@
 
 ## Namespace
 
-`marketplace`
+`event`
 

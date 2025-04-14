@@ -1,6 +1,6 @@
 # Get Event List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getEventList" method="get" summary="getEventList" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getEventList" method="get" summary="getEventList" %}
 {% swagger-description %}
 Get List of Events
 {% endswagger-description %}

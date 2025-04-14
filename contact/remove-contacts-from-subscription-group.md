@@ -1,6 +1,6 @@
 # Remove Contacts From Subscription Group
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=removeContactsFromSubscriptionGroup" method="post" summary="Remove Contacts From Subscription Groups" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=removeContactsFromSubscriptionGroup" method="post" summary="Remove Contacts From Subscription Groups" %}
 {% swagger-description %}
 Remove contact details from a subscription group
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Get Opportunity Note List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getOpportunityNoteList" method="post" summary="Get Opportunity Note List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getOpportunityNoteList" method="post" summary="Get Opportunity Note List" %}
 {% swagger-description %}
 Fetches a list of notes for a specific opportunity.
 {% endswagger-description %}

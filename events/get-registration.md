@@ -1,6 +1,6 @@
 # Get Registration
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getRegistration" method="post" summary="Get Registration" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getRegistration" method="post" summary="Get Registration" %}
 {% swagger-description %}
 Get Registration Details
 {% endswagger-description %}
@@ -30,6 +30,7 @@ The event identifier to which registration belongs
 | firstName        | The first name of the event registration                    |
 | lastName         | The last name of the event registration                     |
 | phone            | The phone number of event registration                      |
+| privacyConsentData | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the event registration. |
 | modifiedDate     | The date & time the registration was last modified          |
 | mainContactId    | The id of the main contact for the event registration       |
 | invoiceTotalCost | Total Cost of the invoices for the event registration       |

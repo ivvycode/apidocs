@@ -1,6 +1,6 @@
 # Get Contact Note List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getContactNoteList" method="post" summary="Get Contact Note List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getContactNoteList" method="post" summary="Get Contact Note List" %}
 {% swagger-description %}
 Fetches a list of notes for a specific contact.
 {% endswagger-description %}

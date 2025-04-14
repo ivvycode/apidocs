@@ -1,6 +1,6 @@
 # Get Attendee List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getAttendeeList" method="post" summary="Get Attendee List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getAttendeeList" method="post" summary="Get Attendee List" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -40,6 +40,7 @@ A collection object with the following properties in the results
 | firstName                | The first name of the event attendee                                                                                                                                                            |
 | lastName                 | The last name of the event attendee                                                                                                                                                             |
 | email                    | The email address of the event attendee                                                                                                                                                         |
+| privacyConsentData       | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the event attendee.                                                                                       |
 | hasAttended              | Whether attendee has attended event or not                                                                                                                                                      |
 | sessionHasAttended       | Whether attendee has attended session or not                                                                                                                                                    |
 | isPublic                 | Whether event attndee is public or not                                                                                                                                                          |
@@ -50,6 +51,7 @@ A collection object with the following properties in the results
 | sessionAttendedTimestamp | The session attended date time of event attendee                                                                                                                                                |
 | cost                     | The cost of ticket of event attendee                                                                                                                                                            |
 | customFields             | The array of custom fields data of event attendee with below details                                                                                                                            |
+| sessions                 | array of [Sessions](get-attendee.md#session-details) which attendee registered or attended                                                                                                      |
 | createdDate              | The date & time the attendee was created                                                                                                                                                        |
 | modifiedDate             | The date & time the attendee was last modified. Note: Updating the contact details of an Attendee changes the modifiedDate of the Contact. It does not change the modifiedDate of the Attendee. |
 

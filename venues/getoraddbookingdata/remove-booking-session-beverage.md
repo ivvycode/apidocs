@@ -1,6 +1,6 @@
 # Remove Booking Session Beverage
 
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/venue?action=removeBookingSessionBeverage" method="post" summary="Remove Booking Session Beverage Package" %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="venue?action=removeBookingSessionBeverage" method="post" summary="Remove Booking Session Beverage Package" %}
 {% swagger-description %}
 Remove booking session beverage package from booking session
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Invite Contacts
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=inviteContacts" method="post" summary="Invite Contacts" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=inviteContacts" method="post" summary="Invite Contacts" %}
 {% swagger-description %}
 Invite contact(s) to event.
 {% endswagger-description %}

@@ -1,6 +1,6 @@
 # Get Space Hire Plan Rate List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getSpaceHirePlanRateList" method="post" summary="Get Space Hire Plan Rate List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getSpaceHirePlanRateList" method="post" summary="Get Space Hire Plan Rate List" %}
 {% swagger-description %}
 Return the space hire plan rates list for the venue.
 {% endswagger-description %}

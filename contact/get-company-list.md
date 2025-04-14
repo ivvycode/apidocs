@@ -1,6 +1,6 @@
 # Get Company List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getCompanyList" method="post" summary="Get Company List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getCompanyList" method="post" summary="Get Company List" %}
 {% swagger-description %}
 Get a list of companies
 {% endswagger-description %}

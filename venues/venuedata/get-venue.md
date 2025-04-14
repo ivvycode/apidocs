@@ -1,6 +1,6 @@
 # Get Venue
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenue" method="post" summary="Get Venue" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getVenue" method="post" summary="Get Venue" %}
 {% swagger-description %}
 Get the details to a specific venue to which the user has access
 {% endswagger-description %}

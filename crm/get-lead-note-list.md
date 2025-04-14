@@ -1,6 +1,6 @@
 # Get Lead Note List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getLeadNoteList" method="post" summary="Get Lead Note List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getLeadNoteList" method="post" summary="Get Lead Note List" %}
 {% swagger-description %}
 Fetches a list of notes for a specific lead.
 {% endswagger-description %}

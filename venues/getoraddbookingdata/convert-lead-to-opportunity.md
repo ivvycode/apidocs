@@ -1,6 +1,6 @@
 # Convert Lead To Opportunity
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=convertLeadToOpportunity" method="post" summary="Convert Lead to Opportunity" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=convertLeadToOpportunity" method="post" summary="Convert Lead to Opportunity" %}
 {% swagger-description %}
 
 {% endswagger-description %}

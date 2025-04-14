@@ -1,6 +1,6 @@
 # Get Contact List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/contact?action=getContactList" method="post" summary="Get Contact List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="contact?action=getContactList" method="post" summary="Get Contact List" %}
 {% swagger-description %}
 Get Contact List will respond with a list of contacts based on the filter parameters
 {% endswagger-description %}
@@ -39,12 +39,14 @@ The starting result of the page. Note this is zero based (i.e. sending start = 0
 | lastName      | The contact’s last name                                                                                                             |
 | email         | The contact’s email address                                                                                                         |
 | phone         | The contact’s phone number                                                                                                          |
+| privacyConsentData | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the contact.                  |
 | customFields  | The custom field information for the contact. This is an array of fields, each an object with the [keys](get-contact-list.md#keys). |
 | groups        | The subscription group information for the contact.                                                                                 |
 | companies     | This will an array company ids to which the contact belongs.                                                                        |
 | companiesData | This will an array company containing id and businessName for each company to which the contact belongs.                            |
 | externalId    | This will be external id of the contact                                                                                             |
 | modifiedDate  | The modified date of the contact                                                                                                    |
+| isAnonymised  | Whether or not contact data is annonymised                                                                                          |
 
 ## keys
 

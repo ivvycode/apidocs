@@ -1,6 +1,6 @@
 # Add or Update Task
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=addOrUpdateTask" method="post" summary="Add or Update Task which belongs contact, company, opportunity and lead" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=addOrUpdateTask" method="post" summary="Add or Update Task which belongs contact, company, opportunity and lead" %}
 {% swagger-description %}
 
 {% endswagger-description %}

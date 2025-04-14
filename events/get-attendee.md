@@ -1,6 +1,6 @@
 # Get Attendee
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/event?action=getAttendee" method="post" summary="Get Attendee" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="event?action=getAttendee" method="post" summary="Get Attendee" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -31,6 +31,7 @@ The event identifier to which attendee belongs
 | firstName                | The first name of the event attendee                                 |
 | lastName                 | The last name of the event attendee                                  |
 | email                    | The email address of the event attendee                              |
+| privacyConsentData       | The object of [Privacy Consent](../contact/get-contact.md#privacy-consent-data) field objects of the event attendee. |
 | hasAttended              | Whether attendee has attended event or not                           |
 | sessionHasAttended       | Whether attendee has attended session or not                         |
 | isPublic                 | Whether event attendee is public or not                              |
@@ -41,6 +42,7 @@ The event identifier to which attendee belongs
 | sessionAttendedTimestamp | The session attended date time of event attendee                     |
 | cost                     | The cost of ticket of event attendee                                 |
 | customFields             | The array of custom fields data of event attendee with below details |
+| sessions                 | array of [Sessions](get-attendee.md#session-details) which attendee registered or attended                         |
 
 ## Custom field details
 
@@ -48,6 +50,19 @@ The event identifier to which attendee belongs
 | -------- | ------------------------------------------ |
 | name     | The name of the custom field               |
 | value    | The value of the custom field for attendee |
+
+## Session details
+
+| Property            | Description                                      |
+| ------------------- | ------------------------------------------------ |
+| sessionId           | The unique id of the session                     |
+| sessionName         | The name of the session                          |
+| isOptional          | Whether the session is optional or not           |
+| hasAttended         | Whether the session has been attended or not     |
+| attendedDatetime    | The date & time the session was attended         |
+| isSessionReserved   | Whether the session is reserved or not           |
+
+
 
 ## Throws
 

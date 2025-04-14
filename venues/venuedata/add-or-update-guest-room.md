@@ -1,6 +1,6 @@
 # Add or Update Guest Room
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=addOrUpdateGuestRoom" method="post" summary="Add or Update Guest Room" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateGuestRoom" method="post" summary="Add or Update Guest Room" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -93,7 +93,7 @@ Whether or not venue room is active on marketplace.
 ```javascript
 {
   "venueId": "1",
-  "name": "Room 3.4",  
+  "name": "Room 3.4",
   "id": 54
 }
 ```

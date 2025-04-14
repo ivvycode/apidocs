@@ -1,6 +1,6 @@
 # Get Task List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/crm?action=getTaskList" method="post" summary="Get Task List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="crm?action=getTaskList" method="post" summary="Get Task List" %}
 {% swagger-description %}
 Get a list of tasks.
 {% endswagger-description %}
@@ -22,17 +22,18 @@ The unique id of the venue to which the task belongs
         {
             "id": 1,
             "venueId": 76,
+            "bookingId": null,
             "leadId": null,
             "name": "test name",
             "description": "<p>this is description</p> ",
+            "status": 4,
             "contactId": null,
             "companyId": null,
             "companyContactId": null,
             "assignedUserId": 1,
-            "userFullName": "first last",
-            "userEmail": "first@domain.com",
+            "assignedUserFullName": "Test  First",
+            "assignedUserEmail": "test@example.com",
             "priority": "low",
-            "startDatetime": "2018-03-01 09:00:00 UTC",
             "endDatetime": "2018-03-27 09:00:00 UTC",
             "progress": 0,
             "createdDate": "2018-03-01 10:13:17 UTC",

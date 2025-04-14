@@ -1,6 +1,6 @@
 # Get Booking List For Account
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getBookingListForAccount" method="post" summary="Get Booking List for Account" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingListForAccount" method="post" summary="Get Booking List for Account" %}
 {% swagger-description %}
 A collection of bookings for the account that the user has access (as opposed to bookings for a single venue in an account for get Bookings List)
 {% endswagger-description %}
