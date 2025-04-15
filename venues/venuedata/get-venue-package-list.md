@@ -252,11 +252,11 @@ The id of the venue
 |------------------------------|-------------|-------------------------------------------------------------------------------------------------|
 | id                           | integer     | The unique identifier of the package                                                          |
 | name                         | string      | The name of the package                                                                       |
-| type                         | enum        | Simple or Detailed                                                                            |
+| type                         | enum [PackageType](get-venue-package-list.md#package-type)        | Simple or Detailed                      |
 | minPax                       | integer     | The minimum pax of the package                                                               |
 | maxPax                       | integer     | The maximum pax of the package                                                               |
 | cost                         | float       | The price of the package (depends on the "priceMethod" value)                                 |
-| priceMethod                  | enum        | The type of package price - per person or flat rate                                           |
+| priceMethod                  | enum [priceMethod](get-venue-package-list.md#price-method)       | The type of package price - per person or flat rate |
 | actualCost                   | float       | The actual cost of the package                                                               |
 | actualCostExcludedTaxIds     | array       | The tax ids excluded from the actual cost                                                    |
 | smallDescription             | string      | A html formatted small description of the package                                            |
@@ -269,7 +269,7 @@ The id of the venue
 | endDate                      | date        | The date to which the package is available                                                  |
 | startTime                    | time        | The time from which the package is available                                                |
 | endTime                      | time        | The time to which the package is available                                                  |
-| costcenters                  | array       | The cost centers to which the package applies. see                                                |
+| costcenters                  | array of [CostCenter](get-venue-package-list.md#cost-center) | The cost centers to which the package applies.|
 | hasSessions                  | boolean     | Whether the package has sessions                                                            |
 | spaceId                      | integer     | The default space to be used for the package                                                |
 | spaceLayoutId                | integer     | The default space layout to be used for the package                                         |
@@ -283,10 +283,10 @@ The id of the venue
 | limitedStartTimes            | time        | The limited start time of the package                                                       |
 | isAccommIncluded             | boolean     | Whether accommodation is included in the package. This is a legacy field and should not be used |
 | discountCampaignId           | integer     | The discount campaign to apply to the package                                               |
-| costcentersDiscounts         | array       | The cost center discounts to apply to the package                                           |
+| costcentersDiscounts         | array of [Cost Center Discounts](get-venue-package-list.md#cost-center-discount)       | The cost center discounts to apply to the package |
 
 
-## Cost Centers
+## Cost Center
 
 | Property       | Data Type | Description                                |
 |----------------|-----------|--------------------------------------------|
@@ -294,7 +294,7 @@ The id of the venue
 | value          | float     | The discount percentage for the cost center |
 
 
-## Cost Center Discounts
+## Cost Center Discount
 
 | Property       | Data Type | Description                     |
 |----------------|-----------|---------------------------------|
@@ -303,16 +303,17 @@ The id of the venue
 
 ## Package Type
 
-| Identifier       | Description                     |
-|----------------|---------------------------------|
-| 1   | Detailed     |
-| 2          | Simple  |
+| Identifier | Description |
+|------------|-------------|
+| 1          | Detailed    |
+| 2          | Simple      |
 
 ## Price Method
-| Identifier       | Description                     |
-|----------------|---------------------------------|
-| 1   | Per Person     |
-| 2          | Flat Rate  |
+
+| Identifier | Description |
+|------------|-------------|
+| 1          | Per Person  |
+| 2          | Flat Rate   |
 
 
 

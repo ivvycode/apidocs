@@ -403,11 +403,11 @@ The id of the venue package
 |------------------------------|-------------|-------------------------------------------------------------------------------------------------|
 | id                           | integer     | The unique identifier of the package                                                          |
 | name                         | string      | The name of the package                                                                       |
-| type                         | enum        | Simple or Detailed                                                                            |
+| type                         | enum [PackageType](get-venue-package-list.md#package-type)       | Simple or Detailed                       |
 | minPax                       | integer     | The minimum pax of the package                                                               |
 | maxPax                       | integer     | The maximum pax of the package                                                               |
 | cost                         | float       | The price of the package (depends on the "priceMethod" value)                                 |
-| priceMethod                  | enum        | The type of package price - per person or flat rate                                           |
+| priceMethod                  | enum [PriceMethod](get-venue-package-list.md#price-method)       | The type of package price - per person or flat rate |
 | actualCost                   | float       | The actual cost of the package                                                               |
 | actualCostExcludedTaxIds     | array       | The tax ids excluded from the actual cost                                                    |
 | smallDescription             | string      | A html formatted small description of the package                                            |
@@ -420,7 +420,7 @@ The id of the venue package
 | endDate                      | date        | The date to which the package is available                                                  |
 | startTime                    | time        | The time from which the package is available                                                |
 | endTime                      | time        | The time to which the package is available                                                  |
-| costcenters                  | array       | The cost centers to which the package applies.                                                |
+| costcenters                  | array of [CostCenter](get-venue-package-list.md#cost-center)       | The cost centers to which the package applies. |
 | hasSessions                  | boolean     | Whether the package has sessions                                                            |
 | spaceId                      | integer     | The default space to be used for the package                                                |
 | spaceLayoutId                | integer     | The default space layout to be used for the package                                         |
@@ -434,7 +434,7 @@ The id of the venue package
 | limitedStartTimes            | time        | The limited start time of the package                                                       |
 | isAccommIncluded             | boolean     | Whether accommodation is included in the package. This is a legacy field and should not be used |
 | discountCampaignId           | integer     | The discount campaign to apply to the package                                               |
-| costcentersDiscounts         | array       | The cost center discounts to apply to the package                                           |
+| costcentersDiscounts         | array of [Cost Center Discounts](get-venue-package-list.md#cost-center-discount)       | The cost center discounts to apply to the package |
 | sessions | array | The list sessions that is setup in the package. see [Session](get-venue-package.md#session-details) |
 
 ## Session Details
@@ -484,7 +484,7 @@ The id of the venue package
 | startTime           | time        | The start time of the beverage                                                                |
 | endTime             | time        | The end time of the beverage                                                                  |
 | sameAsSessionTime   | boolean     | If this is true, then it copies start/end time based on session time                         |
-| items               | array       | The items of the beverage                                                                     |
+| itemsIds            | array       | The items of the beverage                                                                     |
 | includeInPackage    | boolean     | Whether the beverage is included in the package                                              |
 | costcenterId        | integer     | The cost center id of the beverage                                                           |
 | amount              | float       | The amount of the beverage (only used if includeInPackage is set to false)                   |
@@ -581,7 +581,7 @@ The id of the venue package
 | hasChoices          | boolean     | Whether the setup requirement has choices/options                                             |
 | minChoices          | integer     | The minimum number of choices                                                                |
 | maxChoices          | integer     | The maximum number of choices                                                                |
-| options | array| The array of the setup requirement options when hasChoices is true   |
+| options | array of [Setup Requirement Option](get-venue-package.md#setup-requirement-option-details)| The array of the setup requirement options when hasChoices is true   |
 
 ## Setup Requirement Option Details
 
