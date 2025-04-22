@@ -61,9 +61,9 @@ Invalid request data that prevents the booking from being added/updated.
 | bookingDate            | date    | optional | Start date of the package. Ignored if `id` is set.                                                                      |
 | price                  | double  | optional | The price of the booking package.                                                                                       |
 | costcenters            | array of [Costcenter](add-or-update-booking-package.md#costcenter) | optional | The cost centers of the booking package. If "price" not passed this will use calculate the allocation based on setup venue package |
-| mainSpaceVenueId       | integer | optional | The id of the main space venue of a booking package default session.                                                    |
-| mainSpaceId            | integer | optional | The main space of the booking package default session.                                                                  |
-| spaceLayoutId          | integer | optional | The space layout of the booking package default session.                                                                |
+| mainSpaceVenueId       | integer | optional | The id of the main space venue of a booking package default session. Ignored if id is set.                              |
+| mainSpaceId            | integer | optional | The main space of the booking package default session. Ignored if id is set                                             |
+| spaceLayoutId          | integer | optional | The space layout of the booking package default session. Ignored if id is set                                           |
 | numberAttendees        | integer | optional | The total attendees of the booking package.                                                                             |
 | agreedAttendees        | integer | optional | The agreed attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled. |
 | expectedAttendees      | integer | optional | The expected attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled. |
@@ -127,6 +127,6 @@ Invalid request data that prevents the booking from being added/updated.
 ## Costcenter
 | Property | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| costcenterId | integer | required | The costcenter identifier |
+| id | integer | required | The costcenter identifier |
 | value | double | required | The cost per person for the costcenter |
 | excludedTaxIds | optional | array of integers | The taxe ids excluded from the costcenter |
