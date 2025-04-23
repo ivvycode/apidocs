@@ -60,8 +60,8 @@ CONTENT_TYPE="multipart/form-data"
 
 # Prepare the string to sign
 STRING_TO_SIGN="POST${BODY_MD5}${FILE_MD5}${CONTENT_TYPE}${URI_PATH}${API_VERSION}ivvydate=${DATE}"
+# Convert to lower case
 STRING_TO_SIGN="${STRING_TO_SIGN,,}"
-echo $STRING_TO_SIGN
 
 # Generate the HMAC signature using the secret key
 SIGNATURE=$(echo -n "$STRING_TO_SIGN" | openssl dgst -sha1 -hmac "$API_SECRET" | awk '{print $2}')
