@@ -16,277 +16,314 @@ The id of the venue package
 {% swagger-response status="200" description="" %}
 ```
 {
-    "id": 4,
-    "name": "Test Package",
+    "id": 1,
+    "name": "Standard",
     "type": 1,
-    "minPax": 0,
-    "maxPax": 200,
-    "cost": 3000,
-    "priceMethod": 2,
-    "actualCost": 20,
+    "minPax": 1,
+    "maxPax": 1000,
+    "cost": 500,
+    "priceMethod": 1,
+    "actualCost": 50,
     "actualCostExcludedTaxIds": [
         1,
-        6064,
-        6146,
-        6221,
-        6226,
-        6227,
-        6262,
-        6263,
-        6264
+        317,
+        1046,
+        1203,
+        1204,
+        1955,
+        1986,
+        1988,
+        3910,
+        3979
     ],
-    "smallDescription": "Test",
-    "largeDescription": "<p>test</p>\n",
-    "marketplaceName": "Test Package",
-    "isVisibleOnVenueSearch": true,
-    "createdDate": "2015-03-05 05:36:33",
-    "modifiedDate": "2025-03-28 03:10:49",
+    "smallDescription": "Standard",
+    "largeDescription": "<p>Standard</p>\n",
+    "marketplaceName": "Standard",
+    "isVisibleOnVenueSearch": false,
+    "createdDate": "2017-12-18 12:23:53",
+    "modifiedDate": "2025-04-23 23:28:28",
     "startDate": null,
     "endDate": null,
-    "startTime": "09:00:00",
-    "endTime": "11:00:00",
+    "startTime": "06:00:00",
+    "endTime": "12:30:00",
     "costcenters": [
         {
-            "costcenterId": 1,
-            "value": 500
+            "id": 1,
+            "value": 149.5,
+            "excludedTaxIds": [
+                1,
+                317,
+                1955
+            ]
         },
         {
-            "costcenterId": 2,
-            "value": 400
+            "id": 2,
+            "value": 100,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 3,
-            "value": 300
+            "id": 3,
+            "value": 100.5,
+            "excludedTaxIds": [
+                3910,
+                3979
+            ]
         },
         {
-            "costcenterId": 4,
-            "value": 100
+            "id": 4,
+            "value": 100,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 5,
-            "value": 500
+            "id": 5,
+            "value": 0,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 7,
-            "value": 200
+            "id": 1166,
+            "value": 0,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 32,
-            "value": 300
+            "id": 2986,
+            "value": 50,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 33,
-            "value": 400
+            "id": 6338,
+            "value": 0,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 966,
-            "value": 300
+            "id": 17647,
+            "value": 0,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 8389,
-            "value": 0
+            "id": 17648,
+            "value": 0,
+            "excludedTaxIds": []
         },
         {
-            "costcenterId": 8390,
-            "value": 0
-        },
-        {
-            "costcenterId": 16235,
-            "value": 0
-        },
-        {
-            "costcenterId": 16236,
-            "value": 0
+            "id": 17649,
+            "value": 0,
+            "excludedTaxIds": []
         }
     ],
     "hasSessions": true,
     "spaceId": 1,
     "spaceLayoutId": 2,
-    "spaceCustomLayoutName": null,
-    "sortOrder": 7,
+    "spaceCustomLayoutName": "C",
+    "sortOrder": 0,
     "excludedFromCommissions": false,
-    "reduceRoomHireFirst": false,
+    "reduceRoomHireFirst": true,
     "eventTypes": [
-        14,
-        65
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
     ],
     "userGroupIds": [
         1,
-        14
+        2
     ],
     "hasLimitedStartTimes": true,
     "limitedStartTimes": [
-        "01:30:00",
-        "02:00:00",
-        "03:30:00"
+        "02:30:00",
+        "03:00:00"
     ],
-    "isAccommIncluded": false,
-    "discountCampaignId": 2,
+    "isAccommIncluded": true,
+    "discountCampaignId": 59,
     "costcentersDiscounts": [
         {
-            "costcenterId": 4,
-            "value": 10
+            "id": 1,
+            "value": 18
         },
         {
-            "costcenterId": 5,
-            "value": 10
+            "id": 2,
+            "value": 18
         },
         {
-            "costcenterId": 7,
-            "value": 10
+            "id": 3,
+            "value": 18
         },
         {
-            "costcenterId": 2,
-            "value": 10
+            "id": 4,
+            "value": 18
         },
         {
-            "costcenterId": 3,
-            "value": 10
+            "id": 5,
+            "value": 18
         },
         {
-            "costcenterId": 6,
-            "value": 10
+            "id": 6338,
+            "value": 18
         },
         {
-            "costcenterId": 966,
-            "value": 10
-        },
-        {
-            "costcenterId": 8389,
-            "value": 10
-        },
-        {
-            "costcenterId": 8390,
-            "value": 10
-        },
-        {
-            "costcenterId": 1,
-            "value": 10
+            "id": 2986,
+            "value": 18
         }
     ],
     "sessions": [
         {
-            "id": 123,
-            "name": "First Session",
-            "startTime": "09:00:00",
-            "endTime": "11:00:00",
-            "setupTime": 10,
-            "setdownTime": 10,
-            "createdDate": "2017-02-01 23:33:24",
-            "modifiedDate": "2025-03-28 03:16:49",
+            "id": 1,
+            "name": "Morning1",
+            "startTime": "08:00:00",
+            "endTime": "09:00:00",
+            "setupTime": 0,
+            "setDownTime": 0,
+            "createdDate": "2017-12-18 12:25:01",
+            "modifiedDate": "2025-04-23 23:28:31",
             "isOptional": false,
             "spaceVenueId": 1,
-            "spaceId": 2,
-            "spaceLayoutId": 1,
-            "spaceCustomLayoutName": null,
-            "includeInPackage": false,
+            "spaceId": 1,
+            "spaceLayoutId": 0,
+            "spaceCustomLayoutName": "C",
+            "includeInPackage": true,
             "tariffId": 1,
-            "roomHireType": 5,
-            "minSpendAmount": 100,
+            "roomHireType": 1,
+            "minSpendAmount": 10,
             "minSpendRevenueItems": [
                 1,
-                2
+                2,
+                3,
+                4,
+                5
             ],
-            "overridePax": true,
-            "costcenterId": 5,
-            "amount": 255,
+            "overridePax": false,
+            "costcenterId": 0,
+            "amount": null,
             "excludedTaxIds": [],
             "sortOrder": 0,
-            "sessionTypeId": 1,
-            "sessionStatusId": 12,
-            "beverages": [
+            "sessionTypeId": 64,
+            "sessionStatusId": 0,
+            "beveragePackages": [
                 {
-                    "id": 25,
-                    "name": null,
-                    "packageId": 4,
-                    "sessionId": 123,
-                    "beverageVenueId": 0,
-                    "beverageId": 0,
+                    "id": 1,
+                    "name": "Morning tea",
+                    "beverageVenueId": 1,
+                    "beverageId": 1,
                     "numHours": null,
-                    "startTime": null,
-                    "endTime": null,
-                    "sameAsSessionTime": false,
-                    "items": null,
+                    "startTime": "08:00:00",
+                    "endTime": "09:00:00",
+                    "sameAsSessionTime": true,
+                    "itemsIds": [
+                        1,
+                        10
+                    ],
                     "includeInPackage": false,
-                    "costcenterId": 966,
+                    "costcenterId": 2,
                     "amount": 10,
                     "excludedTaxIds": [],
-                    "createdDate": "2025-03-28 03:20:21",
-                    "modifiedDate": "2025-03-28 03:20:21"
+                    "createdDate": "2017-12-18 12:25:32",
+                    "modifiedDate": "2025-04-23 05:52:34"
+                },
+                {
+                    "id": 15,
+                    "name": "Per Person - 30 Minute Pre-dinner Beverages",
+                    "beverageVenueId": 1,
+                    "beverageId": 7,
+                    "numHours": null,
+                    "startTime": "08:00:00",
+                    "endTime": "09:00:00",
+                    "sameAsSessionTime": true,
+                    "itemsIds": [
+                        11
+                    ],
+                    "includeInPackage": false,
+                    "costcenterId": 2,
+                    "amount": 15,
+                    "excludedTaxIds": [
+                        1
+                    ],
+                    "createdDate": "2025-04-23 05:53:02",
+                    "modifiedDate": "2025-04-23 05:53:02"
                 }
             ],
             "menus": [
                 {
-                    "id": 80,
-                    "name": "Test Menu",
-                    "packageId": 4,
-                    "sessionId": 123,
+                    "id": 14,
+                    "name": "Total of all items",
                     "menuVenueId": 1,
-                    "menuId": 2815,
-                    "startTime": "09:00:00",
-                    "endTime": "11:00:00",
+                    "menuId": 13,
+                    "startTime": "08:00:00",
+                    "endTime": "09:00:00",
                     "sameAsSessionTime": true,
                     "includeInPackage": false,
-                    "costcenterId": 0,
-                    "amount": 50,
-                    "excludedTaxIds": [],
-                    "createdDate": "2025-03-28 03:17:43",
-                    "modifiedDate": "2025-03-28 03:17:43",
+                    "costcenterId": 1,
+                    "amount": 10,
+                    "excludedTaxIds": [
+                        317,
+                        1955
+                    ],
+                    "createdDate": "2021-11-09 01:31:05",
+                    "modifiedDate": "2025-04-23 05:28:22",
                     "items": [
                         {
-                            "inventoryId": 221,
-                            "groupId": "gr61383783cb967"
-                        },
-                        {
-                            "inventoryId": 222,
-                            "groupId": "gr61383783cb967"
-                        },
-                        {
-                            "inventoryId": 223,
-                            "groupId": "gr613837910adac"
-                        },
-                        {
-                            "inventoryId": 224,
-                            "groupId": "gr613837910adac"
+                            "inventoryId": 8,
+                            "groupId": "gr6189d144bfc41"
                         }
                     ],
                     "groups": [
                         {
-                            "idHash": "gr61383783cb967",
-                            "name": "Menu Group 1",
+                            "idHash": "gr6189d144bfc41",
+                            "name": "Group 1",
                             "marketplaceName": "",
-                            "minSelection": 0,
-                            "maxSelection": 0,
-                            "servingTime": ""
-                        },
-                        {
-                            "idHash": "gr613837910adac",
-                            "name": "Menu Group 2",
-                            "marketplaceName": "",
-                            "minSelection": 0,
-                            "maxSelection": 0,
-                            "servingTime": ""
+                            "minSelection": 1,
+                            "maxSelection": 2,
+                            "servingTime": null
                         }
                     ],
+                    "costcenters": []
+                },
+                {
+                    "id": 19,
+                    "name": "Multi Cost center",
+                    "menuVenueId": 1,
+                    "menuId": 114,
+                    "startTime": "08:00:00",
+                    "endTime": "09:00:00",
+                    "sameAsSessionTime": true,
+                    "includeInPackage": false,
+                    "costcenterId": 0,
+                    "amount": 30,
+                    "excludedTaxIds": [],
+                    "createdDate": "2025-04-23 05:27:26",
+                    "modifiedDate": "2025-04-23 05:27:26",
+                    "items": [
+                        {
+                            "inventoryId": 10,
+                            "groupId": ""
+                        }
+                    ],
+                    "groups": [],
                     "costcenters": [
                         {
-                            "costcenterId": 2,
-                            "amount": 20,
+                            "id": 1,
+                            "value": 10,
                             "excludedTaxIds": [
-                                1,
-                                6064,
-                                6146,
-                                6221
+                                1046,
+                                1955,
+                                1986,
+                                1988,
+                                3910,
+                                3979
                             ]
                         },
                         {
-                            "costcenterId": 3,
-                            "amount": 30,
+                            "id": 2,
+                            "value": 20,
                             "excludedTaxIds": [
                                 1,
-                                6064,
-                                6146,
-                                6221
+                                317,
+                                1046,
+                                1955,
+                                1986,
+                                1988,
+                                3910,
+                                3979
                             ]
                         }
                     ]
@@ -294,89 +331,125 @@ The id of the venue package
             ],
             "products": [
                 {
-                    "id": 25,
-                    "packageId": 4,
-                    "sessionId": 123,
-                    "productId": 2,
+                    "id": 3,
+                    "productId": 13,
                     "includeInPackage": false,
-                    "costcenterId": 966,
-                    "amount": 10,
-                    "excludedTaxIds": [],
-                    "createdDate": "2025-03-28 03:20:21",
-                    "modifiedDate": "2025-03-28 03:20:21"
+                    "costcenterId": 3,
+                    "amount": null,
+                    "excludedTaxIds": [
+                        317
+                    ],
+                    "createdDate": "2020-12-01 00:58:55",
+                    "modifiedDate": "2025-04-23 06:17:48"
                 }
             ],
             "resources": [
                 {
-                    "id": 441,
-                    "packageId": 4,
-                    "sessionId": 123,
+                    "id": 16,
                     "resourceVenueId": 1,
-                    "resourceId": 2672,
-                    "quantity": 10,
+                    "resourceId": 0,
+                    "quantity": 1,
                     "includeInPackage": false,
-                    "costcenterId": 4,
-                    "amount": 50,
+                    "costcenterId": 1,
+                    "amount": 0,
                     "excludedTaxIds": [],
-                    "createdDate": "2025-03-28 03:20:09",
-                    "modifiedDate": "2025-03-28 03:20:09"
+                    "createdDate": "2022-04-05 04:49:30",
+                    "modifiedDate": "2022-04-05 04:49:30"
+                },
+                {
+                    "id": 22,
+                    "resourceVenueId": 1,
+                    "resourceId": 2,
+                    "quantity": 1,
+                    "includeInPackage": false,
+                    "costcenterId": 2986,
+                    "amount": 12,
+                    "excludedTaxIds": [],
+                    "createdDate": "2022-04-06 07:12:50",
+                    "modifiedDate": "2022-04-06 07:12:50"
+                },
+                {
+                    "id": 23,
+                    "resourceVenueId": 1,
+                    "resourceId": 3,
+                    "quantity": 1,
+                    "includeInPackage": false,
+                    "costcenterId": 3,
+                    "amount": 10,
+                    "excludedTaxIds": [
+                        1955,
+                        1986,
+                        3910,
+                        3979
+                    ],
+                    "createdDate": "2022-04-13 23:31:13",
+                    "modifiedDate": "2025-04-23 06:11:55"
                 }
             ],
             "setupRequirements": [
                 {
-                    "id": 165,
-                    "packageId": 4,
-                    "sessionId": 123,
-                    "setupRequirementId": 3,
-                    "name": "Mic with Options",
-                    "description": "<p>Global Mic</p>\n",
-                    "createdDate": "2025-03-28 03:20:55",
-                    "modifiedDate": "2025-03-28 03:20:55",
-                    "sortOrder": 0,
-                    "hasChoices": 0,
-                    "minChoices": 0,
+                    "id": 8,
+                    "setupRequirementId": 1,
+                    "name": "mysetuprequire",
+                    "description": null,
+                    "createdDate": "2025-04-23 06:38:29",
+                    "modifiedDate": "2025-04-23 06:38:49",
+                    "sortOrder": 2,
+                    "hasChoices": false,
+                    "minChoices": 1,
                     "maxChoices": 0,
                     "options": [
                         {
-                            "id": 22,
-                            "packageId": 4,
-                            "sessionId": 123,
-                            "packageSessionSetupId": 165,
-                            "setupRequirementId": 3,
-                            "setupRequirementOptionId": 7,
-                            "name": "Mic Option 1",
-                            "createdDate": "2025-03-28 03:20:55",
-                            "modifiedDate": "2025-03-28 03:20:55",
+                            "id": 10,
+                            "setupRequirementId": 1,
+                            "setupRequirementOptionId": 2,
+                            "name": "a",
+                            "createdDate": "2025-04-23 06:38:29",
+                            "modifiedDate": "2025-04-23 06:38:29",
                             "sortOrder": 0
                         },
                         {
-                            "id": 23,
-                            "packageId": 4,
-                            "sessionId": 123,
-                            "packageSessionSetupId": 165,
-                            "setupRequirementId": 3,
-                            "setupRequirementOptionId": 8,
-                            "name": "Mic Option 2",
-                            "createdDate": "2025-03-28 03:20:55",
-                            "modifiedDate": "2025-03-28 03:20:55",
+                            "id": 11,
+                            "setupRequirementId": 1,
+                            "setupRequirementOptionId": 3,
+                            "name": "b",
+                            "createdDate": "2025-04-23 06:38:29",
+                            "modifiedDate": "2025-04-23 06:38:29",
                             "sortOrder": 1
+                        },
+                        {
+                            "id": 14,
+                            "setupRequirementId": 1,
+                            "setupRequirementOptionId": 8,
+                            "name": "d",
+                            "createdDate": "2025-04-23 23:29:27",
+                            "modifiedDate": "2025-04-23 23:29:27",
+                            "sortOrder": 3
                         }
                     ]
                 },
                 {
-                    "id": 166,
-                    "packageId": 4,
-                    "sessionId": 123,
-                    "setupRequirementId": 7,
-                    "name": "Table Fans",
+                    "id": 10,
+                    "setupRequirementId": 18,
+                    "name": "newsetup",
                     "description": null,
-                    "createdDate": "2025-03-28 03:20:55",
-                    "modifiedDate": "2025-03-28 03:20:55",
-                    "sortOrder": 1,
-                    "hasChoices": 0,
-                    "minChoices": 0,
+                    "createdDate": "2025-04-23 23:34:00",
+                    "modifiedDate": "2025-04-23 23:34:00",
+                    "sortOrder": 3,
+                    "hasChoices": false,
+                    "minChoices": 1,
                     "maxChoices": 0,
-                    "options": []
+                    "options": [
+                        {
+                            "id": 15,
+                            "setupRequirementId": 18,
+                            "setupRequirementOptionId": 9,
+                            "name": "newsetup1",
+                            "createdDate": "2025-04-23 23:34:00",
+                            "modifiedDate": "2025-04-23 23:34:00",
+                            "sortOrder": 0
+                        }
+                    ]
                 }
             ]
         }
@@ -535,9 +608,9 @@ The id of the venue package
 
 | Property         | Data Type   | Description                                      |
 |------------------|-------------|--------------------------------------------------|
-| costcenterId     | integer     | The cost center identifier                      |
-| amount           | float       | The amount of the cost center                  |
-| excludedTaxIds   | array       | The tax ids excluded from the amount  |
+| id               | integer     | The cost center identifier                       |
+| value            | float       | The amount of the cost center                    |
+| excludedTaxIds   | array       | The tax ids excluded from the amount             |
 
 ## Product Details
 

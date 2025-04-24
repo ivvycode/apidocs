@@ -13,219 +13,163 @@ The id of the venue
 ```
 {
     "meta": {
-        "totalResults": 19,
+        "totalResults": 1,
         "start": 0,
-        "perPage": 2,
-        "count": 2
+        "perPage": 100,
+        "count": 1
     },
     "results": [
         {
             "id": 1,
-            "name": "Day Delegate Package",
+            "name": "Standard",
             "type": 1,
             "minPax": 1,
-            "maxPax": 0,
+            "maxPax": 1000,
             "cost": 500,
-            "priceMethod": 2,
-            "actualCost": 40,
+            "priceMethod": 1,
+            "actualCost": 50,
             "actualCostExcludedTaxIds": [
                 1,
-                6064,
-                6146,
-                6221,
-                6226,
-                6227,
-                6262,
-                6263,
-                6264
+                317,
+                1046,
+                1203,
+                1204,
+                1955,
+                1986,
+                1988,
+                3910,
+                3979
             ],
-            "smallDescription": "Includes Room Hire, Morning Tea,\nLunch, Afternoon Tea and basic AV equiptment",
-            "largeDescription": "<p>Includes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptmentIncludes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptmentIncludes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptmentIncludes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptmentIncludes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptmentIncludes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptment</p>\n",
-            "marketplaceName": "Day Delegate Package",
-            "isVisibleOnVenueSearch": true,
-            "createdDate": "2015-01-23 07:54:46",
-            "modifiedDate": "2025-03-27 23:56:02",
+            "smallDescription": "Standard",
+            "largeDescription": "<p>Standard</p>\n",
+            "marketplaceName": "Standard",
+            "isVisibleOnVenueSearch": false,
+            "createdDate": "2017-12-18 12:23:53",
+            "modifiedDate": "2025-04-23 23:28:28",
             "startDate": null,
             "endDate": null,
-            "startTime": "09:00:00",
-            "endTime": "15:00:00",
+            "startTime": "06:00:00",
+            "endTime": "12:30:00",
             "costcenters": [
                 {
-                    "costcenterId": 1,
-                    "value": 0
+                    "id": 1,
+                    "value": 149.5,
+                    "excludedTaxIds": [
+                        1,
+                        317,
+                        1955
+                    ]
                 },
                 {
-                    "costcenterId": 2,
-                    "value": 100
+                    "id": 2,
+                    "value": 100,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 3,
-                    "value": 100
+                    "id": 3,
+                    "value": 100.5,
+                    "excludedTaxIds": [
+                        3910,
+                        3979
+                    ]
                 },
                 {
-                    "costcenterId": 4,
-                    "value": 100
+                    "id": 4,
+                    "value": 100,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 5,
-                    "value": 100
+                    "id": 5,
+                    "value": 0,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 7,
-                    "value": 100
+                    "id": 1166,
+                    "value": 0,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 32,
-                    "value": 0
+                    "id": 2986,
+                    "value": 50,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 33,
-                    "value": 0
+                    "id": 6338,
+                    "value": 0,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 966,
-                    "value": 0
+                    "id": 17647,
+                    "value": 0,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 8389,
-                    "value": 0
+                    "id": 17648,
+                    "value": 0,
+                    "excludedTaxIds": []
                 },
                 {
-                    "costcenterId": 8390,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 16235,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 16236,
-                    "value": 0
+                    "id": 17649,
+                    "value": 0,
+                    "excludedTaxIds": []
                 }
             ],
             "hasSessions": true,
             "spaceId": 1,
-            "spaceLayoutId": 0,
-            "spaceCustomLayoutName": "Custom layout",
-            "sortOrder": 1,
+            "spaceLayoutId": 2,
+            "spaceCustomLayoutName": "C",
+            "sortOrder": 0,
             "excludedFromCommissions": false,
-            "reduceRoomHireFirst": false,
+            "reduceRoomHireFirst": true,
             "eventTypes": [
-                14,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "userGroupIds": [
+                1,
                 2
             ],
-            "userGroupIds": [],
             "hasLimitedStartTimes": true,
             "limitedStartTimes": [
-                "00:30:00",
-                "01:00:00",
-                "05:30:00"
+                "02:30:00",
+                "03:00:00"
             ],
-            "isAccommIncluded": false,
-            "discountCampaignId": 2,
-            "costcentersDiscounts": []
-        },
-        {
-            "id": 2146,
-            "name": "Day Delegate Package (*Copy*)",
-            "type": 1,
-            "minPax": 1,
-            "maxPax": 0,
-            "cost": 500,
-            "priceMethod": 2,
-            "actualCost": 40,
-            "actualCostExcludedTaxIds": [
-                1,
-                6064,
-                6146,
-                6221,
-                6226,
-                6227,
-                6262,
-                6263,
-                6264
-            ],
-            "smallDescription": "Includes Room Hire, Morning Tea,\nLunch, Afternoon Tea and basic AV equiptment",
-            "largeDescription": "<p>Includes Room Hire, Morning Tea,<br />\nLunch, Afternoon Tea and basic AV equiptmentIncludes Room Hire, Morning Tea,<br />",
-            "marketplaceName": "Day Delegate Package",
-            "isVisibleOnVenueSearch": false,
-            "createdDate": "2023-12-14 06:59:05",
-            "modifiedDate": "2023-12-14 06:59:05",
-            "startDate": null,
-            "endDate": null,
-            "startTime": "09:00:00",
-            "endTime": "15:00:00",
-            "costcenters": [
+            "isAccommIncluded": true,
+            "discountCampaignId": 59,
+            "costcentersDiscounts": [
                 {
-                    "costcenterId": 1,
-                    "value": 0
+                    "id": 1,
+                    "value": 18
                 },
                 {
-                    "costcenterId": 2,
-                    "value": 100
+                    "id": 2,
+                    "value": 18
                 },
                 {
-                    "costcenterId": 3,
-                    "value": 100
+                    "id": 3,
+                    "value": 18
                 },
                 {
-                    "costcenterId": 4,
-                    "value": 100
+                    "id": 4,
+                    "value": 18
                 },
                 {
-                    "costcenterId": 5,
-                    "value": 100
+                    "id": 5,
+                    "value": 18
                 },
                 {
-                    "costcenterId": 7,
-                    "value": 100
+                    "id": 6338,
+                    "value": 18
                 },
                 {
-                    "costcenterId": 32,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 33,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 966,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 8389,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 8390,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 16235,
-                    "value": 0
-                },
-                {
-                    "costcenterId": 16236,
-                    "value": 0
+                    "id": 2986,
+                    "value": 18
                 }
-            ],
-            "hasSessions": true,
-            "spaceId": 1,
-            "spaceLayoutId": 0,
-            "spaceCustomLayoutName": "Custom layout",
-            "sortOrder": 1,
-            "excludedFromCommissions": true,
-            "reduceRoomHireFirst": false,
-            "eventTypes": [
-                14,
-                2
-            ],
-            "userGroupIds": [],
-            "hasLimitedStartTimes": false,
-            "limitedStartTimes": [],
-            "isAccommIncluded": false,
-            "discountCampaignId": 0,
-            "costcentersDiscounts": []
+            ]
         }
     ]
 }
@@ -290,7 +234,7 @@ The id of the venue
 
 | Property       | Data Type | Description                                |
 |----------------|-----------|--------------------------------------------|
-| costcenterId   | integer   | The cost center identifier                |
+| id   | integer   | The cost center identifier                |
 | value          | float     | The discount percentage for the cost center |
 
 
@@ -298,7 +242,7 @@ The id of the venue
 
 | Property       | Data Type | Description                     |
 |----------------|-----------|---------------------------------|
-| costcenterId   | integer   | The cost center identifier     |
+| id             | integer   | The cost center identifier     |
 | value          | float     | The price for the cost center  |
 
 ## Package Type
