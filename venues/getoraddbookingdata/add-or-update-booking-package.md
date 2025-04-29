@@ -61,15 +61,15 @@ Invalid request data that prevents the booking from being added/updated.
 | bookingDate            | date    | optional | Start date of the package. Ignored if `id` is set.                                                                      |
 | price                  | double  | optional | The price of the booking package.                                                                                       |
 | costcenters            | array of [Costcenter](add-or-update-booking-package.md#costcenter) | optional | The cost centers of the booking package. If "price" not passed this will use calculate the allocation based on setup venue setup package |
-| mainSpaceVenueId       | integer | optional | The id of the main space venue of a booking package default session. Ignored if id is set.                              |
-| mainSpaceId            | integer | optional | The main space of the booking package default session. Ignored if id is set                                             |
-| spaceLayoutId          | integer | optional | The space layout of the booking package default session. Ignored if id is set                                           |
+| mainSpaceVenueId       | integer | optional | The id of the space venue associated with a booking package session. If space is not set within the package session, this value should be provided. Ignored if id is set.                              |
+| mainSpaceId            | integer | optional | The id of the space associated with a booking package session. If space is not set within the package session, this value should be provided. Ignored if id is set                                             |
+| spaceLayoutId          | integer | optional | The id of the space layout associated with a booking package session. If space layout is not set within the package session, this value should be provided. Ignored if id is set                                           |
 | numberAttendees        | integer | optional | The total attendees of the booking package.                                                                             |
-| agreedAttendees        | integer | optional | The agreed attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled. |
-| expectedAttendees      | integer | optional | The expected attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled. |
-| guaranteedAttendees    | integer | optional | The guaranteed attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled. |
-| setAttendees           | integer | optional | The set attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled.  |
-| actualAttendees        | integer | optional | The actual attendees of the booking package, only applicable when the venue setting "showAdditionalAttendees" is enabled. |
+| agreedAttendees        | integer | optional | The agreed attendees of the booking package, applicable and required when the venue setting "showAdditionalAttendees" is enabled. |
+| expectedAttendees      | integer | optional | The expected attendees of the booking package, applicable when the venue setting "showAdditionalAttendees" is enabled. |
+| guaranteedAttendees    | integer | optional | The guaranteed attendees of the booking package, applicable when the venue setting "showAdditionalAttendees" is enabled. |
+| setAttendees           | integer | optional | The set attendees of the booking package, applicable when the venue setting "showAdditionalAttendees" is enabled.  |
+| actualAttendees        | integer | optional | The actual attendees of the booking package, applicable when the venue setting "showAdditionalAttendees" is enabled. |
 | isAccommIncluded       | integer | optional | Whether or not accommodation is included in the booking package.                                                        |
 | smallDescription       | string  | optional | The small description of the booking package.                                                                           |
 
