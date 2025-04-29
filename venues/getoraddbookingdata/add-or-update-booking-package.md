@@ -92,12 +92,12 @@ Invalid request data that prevents the booking from being added/updated.
     "spaceLayoutId": 1,
     "costcenters": [
         {
-            "costcenterId": 1,
+            "id": 1,
             "value": 130,
             "excludedTaxIds": null
         },
         {
-            "costcenterId": 2,
+            "id": 2,
             "value": 1170,
             "excludedTaxIds": []
         }
