@@ -91,8 +91,8 @@ curl --location "$API_URL" \
 
 | Code                 | Description                       |
 | :------------------- | :-------------------------------- |
-| Specific Code: 24458 | The request contains bad data     |
-| Specific Code: 24459 | The request contains invalid data |
+| Specific Code: 24464 | The request contains bad data     |
+| Specific Code: 24465 | The request contains invalid data |
 
 ## Booking Document Type
 
