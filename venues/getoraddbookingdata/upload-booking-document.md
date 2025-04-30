@@ -19,14 +19,14 @@ A POST request that represents uploading a booking document to a venue using mul
 
 ## Booking Document
 
-| Property | Type | Required | Description |
-| :------- | :--- | :------- | :---------- |
-
-| venueId | integer | required | The id of the venue to which the booking note belongs |
-| bookingId | integer | required | The id of the booking to which the booking note will be assigned. |
-| fileId | string | required | The path of the file to be uploaded |
-| type | integer | required | The [type](upload-booking-document.md#booking-document-type) of the booking note. |
-| status | integer | required | The [type](upload-booking-document.md#booking-document-status) of the booking note. |
+| Property     | Type    | Required | Description                                                                                                                                         |
+| :----------- | :------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| venueId      | integer | required | The id of the venue to which the booking note belongs                                                                                               |
+| bookingId    | integer | required | The id of the booking to which the booking note will be assigned.                                                                                   |
+| fileId       | string  | required | The path of the file to be uploaded                                                                                                                 |
+| type         | integer | required | The [type](upload-booking-document.md#booking-document-type) of the booking note.                                                                   |
+| status       | integer | required | The [type](upload-booking-document.md#booking-document-status) of the booking note.                                                                 |
+| canBeDeleted | integer | optional | Indicates whether the document can be deleted. Use 1 for deletable and 0 for non-deletable. By default, the document is not deletable (0) means not |
 
 ## Example Request
 
@@ -37,13 +37,14 @@ A POST request that represents uploading a booking document to a venue using mul
 API_KEY="apikey"
 API_SECRET="apkisecret"
 API_VERSION="1.0"
-API_URL="[PlatformAddress]/api/1.0/venue?action=addOrUpdateBookingNote"
+URI_PATH="/api/1.0/venue?action=uploadBookingDocument"
+API_URL="[PlatformAddress]${URI_PATH}"
 
 # Get the current date in the required format (UTC timezone)
 DATE=$(date -u +"%Y-%m-%d %H:%M:%S")
 
 # Create request data (JSON format)
-REQUEST_DATA="{\"venueId\":\"1\",\"bookingId\":\"29836\",\"type\":\"3\",\"status\":\"3\"}"
+REQUEST_DATA="{\"venueId\":\"1\",\"bookingId\":\"29836\",\"type\":\"3\",\"status\":\"3\",\"canBeDeleted\":\"1\"}"
 PATH_TO_FILE="/path/to/document.pdf"
 
 # Compute the MD5 hash of the request data
@@ -51,9 +52,6 @@ BODY_MD5=$(echo -n "$REQUEST_DATA" | md5sum | awk '{print $1}')
 
 # Compute the md5 checksum of the file
 FILE_MD5=$(md5sum "$PATH_TO_FILE" | awk '{print $1}')
-
-# Construct the URI path
-URI_PATH="/api/1.0/venue?action=uploadBookingDocument"
 
 # Set the content-type including the boundary
 CONTENT_TYPE="multipart/form-data"
@@ -78,6 +76,7 @@ curl --location "$API_URL" \
   --form "bookingId=29836" \
   --form "type=3" \
   --form "status=3" \
+  --form "canBeDeleted=1" \
 ```
 
 ## Returns
