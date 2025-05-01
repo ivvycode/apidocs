@@ -48,6 +48,7 @@ The venue Id
     "countryName": null,
     "postalCode": 4227
   },
+  "isAccommIncluded": true,
   "videoUrls": [
     "https://www.youtube.com/embed/rxiPVWurK7Q"
   ],
