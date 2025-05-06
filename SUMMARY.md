@@ -137,6 +137,7 @@
     * [Add or Update Room Dynamic Rates](venues/accommodation/add-or-update-room-dynamic-rates.md)
     * [Remove Room Dynamic Rates](venues/accommodation/remove-room-dynamic-rates.md)
     * [Add or Update Rate Plan Booking Rules](venues/accommodation/add-or-update-rateplan-bookingrules.md)
+    * [Upload Booking Document](venues/getoraddbookingdata/upload-booking-document.md)
 * [Partner](partner/README.md)
   * [Get Venue List](partner/get-venue-list.md)
   * [Get Venue](partner/get-venue.md)
