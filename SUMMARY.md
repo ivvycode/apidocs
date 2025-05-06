@@ -89,6 +89,8 @@
     * [Add or Update Guest Room](venues/venuedata/add-or-update-guest-room.md)
     * [Get Booking Custom Field List](venues/venuedata/get-booking-custom-field-list.md)
     * [Get Space Hire Plans](venues/get-space-hire-plan-list.md)
+    * [Get Venue Package List](venues/venuedata/get-venue-package-list.md)
+    * [Get Venue Package](venues/venuedata/get-venue-package.md)
   * [Booking Data](venues/getoraddbookingdata/README.md)
     * [Convert Lead To Opportunity](venues/getoraddbookingdata/convert-lead-to-opportunity.md)
     * [Add or Update Opportunity](venues/getoraddbookingdata/add-or-update-opportunity.md)
