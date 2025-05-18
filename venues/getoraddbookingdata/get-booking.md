@@ -81,7 +81,7 @@ The id of the booking
       "email": "amit.kalani@gmail.com",
       "phone": "+61481342930"
   },
-  "commissionPackageType": 2,
+  "commissionAccommodationType": 1,
   "commissionAccommodation": 5,
   "commissionSpaceType": 1,
   "commissionSpace": 100,
@@ -893,6 +893,7 @@ The result from this call will be the details of a specific booking to which the
 | agentCompany             | [Company](get-booking.md#company) | The details of the agent company assigned to the booking                                                                  |
 | agentContactId           | integer   | The id of the revenue template applied to the booking                                                                     |
 | agentContact             | [Contact](get-booking.md#contact) | The details of the agent contact assigned to the booking                                                                  |
+| commissionAccommodationType      | integer   | The type of commission value for accommodation                                                                                    |
 | commissionAccommodation  | double    | The amount of commission for accommodation                                                                                |
 | commissionSpaceType      | integer   | The type of commission value for space                                                                                    |
 | commissionSpace          | double    | The amount of commission for space                                                                                        |
