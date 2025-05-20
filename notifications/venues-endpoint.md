@@ -1,6 +1,6 @@
 # Invoice Endpoint
 
-This endpoint will trigger when booking, accommodation or reservations have been created / modified. <ul><li>Booking is Added</li><li>Booking is Updated</li><li>Booking is Deleted</li><li>Booking Session is Added</li><li>Booking Session is Updated</li><li>Booking Session is Deleted</li><li>Booking Accommodation is Added</li><li>Booking Accommodation is Updated</li><li>Booking Accommodation is Deleted</li><li>Booking Room Reservation is Added</li><li>Booking Room Reservation is Updated</li><li>Booking Room Reservation is Deleted</li><li>Booking Note is Added</li><li>Booking Note is Updated</li><li>Booking Note is Deleted</li><li>Booking Moved <i>- A special notification to handle when a booking in iVvy has been moved.</i></li><li>Space Blockout is Added</li><li>Space Blockout is Updated</li><li>Space Blockout is Deleted</li></ul>
+This endpoint will trigger when booking, accommodation or reservations have been created / modified. <ul><li>Booking is Added</li><li>Booking is Updated</li><li>Booking is Deleted</li><li>Booking Session is Added</li><li>Booking Session is Updated</li><li>Booking Session is Deleted</li><li>Booking Accommodation is Added</li><li>Booking Accommodation is Updated</li><li>Booking Accommodation is Deleted</li><li>Booking Room Reservation is Added</li><li>Booking Room Reservation is Updated</li><li>Booking Room Reservation is Deleted</li><li>Booking Note is Added</li><li>Booking Note is Updated</li><li>Booking Note is Deleted</li><li>Booking Moved <i>- A special notification to handle when a booking in iVvy has been moved.</i></li><li>Space Blockout is Added</li><li>Space Blockout is Updated</li><li>Space Blockout is Deleted</li><li>Document is Generated</li><li>Document is Deleted</li><li>BEO is Generated</li><li>BEO is Deleted</li></ul>
 
 ## Booking is Added
 
@@ -267,5 +267,63 @@ SpaceBlockoutDeleted
 {
     "venueId": 123,
     "spaceBlockoutId": 234,
+}
+```
+
+## Document is Generated
+
+### Subject
+BookingDocumentGenerated
+
+### Body
+
+```json
+{
+    "data": {... JSON Response from getBookingDocumentList API },
+    "previousData": {}
+}
+```
+
+## Document is Deleted
+
+### Subject
+BookingDocumentDeleted
+
+### Body
+
+```json
+{
+    "venueId": 123,
+    "bookingId": 234,
+    "documentId": 345,
+}
+```
+
+## BEO is Generated
+
+### Subject
+BookingBeoGenerated
+
+### Body
+
+```json
+{
+    "data": {... JSON Response from getBookingBeoList API },
+    "previousData": {}
+}
+```
+
+## BEO is Deleted
+
+### Subject
+BookingBeoDeleted
+
+### Body
+
+```json
+{
+    "venueId": 123,
+    "bookingId": 234,
+    "beoId": 345,
 }
 ```
