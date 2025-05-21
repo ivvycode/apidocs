@@ -175,7 +175,8 @@ The unique id of the booking to which the accommodation belongs
                 "totalDiscount": 10,
                 "totalTaxAmount": 65.01,
                 "costcenterId": 1377,
-                "numPayableByGuest": 11
+                "numPayableByGuest": 11,
+                "commssion": 3
             },
             {
                 "bookingDate": "2018-08-30",
@@ -191,7 +192,8 @@ The unique id of the booking to which the accommodation belongs
                 "totalDiscount": 10,
                 "totalTaxAmount": 72.7,
                 "costcenterId": 1377,
-                "numPayableByGuest": 10
+                "numPayableByGuest": 10,
+                "commssion": 4
             }
         ],
         "createdDate": "2018-08-22 06:43:24 UTC",
@@ -337,3 +339,4 @@ The result from this call will be a [collection](../../getting-started/interpret
 | totalTaxAmount    | number            | The total tax amount included in totalAmount                                                                                 |
 | costcenterId      | integer           | The unique id of the cost center assigned to the additional option                                                           |
 | numPayableByGuest | integer           | The number of additional options on bookingDate that are payable by guests (as opposed to the master account of the booking) |
+| commission        | number            | The amount of commission for the additional option                                                                          |
