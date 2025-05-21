@@ -1331,3 +1331,12 @@ An External URL field is an object with the following details.
 | ref      | string | The unique reference key of the external URL                                                                                                             |
 | url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
 | label    | string | The label of the URL to display.                                                                                                                         |
+
+## Commission Type
+
+One of the following values:
+
+| # | Description    |
+| - | -------------- |
+| 1 | Fixed          |
+| 2 | Percentage     |
