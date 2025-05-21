@@ -893,15 +893,15 @@ The result from this call will be the details of a specific booking to which the
 | agentCompany             | [Company](get-booking.md#company) | The details of the agent company assigned to the booking                                                                  |
 | agentContactId           | integer   | The id of the revenue template applied to the booking                                                                     |
 | agentContact             | [Contact](get-booking.md#contact) | The details of the agent contact assigned to the booking                                                                  |
-| commissionAccommodationType      | integer   | The type of commission value for accommodation                                                                                    |
-| commissionAccommodation  | double    | The amount of commission for accommodation                                                                                |
-| commissionSpaceType      | integer   | The type of commission value for space                                                                                    |
+| commissionAccommodationType      | integer   | The [Commission Type](get-booking.md#commission-type) for accommodation                                                                                    |
+| commissionAccommodation  | double    | The amount of commission for accommodation                                                                              |
+| commissionSpaceType      | integer   | The [Commission Type](get-booking.md#commission-type) for space                                                                                    |
 | commissionSpace          | double    | The amount of commission for space                                                                                        |
-| commissionFoodType       | integer   | The type of commission value for food                                                                                     |
+| commissionFoodType       | integer   | The [Commission Type](get-booking.md#commission-type) for food                                                                                     |
 | commissionFood           | double    | The amount of commission for food                                                                                         |
-| commissionBeverageType   | integer   | The type of commission value for beverage                                                                                 |
+| commissionBeverageType   | integer   | The [Commission Type](get-booking.md#commission-type) for beverage                                                                                 |
 | commissionBeverage       | double    | The amount of commission for beverage                                                                                     |
-| commissionAudioVisualType| integer   | The type of commission value for audio visual                                                                             |
+| commissionAudioVisualType| integer   | The [Commission Type](get-booking.md#commission-type) for audio visual                                                                             |
 | commissionAudioVisual    | double    | The amount of commission for audio visual                                                                                 |
 | dailyRevenue            | Array of [DailyRevenue](get-booking.md#daily-revenue)                            | The daily revenue data of booking                                                                                                                           |
 | packages                | Array of [Package](get-booking.md#package)                                       | The list of packages of the booking                                                                                                                         |
