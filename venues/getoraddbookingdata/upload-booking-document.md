@@ -19,15 +19,15 @@ A POST request that represents uploading a booking document to a venue using mul
 
 ## Booking Document
 
-| Property       | Type    | Required | Description                                                                                                                                         |
-| :------------- | :------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| venueId        | integer | required | The id of the venue to which the booking note belongs                                                                                               |
-| bookingId      | integer | required | The id of the booking to which the booking note will be assigned.                                                                                   |
-| fileId         | string  | required | The path of the file to be uploaded                                                                                                                 |
-| type           | integer | required | The [type](upload-booking-document.md#booking-document-type) of the booking note.                                                                   |
-| status         | integer | required | The [type](upload-booking-document.md#booking-document-status) of the booking note.                                                                 |
-| canBeDeleted   | integer | optional | Indicates whether the document can be deleted. Use 1 for deletable and 0 for non-deletable. By default, the document is not deletable (0) means not |
-| documentNumber | integer | optional | The document number of an existing document to reference when creating a new version of the document.                                               |
+| Property       | Type    | Required | Description                                                                                                                         |
+| :------------- | :------ | :------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| venueId        | integer | required | The id of the venue to which the booking note belongs                                                                               |
+| bookingId      | integer | required | The id of the booking to which the booking note will be assigned.                                                                   |
+| fileId         | string  | required | The path of the file to be uploaded                                                                                                 |
+| type           | integer | required | The [type](upload-booking-document.md#booking-document-type) of the booking note.                                                   |
+| status         | integer | required | The [type](upload-booking-document.md#booking-document-status) of the booking note.                                                 |
+| canBeDeleted   | integer | optional | Indicates whether the document can be deleted. Use 1 for deletable and 0 for non-deletable. By default, the document can be deleted |
+| documentNumber | integer | optional | The document number of an existing document to reference when creating a new version of the document.                               |
 
 ## Example Request
 
@@ -83,10 +83,12 @@ curl --location "$API_URL" \
 
 ## Returns
 
-| Property | Description                                             |
-| :------- | :------------------------------------------------------ |
-| success  | Whether or not the booking document was uploaded        |
-| id       | The unique id of the booking document that was uploaded |
+| Property       | Description                                                              |
+| :------------- | :----------------------------------------------------------------------- |
+| success        | Whether or not the booking document was uploaded                         |
+| id             | The unique id of the booking document that was uploaded                  |
+| documentNumber | The booking document number that was generated for the uploaded document |
+| version        | The version of the documentNumber                                        |
 
 ## Throws
 
