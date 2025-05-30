@@ -158,6 +158,7 @@
   * [Add or Update Cost Center](account/add-or-update-cost-center.md)
   * [Get Cost Center List](account/get-cost-center-list.md)
   * [Get Email Log List](account/get-email-log-list.md)
+  * [Get Industry List](account/get-industry-list.md)
   * [Add Error Report](account/add-error-report.md)
   * [Get Account User List](account/get-user-list.md)
 * [CRM](crm/README.md)
