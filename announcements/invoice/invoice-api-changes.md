@@ -45,7 +45,7 @@ Please update your integration logic if it currently assumes that:
 
 ## Related Links
 - [getInvoice Documentation](../../invoice/get-invoice.md)
-- [getCreditNote Documentation](../../invoice/get-credit-note.md)]
+- [getCreditNote Documentation](../../invoice/get-credit-note.md)
 
 ## Need Help?
 If you have any questions or concerns regarding this API change please don't hesitate to reach out to our dedicated support team at support@ivvy.com.
