@@ -203,5 +203,6 @@
   * [Room Reservation Contact Changes](announcements/venue/room-reservation-contact-update.md)
   * [Contact Customfield Changes](announcements/contact/contact-customfield-update.md)
   * [Booking Accommodation API Changes](announcements/venue/booking-accommodation-room-options-update.md)
+  * [Invoice Endpoints Changes](announcements/invoice/invoice-api-changes.md)
 
 
