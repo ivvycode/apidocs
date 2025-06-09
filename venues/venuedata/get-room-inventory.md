@@ -6,11 +6,11 @@ Return the inventory and available count for the given date and optionally provi
 {% endswagger-description %}
 
 {% swagger-parameter name="venueId" type="integer" in="body" required="true" %}
-The unique id of the venue to which the resource belongs.
+The unique id of the venue to which the room belongs.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="startDate" type="string" in="body" required="true" %}
-The start date of the inventory. 
+The start date of the inventory.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="endDate" type="string" in="body" required="true" %}
