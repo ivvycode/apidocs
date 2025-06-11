@@ -62,7 +62,7 @@ The room ids to filter the inventory.
 
 # Date Range Restrictions
 
-- **startDate and endDate**: The maximum date range is 30 days. Past dates are not allowed.
+- **startDate and endDate**: The maximum date range is 31 days. Past dates are not allowed.
 
 # Returns
 
