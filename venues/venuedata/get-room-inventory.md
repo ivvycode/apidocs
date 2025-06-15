@@ -9,11 +9,11 @@ Return the inventory and available count for the given date and optionally provi
 The unique id of the venue to which the resource belongs.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startDate" type="string" in="body" required="true" %}
-The start date of the inventory. 
+{% swagger-parameter name="startDate" type="date" in="body" required="true" %}
+The start date of the inventory.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endDate" type="string" in="body" required="true" %}
+{% swagger-parameter name="endDate" type="date" in="body" required="true" %}
 The end date of the inventory.
 {% endswagger-parameter %}
 
@@ -70,7 +70,7 @@ A collection object with the following properties in result
 
 | Property        | Data Type | Description                              |
 |-----------------|-----------|------------------------------------------|
-| date            | string    | The date of the inventory                |
+| date            | date    | The date of the inventory                |
 | roomId          | integer   | The unique id of the room                |
 | inventoryCount  | integer   | The total rooms                          |
 | availableCount  | integer   | The total available rooms after bookings |
