@@ -13,11 +13,11 @@ The unique id of the venue to which the room belongs.
 The unique id of the rate plan.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startDate" type="string" in="body" required="true" %}
+{% swagger-parameter name="startDate" type="date" in="body" required="true" %}
 The start date of the rate.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endDate" type="string" in="body" required="true" %}
+{% swagger-parameter name="endDate" type="date" in="body" required="true" %}
 The end date of the rate.
 {% endswagger-parameter %}
 
@@ -104,7 +104,7 @@ A collection object with the following properties in result
 | Property           | Data Type | Description                                                 |
 |--------------------|-----------|-------------------------------------------------------------|
 | barId              | integer   | The unique id of the rate plan                              |
-| date               | string    | The date of the inventory                                   |
+| date               | date    | The date of the inventory                                   |
 | roomId             | integer   | The unique id of the room                                   |
 | minAcceptableRate  | float     | The minimum acceptable rate for the room on the given date  |
 | cost               | float     | The cost of the room for a given day for single occupancy   |
