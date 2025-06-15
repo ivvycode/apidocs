@@ -9,11 +9,11 @@ Return the rate plan booking rules for the given date and optionally room ids.
 The unique id of the venue to which the room belongs.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startDate" type="string" in="body" required="true" %}
+{% swagger-parameter name="startDate" type="date" in="body" required="true" %}
 The start date of the rate plan rule which it applies to.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endDate" type="string" in="body" required="true" %}
+{% swagger-parameter name="endDate" type="date" in="body" required="true" %}
 The end date of the rate plan rule which it applies to.
 {% endswagger-parameter %}
 
@@ -78,6 +78,6 @@ A collection object with the following properties in result
 | Property        | Data Type | Description                              |
 |-----------------|-----------|------------------------------------------|
 | barId           | string    | The unique id of the rate plan                |
-| date            | string    | The date of the rate plan rule which it applies to                |
+| date            | date    | The date of the rate plan rule which it applies to                |
 | roomId          | integer   | The unique id of the room                |
 | closeOutStatus  | integer   | The close out status of the rate plan rule on the given date                          |
