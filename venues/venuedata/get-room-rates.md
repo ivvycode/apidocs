@@ -39,7 +39,6 @@ The room ids to filter the rates.
             "barId": 63,
             "roomId": 122,
             "date": "2025-07-06",
-            "minAcceptableRate": null,
             "cost": null,
             "costDouble": null,
             "costTriple": null,
@@ -49,7 +48,6 @@ The room ids to filter the rates.
             "barId": 63,
             "roomId": 123,
             "date": "2025-07-06",
-            "minAcceptableRate": 100,
             "cost": 50,
             "costDouble": 60,
             "costTriple": 0,
@@ -59,7 +57,6 @@ The room ids to filter the rates.
             "barId": 63,
             "roomId": 122,
             "date": "2025-07-07",
-            "minAcceptableRate": null,
             "cost": null,
             "costDouble": null,
             "costTriple": null,
@@ -69,7 +66,6 @@ The room ids to filter the rates.
             "barId": 63,
             "roomId": 123,
             "date": "2025-07-07",
-            "minAcceptableRate": 200,
             "cost": 5,
             "costDouble": 6,
             "costTriple": 7,
@@ -106,7 +102,6 @@ A collection object with the following properties in result
 | barId              | integer   | The unique id of the rate plan                              |
 | date               | date    | The date of the inventory                                   |
 | roomId             | integer   | The unique id of the room                                   |
-| minAcceptableRate  | float     | The minimum acceptable rate for the room on the given date  |
 | cost               | float     | The cost of the room for a given day for single occupancy   |
 | costDouble         | float     | The cost of the room for a given day for two occupants      |
 | costTriple         | float     | The cost of the room for a given day for three occupants    |
