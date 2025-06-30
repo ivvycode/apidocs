@@ -25,6 +25,7 @@ The id of the venue
             "code": "venueccfd",
             "description": "Venue food cost center",
             "parentId": 321,
+            "parentDefaultType": 1,
         }
     ]
 }
@@ -43,6 +44,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | code        | The code of the cost center                             |
 | description | The complete description of the cost center             |
 | parentId    | The unique identifier of the parent account cost center |
+| parentDefaultType | The type of the parent account cost center. See [Type](../../account/get-cost-center-list.md#default-type) |
 
 ## Throws
 
