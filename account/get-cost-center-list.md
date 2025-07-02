@@ -57,7 +57,7 @@ Fetches the list of cost centers in the account. No request params required.
 | name | The name of the cost center |
 | code | The code of the cost center |
 | description | The complete description of the cost center |
-| defaultType | Set if one of the default cost centers |
+| defaultType | Set if one of the default cost centers. See [Default Type](get-cost-center-list.md#default-type)  |
 
 ## Throws
 
@@ -65,3 +65,15 @@ Fetches the list of cost centers in the account. No request params required.
 | :--- | :--- |
 | Specific Code: 24150 | Account does not exist |
 
+
+## Default Type
+
+| Type  | Description       |
+| ----- | ------------------|
+| 1     | Other             |
+| 2     | Food              |
+| 3     | Beverage          |
+| 4     | Audio Visual      |
+| 5     | Room Hire         |
+| 6     | Accommodation     |
+| 7     | Service Fees      |
