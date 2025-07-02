@@ -6,7 +6,7 @@ Return the inventory and available count for the given date and optionally provi
 {% endswagger-description %}
 
 {% swagger-parameter name="venueId" type="integer" in="body" required="true" %}
-The unique id of the venue to which the resource belongs.
+The unique id of the venue to which the room belongs.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="startDate" type="date" in="body" required="true" %}
@@ -62,7 +62,7 @@ The room ids to filter the inventory.
 
 # Date Range Restrictions
 
-- **startDate and endDate**: The maximum date range is 30 days. Past dates are not allowed.
+- **startDate and endDate**: The maximum date range is 31 days. Past dates are not allowed.
 
 # Returns
 

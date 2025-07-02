@@ -65,6 +65,8 @@
     * [Get Venue](venues/venuedata/get-venue.md)
     * [Get Venue List](venues/venuedata/get-venue-list.md)
     * [Get Venue Room List](venues/venuedata/get-venue-room-list.md)
+    * [Get Venue Room Rates](venues/venuedata/get-room-rates.md)
+    * [Get Venue Rate Plan Booking Rules](venues/venuedata/get-rate-plan-booking-rules.md)
     * [Get Venue Room Inventory](venues/venuedata/get-room-inventory.md)
     * [Get Venue Room Option List](venues/venuedata/get-venue-room-option-list.md)
     * [Get Venue Rate Plan List](venues/venuedata/get-venue-rate-plan-list.md)
@@ -159,6 +161,7 @@
   * [Add or Update Cost Center](account/add-or-update-cost-center.md)
   * [Get Cost Center List](account/get-cost-center-list.md)
   * [Get Email Log List](account/get-email-log-list.md)
+  * [Get Industry List](account/get-industry-list.md)
   * [Add Error Report](account/add-error-report.md)
   * [Get Account User List](account/get-user-list.md)
 * [CRM](crm/README.md)
@@ -203,5 +206,6 @@
   * [Room Reservation Contact Changes](announcements/venue/room-reservation-contact-update.md)
   * [Contact Customfield Changes](announcements/contact/contact-customfield-update.md)
   * [Booking Accommodation API Changes](announcements/venue/booking-accommodation-room-options-update.md)
+  * [Invoice Endpoints Changes](announcements/invoice/invoice-api-changes.md)
 
 
