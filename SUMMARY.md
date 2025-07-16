@@ -80,7 +80,7 @@
     * [Get Space Blockout List](venues/venuedata/get-space-blockout-list.md)
     * [Get Function Space Category List](venues/venuedata/get-function-space-category-list.md)
     * [Get Function Space Availability](venues/venuedata/get-function-space-availability.md)
-    * [Get Function Space Hire Plan Rate List](venues/venuedata/get-space-hire-plan-rate-list%20copy.md)
+    * [Get Function Space Hire Plan Rate List](<venues/venuedata/get-space-hire-plan-rate-list copy.md>)
     * [Get Function Space Hire Plan Rate](venues/venuedata/get-space-hire-plan-rate.md)
     * [Get Cost Center List](venues/venuedata/get-cost-center-list.md)
     * [Get Session Type List](venues/venuedata/get-session-type-list.md)
@@ -122,7 +122,7 @@
     * [Remove Booking Session Beverage](venues/getoraddbookingdata/remove-booking-session-beverage.md)
     * [Remove Booking Session Menu](venues/getoraddbookingdata/remove-booking-session-menu.md)
     * [Remove Booking Session Resource](venues/getoraddbookingdata/remove-booking-session-resource.md)
-    * [Get Space Blockout List](venues/venuedata//get-space-blockout-list.md)
+    * [Get Space Blockout List](venues/venuedata/get-space-blockout-list.md)
     * [Add or Update Blockout Space](venues/getoraddbookingdata/add-or-update-blockoutspace.md)
     * [Remove Blockout Space](venues/getoraddbookingdata/remove-blockoutspace.md)
     * [Get Booking Tax List](venues/getoraddbookingdata/get-booking-tax-list.md)
@@ -207,5 +207,3 @@
   * [Contact Customfield Changes](announcements/contact/contact-customfield-update.md)
   * [Booking Accommodation API Changes](announcements/venue/booking-accommodation-room-options-update.md)
   * [Invoice Endpoints Changes](announcements/invoice/invoice-api-changes.md)
-
-
