@@ -56,7 +56,7 @@ Optionally the list of space ids to which availability will be limited.
             "id": 6048,
             "name": "Music hall",
             "isAvailable": false,
-            "reason": null,
+            "reason": 3,
             "conflict": {
                 "venueId": 1,
                 "bookingId": 30167,
@@ -92,13 +92,21 @@ Optionally the list of space ids to which availability will be limited.
 
 ## Returns
 
-| Property    | Data Type | Description                                                            |
-| ----------- | --------- | ---------------------------------------------------------------------- |
-| id          | integer   | The id of space to which the time slots belong.                        |
-| name        | string    | The name of space                                                      |
-| isAvailable | boolean   | Whether the space is available                                         |
-| reason      | integer   | 1 - The reserviation is unavailable because the space has been blocked |
-| conflict    | object    | The conflict object                                                    |
+| Property    | Data Type | Description                                                                                                                  |
+| ----------- | --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| id          | integer   | The id of space to which the time slots belong.                                                                              |
+| name        | string    | The name of space                                                                                                            |
+| isAvailable | boolean   | Whether the space is available                                                                                               |
+| reason      | integer   | The [reason](get-available-function-spaces.md#conflict-reason) why the space is unavailable                                  |
+| conflict    | object    | The [conflict](get-available-function-spaces.md#conflict) object if there is a conflict with an existing booking reservation |
+
+## Conflict Reason
+
+| Value | Description                                                                                    |
+| ----- | ---------------------------------------------------------------------------------------------- |
+| 1     | The reservation is unavailable because the space has been blocked                              |
+| 2     | The reservation is unavailable because the max pax on space has been crossed                   |
+| 3     | The reservation is unavailable because there is a conflict with an exiting booking reservation |
 
 ## Conflict
 
@@ -111,10 +119,3 @@ Optionally the list of space ids to which availability will be limited.
 | startDate | string    | The start date of the conflict                                   |
 | endDate   | string    | The end date of the conflict                                     |
 | pax       | integer   | The number of attendees that the function space will be used for |
-
-## Conflict Reason
-
-| Value | Description                                                                  |
-| ----- | ---------------------------------------------------------------------------- |
-| 1     | The reservation is unavailable because the space has been blocked            |
-| 2     | The reservation is unavailable because the max pax on space has been crossed |
