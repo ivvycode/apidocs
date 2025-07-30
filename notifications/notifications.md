@@ -191,4 +191,5 @@ Here is the list of endpoints
 | crmEndpoint | [Click Here](crm-endpoint.md) |
 | paymentsEndpoint | [Click Here](payments-endpoint.md) |
 | venuesEndpoint | [Click Here](venues-endpoint.md) |
+| ariEndpoint | [Click Here](ari-endpoint.md) |
 | eventsEndpoint | [Click Here](events-endpoint.md) |

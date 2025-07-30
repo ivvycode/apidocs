@@ -191,6 +191,7 @@
   * [CRM Endpoint](notifications/crm-endpoint.md)
   * [Invoice Endpoint](notifications/payments-endpoint.md)
   * [Booking Endpoint](notifications/venues-endpoint.md)
+  * [ARI Endpoint](notifications/ari-endpoint.md)
   * [Event Endpoint](notifications/events-endpoint.md)
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
