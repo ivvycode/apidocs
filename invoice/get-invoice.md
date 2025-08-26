@@ -10,6 +10,7 @@ The invoice identifier
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
+
 ```
 {
     "id": 957114,
@@ -178,6 +179,7 @@ The invoice identifier
     ]
 }
 ```
+
 {% endswagger-response %}
 {% endswagger %}
 
@@ -230,24 +232,24 @@ A collection object with the following properties in the results
 
 ## Current status
 
-| # | Description       |
-| - | ----------------- |
-| 0 | Not Paid          |
-| 1 | Un-confirmed Paid |
-| 2 | Paid              |
-| 3 | Written Off       |
-| 4 | Cancelled         |
-| 5 | Refunded          |
+| #   | Description       |
+| --- | ----------------- |
+| 0   | Not Paid          |
+| 1   | Un-confirmed Paid |
+| 2   | Paid              |
+| 3   | Written Off       |
+| 4   | Cancelled         |
+| 5   | Refunded          |
 
 ## Reference type
 
-| # | Description        |
-| - | ------------------ |
-| 0 | Custom             |
-| 1 | Event Registration |
-| 2 | Membership Sign Up |
-| 3 | Membership Renewal |
-| 4 | Venue Booking      |
+| #   | Description        |
+| --- | ------------------ |
+| 0   | Custom             |
+| 1   | Event Registration |
+| 2   | Membership Sign Up |
+| 3   | Membership Renewal |
+| 4   | Venue Booking      |
 
 ## Refund Details
 
@@ -325,6 +327,7 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 | 509     | Product                                                         |
 | 510     | Accommodation                                                   |
 | 511     | Additional Line                                                 |
+| 513     | Service Fee                                                     |
 
 ## Payment Details
 
