@@ -80,6 +80,7 @@
     * [Get Space Blockout List](venues/venuedata/get-space-blockout-list.md)
     * [Get Function Space Category List](venues/venuedata/get-function-space-category-list.md)
     * [Get Function Space Availability](venues/venuedata/get-function-space-availability.md)
+    * [Get Available Function Spaces](venues/venuedata/get-available-function-spaces.md)
     * [Get Function Space Hire Plan Rate List](<venues/venuedata/get-space-hire-plan-rate-list copy.md>)
     * [Get Function Space Hire Plan Rate](venues/venuedata/get-space-hire-plan-rate.md)
     * [Get Cost Center List](venues/venuedata/get-cost-center-list.md)
