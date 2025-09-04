@@ -1,4 +1,4 @@
-# Get Booking Document List
+# Get Booking Document Version List
 
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingDocumentList" method="post" summary="Get Booking Document List" %}
 {% swagger-description %}
@@ -17,6 +17,10 @@ The unique ID of the booking whose documents are to be retrieved.
 Whether to fetch only generated documents.
 {% endswagger-parameter %}
 
+{% swagger-parameter name="documentNumber" type="integer" in="body" required=false %}
+The document number of the booking document(s) to be retrieved.
+{% endswagger-parameter %}
+
 {% swagger-parameter name="start" type="integer" in="body" %}
 The starting index for pagination (zero-based).
 {% endswagger-parameter %}
@@ -30,25 +34,25 @@ The number of documents to retrieve per page.
 ```javascript
 {
     "meta": {
-        "totalResults": 3,
+        "totalResults": 2,
         "start": 0,
         "perPage": 100,
-        "count": 3
+        "count": 2
     },
     "results": [
         {
             "id": 3426,
             "venueId": 1,
             "bookingId": 22363,
-            "type": 4,
-            "documentNumber": null,
-            "version": null,
+            "type": 3,
+            "documentNumber": 20,
+            "version": 1,
             "file": {
                 "url": "https://someurl/with/expiry",
                 "urlExpiry": "2025-05-06 04:10:54 UTC",
                 "filename": "25/12/2024 - Test - Peppers Soul Surfers Paradise Tax Exclusive - Accom Extra.pdf"
             },
-            "templateName": "Accom Extra",
+            "templateName": null,
             "status": 4,
             "createdDate": "2025-04-09 02:34:21 UTC",
             "modifiedDate": "2025-04-09 02:38:36 UTC"
@@ -58,31 +62,18 @@ The number of documents to retrieve per page.
             "venueId": 1,
             "bookingId": 22363,
             "type": 4,
-            "documentNumber": null,
-            "version": null,
+            "documentNumber": 20,
+            "version": 2,
             "file": {
                 "url": "https://someurl/with/expiry2",
                 "urlExpiry": "2025-05-06 04:10:54 UTC",
                 "filename": "25/12/2024 - eashik - Peppers Soul Surfers Paradise Tax Exclusive - Accom Extra.pdf"
             },
-            "templateName": "Accom Extra",
+            "templateName": null,
             "status": 4,
             "createdDate": "2025-04-09 02:50:39 UTC",
             "modifiedDate": "2025-04-09 02:57:45 UTC"
-        },
-        {
-            "id": 3450,
-            "venueId": 1,
-            "bookingId": 22363,
-            "type": 4,
-            "documentNumber": null,
-            "version": null,
-            "file": null,
-            "templateName": "Accom Extra",
-            "status": 4,
-            "createdDate": "2025-04-09 03:09:25 UTC",
-            "modifiedDate": "2025-04-09 03:09:25 UTC"
-        },
+        }
     ]
 }
 ```
@@ -95,8 +86,9 @@ The number of documents to retrieve per page.
 ```javascript
 {
   "venueId": 1,
-  "bookingId": 3426,
-  "onlyGenerated": true
+  "bookingId": 22363,
+  "onlyGenerated": true,
+  "documentNumber": 20
 }
 ```
 
