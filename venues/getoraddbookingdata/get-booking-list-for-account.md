@@ -1,15 +1,19 @@
 # Get Booking List For Account
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingListForAccount" method="post" summary="Get Booking List for Account" %}
-{% swagger-description %}
+## Get Booking List for Account
+
+<mark style="color:green;">`POST`</mark> `[PlatformAddress]/api/1.0/venue?action=getBookingListForAccount`
+
 A collection of bookings for the account that the user has access (as opposed to bookings for a single venue in an account for get Bookings List)
-{% endswagger-description %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
-The number of bookings to get in a single call
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-response status="200" description="" %}
+| Name    | Type    | Description                                    |
+| ------- | ------- | ---------------------------------------------- |
+| perPage | integer | The number of bookings to get in a single call |
+
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
   "meta": {
@@ -22,6 +26,7 @@ The number of bookings to get in a single call
     {
       "id": 1,
       "venueId": 1,
+      "leadId": 2,
       "code": "HR5ZASGMQ1",
       "name": "Some Booking",
       "eventType": "Holiday",
@@ -47,6 +52,7 @@ The number of bookings to get in a single call
       "venueTimezone": "Australia/Brisbane",
       "createdDate": "2015-01-07 09:21:53 UTC",
       "modifiedDate": "2016-04-06 07:51:56 UTC",
+      "bookingType": 1,
       "dateEventStart": "2015-06-01 00:00:00 UTC",
       "dateEventEnd": "2015-06-04 00:00:00 UTC",
       "convertedToTentative": "2016-02-23 00:00:00 UTC",
@@ -74,8 +80,8 @@ The number of bookings to get in a single call
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties. The per page value is required, for example {"perPage":10}
 

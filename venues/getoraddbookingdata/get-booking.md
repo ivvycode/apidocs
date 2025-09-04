@@ -66,6 +66,31 @@ The id of the booking
   "accommChargingMethod": 2,
   "accommGuaranteeRequired": false,
   "accommExternalBlockId": "test 123",
+  "hasCommissions": true,
+  "hasCommissionPaid": false,
+  "agentCompanyId": 854,
+  "agentCompany": {
+      "id": 854,
+      "businessName": "ivvy"
+  },
+  "agentContactId": 11026,
+  "agentContact": {
+      "id": 11026,
+      "firstName": "Amit",
+      "lastName": "Kalani",
+      "email": "amit.kalani@gmail.com",
+      "phone": "+61481342930"
+  },
+  "commissionAccommodationType": 1,
+  "commissionAccommodation": 5,
+  "commissionSpaceType": 1,
+  "commissionSpace": 100,
+  "commissionFoodType": 2,
+  "commissionFood": 10,
+  "commissionBeverageType": 1,
+  "commissionBeverage": 5,
+  "commissionAudioVisualType": 2,
+  "commissionAudioVisual": 50,
   "dailyRevenue": [
     {
       "venueId": 1,
@@ -862,6 +887,22 @@ The result from this call will be the details of a specific booking to which the
 | accommChargingMethod    | enum ([Charging Method](get-booking.md#get-booking.md#charging-method))          | A record of the Charging Method for Documents, Note that values will still need to be altered in the Block.                                                 |
 | accommGuaranteeRequired | boolean                                                                          | Indicates whether the customer is required to guarantee their reservation with a credit card.                                                               |
 | accommExternalBlockId   | string                                                                           | The Block ID from an external PMS.                                                                                                                          |
+| hasCommissions           | boolean   | Whether or not the booking has commissions                                                                                 |
+| hasCommissionPaid        | boolean   | The commission has been paid for the Booking                                                                              |
+| agentCompanyId           | integer   | The id of the revenue template applied to the booking                                                                     |
+| agentCompany             | [Company](get-booking.md#company) | The details of the agent company assigned to the booking                                                                  |
+| agentContactId           | integer   | The id of the revenue template applied to the booking                                                                     |
+| agentContact             | [Contact](get-booking.md#contact) | The details of the agent contact assigned to the booking                                                                  |
+| commissionAccommodationType      | integer   | The [Commission Type](get-booking.md#commission-type) for accommodation                                                                                    |
+| commissionAccommodation  | double    | The amount of commission for accommodation                                                                              |
+| commissionSpaceType      | integer   | The [Commission Type](get-booking.md#commission-type) for space                                                                                    |
+| commissionSpace          | double    | The amount of commission for space                                                                                        |
+| commissionFoodType       | integer   | The [Commission Type](get-booking.md#commission-type) for food                                                                                     |
+| commissionFood           | double    | The amount of commission for food                                                                                         |
+| commissionBeverageType   | integer   | The [Commission Type](get-booking.md#commission-type) for beverage                                                                                 |
+| commissionBeverage       | double    | The amount of commission for beverage                                                                                     |
+| commissionAudioVisualType| integer   | The [Commission Type](get-booking.md#commission-type) for audio visual                                                                             |
+| commissionAudioVisual    | double    | The amount of commission for audio visual                                                                                 |
 | dailyRevenue            | Array of [DailyRevenue](get-booking.md#daily-revenue)                            | The daily revenue data of booking                                                                                                                           |
 | packages                | Array of [Package](get-booking.md#package)                                       | The list of packages of the booking                                                                                                                         |
 | sessions                | Array of [Session](get-booking.md#session)                                       | The list of sessions of booking                                                                                                                             |
@@ -1290,3 +1331,12 @@ An External URL field is an object with the following details.
 | ref      | string | The unique reference key of the external URL                                                                                                             |
 | url      | string | The url link (https) scheme eg. https://example.com                                                                                                      |
 | label    | string | The label of the URL to display.                                                                                                                         |
+
+## Commission Type
+
+One of the following values:
+
+| # | Description    |
+| - | -------------- |
+| 1 | Fixed          |
+| 2 | Percentage     |

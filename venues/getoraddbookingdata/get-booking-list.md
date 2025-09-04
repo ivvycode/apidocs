@@ -1,19 +1,20 @@
 # Get Booking List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingList" method="post" summary="Get Booking List" %}
-{% swagger-description %}
+## Get Booking List
+
+<mark style="color:green;">`POST`</mark> `[PlatformAddress]/api/1.0/venue?action=getBookingList`
+
 Get a list of bookings.
-{% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
-The id of the venue
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
-The number of bookings to get in a single call
-{% endswagger-parameter %}
+| Name    | Type    | Description                                    |
+| ------- | ------- | ---------------------------------------------- |
+| venueId | integer | The id of the venue                            |
+| perPage | integer | The number of bookings to get in a single call |
 
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
   "meta": {
@@ -26,6 +27,7 @@ The number of bookings to get in a single call
     {
       "id": 1,
       "venueId": 1,
+      "leadId": 2,
       "code": "HR5ZASGMQ1",
       "name": "Some Booking",
       "eventType": "Holiday",
@@ -52,6 +54,7 @@ The number of bookings to get in a single call
       "createdDate": "2015-01-07 09:21:53 UTC",
       "modifiedDate": "2016-04-06 07:51:56 UTC",
       "lastModifiedDate": "2016-04-08 07:50:00 UTC",
+      "bookingType": 1,
       "dateEventStart": "2015-06-01 00:00:00 UTC",
       "dateEventEnd": "2015-06-04 00:00:00 UTC",
       "convertedToTentative": "2016-02-23 00:00:00 UTC",
@@ -79,8 +82,8 @@ The number of bookings to get in a single call
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
