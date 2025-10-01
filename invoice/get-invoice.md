@@ -296,6 +296,8 @@ A collection object with the following properties in the results
 | ref2Id       | The reference type of the item                                                                                                                                                             |
 | costCenters  | The total cost and total tax cost by cost center                                                                                                                                           |
 | taxes        | The taxes applied to the item. Some information in the tax item might be empty if information is not available. ie. for old invoices. See Item Taxes Details for the data in each tax item |
+| discount     | The discount of the item, if any.                                                                                                                                                          |
+
 
 ## Item Taxes Details
 
