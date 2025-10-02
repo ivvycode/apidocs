@@ -319,7 +319,7 @@ A collection object with the following properties in the results
 | adjustmentValue     | discount/surchage value e.g. 10%                           |
 | adjustmentValueType | The type of adjustment value; 1 for percentage 2 for fixed |
 | amount              | Calculated discount/surchage amount e.g. $10               |
-| description         | Discription of the adjustment eg. Flat $100 Off            |
+| description         | Description of the adjustment eg. Flat $100 Off            |
 
 ## Item Ref Type
 
