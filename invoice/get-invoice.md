@@ -298,7 +298,7 @@ A collection object with the following properties in the results
 | taxes        | The taxes applied to the item. Some information in the tax item might be empty if information is not available. ie. for old invoices. See Item Taxes Details for the data in each tax item |
 | adjustments  | List of [adjustments](get-invoice.md#item-adjustments) of the item, if any.                                                                                                                |
 
-## Item Adjustments
+## Item Taxes Details
 
 | Property          | Description                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -309,17 +309,24 @@ A collection object with the following properties in the results
 | taxRateAmountType | The tax rate amount type: 1 = A percentage, 2 = An amount                                                            |
 | costcenterId      | The identifier of the cost center to which the tax applies                                                           |
 
-## Item Taxes Details
+## Item Adjustments
 
-| Property            | Description                                                |
-| ------------------- | ---------------------------------------------------------- |
-| adjustmentType      | 1 for discount 2 for surcharge                             |
-| adjustmentTypeId    | id of a discount/surcharge                                 |
-| costcenterId        | The id of the cost-center                                  |
-| adjustmentValue     | discount/surchage value e.g. 10%                           |
-| adjustmentValueType | The type of adjustment value; 1 for percentage 2 for fixed |
-| amount              | Calculated discount/surchage amount e.g. $10               |
-| description         | Description of the adjustment eg. Flat $100 Off            |
+| Property            | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| adjustmentType      | The [adjustment type](get-invoice.md#adjustment-type) of the item |
+| adjustmentTypeId    | id of a discount/surcharge                                        |
+| costcenterId        | The id of the cost-center                                         |
+| adjustmentValue     | discount/surchage value e.g. 10%                                  |
+| adjustmentValueType | The type of adjustment value; 1 for percentage 2 for fixed        |
+| amount              | Calculated discount/surchage amount e.g. $10                      |
+| description         | Description of the adjustment eg. Flat $100 Off                   |
+
+## Adjustment Type
+
+| adjustmentType | Description |
+| -------------- | ----------- |
+| 1              | Discount    |
+| 2              | Surcharge   |
 
 ## Item Ref Type
 
