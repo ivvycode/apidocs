@@ -317,7 +317,7 @@ A collection object with the following properties in the results
 | adjustmentTypeId    | id of a discount/surcharge                                        |
 | costcenterId        | The id of the cost-center                                         |
 | adjustmentValue     | discount/surchage value e.g. 10%                                  |
-| adjustmentValueType | The type of adjustment value; 1 for percentage 2 for fixed        |
+| adjustmentValueType | The [adjustment value type](get-invoice.md#adjustment-value-type) |
 | amount              | Calculated discount/surchage amount e.g. $10                      |
 | description         | Description of the adjustment eg. Flat $100 Off                   |
 
@@ -327,6 +327,13 @@ A collection object with the following properties in the results
 | -------------- | ----------- |
 | 1              | Discount    |
 | 2              | Surcharge   |
+
+## Adjustment Value Type
+
+| adjustmentType | Description |
+| -------------- | ----------- |
+| 1              | Fixed       |
+| 2              | Percentage  |
 
 ## Item Ref Type
 
