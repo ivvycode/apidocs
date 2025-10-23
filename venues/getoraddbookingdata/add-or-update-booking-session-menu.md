@@ -74,8 +74,10 @@ Something unexpected occurred whilst processing the request. The booking should 
 | menuId | integer | optional | The unique id of the menu which is being added to the booking session |
 | name | string | optional | The booking session menu name. Required when adding a new booking session menu. |
 | minAttendeesGuaranteed | integer | optional | The total attendees of the booking session menu. Required when adding new booking session menu. |
+| sameAsSessionAttendees | boolean | optional | Whether to set the attendees based on the booking session. When True, minAttendeesGuaranteed field will not be updated. |
 | startTime | string | optional | The start time of the booking session menu. Format is HH:mm:ss |
 | endTime | string | optional | The end time of the booking session menu. Format is HH:mm:ss |
+| sameAsSessionTime | boolean | optional | Whether to set the startTime and endTime based on the booking session. When true, the startTime and endTime fields will not be updated. |
 | includeInPackage | boolean | optional | Whether or not the booking session is included in booking package. |
 | bookingPackageId | integer | optional | The unique id of the booking package to which the booking session menu belongs. Required when includeInPackage is true |
 | costcenterId | integer | optional | The unique id of the cost center to which the booking session menu belongs. Required when adding new booking session menu |
