@@ -345,6 +345,8 @@ The id of the booking
       "id": 6437,
       "name": null,
       "sessionId": 13185,
+      "resourceVenueId": 2,
+      "resourceId": 537,
       "cost": 5,
       "discount": 5,
       "excludedTaxIds": [],
@@ -377,6 +379,7 @@ The id of the booking
       "id": 5305,
       "name": null,
       "sessionId": 13185,
+      "productId": 535,
       "cost": 100,
       "discount": 5,
       "excludedTaxIds": [],
@@ -908,7 +911,7 @@ The result from this call will be the details of a specific booking to which the
 | sessions                | Array of [Session](get-booking.md#session)                                       | The list of sessions of booking                                                                                                                             |
 | menus                   | Array of [Menu](get-booking.md#menu)                                             | The list of menus of the booking                                                                                                                            |
 | beveragePackages        | Array of [Beverage Package](get-booking.md#beverage-package)                     | The list of beverage packages of the booking                                                                                                                |
-| resources               | Array of [Resource](get-booking.md#menu)                                         | The list of resources of the booking                                                                                                                        |
+| resources               | Array of [Resource](get-booking.md#resource)                                         | The list of resources of the booking                                                                                                                        |
 | products                | Array of [Product](get-booking.md#product)                                       | The list of products of the booking                                                                                                                         |
 | additionalItems         | Array of [Additional Item](get-booking.md#additional-item)                       | The list of additional items of the booking                                                                                                                 |
 | serviceFees             | Array of [Service Fees](get-booking.md#service-fee)                              | The list of service fee applied to different items of the booking                                                                                           |
@@ -1130,6 +1133,8 @@ One of the following values:
 | id               | integer                                                      | The unique identifier of the resource                             |
 | name             | string                                                       | The name of the resource                                          |
 | sessionId        | integer                                                      | The session identifier to which this resource belongs             |
+| resourceVenueId  | integer                                                      | The venue identifier to which the resource belongs. This can be different than booking's venue id             |
+| resourceId       | integer                                                      | The reference resource identifier in venue resources             |
 | cost             | double                                                       | The cost of the resource                                          |
 | discount         | double                                                       | The amount of the discount on cost                                |
 | surcharge        | double                                                       | The amount of the surcharge on cost                               |
@@ -1157,6 +1162,7 @@ One of the following values:
 | id               | integer                                                      | The unique identifier of the product                             |
 | name             | string                                                       | The name of the product                                          |
 | sessionId        | integer                                                      | The session identifier to which this product belongs             |
+| productId        | integer                                                      | The reference product identifier in venue products               |
 | cost             | double                                                       | The cost of the product                                          |
 | discount         | double                                                       | The amount of the discount on cost                               |
 | surcharge        | double                                                       | The amount of the surcharge on cost                              |
