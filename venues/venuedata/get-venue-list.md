@@ -32,6 +32,7 @@ Get a list of venues.
       "hashId": "1efda3e35a75aabd13e8996037d35a79",
       "businessName": "iVvy Conference Centre",
       "businessNumber": 1231235,
+      "venueIdentifier": "Identifier",
       "phone": "1300 004 889",
       "fax": "",
       "websiteAddress": "www.ivvy.com",
@@ -123,6 +124,7 @@ Get a list of venues.
 | hashId        | string  | The unique hash identifier for the venue.                                              |
 | businessName  | string  | The name of the venue.                                                                 |
 | businessNumber| integer | The business number of the venue.                                                      |
+| venueIdentifier| string  | Available within reports and API to complement Venue Name.                            |
 | phone         | string  | The phone number of the venue.                                                         |
 | fax           | string  | The fax number of the venue.                                                           |
 | websiteAddress| string  | The website address of the venue.                                                      |
