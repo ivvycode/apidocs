@@ -16,6 +16,7 @@ The venue Id
     "hashId": "925a1e841805031a06e4586828257520",
     "businessName": "Peppers Soul Surfers Paradise Tax Exclusive",
     "businessNumber": "",
+    "venueIdentifier": "Identifier",
     "phone": "0123456789",
     "fax": "",
     "websiteAddress": "",
@@ -287,6 +288,7 @@ The venue Id
 | hashId        | string  | The unique hash identifier for the venue.                                              |
 | businessName  | string  | The name of the venue.                                                                 |
 | businessNumber| string  | The business number of the venue.                                                      |
+| venueIdentifier| string  | Available within reports and API to complement Venue Name.                            |
 | phone         | string  | The contact phone number of the venue.                                                 |
 | fax           | string  | The fax number of the venue.                                                           |
 | websiteAddress| string  | The website address of the venue.                                                      |
