@@ -210,3 +210,4 @@
   * [Contact Customfield Changes](announcements/contact/contact-customfield-update.md)
   * [Booking Accommodation API Changes](announcements/venue/booking-accommodation-room-options-update.md)
   * [Invoice Endpoints Changes](announcements/invoice/invoice-api-changes.md)
+  * [Contact and Company Endpoints Changes](announcements/contact/contact-and-company-endpoints-changes.md)
