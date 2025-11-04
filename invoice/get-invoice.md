@@ -99,6 +99,10 @@ The invoice identifier
         {
             "description": "Deposit payment for Christmas Party",
             "quantity": 1,
+            "serviceDate": {
+                "start": "2025-08-22",
+                "end": "2025-08-22"
+            }
             "unitCost": 230,
             "totalCost": 230,
             "totalTaxCost": 20.91,
@@ -287,6 +291,7 @@ A collection object with the following properties in the results
 | id           | The identifier of the item                                                                                                                                                                 |
 | description  | The description of the item                                                                                                                                                                |
 | quantity     | Quantity of the item                                                                                                                                                                       |
+| serviceDate  | [Service date](get-invoice.md#item-service-date) of the item                                                                                                                                                                   |
 | unitCost     | The unit cost of the item                                                                                                                                                                  |
 | totalCost    | The total cost of the item                                                                                                                                                                 |
 | totalTaxCost | The tax of the item                                                                                                                                                                        |
@@ -320,6 +325,12 @@ A collection object with the following properties in the results
 | adjustmentValueType | The [adjustment value type](get-invoice.md#adjustment-value-type) |
 | amount              | Calculated discount/surchage amount e.g. $10                      |
 | description         | Description of the adjustment eg. Flat $100 Off                   |
+
+## Item Service Date
+| Property            | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| start               | The start date of the service date                                |
+| end                 | The end date of the service date                                  |
 
 ## Adjustment Type
 
