@@ -233,6 +233,7 @@ A collection object with the following properties in the results
 | payments       | List of payments of the invoice Payment Details                                                                                                       |
 | refunds        | List of refunds of the invoice [Refund Details](get-invoice.md#refund-details)                                                                        |
 | venueExTaxes   | List of [taxes](get-invoice.md#item-taxes-details) which are not included in item's total. These taxes are included in the total cost of the invoice. |
+| additionalData   | [Additional data](get-invoice.md#additional-data)) related to invoice based on refType |
 
 ## Current status
 
@@ -291,8 +292,10 @@ A collection object with the following properties in the results
 | id           | The identifier of the item                                                                                                                                                                 |
 | description  | The description of the item                                                                                                                                                                |
 | quantity     | Quantity of the item                                                                                                                                                                       |
+| quantityUnit     | [Quantity unit](get-invoice.md#item-quantity-unit) of the item                                                                                                                                                  |
 | serviceDate  | [Service date](get-invoice.md#item-service-date) of the item                                                                                                                                                                   |
 | unitCost     | The unit cost of the item                                                                                                                                                                  |
+| unitCostExTax     | The unit cost excluding tax of the item                                                                                                                                                                  |
 | totalCost    | The total cost of the item                                                                                                                                                                 |
 | totalTaxCost | The tax of the item                                                                                                                                                                        |
 | amountPaid   | The amount paid of the item'                                                                                                                                                               |
@@ -331,6 +334,13 @@ A collection object with the following properties in the results
 | ------------------- | ----------------------------------------------------------------- |
 | start               | The start date of the service date                                |
 | end                 | The end date of the service date                                  |
+
+
+## Item Quantity unit
+
+| adjustmentType | Description |
+| -------------- | ----------- |
+| 1              | Number      |
 
 ## Adjustment Type
 
@@ -385,6 +395,22 @@ Used to categorise the line based on the type of item sold. Note: This isn't lin
 | cardType              | The type of card used for a credit card payment                                       |
 
 `Note about fee: If the payment is applied to multiple invoices, the fee amount is applied to the first invoice only.`
+
+## Additional Data
+
+| Property                | Description                                                                                      |
+| ----------------------- | ------------------------------------------------------------------------------------------------ |
+| purchaseOrderReference  | Purchase order reference of a booking invoice (present if `refType` is booking)                  |
+| taxes                   | [Taxes](get-invoice.md#taxes) applied to a booking invoice (present if `refType` is booking)     |
+
+
+## Taxes
+
+| Property | Description         |
+| -------- | ------------------- |
+| id       | The unique tax ID   |
+| name     | The name of the tax |
+
 
 ## Throws
 
