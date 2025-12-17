@@ -924,7 +924,7 @@ The result from this call will be the details of a specific booking to which the
 | hasCommissionPaid       | boolean                                                                          | The commission has been paid for the booking                                                                                                                |
 | agent                   | Array of [Agent](get-booking.md#agent)                                           | The details of the agent in the booking                                                                                                                     |
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking                                                                                                        |
-| bookingType             | enum ([Booking Types](get-booking.md#get-booking.md#booking-types))              | The type of Booking selected for the Booking                                                                                                                |
+| bookingType             | enum ([Booking Types](get-booking.md#booking-types))              | The type of Booking selected for the Booking                                                                                                                |
 | opportunityId           | integer                                                                          | The id of the Opportunity for the Booking                                                                                                                   |
 | hasCateringWebsite | boolean | Whether or not the catering website is enabled for the booking |
 | cateringWebsiteLogoId | string | The catering website logo for the booking |
@@ -1268,9 +1268,9 @@ One of the following values:
 
 | # | Description        |
 | - | ------------------ |
-| 1 | Simple             |
-| 2 | Detailed           |
-| 3 | Accommodation Only |
+| 3 | Simple             |
+| 1 | Detailed           |
+| 4 | Accommodation Only |
 
 ## Food Beverage Payable By
 
