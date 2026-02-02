@@ -36,6 +36,12 @@ Return the event type list for the account.
             "isViewable": true,
             "createdDate": "2017-12-18 09:48:05 UTC",
             "modifiedDate": "2017-12-18 09:48:05 UTC"
+            "subTypes": [
+                {
+                    "id": 1,
+                    "name": "Christmas Eve"
+                }
+            ]
         },
         {
             "id": 2,
@@ -46,6 +52,7 @@ Return the event type list for the account.
             "isViewable": true,
             "createdDate": "2017-12-18 09:48:05 UTC",
             "modifiedDate": "2017-12-18 09:48:05 UTC"
+            "subTypes": []
         }
     ]
 }
@@ -72,7 +79,7 @@ Return the event type list for the account.
 
 | Property | Description |
 | :--- | :--- |
-| id | The unique invoice identifier |
+| id | The unique event type identifier |
 | name | The name of the event type |
 | description | The description of the event type |
 | marketplaceEventType | The Venue Marketplace event type to associate with the event type. See [Marketplace Event Types](get-event-type-list.md.md#marketplace-event-types) |
@@ -80,6 +87,7 @@ Return the event type list for the account.
 | isViewable | Whether or not the event type  is viewable on marketplace |
 | createdDate | The date & time the event type  was created |
 | modifiedDate | The date & time the event type  was last modified |
+| subTypes | Array of [Event Sub Type](get-event-type-list.md#event-sub-type) |
 
 ## Marketplace Event Types
 
@@ -99,3 +107,9 @@ Return the event type list for the account.
 | 10 | Wedding |
 | 1 | Other |
 
+## Event Sub Type
+
+| Property | Description |
+| :--- | :--- |
+| id | The unique event sub type identifier |
+| name | The name of the event sub type |

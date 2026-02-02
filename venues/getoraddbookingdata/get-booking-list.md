@@ -31,6 +31,8 @@ Get a list of bookings.
       "code": "HR5ZASGMQ1",
       "name": "Some Booking",
       "eventType": "Holiday",
+      "eventTypeId": 3,
+      "eventSubTypeId": 5,
       "companyId": 4,
       "company": {
         "id": 4,
