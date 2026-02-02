@@ -49,6 +49,7 @@ A json object that represents the opportunity to add or update. See below for th
 | sourceId | integer | optional | The unique id of source \(Required when the ID parameter is missing\) |
 | ownerUserId | integer | optional | The id of the sales person user assigned to the opportunity. The privileges of the user assigned to the api key may prevent this from being changed. |
 | typeId | integer | optional | The unique id of type \(Required when id is missing\). |
+| subtypeId | integer | optional | The unique id of the opportunity sub type \(Required when type have sub types\). |
 | stageId | integer | optional | The unique id of stage. |
 | stageReasonId | integer | optional | The unique stage reason id of opportunity. |
 | channelId | integer | optional | The unique id of channel. |
@@ -114,6 +115,7 @@ If _contact_ and _company_ are present in request then it will link given contac
     "updateIfExists" : true
   },
   "typeId": "18",
+  "subtypeId": "2",
   "sourceId": "25",
   "stageId": "69",
   "industryId": "77",
