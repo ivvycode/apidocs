@@ -24,6 +24,7 @@ The id of the booking
   "name": "Ava Donovan",
   "eventType": "Holiday",
   "eventTypeId": 2,
+  "eventSubTypeId": 3,
   "companyId": null,
   "company": null,
   "contactId": null,
@@ -852,6 +853,7 @@ The result from this call will be the details of a specific booking to which the
 | name                    | string                                                                           | The name of the booking                                                                                                                                     |
 | eventType               | string                                                                           | The event type of the booking                                                                                                                               |
 | eventTypeId             | integer                                                                          | The event type id of the booking                                                                                                                            |
+| eventSubTypeId          | integer                                                                       | The event sub type id of the booking                                                                                                                            |
 | companyId               | integer                                                                          | The unique id of the company assigned to the booking                                                                                                        |
 | company                 | [Company](get-booking.md#company)                                                | The details of the company assigned to the booking                                                                                                          |
 | contactId               | integer                                                                          | The unique id of the contact assigned to the booking                                                                                                        |
