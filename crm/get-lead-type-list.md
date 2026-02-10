@@ -30,6 +30,17 @@ Get a list of lead types.
         {
             "id": 1,
             "type": "Reseller",
+            "subtypes": [
+                {
+                    "id": 1,
+                    "name": "Reseller - subtypes"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "type": "Professional",
+            "subtypes": []
         }
     ]
 }

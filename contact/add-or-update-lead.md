@@ -53,6 +53,10 @@ The id of the sales person user assigned to the lead. The privileges of the user
 The type of lead (Required when id parameter is missing)
 {% endswagger-parameter %}
 
+{% swagger-parameter name="subtypeId" type="integer" in="path" %}
+The sub type of lead (Required when type have sub types)
+{% endswagger-parameter %}
+
 {% swagger-parameter name="stageId" type="integer" in="path" %}
 The stage of lead (Required when id parameter is missing)
 {% endswagger-parameter %}

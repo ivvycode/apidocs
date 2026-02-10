@@ -54,6 +54,7 @@ Get a list of lead.
             "adminStatusChangedDate": "2019-04-12 11:11:00 UTC",
             "typeId": 3,
             "type": "Reseller",
+            "subtypeId: 1,
             "sourceId": 13,
             "sourceName": "Newspaper",
             "channelId": 8,
