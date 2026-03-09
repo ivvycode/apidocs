@@ -119,6 +119,20 @@ Whether or not to include booking details belongs to the session
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
+# Note
+
+`sfExcludedTaxIds` is an array when it is empty otherwise it is an object. See the below example.
+
+```json
+"sfExcludedTaxIds": {
+    "6146": [
+        6064
+    ]
+},
+```
+
+6146 is service fee id and 6064 is excluded tax id
+
 ## Example Request
 
 `Get a specific venue’s Booking Session List`
