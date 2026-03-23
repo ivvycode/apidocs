@@ -5,7 +5,7 @@
 Return the venue function spaces list for the venue.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 

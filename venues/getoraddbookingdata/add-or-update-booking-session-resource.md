@@ -7,63 +7,63 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the booking session resource belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The unique id of the booking to which the session resource belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="sessionId" type="integer" in="path" %}
+{% swagger-parameter name="sessionId" type="integer" in="body" %}
 The unique id of the booking session to which the resource belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="resourceId" type="integer" in="path" %}
+{% swagger-parameter name="resourceId" type="integer" in="body" %}
 The unique id of the session resource to which the booking session resource belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="quantity" type="integer" in="path" %}
+{% swagger-parameter name="quantity" type="integer" in="body" %}
 The quantity of the session resource (Required when the ID parameter is missing)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startTime" type="time" in="path" %}
+{% swagger-parameter name="startTime" type="time" in="body" %}
 The startTime of the session resource (Required when the ID parameter is missing)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endTime" type="time" in="path" %}
+{% swagger-parameter name="endTime" type="time" in="body" %}
 The endTime of the session resource (Required when the ID parameter is missing)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="includeInPackage" type="boolean" in="path" %}
+{% swagger-parameter name="includeInPackage" type="boolean" in="body" %}
 Whether or not the booking session resource is included in booking package (Required when the ID parameter is missing)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingPackageId" type="integer" in="path" %}
+{% swagger-parameter name="bookingPackageId" type="integer" in="body" %}
 The booking package identifier if the booking session resource is included in package (Required when includeInPackage=1)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="costCenterId" type="integer" in="path" %}
+{% swagger-parameter name="costCenterId" type="integer" in="body" %}
 The cost center identifier to which the booking session resource's revenue applies (Required when includeInPackage=0)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="cost" type="double" in="path" %}
+{% swagger-parameter name="cost" type="double" in="body" %}
 The cost of the booking session resource (Required when includeInPackage=0)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="costType" type="integer" in="path" %}
+{% swagger-parameter name="costType" type="integer" in="body" %}
 The cost type of the booking session resource Cost Type (Required when includeInPackage=0)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="excludedTaxIds" type="array" in="path" %}
+{% swagger-parameter name="excludedTaxIds" type="array" in="body" %}
 The excluded tax identifiers of the booking session resource (Only used when includeInPackage=0)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="hasCommissions" type="boolean" in="path" %}
+{% swagger-parameter name="hasCommissions" type="boolean" in="body" %}
 The booking session resource pay comissions to an agent
 {% endswagger-parameter %}
 
-{% swagger-parameter name="id" type="integer" in="path" %}
+{% swagger-parameter name="id" type="integer" in="body" %}
 The unique id of the booking session resource (Leave empty if adding a new booking session resource)
 {% endswagger-parameter %}
 

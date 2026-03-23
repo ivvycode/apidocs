@@ -5,15 +5,15 @@
 Add one or more items to a booking.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the booking belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The unique id of the booking to which the additional items will be added
 {% endswagger-parameter %}
 
-{% swagger-parameter name="items" type="object" in="path" %}
+{% swagger-parameter name="items" type="object" in="body" %}
 Array of multiple items with additional item details
 {% endswagger-parameter %}
 

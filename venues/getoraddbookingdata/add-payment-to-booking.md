@@ -5,15 +5,15 @@
 Add a payment to a booking. This will also generate an invoice to apply the payment to.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the booking belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The unique id of the booking to which the payment will be added
 {% endswagger-parameter %}
 
-{% swagger-parameter name="payment" type="object" in="path" %}
+{% swagger-parameter name="payment" type="object" in="body" %}
 The payment details to add to the booking
 {% endswagger-parameter %}
 

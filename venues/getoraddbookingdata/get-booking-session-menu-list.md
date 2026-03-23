@@ -6,31 +6,31 @@ Get a list of booking session menus.
 {% endswagger-description %}
 
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the bookings belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The unique id of the booking to which the session belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="sessionId" type="integer" in="path" %}
+{% swagger-parameter name="sessionId" type="integer" in="body" %}
 The unique id of the session to which the menu belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="orderBy" type="string" in="request" %}
+{% swagger-parameter name="orderBy" type="string" in="body" %}
 Order the response by column
 {% endswagger-parameter %}
 
-{% swagger-parameter name="orderDir" type="string" in="spec" %}
+{% swagger-parameter name="orderDir" type="string" in="body" %}
 Order direction the reponse by column
 {% endswagger-parameter %}
 
-{% swagger-parameter name="start" type="integer" in="path" %}
+{% swagger-parameter name="start" type="integer" in="body" %}
 The starting result of the page. Note this is zero based (i.e. sending start=0 will start from the first result.)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of bookings session to get in a single call
 {% endswagger-parameter %}
 

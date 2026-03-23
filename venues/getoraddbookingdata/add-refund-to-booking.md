@@ -5,15 +5,15 @@
 Add a refund to a booking using this api.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the booking belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The unique id of the booking to which the refund will be added
 {% endswagger-parameter %}
 
-{% swagger-parameter name="refund" type="object" in="path" %}
+{% swagger-parameter name="refund" type="object" in="body" %}
 The payment details to add to the booking
 {% endswagger-parameter %}
 

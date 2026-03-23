@@ -5,11 +5,11 @@
 Get the list of a booking attendees to which the user has access.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The id of the booking
 {% endswagger-parameter %}
 
@@ -17,7 +17,7 @@ The id of the booking
 Sort Results: Support Parameter 'name'
 {% endswagger-parameter %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of attendees to get in a single call
 {% endswagger-parameter %}
 

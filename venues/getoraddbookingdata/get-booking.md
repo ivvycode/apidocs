@@ -11,7 +11,7 @@ description: >-
 Get the details of a specific booking to which the user has access.
 {% endswagger-description %}
 
-{% swagger-parameter name="id" type="integer" in="path" %}
+{% swagger-parameter name="id" type="integer" in="body" %}
 The id of the booking
 {% endswagger-parameter %}
 
