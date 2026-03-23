@@ -5,7 +5,7 @@
 Get the details to a specific venue to which the user has access
 {% endswagger-description %}
 
-{% swagger-parameter name="id" type="integer" in="path" %}
+{% swagger-parameter name="id" type="integer" in="body" %}
 The venue Id
 {% endswagger-parameter %}
 

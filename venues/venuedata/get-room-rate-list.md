@@ -5,19 +5,19 @@
 Get a list of rate plan room rates.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" required=true in="path" %}
+{% swagger-parameter name="venueId" type="integer" required=true in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="barId" type="integer" required=true in="path" %}
+{% swagger-parameter name="barId" type="integer" required=true in="body" %}
 The id of the rate plan
 {% endswagger-parameter %}
 
-{% swagger-parameter name="barRateId" type="integer" required=true in="path" %}
+{% swagger-parameter name="barRateId" type="integer" required=true in="body" %}
 The id of the rate plan rate
 {% endswagger-parameter %}
 
-{% swagger-parameter name="roomId" type="integer" required=false in="path" %}
+{% swagger-parameter name="roomId" type="integer" required=false in="body" %}
 The id of the room
 {% endswagger-parameter %}
 

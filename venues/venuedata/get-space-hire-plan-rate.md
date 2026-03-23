@@ -5,15 +5,15 @@
 Return the detailed space rates for the specific space hire plan.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="tariffId" type="integer" in="path" %}
+{% swagger-parameter name="tariffId" type="integer" in="body" %}
 The id of the space hire plan
 {% endswagger-parameter %}
 
-{% swagger-parameter name="tariffRateId" type="integer" in="path" %}
+{% swagger-parameter name="tariffRateId" type="integer" in="body" %}
 The id of the space hire plan rate
 {% endswagger-parameter %}
 

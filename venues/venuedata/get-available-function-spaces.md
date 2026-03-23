@@ -6,31 +6,31 @@ Returns the availability of function spaces in a specific venue based on some fi
 
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startDatetime" type="timestamp" in="path" %}
+{% swagger-parameter name="startDatetime" type="timestamp" in="body" %}
 The start date and time of the activity. Format is Y-m-d H:i:s
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endDatetime" type="timestamp" in="path" %}
+{% swagger-parameter name="endDatetime" type="timestamp" in="body" %}
 The end date and time of the activity. Format is Y-m-d H:i:s. The date and time range that of availability that can be fetched is 24 hours.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="eventType" type="integer" in="path" %}
+{% swagger-parameter name="eventType" type="integer" in="body" %}
 The event type id applied to the function space
 {% endswagger-parameter %}
 
-{% swagger-parameter name="pax" type="integer" in="path" %}
+{% swagger-parameter name="pax" type="integer" in="body" %}
 The number of attendees that the function space will be used for
 {% endswagger-parameter %}
 
-{% swagger-parameter name="layoutType" type="integer" in="path" %}
+{% swagger-parameter name="layoutType" type="integer" in="body" %}
 The layout type of the function space
 {% endswagger-parameter %}
 
-{% swagger-parameter name="spaceIds" type="array" in="path" %}
+{% swagger-parameter name="spaceIds" type="array" in="body" %}
 Optionally the list of space ids to which availability will be limited.
 {% endswagger-parameter %}
 

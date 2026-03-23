@@ -5,11 +5,11 @@
 Add or Update the booking rules of venue rate plans
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the rate plan belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="items" type="array" in="path" %}
+{% swagger-parameter name="items" type="array" in="body" %}
 The array of items. See Item table below for individual item data.
 {% endswagger-parameter %}
 

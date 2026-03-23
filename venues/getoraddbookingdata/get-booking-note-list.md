@@ -5,15 +5,15 @@
 Get a list of booking notes.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The id of the bookng
 {% endswagger-parameter %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of booking notes to get in a single call
 {% endswagger-parameter %}
 

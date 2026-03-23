@@ -5,19 +5,19 @@
 Returns the availability of function spaces in a specific venue.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startDate" type="date" in="path" %}
+{% swagger-parameter name="startDate" type="date" in="body" %}
 The date from which the availability data will be fetched. Format YYY-MM-DD
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endDate" type="date" in="path" %}
+{% swagger-parameter name="endDate" type="date" in="body" %}
 The date to which the availability data will be fetched. Format YYY-MM-DD. The maximum number of days of available that can be fetched is 14.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="spaceIds" type="array" in="path" %}
+{% swagger-parameter name="spaceIds" type="array" in="body" %}
 Optionally the list of space ids to which availability will be limited.
 {% endswagger-parameter %}
 

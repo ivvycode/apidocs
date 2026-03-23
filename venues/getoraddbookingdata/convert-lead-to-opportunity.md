@@ -5,15 +5,15 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter name="leadId" type="integer" in="path" %}
+{% swagger-parameter name="leadId" type="integer" in="body" %}
 The unique identifier of lead
 {% endswagger-parameter %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique venue id of opportunity
 {% endswagger-parameter %}
 
-{% swagger-parameter name="stageId" type="integer" in="path" %}
+{% swagger-parameter name="stageId" type="integer" in="body" %}
 The stage of opportunity
 {% endswagger-parameter %}
 

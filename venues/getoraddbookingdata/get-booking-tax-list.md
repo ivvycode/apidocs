@@ -5,15 +5,15 @@
 Return the tax list for the venue booking.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The id of the venue booking
 {% endswagger-parameter %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of booking taxes to get in a single call
 {% endswagger-parameter %}
 

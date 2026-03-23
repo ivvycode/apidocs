@@ -5,15 +5,15 @@
 Get a list of menus.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="barId" type="integer" in="path" %}
+{% swagger-parameter name="barId" type="integer" in="body" %}
 The id of the rate plan
 {% endswagger-parameter %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of rate plan rates to get in a single call
 {% endswagger-parameter %}
 

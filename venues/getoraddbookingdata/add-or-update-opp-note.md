@@ -5,19 +5,19 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter name="id" type="integer" in="path" %}
+{% swagger-parameter name="id" type="integer" in="body" %}
 The unique id of the note
 {% endswagger-parameter %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the note belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="leadId" type="integer" in="path" %}
+{% swagger-parameter name="leadId" type="integer" in="body" %}
 The unique id of the lead to which the note belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="note" type="string" in="path" %}
+{% swagger-parameter name="note" type="string" in="body" %}
 The description of the note.
 {% endswagger-parameter %}
 

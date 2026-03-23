@@ -5,23 +5,23 @@
 Remove one or more dynamic rates from venue rooms.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the rate plan belongs
 {% endswagger-parameter %}
 
-{% swagger-parameter name="barId" type="integer" in="path" %}
+{% swagger-parameter name="barId" type="integer" in="body" %}
 The unique id of the rate plan to which the dynamic rate applies
 {% endswagger-parameter %}
 
-{% swagger-parameter name="roomId" type="integer" in="path" %}
+{% swagger-parameter name="roomId" type="integer" in="body" %}
 The unique id of the room to which the rate applies
 {% endswagger-parameter %}
 
-{% swagger-parameter name="startDate" type="string" in="path" %}
+{% swagger-parameter name="startDate" type="string" in="body" %}
 The start date from which the dynamic rate will be removed (Date Format)
 {% endswagger-parameter %}
 
-{% swagger-parameter name="endDate" type="string" in="path" %}
+{% swagger-parameter name="endDate" type="string" in="body" %}
 The end date until which the dynamic rate will be removed (Date Format)
 {% endswagger-parameter %}
 

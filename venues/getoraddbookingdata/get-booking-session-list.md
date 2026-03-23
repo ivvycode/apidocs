@@ -1,6 +1,6 @@
 # Get Booking Session List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" summary="Get Booking Session List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" summary="" %}
 {% swagger-description %}
 Get a list of booking sessions.
 {% endswagger-description %}
@@ -29,8 +29,7 @@ asc|desc
 Whether or not to include booking details belongs to the session
 {% endswagger-parameter %}
 
-{% endswagger %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     "meta": {
@@ -112,6 +111,8 @@ Whether or not to include booking details belongs to the session
     ]
 }
 ```
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 

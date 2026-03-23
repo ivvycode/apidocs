@@ -5,15 +5,15 @@
 Get the details of a specific booking attendee to which the user has access.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The id of the booking
 {% endswagger-parameter %}
 
-{% swagger-parameter name="hash" type="string" in="path" %}
+{% swagger-parameter name="hash" type="string" in="body" %}
 The hash of the booking attendee
 {% endswagger-parameter %}
 
