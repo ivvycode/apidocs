@@ -1,17 +1,15 @@
 # Get Booking List For Account
 
-<mark style="color:green;">`POST`</mark> `[PlatformAddress]/api/1.0/venue?action=getBookingListForAccount`
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingListForAccount" method="post" summary="" %}
+{% swagger-description %}
 A collection of bookings for the account that the user has access (as opposed to bookings for a single venue in an account for get Bookings List)
+{% endswagger-description %}
 
-#### Path Parameters
+{% swagger-parameter name="perPage" type="integer" in="body" %}
+The number of bookings to get in a single call
+{% endswagger-parameter %}
 
-| Name    | Type    | Description                                    |
-| ------- | ------- | ---------------------------------------------- |
-| perPage | integer | The number of bookings to get in a single call |
-
-{% tabs %}
-{% tab title="200 " %}
+{% swagger-response status="200" description="" %}
 ```
 {
   "meta": {
@@ -80,8 +78,8 @@ A collection of bookings for the account that the user has access (as opposed to
   ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties. The per page value is required, for example {"perPage":10}
 

@@ -1,18 +1,19 @@
 # Get Booking List
 
-<mark style="color:green;">`POST`</mark> `[PlatformAddress]/api/1.0/venue?action=getBookingList`
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingList" method="post" summary="" %}
+{% swagger-description %}
 Get a list of bookings.
+{% endswagger-description %}
 
-#### Path Parameters
+{% swagger-parameter name="venueId" type="integer" in="body" %}
+The id of the venue
+{% endswagger-parameter %}
 
-| Name    | Type    | Description                                    |
-| ------- | ------- | ---------------------------------------------- |
-| venueId | integer | The id of the venue                            |
-| perPage | integer | The number of bookings to get in a single call |
+{% swagger-parameter name="perPage" type="integer" in="body" %}
+The number of bookings to get in a single call
+{% endswagger-parameter %}
 
-{% tabs %}
-{% tab title="200 " %}
+{% swagger-response status="200" description="" %}
 ```
 {
   "meta": {
@@ -82,8 +83,8 @@ Get a list of bookings.
   ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endswagger-response %}
+{% endswagger %}
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
