@@ -5,34 +5,30 @@
 Get a list of booking sessions.
 {% endswagger-description %}
 
-{% swagger-parameter name="venueId" type="integer" in="path" %}
+{% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}
 
-{% swagger-parameter name="bookingId" type="integer" in="path" %}
+{% swagger-parameter name="bookingId" type="integer" in="body" %}
 The id of the booking
 {% endswagger-parameter %}
 
-{% swagger-parameter name="perPage" type="integer" in="path" %}
+{% swagger-parameter name="perPage" type="integer" in="body" %}
 The number of bookings to get in a single call
 {% endswagger-parameter %}
 
-{% swagger-parameter name="orderBy" type="string" in="request" %}
-Order the reponse by column
+{% swagger-parameter name="orderBy" type="string" in="body" %}
+Order the response by column
 {% endswagger-parameter %}
 
-{% swagger-parameter name="orderDir" type="string" in="spec" %}
+{% swagger-parameter name="orderDir" type="string" in="body" %}
 asc|desc
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="includeBookingDetails" type="boolean" required=false %}
+{% swagger-parameter name="includeBookingDetails" type="boolean" in="body" required=false %}
 Whether or not to include booking details belongs to the session
 {% endswagger-parameter %}
 
-{% endapi-method-path-parameters %}
-
-{% endapi-method-request %}
-{% endswagger-parameter %}
 {% endswagger %}
 
 ```
@@ -150,5 +146,5 @@ The result from this call will be a [collection](../../getting-started/interpret
 | ------------------ | ------------------------------------------------------------------------------ | -------- |
 | priceMethod        | The price method of the projected spend revenue. 1 = Per Person, 2 = Flat rate | integer  |
 | costcenterId       | Filter by unique id of contact                                                 | integer  |
-| total              | The total amount of the projected spend revenue for the cost center| double    | double   |
+| total              | The total amount of the projected spend revenue for the cost center            | double   |
 | amount             | The amount of the projected spend revenue for the cost center                  | double   |
