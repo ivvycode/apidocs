@@ -1,5 +1,3 @@
-# Get Booking Session List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" summary="" %}
 {% swagger-description %}
 Get a list of booking sessions.
