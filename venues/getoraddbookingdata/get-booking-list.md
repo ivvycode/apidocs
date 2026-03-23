@@ -1,7 +1,5 @@
 # Get Booking List
 
-## Get Booking List
-
 <mark style="color:green;">`POST`</mark> `[PlatformAddress]/api/1.0/venue?action=getBookingList`
 
 Get a list of bookings.

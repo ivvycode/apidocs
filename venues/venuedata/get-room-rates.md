@@ -77,7 +77,7 @@ The room ids to filter the rates.
 ```
 {% endswagger-response %}
 
-# Example Request
+## Example Request
 ```json
 {
     "venueId": 447,
@@ -89,11 +89,11 @@ The room ids to filter the rates.
 ```
 {% endswagger %}
 
-# Date Range Restrictions
+## Date Range Restrictions
 
 - **startDate and endDate**: The maximum date range is 31 days. Past dates are not allowed.
 
-# Returns
+## Returns
 
 A collection object with the following properties in result
 
