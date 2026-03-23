@@ -1,7 +1,5 @@
 # Get Booking List For Account
 
-## Get Booking List for Account
-
 <mark style="color:green;">`POST`</mark> `[PlatformAddress]/api/1.0/venue?action=getBookingListForAccount`
 
 A collection of bookings for the account that the user has access (as opposed to bookings for a single venue in an account for get Bookings List)
