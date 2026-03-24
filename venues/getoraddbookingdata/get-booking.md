@@ -4,9 +4,7 @@ description: >-
   resources, products and serviceFees are not published yet.
 ---
 
-# Get Booking
-
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBooking" method="post" summary="Get Booking" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBooking" method="post" summary="" %}
 {% swagger-description %}
 Get the details of a specific booking to which the user has access.
 {% endswagger-description %}
