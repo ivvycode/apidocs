@@ -1,5 +1,3 @@
-# Get Booking Attendee List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingAttendeeList" method="post" summary="Get Booking Atttendee List" %}
 {% swagger-description %}
 Get the list of a booking attendees to which the user has access.

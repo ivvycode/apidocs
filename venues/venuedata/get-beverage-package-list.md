@@ -1,5 +1,3 @@
-# Get Beverage Package List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBeveragePackageList" method="post" summary="Get Beverage Package List" %}
 {% swagger-description %}
 Get a list of Beverage Packages.

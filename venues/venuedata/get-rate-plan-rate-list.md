@@ -1,5 +1,3 @@
-# Get Venue Rate Plan Rate List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRatePlanRateList" method="post" summary="Get Venue Rate Plan Rate List" %}
 {% swagger-description %}
 Get a list of menus.

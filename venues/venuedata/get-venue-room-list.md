@@ -1,5 +1,3 @@
-# Get Venue Room List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getVenueRoomList" method="post" summary="Get Venue Room List" %}
 {% swagger-description %}
 

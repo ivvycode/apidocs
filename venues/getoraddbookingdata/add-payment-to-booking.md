@@ -1,5 +1,3 @@
-# Add Payment To Booking
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addPaymentToBooking" method="post" summary="Add Payment To Booking" %}
 {% swagger-description %}
 Add a payment to a booking. This will also generate an invoice to apply the payment to.

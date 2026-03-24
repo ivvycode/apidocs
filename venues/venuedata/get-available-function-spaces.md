@@ -1,5 +1,3 @@
-# Get Available Function Spaces
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getAvailableFunctionSpaces" method="post" summary="Get Venue Function Space Availability" %}
 {% swagger-description %}
 Returns the availability of function spaces in a specific venue based on some filtering criteria. This API is different to [Get Function Space Availability](get-function-space-availability.md) in that besides allowing extra filtering, it returns the availability of function spaces for a maximum date-time range of 24 hours only. Availability timeslots are not returned.

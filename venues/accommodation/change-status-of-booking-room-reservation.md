@@ -1,5 +1,3 @@
-# Change Status of Booking Room Reservation
-
 {% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="venue?action=changeStatusOfBookingRoomReservation" method="post" summary="Change Status of Booking Room Reservation" %}
 {% swagger-description %}
 Change the status of a specific room reservation on a venue booking.

@@ -1,5 +1,3 @@
-# Add or Update Note
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateOpportunityNote" method="post" summary="Add or Update Note which belongs opportunity" %}
 {% swagger-description %}
 

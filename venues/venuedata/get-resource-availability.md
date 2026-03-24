@@ -1,5 +1,3 @@
-# Get Resource Availability
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getResourceAvailability" method="post" summary="Get Resource Availability" %}
 {% swagger-description %}
 Return the availability for resources.

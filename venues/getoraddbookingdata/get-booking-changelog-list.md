@@ -1,5 +1,3 @@
-# Get Booking Changelog List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingChangelogList" method="post" summary="Get Booking Changelog List" %}
 {% swagger-description %}
 Get the list of a booking changelogs to which the user has access.

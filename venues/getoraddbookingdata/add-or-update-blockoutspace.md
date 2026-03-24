@@ -1,5 +1,3 @@
-# Add or Update Blockout Space
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateSpaceBlockout" %}
 {% api-method-summary %}
 Add or Update Space Blockout
