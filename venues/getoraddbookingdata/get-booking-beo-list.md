@@ -1,7 +1,7 @@
 
 ## Get Booking BEO List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingBeoList" method="post" summary="Get Booking BEO List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingBeoList" method="post" %}
 {% swagger-description %}
 Retrieve a list of Banquet Event Orders (BEO) associated with a specific booking.
 {% endswagger-description %}

@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=confirmBookingRoomReservation" method="post" summary="Confirm Booking Room Reservation" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=confirmBookingRoomReservation" method="post" %}
 {% swagger-description %}
 Confirm a room reservation on a booking.
 {% endswagger-description %}

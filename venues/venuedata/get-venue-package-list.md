@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenuePackageList" method="post" summary="Get Venue Package (Event Template) List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenuePackageList" method="post" %}
 {% swagger-description %}
 Provides the list of packages (Event Templates)
 {% endswagger-description %}

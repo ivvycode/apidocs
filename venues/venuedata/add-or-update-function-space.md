@@ -1,8 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateFunctionSpace" method="post" summary="Add or Update Function Space" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateFunctionSpace" method="post" %}
 {% swagger-parameter name="id" type="integer" in="body" %}
 The unique id of the function space to update (Leave empty if adding a new space )
 {% endswagger-parameter %}

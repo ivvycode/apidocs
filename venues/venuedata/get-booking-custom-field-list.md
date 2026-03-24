@@ -1,7 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getBookingCustomFieldList" %}
-{% api-method-summary %}
-Get Booking Custom Field List
-{% endapi-method-summary %}
 
 {% api-method-description %}
 Return the booking custom fields (definition) list.

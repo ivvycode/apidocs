@@ -1,7 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=updateBookingRoomReservationGuestContact" %}
-{% api-method-summary %}
-Update Room Reservation Guest Contact
-{% endapi-method-summary %}
 
 {% api-method-description %}
 Updates the details of a venue booking room reservetion guest contact. It will only allow api callers to update a guest contact details. The only way new guests can be created is with addOrUpdateBookingRoomReservation API. NOTE: The venue must have access to update venue guest in order to call this api action.

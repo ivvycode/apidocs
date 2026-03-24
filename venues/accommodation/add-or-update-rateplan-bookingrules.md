@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateRatePlanBookingRulesCollection" method="post" summary="Add or Update Rate Plan Booking Rules" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateRatePlanBookingRulesCollection" method="post" %}
 {% swagger-description %}
 Add or Update the booking rules of venue rate plans
 {% endswagger-description %}

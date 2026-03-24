@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRoomRateList" method="post" summary="Get Rate Plan Room Rate List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRoomRateList" method="post" %}
 {% swagger-description %}
 Get a list of rate plan room rates.
 {% endswagger-description %}

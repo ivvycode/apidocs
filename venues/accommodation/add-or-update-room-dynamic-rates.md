@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateRoomDynamicRatesCollection" method="post" summary="Add or Update Room Dynamics Rates" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateRoomDynamicRatesCollection" method="post" %}
 {% swagger-description %}
 Add or update the dynamic rates of venue rooms
 {% endswagger-description %}

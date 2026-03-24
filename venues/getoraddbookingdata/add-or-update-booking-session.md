@@ -1,8 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateBookingSession" %}
-{% api-method-summary %}
-Add or Update Booking Session
-{% endapi-method-summary %}
-
 {% api-method-description %}
 Adds or updates the details of a venue booking session. NOTE: The venue must have access to add or update booking session in order to call this api action.
 {% endapi-method-description %}

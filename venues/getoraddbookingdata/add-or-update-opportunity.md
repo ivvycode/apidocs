@@ -1,12 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateOpportunity" %}
-{% api-method-summary %}
-Add or Update Opportunity
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
 {% api-method-spec %}
 {% api-method-request %}
 A json object that represents the opportunity to add or update. See below for the data description.

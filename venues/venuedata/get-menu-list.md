@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getMenuList" method="post" summary="Get Menu List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getMenuList" method="post" %}
 {% swagger-description %}
 Get a list of menus.
 {% endswagger-description %}

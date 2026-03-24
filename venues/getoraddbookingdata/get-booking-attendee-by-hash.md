@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingAttendeeByHash" method="post" summary="Get Booking ATttendee (By Hash)" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingAttendeeByHash" method="post" %}
 {% swagger-description %}
 Get the details of a specific booking attendee to which the user has access.
 {% endswagger-description %}

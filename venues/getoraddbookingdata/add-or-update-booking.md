@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateBooking" method="post" summary="Add or Update Booking" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateBooking" method="post" %}
 {% swagger-description %}
 Adds or updates the details of a venue booking. NOTE: The venue must have access to
 

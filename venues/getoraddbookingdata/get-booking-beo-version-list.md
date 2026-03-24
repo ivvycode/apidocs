@@ -1,7 +1,7 @@
 
 ## Get Booking BEO Version List
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingBeoVersionList" method="post" summary="Get Booking BEO Version List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingBeoVersionList" method="post" %}
 {% swagger-description %}
 Retrieve a list of all versions of Banquet Event Orders (BEO) associated with a specific booking.
 {% endswagger-description %}
