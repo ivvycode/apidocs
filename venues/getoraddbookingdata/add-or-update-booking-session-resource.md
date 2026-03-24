@@ -1,8 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateBookingSessionResource" method="post" summary="Add or Update Booking Session Resource" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateBookingSessionResource" method="post" %}
 {% swagger-parameter name="venueId" type="integer" in="body" %}
 The unique id of the venue to which the booking session resource belongs
 {% endswagger-parameter %}

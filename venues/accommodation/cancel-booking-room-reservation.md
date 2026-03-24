@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="venue?action=cancelBookingRoomReservation" method="post" summary="Cancel Booking Room Reservation" %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="venue?action=cancelBookingRoomReservation" method="post" %}
 {% swagger-description %}
 Cancel a room reservation on a booking. Only reservations that are "not confirmed" can be cancelled.
 {% endswagger-description %}

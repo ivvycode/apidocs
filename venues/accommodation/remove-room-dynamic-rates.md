@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeRoomDynamicRates" method="post" summary="Remove Room Dynamic Rates" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeRoomDynamicRates" method="post" %}
 {% swagger-description %}
 Remove one or more dynamic rates from venue rooms.
 {% endswagger-description %}

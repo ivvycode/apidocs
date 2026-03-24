@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRatePlanBookingRules" method="post" summary="Get Rate Plan Booking Rules" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRatePlanBookingRules" method="post" %}
 {% swagger-description %}
 Return the rate plan booking rules for the given date and optionally room ids.
 {% endswagger-description %}

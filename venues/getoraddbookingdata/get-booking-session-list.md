@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" summary="" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" %}
 {% swagger-description %}
 Get a list of booking sessions.
 {% endswagger-description %}

@@ -1,7 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getEventTypeList" %}
-{% api-method-summary %}
-Get Venue Event Types List
-{% endapi-method-summary %}
 
 {% api-method-description %}
 Return the event type list for the account.

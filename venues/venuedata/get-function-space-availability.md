@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getFunctionSpaceAvailability" method="post" summary="Get Venue Function Space Availability" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getFunctionSpaceAvailability" method="post" %}
 {% swagger-description %}
 Returns the availability of function spaces in a specific venue.
 {% endswagger-description %}

@@ -1,12 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateSpaceBlockout" %}
-{% api-method-summary %}
-Add or Update Space Blockout
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
 {% api-method-spec %}
 {% api-method-request %}
 

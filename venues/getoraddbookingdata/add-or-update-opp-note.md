@@ -1,8 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateOpportunityNote" method="post" summary="Add or Update Note which belongs opportunity" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateOpportunityNote" method="post" %}
 {% swagger-parameter name="id" type="integer" in="body" %}
 The unique id of the note
 {% endswagger-parameter %}

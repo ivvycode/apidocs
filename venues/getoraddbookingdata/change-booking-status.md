@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="venue?action=changeBookingStatus" method="post" summary="Change Booking Status" %}
+{% swagger baseUrl="[PlatformAddress]" path="/api/1.0/" path="venue?action=changeBookingStatus" method="post" %}
 {% swagger-description %}
 Changes the current status of a venue booking.
 {% endswagger-description %}

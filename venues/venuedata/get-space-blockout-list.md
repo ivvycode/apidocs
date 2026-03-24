@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getSpaceBlockoutList" method="post" summary="Get Venue Space Blockout List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getSpaceBlockoutList" method="post" %}
 {% swagger-description %}
 Return the venue space blockout list for the venue.
 {% endswagger-description %}

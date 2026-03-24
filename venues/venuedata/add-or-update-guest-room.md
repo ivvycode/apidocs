@@ -1,8 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateGuestRoom" method="post" summary="Add or Update Guest Room" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateGuestRoom" method="post" %}
 {% swagger-parameter name="id" type="integer" in="body" %}
 The unique id of the guest room
 {% endswagger-parameter %}

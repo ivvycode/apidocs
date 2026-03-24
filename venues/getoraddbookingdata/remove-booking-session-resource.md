@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeBookingSessionResource" method="post" summary="Remove a booking session resource" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeBookingSessionResource" method="post" %}
 {% swagger-description %}
 Remove a booking session resource from the booking session
 {% endswagger-description %}

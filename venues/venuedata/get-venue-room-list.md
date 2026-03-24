@@ -1,8 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getVenueRoomList" method="post" summary="Get Venue Room List" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getVenueRoomList" method="post" %}
 {% swagger-parameter name="venueId" type="integer" in="body" %}
 The id of the venue
 {% endswagger-parameter %}

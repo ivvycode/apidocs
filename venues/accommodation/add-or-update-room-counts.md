@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateRoomCountsCollection" method="post" summary="Add or Update Room Counts" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateRoomCountsCollection" method="post" %}
 {% swagger-description %}
 Add or update the dynamic inventory counts of venue rooms
 {% endswagger-description %}

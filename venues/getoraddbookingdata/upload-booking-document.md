@@ -1,8 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=uploadBookingDocument" %}
-{% api-method-summary %}
-Upload Booking Document
-{% endapi-method-summary %}
-
 {% api-method-description %}
 Uploads a venue booking document.
 {% endapi-method-description %}

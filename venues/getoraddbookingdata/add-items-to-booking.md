@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addItemsToBooking" method="post" summary="Add Items to Booking" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addItemsToBooking" method="post" %}
 {% swagger-description %}
 Add one or more items to a booking.
 {% endswagger-description %}

@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getSessionTypeList" method="post" summary="Get Session Type List" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getSessionTypeList" method="post" %}
 {% swagger-description %}
 Return the venue session type list for the account.
 {% endswagger-description %}

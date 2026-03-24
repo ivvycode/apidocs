@@ -1,8 +1,4 @@
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=removeBookingSession" %}
-{% api-method-summary %}
-Remove Booking Session
-{% endapi-method-summary %}
-
 {% api-method-description %}
 Remove booking session from booking session
 {% endapi-method-description %}
