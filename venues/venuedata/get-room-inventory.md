@@ -1,5 +1,3 @@
-# Get Room Inventory
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRoomInventory" method="post" summary="Get Room Inventory" %}
 {% swagger-description %}
 Return the inventory and available count for the given date and optionally provided room ids.

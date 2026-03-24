@@ -1,5 +1,3 @@
-# Get Venue Package Details
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/venue?action=getVenuePackage" method="post" summary="Return the all details of the package including its items" %}
 {% swagger-description %}
 Provides all the details of the venue package including Sessions and its items ie. Menus, Beverages, Resources, Products, Setup Requirements and Setup Requirement Options

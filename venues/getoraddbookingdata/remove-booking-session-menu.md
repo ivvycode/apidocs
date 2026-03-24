@@ -1,5 +1,3 @@
-# Remove Booking Session Menu
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeBookingSessionMenu" method="post" summary="Remove Booking Session Menu" %}
 {% swagger-description %}
 Remove booking session menu from booking session

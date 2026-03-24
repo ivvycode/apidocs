@@ -1,5 +1,3 @@
-# Add Refund To Booking
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addRefundToBooking" method="post" summary="Add Refund to Booking" %}
 {% swagger-description %}
 Add a refund to a booking using this api.

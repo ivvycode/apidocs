@@ -1,5 +1,3 @@
-# Upload Booking Document
-
 {% api-method method="post" host="\[PlatformAddress\]" path="/api/1.0/venue?action=uploadBookingDocument" %}
 {% api-method-summary %}
 Upload Booking Document

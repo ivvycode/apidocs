@@ -1,5 +1,3 @@
-# Add or Update Booking Package
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateBookingPackage" %}
 {% api-method-summary %}
 Add or Update Booking Package

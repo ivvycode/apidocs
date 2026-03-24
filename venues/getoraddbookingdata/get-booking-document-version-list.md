@@ -1,5 +1,3 @@
-# Get Booking Document Version List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingDocumentList" method="post" summary="Get Booking Document List" %}
 {% swagger-description %}
 Retrieve a list of documents associated with a specific booking.

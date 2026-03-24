@@ -1,5 +1,3 @@
-# Get Space Hire Plan Rate
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getSpaceHirePlanRate" method="post" summary="Get Space Hire Plan Rate" %}
 {% swagger-description %}
 Return the detailed space rates for the specific space hire plan.

@@ -1,5 +1,3 @@
-# Add or Update Function Space Category
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateFunctionSpaceCategory" %}
 {% api-method-summary %}
 Add or Update Venue Space Category

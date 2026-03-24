@@ -1,5 +1,3 @@
-# Remove Booking Room Reservation
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=removeBookingRoomReservation" method="post" summary="Remove Booking Room Reservation" %}
 {% swagger-description %}
 Remove a room reservation from a specific booking. The booking must satisfy the following:

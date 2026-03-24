@@ -1,5 +1,3 @@
-# Add or Update Guest Room
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=addOrUpdateGuestRoom" method="post" summary="Add or Update Guest Room" %}
 {% swagger-description %}
 

@@ -1,5 +1,3 @@
-# Update Room Reservation Guest Contact
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=updateBookingRoomReservationGuestContact" %}
 {% api-method-summary %}
 Update Room Reservation Guest Contact

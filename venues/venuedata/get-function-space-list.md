@@ -1,5 +1,3 @@
-# Get Function Space List
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getFunctionSpaceList" method="post" summary="Get Venue Function Space List" %}
 {% swagger-description %}
 Return the venue function spaces list for the venue.

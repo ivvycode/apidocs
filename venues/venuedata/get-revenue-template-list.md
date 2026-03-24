@@ -1,5 +1,3 @@
-# Get Revenue Template List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getRevenueTemplateList" %}
 {% api-method-summary %}
 Get Venue Revenue Template List

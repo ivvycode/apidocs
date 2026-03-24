@@ -1,5 +1,3 @@
-# Add or Update Booking Attendee
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateBookingAttendee" %}
 {% api-method-summary %}
 Add or Update Booking Attendee

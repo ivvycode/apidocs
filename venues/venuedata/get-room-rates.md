@@ -1,5 +1,3 @@
-# Get Room Rates
-
 {% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getRoomRates" method="post" summary="Get Room Rates" %}
 {% swagger-description %}
 Return the room rates for the given rate plan and date and optionally provided room ids.

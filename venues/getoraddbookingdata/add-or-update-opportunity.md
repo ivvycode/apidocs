@@ -1,5 +1,3 @@
-# Add or Update Opportunity
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=addOrUpdateOpportunity" %}
 {% api-method-summary %}
 Add or Update Opportunity

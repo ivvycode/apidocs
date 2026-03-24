@@ -1,5 +1,3 @@
-# Get Venue List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getVenueList" %}
 {% api-method-summary %}
 Get Venue List

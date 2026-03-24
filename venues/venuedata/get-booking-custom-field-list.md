@@ -1,5 +1,3 @@
-# Get Booking Custom Field List
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getBookingCustomFieldList" %}
 {% api-method-summary %}
 Get Booking Custom Field List

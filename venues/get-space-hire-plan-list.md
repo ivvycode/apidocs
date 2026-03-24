@@ -1,5 +1,3 @@
-# Get Space Hire Plans
-
 {% api-method method="post" host="\[PlatformAddress\]/api/1.0/" path="venue?action=getSpaceHirePlanList" %}
 {% api-method-summary %}
 Get Space Hire Plan List
