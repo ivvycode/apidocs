@@ -129,4 +129,4 @@ Invalid request data that prevents the booking from being added/updated.
 | Value                | Description                                                                                                                                         |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | packageSessionErrors | One or more sessions of the event template could not be added to the booking. This is usually caused by conflicting reservations on function space. |
-| bookingSaveError     | Package(s) was added, but failed to update booking state.                                                                                                  |
+| bookingSaveError     | Package(s) was added, but failed to update booking state.                                                                                           |
