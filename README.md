@@ -2,6 +2,8 @@
 
 With iVvy's robust API, you can connect all your core business apps to meet your unique needs.
 
+Please note: use of the iVvy API is subject to additional fees. For pricing details, please contact [sales@ivvy.com](mailto:sales@ivvy.com).
+
 This documentation covers all of the iVvy products, including:
 
 * **iVvy Venue Software** - Software used by venues to market, manage and report on their venues.
