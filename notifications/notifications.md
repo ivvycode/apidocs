@@ -67,18 +67,41 @@ The response that you will receive will be very similar to this. It will show yo
 {
   "eventsSuccess": false,
   "eventsTopicId": null,
+  "eventsError": null,
   "venuesSuccess": false,
   "venuesTopicId": null,
+  "venuesError": null,
   "paymentsSuccess": false,
   "paymentsTopicId": null,
+  "paymentsError": null,
   "crmSuccess": false,
   "crmTopicId": null,
+  "crmError": null,
   "contactsSuccess": false,
   "contactsTopicId": null,
+  "contactsError": null,
   "companiesSuccess": true,
-  "companiesTopicId": "arn:aws:sns:ap-southeast-2:2:iVvy_Account_41_d7_NotifCompanies"
+  "companiesTopicId": "arn:aws:sns:ap-southeast-2:2:iVvy_Account_41_d7_NotifCompanies",
+  "companiesError": null
 }
 ```
+
+**Error Handling**
+
+When a subscription fails, the corresponding `[endpoint]Error` field will contain an error message describing the issue. Common scenarios when errors occur include:
+
+- Endpoint is used in other subscription.
+
+Example response with an error:
+```json
+{
+  "venuesSuccess": false,
+  "venuesTopicId": null,
+  "venuesError": "The endpoint is already associated with another subscription"
+}
+```
+
+When `[endpoint]Success` is `false` and `[endpoint]Error` contains a value, review the error message and correct the issue before retrying the subscription.
 
 When you have subscribed to a notification, the endpoint you have provided will receive a message containing specific information about the notification you have subscribed to. Below is an example of a message from the iVvy API.
 ```json

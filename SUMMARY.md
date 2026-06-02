@@ -195,6 +195,10 @@
   * [Booking Endpoint](notifications/venues-endpoint.md)
   * [ARI Endpoint](notifications/ari-endpoint.md)
   * [Event Endpoint](notifications/events-endpoint.md)
+  * Venue Notifications
+    * [Subscribe](notifications/venue-notification-subscribe.md)
+    * [Unsubscribe](notifications/venue-notification-unsubscribe.md)
+  
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
