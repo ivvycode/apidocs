@@ -16,815 +16,603 @@ The id of the booking
 {% swagger-response status="200" description="" %}
 ```
 {
-  "id": 3,
+  "id": 36160,
   "venueId": 1,
-  "code": "123a",
-  "name": "Ava Donovan",
-  "eventType": "Holiday",
-  "eventTypeId": 2,
-  "eventSubTypeId": 3,
-  "companyId": null,
-  "company": null,
-  "contactId": null,
-  "contact": null,
+  "code": "4EQBCB2CCW",
+  "name": "Booking Test",
+  "eventType": "Conference",
+  "eventTypeId": 3,
+  "eventSubTypeId": null,
+  "companyId": 773,
+  "company": {
+      "id": 773,
+      "businessName": "My Company Co."
+  },
+  "contactId": 6892,
+  "contact": {
+      "id": 6892,
+      "firstName": "Jon",
+      "lastName": "A",
+      "email": "john.a@b.com",
+      "phone": "123"
+  },
   "isConfidential": false,
-  "currentStatus": 3,
-  "totalAmount": 2600,
-  "totalTaxAmount": 0,
-  "amountOutstanding": 2600,
+  "currentStatus": 2,
+  "totalAmount": 131,
+  "totalTaxAmount": 10.25,
+  "amountOutstanding": 131,
   "accountTimezone": "Australia/Brisbane",
   "venueTimezone": "Australia/Brisbane",
-  "createdDate": "2015-01-21 09:50:49 UTC",
-  "modifiedDate": "2016-04-06 07:51:56 UTC",
-  "lastModifiedDate": "2016-04-09 07:50:51 UTC",
-  "dateEventStart": "1996-02-19 00:00:00 UTC",
-  "dateEventEnd": "2002-11-06 00:00:00 UTC",
-  "convertedToTentative": "2016-02-23 00:00:00 UTC",
-  "convertedToConfirmed": "2016-03-05 12:49:31 UTC",
-  "convertedToCancelled": "2016-02-28 00:00:00 UTC",
+  "createdDate": "2026-07-06 01:41:51 UTC",
+  "modifiedDate": "2026-07-06 01:41:51 UTC",
+  "lastModifiedDate": "2026-07-06 01:44:26 UTC",
+  "bookingType": 1,
+  "dateEventStart": "2026-03-31 00:00:00 UTC",
+  "dateEventEnd": "2026-03-31 00:00:00 UTC",
+  "convertedToTentative": "2026-07-06 01:41:51 UTC",
+  "convertedToConfirmed": "",
+  "convertedToCancelled": "",
+  "convertedToProspectiveHold": "",
   "isAccommIncluded": false,
   "dateAccomStart": "",
   "dateAccomEnd": "",
   "focRoomsDenominator": 0,
-  "maxNumFocRoomsPerDay: 0,
+  "maxNumFocRoomsPerDay": 0,
   "hasPackages": true,
   "decisionDate": "",
   "canBeMoved": false,
-  "bookedById": 123,
-  "beoNumbers": ["18-1", "19-1", "20-1"],
+  "bookedById": 1,
+  "beoNumbers": [],
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
-  "otaFolioRef": "ven1234",
-  "accommReservationMethod": [
-        1,
-        2,
-        3
-  ],
-  "accommCutOffDate": "2019-12-04 00:00:00 UTC",
-  "accommCancellationDate": "2019-01-11 00:00:00 UTC",
-  "accommChargingMethod": 2,
+  "otaFolioRef": null,
+  "accommCutOffDate": "",
+  "accommReservationMethod": [],
+  "accommCancellationDate": "",
+  "accommChargingMethod": 0,
   "accommGuaranteeRequired": false,
-  "accommExternalBlockId": "test 123",
-  "hasCommissions": true,
+  "accommExternalBlockId": "BLOCKID",
+  "revenueTemplateId": null,
+  "hasCommissions": false,
   "hasCommissionPaid": false,
-  "agentCompanyId": 854,
-  "agentCompany": {
-      "id": 854,
-      "businessName": "ivvy"
-  },
-  "agentContactId": 11026,
-  "agentContact": {
-      "id": 11026,
-      "firstName": "Amit",
-      "lastName": "Kalani",
-      "email": "amit.kalani@gmail.com",
-      "phone": "+61481342930"
-  },
-  "commissionAccommodationType": 1,
-  "commissionAccommodation": 5,
-  "commissionSpaceType": 1,
-  "commissionSpace": 100,
+  "agentCompanyId": 0,
+  "agentCompany": null,
+  "agentContactId": 0,
+  "agentContact": null,
+  "commissionAccommodationType": 2,
+  "commissionAccommodation": null,
+  "commissionSpaceType": 2,
+  "commissionSpace": null,
   "commissionFoodType": 2,
-  "commissionFood": 10,
-  "commissionBeverageType": 1,
-  "commissionBeverage": 5,
+  "commissionFood": 0,
+  "commissionBeverageType": 2,
+  "commissionBeverage": 0,
   "commissionAudioVisualType": 2,
-  "commissionAudioVisual": 50,
+  "commissionAudioVisual": null,
   "dailyRevenue": [
-    {
-      "venueId": 1,
-      "costcenterId": 1276,
-      "revenueDate": "2015-09-04",
-      "totalAmount": 900,
-      "totalDiscountAmount": 100,
-      "totalTaxAmount": 81.818
-    },
-    {
-      "venueId": 1,
-      "costcenterId": 1277,
-      "revenueDate": "2015-09-04",
-      "totalAmount": 900,
-      "totalDiscountAmount": 100,
-      "totalTaxAmount": 81.818
-    },
-    {
-      "venueId": 1,
-      "costcenterId": 1278,
-      "revenueDate": "2015-09-04",
-      "totalAmount": 900,
-      "totalDiscountAmount": 100,
-      "totalTaxAmount": 81.818
-    },
-    {
-      "venueId": 1,
-      "costcenterId": 1279,
-      "revenueDate": "2015-09-04",
-      "totalAmount": 900,
-      "totalDiscountAmount": 100,
-      "totalTaxAmount": 81.818
-    },
-    ...
-  ],
-  "packages": [
-    {
-      "id": 5082,
-      "bookingDate": "2018-12-30",
-      "numberAttendees": 30,
-      "price": 40,
-      "createdDate": "2018-11-07 03:56:35 UTC",
-      "modifiedDate": "2018-11-07 03:56:35 UTC",
-      "totalAmount": 1200,
-      "totalDiscount": 100,
-      "totalTaxAmount": 109.091,
-      "priceMethod": 1,
-      "costcenters": [
-        {
-          "costcenterId": 2,
-          "value": 10,
-          "excludedTaxIds": [],
-          "totalAmount": 300,
-          "totalDiscount": 100,
-          "totalTaxAmount": 27.272727,
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 27.272727,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        },
-        {
-          "costcenterId": 3,
-          "value": 10,
-          "excludedTaxIds": [],
-          "totalAmount": 300,
-          "totalDiscount": 100,
-          "totalTaxAmount": 27.272727,
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 27.272727,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        },
-        {
-          "costcenterId": 4,
-          "value": 10,
-          "excludedTaxIds": [],
-          "totalAmount": 300,
-          "totalDiscount": 100,
-          "totalTaxAmount": 27.272727,
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 27.272727,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        },
-        {
-          "costcenterId": 5,
-          "value": 10,
-          "excludedTaxIds": [],
-          "totalAmount": 300,
-          "totalDiscount": 100,
-          "totalTaxAmount": 27.272727,
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 27.272727,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        }
-      ],
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 109.091,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ],
-      "smallDescription": "Package Small Description"
-    }
-  ],
-  "sessions": [
-    {
-      "id": 13185,
-      "name": "Computer Graphics",
-      "startDate": "2018-12-30",
-      "endDate": "2018-12-30",
-      "startTime": "10:00:00",
-      "endTime": "11:00:00",
-      "spaceVenueId": 1,
-      "spaceId": 2,
-      "spaceLayout": null,
-      "customLayoutName": "Custom",
-      "tariffId": 50,
-      "cost": 50,
-      "discount": 5,
-      "totalAmount": 50,
-      "totalDiscount": 10,
-      "totalTaxAmount": 4.545,
-      "excludedTaxIds": [],
-      "costcenterId": 5,
-      "includeInPackage": false,
-      "bookingPackageId": 5082,
-      "beoNumbers": ["19-1"],
-      "createdDate": "2018-11-07 03:56:35 UTC",
-      "modifiedDate": "2018-11-07 03:57:36 UTC",
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 4.545,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ],
-      "totalAttendees": 2000,
-      "projectedSpend": [
-        {
-            "priceMethod": 1,
-            "costcenterId": 1,
-            "total": 5000,
-            "amount": 100
-        },
-        {
-            "priceMethod": 2,
-            "costcenterId": 3,
-            "total": 50,
-            "amount": 50
-        }
-      ]
-    }
-  ],
-  "menus": [
-    {
-      "id": 6686,
-      "name": "Main Course",
-      "menuVenueId": 1,
-      "menuId": 3,
-      "menuCategoryId": 3,
-      "sessionId": 13185,
-      "cost": 10,
-      "discount": 5,
-      "excludedTaxIds": [],
-      "startDate": "2018-12-30",
-      "endDate": "2018-12-30",
-      "startTime": "10:00:00",
-      "endTime": "11:00:00",
-      "includeInPackage": false,
-      "bookingPackageId": null,
-      "createdDate": "2018-11-15 06:48:38 UTC",
-      "modifiedDate": "2018-11-15 06:48:38 UTC",
-      "costcenterId": 2,
-      "totalAmount": 300,
-      "totalDiscount": 10,
-      "totalTaxAmount": 27.273,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 27.273,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ],
-      "totalAttendees": 2000,
-    }
-  ],
-  "beveragePackages": [
-    {
-      "id": 6204,
-      "name": "Beverage Package 1",
-      "sessionId": 13185,
-      "beverageVenueId": 1,
-      "beverageId": 2,
-      "cost": 70,
-      "discount": 5,
-      "excludedTaxIds": [],
-      "startDate": "2018-12-30",
-      "endDate": "2018-12-30",
-      "startTime": "10:00:00",
-      "endTime": "11:00:00",
-      "includeInPackage": false,
-      "bookingPackageId": null,
-      "createdDate": "2018-11-15 06:48:58 UTC",
-      "modifiedDate": "2018-11-15 06:48:58 UTC",
-      "costcenterId": 3,
-      "totalAmount": 2100,
-      "totalDiscount": 10,
-      "totalTaxAmount": 190.909,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 190.909,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ],
-      "totalAttendees": 2000,
-    }
-  ],
-  "resources": [
-    {
-      "id": 6437,
-      "name": null,
-      "sessionId": 13185,
-      "resourceVenueId": 2,
-      "resourceId": 537,
-      "cost": 5,
-      "discount": 5,
-      "excludedTaxIds": [],
-      "quantity": 1,
-      "startDate": "2018-12-30",
-      "endDate": "2018-12-30",
-      "startTime": "10:00:00",
-      "endTime": "11:00:00",
-      "includeInPackage": false,
-      "bookingPackageId": null,
-      "createdDate": "2018-11-15 06:49:31 UTC",
-      "modifiedDate": "2018-11-15 06:49:31 UTC",
-      "costcenterId": 4,
-      "totalAmount": 5,
-      "totalDiscount": 10,
-      "totalTaxAmount": 0.455,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.455,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0          ,
-        }
-      ]
-    }
-  ],
-  "products": [
-    {
-      "id": 5305,
-      "name": null,
-      "sessionId": 13185,
-      "productId": 535,
-      "cost": 100,
-      "discount": 5,
-      "excludedTaxIds": [],
-      "quantity": 1,
-      "includeInPackage": false,
-      "bookingPackageId": null,
-      "createdDate": "2018-11-15 06:49:57 UTC",
-      "modifiedDate": "2018-11-15 06:49:57 UTC",
-      "costcenterId": 4,
-      "totalAmount": 100,
-      "totalDiscount": 10,
-      "totalTaxAmount": 9.091,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 9.091,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    }
-  ],
-  "additionalItems": [
-    {
-      "id": 3935,
-      "description": "Some Additional Item",
-      "quantity": 1,
-      "totalCost": 100,
-      "totalCostDiscount": 10,
-      "totalCostExcludedTaxIds": [
-        3676
-      ],
-      "actualCost": 0,
-      "actualCostExcludedTaxIds": [],
-      "createdDate": "2018-11-15 07:18:17 UTC",
-      "modifiedDate": "2018-11-16 01:15:05 UTC",
-      "costcenterId": 4,
-      "totalAmount": 100,
-      "totalDiscount": 10,
-      "totalTaxAmount": 9.091,
-      "startDateTime": null,
-      "endDateTime": null,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 9.091,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ],
-      "dayTaxDetails": []
-    },
-    {
-      "id": 3936,
-      "description": "Another additional item",
-      "quantity": 1,
-      "totalCost": 110,
-      "totalCostDiscount": 11,
-      "totalCostExcludedTaxIds": [],
-      "actualCost": 0,
-      "actualCostExcludedTaxIds": [],
-      "createdDate": "2018-11-15 07:19:59 UTC",
-      "modifiedDate": "2018-11-15 07:19:59 UTC",
-      "costcenterId": 4,
-      "totalAmount": 110,
-      "totalDiscount": 10,
-      "totalTaxAmount": 10,
-      "startDateTime": "2018-12-30 09:00:00",
-      "endDateTime": "2019-01-01 10:00:00",
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 9.999,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ],
-      "dayTaxDetails": [
-        {
-          "date": "2018-12-30",
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 3.333333,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        },
-        {
-          "date": "2018-12-31",
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 3.333333,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        },
-        {
-          "date": "2019-01-01",
-          "taxDetails": [
-            {
-              "id": 1,
-              "tax": 3.333333,
-              "rateId": 0,
-              "rateAmount": 0,
-              "rateAmountType": 0
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "serviceFees": [
-    {
-      "id": 3262,
-      "refType": 9,
-      "refId": 3936,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 4,
-      "amount": 3.333333,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:36 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 3.666333,
-      "totalTaxAmount": 0.333,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.333,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3264,
-      "refType": 9,
-      "refId": 3936,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-31",
-      "refCostcenterId": 4,
-      "amount": 3.333333,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:36 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 3.666333,
-      "totalTaxAmount": 0.333,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.333,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3266,
-      "refType": 9,
-      "refId": 3936,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2019-01-01",
-      "refCostcenterId": 4,
-      "amount": 3.333333,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:36 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 3.666333,
-      "totalTaxAmount": 0.333,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.333,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3271,
-      "refType": 3,
-      "refId": 5082,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 2,
-      "amount": 27.272727,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:36 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 29.999727,
-      "totalTaxAmount": 2.727,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 2.727,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3272,
-      "refType": 3,
-      "refId": 5082,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 3,
-      "amount": 27.272727,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:36 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 29.999727,
-      "totalTaxAmount": 2.727,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 2.727,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3273,
-      "refType": 3,
-      "refId": 5082,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 4,
-      "amount": 27.272727,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:36 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 29.999727,
-      "totalTaxAmount": 2.727,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 2.727,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3274,
-      "refType": 3,
-      "refId": 5082,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 5,
-      "amount": 27.272727,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:37 UTC",
-      "modifiedDate": "2018-11-20 00:15:09 UTC",
-      "totalAmount": 29.999727,
-      "totalTaxAmount": 2.727,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 2.727,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3275,
-      "refType": 4,
-      "refId": 13185,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 5,
-      "amount": 4.546,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:37 UTC",
-      "modifiedDate": "2018-11-20 00:15:10 UTC",
-      "totalAmount": 5.001,
-      "totalTaxAmount": 0.455,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.455,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3276,
-      "refType": 5,
-      "refId": 6686,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 2,
-      "amount": 27.273,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:37 UTC",
-      "modifiedDate": "2018-11-20 00:15:10 UTC",
-      "totalAmount": 30,
-      "totalTaxAmount": 2.727,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 2.727,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3277,
-      "refType": 6,
-      "refId": 6204,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 3,
-      "amount": 190.909,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:37 UTC",
-      "modifiedDate": "2018-11-20 00:15:10 UTC",
-      "totalAmount": 210,
-      "totalTaxAmount": 19.091,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 19.091,
-          "rateId": 0,
-          "rateAmount": 0,
-          "rateAmountType": 0
-        }
-      ]
-    },
-    {
-      "id": 3278,
-      "refType": 7,
-      "refId": 5305,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 4,
-      "amount": 9.091,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:37 UTC",
-      "modifiedDate": "2018-11-20 00:15:10 UTC",
-      "totalAmount": 10,
-      "totalTaxAmount": 0.909,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.909,
-          "rateId": 2,
-          "rateAmount": 6,
-          "rateAmountType": 2
-        }
-      ]
-    },
-    {
-      "id": 3279,
-      "refType": 8,
-      "refId": 6437,
-      "ref2Id": 0,
-      "ref3Id": 0,
-      "refDate": "2018-12-30",
-      "refCostcenterId": 4,
-      "amount": 0.455,
-      "excludedTaxIds": [],
-      "createdDate": "2018-11-15 07:27:37 UTC",
-      "modifiedDate": "2018-11-20 00:15:10 UTC",
-      "totalAmount": 0.501,
-      "totalTaxAmount": 0.046,
-      "taxDetails": [
-        {
-          "id": 1,
-          "tax": 0.046,
-          "rateId": 1,
-          "rateAmount": 5,
-          "rateAmountType": 1
-        }
-      ]
-    },
-    "salesPersonUser": {
-        "id": 1,
-        "firstName": "Jack",
-        "lastName": "Smith",
-        "email": "jack@smith.com",
-        "phone": 61482154689
-    },
-    "bookedByUser": {
-        "id": 3,
-        "firstName": "Oliver",
-        "lastName": "Brown",
-        "email": "oliver@brown.com",
-        "phone": 61582154689
-    },
-    "leadBccEmail": "lead-1-111-6895d8@ivvy.com",
-    "foodBeveragePayableBy": 1,
-    "totalAttendees": 20,
-    "hasCommissions": 1,
-    "hasCommissionPaid": 1,
-    "agent": {
-        "id": 2,
-        "businessName": "company Name",
-        "email": "company@name.com",
-        "phone": "+354-80-6090113"
-    },
-    "commissionByCostCentres": [
       {
-        "costcenterId": 2,
-        "commission": 31.7
+          "venueId": 1,
+          "costcenterId": 1,
+          "revenueDate": "2026-03-31",
+          "totalAmount": 27.5,
+          "totalDiscountAmount": 0,
+          "totalTaxAmount": 2.5
       },
       {
-        "costcenterId": 2,
-        "commission": 1.7
+          "venueId": 1,
+          "costcenterId": 2,
+          "revenueDate": "2026-03-31",
+          "totalAmount": 26.25,
+          "totalDiscountAmount": 0,
+          "totalTaxAmount": 1.25
+      },
+      {
+          "venueId": 1,
+          "costcenterId": 3,
+          "revenueDate": "2026-03-31",
+          "totalAmount": 44,
+          "totalDiscountAmount": 0,
+          "totalTaxAmount": 4
+      },
+      {
+          "venueId": 1,
+          "costcenterId": 4,
+          "revenueDate": "2026-03-31",
+          "totalAmount": 27.5,
+          "totalDiscountAmount": 0,
+          "totalTaxAmount": 2.5
+      },
+      {
+          "venueId": 1,
+          "costcenterId": 5,
+          "revenueDate": "2026-03-31",
+          "totalAmount": 0,
+          "totalDiscountAmount": 0,
+          "totalTaxAmount": 0
       }
-    ],
-    "bookingType": 1,
-    "opportunityId": 2,
+  ],
+  "packages": [
+      {
+          "id": 7861,
+          "bookingDate": "2026-03-31",
+          "numberAttendees": 10,
+          "price": 100,
+          "createdDate": "2026-07-06 01:41:51 UTC",
+          "modifiedDate": "2026-07-06 01:41:52 UTC",
+          "totalAmount": 108.75,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 8.75,
+          "priceMethod": 2,
+          "costcenters": [
+              {
+                  "costcenterId": 1,
+                  "value": 25,
+                  "discount": 0,
+                  "surcharge": 0,
+                  "totalAmount": 27.5,
+                  "totalSurcharge": 0,
+                  "totalTaxAmount": 2.5,
+                  "taxDetails": [
+                      {
+                          "id": 1,
+                          "tax": 2.5,
+                          "rateId": 0,
+                          "rateAmount": 10,
+                          "rateAmountType": 1
+                      }
+                  ]
+              },
+              {
+                  "costcenterId": 2,
+                  "value": 25,
+                  "discount": 0,
+                  "surcharge": 0,
+                  "totalAmount": 26.25,
+                  "totalSurcharge": 0,
+                  "totalTaxAmount": 1.25,
+                  "taxDetails": [
+                      {
+                          "id": 1,
+                          "tax": 1.25,
+                          "rateId": 13,
+                          "rateAmount": 5,
+                          "rateAmountType": 1
+                      }
+                  ]
+              },
+              {
+                  "costcenterId": 3,
+                  "value": 25,
+                  "discount": 0,
+                  "surcharge": 0,
+                  "totalAmount": 27.5,
+                  "totalSurcharge": 0,
+                  "totalTaxAmount": 2.5,
+                  "taxDetails": [
+                      {
+                          "id": 1,
+                          "tax": 2.5,
+                          "rateId": 0,
+                          "rateAmount": 10,
+                          "rateAmountType": 1
+                      }
+                  ]
+              },
+              {
+                  "costcenterId": 4,
+                  "value": 25,
+                  "discount": 0,
+                  "surcharge": 0,
+                  "totalAmount": 27.5,
+                  "totalSurcharge": 0,
+                  "totalTaxAmount": 2.5,
+                  "taxDetails": [
+                      {
+                          "id": 1,
+                          "tax": 2.5,
+                          "rateId": 0,
+                          "rateAmount": 10,
+                          "rateAmountType": 1
+                      }
+                  ]
+              },
+              {
+                  "costcenterId": 5,
+                  "value": 0,
+                  "discount": 0,
+                  "surcharge": 0,
+                  "totalAmount": 0,
+                  "totalSurcharge": 0,
+                  "totalTaxAmount": 0,
+                  "taxDetails": []
+              }
+          ],
+          "taxDetails": [
+              {
+                  "id": 1,
+                  "tax": 7.5,
+                  "rateId": 0,
+                  "rateAmount": 10,
+                  "rateAmountType": 1
+              },
+              {
+                  "id": 1,
+                  "tax": 1.25,
+                  "rateId": 13,
+                  "rateAmount": 5,
+                  "rateAmountType": 1
+              }
+          ],
+          "smallDescription": "sdsd",
+          "packageId": 7,
+          "packageName": "Premium - Flat rate"
+      }
+  ],
+  "sessions": [
+      {
+          "id": 20261,
+          "name": "Morning",
+          "startDate": "2026-03-31",
+          "endDate": "2026-03-31",
+          "startTime": "15:00:00",
+          "endTime": "17:00:00",
+          "spaceVenueId": 1,
+          "spaceId": 1,
+          "spaceLayout": 0,
+          "customLayoutName": "C",
+          "tariffId": null,
+          "cost": 0,
+          "discount": 0,
+          "surcharge": 0,
+          "totalAmount": 0,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 0,
+          "costcenterId": 0,
+          "includeInPackage": true,
+          "bookingPackageId": 7861,
+          "beoNumbers": [],
+          "createdDate": "2026-07-06 01:41:51 UTC",
+          "modifiedDate": "2026-07-06 01:41:52 UTC",
+          "taxDetails": [],
+          "totalAttendees": 10,
+          "projectedSpend": []
+      }
+  ],
+  "menus": [
+      {
+          "id": 2742,
+          "name": "Lunch",
+          "menuVenueId": 1,
+          "menuId": 1,
+          "menuTypeCategory": 0,
+          "sessionId": 20261,
+          "cost": 0,
+          "discount": 0,
+          "surcharge": 0,
+          "excludedTaxIds": [],
+          "startDate": "2026-03-31",
+          "endDate": "2026-03-31",
+          "startTime": "08:00:00",
+          "endTime": "20:00:00",
+          "includeInPackage": true,
+          "bookingPackageId": 7861,
+          "createdDate": "2026-07-06 01:41:51 UTC",
+          "modifiedDate": "2026-07-06 01:41:52 UTC",
+          "costcenterId": 0,
+          "totalAmount": 0,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 0,
+          "taxDetails": [],
+          "totalAttendees": 10,
+          "costcenters": []
+      }
+  ],
+  "beveragePackages": [
+      {
+          "id": 3191,
+          "name": "Morning tea",
+          "sessionId": 20261,
+          "beverageVenueId": 1,
+          "beverageId": 1,
+          "cost": 0,
+          "discount": 0,
+          "surcharge": 0,
+          "startDate": "2026-03-31",
+          "endDate": "2026-03-31",
+          "startTime": "08:00:00",
+          "endTime": "20:00:00",
+          "includeInPackage": true,
+          "bookingPackageId": 7861,
+          "createdDate": "2026-07-06 01:41:51 UTC",
+          "modifiedDate": "2026-07-06 01:41:52 UTC",
+          "costcenterId": 0,
+          "totalAmount": 0,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 0,
+          "taxDetails": [],
+          "totalAttendees": 10,
+          "smallDescription": "Morning maza",
+          "marketplaceName": "Hourly Price"
+      }
+  ],
+  "resources": [
+      {
+          "id": 5713,
+          "name": "Resource 1",
+          "sessionId": 20261,
+          "resourceVenueId": 1,
+          "resourceId": 8,
+          "cost": 0,
+          "discount": 0,
+          "surcharge": 0,
+          "quantity": 10,
+          "startDate": "2026-03-31",
+          "endDate": "2026-03-31",
+          "startTime": "15:00:00",
+          "endTime": "17:00:00",
+          "includeInPackage": true,
+          "bookingPackageId": 7861,
+          "createdDate": "2026-07-06 01:41:51 UTC",
+          "modifiedDate": "2026-07-06 01:41:52 UTC",
+          "costcenterId": 0,
+          "totalAmount": 0,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      },
+      {
+          "id": 5714,
+          "name": "Resource 2",
+          "sessionId": 20261,
+          "resourceVenueId": 76,
+          "resourceId": 4,
+          "cost": 0,
+          "discount": 0,
+          "surcharge": 0,
+          "quantity": 1,
+          "startDate": "2026-03-31",
+          "endDate": "2026-03-31",
+          "startTime": "15:00:00",
+          "endTime": "17:00:00",
+          "includeInPackage": false,
+          "bookingPackageId": 7861,
+          "createdDate": "2026-07-06 01:41:51 UTC",
+          "modifiedDate": "2026-07-06 01:41:52 UTC",
+          "costcenterId": 3,
+          "totalAmount": 0,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      }
+  ],
+  "products": [
+      {
+          "id": 1597,
+          "name": "Product",
+          "sessionId": 20261,
+          "productId": 13,
+          "cost": 5,
+          "discount": 0,
+          "surcharge": 0,
+          "quantity": 1,
+          "includeInPackage": false,
+          "bookingPackageId": 0,
+          "createdDate": "2026-07-06 01:44:14 UTC",
+          "modifiedDate": "2026-07-06 01:44:26 UTC",
+          "costcenterId": 3,
+          "totalAmount": 5.5,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 0.5,
+          "taxDetails": [
+              {
+                  "id": 1,
+                  "tax": 0.5,
+                  "rateId": 0,
+                  "rateAmount": 10,
+                  "rateAmountType": 1
+              }
+          ]
+      }
+  ],
+  "additionalItems": [
+      {
+          "id": 4066,
+          "description": "Test Item",
+          "quantity": 1,
+          "totalCost": 10,
+          "totalCostDiscount": 0,
+          "totalCostSurcharge": 0,
+          "actualCost": 0,
+          "createdDate": "2026-07-06 01:42:21 UTC",
+          "modifiedDate": "2026-07-06 01:42:21 UTC",
+          "costcenterId": 3,
+          "totalAmount": 11,
+          "totalDiscount": 0,
+          "totalSurcharge": 0,
+          "totalTaxAmount": 1,
+          "startDateTime": "",
+          "endDateTime": "",
+          "taxDetails": [
+              {
+                  "id": 1,
+                  "tax": 1,
+                  "rateId": 0,
+                  "rateAmount": 10,
+                  "rateAmountType": 1
+              }
+          ],
+          "dayTaxDetails": []
+      }
+  ],
+  "serviceFees": [
+      {
+          "id": 31482,
+          "refType": 3,
+          "refId": 7861,
+          "ref2Id": 0,
+          "ref3Id": 0,
+          "refDate": "2026-03-31",
+          "refCostcenterId": 1,
+          "amount": 1.25,
+          "createdDate": "2026-07-06 01:41:52 UTC",
+          "modifiedDate": "2026-07-06 01:41:54 UTC",
+          "totalAmount": 1.25,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      },
+      {
+          "id": 31484,
+          "refType": 3,
+          "refId": 7861,
+          "ref2Id": 0,
+          "ref3Id": 0,
+          "refDate": "2026-03-31",
+          "refCostcenterId": 2,
+          "amount": 1.25,
+          "createdDate": "2026-07-06 01:41:52 UTC",
+          "modifiedDate": "2026-07-06 01:41:54 UTC",
+          "totalAmount": 1.25,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      },
+      {
+          "id": 31486,
+          "refType": 3,
+          "refId": 7861,
+          "ref2Id": 0,
+          "ref3Id": 0,
+          "refDate": "2026-03-31",
+          "refCostcenterId": 3,
+          "amount": 1.25,
+          "createdDate": "2026-07-06 01:41:52 UTC",
+          "modifiedDate": "2026-07-06 01:41:54 UTC",
+          "totalAmount": 1.25,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      },
+      {
+          "id": 31488,
+          "refType": 3,
+          "refId": 7861,
+          "ref2Id": 0,
+          "ref3Id": 0,
+          "refDate": "2026-03-31",
+          "refCostcenterId": 4,
+          "amount": 1.25,
+          "createdDate": "2026-07-06 01:41:52 UTC",
+          "modifiedDate": "2026-07-06 01:41:54 UTC",
+          "totalAmount": 1.25,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      },
+      {
+          "id": 31490,
+          "refType": 9,
+          "refId": 4066,
+          "ref2Id": 0,
+          "ref3Id": 0,
+          "refDate": "2026-03-31",
+          "refCostcenterId": 3,
+          "amount": 0.5,
+          "createdDate": "2026-07-06 01:42:22 UTC",
+          "modifiedDate": "2026-07-06 01:42:22 UTC",
+          "totalAmount": 0.5,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      },
+      {
+          "id": 31498,
+          "refType": 7,
+          "refId": 1597,
+          "ref2Id": 0,
+          "ref3Id": 0,
+          "refDate": "2026-03-31",
+          "refCostcenterId": 3,
+          "amount": 0.25,
+          "createdDate": "2026-07-06 01:44:14 UTC",
+          "modifiedDate": "2026-07-06 01:44:26 UTC",
+          "totalAmount": 0.25,
+          "totalTaxAmount": 0,
+          "taxDetails": []
+      }
+  ],
+  "customFields": [
+      {
+          "fieldId": 1,
+          "displayName": "Small Text",
+          "fieldValue": null
+      },
+      {
+          "fieldId": 5,
+          "displayName": "Booking Field",
+          "fieldValue": null
+      },
+      {
+          "fieldId": 8,
+          "displayName": "Response Due Date",
+          "fieldValue": null
+      },
+      {
+          "fieldId": 9,
+          "displayName": "Decision Due Date",
+          "fieldValue": null
+      }
+  ],
+  "salesPersonUser": null,
+  "bookedByUser": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@iv.com",
+      "phone": ""
+  },
+  "leadBccEmail": null,
+  "foodBeveragePayableBy": 1,
+  "totalAttendees": 10,
+  "agent": null,
+  "commissionByCostCentres": [
+      {
+          "costcenterId": 1,
+          "commission": 0
+      },
+      {
+          "costcenterId": 2,
+          "commission": 0
+      },
+      {
+          "costcenterId": 3,
+          "commission": 0
+      },
+      {
+          "costcenterId": 4,
+          "commission": 0
+      },
+      {
+          "costcenterId": 5,
+          "commission": 0
+      }
+  ],
+  "opportunityId": null,
+  "hasCateringWebsite": false,
+  "cateringWebsiteLogoId": null,
+  "cateringWebsiteLogo": null,
+  "cateringWebsiteBannerId": null,
+  "cateringWebsiteBanner": null,
+  "cateringWebsiteEventDesc": null,
+  "cateringWebsiteEndNumDays": null,
+  "externalUrls": [
+    {
+        "ref": "sales-force",
+        "url": "https://salesforce.com",
+        "label": "Sales force"
+    }
   ]
 }
 ```
