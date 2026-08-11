@@ -260,3 +260,15 @@ The id of the venue
 
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
+
+## Filter Columns
+
+The filter property applies only to the following columns:
+
+| Column |
+|--------|
+| id |
+| name |
+| createdDate |
+| modifiedDate |
+| isVisibleOnVenueSearch |
