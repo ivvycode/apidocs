@@ -552,6 +552,11 @@ An array of the following values:
 - 36 = Wifi Access
 - 37 = Outside Catering Allowed
 - 38 = BYO Allowed
+- 79 = Coworking Space
+- 80 = EV Chargers
+- 81 = Large Function Room
+- 82 = Breakout Area
+- 83 = Near Airport
 
 ## priceMethod (package pricing)
 
