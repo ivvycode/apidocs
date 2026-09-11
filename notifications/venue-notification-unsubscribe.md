@@ -1,6 +1,6 @@
 # Unsubscribe From Venue Notification
 
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=unsubscribeFromNotification" method="post" summary="Unsubscribe From Venue Notification" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=unsubscribeFromNotifications" method="post" summary="Unsubscribe From Venue Notification" %}
 {% swagger-description %}
 Removes an existing notification subscription for a specific venue.
 
