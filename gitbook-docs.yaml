@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: iVvy Developer API
+  structure:
+    - type: space
+      key: space-1
+      title: iVvy Developer API
+      path: api
+      default: true
+      content:
+        directory: ./api
