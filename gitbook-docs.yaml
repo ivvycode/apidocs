@@ -8,4 +8,4 @@ site:
       path: api
       default: true
       content:
-        directory: ./api
+        directory: ./
