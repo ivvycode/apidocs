@@ -198,7 +198,7 @@
   * Venue Notifications
     * [Subscribe](notifications/venue-notification-subscribe.md)
     * [Unsubscribe](notifications/venue-notification-unsubscribe.md)
-
+  
 * [Development Reference](development-reference/README.md)
   * [Calculating md5](development-reference/calculating-md5.md)
   * [HMAC-SHA1](development-reference/hmac-sha1.md)
@@ -215,4 +215,4 @@
   * [Booking Accommodation API Changes](announcements/venue/booking-accommodation-room-options-update.md)
   * [Invoice Endpoints Changes](announcements/invoice/invoice-api-changes.md)
   * [Contact and Company Endpoints Changes](announcements/contact/contact-and-company-endpoints-changes.md)
-  * [ContacT SMS Marketing](announcements/contact/contact-sms-marketing.md)
+  * [Contact SMS Marketing](announcements/contact/contact-sms-marketing.md)
