@@ -1,0 +1,8 @@
+# Account
+
+## Namespace
+
+```text
+account
+```
+

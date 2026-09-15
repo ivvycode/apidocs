@@ -1,0 +1,8 @@
+# CRM
+
+## Namespace
+
+```text
+crm
+```
+
