@@ -1,6 +1,0 @@
-# Event
-
-## Namespace
-
-`event`
-
