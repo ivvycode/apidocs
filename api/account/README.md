@@ -1,8 +1,0 @@
-# Account
-
-## Namespace
-
-```text
-account
-```
-

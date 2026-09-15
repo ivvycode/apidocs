@@ -1,8 +1,0 @@
-# Invoice
-
-## Namespace
-
-```text
-invoice
-```
-

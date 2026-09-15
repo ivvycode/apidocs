@@ -1,4 +1,0 @@
-# Booking Accommodation Data
-
-
-
