@@ -600,6 +600,14 @@ The id of the booking
       }
   ],
   "opportunityId": null,
+  "discountCampaignId": 59,
+  "discountType": 1,
+  "costcentersDiscounts": [
+      {
+          "id": 1,
+          "value": 20
+      }
+  ],
   "hasCateringWebsite": false,
   "cateringWebsiteLogoId": null,
   "cateringWebsiteLogo": null,
@@ -714,6 +722,9 @@ The result from this call will be the details of a specific booking to which the
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking                                                                                                        |
 | bookingType             | enum ([Booking Types](get-booking.md#booking-types))              | The type of Booking selected for the Booking                                                                                                                |
 | opportunityId           | integer                                                                          | The id of the Opportunity for the Booking                                                                                                                   |
+| discountCampaignId      | integer                                                                          | The id of the [discount campaign](../venuedata/get-discount-campaign-list.md) applied to the booking. Null when no campaign is applied                     |
+| discountType            | enum ([Discount Type](get-booking.md#discount-type))                             | Whether the costcentersDiscounts values are a percentage or a flat rate                                                                                     |
+| costcentersDiscounts    | Array of [Cost Center Discount](get-booking.md#cost-center-discount)             | The discount taken off each cost center, read per discountType                                                                                              |
 | hasCateringWebsite | boolean | Whether or not the catering website is enabled for the booking |
 | cateringWebsiteLogoId | string | The catering website logo for the booking |
 | cateringWebsiteLogo | [File](get-booking.md#file) | The catering website logo for the booking |
@@ -1042,6 +1053,22 @@ One of the following values:
 | 8     | Resource                     | Booking Session Resource Identifier         |                                                |                                                     |
 | 9     | Additional Item              | Booking Additional Item Identifier          |                                                |                                                     |
 | 11    | Service                      | Booking Service Identifier                  |                                                |                                                     |
+
+## Discount Type
+
+One of the following values:
+
+| # | Description    |
+| - | -------------- |
+| 1 | Percentage (%) |
+| 2 | Flat Rate      |
+
+## Cost Center Discount
+
+| Property | Type    | Description                                                                                  |
+| -------- | ------- | -------------------------------------------------------------------------------------------- |
+| id       | integer | The cost center identifier                                                                   |
+| value    | double  | A percentage off when discountType is "Percentage", or a flat amount when it is "Flat Rate" |
 
 ## Commission By Cost Centres
 
