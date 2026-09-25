@@ -216,3 +216,4 @@
   * [Invoice Endpoints Changes](announcements/invoice/invoice-api-changes.md)
   * [Contact and Company Endpoints Changes](announcements/contact/contact-and-company-endpoints-changes.md)
   * [Contact SMS Marketing](announcements/contact/contact-sms-marketing.md)
+  * [Removal of Catering Website / Booking Attendees APIs](announcements/venue/catering-website-removal.md)
