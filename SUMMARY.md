@@ -95,6 +95,7 @@
     * [Get Space Hire Plans](venues/get-space-hire-plan-list.md)
     * [Get Venue Package List](venues/venuedata/get-venue-package-list.md)
     * [Get Venue Package](venues/venuedata/get-venue-package.md)
+    * [Get Discount Campaign List](venues/venuedata/get-discount-campaign-list.md)
   * [Booking Data](venues/getoraddbookingdata/README.md)
     * [Convert Lead To Opportunity](venues/getoraddbookingdata/convert-lead-to-opportunity.md)
     * [Add or Update Opportunity](venues/getoraddbookingdata/add-or-update-opportunity.md)
