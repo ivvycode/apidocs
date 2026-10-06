@@ -52,6 +52,10 @@ A json object that represents the opportunity to add or update. See below for th
 | referralContact | object | optional | The data array of contact. See addOrUpdateContact API in contact namespace for parameters. |
 | referralCompanyId | integer | optional | The company Id of referral for "Referral Program" source. \(Required when the source is Referral Program and referralCompany parameter is missing\) |
 | referralCompany | object | optional | The data array of company. See addOrUpdateCompany API in contact namespace for parameters. |
+| agentContactId | integer | optional | The unique id of the contact to assign as the opportunity's Agent. Only applies to sources with `isReferral` set to true. See [assigning an agent to the opportunity](add-or-update-opportunity.md#assigning-an-agent-to-the-opportunity). |
+| agentContact | object | optional | The data array of contact. See addOrUpdateContact API in contact namespace for parameters. |
+| agentCompanyId | integer | optional | The unique id of the company to assign as the opportunity's Agent. Only applies to sources with `isReferral` set to true. See [assigning an agent to the opportunity](add-or-update-opportunity.md#assigning-an-agent-to-the-opportunity). |
+| agentCompany | object | optional | The data array of company. See addOrUpdateCompany API in contact namespace for parameters. A company added this way is automatically flagged as an agent \(`isAgent` is set to true\). |
 | confirmedQuoteId | integer | optional | The unique if of confirmed quote to which the opportunity belongs. |
 | confirmedQuoteStatus | integer | optional | The status of the confirmed quote to which the opportunity belongs. |
 | cancelledQuoteId | integer | optional | The unique id of cancelled quote to which the opportunity belongs. |
@@ -85,6 +89,14 @@ An External URL field is an object with the following details.
 The _contact type_ of a opportunity is either a _company_ **or** a _contact_. When _companyId_ **or** _company_ is present in the request then the _contact type_ of the opportunity is set to _company_, and the _companyLeadContactId_ **or** _contact_ must be a contact that belongs to that company. Otherwise the _contact type_ of the opportunity is set to _contact_ and contactId can be any valid contact in the venue's account.
 
 If _contact_ and _company_ are present in request then it will link given contact to company.
+
+### Assigning an agent to the opportunity
+
+The Agent field (Company + Contact) can be set via _agentCompanyId_/_agentContactId_ (an existing company/contact), or via _agentCompany_/_agentContact_ (to add a new company/contact and assign it as the Agent in the same request). This is only supported for sources with `isReferral` set to true \(this is separate from and unrelated to the _referralCompanyId_/_referralContactId_ fields, which only apply to the single built-in "Referral Program" source\).
+
+A company assigned as the Agent via _agentCompany_ is automatically flagged as an agent \(`isAgent` is set to true\), matching the "Add" dialog behaviour for the Agent field in the UI.
+
+To remove the Agent from an opportunity, send `agentCompanyId` and `agentContactId` as `null`.
 
 ## Example Request
 
@@ -134,6 +146,28 @@ If _contact_ and _company_ are present in request then it will link given contac
   "id": 755,
   "venueId": "107",
   "name": "Updated Name"
+}
+```
+
+### Assign an Agent to an Opportunity
+
+```javascript
+{
+  "id": 755,
+  "venueId": "107",
+  "agentCompanyId": "214",
+  "agentContactId": "580"
+}
+```
+
+### Remove an Agent from an Opportunity
+
+```javascript
+{
+  "id": 755,
+  "venueId": "107",
+  "agentCompanyId": null,
+  "agentContactId": null
 }
 ```
 

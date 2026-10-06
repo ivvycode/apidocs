@@ -45,6 +45,8 @@ The array of venue ids to which the opportunity belongs
                     "phone": null,
                     "email": company@owner.com
             },
+            "agentCompanyId": null,
+            "agentContactId": null,
             "currentBookingId": 5,
             "qualityId": 2,
             "quality": "B-Grade",
