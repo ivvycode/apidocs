@@ -11,10 +11,6 @@ The unique ID of the venue to which the booking belongs.
 The unique ID of the booking whose documents are to be retrieved.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="onlyGenerated" type="boolean" in="body" required=false %}
-Whether to fetch only generated documents.
-{% endswagger-parameter %}
-
 {% swagger-parameter name="start" type="integer" in="body" %}
 The starting index for pagination (zero-based).
 {% endswagger-parameter %}
@@ -93,12 +89,11 @@ The number of documents to retrieve per page.
 ```javascript
 {
   "venueId": 1,
-  "bookingId": 3426,
-  "onlyGenerated": true
+  "bookingId": 3426
 }
 ```
 
-The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking room reservation records the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking documents the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Booking Document
 
