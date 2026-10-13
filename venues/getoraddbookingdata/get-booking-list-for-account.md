@@ -66,6 +66,10 @@ The number of bookings to get in a single call
       "beoNumbers": ["11-1", "12-1", "13-2"],
       "isBeoFinalised": true,
       "beoFinalisedDate": "2015-02-09 03:37:39 UTC",
+      "revenueFinal": {
+          "date": "2026-10-07 06:20:52 UTC",
+          "userId": 1
+      },
       "otaFolioRef": "ven1234",
       "accommCutOffDate": "2019-12-04 00:00:00 UTC",
       "accommCancellationDate": "2019-01-11 00:00:00 UTC",

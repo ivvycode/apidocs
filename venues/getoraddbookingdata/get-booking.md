@@ -65,6 +65,10 @@ The id of the booking
   "beoNumbers": [],
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
+  "revenueFinal": {
+      "date": "2026-10-07 06:20:52 UTC",
+      "userId": 1
+  },
   "otaFolioRef": null,
   "accommCutOffDate": "",
   "accommReservationMethod": [],
@@ -671,6 +675,7 @@ The result from this call will be the details of a specific booking to which the
 | beoNumbers              | array                                                                            | The id/numbers for the BEO documents assigned to the booking                                                                                                |
 | isBeoFinalised          | boolean                                                                          | Whether or not the BEO of the booking has been finalised                                                                                                    |
 | beoFinalisedDate        | [timestamp](../../development-reference/timestamp-format.md)                     | The date & time on which the BEO of the booking was finalised                                                                                               |
+| revenueFinal            | [Revenue Final](get-booking.md#revenue-final)                                    | Details of when and by whom the booking's revenue was marked as final (earned), as opposed to on-the-books. This is `null` if the revenue has not been marked as final. |
 | accommReservationMethod | [Reservation Method](add-or-update-booking.md#accommodation-reservation-methods) | optional | The method by which attendees will reserve rooms from the accommodation blocks on the booking. Only applies when the booking includes accommodation. |
 | otaFolioRef             | string                                                                           | The recorded Folio ID of a booking.                                                                                                                         |
 | accommCutOffDate        | [timestamp](../../development-reference/timestamp-format.md)                     | After this date no more reservations may be made against the Block for the entire date range.                                                               |
@@ -723,6 +728,15 @@ The result from this call will be the details of a specific booking to which the
 | cateringWebsiteEndNumDays | integer | The catering website end num days from event start for the booking |
 | externalUrls | Array of [ExternalUrl](get-booking.md#external-url-field) | This is an array of External URL field objects of the booking. |
 
+
+## Revenue Final
+
+Revenue Final is a one-time action on a Confirmed booking that declares its revenue as final (earned) rather than on-the-books.
+
+| Property | Type                                                         | Description                                                     |
+| -------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
+| date     | [timestamp](../../development-reference/timestamp-format.md) | The date & time on which the booking's revenue was marked as final |
+| userId   | integer                                                      | The unique id of the user who marked the booking's revenue as final |
 
 ## File
 
