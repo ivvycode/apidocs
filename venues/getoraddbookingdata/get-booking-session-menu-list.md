@@ -1,4 +1,4 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionList" method="post" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingSessionMenuList" method="post" %}
 {% swagger-description %}
 Get a list of booking session menus.
 {% endswagger-description %}
@@ -137,7 +137,7 @@ The result from this call will be a [collection](../getting-started/interpreting
 
 ## Example Request
 
-`Get a specific venue’s Booking Session List`
+`Get a specific booking’s Booking Session Menu List`
 
 ```javascript
 {

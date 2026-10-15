@@ -1,6 +1,6 @@
-{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingDocumentList" method="post" %}
+{% swagger baseUrl="[PlatformAddress]/api/1.0/" path="venue?action=getBookingDocumentVersionList" method="post" %}
 {% swagger-description %}
-Retrieve a list of documents associated with a specific booking.
+Retrieve all versions of a specific booking document.
 {% endswagger-description %}
 
 {% swagger-parameter name="venueId" type="integer" in="body" %}
@@ -11,12 +11,8 @@ The unique ID of the venue to which the booking belongs.
 The unique ID of the booking whose documents are to be retrieved.
 {% endswagger-parameter %}
 
-{% swagger-parameter name="onlyGenerated" type="boolean" in="body" required=false %}
-Whether to fetch only generated documents.
-{% endswagger-parameter %}
-
-{% swagger-parameter name="documentNumber" type="integer" in="body" required=false %}
-The document number of the booking document(s) to be retrieved.
+{% swagger-parameter name="documentNumber" type="integer" in="body" required=true %}
+The document number of the booking document whose versions are to be retrieved.
 {% endswagger-parameter %}
 
 {% swagger-parameter name="start" type="integer" in="body" %}
@@ -85,12 +81,11 @@ The number of documents to retrieve per page.
 {
   "venueId": 1,
   "bookingId": 22363,
-  "onlyGenerated": true,
   "documentNumber": 20
 }
 ```
 
-The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking room reservation records the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
+The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of booking document versions the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
 ## Booking Document
 
