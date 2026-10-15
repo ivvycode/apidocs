@@ -265,7 +265,8 @@ The venue Id
         "size": 7204,
         "contentType": "image/png",
         "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/6180b017aea26.png"
-    }
+    },
+    "marketplaceTerms": "<h2>Terms and Conditions</h2><p>All bookings are subject to a 20% deposit...</p>"
 }
 ```
 
@@ -343,6 +344,7 @@ The venue Id
 | cateringWebsiteLogo          | object of [file](get-venue.md#file)                                 | The catering website logo details.                         |
 | cateringWebsiteBannerId      | integer                                                             | The ID of the catering website banner.                     |
 | cateringWebsiteBanner        | object of [file](get-venue.md#file)                                 | The catering website banner details.                       |
+| marketplaceTerms             | string                                                              | The HTML content of the venue terms and conditions, as saved in iVvy, or null when the venue has none. Consumers are responsible for rendering and sanitising the HTML. |
 | businessNumber               | integer                                                             | The business number of the venue.                          |
 | phone                        | string                                                              | The phone number of the venue.                             |
 | fax                          | string                                                              | The fax number of the venue.                               |
