@@ -167,7 +167,14 @@ The id of the venue
                     "id": 2986,
                     "value": 18
                 }
-            ]
+            ],
+            "image": {
+                "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/packages/1/102482716866e7885c6c38b.jpg",
+                "originalFileName": "standard-package.jpg",
+                "tags": [],
+                "size": 149613,
+                "contentType": "image/jpeg"
+            }
         }
     ]
 }
@@ -226,6 +233,7 @@ The id of the venue
 | isAccommIncluded             | boolean     | Whether accommodation is included in the package. This is a legacy field and should not be used |
 | discountCampaignId           | integer     | The discount campaign to apply to the package                                               |
 | costcentersDiscounts         | array of [Cost Center Discounts](get-venue-package-list.md#cost-center-discount)       | The cost center discounts to apply to the package |
+| image                        | object of [file](get-venue.md#file) | The image of the package. Null when the package has no image |
 
 
 ## Cost Center
