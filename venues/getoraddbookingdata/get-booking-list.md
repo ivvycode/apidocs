@@ -90,6 +90,8 @@ The number of bookings to get in a single call
 
 The result from this call will be a [collection](../../getting-started/interpreting-the-response/collections.md) of all the events the user has access to. This call also accepts the [pagination](../../getting-started/interpreting-the-response/pagination.md) and [filter](../../getting-started/interpreting-the-response/filtering.md) properties.
 
+A booking without a coordinator is returned with _bookedById_ set to null. See [Booking coordinator](add-or-update-booking.md#booking-coordinator).
+
 ## Example Request
 
 `Get a specific venue’s Booking List`
