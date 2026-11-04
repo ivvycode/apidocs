@@ -65,6 +65,10 @@ The id of the booking
   "beoNumbers": [],
   "isBeoFinalised": false,
   "beoFinalisedDate": "",
+  "revenueFinal": {
+      "date": "2026-10-07 06:20:52 UTC",
+      "userId": 1
+  },
   "otaFolioRef": null,
   "accommCutOffDate": "",
   "accommReservationMethod": [],
@@ -600,13 +604,14 @@ The id of the booking
       }
   ],
   "opportunityId": null,
-  "hasCateringWebsite": false,
-  "cateringWebsiteLogoId": null,
-  "cateringWebsiteLogo": null,
-  "cateringWebsiteBannerId": null,
-  "cateringWebsiteBanner": null,
-  "cateringWebsiteEventDesc": null,
-  "cateringWebsiteEndNumDays": null,
+  "discountCampaignId": 59,
+  "discountType": 1,
+  "costcentersDiscounts": [
+      {
+          "id": 1,
+          "value": 20
+      }
+  ],
   "externalUrls": [
     {
         "ref": "sales-force",
@@ -671,6 +676,7 @@ The result from this call will be the details of a specific booking to which the
 | beoNumbers              | array                                                                            | The id/numbers for the BEO documents assigned to the booking                                                                                                |
 | isBeoFinalised          | boolean                                                                          | Whether or not the BEO of the booking has been finalised                                                                                                    |
 | beoFinalisedDate        | [timestamp](../../development-reference/timestamp-format.md)                     | The date & time on which the BEO of the booking was finalised                                                                                               |
+| revenueFinal            | [Revenue Final](get-booking.md#revenue-final)                                    | Details of when and by whom the booking's revenue was marked as final (earned), as opposed to on-the-books. This is `null` if the revenue has not been marked as final. |
 | accommReservationMethod | [Reservation Method](add-or-update-booking.md#accommodation-reservation-methods) | optional | The method by which attendees will reserve rooms from the accommodation blocks on the booking. Only applies when the booking includes accommodation. |
 | otaFolioRef             | string                                                                           | The recorded Folio ID of a booking.                                                                                                                         |
 | accommCutOffDate        | [timestamp](../../development-reference/timestamp-format.md)                     | After this date no more reservations may be made against the Block for the entire date range.                                                               |
@@ -714,28 +720,20 @@ The result from this call will be the details of a specific booking to which the
 | commissionByCostCentres | Array of [Commission By Cost Centres](get-booking.md#commission-by-cost-centres) | The commission amount by Cost Centres in the Booking                                                                                                        |
 | bookingType             | enum ([Booking Types](get-booking.md#booking-types))              | The type of Booking selected for the Booking                                                                                                                |
 | opportunityId           | integer                                                                          | The id of the Opportunity for the Booking                                                                                                                   |
-| hasCateringWebsite | boolean | Whether or not the catering website is enabled for the booking |
-| cateringWebsiteLogoId | string | The catering website logo for the booking |
-| cateringWebsiteLogo | [File](get-booking.md#file) | The catering website logo for the booking |
-| cateringWebsiteBannerId | string | The catering website banner for the booking |
-| cateringWebsiteBanner | [File](get-booking.md#file) | The catering website banner for the booking |
-| cateringWebsiteEventDesc | string | The catering website event description for the booking |
-| cateringWebsiteEndNumDays | integer | The catering website end num days from event start for the booking |
+| discountCampaignId      | integer                                                                          | The id of the [discount campaign](../venuedata/get-discount-campaign-list.md) applied to the booking. Null when no campaign is applied                     |
+| discountType            | enum ([Discount Type](get-booking.md#discount-type))                             | Whether the costcentersDiscounts values are a percentage or a flat rate                                                                                     |
+| costcentersDiscounts    | Array of [Cost Center Discount](get-booking.md#cost-center-discount)             | The discount taken off each cost center, read per discountType                                                                                              |
 | externalUrls | Array of [ExternalUrl](get-booking.md#external-url-field) | This is an array of External URL field objects of the booking. |
 
 
-## File
+## Revenue Final
 
-| Property            | Type | Description |
-| ------------------- | ---- | ----------- |
-| id | integer  | The file identifier |
-| accountId | integer  | The account id of a file |
-| originalFileName | string  | The original file name |
-| size | integer  | Size of the file |
-| tags | array  | Tags related to the file |
-| contentType | string  | Content type of the file |
-| url | string  | Url of the file |
+Revenue Final is a one-time action on a Confirmed booking that declares its revenue as final (earned) rather than on-the-books.
 
+| Property | Type                                                         | Description                                                     |
+| -------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
+| date     | [timestamp](../../development-reference/timestamp-format.md) | The date & time on which the booking's revenue was marked as final |
+| userId   | integer                                                      | The unique id of the user who marked the booking's revenue as final |
 
 ## Status
 
@@ -1042,6 +1040,22 @@ One of the following values:
 | 8     | Resource                     | Booking Session Resource Identifier         |                                                |                                                     |
 | 9     | Additional Item              | Booking Additional Item Identifier          |                                                |                                                     |
 | 11    | Service                      | Booking Service Identifier                  |                                                |                                                     |
+
+## Discount Type
+
+One of the following values:
+
+| # | Description    |
+| - | -------------- |
+| 1 | Percentage (%) |
+| 2 | Flat Rate      |
+
+## Cost Center Discount
+
+| Property | Type    | Description                                                                                  |
+| -------- | ------- | -------------------------------------------------------------------------------------------- |
+| id       | integer | The cost center identifier                                                                   |
+| value    | double  | A percentage off when discountType is "Percentage", or a flat amount when it is "Flat Rate" |
 
 ## Commission By Cost Centres
 
