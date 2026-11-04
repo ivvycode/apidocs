@@ -246,25 +246,6 @@ The venue Id
     "reviews": [],
     "accommodationSetting": {
         "enableMultiOccupancy": true
-    },
-    "cateringWebsitePrimaryColour": "#ae1e1e",
-    "cateringWebsiteLogoId": "1819",
-    "cateringWebsiteLogo": {
-        "id": 1819,
-        "accountId": 2,
-        "originalFileName": "standard_hour.png",
-        "size": 5929,
-        "contentType": "image/png",
-        "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/6180b0108fe0f.png"
-    },
-    "cateringWebsiteBannerId": "1820",
-    "cateringWebsiteBanner": {
-        "id": 1820,
-        "accountId": 2,
-        "originalFileName": "standard_day_meridian.png",
-        "size": 7204,
-        "contentType": "image/png",
-        "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/6180b017aea26.png"
     }
 }
 ```
@@ -338,11 +319,6 @@ The venue Id
 | beveragePackages             | array of [beveragePackage](get-venue.md#beveragepackage)            | The list of beverage packages.                             |
 | reviews                      | array                                                               | The list of reviews.                                       |
 | accommodationSetting         | object of [accommodationSetting](get-venue.md#accommodationsetting) | The accommodation settings.                                |
-| cateringWebsitePrimaryColour | string                                                              | The primary color for the catering website.                |
-| cateringWebsiteLogoId        | integer                                                             | The ID of the catering website logo.                       |
-| cateringWebsiteLogo          | object of [file](get-venue.md#file)                                 | The catering website logo details.                         |
-| cateringWebsiteBannerId      | integer                                                             | The ID of the catering website banner.                     |
-| cateringWebsiteBanner        | object of [file](get-venue.md#file)                                 | The catering website banner details.                       |
 | businessNumber               | integer                                                             | The business number of the venue.                          |
 | phone                        | string                                                              | The phone number of the venue.                             |
 | fax                          | string                                                              | The fax number of the venue.                               |
