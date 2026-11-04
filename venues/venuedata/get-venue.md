@@ -246,7 +246,8 @@ The venue Id
     "reviews": [],
     "accommodationSetting": {
         "enableMultiOccupancy": true
-    }
+    },
+    "marketplaceTerms": "<h2>Terms and Conditions</h2><p>All bookings are subject to a 20% deposit...</p>",
 }
 ```
 
@@ -319,6 +320,7 @@ The venue Id
 | beveragePackages             | array of [beveragePackage](get-venue.md#beveragepackage)            | The list of beverage packages.                             |
 | reviews                      | array                                                               | The list of reviews.                                       |
 | accommodationSetting         | object of [accommodationSetting](get-venue.md#accommodationsetting) | The accommodation settings.                                |
+| marketplaceTerms             | string                                                              | The HTML content of the venue terms and conditions, as saved in iVvy, or null when the venue has none. Consumers are responsible for rendering and sanitising the HTML. |
 | businessNumber               | integer                                                             | The business number of the venue.                          |
 | phone                        | string                                                              | The phone number of the venue.                             |
 | fax                          | string                                                              | The fax number of the venue.                               |
