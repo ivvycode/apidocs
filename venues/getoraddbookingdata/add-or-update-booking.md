@@ -99,7 +99,7 @@ _normal bookings_
 | bookingRoleUserId5                | string                                                                           | optional | The unique id of the account user assigned to the booking role label 5                                                                                                                                                                                                                                                                                                 |
 | customFields                      | array of [Custom Field](add-or-update-booking.md#custom-field)                   | optional | The custom field values of the booking. A custom field value might be required depending on how it has been configured in the venue's account.                                                                                                                                                                                                                         |
 | discountCode                      | string                                                                           | optional | The discount code applied to the booking. Send null to remove the discount from the booking.                                                                                                                                                                                                                                                                           |
-| validateDiscountConditions        | boolean                                                                          | optional | Whether to validate the discount against its conditions before saving the booking, and count the booking as a use of the discount. Defaults to false. See [validating a discount against its conditions](add-or-update-booking.md#validating-a-discount-against-its-conditions).                                                                                       |
+| isFromExternalSource              | boolean                                                                          | optional | Whether an external system (e.g. a booking engine) is creating the booking on behalf of a customer. Only used when adding a booking, and ignored when updating one, so it cannot be changed later. Defaults to false. See [discounts on bookings from an external source](add-or-update-booking.md#discounts-on-bookings-from-an-external-source). |
 | externalUrls                      | array of [ExternalUrl](add-or-update-booking.md#external-url-field) Field        | optional | This is an array of External URL field objects of the booking (a maximum of 3 objects allowed). When set to null, it will remove all externalUrls from the booking.                                                                                                                                                                                                    |
 
 ## Booking Type
@@ -195,18 +195,18 @@ There are also the following additional restrictions:
 * The maximum number of event days when adding an event template is 7.
 * _packagePrice_ will be rounded to 3 decimal places if present in the request.
 
-### Validating a discount against its conditions
+### Discounts on bookings from an external source
 
-By default, a _discountCode_ is applied to the booking without checking the discount's conditions, and the booking does not count as a use of the discount. Integrations acting on behalf of customers (e.g. booking engines and marketplaces) can set _validateDiscountConditions_ to true. The discount is then validated in the same way as on the iVvy marketplace and enquiry forms.
+By default, a _discountCode_ is applied to the booking without checking the discount's conditions, and the booking does not count as a use of the discount. Integrations acting on behalf of customers (e.g. booking engines) should set _isFromExternalSource_ to true when they add the booking. From then on, the booking's discount is validated in the same way as on the iVvy marketplace and enquiry forms on every addOrUpdateBooking request for that booking, and the booking counts as a use of its discount.
 
-When validation is requested, every condition set on the discount campaign is checked. Conditions that are not set are ignored. The discount campaign's settings are returned by [getDiscountCampaignList](../venuedata/get-discount-campaign-list.md).
+Every condition set on the discount campaign is checked. Conditions that are not set are ignored. The discount campaign's settings are returned by [getDiscountCampaignList](../venuedata/get-discount-campaign-list.md).
 
 | Condition                     | Campaign setting                                    | Rule                                                                                                                                                                                                                       |
 | ----------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Available                     | startDateTime, endDateTime, venueIds, venueGroupIds | The campaign is enabled, the current date and time is within its start and end, and it applies to the booking's venue (directly, or through a venue group).                                                               |
 | Event dates                   | dateEventStart, dateEventEnd                        | The booking's event start and end dates both fall within the campaign's event dates.                                                                                                                                      |
 | Event templates only          | forBookingItem                                      | When the campaign applies only to event templates (packages), the booking must have at least one event template.                                                                                                          |
-| Minimum pax                   | minBookingAttendees                                 | The booking's number of attendees meets or exceeds the minimum. For a booking with event templates, this is the largest number of attendees across its event templates and the minimum guaranteed attendees of its sessions. For a campaign that applies only to event templates, it is the number of attendees of the booking's first event template. |
+| Minimum pax                   | minBookingAttendees                                 | The booking's number of attendees meets or exceeds the minimum. A booking with no attendees yet does not meet a minimum. For a booking with event templates, this is the largest number of attendees across its event templates and the minimum guaranteed attendees of its sessions. For a campaign that applies only to event templates, it is the number of attendees of the booking's first event template. |
 | Minimum room nights           | minRoomNights                                       | The total room nights of the booking's accommodation meet or exceed the minimum. A booking without accommodation has 0 room nights.                                                                                      |
 | Minimum booking value         | minBookingValue, minBookingValueCostcenterIds       | The booking value meets or exceeds the minimum. The booking value is the booking total excluding tax, counting only the cost centers in _minBookingValueCostcenterIds_. Not checked for campaigns that apply only to event templates. |
 | Maximum number of uses        | maxUse                                              | The discount has been used fewer than _maxUse_ times. 0 means unlimited. See [how discount uses are counted](add-or-update-booking.md#how-discount-uses-are-counted).                                                   |
@@ -243,15 +243,15 @@ When the discount fails one or more conditions, the whole request is rejected an
 
 #### Re-validation when updating a booking
 
-Once a booking has used a discount through validation, the discount is re-validated on every later update to the booking with this api action, even when _validateDiscountConditions_ is not sent. For example, a request that moves the event dates outside the discount's event dates is rejected with `EVENT_DATES`. To make the change, either remove the discount (send _discountCode_ as null) in the same request, or apply a different discount that the updated booking meets.
+The discount on a booking from an external source is validated on every update to the booking with this api action, not only when the _discountCode_ is sent. For example, a request that moves the event dates outside the discount's event dates is rejected with `EVENT_DATES`. To make the change, either remove the discount (send _discountCode_ as null) in the same request, or apply a different discount that the updated booking meets.
 
 Changes made with other api actions (e.g. [addOrUpdateBookingSession](add-or-update-booking-session.md) or [addOrUpdateBookingAccommodation](../accommodation/add-or-update-booking-accommodation.md)) do not re-validate the discount.
 
 #### How discount uses are counted
 
-* A booking that passes validation counts as one use of the discount. Updating or re-validating that booking does not count as another use.
-* The maximum number of uses includes bookings that used the discount through the iVvy marketplace and enquiry forms, and bookings that passed validation through this api action.
-* Discounts applied without validation (including in iVvy, or with _validateDiscountConditions_ false) do not count as a use.
+* A booking from an external source counts as one use of its discount. Updating that booking does not count as another use.
+* The maximum number of uses includes bookings that used the discount through the iVvy marketplace and enquiry forms, and bookings from an external source.
+* Discounts on bookings that are not from an external source (e.g. bookings created in iVvy, or through this api action without _isFromExternalSource_) do not count as a use.
 * A booking in _ordering_ status does not count as a use.
 * When a booking's discount is removed or changed to another discount, the booking no longer counts as a use of the original discount.
 
@@ -259,9 +259,9 @@ Changes made with other api actions (e.g. [addOrUpdateBookingSession](add-or-upd
 
 The booking value, pax and room nights depend on items that are added with other api actions after the booking is created (e.g. sessions, event templates and accommodation). Apply the discount as the last step, once the booking is complete:
 
-1. Create the booking with addOrUpdateBooking, without a _discountCode_.
+1. Create the booking with addOrUpdateBooking, with _isFromExternalSource_ set to true and without a _discountCode_.
 2. Add the sessions, event templates and accommodation with their own api actions.
-3. Call addOrUpdateBooking with the booking _id_, the _discountCode_ and _validateDiscountConditions_ set to true.
+3. Call addOrUpdateBooking with the booking _id_ and the _discountCode_.
 
 A discount sent when the booking is created is validated against the booking as it is at that point, which usually has no sessions, event templates or accommodation yet.
 
