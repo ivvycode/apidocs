@@ -72,7 +72,7 @@ _normal bookings_
 | purchaseOrderNumber               | string                                                                           | optional | The purchase order number of the booking.                                                                                                                                                                                                                                                                                                                              |
 | eventTypeId                       | integer                                                                          | optional | The unique id of the booking event type. Required when adding a booking.                                                                                                                                                                                                                                                                                               |
 | eventSubTypeId                    | integer                                      |                          optional | The unique id of the booking event sub type. Required when event type have sub types .                                                                                                                                                                                                                                                                                               |
-| bookedById                        | integer                                                                          | optional | The unique id of the account user who is the coordinator of the booking. Required when adding a new booking.                                                                                                                                                                                                                                                           |
+| bookedById                        | integer                                                                          | optional | The unique id of the account user who is the coordinator of the booking. Omit to add or update the booking without a coordinator, or set to null to remove the coordinator. See [Booking coordinator](add-or-update-booking.md#booking-coordinator).                                                                                                                   |
 | canBeMoved                        | boolean                                                                          | optional | Whether or not the dates of the booking are flexible, and the booking itself can be moved to other dates.                                                                                                                                                                                                                                                              |
 | dateEventStart                    | date                                                                             | optional | The event start date of the booking. Required when adding a booking that includes event details. Has no effect if the venue doesn't have function space.                                                                                                                                                                                                               |
 | dateEventEnd                      | date                                                                             | optional | The event end date of the booking. Required when adding a booking that includes event details. Has no effect if the venue doesn't have function space. When [adding a booking with an event template](add-or-update-booking.md#adding-an-event-template-to-a-new-booking), the end date cannot be more than 7 days after _dateEventStart_.                             |
@@ -193,6 +193,22 @@ There are also the following additional restrictions:
 * An event template can only be added to a [detailed](add-or-update-booking.md#booking-type) booking.
 * The maximum number of event days when adding an event template is 7.
 * _packagePrice_ will be rounded to 3 decimal places if present in the request.
+
+### Booking coordinator
+
+The coordinator (_bookedById_) is optional. A booking can be added or updated without a coordinator, so it can be created before the venue decides who will coordinate it.
+
+* When _bookedById_ is set, it must be the id of an active, billable user in the venue's account.
+* When _bookedById_ is not in the request, a new booking is added without a coordinator, and an existing booking keeps its current coordinator.
+* When _bookedById_ is null, the coordinator is removed from the booking.
+
+When a booking has no coordinator:
+
+* Booking tasks that would be assigned to the coordinator are created unassigned.
+* Emails that would be sent to the coordinator are not sent.
+* [getBooking](get-booking.md) and [getBookingList](get-booking-list.md) return _bookedById_ as null, and getBooking returns _bookedByUser_ as null.
+
+A user of the iVvy application must select a coordinator before saving a booking that has none.
 
 ### Updating a booking
 
