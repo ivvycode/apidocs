@@ -197,7 +197,7 @@ There are also the following additional restrictions:
 
 ### Discounts on bookings from an external source
 
-By default, a _discountCode_ is applied to the booking without checking the discount's conditions, and the booking does not count as a use of the discount. Integrations acting on behalf of customers (e.g. booking engines) should set _isFromExternalSource_ to true when they add the booking. From then on, the booking's discount is validated in the same way as on the iVvy marketplace and enquiry forms on every addOrUpdateBooking request for that booking, and the booking counts as a use of its discount.
+By default, a _discountCode_ is applied to the booking without checking the discount's conditions, and the booking does not count as a use of the discount. Integrations acting on behalf of customers (e.g. booking engines) should set _isFromExternalSource_ to true when they add the booking. From then on, a discount applied to the booking is validated in the same way as on the iVvy marketplace and enquiry forms, and the booking counts as a use of its discount.
 
 Every condition set on the discount campaign is checked. Conditions that are not set are ignored. The discount campaign's settings are returned by [getDiscountCampaignList](../venuedata/get-discount-campaign-list.md).
 
@@ -241,11 +241,9 @@ When the discount fails one or more conditions, the whole request is rejected an
 | MIN_BOOKING_VALUE     | The booking value is below the discount's minimum booking value.                                                                                                    |
 | BOOKING_VALUE_PENDING | The booking value was still being recalculated after a recent change, so the minimum booking value could not be checked. Retry the request shortly.                 |
 
-#### Re-validation when updating a booking
+#### When the discount is validated
 
-The discount on a booking from an external source is validated on every update to the booking with this api action, not only when the _discountCode_ is sent. For example, a request that moves the event dates outside the discount's event dates is rejected with `EVENT_DATES`. To make the change, either remove the discount (send _discountCode_ as null) in the same request, or apply a different discount that the updated booking meets.
-
-Changes made with other api actions (e.g. [addOrUpdateBookingSession](add-or-update-booking-session.md) or [addOrUpdateBookingAccommodation](../accommodation/add-or-update-booking-accommodation.md)) do not re-validate the discount.
+The discount is validated only when it is applied: when the booking is added with a _discountCode_, or when an update sends a _discountCode_ different from the booking's current discount. An update that leaves out _discountCode_, or sends the booking's current discount code, does not validate the discount again. The booking keeps its discount even if it no longer meets the discount's conditions (e.g. the event dates move outside the discount's event dates), or the discount campaign has since ended, been disabled or no longer applies to the venue.
 
 #### How discount uses are counted
 
