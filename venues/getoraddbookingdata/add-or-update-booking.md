@@ -211,7 +211,7 @@ Every condition set on the discount campaign is checked. Conditions that are not
 | Minimum booking value         | minBookingValue, minBookingValueCostcenterIds       | The booking value meets or exceeds the minimum. The booking value is the booking total excluding tax and before any discount, counting only the cost centers in _minBookingValueCostcenterIds_. Not checked for campaigns that apply only to event templates. |
 | Maximum number of uses        | maxUse                                              | The discount has been used fewer than _maxUse_ times. 0 means unlimited. See [how discount uses are counted](add-or-update-booking.md#how-discount-uses-are-counted).                                                   |
 
-The booking is validated with the details it will have once the request is saved. For example, a request that changes _dateEventStart_ is validated against the new event start date.
+When a request applies a discount, the booking is validated with the details it will have once the request is saved. For example, a request that applies a discount and changes _dateEventStart_ is validated against the new event start date.
 
 #### Validation failures
 
