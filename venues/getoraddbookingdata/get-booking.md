@@ -612,13 +612,6 @@ The id of the booking
           "value": 20
       }
   ],
-  "hasCateringWebsite": false,
-  "cateringWebsiteLogoId": null,
-  "cateringWebsiteLogo": null,
-  "cateringWebsiteBannerId": null,
-  "cateringWebsiteBanner": null,
-  "cateringWebsiteEventDesc": null,
-  "cateringWebsiteEndNumDays": null,
   "externalUrls": [
     {
         "ref": "sales-force",
@@ -730,13 +723,6 @@ The result from this call will be the details of a specific booking to which the
 | discountCampaignId      | integer                                                                          | The id of the [discount campaign](../venuedata/get-discount-campaign-list.md) applied to the booking. Null when no campaign is applied                     |
 | discountType            | enum ([Discount Type](get-booking.md#discount-type))                             | Whether the costcentersDiscounts values are a percentage or a flat rate                                                                                     |
 | costcentersDiscounts    | Array of [Cost Center Discount](get-booking.md#cost-center-discount)             | The discount taken off each cost center, read per discountType                                                                                              |
-| hasCateringWebsite | boolean | Whether or not the catering website is enabled for the booking |
-| cateringWebsiteLogoId | string | The catering website logo for the booking |
-| cateringWebsiteLogo | [File](get-booking.md#file) | The catering website logo for the booking |
-| cateringWebsiteBannerId | string | The catering website banner for the booking |
-| cateringWebsiteBanner | [File](get-booking.md#file) | The catering website banner for the booking |
-| cateringWebsiteEventDesc | string | The catering website event description for the booking |
-| cateringWebsiteEndNumDays | integer | The catering website end num days from event start for the booking |
 | externalUrls | Array of [ExternalUrl](get-booking.md#external-url-field) | This is an array of External URL field objects of the booking. |
 
 
@@ -748,19 +734,6 @@ Revenue Final is a one-time action on a Confirmed booking that declares its reve
 | -------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
 | date     | [timestamp](../../development-reference/timestamp-format.md) | The date & time on which the booking's revenue was marked as final |
 | userId   | integer                                                      | The unique id of the user who marked the booking's revenue as final |
-
-## File
-
-| Property            | Type | Description |
-| ------------------- | ---- | ----------- |
-| id | integer  | The file identifier |
-| accountId | integer  | The account id of a file |
-| originalFileName | string  | The original file name |
-| size | integer  | Size of the file |
-| tags | array  | Tags related to the file |
-| contentType | string  | Content type of the file |
-| url | string  | Url of the file |
-
 
 ## Status
 

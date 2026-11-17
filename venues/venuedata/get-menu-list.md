@@ -31,7 +31,14 @@ The number of menu to get in a single call
             "costType": 1,
             "smallDescription": "small description",
             "marketplaceName": "Marketplace Name 1",
-            "marketplaceCategories": []
+            "marketplaceCategories": [],
+            "image": {
+                "url": "https://s3-ap-southeast-2.amazonaws.com/development.accounts.ivvy.com/account2/venues/1/menus/125/example.jpg",
+                "originalFileName": "lunch-menu.jpg",
+                "tags": [],
+                "size": 149613,
+                "contentType": "image/jpeg"
+            }
         },
         {
             "id": 125,
@@ -43,7 +50,8 @@ The number of menu to get in a single call
             "costType": 2,
             "smallDescription": "small description",
             "marketplaceName": "Marketplace Name 2",
-            "marketplaceCategories": [3]
+            "marketplaceCategories": [3],
+            "image": null
         }
     ]
 }
@@ -79,6 +87,7 @@ The result from this call will be a [collection](../../getting-started/interpret
 | marketplaceName       | text                                                                       | The name of the menu displayed in marketplace booking engines                     |
 | marketplaceCategories | array of [Marketplace Categories](get-menu-list.md#marketplace-categories) | The categories in which the menu will be displayed in marketplace booking engines |
 | costcenters | array of [Costcenter](get-menu-list.md#costcenter) | Cost breakdown of a menu when selected menu type is multi cost per person|
+| image | object of [file](get-venue.md#file) | The image details of the menu, or `null` if the menu has no image |
 
 ## Cost Type (Menu Pricing)
 
